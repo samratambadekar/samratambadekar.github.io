@@ -1,0 +1,7 @@
+The ROSS API
+
+The Responsive Objects, Surfaces and Spaces (ROSS) Application Programming Interface (API) is a way for applications to run across a variety of tangible platforms tabletop computers, touch-screen mobile devices, responsive walls, and interactive 3D spaces.
+The Goal
+
+The goal of the ROSS API is to simplify the complicated communication problems between new Tangible User Interfaces (TUIs) that researchers and developers have built and continue to build. These new TUIs often have new sensing, actuation, and display technologies that require significant programming efforts to communicate with other TUIs.
+The ROSS API is designed to allow devices that are very different but have common interactions communicate with each other. The API's nested structure makes interaction visible between various software levels. The core of the ROSS API rests on the notion that the different objects, surfaces and spaces in a responsive environment can exist in nested relationships with respect to one another.

@@ -1,0 +1,636 @@
+
+/** Put common animation timings  
+
+#434E3C
+#F5F4EB
+#893667
+*/
+
+*
+{
+}
+
+/*
+@-webkit-keyframes introNavBar
+{
+	from {height: 100%; }
+	to {height: 15%; }
+}
+@-moz-keyframes introNavBar
+{
+	from {height: 50%; }
+	to {height: 15%; }
+}
+@-ms-keyframes introNavBar
+{
+	from {height: 50%; }
+	to {height: 15%; }
+}
+@-0-keyframes introNavBar
+{
+	from {height: 50%; }
+	to {height: 15%; }
+}
+@keyframes introNavBar
+{
+	from {height: 50%; }
+	to {height: 15%; }
+}
+
+
+
+@-webkit-keyframes introBottomBar
+{
+	from {top: -150%; height: 150%; }
+	to {top: 0%; height: 15%; }
+}
+@-moz-keyframes introBottomBar
+{
+	from {top: 50%; }
+	to {top: 70%; }
+}
+@-ms-keyframes introBottomBar
+{
+	from {top: 50%; }
+	to {top: 70%; }
+}
+@-0-keyframes introBottomBar
+{
+	from {top: 50%; }
+	to {top: 70%; }
+}
+@keyframes introBottomBar
+{
+	from {top: 50%; }
+	to {top: 70%; }
+}
+
+*/
+
+html,body
+{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+h1
+{
+	text-align: center;
+	margin: 0 auto 20px;
+	font-size: 30px;
+	font-family: 'Verdana';
+	width: 100%;
+	color: Gray;
+}
+
+h1.PageTitleHeader
+{
+	position: fixed;
+	text-align: center;
+	margin: 0 auto 20px;
+	font-size: 30px;
+	font-family: 'Verdana';
+	width: 100%;
+	height: 10%;
+	color: Black;
+	background: white;
+	z-index: 5;
+}
+/*
+#434E3C
+#F5F4EB
+#893667
+*/
+#NavBar
+{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 10%;
+	background: rgb(207,218,175);
+	
+	
+	/*
+	animation: introNavBar 2s;
+	-moz-animation: introNavBar 2s; 
+	-webkit-animation: introNavBar 2s;
+	-o-animation: introNavBar 2s; 
+	*/
+}
+
+hr.top
+{
+	height: 30px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px 0 0 0;
+	border-radius: 20px;
+	margin: 50px 0 5px 0;
+}
+
+hr.bottom
+{
+	display: block;
+	content: "";
+	height: 30px;
+	margin: -10px 0px -10px 0px;
+	border-style: solid;
+	border-color: black;
+	border-width: 0 0 1px 0;
+	border-radius: 20px;
+}
+
+hr.MainPageTop
+{
+	height: 30px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px 0 0 0;
+	border-radius: 20px;
+	margin: 50px 0 5px 0;
+}
+
+hr.MainPageBottom
+{
+	display: block;
+	content: "";
+	height: 30px;
+	//margin-top: -31px;
+	border-style: solid;
+	border-color: black;
+	border-width: 0 0 1px 0;
+	border-radius: 20px;
+	margin: -10px 0px 5px 0px;
+}
+
+#ContentBlock
+{
+	position: absolute;
+	//display: inline-block;
+	width: 100%;
+	height: 70%;
+	left: 0%;
+	top:10%;
+	//background: url('./images/texture.png');
+	//background: #434E3C;
+	//text-align: center;
+	
+}
+
+#BottomBar
+{
+	position: relative;
+	width: 100%;
+	height: 15%;
+	background: transparent repeat;
+	/*
+	animation: introBottomBar 2s;
+	-moz-animation: introBottomBar 2s; 
+	-webkit-animation: introBottomBar 2s;
+	-o-animation: introBottomBar 2s;
+	*/
+}
+
+#MainPageContent
+{
+	position: relative;
+	//display: inline-block;
+	top: 20%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 80%;
+	height: 30%;
+	
+	color: #333;
+	//text-shadow: 0px 2px 3px #555;
+
+	vertical-align: middle;
+	margin: auto;
+}
+
+.PageText
+{	
+	font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+	font-weight: normal;
+	font-size: 1.25em;
+	letter-spacing: .2em;
+	line-height: 1.1em;
+	//text-align: center;
+	
+	text-transform: uppercase;
+	//width: 100%;
+	margin: 0 60px;
+}
+
+.HomeLink a
+{
+	position: fixed;
+	top: 50%;
+	left: 1%;
+	
+	text-decoration: none;
+	//font-size: 20px;
+	//font-family: 'Verdana';
+	//color: Black;
+	color: rgb(157,168,115);
+	
+	font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+	font-weight: normal;
+	font-size: 1.25em;
+	//letter-spacing: .2em;
+	line-height: 1.1em;
+	z-index: 5;
+}
+
+.AboutLink a
+{
+	position: fixed;
+	top: 50%;
+	right: 1%;
+	
+	text-decoration: none;
+	//font-size: 20px;
+	//font-family: 'Verdana';
+	//color: Black;
+	color: rgb(157,168,115);
+	
+	font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+	font-weight: normal;
+	font-size: 1.25em;
+	//letter-spacing: .2em;
+	line-height: 1.1em;
+	z-index: 5;
+}
+
+.ProjectsLink a
+{
+	position: fixed;
+	top: 50%;
+	right: 1%;
+	
+	text-decoration: none;
+	//font-size: 20px;
+	//font-family: 'Verdana';
+	//color: Black;
+	color: rgb(157,168,115);
+	
+	font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+	font-weight: normal;
+	font-size: 1.25em;
+	//letter-spacing: .2em;
+	line-height: 1.1em;
+	z-index: 5;
+}
+
+#ProjectsPage
+{
+	max-width: 1125px;
+	//text-align: right;
+	margin: 0 auto;
+	padding: 25px;
+	border-left: 1px solid rgb(157,168,115);
+	border-right: 1px solid rgb(157,168,115);
+}
+
+.Images
+{
+	//display: block; 
+	margin-left: auto;   
+	margin-right: auto;
+	width: 80%;
+}
+
+.ProjectImage1
+{
+	width: auto;
+	height: 250px;
+	
+	margin: 10px 10px 10px 10px;
+	padding: 4px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+}
+
+.ProjectImage2
+{
+	width: auto;
+	height: 250px;
+	
+	border-left: 1px solid;
+	
+	margin: 10px 10px 10px 10px;
+	padding: 4px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+}
+
+.ProjectImage3
+{
+	width: auto;
+	height: 300px;
+	
+	border-left: 1px solid;
+	
+	margin: 10px 10px 10px 10px;
+	padding: 4px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+
+}
+.ProjectImage4
+{
+	width: auto;
+	height: 300px;
+	
+	border-left: 1px solid;
+	
+	margin: 10px 10px 10px 10px;
+	padding: 4px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+}
+
+.Projects
+{
+	//background: rgb(252,255,235);
+	//border: 3px solid;
+	border-color: #000000;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ProjectText1
+{
+	//text-decoration: none;
+	display: block;
+	font-size: 20px;
+	font-family: 'Verdana';
+	font-color: Black;	
+	margin: 0 auto;
+	text-align: center;
+}
+
+.ProjectText2
+{
+	//text-decoration: none;
+	font-size: 15px;
+	font-family: 'Verdana';
+	font-color: Black;	
+	margin: 0 auto;
+}
+
+#NavBarText
+{
+	position: relative;
+	font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+	font-weight: bold;
+	font-style: italic;
+        font-size: 1.75em;
+        //font-face: ;
+	letter-spacing: .2em;
+	line-height: 1.1em;
+	top: 50px;
+	margin: auto;
+	padding: 15px;
+	text-align: left;
+	text-transform: uppercase;
+	color: #111;
+	text-shadow: 0px 2px 3px #555;
+}
+
+#BottomBarText
+{
+	position: relative;
+	font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+	font-weight: bold;
+	font-style: italic;
+        font-size: 1.75em;
+        //font-face: ;
+	letter-spacing: .2em;
+	line-height: 1.1em;
+	top: 0px;
+	margin: auto;
+	padding: 15px;
+	text-align: right;
+	text-transform: uppercase;
+	color: #111;
+	text-shadow: 0px 2px 3px #555;
+}
+
+.MainPageHighlightedText a:hover
+{
+	//color: rgb(234, 117, 117);
+	color: #000;
+	//top: 5px;
+	text-shadow: 0px 15px 5px #555;
+	//font-weight: bold;
+	//-webkit-transition-delay: 0.1s;
+	
+	//border: 1px dashed;
+	
+	
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.MainPageHighlightedTextLink
+{
+	//color: rgb(104, 17, 17);
+	color: rgb(157,168,115);
+	//text-shadow: 0px 2px 3px #555;
+	//border: 1px dashed;
+	
+	text-decoration: none;
+	
+	
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+.SpanTest div
+{	
+	background: rgba(0,0,0,0.2);
+	//background-position: 50% 50%;
+	display: block;
+	width: 100px;
+	height: 100px;
+	border-width: 50px;
+	border-color: rgba(0,0,0,0.2);
+	border-style: dotted;
+	
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Verdana';
+	font-color: Black;
+	
+	border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+.SpanTest1
+{	
+	background: rgba(0,0,0,0.2);
+	//background-position: 50% 50%;
+	display: block;
+	width: 100px;
+	height: 100px;
+	border-width: 50px;
+	border-color: rgba(0,0,0,0.2);
+	border-style: dotted;
+	
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Verdana';
+	font-color: Black;
+	
+	border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+.SpanTest
+{
+	//position: fixed;
+	position: relative;
+	top: 150px;
+	left: 150px;
+	margin: auto;
+	text-align: center;
+	vertical-align: middle;	
+}
+
+.SpanTest1:hover + .SpanTest div
+{
+	//background: rgba(0,0,0,0.4);
+	border-style: dotted;
+	border-width: 3px;
+}
+
+.SpanTest div:hover
+{
+	//background: rgba(0,0,0,0.4);
+	border-style: dotted;
+	border-width: 3px;
+}
+
+#MenuButtons
+{
+	width: 308px;
+	margin: auto;
+}
+
+#HomeLink
+{
+	position: relative;
+	border-style: dotted double;
+}
+
+#ProjectsLink
+{
+	position: relative;
+	border-style: dotted;
+}
+
+#AboutLink
+{
+	position: relative;
+	border-style: solid;
+}
+
+
+#AboutLink:hover
+{
+	border-style: double;
+	border-width: 2px;
+	border-color: rgba(0, 0, 0, 0.4);
+}
+
+#MenuButtons a
+{
+	//background: url('./images/1.jpg');
+	background-position: 50% 50%;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border-width: 50px;
+	border-color: rgba(0,0,0,0.9);
+	
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Verdana';
+	font-color: Black;
+	
+	border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+#MenuButtons a:hover 
+{
+
+	//display: inline-block; 
+	border-width: 2px;
+	border-color: rgba(0, 0, 0, 0.4);
+}
