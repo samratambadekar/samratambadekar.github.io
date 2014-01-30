@@ -197,6 +197,10 @@
 				display: block;
 				width: 100%;
 			}
+			.image.full:hover
+			{
+				opacity: 0.7;
+			}
 			
 			.image.left
 			{
