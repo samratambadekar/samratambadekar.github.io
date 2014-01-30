@@ -1,0 +1,106 @@
+<!-- Generic -->
+	
+<html>
+	<head>
+		<title>GitHub Visualization | Samrat Ambadekar</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic" rel="stylesheet" type="text/css" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		
+	</head>
+	<body>
+		<nav id="div1">
+            <div class="row">
+            <div class="6u name1">
+                <h3><a href="./index.html">Samrat Ambadekar</a></h3>
+            </div>
+            <div class="6u">
+				<ul>
+					<li><a id="folio_link" class="scrolly scrolly-centered" href="./index.html#portfolio">Portfolio</a></li>
+					<li><a id="resume_link" class="scrolly scrolly-centered" target="_blank" href="./resume.pdf">Resume</a></li>
+					<li><a id="about_link" class="scrolly scrolly-centered" href="./index.html#banner">About</a></li>
+				</ul>
+			</div>
+			</div>
+		</nav>
+	
+			<article class="container box style3">
+			
+					<h3 class="boldText">About</h3>
+					<p>GitHub is one of the most popular sites for online code repositories. With a large user base GitHub generates lot of activity. This activity, in the form of commits, contains the relations between repositories and contributors. With the use of appropriate visualization techniques we can effectively map the relation between projects and contributors onto visual graphs. These graphs can reveal some interesting trends and insights that are not apparent using text and tables. This has motivated us to create visualizations using commit activity on public repositories of GitHub.  
+					</p>
+					<hr />
+					<h3 class="boldText">Existing Visualizations</h3>
+					<p>GitHub itself has some interesting graphs that map the activity occurring on each repository. Most of these graphs, however, are standalone and provide limited context. Except the contributor view, there is a lack of concurrent views. This limits the usefulness of these graphs. We decided to address these issues by interconnecting all graphs and concurrently updating them based on user interactions. This will allow us to maintain flow consistency and also provides more information to the user.  
+					</p>
+					<hr />
+					<h3 class="boldText">Design</h3>
+					<p>The data generated on GitHub is essentially temporal in nature. However, we also wanted to provide aggregate information in a single view. For this we chose tree-maps that effectively incorporate the data on a single page. The relation between users and repositories was mapped using overlapping bar-charts. Finally a heat map was used to provide detailed activity of each contributor.  
+					</p>
+					<hr />
+					<h3 class="boldText">Ideation and initial mockups</h3>
+					<p>After going through few design iterations we finalized upon few graphs for evaluation.
+					</p>
+					<div class="row">
+						<div class="4u">
+							<img src="images/GitViz/sketch1.jpg" width="90%" alt="process"/>
+						</div>
+						<div class="4u">
+							<img src="images/GitViz/sketch2.jpg" width="90%" alt="process"/>
+						</div>
+						<div class="4u">
+							<img src="images/GitViz/sketch3.jpg" width="90%" alt="process"/>
+						</div>
+					</div>
+					<hr />
+					<h3 class="boldText">Application</h3>
+					<p>The visualization system is implemented using D3.js. The data used is from public repositories of company '<a href="https://www.balancedpayments.com/" target="_blank">Balanced</a>' on GitHub.
+					</p>
+					<!--
+					<p>					
+					The user can select the a time period and also narrow down the search on a particular user or repository.
+					</p>
+					-->
+					<p>Check out the application at: <a href="http://samratambadekar.com/Projects/GithubVisualizer-master/" target="blank">GitHub Visualization</a>
+					</p>
+					<hr />
+					<h3 class="boldText">Screens</h3>
+					<div class="row">
+						<div class="6u">
+							<img src="images/GitViz/1.jpg" width="100%" alt="process"/>
+						</div>
+						<div class="6u">
+							<img src="images/GitViz/2.jpg" width="100%" alt="process"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="6u">
+							<img src="images/GitViz/3.jpg" width="100%" alt="process"/>
+						</div>
+						<div class="6u">
+							<img src="images/GitViz/4.jpg" width="100%" alt="process"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="12u">
+							<img src="images/GitViz/5.jpg" width="100%" alt="process"/>
+						</div>
+					</div>
+					<hr />
+					<h3 class="boldText">Video Demo</h3>
+					<br/>
+					<iframe width="560" height="315" src="http://www.youtube.com/embed/yS6YE9VzSIc" frameborder="0" allowfullscreen></iframe>
+			</article>		
+	</body>
+</html>
