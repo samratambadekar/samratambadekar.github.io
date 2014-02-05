@@ -1626,6 +1626,10 @@ nav ul li a:hover {
 .active1{
 	color:#f2f2f2!important;
 }
+
+.projectName {
+	color: #777;
+}
 	
 
 /* ----------  header ends -------------- */
