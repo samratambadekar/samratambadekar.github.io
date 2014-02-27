@@ -373,8 +373,8 @@ function init(){
 
 function update(){
   
-     d3.csv('https://dl.dropboxusercontent.com/u/10397477/Infoviz%20Project/balancedDataFull.csv', function(d) {
-    //d3.csv('data/balancedDataFull.csv', function(d) {
+    //d3.csv('https://dl.dropboxusercontent.com/u/10397477/Infoviz%20Project/balancedDataFull.csv', function(d) {
+	d3.csv('../data/balancedDataFull.csv', function(d) {
          //repo  username  type  name  timestamp additions deletions total message userURL repoURL
          return {
            repo: nameMapperObj[d.repo],
