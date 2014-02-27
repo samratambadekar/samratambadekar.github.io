@@ -41,15 +41,18 @@ h1 {
   cursor: default;
 }
 
-#button-form {
-  margin-bottom:12px;
-  font-size: 100%;
+.my-button-form, .my-button-form td{
+  margin-bottom:4px;
+  font-size: 12px;
   background: #eee;
 }
 
-#button-form td{
-  font-size: 13px;
-}
+.my-button-form label{
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+} 
+
 
 #wrap {
   position: relative;
@@ -59,12 +62,13 @@ h1 {
 }
 
 .node {
-  border: solid 1px white;
+  border: solid 1px #666;
   font: 13px sans-serif;
   color: white;
   line-height: 12px;
   overflow: hidden;
   position: absolute;
+  opacity: 0.75;
   text-indent: 2px;
   word-wrap:break-word;
   cursor: pointer;
@@ -81,10 +85,11 @@ h1 {
 
 .node:hover {
   text-decoration:underline;
-
+  z-index: 5;
+  opacity: 1.0;
 }
 
-div.tooltip {
+div.Mytooltip {
    position: absolute;
    text-align: center;           
    padding: 3px;
@@ -96,18 +101,19 @@ div.tooltip {
    font-size: 8px;
    min-width: 100px;
    max-width: 220px;
+   z-index: 1000;
 }
 
-div.tooltip td{
+div.Mytooltip td{
    text-align: left;
    font-size: 10px;
 }
 
-div.tooltip table{
+div.Mytooltip table{
   width:100%;
 }
 
-.tooltip.tooltitle{
+.Mytooltip.Mytooltitle{
     font-size: 11px;
     text-align: center;
 }
@@ -123,6 +129,7 @@ path {
 .svg-text, .svg-text2 {
   fill: black;
 }
+
 .axis path,
 .axis line {
   fill: none;
@@ -142,44 +149,50 @@ path {
 }
 
 .timeAllBar {
+  //fill: SteelBlue;
   fill: #159A8F;
   fill-opacity: 0.8;
   z-index: 10;
 }
 
 .timeAllBar:hover {
-  fill: #20EBE2;
+  //fill: #483D8B;
+  fill: #127A6F;
   fill-opacity: 0.8;
   z-index: 10;
 }
 
 .timeFirstBar{
-  fill: #FFFF8B;
-  fill-opacity: 0.8;
+  //fill: Lightpink;
+  fill: #DDFF8B;
+  fill-opacity: 0.9;
   z-index: 20;
 }
 
 .timeFirstBar:hover {
-  fill: #FFFFCE;
-  fill-opacity: 0.6;
+  //fill: Red;
+  fill: #BBDD6B;
+  fill-opacity: 0.9;
   z-index: 20;
 }
 
 .timeSecondBar{
-  fill: #A13332;
+  //fill: #7FFFD4;
+  fill: #E83430;
   fill-opacity: 0.8;
   z-index: 30;
 }
 
 .timeSecondBar:hover {
-  fill: #E83430;
+  //fill: #228B22;
+  fill: #A13332;
   fill-opacity: 0.8;
   z-index: 30;
 }
 
 .timeBrushAllBar {
   fill: red;
-  fill-opacity: 1.0;
+  fill-opacity: 0.6;
 }
 
 .tick{
@@ -191,5 +204,19 @@ path {
   width: 100%;
 }
 
+.heatMapCell{
+  fill-opacity: 0.7;
+  stroke: #ffffd9;
+  stroke-width:2px;
+}
 
-.tbl_container{ overflow:auto; width: 500px;height: 200px; }
+.heatMapCell:hover{
+  fill-opacity: 1.0;
+}
+
+.top-buffer { margin-top:20px; }
+.top-buffer-2 { margin-top:50px; }
+
+.x_label{
+  font-size: 120%;  
+}
