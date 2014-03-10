@@ -10,10 +10,9 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="Samrat, Ambadekar, SamratAmbadekar, UX Design, User, Experience, Human, Computer, Interaction, Design, Prototype, Develop, Georgia, Tech, Georgia, Institute, Technology, Interface" />
-		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic" rel="stylesheet" type="text/css" />
+		<!-- <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic" rel="stylesheet" type="text/css" /> -->
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.poptrox.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
 		<script>
@@ -27,7 +26,7 @@
 
 		</script>
 		
-		<link rel="stylesheet" href="css/skel-noscript.css" />
+		<!-- <link rel="stylesheet" href="css/skel-noscript.css" /> -->
 		<link rel="stylesheet" href="css/style.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
@@ -42,7 +41,8 @@
 				<ul>
 					<li><a id="portfolio_link" class="scrolly scrolly-centered" href="#portfolio">Portfolio</a></li>
 					<li><a id="sketches_link" class="scrolly scrolly-centered" href="#sketches">Sketches</a></li>
-					<li><a id="resume_link" class="scrolly scrolly-centered" target="_blank" href="./resume.pdf">Resume</a></li>
+					<!-- <li><a id="resume_link" class="scrolly scrolly-centered" target="_blank" href="./resume.pdf">Resume</a></li> -->
+					<li><a id="resume_link" class="scrolly scrolly-centered" href="#resume">Resume</a></li>
 					<li><a id="about_link" class="scrolly scrolly-centered" href="#banner">About</a></li>
 				</ul>
 			</div>
@@ -61,7 +61,7 @@
 			</section>
 		
 		<!-- Portfolio -->
-			<article id="portfolio" class="box style2 style3">
+			<section id="portfolio" class="box style2 style3">
 				<header>
 					<h2>Portfolio</h2>
 					<p>A collection of selected projects</p>
@@ -90,11 +90,12 @@
                             <p class="projectName">Geo-based Memory Book</p>
 						</a></div>
 					</div>
+					<br/>
 				</div>
-			</article>
+			</section>
 			
 		<!-- Sketches -->
-			<article id="sketches" class="box style2">
+			<section id="sketches" class="box style2">
 				<header>
 					<h1>Sketches</h3>
 				</header>
@@ -104,8 +105,56 @@
 						<div class="6u"><a href="./sketch.html" class="image full"><img src="images/thumbs/thumb_Sketch.jpg" alt="Sketches" title="" /></a></div>
 						<div class="3u"><img src=""/></div>
 					</div>
+					<br/>
 				</div>
-			</article>
+			</section>
+			
+		<!-- Resume -->
+			<section id="resume" class="style2 style3">
+				<header>
+					<h2>Resume</h2>
+				</header>
+				<div class="inner">
+					<div class="row flush">
+						<div class="7u">
+                            <h3>Work</h3>
+						</div>
+						<div class="5u">
+                            <h3>Education</h3>
+						</div>
+					</div>
+					<div class="row box">
+						<div class="7u">
+                            <p class="boldText">Georgia Institute of Technology</p>
+                            <p class="lightText">Interaction Designer
+                            (2012 - Current)</p>
+                            <p>Designed and developed applications for Augmented Reality and Assistive Technology.</p>
+						</div>
+						<div class="5u">
+                            <p class="boldText">Georgia Institute of Technology</p>
+                            <p class="lightText">MS HCI (Aug 2012 - May 2014)</p>
+                            <p>Researched on Tangible Interactions, Gestural Interactions, Mobile and Augmented Reality, Ubiquitous Computing and Web Usability.</p>
+						</div>
+					</div>
+					<div class="row box">
+						<div class="7u">
+                            <p class="boldText">Infosys Technologies Ltd</p>
+                            <p class="lightText">Software Developer / Tester
+                            (2008 - 2011)</p>
+                            <p>Worked on different projects involving application development and usability testing.
+							</p>
+						</div>
+						<div class="5u">
+                            <p class="boldText">Maharashtra Institute of Technology, India</p>
+                            <p class="lightText">BS Computer Engineering (Aug 2004 - May 2008)</p>
+                            <p>Studied concepts of programming languages, computer software and web technologies and their implementation using development life cycle models.</p>
+						</div>
+					</div>
+				</div>
+				<footer>
+					<a target="" href="./resume.pdf" class="button style4 style3">PDF &#8659;</a>
+				</footer>
+			</section>
 			
 		<!-- Banner -->
 			<section id="banner">
@@ -119,7 +168,7 @@
 				<a href="http://samratambadekar.wordpress.com/" target="_blank">writing</a>.
 				</p>
 				<footer>
-					<a href="mailto:samrat.ambadekar@gmail.com?subject=Hello" class="button style2 scrolly"></i>Email</a>
+					<a href="mailto:samrat.ambadekar@gmail.com?subject=Hello" class="button style2"></i>Email</a>
 				</footer>
 			</section>
 					
