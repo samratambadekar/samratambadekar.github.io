@@ -1,0 +1,350 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	 <meta name="viewport" content="width=1136" />
+
+<!--css-->
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/keyboard.js"></script>
+    <script src="js/jquery.ui.swipable.js"></script>
+
+
+
+	<!-- Start: Added by Samrat -->
+	<script src="architect://architect.js"></script>
+	<script src="js/peerSpotJS.js"></script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAit68vDrPzXg9o-zmdO69czzDXakJCWns&sensor=true">
+
+    </script>
+	<!-- End: Added by Samrat -->
+
+</head>
+
+<body onLoad = "init();">
+	<div id="container">
+    	<div id="searchbox">
+        	<div id="voicesearch"><img src="img/icon_03.png" /></div>
+            <textarea id="search_field" rows="1" cols="20" placeholder="Enter Destination" readonly="true"></textarea>
+            <div id="search_button">
+            	<img id="search_icon" src="img/search_icon_04.png" />
+                <img id="dropdown_icon" src="img/icon_04.png" />
+            </div>
+        </div>
+        <div id="recent_searches">
+            <ul id="recentbox">
+                <li id="declare">
+                    <h2>Recent Searches</h2>
+                </li>
+                <li id="recenttab" class="padbox">
+                    <div class="leftfloat"><h2>Campus Recreation Center</h2>
+                    <p>CRC</p></div>
+                    <div class="faved"></div>
+                </li>
+                <li id="recenttab" class="padbox">
+                    <div class="leftfloat"><h2>Coon Building</h2>
+                    <p id="umm">&nbsp;</p></div>
+                    <div class="not_faved"></div>
+                </li>
+                <li id="recenttab" class="padbox lastinlist">
+                    <div class="leftfloat"><h2>1033 Tumlin ST NW Atlanta</h2>
+                    <p>Home</p></div>
+                    <div class="faved"></div>
+                </li>
+
+
+            </ul>
+       </div>
+       <div id="keypad">
+           <ul id="keyboard">
+                <li class="letter"><span class="off">q</span><span class="on">1</span></li>
+                <li class="letter"><span class="off">w</span><span class="on">2</span></li>
+                <li class="letter"><span class="off">e</span><span class="on">3</span></li>
+                <li class="letter"><span class="off">r</span><span class="on">4</span></li>
+                <li class="letter"><span class="off">t</span><span class="on">5</span></li>
+                <li class="letter"><span class="off">y</span><span class="on">6</span></li>
+                <li class="letter"><span class="off">u</span><span class="on">7</span></li>
+                <li class="letter"><span class="off">i</span><span class="on">8</span></li>
+                <li class="letter"><span class="off">o</span><span class="on">9</span></li>
+                <li class="letter"><span class="off">p</span><span class="on">0</span></li>
+                <li class="delete lastitem">«Bksp</li>
+                <li class="capslock">Caps</li>
+                <li class="letter"><span class="off">a</span><span class="on">!</span></li>
+                <li class="letter"><span class="off">s</span><span class="on">@</span></li>
+                <li class="letter"><span class="off">d</span><span class="on">#</span></li>
+                <li class="letter"><span class="off">f</span><span class="on">$</span></li>
+                <li class="letter"><span class="off">g</span><span class="on">%</span></li>
+                <li class="letter"><span class="off">h</span><span class="on">&amp;</span></li>
+                <li class="letter"><span class="off">j</span><span class="on">*</span></li>
+                <li class="letter"><span class="off">k</span><span class="on">(</span></li>
+                <li class="letter"><span class="off">l</span><span class="on">)</span></li>
+                <li class="return lastitem">Search</li>
+                <li class="left-shift">.?123</li>
+                <li class="letter"><span class="off">z</span><span class="on">.</span></li>
+                <li class="letter"><span class="off">x</span><span class="on">,</span></li>
+                <li class="letter"><span class="off">c</span><span class="on">?</span></li>
+                <li class="letter"><span class="off">v</span><span class="on">!</span></li>
+                <li class="letter"><span class="off">b</span><span class="on">/</span></li>
+                <li class="letter"><span class="off">n</span><span class="on">-</span></li>
+                <li class="letter"><span class="off">m</span><span class="on">_</span></li>
+                <li class="space">space</li>
+                <li class="findonmap lastitem">Find on Map</li>
+            </ul>
+       </div>
+       <div class="field"><input id="2D3DToggle" type="checkbox" class="fancy" data-on-value="2D" data-off-value="3D"></div>
+       <div id="fav"><img src="img/fav_white_03.png" /></div>
+       <div id="all_right">
+           <div id="right_slider_bar"><img src="img/rightslide_02.png" />
+           </div>
+           <div id="right_slider">
+               <h2>Turn Layers on/off</h2>
+               <!--
+               <a class="layer" href="#"><img class="trolley" src="img/icons_10.png" alt="Trolley"/></a>
+               <a class="layer_off" href="#"><img class="cycle" src="img/icons_20.png" /></a>
+               <a class="layer_off" href="#"><img class="walk" src="img/icons_24.png" /></a>
+               <a class="layer" href="#"><img class="greenbus" src="img/icons_13.png" /></a>
+               <a class="layer" href="#"><img class="redbus" src="img/icons_18.png" /></a>
+               <a class="layer" href="#"><img class="bluebus" src="img/icons_26.png" /></a>
+				-->
+
+				<!-- Start: Added by Samrat
+			   <img id="trolley" class="layer_off" src="img/icons_10.png" alt="Trolley"/>
+			   <img id="redbus" class="layer_off" src="img/icons_20.png"/>
+			   <img id="walk" class="layer_off" src="img/icons_24.png" />
+			   <img id="greenbus" class="layer" src="img/icons_13.png" />
+			   <img id="cycle" class="layer" src="img/icons_18.png" />
+			   <img id="bluebus" class="layer" src="img/icons_26.png" />
+-->
+			   <img id="trolley" src="img/icons_10.png" alt="Trolley"/>
+			   <img id="redbus" src="img/icons_20.png"/>
+			   <img id="walk" src="img/icons_24.png" />
+			   <img id="greenbus" src="img/icons_13.png" />
+			   <img id="cycle" src="img/icons_18.png" />
+			   <img id="bluebus" src="img/icons_26.png" />
+				<!-- End: Added by Samrat -->
+           </div>
+      </div>
+      <div id="fav_added">
+      <h1>Favorite Added</h1>
+      <h3>Do you also want to record a voice preset for <span>Coon Building</span>?</h3>
+      <button id="yes"><h3>Of Course!</h3></button>
+      <button id="no"><h3>No,Thanks</h3></button>
+      </div>
+      <div id="fav_tooltip">
+          <img src="img/tooltip_10.png" />
+          <h3>Favorites</h3>
+          <ul id="fav_list_ul">
+          	<li class="fav_list">Coon Building</li>
+            <li class="fav_list">CRC</li>
+            <li class="fav_list">Home</li>
+            <li class="fav_list">Publix</li>
+            <li class="fav_list">HCI Class</li>
+            <li class="fav_list">SonLab</li>
+            <li class="fav_list">Student Center</li>
+           </ul>
+      </div>
+		 <div id="decisionpage">
+      <h1>Here are the time taken by various mediums</h1>
+          <div id="trolleyDecision" class="tile">
+          	<img src="img/icons_10.png" />
+            <h4 id="trolleyRandomMins">15 mins</h4>
+          </div>
+           <div id="bikeDecision" class="tile">
+          	<img src="img/icons_18.png" />
+            <h4 id="bikeRandomMins">7 mins</h4>
+          </div>
+           <div id="walkDecision" class="tile best">
+          	<img src="img/icons_24.png" />
+            <h4 id="walkRandomMins">12</script> mins</h4>
+          </div>
+      </div>
+	<img id="sabDirections" src="img/keepWalking.png" style="position:absolute; bottom:30px; width:336px;left:400px; display:none; "/>
+	</div>
+	<div id="map_holder">
+	<div id="map_header">Find your destination on map<a id="done" href="#">Done</a></div>
+    <div id="map_canvas" style="display:none;">
+
+    </div>
+    </div>
+
+
+
+<script>
+$( "#search_icon" ).click(function() {
+	$( "#search_field" ).animate({width: 450, paddingLeft:10},1000);
+	$( "#dropdown_icon" ).show( "fade", 500 );
+	$( "#search_icon" ).hide();
+	$( "#keypad" ).show("slide", { direction: "down" }, 500);
+});
+
+$( "#dropdown_icon" ).click(function() {
+	$( "#recent_searches" ).toggle( "fade", 500 );
+	$( "#keypad" ).hide("slide", { direction: "down" }, 500);
+});
+
+$( ".return" ).click(function() {
+	$( "#keypad" ).hide("slide", { direction: "down" }, 500);
+	$( "#decisionpage" ).show( "fade", 500 );
+});
+$( "#done" ).click(function() {
+	$( "#map_holder" ).hide("fade", 500);
+});
+
+$( "#recenttab" ).click(function() {
+	$( "#decisionpage" ).show( "fade", 500 );
+});
+
+$( ".fav_list" ).click(function() {
+	$( "#decisionpage" ).show( "fade", 500 );
+});
+$('#search_field').click(function() {
+	  $( "#keypad" ).show("slide", { direction: "down" }, 500);
+});
+$('.findonmap').click(function() {
+	  $( "#map_holder" ).show("fade", 300);
+	  initialize();
+	  $( "#keypad" ).hide("slide", { direction: "down" }, 500);
+});
+$( ".layer1" ).toggle(function() {
+	$("img",this).animate({opacity:0.3});
+}, function() {
+  $("img",this).animate({opacity:1});
+});
+
+
+$( ".layer_off1" ).toggle(function() {
+	$("img",this).animate({opacity:1});
+}, function() {
+  $("img",this).animate({opacity:0.3});
+});
+
+$('.button').click(function(){
+        $("a",this).toggleClass("down");
+});
+
+$('#right_slider_bar').toggle(function() {
+	  $( "#all_right" ).animate({width: 340},300);
+	  $( "#fav" ).animate({right: 360},300);
+	  $( "#fav_tooltip" ).animate({right: 350},300);
+
+}, function() {
+	  $( "#all_right" ).animate({width: 40},300);
+	  $( "#fav" ).animate({right: 60},300);
+	  $( "#fav_tooltip" ).animate({right: 50},300);
+});
+
+$('#right_slider_bar').swipable();
+$('#right_slider_bar').bind('swipe.left', function(){
+    $( "#all_right" ).animate({width: 340},300);
+	$( "#fav" ).animate({right: 360},300);
+	$( "#fav_tooltip" ).animate({right: 350},300);
+});
+$('#right_slider_bar').bind('swipe.right', function(){
+    $( "#all_right" ).animate({width: 40},300);
+	$( "#fav" ).animate({right: 60},300);
+	$( "#fav_tooltip" ).animate({right: 50},300);
+});
+$('#right_slider').bind('swipe.right', function(){
+    $( "#all_right" ).animate({width: 40},300);
+	$( "#fav" ).animate({right: 60},300);
+	$( "#fav_tooltip" ).animate({right: 50},300);
+});
+
+$( ".not_faved" ).click(function() {
+            $(this).toggleClass( "faved", 1000 );
+ });
+
+$( ".not_faved" ).click(function() {
+	$( "#fav_added" ).show( "fade", 500 );
+});
+
+$( "#no" ).click(function() {
+	$( "#fav_added" ).hide( "fade", 500 );
+	$('#umm').text('No Voice Preset saved');
+});
+
+$( "#yes" ).click(function() {
+	$( "#fav_added" ).hide( "fade", 500 );
+    $('#umm').text('Coon');
+});
+
+$( "#fav" ).click(function() {
+	$( "#fav_tooltip" ).toggle( "fade", 500 );
+});
+$( ".tile" ).click(function() {
+	$( "#decisionpage" ).hide( "fade", 500 );
+});
+
+
+$( "#trolleyDecision" ).click(function() {
+	decisionTrolley();
+});
+
+$( "#walkDecision" ).click(function() {
+	decisionWalk();
+});
+
+$( "#bikeDecision" ).click(function() {
+	decisionBike();
+});
+
+<!-- Start: Added by Samrat -->
+$( "#trolley" ).toggle(function() {
+	$(this).animate({opacity:0.3});
+  	showTrolleys(0);
+}, function() {
+  $(this).animate({opacity:1});
+  showTrolleys(1);
+});
+
+$( "#cycle" ).toggle(function() {
+	$(this).animate({opacity:1});
+	showBike(1);
+}, function() {
+  $(this).animate({opacity:0.3});
+  showBike(0);
+});
+
+$( "#walk" ).toggle(function() {
+	$(this).animate({opacity:1});
+  //getMyLoc();
+}, function() {
+  $(this).animate({opacity:0.3});
+  //getMyLoc();
+});
+
+$( "#greenbus" ).toggle(function() {
+	$(this).animate({opacity:1});
+	showGreenBus(1);
+}, function() {
+  $(this).animate({opacity:0.3});
+  showGreenBus(0);
+});
+
+$( "#redbus" ).toggle(function() {
+	$(this).animate({opacity:1});
+	showRedBus(1);
+}, function() {
+  $(this).animate({opacity:0.3});
+  showRedBus(0);
+});
+
+$( "#bluebus" ).toggle(function() {
+	$(this).animate({opacity:1});
+	showBlueBus(1);
+}, function() {
+  $(this).animate({opacity:0.3});
+  showBlueBus(0);
+});
+
+
+<!-- End: Added by Samrat -->
+
+</script>
+
+</body>
+
+
+</html>
