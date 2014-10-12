@@ -1246,7 +1246,7 @@
 		text-align: center;
 		//background: #022126 url('images/banner1.svg') bottom center no-repeat;
 		background: #022126;
-		opacity: 0.7;
+		opacity: 0.85;
 		padding: 5em 0 5em 0;
 		margin: 0;
 		background-size: 125% auto;
@@ -1665,7 +1665,7 @@ nav ul li a {
 
 nav ul li a:hover {
 	color: #888;
-	//background: transparent;
+	/* background: transparent; */
 }
 
 
@@ -1687,6 +1687,16 @@ nav ul li a:hover {
 	font-style:italic;
 	opacity: 0.4;
 }
-	
+
+#banner div {
+	text-align: left;
+}
+
+#myPhoto {
+	opacity: 1;
+	background-color: #FFF;
+	float: right;
+	width: 50%;
+}	
 
 /* ----------  header ends -------------- */
