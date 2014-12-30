@@ -132,6 +132,19 @@
 					 l-5,2"
 			style="stroke: #999; stroke-width: 0.3;fill:#444;"/>
 		</g>
+		<g id="controlsButtons">
+			<ellipse id="onButton" cx="388" cy="260" rx="10" ry="15"
+			transform="rotate(20,388,260)"
+			style="stroke: #444; stroke-width: 0.8;fill:url(#linearGradientGreyButtons);"/>
+			
+			<ellipse id="middleButton" cx="384" cy="315" rx="10" ry="15"
+			transform="rotate(20,384,315)"
+			style="stroke: #444; stroke-width: 0.8;fill:url(#linearGradientGreyButtons);"/>
+			
+			<ellipse id="offButton" cx="380" cy="370" rx="10" ry="15"
+			transform="rotate(20,380,370)"
+			style="stroke: #444; stroke-width: 0.8;fill:url(#linearGradientGreyButtons);"/>
+		</g>
 		<g id="controlsLight">
 			<path d="M388,201				 
 					 l-14,-8
@@ -140,20 +153,30 @@
 					 l-2,25
 					 l-5,2
 					 l2,-25"
-			style="stroke: #999; stroke-width: 0.3;fill:#FF8800;"/>
+				style="stroke: #999; stroke-width: 0.3;fill:#FF5800;">
+				<animate attributeName="fill" 
+                      attributeType="XML"
+                      to="#00FF00"
+                      dur="0.2s"
+					  fill="freeze"
+					  begin="onButton.click"/>
+				<animate attributeName="fill" 
+                      attributeType="XML"
+                      to="#FFFF00"
+                      dur="0.2s"
+					  fill="freeze"
+					  begin="middleButton.click"/>
+				<animate attributeName="fill" 
+                      attributeType="XML"
+                      to="#FF5800"
+                      dur="0.2s"
+					  fill="freeze"
+					  begin="offButton.click"/>
+			</path>
 		</g>
-		<g id="controlsButtons">
-			<ellipse cx="388" cy="260" rx="10" ry="15"
-			transform="rotate(20,388,260)"
-			style="stroke: #444; stroke-width: 0.8;fill:url(#linearGradientGreyButtons);"/>
+		<text x="360" y="500" transform="rotate(-23,360,500)"
+			  style="fill: #BBB; stroke: #BBB;  font-size: 20px;">
 			
-			<ellipse cx="384" cy="315" rx="10" ry="15"
-			transform="rotate(20,384,315)"
-			style="stroke: #444; stroke-width: 0.8;fill:url(#linearGradientGreyButtons);"/>
-			
-			<ellipse cx="380" cy="370" rx="10" ry="15"
-			transform="rotate(20,380,370)"
-			style="stroke: #444; stroke-width: 0.8;fill:url(#linearGradientGreyButtons);"/>
-		</g>
+		</text>   
 	</g>
 </svg>
