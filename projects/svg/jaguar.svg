@@ -34,174 +34,174 @@
 	<g transform="scale(1.0)">
 		<!--
 		<g id="rightRearTyreOutline">
-			<ellipse cx="1008" cy="390" rx="89" ry="92"
-			transform="rotate(-10,1008,390)"
+			<ellipse cx="908" cy="390" rx="89" ry="92"
+			transform="rotate(-10,908,390)"
 			style="stroke: #000; stroke-width: 1;fill:none;"/>			
 		</g>
 		-->
 		
 		<g id="leftRearTyreOutline">
-			<ellipse cx="770" cy="410" rx="73" ry="92"
-			transform="rotate(-10,770,410)"
+			<ellipse cx="670" cy="410" rx="73" ry="92"
+			transform="rotate(-10,670,410)"
 			style="stroke: #444; stroke-width: 0.8;fill:#444;"/>
 			
-			<ellipse cx="774" cy="410" rx="52" ry="70"
-			transform="rotate(-10,774,410)"
+			<ellipse cx="674" cy="410" rx="52" ry="70"
+			transform="rotate(-10,674,410)"
 			style="stroke: #444; stroke-width: 0;fill:#333;"/>
 			
-			<ellipse cx="774" cy="410" rx="55" ry="72"
-			transform="rotate(-10,774,410)"
+			<ellipse cx="674" cy="410" rx="55" ry="72"
+			transform="rotate(-10,674,410)"
 			style="stroke: #C0C0C0; stroke-width: 6;fill:none;"/>
 			
-			<ellipse cx="770" cy="410" rx="63" ry="81"
-			transform="rotate(-10,770,410)"
+			<ellipse cx="670" cy="410" rx="63" ry="81"
+			transform="rotate(-10,670,410)"
 			style="stroke: #D3D3D3; stroke-width: 6;fill:none;"/>
 			
-			<ellipse cx="770" cy="410" rx="57" ry="75"
-			transform="rotate(-10,770,410)"
+			<ellipse cx="670" cy="410" rx="57" ry="75"
+			transform="rotate(-10,670,410)"
 			style="stroke: #969696; stroke-width: 6;fill:none;"/>
 
-			<ellipse cx="780" cy="410" rx="24" ry="30"
-			transform="rotate(-10,780,410)"
+			<ellipse cx="680" cy="410" rx="24" ry="30"
+			transform="rotate(-10,680,410)"
 			style="stroke: #444; stroke-width: 0;fill:#D3D3D3;"/>
 			
-			<ellipse cx="774" cy="410" rx="19" ry="23"
-			transform="rotate(-10,774,410)"
+			<ellipse cx="674" cy="410" rx="19" ry="23"
+			transform="rotate(-10,674,410)"
 			style="stroke: #444; stroke-width: 0;fill:#C0C0C0;"/>
 			
 			<g id="leftRearRim">
 				<g>
 					<path
-						d="M758,394
+						d="M658,394
 							l-10,-13
 							q7,-2 5,-10
 							q8,7 17,12z"
 					style="stroke: #000; stroke-width: 0;fill:#C0C0C0;"/>
 					<path
-						d="M766,388
+						d="M666,388
 							q-20,-10 -15,-55
 							l10,8
 							q-10,18 6,40z"
 					style="stroke: #000; stroke-width: 0;fill:#969696;"/>
 					<path
-						d="M766,388
+						d="M666,388
 							q-20,-10 -15,-55"
 					style="stroke: #D3D3D3; stroke-width: 2.5;fill:none;"/>
 					<path
-						d="M760,392
+						d="M660,392
 							q-20,-16 -45,-12"
 					style="stroke: #969696; stroke-width: 4;fill:none;"/>
 					<path
-						d="M760,392
+						d="M660,392
 							q-20,-16 -45,-12"
 					style="stroke: #D3D3D3; stroke-width: 2.5;fill:none;"/>
 				</g>
 				
 				<g>
 					<path
-						d="M753,412
+						d="M653,412
 							q8,5 -15,2
 							q10,5 10,12
 							l13,-3z"
 					style="stroke: #C0C0C0; stroke-width: 1;fill:#C0C0C0;"/>
 					<path
-						d="M756,410
+						d="M656,410
 							q-10,7 -45,0"
 					style="stroke: #969696; stroke-width: 6;fill:none;"/>
 					<path
-						d="M756,414
+						d="M656,414
 							q-10,7 -45,0"
 					style="stroke: #D3D3D3; stroke-width: 3;fill:none;"/>
 					<path
-						d="M757,423
+						d="M657,423
 							q-19,3 -27,40
 							l10,-5
 							q10,-25 22,-30z"
 					style="stroke: #969696; stroke-width: 1;fill:#969696;"/>
 					<path
-						d="M757,423
+						d="M657,423
 							q-19,3 -27,40"
 					style="stroke: #D3D3D3; stroke-width: 2.5;fill:none;"/>
 				</g>
 				
 				<g>
 					<path
-						d="M770,432
+						d="M670,432
 							q3,25 -16,50"
 					style="stroke: #969696; stroke-width: 6;fill:none;"/>
 					<path
-						d="M767,432
+						d="M667,432
 							q3,25 -17,50"
 					style="stroke: #D3D3D3; stroke-width: 3;fill:none;"/>
 					<path
-						d="M772,433
+						d="M672,433
 							l-1,17
 							q8,-8 12,0
 							l-5,-19z"
 					style="stroke: #C0C0C0; stroke-width: 1;fill:#C0C0C0;"/>
 					
 					<path
-						d="M780,430
+						d="M680,430
 							q3,20 20,51"
 					style="stroke: #969696; stroke-width: 6;fill:none;"/>
 					<path
-						d="M776,430
+						d="M676,430
 							q3,20 20,53"
 					style="stroke: #D3D3D3; stroke-width: 2.5;fill:none;"/>
 				</g>
 							
 				<g>	
 					<path
-						d="M795,420
+						d="M695,420
 							l10,10
 							q-8,-8 2,-15
 							l-12,-5z"
 					style="stroke: #969696; stroke-width: 2;fill:#D3D3D3;"/>
 					
 					<path
-						d="M790,422
+						d="M690,422
 							q18,10 28,39"
 					style="stroke: #969696; stroke-width: 5;fill:none;"/>
 					<path
-						d="M789,425
+						d="M689,425
 							q18,10 26,42"
 					style="stroke: #D3D3D3; stroke-width: 2.5;fill:none;"/>
 					
 					<path
-						d="M792,410
+						d="M692,410
 							q20,7 36,-10"
 					style="stroke: #969696; stroke-width: 5;fill:none;"/>
 					<path
-						d="M792,412
+						d="M692,412
 							q20,7 38,-10"
 					style="stroke: #D3D3D3; stroke-width: 2.5;fill:none;"/>
 				</g>
 							
 				<g>	
 					<path
-						d="M790,390
+						d="M690,390
 							l25,-5
 							q-20,0 -25,-12
 							l-5,10z"
 					style="stroke: #C0C0C0; stroke-width: 1;fill:#C0C0C0;"/>
 					
 					<path
-						d="M788,395
+						d="M688,395
 							q-3,-10 35,-15
 							l1,2
 							q-15,4 -25,15z"
 					style="stroke: #969696; stroke-width: 1;fill:#969696;"/>
 					<path
-						d="M787,394
+						d="M687,394
 							q-3,-8 36,-15"
 					style="stroke: #D3D3D3; stroke-width: 2.5;fill:none;"/>
 					
 					<path
-						d="M781,390
+						d="M681,390
 							q15,-15 -2,-52"
 					style="stroke: #969696; stroke-width: 6;fill:none;"/>
 					<path
-						d="M778,390
+						d="M678,390
 							q15,-15 -2,-52"
 					style="stroke: #D3D3D3; stroke-width: 2.5;fill:none;"/>
 				</g>
@@ -209,167 +209,167 @@
 		</g>
 		
 		<g id="leftFrontTyre">
-			<ellipse id="leftFrontTyreOutline" cx="285" cy="389" rx="67" ry="80"
-			transform="rotate(-10,285,389)"
+			<ellipse id="leftFrontTyreOutline" cx="185" cy="389" rx="67" ry="80"
+			transform="rotate(-10,185,389)"
 			style="stroke: #444; stroke-width: 0.8;fill:#444;"/>
 			
-			<ellipse cx="286" cy="390" rx="61" ry="74"
-			transform="rotate(-10,286,390)"
+			<ellipse cx="186" cy="390" rx="61" ry="74"
+			transform="rotate(-10,186,390)"
 			style="stroke: #444; stroke-width: 0;fill:#C0C0C0;"/>
 			
-			<ellipse cx="286" cy="390" rx="55" ry="68"
-			transform="rotate(-10,286,390)"
+			<ellipse cx="186" cy="390" rx="55" ry="68"
+			transform="rotate(-10,186,390)"
 			style="stroke: #444; stroke-width: 0;fill:#969696;"/>
 			
-			<ellipse cx="289" cy="390" rx="53" ry="66"
-			transform="rotate(-10,289,390)"
+			<ellipse cx="189" cy="390" rx="53" ry="66"
+			transform="rotate(-10,189,390)"
 			style="stroke: #444; stroke-width: 0;fill:#C0C0C0;"/>
 			
-			<ellipse cx="291" cy="390" rx="50" ry="63"
-			transform="rotate(-10,291,390)"
+			<ellipse cx="191" cy="390" rx="50" ry="63"
+			transform="rotate(-10,191,390)"
 			style="stroke: #444; stroke-width: 0;fill:#333;"/>
 			
-			<ellipse cx="295" cy="390" rx="22" ry="27"
-			transform="rotate(-10,295,390)"
+			<ellipse cx="195" cy="390" rx="22" ry="27"
+			transform="rotate(-10,195,390)"
 			style="stroke: #444; stroke-width: 0;fill:#D3D3D3;"/>
 			
-			<ellipse cx="290" cy="390" rx="19" ry="22"
-			transform="rotate(-10,290,390)"
+			<ellipse cx="190" cy="390" rx="19" ry="22"
+			transform="rotate(-10,190,390)"
 			style="stroke: #444; stroke-width: 0;fill:#C0C0C0;"/>
 			
 			<g id="leftFrontRim">
 				<g>
 					<path
-						d="M271,388
+						d="M171,388
 							q-10,-4 -17,-4
 							q7,-2 5,-12
 							q8,7 15,8z"
 					style="stroke: #000; stroke-width: 0;fill:#969696;"/>
 					<path
-						d="M273,379
+						d="M173,379
 							q-20,-5 -27,-38
 							l8,4
 							q7,24 23,29z"
 					style="stroke: #000; stroke-width: 0;fill:#969696;"/>
 					<path
-						d="M273,379
+						d="M173,379
 							q-20,-5 -27,-38"
 					style="stroke: #D3D3D3; stroke-width: 2.5;fill:none;"/>
 					<path
-						d="M271,389
+						d="M171,389
 							q-20,-6 -40,5"
 					style="stroke: #969696; stroke-width: 4;fill:none;"/>
 					<path
-						d="M271,388
+						d="M171,388
 							q-20,-6 -40,1"
 					style="stroke: #D3D3D3; stroke-width: 2.5;fill:none;"/>
 				</g>
 				
 				<g>
 					<path
-						d="M277,404
+						d="M177,404
 							q-8,15 -13,12
 							q10,2 15,15
 							l7,-20z"
 					style="stroke: #969696; stroke-width: 1;fill:#969696;"/>
 					<path
-						d="M277,404
+						d="M177,404
 							q-10,14 -37,14"
 					style="stroke: #969696; stroke-width: 3;fill:none;"/>
 					<path
-						d="M277,404
+						d="M177,404
 							q-10,16 -37,17"
 					style="stroke: #D3D3D3; stroke-width: 3;fill:none;"/>
 					<path
-						d="M285,410
+						d="M185,410
 							q-15,20 -15,42
 							l7,-4
 							q2,-20 10,-34z"
 					style="stroke: #969696; stroke-width: 1;fill:#969696;"/>
 					<path
-						d="M285,410
+						d="M185,410
 							q-15,20 -15,42"
 					style="stroke: #D3D3D3; stroke-width: 2.5;fill:none;"/>
 				</g>
 				
 				<g>
 					<path
-						d="M300,408
+						d="M200,408
 							q-3,18 -2,45"
 					style="stroke: #969696; stroke-width: 5;fill:none;"/>
 					<path
-						d="M298,409
+						d="M198,409
 							q-4,18 -4,45"
 					style="stroke: #D3D3D3; stroke-width: 3;fill:none;"/>
 					<path
-						d="M301,408
+						d="M201,408
 							l-1,17
 							q8,-8 15,-4
 							l-5,-9z"
 					style="stroke: #D3D3D3; stroke-width: 1;fill:#D3D3D3;"/>
 					
 					<path
-						d="M304,405
+						d="M204,405
 							q6,16 28,25"
 					style="stroke: #969696; stroke-width: 6;fill:none;"/>
 					<path
-						d="M303,405
+						d="M203,405
 							q5,18 28,29"
 					style="stroke: #D3D3D3; stroke-width: 2.5;fill:none;"/>
 				</g>
 							
 				<g>	
 					<path
-						d="M308,388
+						d="M208,388
 							l15,5
 							q-8,-8 -5,-20
 							l-12,5z"
 					style="stroke: #969696; stroke-width: 2;fill:#D3D3D3;"/>
 					
 					<path
-						d="M308,388
+						d="M208,388
 							q18,3 34,15"
 					style="stroke: #969696; stroke-width: 5;fill:none;"/>
 					<path
-						d="M308,388
+						d="M208,388
 							q18,3 34,15"
 					style="stroke: #D3D3D3; stroke-width: 2.5;fill:none;"/>
 					
 					<path
-						d="M305,380
+						d="M205,380
 							q20,-5 26,-25"
 					style="stroke: #969696; stroke-width: 4;fill:none;"/>
 					<path
-						d="M305,378
+						d="M205,378
 							q20,-5 26,-25"
 					style="stroke: #D3D3D3; stroke-width: 2.5;fill:none;"/>
 				</g>
 							
 				<g>	
 					<path
-						d="M295,370
+						d="M195,370
 							l3,-20
 							q-8,8 -15,0
 							l0,18z"
 					style="stroke: #969696; stroke-width: 1;fill:#969696;"/>
 					
 					<path
-						d="M295,370
+						d="M195,370
 							q-3,-20 22,-35
 							l1,4
 							q-15,14 -15,28z"
 					style="stroke: #969696; stroke-width: 1;fill:#969696;"/>
 					<path
-						d="M295,370
+						d="M195,370
 							q-3,-20 22,-35"
 					style="stroke: #D3D3D3; stroke-width: 2.5;fill:none;"/>
 					
 					<path
-						d="M285,370
+						d="M185,370
 							q0,-15 -15,-40"
 					style="stroke: #969696; stroke-width: 5;fill:none;"/>
 					<path
-						d="M284,370
+						d="M184,370
 							q0,-15 -17,-40"
 					style="stroke: #D3D3D3; stroke-width: 2.5;fill:none;"/>
 				</g>
@@ -377,7 +377,7 @@
 		</g>
 		
 		<g id="outline">
-			<path id="outlinePath" d="M210,430 
+			<path id="outlinePath" d="M110,430 
 					q-15,-70 -12,-85 
 					c0,-95 175,-75 220,-85
 					q80,-55 140,-80
@@ -425,7 +425,7 @@
 		</g>
 		
 		<g id="leftHeadLight">
-			<path d="M203,320
+			<path d="M103,320
 					  q15,-28 45,-38
 					  l2,4
 					  q-30,10 -47,34"
@@ -433,7 +433,7 @@
 		</g>
 		
 		<g id="leftAirVent1">
-			<path d="M248,282
+			<path d="M148,282
 					  q15,-7 45,-12
 					  q7,9 10,20
 					  q-25,-10 -53,-5"			
@@ -441,13 +441,13 @@
 		</g>
 		
 		<g id="leftHeadLightLine1">
-			<path d="M250,285
+			<path d="M150,285
 					  q6,16 10,19"
 			style="stroke: #555; stroke-width: 1;fill:none;"/>
 		</g>
 		
 		<g id="leftFrontBumperMesh1">
-			<path d="M203,397
+			<path d="M103,397
 					  q-5,-24 -5,-48
 					  l7,1
 					  q-4,20 -2,47
@@ -456,7 +456,7 @@
 		</g>
 		
 		<g id="leftFrontBumperMesh2">
-			<path d="M210,427
+			<path d="M110,427
 					  l-3,-12
 					  l7,0
 					  l3,12z"
@@ -464,7 +464,7 @@
 		</g>
 		
 		<g id="frontBumper">
-			<path d="M210,427
+			<path d="M110,427
 					  q-5,5 18,5
 					  l5,10
 					  c-16,8 -45,-20 -19,-17z"
@@ -472,27 +472,27 @@
 		</g>
 		
 		<g id="leftSideLine1">
-			<path d="M302,318
+			<path d="M202,318
 					  c10,-12 18,-10 30,-10"
 			style="stroke: #1C1C1C; stroke-width: 1;fill:none;"/>
 		</g>
 		
 		<g id="leftSideLine2">
-			<path d="M642,367
+			<path d="M542,367
 					  l49,-1"
 			style="stroke: #EEE; stroke-width: 1;fill:none;"/>
 		</g>
 		
 		<!--
 		<g id="leftSideShadowLine1">
-			<path d="M667,250
+			<path d="M567,250
 					  q140,-32 351,12
 					  l-36,5
 					  q-170,-47 -315,-17"
 			style="stroke: #EEE; stroke-width: 1;fill:#EEE; opacity:1; filter:url(#shadow);"/>
 		</g>
 		<g id="leftSideShadowLine2">
-			<path d="M423,260
+			<path d="M323,260
 					  q55,-40 130,-75
 					  c45,-13 150,-48 465,77
 					  q-215,-46 -351,-12z"
@@ -502,7 +502,7 @@
 		
 		
 		<g id="leftSideSpoilerOutline">
-			<path d="M341,410
+			<path d="M241,410
 					  q300,4 317,-5
 					  q10,0 3,15
 					  q-8,22 -15,32
@@ -513,7 +513,7 @@
 					  q4,-18 4,-34"
 			style="stroke: #888; stroke-width: 1;fill:none;"/>
 			
-			<path d="M339,437
+			<path d="M239,437
 					  l12,-1
 					  l3,-23
 					  l7,0
@@ -527,27 +527,27 @@
 					  l1,-8"
 			style="stroke: #1C1C1C; stroke-width: 1;fill:#1C1C1C;"/>
 			
-			<path d="M339,443
+			<path d="M239,443
 					  l346,23"
 			style="stroke: #FFF; stroke-width: 0.9;fill:none;"/>
 		</g>
 		
 		<g id="leftSideMesh1">
-			<path d="M332,308
+			<path d="M232,308
 					  l68,0
 					  l0,15
 					  l-50,0
 					  q-7,0 -18,-15"
 			style="stroke: #1C1C1C; stroke-width: 1;fill:#CFCFCF;"/>
 			
-			<path d="M345,308
+			<path d="M245,308
 					  l45,0
 					  l0,9
 					  l-30,0
 					  q-8,0 -15,-9"
 			style="stroke: #6F6F6F; stroke-width: 1;fill:#7A7A7D;"/>
 			
-			<path d="M390,308
+			<path d="M290,308
 					  l10,0
 					  l0,15
 					  l-5,0
@@ -556,7 +556,7 @@
 		</g>
 		
 		<g id="leftWindow">
-			<path d="M430,260
+			<path d="M330,260
 					  q55,-40 110,-65
 					  c40,-20 180,-30 263,18
 					  q4,4 -2,7
@@ -564,7 +564,7 @@
 					  q-100,6 -236,10"
 			style="stroke: #888; stroke-width: 1;fill:none;"/>
 			
-			<path d="M440,260
+			<path d="M340,260
 					  q55,-43 110,-65
 					  c40,-15 160,-25 235,18
 					  q4,4 -2,7
@@ -572,23 +572,23 @@
 					  q-100,6 -228,10"
 			style="stroke: #888; stroke-width: 1;fill:none;"/>
 			
-			<path d="M440,260
+			<path d="M340,260
 					  q25,-20 53,-36
 					  l-15,34
 					  l-38,2"
 			style="stroke: #888; stroke-width: 1;fill:#444;"/>
 			
-			<path d="M440,260
+			<path d="M340,260
 					  q25,-20 53,-36"
 			style="stroke: #FFF; stroke-width: 1.1;fill:none;"/>
 			
-			<path d="M701,186
+			<path d="M601,186
 					  l-34,64"
 			style="stroke: #888; stroke-width: 3;fill:none;"/>
 		</g>
 		
 		<g id="leftDoor">
-			<path d="M430,260
+			<path d="M330,260
 					  l-12,7
 					  q-34,30 -2,142
 					  l190,0
@@ -597,7 +597,7 @@
 					  q-30,3 -238,11"
 			style="stroke: #888; stroke-width: 1;fill:none;"/>
 			
-			<path d="M602,290
+			<path d="M502,290
 					  l30,0
 					  q5,5 -2,10
 					  l-28,0
@@ -606,62 +606,62 @@
 		</g>
 		
 		<g id="leftMirror">
-			<path d="M448,252
+			<path d="M348,252
 					  q-1,-8 -5,-15
 					  c0,-6 23,-18 30,-13
 					  c5,5 5,28 1,32
 					  q-26,5 -26,-4"
 			style="stroke: #888; stroke-width: 1;fill:none;"/>
 			
-			<path d="M447,244
+			<path d="M347,244
 					  l15,-2"
 			style="stroke: #DFDFDF; stroke-width: 5;fill:none;"/>
 			
-			<path d="M462,252
+			<path d="M362,252
 					  l-1,-15
 					  q3,-12 12,-12
 					  c5,3 5,28 1,28
 					  q-12,2 -12,-3"
 			style="stroke: #333; stroke-width: 5;fill:none;"/>
 			
-			<path d="M463,234
+			<path d="M363,234
 					  q2,-10 10,-10"
 			style="stroke: #FFF; stroke-width: 6;fill:none; filter:url(#glow);"/>
 			
 		</g>
 		
 		<g id="rearGlass">
-			<path d="M808,190
+			<path d="M708,190
 					  q60,-12 95,-5
 					  q110,30 180,60
 					  q-30,10 -140,-15z"
 			style="stroke: #888; stroke-width:1;fill:none;"/>
-			<path d="M812,191
+			<path d="M712,191
 					  q60,-10 100,-3"
 			style="stroke: #888; stroke-width:1;fill:none;"/>
 		</g>
 		
 		<g id="roofLine1">
-			<path d="M762,177
+			<path d="M662,177
 					  q45,-8 82,-6"
 			style="stroke: #888; stroke-width: 1;fill:none;"/>
 		</g>
 		
 		<g id="roofFin">
-			<path d="M844,172
+			<path d="M744,172
 					  q18,-4 24,-10
 					  l10,0
 					  c0,10 0,10 5,19
 					  q-4,2 -39,-9"
 			style="stroke: #888; stroke-width: 1;fill:none;"/>
 			
-			<path id="roofFinGlow" d="M877,162
+			<path id="roofFinGlow" d="M777,162
 					  c0,10 0,10 5,19"
 			style="stroke: #EEE; stroke-width: 3;fill:none;"/>
 		</g>
 		
 		<g id="rearLine1">
-			<path d="M813,325
+			<path d="M713,325
 					  l7,-7
 					  l28,-15
 					  c30,-15 30,-17 72,-20
@@ -670,13 +670,13 @@
 		</g>
 		
 		<g id="rearWindowTopLine">
-			<path d="M812,191
+			<path d="M712,191
 					  q60,-10 100,-3"
 			style="stroke: #888; stroke-width:1;fill:none;"/>
 		</g>
 		
 		<g id="rearTailLightLeft">
-			<path d="M848,303
+			<path d="M748,303
 					  c30,-15 30,-17 72,-20
 					  q40,-3 123,-4
 					  c-13,22 -13,22 -23,22
@@ -686,7 +686,7 @@
 		</g>
 		
 		<g id="rearTailLightRight">
-			<path d="M1136,277
+			<path d="M1036,277
 					  l13,0
 					  q2,10 1,20
 					  c-10,-2 -10,-2 -14,-20"
@@ -694,7 +694,7 @@
 		</g>
 		
 		<g id="rearLicensePlate">
-			<path d="M1050,279
+			<path d="M950,279
 					  q40,0 79,-1
 					  q3,25 -5,49
 					  q-33,3 -64,3
@@ -703,7 +703,7 @@
 		</g>
 		
 		<g id="rearBumper">
-			<path d="M868,437
+			<path d="M768,437
 					  l70,-12
 					  c30,-40 30,-40 80,-45
 					  l140,-10
@@ -714,7 +714,7 @@
 		</g>
 		
 		<g id="rearMeshLeft">
-			<path d="M878,433
+			<path d="M778,433
 					  l20,-4
 					  l0,-22
 					  l-21,5
@@ -723,37 +723,37 @@
 		</g>
 
 		<g id="exhaustTipsLeft">
-			<path d="M980,433
+			<path d="M880,433
 					  l25,0
 					  c16,0 16,-32 1,-32
 					  l-25,1
 					  q-22,16 -1,31"
 			style="stroke: #888; stroke-width:1;fill:none;"/>			
-			<path d="M999,422
+			<path d="M899,422
 					  a8,13 0 1,1 18,-10"
 			style="stroke: #444; stroke-width:1;fill:#444;"/>			
-			<path d="M999,422
+			<path d="M899,422
 					  a8,13 0 1,0 18,-10"
 			style="stroke: #444; stroke-width:1;fill:none;"/>
 			
 			
-			<path d="M952,433
+			<path d="M852,433
 					  l25,0
 					  c16,0 16,-32 1,-32
 					  l-21,1
 					  q-16,16 -5,31"
 			style="stroke: #888; stroke-width:1;fill:none;"/>			
-			<path d="M971,422
+			<path d="M871,422
 					  a8,13 0 1,1 18,-10"
 			style="stroke: #444; stroke-width:1;fill:#444;"/>			
-			<path d="M971,422
+			<path d="M871,422
 					  a8,13 0 1,0 18,-10"
 			style="stroke: #444; stroke-width:1;fill:none;"/>
 		</g>
 		
 		<!--
 		<g id="rearBumperExtra1">
-			<path d="M1080,433
+			<path d="M980,433
 					  l25,0"
 			style="stroke: #888; stroke-width:1;fill:none;"/>	
 		</g>
