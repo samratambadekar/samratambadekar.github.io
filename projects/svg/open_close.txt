@@ -13,9 +13,11 @@ zip
 taps
 umbrella
 laptop
-envolope
+envelope
 
+https://dribbble.com/shots/1867653-Elephant-Mark
 
+svg textures
 
 Party mode: white light and party mode
 start sonos after few seconds
