@@ -190,7 +190,7 @@
 		
 		<text x="500" y="600" style="visibility:hidden;opacity:0"
 			font-family="Open Sans" font-size="30" fill="#888" >
-			Wait for it.. !!
+			
 			
 			<animate id=""
 				  attributeName="visibility" 
