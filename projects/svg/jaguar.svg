@@ -8,6 +8,8 @@
 <svg id="svg" width="120%" height="600"  xmlns="http://www.w3.org/2000/svg" version="1.1"
      xmlns:xlink="http://www.w3.org/1999/xlink">
 	<defs>
+		<style type="text/css">@import url('http://fonts.googleapis.com/css?family=Cookie');</style>
+		
 		<linearGradient id="linearGradientGreyRed"
 			x1="0%" y1="0%"
 			x2="0%" y2="100%"
@@ -35,10 +37,10 @@
 			<feGaussianBlur in="SourceGraphic" stdDeviation="1.5" />
 		</filter>
 	</defs>
-	<g transform="translate(100,0),scale(1.0)">
+	<g transform="translate(80,0),scale(1.0)">
 	
-		<text x="200" y="100" style="opacity:0"
-			font-family="Open Sans" font-size="30" fill="#888" >
+		<text x="230" y="100" style="opacity:0"
+			font-family="Cookie" font-size="42" fill="#888" >
 			Coded with love
 			
 			<animate id="aniStep1"
@@ -47,10 +49,10 @@
 				  to="1"
 				  dur="0.5s"
 				  fill="freeze"
-				  begin="1s"/> 
+				  begin="5s"/> 
 		</text>
 		<text x="430" y="100" style="opacity:0"
-			font-family="Open Sans" font-size="30" fill="#888" >
+			font-family="Cookie" font-size="42" fill="#888" >
 			.
 			
 			<animate id="aniStep2"
@@ -62,7 +64,7 @@
 				  begin="aniStep1.end"/> 
 		</text>
 		<text x="440" y="100" style="opacity:0"
-			font-family="Open Sans" font-size="30" fill="#888" >
+			font-family="Cookie" font-size="42" fill="#888" >
 			.
 			
 			<animate id="aniStep3"
@@ -74,7 +76,7 @@
 				  begin="aniStep2.end"/> 
 		</text>
 		<text x="460" y="100" style="opacity:0"
-			font-family="Open Sans" font-size="30" fill="#888" >
+			font-family="Cookie" font-size="42" fill="#888" >
 			For cars!
 			
 			<animate id="aniStep4"
@@ -87,8 +89,8 @@
 		</text>
 		
 		<text x="500" y="580" style="opacity:0"
-			font-family="Open Sans" font-size="30" fill="#888" >
-			The Jaguar F Type
+			font-family="Cookie" font-size="42" fill="#888" >
+			Jaguar F Type
 			
 			<animate id="aniStep17"
 				  attributeName="opacity" 
@@ -99,13 +101,13 @@
 				  begin="aniStep14.end"/> 
 		</text>
 		
-		<ellipse cx="580" cy="450" rx="480" ry="70"
+		<ellipse id="carShadow" cx="580" cy="450" rx="480" ry="70"
 		transform="rotate(0,590,430)"
 		style="stroke: #000; stroke-width: 1;fill:#000;filter:url(#shadow);opacity:0;">		
 			<animate id=""
 				  attributeName="opacity" 
 				  attributeType="XML"
-				  to="0.3"
+				  to="0.7"
 				  dur="1s"
 				  fill="freeze"
 				  begin="aniStep13.end"/>
@@ -135,7 +137,7 @@
 				  attributeName="opacity" 
 				  attributeType="XML"
 				  to="1"
-				  dur="1s"
+				  dur="1.5s"
 				  fill="freeze"
 				  begin="aniStep10.end"/> 
 		</g>
@@ -586,7 +588,7 @@
 					  c0,-6 23,-18 30,-13
 					  c5,5 5,28 1,32
 					  q-26,5 -26,-4"
-				style="stroke: #888; stroke-width: 1;fill:url(#linearGradientGreyRed);cursor:pointer;">
+				style="stroke: #888; stroke-width: 0;fill:url(#linearGradientGreyRed);cursor:pointer;">
 			</path><!-- F7423B -->
 			
 			<animate id="aniStep15"
@@ -630,7 +632,7 @@
 					  c0,-6 23,-18 30,-13
 					  c5,5 5,28 1,32
 					  q-26,5 -26,-4"
-			style="stroke: #888; stroke-width: 1;fill:url(#linearGradientBlue);cursor:pointer;visibility:visible;opacity:0;">
+			style="stroke: #888; stroke-width: 0;fill:url(#linearGradientBlue);cursor:pointer;visibility:visible;opacity:0;">
 				
 				<!-- #306E8D F7423B -->
 				
@@ -782,6 +784,29 @@
 				style="stroke: #EEE; stroke-width: 1;fill:none;"/>
 			</g>
 			
+			<g id="leftSideMesh1">
+				<path d="M232,308
+						  l68,0
+						  l0,15
+						  l-50,0
+						  q-7,0 -18,-15"
+				style="stroke: #1C1C1C; stroke-width: 1;fill:#CFCFCF;"/>
+				
+				<path d="M245,308
+						  l45,0
+						  l0,9
+						  l-30,0
+						  q-8,0 -15,-9"
+				style="stroke: #6F6F6F; stroke-width: 1;fill:#7A7A7D;"/>
+				
+				<path d="M290,308
+						  l10,0
+						  l0,15
+						  l-5,0
+						  l-5,-5z"
+				style="stroke: #333; stroke-width: 1;fill:#333;"/>
+			</g>
+						
 			<!--
 			<g id="leftSideShadowLine1">
 				<path d="M567,250
@@ -838,29 +863,6 @@
 				<path d="M239,443
 						  l346,23"
 				style="stroke: #FFF; stroke-width: 0.9;fill:none;"/>
-			</g>
-			
-			<g id="leftSideMesh1">
-				<path d="M232,308
-						  l68,0
-						  l0,15
-						  l-50,0
-						  q-7,0 -18,-15"
-				style="stroke: #1C1C1C; stroke-width: 1;fill:#CFCFCF;"/>
-				
-				<path d="M245,308
-						  l45,0
-						  l0,9
-						  l-30,0
-						  q-8,0 -15,-9"
-				style="stroke: #6F6F6F; stroke-width: 1;fill:#7A7A7D;"/>
-				
-				<path d="M290,308
-						  l10,0
-						  l0,15
-						  l-5,0
-						  l-5,-5z"
-				style="stroke: #333; stroke-width: 1;fill:#333;"/>
 			</g>
 			
 			<g id="leftWindow">
@@ -1356,6 +1358,45 @@
 				  begin="aniStep8.end"/> 
 		</g>
 		
+		<g id="signature" transform="scale(0.7),translate(400,250)">
+			<path d="M810,515
+					  q-35,25 -50,50
+					  c50,-10 50,25 0,35
+					  
+					  M828,550
+					  c-35,-20 -25,59 5,15
+					  c3,-13 -20,-35 2,3
+					  q2,5 5,2
+					  
+					  M848,565
+					  c-15,-30 10,-30 12,-10
+					  c-10,-30 12,-27 15,-2
+					  
+					  M875,530
+					  c20,-15 -15,-15 15,-3
+					  c-11,6 3,27 14,5
+					  
+					  M927,503
+					  c-35,-20 -25,59 5,15
+					  c3,-13 -20,-35 2,3
+					  q2,5 5,2
+					  
+					  M947,518
+					  c10,-65 -30,-65 10,-4
+					  
+					  M935,500
+					  l28,-25"
+			style="stroke: #888; stroke-width:2;fill:none;stroke-dasharray:1000;stroke-dashoffset: 1000;">
+				
+				<animate id=""
+					  attributeName="stroke-dashoffset" 
+					  attributeType="XML"
+					  to="0"
+					  dur="12s"
+					  fill="freeze"
+					  begin="aniStep17.end"/> 
+			</path>
+		</g>
 		
 		<circle cx="" cy="-5" r="4" fill="#F7423B">
 			<animateMotion id="aniStep5" dur="5s" begin="aniStep4.end">
