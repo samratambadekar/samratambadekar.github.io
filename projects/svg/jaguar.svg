@@ -49,7 +49,7 @@
 				  to="1"
 				  dur="0.5s"
 				  fill="freeze"
-				  begin="5s"/> 
+				  begin="1s"/> 
 		</text>
 		<text x="430" y="100" style="opacity:0"
 			font-family="Cookie" font-size="42" fill="#888" >
