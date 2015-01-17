@@ -106,7 +106,7 @@
 		style="stroke: #000; stroke-width: 1;fill:#000;filter:url(#shadow);opacity:0;">		
 			<animate id=""
 				  attributeName="opacity" 
-				  attributeType="XML"
+				  attributeType="CSS"
 				  to="0.7"
 				  dur="1s"
 				  fill="freeze"
@@ -135,7 +135,7 @@
 			</g>
 			<animate id="aniStep12"
 				  attributeName="opacity" 
-				  attributeType="XML"
+				  attributeType="CSS"
 				  to="1"
 				  dur="1.5s"
 				  fill="freeze"
@@ -342,7 +342,7 @@
 			
 			<animate id=""
 				  attributeName="opacity" 
-				  attributeType="XML"
+				  attributeType="CSS"
 				  to="1"
 				  dur="1s"
 				  fill="freeze"
@@ -548,7 +548,7 @@
 			
 			<animate id="aniStep11"
 				  attributeName="opacity" 
-				  attributeType="XML"
+				  attributeType="CSS"
 				  to="1"
 				  dur="1s"
 				  fill="freeze"
@@ -593,7 +593,7 @@
 			
 			<animate id="aniStep15"
 				  attributeName="opacity" 
-				  attributeType="XML"
+				  attributeType="CSS"
 				  to="1"
 				  dur="1s"
 				  fill="freeze"
@@ -638,14 +638,14 @@
 				
 			<animate id=""
 				  attributeName="visibility" 
-				  attributeType="XML"
+				  attributeType="CSS"
 				  to="visible"
 				  dur="0.5s"
 				  fill="freeze"
 				  begin="outline1.click + 1"/>			
 			<animate id=""
 				  attributeName="opacity" 
-				  attributeType="XML"
+				  attributeType="CSS"
 				  to="1"
 				  dur="0.5s"
 				  fill="freeze"
@@ -653,7 +653,7 @@
 
 			<animate id="aniStep10"
 				  attributeName="opacity" 
-				  attributeType="XML"
+				  attributeType="CSS"
 				  to="1"
 				  dur="1s"
 				  fill="freeze"
@@ -661,14 +661,14 @@
 				  
 			<animate id="aniStep16"
 				  attributeName="opacity" 
-				  attributeType="XML"
+				  attributeType="CSS"
 				  to="0"
 				  dur="0.5s"
 				  fill="freeze"
 				  begin="aniStep15.end + 3;outline2.click + 1"/> 
 			<animate id=""
 				  attributeName="visibility" 
-				  attributeType="XML"
+				  attributeType="CSS"
 				  to="hidden"
 				  dur="0.5s"
 				  fill="freeze"
@@ -714,7 +714,7 @@
 				
 				<animate id=""
 					  attributeName="stroke-dashoffset" 
-					  attributeType="XML"
+					  attributeType="CSS"
 					  to="0"
 					  dur="5.1s"
 					  fill="freeze"
@@ -826,7 +826,7 @@
 			
 			<animate id="aniStep6"
 				  attributeName="opacity" 
-				  attributeType="XML"
+				  attributeType="CSS"
 				  to="1"
 				  dur="1s"
 				  fill="freeze"
@@ -942,7 +942,7 @@
 			
 			<animate id="aniStep7"
 				  attributeName="opacity" 
-				  attributeType="XML"
+				  attributeType="CSS"
 				  to="1"
 				  dur="1s"
 				  fill="freeze"
@@ -1171,7 +1171,7 @@
 			
 			<animate id="aniStep8"
 				  attributeName="opacity" 
-				  attributeType="XML"
+				  attributeType="CSS"
 				  to="1"
 				  dur="1s"
 				  fill="freeze"
@@ -1232,7 +1232,7 @@
 			
 			<animate id="aniStep14"
 				  attributeName="opacity" 
-				  attributeType="XML"
+				  attributeType="CSS"
 				  to="0.25"
 				  dur="1s"
 				  fill="freeze"
@@ -1314,7 +1314,7 @@
 			
 			<animate id="aniStep13"
 				  attributeName="opacity" 
-				  attributeType="XML"
+				  attributeType="CSS"
 				  to="1"
 				  dur="1s"
 				  fill="freeze"
@@ -1351,7 +1351,7 @@
 			
 			<animate id="aniStep9"
 				  attributeName="opacity" 
-				  attributeType="XML"
+				  attributeType="CSS"
 				  to="1"
 				  dur="1s"
 				  fill="freeze"
@@ -1390,7 +1390,7 @@
 				
 				<animate id=""
 					  attributeName="stroke-dashoffset" 
-					  attributeType="XML"
+					  attributeType="CSS"
 					  to="0"
 					  dur="12s"
 					  fill="freeze"
