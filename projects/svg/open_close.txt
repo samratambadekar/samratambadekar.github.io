@@ -14,6 +14,7 @@ taps
 umbrella
 laptop
 envelope
+light saber
 
 https://dribbble.com/shots/1867653-Elephant-Mark
 
