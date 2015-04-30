@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=360"/> -->
+    <title>Phone Tools</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+	
+    <!-- LOADING OPEN SANS VIA GOOGLE FONTS TO MAINTAIN CONSISTENCY OF FONT CROSS BROWSER -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- <script type="text/javascript" src="js/js.js"></script> -->
+</head>
+
+<body>
+	<header>
+		<div class="navTop desktop">
+			<div class="left">
+				<span><strong>Residential</strong></span>
+				<img src="images/line.png">
+				<span>Cox Business</span>
+			</div>
+			<div class="right">
+				<span>Contact Us</span>
+				<img src="images/line.png">
+				<span><img class="locationImage" src="images/location.png">Macon, GA</span>
+			</div>
+		</div>
+		<nav>
+			<div class="navMain desktop">
+				<div class="left">
+					<span class="coxLogo"><img src="images/cox.png"></span>
+					<div>Shop</div>
+					<div>My Connection</div>
+					<div>Support</div>
+				</div>
+				<div class="right">
+					<img src="images/search.png">
+					<img src="images/cart.png">
+					<img src="images/profile.png">
+					<div class="signIn">
+						<span class="signInLine">Hi, Christopher!</span>
+						<span class="signInLine">My Account<img src="images/arrow_down_white.png"></span>
+					</div>
+				</div>
+			</div>
+
+			<div id="navigationBar" class="mobile">
+				<div class="marginDiv2">
+					<div id="menuButton">
+						<img src="images/menuIcon.png" id="menuIcon"></img>
+					</div>
+					<div id="logoMain">
+						<img src="images/coxLogoWhite.png"></img>
+					</div>
+					<div id="profileButton">
+						<img src="images/profileIcon.png" id="profileIcon"></img>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<article>
+		<div id="homePage">
+			<div id="serviceOutageAlert" class="mobile">
+				<img class="closeIcon" src="images/close_black.png">
+				<div class="marginT40">
+					<img id="serviceErrorImg" src="images/errorIcon.png">
+					<div class="font20">
+						Service / Outage
+					</div>
+					<div class="font20">
+						Alert Message
+					</div>
+				</div>
+				<div class="hideOption">
+					<input type="checkbox" id="alertDisable">
+					<label for="alertDisable">Don't show this message again</label>
+				</div>
+			</div>
+			<div class="notificationSummary card">
+				<div class="notification">
+					<span class="bigNumber">3</span><span>Missed Calls</span>
+				</div>
+				<div class="notification">
+					<span class="bigNumber">14</span><span>Messages</span>
+				</div>
+				<div class="notification">
+					<span class="bigNumber">16</span><span>Voice Mails</span>
+				</div>
+				<div class="alertNotification">
+					<div><img src="images/warningIcon.png"/></div>
+					<div class="bigNumber">2</div>
+					<div>
+						<span class="clearAlertBar">Voice Mails</span>
+						<span class="clearAlertBar">Pending Deletions</span>
+					</div>
+				</div>
+			</div>
+			<div class="alternateNotificationSummary card hidden">
+				<div class="marginDiv2">
+					<div class="header">
+						3 Missed Calls
+					</div>
+					<div class="alternateNotification">
+						<span class="phNumber left">(201) 842-0142</span><span class="callTime left">4:03 PM</span><span class="callDate right">12/5/14</span>
+					</div>
+					<div class="alternateNotification">
+						<span class="phNumber left">Ashley Rodriguez</span> <span class="callTime left">2:47 PM</span> <span class="callDate right">12/5/14</span>
+					</div>
+					<div class="alternateNotification">
+						<span class="phNumber left">(800) 627-2590</span> <span class="callTime left">11:39 AM</span> <span class="callDate right">12/5/14</span>
+					</div>
+				</div>
+			</div>
+			<div class="menuItems card">
+				<div class="menuItem callHistoryMenu">
+					<span class="accordionOpen">+</span><!-- <img src="images/order.png"/> --> <span class="menuItemText">Call History (10 New Calls)</span> <span class="rightArrow"></span>
+				</div>				
+				<div id="callHistoryPage">					
+					<div class="callHistoryOptionsTabs">		
+						<div class="callHistroyTab left tab tabSelected">
+							Calls History (10)	
+						</div>
+						<div class="voicemailTab left tab">
+							Voice Mail (16)
+						</div>
+						<div class="desktop">
+							desktop(16)
+						</div>
+					</div>
+					<div class="callHistory">
+						<div class="callTypeFilter mobile">
+							<span>
+								<input type="radio" name="filterCallType" id="filterAllCalls" checked>
+								<label for="filterAllCalls">All</label>
+								<input type="radio" name="filterCallType" id="filterMissedCalls">
+								<label for="filterMissedCalls">Missed</label>
+							</span>
+						</div>
+						<div class="missedCallsList">
+							<div class="dayFilters mobile">
+								<span class="left">
+									<input type="radio" name="radioCall" id="callFilter7" checked>
+									<label for="callFilter7">7 Days</label>
+								</span>
+								<span class="left">
+									<input type="radio" name="radioCall" id="callFilter30">
+									<label for="callFilter30">30 Days</label>
+								</span>
+								<span class="left">
+									<input type="radio" name="radioCall" id="callFilter60">
+									<label for="callFilter60">60 Days</label>
+								</span>
+								<div id="editCallList" class="right">
+									Edit
+								</div>
+							</div>
+							<div class="marginDiv2">								
+								<div class="callHistoryHeader desktop">
+									<span class="">Add Contact</span>
+									<span class="">Calls <img src="images/arrow_down_blue.png"/></span>
+									<span class="">Time <img src="images/arrow_down_blue.png"/></span>
+									<span class="">Date <img src="images/arrow_down_blue.png"/></span>
+									<span class="">Duration <img src="images/arrow_down_blue.png"/></span>
+									<span class="">Voice Mail <img src="images/arrow_down_blue.png"/></span>
+								</div>
+								<div class="callHistoryLine isMissedCall">
+									<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">Regina Watson</span>
+									<span class="callTime">7:23 PM</span>
+									<span class="callDate">04/13</span>
+									<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
+									<div class="editCallInfo isExistingContact">
+										<div class="btnEditContact">Edit Contact</div>
+									</div>
+								</div>
+								<div class="callHistoryLine">
+									<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">(404) 221-4340</span>
+									<span class="callTime">10:35 PM</span>
+									<span class="callDate">04/13</span>
+									<span class="vmDuration">2:14</span>
+									<div class="editCallInfo">
+										<div class="btnCreateContact">Create New Contact</div>
+										<div class="btnUpdateContact">Update Existing Contact</div>
+									</div>
+								</div>
+								<div class="callHistoryLine isOutGoingCall">
+									<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+									<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+									<span class="phNumber">(201) 842-0142</span>
+									<span class="callTime">2:01 PM</span>
+									<span class="callDate">04/13</span>
+									<span class="vmDuration">00:53</span>
+									<div class="editCallInfo">
+										<div class="btnCreateContact">Create New Contact</div>
+										<div class="btnUpdateContact">Update Existing Contact</div>
+									</div>
+								</div>
+								<div class="callHistoryLine isMissedCall">
+									<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">(212) 672-6272</span>
+									<span class="callTime">4:42 PM</span>
+									<span class="callDate">04/10</span>
+									<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
+									<div class="editCallInfo">
+										<div class="btnCreateContact">Create New Contact</div>
+										<div class="btnUpdateContact">Update Existing Contact</div>
+									</div>
+								</div>
+								<div class="callHistoryLine isOutGoingCall">
+									<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+									<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+									<span class="phNumber">Ashley Wingfield</span>
+									<span class="callTime">9:03 AM</span>
+									<span class="callDate">04/10</span>
+									<span class="vmDuration">0:28</span>
+									<div class="editCallInfo isExistingContact">
+										<div class="btnEditContact">Edit Contact</div>
+									</div>
+								</div>
+								<div class="callHistoryLine isMissedCall">
+									<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">Ben Johnson</span>
+									<span class="callTime">9:57 AM</span>
+									<span class="callDate">04/7</span>
+									<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
+									<div class="editCallInfo isExistingContact">
+										<div class="btnEditContact">Edit Contact</div>
+									</div>
+								</div>
+
+								<div class="listCalls30Days hidden">
+									<div class="callHistoryLine isMissedCall">
+										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">Regina Watson</span>
+										<span class="callTime">7:23 PM</span>
+										<span class="callDate">04/7</span>
+										<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+									</div>
+									<div class="callHistoryLine">
+										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">(404) 221-4340</span>
+										<span class="callTime">10:35 PM</span>
+										<span class="callDate">04/7</span>
+										<span class="vmDuration">2:14</span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isOutGoingCall">
+										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+										<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+										<span class="phNumber">(201) 842-0142</span>
+										<span class="callTime">2:01 PM</span>
+										<span class="callDate">04/3</span>
+										<span class="vmDuration">00:53</span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isMissedCall">
+										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">(212) 672-6272</span>
+										<span class="callTime">4:42 PM</span>
+										<span class="callDate">04/3</span>
+										<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isOutGoingCall">
+										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+										<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+										<span class="phNumber">Ashley Wingfield</span>
+										<span class="callTime">9:03 AM</span>
+										<span class="callDate">04/3</span>
+										<span class="vmDuration">0:28</span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isMissedCall">
+										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">Ben Johnson</span>
+										<span class="callTime">9:57 AM</span>
+										<span class="callDate">04/3</span>
+										<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="listCalls60Days hidden">
+									<div class="callHistoryLine isMissedCall">
+										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">Regina Watson</span>
+										<span class="callTime">7:23 PM</span>
+										<span class="callDate">03/27</span>
+										<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+									</div>
+									<div class="callHistoryLine">
+										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">(404) 221-4340</span>
+										<span class="callTime">10:35 PM</span>
+										<span class="callDate">03/27</span>
+										<span class="vmDuration">2:14</span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isOutGoingCall">
+										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+										<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+										<span class="phNumber">(201) 842-0142</span>
+										<span class="callTime">2:01 PM</span>
+										<span class="callDate">03/27</span>
+										<span class="vmDuration">00:53</span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isMissedCall">
+										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">(212) 672-6272</span>
+										<span class="callTime">4:42 PM</span>
+										<span class="callDate">03/25</span>
+										<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isOutGoingCall">
+										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+										<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+										<span class="phNumber">Ashley Wingfield</span>
+										<span class="callTime">9:03 AM</span>
+										<span class="callDate">03/25</span>
+										<span class="vmDuration">0:28</span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isMissedCall">
+										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">Ben Johnson</span>
+										<span class="callTime">9:57 AM</span>
+										<span class="callDate">03/25</span>
+										<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="voicemailHistory hidden">
+						<div class="full searchBox">
+							<input type="text" placeholder="Search"/>
+							<img src="images/searchIcon.png"/>
+						</div>
+						
+						<div class="missedVMsList">
+							<div class="marginDiv2">							
+								<div class="dayFilters">
+									<span class="left">
+										<input type="radio" name="radioVM" id="vmFilter7" checked>
+										<label for="vmFilter7">7 Days</label>
+									</span>
+									<span class="left">
+										<input type="radio" name="radioVM" id="vmFilter30">
+										<label for="vmFilter30">30 Days</label>
+									</span>
+									<span class="left">
+										<input type="radio" name="radioVM" id="vmFilterSaved">
+										<label for="vmFilterSaved">Saved</label>
+									</span>
+									<div id="editVMList" class="right">
+										Edit
+									</div>
+								</div>
+								<div class="voiceMailLine">
+									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="phNumber">(404) 221-4340</span>
+									<span class="callTime">10:35 PM</span>
+									<span class="callDate">12/5</span>
+									<span class="vmDuration">2:14</span>
+
+									<div class="voicemailTranscript">
+										<div class="vmTranscriptText">
+											<p>Not sure if you heard the change of plans. Larry got sick and so we won't be going to dinner tonight.
+											Sorry for the late notice. Let's catch up this weekend.
+											Bye
+											</p>
+											<div class="vmRateTranscript">												
+												<img class="thumbsUp" src="images/thumbsUp.png">
+												<span>Rate this transcript</span>
+												<img class="thumbsDown" src="images/thumbsDown.png">
+											</div>
+										</div>
+										<div class="vmControls">
+											<span class="vmPlayPause"><span class="pauseButton"></span></span> 
+											<span class="vmSeeker"><input type="range" value="20" min="0" max="100"/></span> 
+											<span class="vmProgress">0:13/1:16</span>
+										</div>
+										<div class="vmFlagOverlay">
+											<!-- <img class="closeIcon" src="images/close_white.png"> -->
+											<div>Mark Voice Mail</div>
+											<div class="switch">
+												<input id="vmF1" class="toggle toggle-round" type="checkbox">
+												<label for="vmF1" data-on="Unread" data-off="Read"></label>
+											</div>
+											<div>
+												<div class="button sendButton">Done</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmForwardOverlay">
+											<div>Forward a copy of this voice mail:</div>
+											<div>
+												<div class="searchAddUser">
+													<input type="text">
+													<img src="images/address.png"/>
+												</div>
+												<div class="button addButton">Add</div>
+											</div>
+											<select name="forwardType">
+												<option value="audioNText" selected>Audio & Text</option>
+												<option value="audio">Audio</option>
+												<option value="text">Text</option>
+											</select>
+											<div>
+												<div class="button sendButton">Send</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmDeleteOverlay">
+											<div>Deleted voice mails cannot be retrieved. Are you sure you want to delete?</div>
+											<div>
+												<div class="button deleteButton">Delete</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmOptions">
+											<div class="vmFlag">Flag</div>
+											<div class="vmSave">Save</div>
+											<div class="vmForward">Forward</div>
+											<div class="vmDownload">Download</div>
+											<div class="vmDelete">Delete</div>
+										</div>
+									</div>
+								</div>
+								<div class="voiceMailLine">
+									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="phNumber">Regina Watson</span>
+									<span class="callTime">7:23 PM</span>
+									<span class="callDate">12/5</span>
+									<span class="vmDuration">3:27</span>
+
+									<div class="voicemailTranscript">
+										<div class="vmTranscriptText">
+											<p>Hey, this is Regina. I wanted to tale you that I got the chickens. Call we back when you great this message. Ladder.
+											</p>
+											<div class="vmRateTranscript">												
+												<img class="thumbsUp" src="images/thumbsUp.png">
+												<span>Rate this transcript</span>
+												<img class="thumbsDown" src="images/thumbsDown.png">
+											</div>
+										</div>
+										<div class="vmControls">
+											<span class="vmPlayPause"><span class="pauseButton"></span></span> <span class="vmSeeker"><input type="range" value="20" min="0" max="100"/></span> <span class="vmProgress">0:13/1:16</span>
+										</div>
+										<div class="vmFlagOverlay">
+											<div>Mark Voice Mail</div>
+											<div class="switch">
+												<input id="vmF2" class="toggle toggle-round" type="checkbox">
+												<label for="vmF2" data-on="Unread" data-off="Read"></label>
+											</div>
+											<div>
+												<div class="button sendButton">Done</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmForwardOverlay">
+											<div>Forward a copy of this voice mail:</div>
+											<div>
+												<div class="searchAddUser">
+													<input type="text">
+													<img src="images/address.png"/>
+												</div>
+												<div class="button addButton">Add</div>
+											</div>
+											<select name="forwardType">
+												<option value="audioNText" selected>Audio & Text</option>
+												<option value="audio">Audio</option>
+												<option value="text">Text</option>
+											</select>
+											<div>
+												<div class="button sendButton">Send</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmDeleteOverlay">
+											<div>Deleted voice mails cannot be retrieved. Are you sure you want to delete?</div>
+											<div>
+												<div class="button deleteButton">Delete</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmOptions">
+											<div class="vmFlag">Flag</div>
+											<div class="vmSave">Save</div>
+											<div class="vmForward">Forward</div>
+											<div class="vmDownload">Download</div>
+											<div class="vmDelete">Delete</div>
+										</div>
+									</div>
+								</div>
+								<div class="voiceMailLine">
+									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="phNumber">(212) 672-6272</span>
+									<span class="callTime">4:42 PM</span>
+									<span class="callDate">12/5</span>
+									<span class="vmDuration">6:42</span>
+
+									<div class="voicemailTranscript">
+										<div class="vmTranscriptText">
+											<p>Not sure if you heard the change of plans. Larry got sick and so we won't be going to dinner tonight.
+											Sorry for the late notice. Let's catch up this weekend.
+											Bye
+											</p>
+											<div class="vmRateTranscript">												
+												<img class="thumbsUp" src="images/thumbsUp.png">
+												<span>Rate this transcript</span>
+												<img class="thumbsDown" src="images/thumbsDown.png">
+											</div>							
+										</div>
+										<div class="vmControls">
+											<span class="vmPlayPause"><span class="pauseButton"></span></span> <span class="vmSeeker"><input type="range" value="20" min="0" max="100"/></span> <span class="vmProgress">0:13/1:16</span>
+										</div>
+										<div class="vmFlagOverlay">
+											<div>Mark Voice Mail</div>
+											<div class="switch">
+												<input id="vmF3" class="toggle toggle-round" type="checkbox">
+												<label for="vmF3" data-on="Unread" data-off="Read"></label>
+											</div>
+											<div>
+												<div class="button sendButton">Done</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmForwardOverlay">
+											<div>Forward a copy of this voice mail:</div>
+											<div>
+												<div class="searchAddUser">
+													<input type="text">
+													<img src="images/address.png"/>
+												</div>
+												<div class="button addButton">Add</div>
+											</div>
+											<select name="forwardType">
+												<option value="audioNText" selected>Audio & Text</option>
+												<option value="audio">Audio</option>
+												<option value="text">Text</option>
+											</select>
+											<div>
+												<div class="button sendButton">Send</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmDeleteOverlay">
+											<div>Deleted voice mails cannot be retrieved. Are you sure you want to delete?</div>
+											<div>
+												<div class="button deleteButton">Delete</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmOptions">
+											<div class="vmFlag">Flag</div>
+											<div class="vmSave">Save</div>
+											<div class="vmForward">Forward</div>
+											<div class="vmDownload">Download</div>
+											<div class="vmDelete">Delete</div>
+										</div>
+									</div>
+								</div>
+								<div class="voiceMailLine">
+									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="phNumber">(201) 842-0142</span>
+									<span class="callTime">2:01 PM</span>
+									<span class="callDate">12/5</span>
+									<span class="vmDuration">00:53</span>
+
+									<div class="voicemailTranscript">
+										<div class="vmTranscriptText">
+											<p>Not sure if you heard the change of plans. Larry got sick and so we won't be going to dinner tonight.
+											Sorry for the late notice. Let's catch up this weekend.
+											Bye
+											</p>
+											<div class="vmRateTranscript">												
+												<img class="thumbsUp" src="images/thumbsUp.png">
+												<span>Rate this transcript</span>
+												<img class="thumbsDown" src="images/thumbsDown.png">
+											</div>							
+										</div>
+										<div class="vmControls">
+											<span class="vmPlayPause"><span class="pauseButton"></span></span> <span class="vmSeeker"><input type="range" value="20" min="0" max="100"/></span> <span class="vmProgress">0:13/1:16</span>
+										</div>
+										<div class="vmFlagOverlay">
+											<div>Mark Voice Mail</div>
+											<div class="switch">
+												<input id="vmF4" class="toggle toggle-round" type="checkbox">
+												<label for="vmF4" data-on="Unread" data-off="Read"></label>
+											</div>
+											<div>
+												<div class="button sendButton">Done</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmForwardOverlay">
+											<div>Forward a copy of this voice mail:</div>
+											<div>
+												<div class="searchAddUser">
+													<input type="text">
+													<img src="images/address.png"/>
+												</div>
+												<div class="button addButton">Add</div>
+											</div>
+											<select name="forwardType">
+												<option value="audioNText" selected>Audio & Text</option>
+												<option value="audio">Audio</option>
+												<option value="text">Text</option>
+											</select>
+											<div>
+												<div class="button sendButton">Send</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmDeleteOverlay">
+											<div>Deleted voice mails cannot be retrieved. Are you sure you want to delete?</div>
+											<div>
+												<div class="button deleteButton">Delete</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmOptions">
+											<div class="vmFlag">Flag</div>
+											<div class="vmSave">Save</div>
+											<div class="vmForward">Forward</div>
+											<div class="vmDownload">Download</div>
+											<div class="vmDelete">Delete</div>
+										</div>
+									</div>
+								</div>
+								<div class="voiceMailLine">
+									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="phNumber">Ben Johnson</span>
+									<span class="callTime">9:57 AM</span>
+									<span class="callDate">12/5</span>
+									<span class="vmDuration">1:37</span>
+
+									<div class="voicemailTranscript">
+										<div class="vmTranscriptText">
+											<p>Not sure if you heard the change of plans. Larry got sick and so we won't be going to dinner tonight.
+											Sorry for the late notice. Let's catch up this weekend.
+											Bye
+											</p>
+											<div class="vmRateTranscript">												
+												<img class="thumbsUp" src="images/thumbsUp.png">
+												<span>Rate this transcript</span>
+												<img class="thumbsDown" src="images/thumbsDown.png">
+											</div>							
+										</div>
+										<div class="vmControls">
+											<span class="vmPlayPause"><span class="pauseButton"></span></span> <span class="vmSeeker"><input type="range" value="20" min="0" max="100"/></span> <span class="vmProgress">0:13/1:16</span>
+										</div>
+										<div class="vmFlagOverlay">
+											<div>Mark Voice Mail</div>
+											<div class="switch">
+												<input id="vmF5" class="toggle toggle-round" type="checkbox">
+												<label for="vmF5" data-on="Unread" data-off="Read"></label>
+											</div>
+											<div>
+												<div class="button sendButton">Done</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmForwardOverlay">
+											<div>Forward a copy of this voice mail:</div>
+											<div>
+												<div class="searchAddUser">
+													<input type="text">
+													<img src="images/address.png"/>
+												</div>
+												<div class="button addButton">Add</div>
+											</div>
+											<select name="forwardType">
+												<option value="audioNText" selected>Audio & Text</option>
+												<option value="audio">Audio</option>
+												<option value="text">Text</option>
+											</select>
+											<div>
+												<div class="button sendButton">Send</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmDeleteOverlay">
+											<div>Deleted voice mails cannot be retrieved. Are you sure you want to delete?</div>
+											<div>
+												<div class="button deleteButton">Delete</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmOptions">
+											<div class="vmFlag">Flag</div>
+											<div class="vmSave">Save</div>
+											<div class="vmForward">Forward</div>
+											<div class="vmDownload">Download</div>
+											<div class="vmDelete">Delete</div>
+										</div>
+									</div>
+								</div>
+								<div class="voiceMailLine">
+									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="phNumber">Ashley Wingfield</span>
+									<span class="callTime">9:03 AM</span>
+									<span class="callDate">12/5</span>
+									<span class="vmDuration">0:28</span>
+
+									<div class="voicemailTranscript">
+										<div class="vmTranscriptText">
+											<p>Not sure if you heard the change of plans. Larry got sick and so we won't be going to dinner tonight.
+											Sorry for the late notice. Let's catch up this weekend.
+											Bye
+											</p>
+											<div class="vmRateTranscript">												
+												<img class="thumbsUp" src="images/thumbsUp.png">
+												<span>Rate this transcript</span>
+												<img class="thumbsDown" src="images/thumbsDown.png">
+											</div>
+										</div>
+										<div class="vmControls">
+											<span class="vmPlayPause"><span class="pauseButton"></span></span> <span class="vmSeeker"><input type="range" value="20" min="0" max="100"/></span> <span class="vmProgress">0:13/1:16</span>
+										</div>
+										<div class="vmFlagOverlay">
+											<div>Mark Voice Mail</div>
+											<div class="switch">
+												<input id="vmF6" class="toggle toggle-round" type="checkbox">
+												<label for="vmF6" data-on="Unread" data-off="Read"></label>
+											</div>
+											<div>
+												<div class="button sendButton">Done</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmForwardOverlay">
+											<div>Forward a copy of this voice mail:</div>
+											<div>
+												<div class="searchAddUser">
+													<input type="text">
+													<img src="images/address.png"/>
+												</div>
+												<div class="button addButton">Add</div>
+											</div>
+											<select name="forwardType">
+												<option value="audioNText" selected>Audio & Text</option>
+												<option value="audio">Audio</option>
+												<option value="text">Text</option>
+											</select>
+											<div>
+												<div class="button sendButton">Send</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmDeleteOverlay">
+											<div>Deleted voice mails cannot be retrieved. Are you sure you want to delete?</div>
+											<div>
+												<div class="button deleteButton">Delete</div>
+												<div class="button cancelButton cancelVMOverlay">Cancel</div>
+											</div>
+										</div>
+										<div class="vmOptions">
+											<div class="vmFlag">Flag</div>
+											<div class="vmSave">Save</div>
+											<div class="vmForward">Forward</div>
+											<div class="vmDownload">Download</div>
+											<div class="vmDelete">Delete</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+				
+				<div class="menuItem textMessageMenu">
+					<span class="accordionOpen">+</span> <!-- <img src="images/message.png"/> --> <span class="menuItemText">Messages</span> <span class="rightArrow"></span>
+				</div>
+				<div id="textMessagePage">
+					<div class="textMessages">
+						<div class="textMessage">
+							<div class="textMessageLine1">
+								<div class="textMessageSenderName half left">Karen Mattison
+								</div>
+								<div class="textMessageReceivedTime half right">3:16 PM
+								</div>
+							</div>
+							<div class="textMessageLine2">
+								<div class="textMessageExcerpt">We'll be there in 5 minutes
+								</div>
+								<div class="textMessageAttachmentsIcon">
+									<img src="images/attachment.png"/>
+								</div>
+							</div>
+						</div>
+						
+						<div class="textMessage">
+							<div class="textMessageLine1">
+								<div class="textMessageSenderName half left">Dale Allen
+								</div>
+								<div class="textMessageReceivedTime half right">11:19 PM
+								</div>
+							</div>
+							<div class="textMessageLine2">
+								<div class="textMessageExcerpt">I didn't get the package. Can you resend?
+								</div>
+								<div class="textMessageAttachmentsIcon">
+								</div>
+							</div>
+						</div>
+						
+						<div class="textMessage">
+							<div class="textMessageLine1">
+								<div class="textMessageSenderName half left">Lawrence Welk
+								</div>
+								<div class="textMessageReceivedTime half right">11:31 PM
+								</div>
+							</div>
+							<div class="textMessageLine2">
+								<div class="textMessageExcerpt">Oh, I love that song...
+								</div>
+								<div class="textMessageAttachmentsIcon">
+								</div>
+							</div>
+						</div>
+						
+						<div class="textMessage">
+							<div class="textMessageLine1">
+								<div class="textMessageSenderName half left">Larry Hagman
+								</div>
+								<div class="textMessageReceivedTime half right">11:45 PM
+								</div>
+							</div>
+							<div class="textMessageLine2">
+								<div class="textMessageExcerpt">There is something you need to know
+								</div>
+								<div class="textMessageAttachmentsIcon">
+									<img src="images/attachment.png"/>
+								</div>
+							</div>
+						</div>
+						
+						<div class="textMessage">
+							<div class="textMessageLine1">
+								<div class="textMessageSenderName half left">Allen Dulles
+								</div>
+								<div class="textMessageReceivedTime half right">Yesterday
+								</div>
+							</div>
+							<div class="textMessageLine2">
+								<div class="textMessageExcerpt">I'm not sure. Let me get back to you.
+								</div>
+								<div class="textMessageAttachmentsIcon">
+								</div>
+							</div>
+						</div>
+						
+						<div class="textMessage">
+							<div class="textMessageLine1">
+								<div class="textMessageSenderName half left">Andrew Davis
+								</div>
+								<div class="textMessageReceivedTime half right">Yesterday
+								</div>
+							</div>
+							<div class="textMessageLine2">
+								<div class="textMessageExcerpt">Can you bring me a new set of designs to review?
+								</div>
+								<div class="textMessageAttachmentsIcon">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="menuItem addressBookMenu">
+					<span class="accordionOpen">+</span> <!-- <img src="images/address.png"/> --> <span class="menuItemText">Address Book </span> <span class="rightArrow"></span>
+				</div>
+				<div id="addressBookPage">
+				</div>
+				
+				<div class="menuItem settingsMenu">
+					<span class="accordionOpen">+</span> <!-- <img src="images/settings.png"/> --> <span class="menuItemText">Settings </span> <span class="rightArrow"></span>
+				</div>
+				<div id="settingsPage">
+					<div class="settingsMenuItem">
+						<div class="left">
+							Voice Mail
+						</div>
+						<div class="left settingsHelp forVoicemailHelp">
+							<img src="images/help.png"/>
+						</div>
+						<div class="switch right">
+							<input id="settingsToggle1" class="toggle toggle-round" type="checkbox" checked>
+							<label for="settingsToggle1" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div id="voicemailSettings">
+						<div class="marginDiv2">
+							<div class="inputLabel blueColor">Change Voice Mail PIN</div>
+							<div class="inputLabel">Enter new PIN <img class="helpQuestion" src="images/help.png"/></div>
+							<input type="password" maxlength="8">
+							<div class="inputLabel">Confirm new PIN</div>
+							<input type="password" maxlength="8">
+							<div class="vmSettingButtons">
+								<div class="button saveButton">Save</div>
+								<div class="button cancelButton">Cancel</div>
+							</div>
+						</div>
+						<div class="pinHelpInstr hidden">
+							<div class="topArrowDiv"></div>
+							<div class="voicemailHelpHead">
+								PIN Help
+							</div>
+							<div class="">
+								<ul>
+									<li>PIN must be 4-8 digits</li>
+									<li>PIN cannot be a forward or reverse number sequence (1234 or 8765)</li>
+									<li>PIN cannot be repeating numbers</li>
+									<li>PIN must not match the last 4 or 7 digits of the Mailbox's primary or secondary phone number or be a digit followed by zeroes</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="voicemailSettingsConflict">
+						<div class="vmConflictInstr">
+							Activating voice mail requires that you to disable call forwarding.
+						</div>
+						<div class="">
+							<div id="btnDeacvtivateCf" class="button sendButton">Activate Voice Mail</div>
+							<div id="btnKeepCfOn" class="button cancelButton">Keep Call Forwarding On</div>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div class="left">
+							Call Forwarding
+						</div>
+						<div class="left settingsHelp forCallForwardingHelp">
+							<img src="images/help.png"/>
+						</div>
+						<div class="switch right">
+							<input id="settingsToggle2" class="toggle toggle-round" type="checkbox">
+							<label for="settingsToggle2" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div id="callForwardingSettingsConflict">
+						<div class="callForwardingInstr">
+							Activating call forwarding requires that you turn off voice mail.
+						</div>
+						<div class="">
+							<div id="btnDeacvtivateVm" class="button sendButton">Activate Call Forwarding</div>
+							<div id="btnKeepVmOn" class="button cancelButton">Keep Voice Mail On</div>
+						</div>
+					</div>
+					<div id="callForwardTo">
+						<div>Forward calls to:</div>
+						<div>
+							<div class="searchAddUser">
+								<input type="text">
+								<img src="images/address.png"/>
+							</div>
+							<div class="button addButton">Add</div>
+						</div>
+						<div>
+							<div id="cfDoneButton" class="button sendButton">Done</div>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div class="left">
+							Simultaneous Ringing
+						</div>
+						<div class="left settingsHelp">
+							<img src="images/help.png"/>
+						</div>
+						<div class="switch right">
+							<input id="settingsToggle3" class="toggle toggle-round" type="checkbox">
+							<label for="settingsToggle3" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div class="left">
+							Call Waiting
+						</div>
+						<div class="left settingsHelp">
+							<img src="images/help.png"/>
+						</div>
+						<div class="switch right">
+							<input id="settingsToggle4" class="toggle toggle-round" type="checkbox">
+							<label for="settingsToggle4" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div class="left">
+							Do Not Disturb
+						</div>
+						<div class="left settingsHelp">
+							<img src="images/help.png"/>
+						</div>
+						<div class="switch right">
+							<input id="settingsToggle5" class="toggle toggle-round" type="checkbox">
+							<label for="settingsToggle5" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div class="left">
+							Caller ID
+						</div>
+						<div class="left settingsHelp">
+							<img src="images/help.png"/>
+						</div>
+						<div class="switch right">
+							<input id="settingsToggle6" class="toggle toggle-round" type="checkbox">
+							<label for="settingsToggle6" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div class="left">
+							Security
+						</div>
+						<div class="left settingsHelp">
+							<img src="images/help.png"/>
+						</div>
+						<div class="switch right">
+							<span class="rightArrow"></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="menuItem helpMenu">
+					<span class="accordionOpen">+</span> <!-- <img src="images/help.png"/> --> <span class="menuItemText">Help </span> <span class="rightArrow"></span>
+				</div>
+				<div id="helpPage">
+				</div>
+			</div>
+			<div class="bottomBanner card mobile">
+				<img src="images/bottomBanner.png">
+			</div>
+		</div>
+	</article>
+	<footer>
+		<img class="desktop" src="images/pageFooter.png">
+	</footer>
+</body>
+
+<script>
+	//  ONLOAD CODE
+	$(document).ready(function() {
+		// IF MOBILE
+		//if ($(window).width() <= 480) {
+			// LOADING MOBILE JS SCRIPT
+			function loadScript(url, callback) {
+				// Adding the script tag to the head as suggested before
+				var head = document.getElementsByTagName('head')[0];
+				var script = document.createElement('script');
+				script.type = 'text/javascript';
+				script.src = 'js/js.js';
+
+				// Then bind the event to the callback function.
+				// There are several events for cross browser compatibility.
+				script.onreadystatechange = callback;
+				script.onload = callback;
+
+				// Fire the loading
+				head.appendChild(script);
+			}
+
+			loadScript();
+	});
+	
+</script>
+<!-- END MOBILE -->
+
+</html>

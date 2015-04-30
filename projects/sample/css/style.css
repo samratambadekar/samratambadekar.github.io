@@ -1,0 +1,1234 @@
+
+	* {
+		-webkit-transition: all 0.3s ease-in-out;
+		   -o-transition: all 0.3s ease-in-out;
+			  transition: all 0.3s ease-in-out;
+		-webkit-animation: all 0.5s ease-in;
+		   -o-animation: all 0.5s ease-in;
+			  animation: all 0.5s ease-in;
+			  
+		box-sizing: border-box;
+	}
+	
+/* DESKTOP */
+@media screen and (min-width: 481px) {
+
+	.mobile { /* USING THIS FOR EFFECTIVE TRANSITION */
+		display: none;
+	}
+	
+	article {
+		margin: 0 auto;
+		max-width: 960px;
+	}
+	
+	header {
+		background-color: #00192A;
+		min-width: 768px; 
+	}
+	header .navTop {
+		max-width: 960px;
+		color: #FFF;
+		overflow: hidden;
+		margin: auto; 
+	}
+	header .navTop div {
+		display: inline-block;
+		margin-top: 5px;
+		height: 30px; 
+	}
+	header .navTop span {
+		margin: 0 10px; 
+	}
+	header .locationImage {
+		margin-right: 8px; 
+	}
+	
+	nav {
+		color: #FFF;
+		font-size: 20px;
+		height: 80px;
+		line-height: 80px;
+		min-width: 768px;
+		vertical-align: middle;
+		background: -webkit-linear-gradient(#0679CA, #045690);
+		background: -o-linear-gradient(#0679CA, #045690);
+		background: -moz-linear-gradient(#0679CA, #045690);
+		background: linear-gradient(#0679CA, #045690); 
+	}
+	nav .navMain {
+		position: relative;
+		max-width: 960px;
+		min-width: 768px;
+		width: 100%;
+		overflow: hidden;
+		margin: auto; 
+	}
+	nav .navMain div {
+		display: inline-block;
+		margin-left: 15px; 
+	}
+	nav .navMain div:first-child {
+		margin-left: 10px; 
+	}
+	nav .navMain img {
+		position: relative;
+		top: 5px; 
+	}
+	nav .navMain .right img {
+		margin: 0 15px; 
+	}
+	
+	.coxLogo {
+		position: relative;
+		top: 8px; 
+	}
+
+	.signIn {
+		position: relative;
+		top: 8px; 
+	}
+
+	.signInLine {
+		line-height: 25px;
+		display: block;
+		font-size: 16px; 
+	}
+
+	.signInLine:last-child {
+		font-weight: bold; 
+	}
+
+	.signInLine img {
+		position: relative;
+		top: 0px !important; 
+	}
+	
+	.card {
+		width: 100%;
+		margin: 20px auto;
+	}
+	
+	.tab {
+		max-width: 200px;
+	}
+	
+	.callHistoryHeader {
+		color: #437AB2;
+		font-size: 0px; /* hack for spacing in width */
+	}
+	.callHistoryHeader span {
+		display: inline-block;
+		font-size: 16px;
+		width: 14%;
+		min-width: 92px;
+	}
+	.callHistoryHeader span:nth-child(2) {
+		width: 25%;
+	}
+}
+
+/* TABLET */
+@media screen and (min-width: 481px) and (max-width: 960px) {	
+	.card {
+		width: 95%;
+		min-width: 645px;
+		margin: 20px auto;
+	}
+}
+
+/* MOBILE */
+@media screen and (max-width: 480px) {
+	.desktop { /* USING THIS FOR EFFECTIVE TRANSITION */
+		display: none;
+	}
+	
+	article {
+		margin: 0;
+		max-width: 480px;
+	}
+	
+	header {
+		background-color: #00192A;
+	}
+	nav {
+		color: #FFF;
+		font-size: 20px;
+		width: 100%;
+		z-index: 10;
+	}
+	
+	#navigationBar {
+		width: 100%;
+		height: 45px;
+		color: #FFF;
+		overflow: hidden;
+		background: -webkit-linear-gradient(#245590, #437AB2); 
+		background: -o-linear-gradient(#245590, #437AB2); 
+		background: -moz-linear-gradient(#245590, #437AB2); 
+		background: linear-gradient(#245590, #437AB2); 
+	}
+	
+	#businessType {
+		/* margin: 5px 0; */
+		height: 25px;
+		line-height: 25px;
+		color: #FFF;
+		background: #04214A;
+	}
+	#menuButton {
+		display: inline-block;
+		text-align: left;
+		float: left;
+		/* width: 36px; */
+		cursor: pointer;
+		margin: 10px 0;
+		border-right: 1px solid #FFF;
+		/* background:linear-gradient(to bottom, #fff 0%, #fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%, #fff 100%); */
+	}
+	#menuIcon {
+		margin-right: 10px;
+	}
+	
+	#logoMain {
+		display: inline-block;
+		width: 80%;
+		margin: 10px auto;
+		/* margin-right: 3%; */
+		text-align: center;
+	}
+	
+	#profileButton {
+		display: inline-block;
+		float: right;
+		text-align: right;
+		margin: 10px 0;
+		cursor: pointer;
+	}
+
+	.card {
+		width: 100%;
+		margin: 10px auto;
+	}
+	
+	.tab {
+		max-width: 240px;
+	}
+	
+	.ripple {
+		display: block; 
+		position: absolute;
+		background: #EEE;
+		/* background: hsl(180, 40%, 80%); */
+		border-radius: 100%;
+		transform: scale(0);
+		-webkit-transform: scale(0);
+		
+		/* disable transitions */
+		-webkit-transition: all 0s ease-in-out;
+		   -o-transition: all 0s ease-in-out;
+			  transition: all 0s ease-in-out;
+	}
+	/*animation effect*/
+	.animate {
+		-webkit-animation: ripple 0.85s ease-in;
+		animation: ripple 0.85s ease-in;
+	}	
+	@-webkit-keyframes ripple {
+		/*scale the element to 250% to safely cover the entire link and fade it out*/
+		100% {opacity: 0; -webkit-transform: scale(3.0);}
+	}
+	@keyframes ripple {
+		/*scale the element to 250% to safely cover the entire link and fade it out*/
+		100% {opacity: 0; transform: scale(3.0);}
+	}
+}
+
+
+	body {
+		font-family: "Open Sans";
+		font-size: 14px;
+		min-width: 320px;
+		background-color: #FAFAFA;
+		margin: 0;
+		padding: 0;
+		color: #333;
+	}
+	article {
+		/* max-width: 480px; */
+		text-align: center;
+		cursor: default;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+	}
+	
+	footer img {
+		width: 100%;
+		min-width: 950px; 
+	}
+
+	.marginDiv2 {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.card {
+		box-shadow: 0px 0px 3px #666;
+	}
+
+	.hidden {
+		display: none;
+	}
+	
+	.bottomBanner img {
+		width: 100%;
+	}
+		
+	.alternateNotificationSummary {
+		background-color: #DDD;
+		height: 220px;
+		overflow: auto;
+		/* margin: 10px 0; */
+		background-color: #FFF;
+		/* box-shadow: 0px 0px 3px #666; */
+	}	
+	.alternateNotificationSummary .header {display: block;
+		width: 100%;
+		height: 60px;
+		font-size: 22px;
+		font-weight: bold;
+		line-height: 60px;				
+	}	
+	.alternateNotification {
+		display: block;
+		/* width: 100%; */
+		height: 50px;
+		text-align: left;
+		line-height: 50px;
+		border-top: 1px solid #BCBCBC;
+		
+	}	
+	.alternateNotification .phNumber{
+		color: #F00;
+		width: 55%;
+	}
+	.notificationSummary {
+		/* width: 100%; */
+		/* margin: 10px auto; */
+		font-size: 0px;
+		/* height: 193px; */
+		overflow: hidden;
+		background-color: #FFF;
+		/* box-shadow: 0px 0px 3px #666; */
+	}
+	.alertNotification {
+		position: relative;
+		font-size:18px;
+		display: block;
+		padding: 5px 0;
+		margin: 2%;
+		line-height: 30px;		
+		cursor: pointer;
+		background-color: #FFE4D3;		
+		border-top: 3px solid #FFBE73;
+		border-bottom: 3px solid #FFBE73;
+		overflow: hidden;
+	}
+	.alertNotification img {
+		height: 27px;
+		margin-bottom: -5px;
+	}
+	.alertNotification > div {
+		display: inline-block;
+		text-align: left;
+		vertical-align: middle;
+		margin-right: 20px;
+	}
+	.clearAlertBar {
+		display: block;
+		clear: right;
+		line-height: 21px;
+	}
+	#serviceOutageAlert {
+		position: relative;
+		padding: 10px 2%;
+		margin: 10px 0;
+		background-color: #FFE4D3;		
+		border-top: 3px solid #DD0000;
+		border-bottom: 3px solid #DD0000;
+		height: 200px;
+	}
+	.marginT40 {
+		margin-top: 25px;
+	}
+	.font20 {
+		font-size: 20px;
+	}
+	.hideOption {
+		width: 100%;
+		position: absolute;
+		vertical-align: bottom;
+		margin-left: -15px;
+		bottom: 20px;
+	}
+	#serviceErrorImg {
+		position: relative;
+		width: 30px;
+	}
+	#alertDisable {
+		position: relative;
+		bottom: -1px;
+	}
+	.closeIcon {
+		position: absolute;
+		right: 2%;
+		top: 10px;
+		width: 18px;
+		cursor: pointer;
+	}
+	
+	.notification {
+		font-size: 18px;
+		display: inline-block;
+		width: 33%;
+		padding: 0 .5%;
+		position: relative;		
+		margin: 10px auto;
+		cursor: pointer;
+		overflow: hidden;
+	}
+	.notification:not(:first-child) {
+		border-left: 1px solid #AAA;
+	}
+	
+	.bigNumber {
+		font-size: 40px;
+	}	
+	
+	.notification > span {
+		display: block;
+	}
+	
+	.notification > span:not(.bigNumber) {
+		display: inline-block;
+		min-width: 103px;
+		/* width: 100%; */
+	}	
+	
+	.menuItems {
+		/* width: 100%; */
+		/* margin-bottom: 10px; */
+		/* font-size: 0px; */
+		/* height: 193px; */
+		overflow: hidden;
+		background-color: #FFF;
+		/* box-shadow: 0px 0px 3px #666; */
+	}
+	
+	.menuItem {
+		position: relative;
+		text-align: left;
+		display: block;
+		font-size: 18px;
+		color: #4279B2;
+		padding: 15px 0;
+		margin: 0 2%;
+		line-height: 30px;
+		
+		cursor: pointer;
+		overflow: hidden;
+		z-index: 5;
+	}
+	.menuItem:not(:first-child) {
+		border-top: 1px solid #BBB;
+	}
+	.menuItem img {
+		float: left;
+		margin-bottom: -5px;
+		margin-right: 20px;
+		width: 30px;		
+	}
+	.accordionOpen {
+		font-size: 25px;		
+		float: left;
+		text-align: center;
+		line-height: 25px;
+		vertical-align: middle;
+		margin-right: 15px;
+		width: 30px;
+		height: 30px;
+		border: 2px solid #4279B2;
+		border-radius: 20px;
+		
+		/* disable transitions */
+		-webkit-transition: all 0s ease-in-out;
+		   -o-transition: all 0s ease-in-out;
+			  transition: all 0s ease-in-out;
+	}
+	
+	.rightArrow {
+		float: right;
+		margin-right: 5px;
+		background: url(../images/rightArrow_black.png) no-repeat center;
+	}
+	
+	.expandArrow {
+		-webkit-transform: rotate(90deg);
+	}
+	
+	.callTypeIcon {
+		float: left;
+		width: 16px;
+		overflow: hidden;
+	}
+	.callTypeIcon img {
+		width: 16px;
+		margin-bottom: -3px;
+	}
+	.callHistoryLine .phNumber {
+		width: 40%;
+	}
+	.callHistoryLine .callTime{
+		width: 20%;
+	}
+	.editCallIcon {
+		float: left;
+		width: 0;
+		overflow: hidden;
+	}
+	.editCallIcon img{
+		width: 20px;
+		margin-bottom: -5px;
+	}
+	
+	
+	.deleteVMIcon {
+		float: left;
+		width: 0;
+		overflow: hidden;
+	}
+	.deleteVMIcon img {
+		width: 15px;
+		margin-bottom: -3px;
+	}
+	.phNumber {
+		text-align: left;
+		float: left;
+		width: 45%;
+		padding-left: 10px;
+		font-weight: bold;
+	}	
+	.callTime{
+		float: left;
+		width: 22%;
+	}
+	.callDate{
+		float: left;
+		width: 16%;
+	}
+	.vmDuration {
+		float: right;
+		width: 10%;
+		overflow: hidden;
+	}
+	.vmDuration img {
+		width: 18px;
+	}
+	
+	#callHistoryPage, #settingsPage, #helpPage, #addressBookPage , #textMessagePage{
+		position: relative;
+		height: 0px;
+		background-color: #FFF;
+		overflow: hidden;
+		/* border-top: 1px solid #CCC; */
+	}
+	
+	.callHistoryOptionsTabs, #settingsPage, #helpPage, #addressBookPage, #textMessagePage {
+		overflow: auto;
+	}
+	
+	.dayFilters span:not(:first-child) {
+		border-left: 1px solid #BCBCBC;
+	}
+	.dayFilters input[type="radio"] {
+		visibility: hidden;
+		margin-left: -8px;
+	}
+	.dayFilters input[type="radio"] + label {
+		cursor: pointer;
+		padding-right: 10px;
+	}
+	.dayFilters input[type="radio"]:checked + label {
+		font-weight: bold;
+		color: #4279B2;
+	}
+	#editVMList {
+		display: inline;
+		font-weight: bold;
+		color: #4279B2;
+		cursor: pointer;
+	}
+	#editCallList {
+		display: inline;
+		font-weight: bold;
+		color: #4279B2;
+		cursor: pointer;
+		margin: 0 2%;
+	}
+	
+	.closeCallHistoryMenu {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		color: #FFF;
+		padding: 0 2%;
+		height: 30px;
+		line-height: 30px;
+		background-color: #4279B2;
+		border-top: 1px solid #FFF;
+		cursor: pointer;
+	}
+	.closeCallHistoryMenu span {
+		float: right;
+		margin-left: 15px;
+	}
+	.closeCallHistoryMenu .rightArrow {
+		-webkit-transform: rotate(-90deg);
+	}
+	
+	.tab {
+		color: #437AB2;
+		padding: 20px 0;
+		font-size: 16px;
+		background-color: #F1F1F1; 
+		cursor: pointer;
+		box-shadow: inset 0px 2px 1px #BCBCBC;
+		width: 50%;
+		min-width: 160px;
+		/* max-width: 200px; */
+
+		/* delay transitions */
+		-webkit-transition: all 0.5s ease-in-out 0.3s;
+		   -o-transition: all 0.5s ease-in-out 0.3s;
+			  transition: all 0.5s ease-in-out 0.3s;
+	}
+	.tabSelected {
+		background-color: #FFF; 		
+	}
+	.tab:not(.tabSelected) {
+		box-shadow: inset 0px 0px 5px #BCBCBC;
+	}
+	
+	.half {
+		width: 50%;
+	}
+	.left {
+		float: left;
+	}
+	.right {
+		float: right;
+	}
+	
+	.dayFilters {
+		overflow: hidden;
+		padding: 10px 0;
+		border-bottom: 1px solid #BCBCBC;
+	}
+	
+	.searchBox {
+		position: relative;
+		margin: 20px 2%;
+		height: 35px;
+		overflow: hidden;
+	}
+	
+	.searchBox input[type=text] {
+		left: 0;
+		margin: 0;
+		padding: 10px;
+		position: absolute;
+		width: 100%;
+		border: 0;
+		border-radius: 5px;
+		box-shadow: inset -1px 1px 4px #888;
+	}
+		
+	.searchBox input[type=text]:focus { 
+		outline: 3px solid #9ecaed;
+	}
+
+	.searchBox img {
+		right: 0;
+		padding: 8px 10px;
+		width: 38px;
+		position: absolute;
+	}
+	
+	.missedCallsList {
+		max-height: 435px;
+		overflow: auto;
+	}
+	.missedVMsList {
+		max-height: 435px;
+		overflow: auto;
+	}
+	
+	.voiceMailLine, .callHistoryLine {
+		position: relative;
+		overflow: hidden;
+		padding: 20px 0;
+		line-height: 23px;
+		vertical-align: middle;
+		border-bottom: 1px solid #BCBCBC;
+		cursor: pointer;
+		font-size: 13px;
+	}
+	.isMissedCall {
+		color: #DD0000;
+	}
+	
+	.editCallInfo {
+		height: 0px;
+		width: 100%;
+		overflow: hidden;
+	}
+	.btnEditContact, .btnCreateContact, .btnUpdateContact {
+		width: 100%;
+		padding: 3px 0;
+		color: #FFF;
+		margin-top: 10px;
+		background-color: #437AB2;
+	}
+	
+	.callTypeFilter span {
+		display: inline-block;
+		margin: 20px auto;
+		border: 2px solid #245590;
+		border-radius: 4px;
+	}
+	.callTypeFilter input[type="radio"] {
+		display: none;
+		margin-left: -8px;
+	}
+	label[for="filterAllCalls"], label[for="filterMissedCalls"] {
+		display: inline-block;
+		width: 100px;
+	}
+	.callTypeFilter input[type="radio"] + label {
+		cursor: pointer;
+		padding: 0 5%;
+	}
+	.callTypeFilter input[type="radio"]:checked + label {
+		background-color: #245590;
+		color: #FFF;
+	}
+	
+	.voicemailTranscript {
+		position: relative;
+		text-align: left;
+		background-color: #DDD;
+		top: 50px;
+		/* overflow: hidden; */
+		/* border-top: 3px solid #FFF; */
+		height: 0;
+		/* box-sizing: content-box; */
+	}
+	/* .voicemailTranscript > div:not(.vmControls) { */
+	.voicemailTranscript .vmTranscriptText, .voicemailTranscript .vmOptions { 
+		margin: 0 2%;
+		padding: 10px 0;
+		/* overflow: hidden; */
+	}
+	.voicemailTranscript .vmFlagOverlay, .voicemailTranscript .vmDeleteOverlay, .voicemailTranscript .vmForwardOverlay {
+		position: absolute;
+		color: #FFF;
+		background-color: #245590;
+		opacity: 1;
+		width: 100%;
+		height: 0px;
+		z-index: 1;
+		overflow: hidden;
+	}
+	.vmFlagOverlay > div, .vmDeleteOverlay > div, .vmForwardOverlay > div {
+		position: relative;
+		text-align: center;
+		width: 90%;
+		z-index: 2;
+		margin: 10px auto;
+		opacity: 1;
+	}
+	.vmFlagOverlay > div:first-of-type, .vmDeleteOverlay > div:first-of-type, .vmForwardOverlay > div:first-of-type {
+		margin-top: 30px;
+	}
+	.vmFlagOverlay .sendButton {
+		/* visibility: hidden; */
+	}
+
+	.vmTranscriptText {
+		/* display: inline-block; */
+		position: relative;
+		width: 96%;
+		/* overflow: auto; */
+		height: auto;
+		min-height: 220px;
+	}
+	.vmRateTranscript {
+		position: absolute;
+		right: 2%;
+		bottom: 10px;
+	}
+	.vmRateTranscript img {
+		width: 15px;
+	}
+	.vmRateTranscript span {
+		margin: 0 5px;
+	}
+	.vmRateTranscript .thumbsDown {
+		margin-bottom: -6px;
+	}
+	
+	.vmControls {
+		background-color: #FFF;
+		padding: 10px 2%;
+		line-height: 30px;
+		overflow: hidden;
+	}
+	.vmPlayPause {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		border: 2px solid #437AB2;
+		border-radius: 50%;
+		margin-right: 10px;
+	}
+	.vmPlayPause .playButton {
+		display: inline-block;
+		position:relative;
+		width: 8px;
+		height: 12px;
+		top: 1px;
+		left: 9px;
+		border-top: 8px solid transparent;
+		border-bottom: 8px solid transparent;
+		border-left: 12px solid #437AB2;
+		-webkit-transition: all 0;
+		   -o-transition: all 0;
+			  transition: all 0;
+	}
+	.vmPlayPause .pauseButton {
+		display: inline-block;
+		position:relative;
+		width: 8px;
+		height: 12px;
+		top: -1px;
+		left: 9px;
+		border-left: 2px solid #437AB2;
+		border-right: 2px solid #437AB2;
+		-webkit-transition: all 0;
+		   -o-transition: all 0;
+			  transition: all 0;
+	}
+	.vmSeeker {
+		display: inline-block;
+		width: 60%;
+	}
+	.vmSeeker input[type="range"] {
+		position: relative;
+		top: -5px;
+		-webkit-appearance: none;
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+		width: 100%;
+		height: 2px;
+		margin: 0;
+		border: none;
+		background: #ADADAD;
+		outline: none; /* no focus outline */
+	}
+	input[type="range"]::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		width: 20px;
+		height: 20px;
+		border: 2px solid #437AB2;
+		border-radius: 12px;
+		cursor: pointer;
+		background-color: #FEFEFE;
+		box-shadow: 2px 2px 5px #777;
+	}	
+	input[type="range"]::-moz-range-thumb {
+		width: 20px;
+		height: 20px;
+		border: 2px solid #437AB2;
+		border-radius: 12px;
+		cursor: pointer;
+		background-color: #FEFEFE;
+		box-shadow: 2px 2px 5px #777;
+	}
+	.vmProgress {
+		display: inline-block;
+		width: 20%;
+		float: right;
+		margin-left: 5px;
+		font-size: 11px;
+	}
+	
+	.vmOptions {
+		font-size: 0px;
+		/* position: absolute; */
+		/* margin-bottom: 0; */
+	}
+	.vmOptions > div {
+		display: inline-block;
+		font-size: 11.5px;
+		width: 19.2%;
+		text-align: center;
+		min-height: 50px;
+		color: #555;
+		line-height: 80px;
+		/* overflow: hidden; */
+		background-size: 20px auto;
+		background-position: 50% 0;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.vmFlag {
+		background-image: url(../images/flag.png);
+	}
+	.vmFlagSelected {
+		background-image: url(../images/flag_blue.png);
+	}
+	.vmSave {
+		background-image: url(../images/save.png);
+	}
+	.vmSaveSelected {
+		background-image: url(../images/save_blue.png);
+	}
+	.vmForward {
+		background-image: url(../images/forward.png);
+	}
+	.vmForwardSelected {
+		background-image: url(../images/forward_blue.png);
+	}
+	.vmDownload {
+		background-image: url(../images/download.png);
+	}
+	.vmDownloadSelected {
+		background-image: url(../images/download_blue.png);
+	}
+	.vmDelete {
+		background-image: url(../images/delete.png);
+	}
+	.vmDeleteSelected {
+		background-image: url(../images/delete_blue.png);
+	}
+	
+	.textMessage {
+		padding: 10px 2%;
+		border-top: 1px solid #DCDCDC;
+	}
+	.textMessageLine1 , .textMessageLine2 {
+		height: auto;
+		margin: 2px 0;
+		overflow: hidden;
+	}
+	.textMessageSenderName {
+		color: #437AB2;
+		text-align: left;
+	}
+	.textMessageReceivedTime {
+		text-align: right;		
+	}
+	.textMessageExcerpt {
+		width: 80%;
+		float: left;
+		text-align: left;
+	}
+	.textMessageAttachmentsIcon {
+		width: 20%;
+		float: right;
+		text-align: right;		
+	}
+	.textMessageAttachmentsIcon img {
+		width: 25%;
+	}
+	
+	.button {
+		position: relative;
+		display: inline-block;
+		padding: 7px 30px;
+		border-radius: 5px;
+		width: 90%;		
+		background-color: #ACACAC;
+		cursor: pointer;
+		margin-bottom: 10px;
+	}
+	.cancelButton {
+		background-color: #FFF;
+		color: #437AB2;
+	}
+	.deleteButton, .sendButton, .saveButton {
+		background-color: #437AB2;  
+		color: #FFF;
+	}
+	.searchAddUser {
+		position: relative;
+		display: inline-block;
+		width: 80%;
+		height: 25px;
+		overflow: hidden;
+	}
+	
+	.searchAddUser input[type=text] {
+		left: 0;
+		float: left;
+		margin: 0;
+		padding: 2px;
+		position: absolute;
+		height: 25px;
+		width: 100%;
+		border: 0;
+		border-radius: 3px;
+		box-shadow: inset -1px 1px 2px #888;
+	}
+		
+	.searchAddUser input[type=text]:focus { 
+		outline: 1px solid #9ecaed;
+	}
+
+	.searchAddUser img {
+		right: 0;
+		/* width: 10%; */
+		height: 100%;
+		padding: 2px;
+		position: absolute;
+		background-color: #DEDEDE;
+		border-left: 1px solid #BCBCBC;
+	}
+	
+	.searchAddUser + .addButton {
+		width: 15%;
+		height: 25px;
+		padding: 2px 0;
+		display: inline-block;
+		float: right;
+	}
+	
+	select[name="forwardType"] {
+		display: block;
+		margin: 0 auto;
+		border-radius: 3px;
+		padding: 3px 5px;
+		width: 120px;
+		border: 1px solid #ccc;
+		box-shadow: none;
+		background: #FFF url("../images/arrowDown.png") no-repeat 95% 50%;
+		-webkit-appearance: none;
+		   -moz-appearance: none;
+				appearance: none;
+	}
+	select[name="forwardType"]:focus {
+		outline: none;
+	}
+	
+	.select-style {
+    width: 120px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
+}
+
+
+	.toggle {
+	  position: absolute;
+	  margin-left: -9999px;
+	  visibility: hidden;
+	}
+	.toggle + label {
+	  display: block;
+	  position: relative;
+	  cursor: pointer;
+	  outline: none;
+	  margin: 0 auto;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	}
+	.vmFlagOverlay input.toggle-round + label {
+		width: 90px;
+	}
+	.vmFlagOverlay input.toggle-round:checked + label:after {
+		margin-left: 58px;
+	}
+	input.toggle-round + label {
+	  padding: 2px;
+	  width: 60px;
+	  height: 30px;
+	  line-height: 30px;
+	  background-color: #dddddd;
+	  -webkit-border-radius: 30px;
+	  -moz-border-radius: 30px;
+	  -ms-border-radius: 30px;
+	  -o-border-radius: 30px;
+	  border-radius: 30px;
+	}
+	input.toggle-round + label:before, input.toggle-round + label:after {
+	  display: block;
+	  position: absolute;
+	  top: 1px;
+	  left: 1px;
+	  bottom: 1px;
+	  content: "";
+	}
+	input.toggle-round + label:before {
+	  right: 1px;
+	  text-align: right;
+	  padding-right: 7px;
+	  background-color: #f1f1f1;
+	  content: attr(data-off);
+	  color: #444;
+	  
+	  -webkit-border-radius: 30px;
+	  -moz-border-radius: 30px;
+	  -ms-border-radius: 30px;
+	  -o-border-radius: 30px;
+	  border-radius: 30px;
+	}
+	input.toggle-round + label:after {
+	  width: 30px;
+	  background-color: #fff;
+	  
+	  -webkit-border-radius: 100%;
+	  -moz-border-radius: 100%;
+	  -ms-border-radius: 100%;
+	  -o-border-radius: 100%;
+	  border-radius: 100%;
+	  
+	  -webkit-transition: margin 0.3s;
+	  -moz-transition: margin 0.3s;
+	  -o-transition: margin 0.3s;
+	  transition: margin 0.3s;
+	}
+	input.toggle-round:checked + label:before {
+	  background-color: #437AB2;
+	  color: #FFF;
+	  content: attr(data-on);
+	  text-align: left;
+	  padding-left: 5px;
+	}
+	input.toggle-round:checked + label:after {
+	  margin-left: 28px;
+	}
+	
+	.settingsMenuItem {
+		width: 100%;
+		color: #437AB2;
+		font-size: 18px;
+		padding: 20px 2%;
+		overflow: hidden;
+		border-bottom: 1px solid #DCDCDC;
+	}
+	.settingsMenuItem .switch {
+		color: #FFF;
+		font-size: 14px;
+	}
+	.switch .rightArrow {
+		background: url(../images/rightArrow_black.png) no-repeat center;
+	}
+	
+	.settingsHelp {
+		margin: 0;
+		cursor: pointer;
+		width: 15%;
+	}
+	.settingsHelp > img {
+		width: 25%;
+		background-color: #437AB2;
+		border-radius: 100%;
+	}
+	
+	#voicemailSettings, #callForwardingSettingsConflict, #callForwardTo, #voicemailSettingsConflict {
+		/* color: #FFF; */
+		background-color: #E8E8E8;
+		overflow: hidden;
+		height: 0px;
+	}
+	#callForwardingSettingsConflict, #callForwardTo, #voicemailSettingsConflict {
+		background-color: #245590;
+	}
+	#voicemailSettings {
+		position: relative;
+		text-align: left;
+		box-shadow: inset 1px 0px 3px #888;
+	}
+	#callForwardTo > div {
+		color: #FFF;
+		margin: 20px 2% 0 2%;
+	}
+	.inputLabel {
+		margin-top: 10px;
+	}
+	.helpQuestion {
+		width: 15px;
+		background-color: #437AB2;
+		border-radius: 100%;
+	}
+	.blueColor {
+		color: #437AB2;
+	}
+	.vmSettingButtons {
+		text-align: center;
+	}
+	.vmSettingButtons .button {
+		margin-top: 10px;
+		margin-bottom: 0px;
+		width: 100%;
+	}
+	.callForwardingInstr {
+		width: 80%;
+		color: #FFF;
+		margin: 20px auto;
+	}
+	.vmConflictInstr {
+		width: 80%;
+		color: #FFF;
+		margin: 20px auto;
+	}
+	.voicemailHelpHead {
+		margin: 10px 2%;
+	}
+	#voicemailSettings input[type="password"] {
+		width: 70%;
+		left: 0;
+		margin: 0;
+		padding: 7px;
+		position: relative;
+		border: 0;
+		border-radius: 4px;
+		box-shadow: inset 0px 1px 1px #888;
+		background-color: #F5F5F5;
+	}
+	.pinHelpInstr {
+		position: absolute;
+		font-size: 13px;
+		top: 70px;
+		color: #FFF;
+		background-color: #437AB2;
+	}
+	.pinHelpInstr ul {
+		text-align: left;
+	}
+	.topArrowDiv {
+		position: absolute;
+		width: 0;
+		left: 50px;
+		top: -10px;
+		border-left: 15px solid transparent;
+		border-right: 15px solid transparent;
+		border-bottom: 15px solid #437AB2;
+	}
+	
+/* } */
+/*END MOBILE*/
