@@ -6,7 +6,7 @@
     <!-- <meta name="viewport" content="width=360"/> -->
     <title>Phone Tools</title>
 
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style_ims.css" rel="stylesheet" type="text/css" />
 	
     <!-- LOADING OPEN SANS VIA GOOGLE FONTS TO MAINTAIN CONSISTENCY OF FONT CROSS BROWSER -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -33,9 +33,9 @@
 			<div class="navMain desktop">
 				<div class="left">
 					<span class="coxLogo"><img src="images/cox.png"></span>
-					<div>Shop</div>
-					<div>My Connection</div>
-					<div>Support</div>
+					<div id="shop_mega_menu">Shop</div>
+					<div id="myConnection_mega_menu">My Connection</div>
+					<div id="support_mega_menu">Support</div>
 				</div>
 				<div class="right">
 					<img src="images/search.png">
@@ -47,7 +47,7 @@
 					</div>
 				</div>
 			</div>
-
+			
 			<div id="navigationBar" class="mobile">
 				<div class="marginDiv2">
 					<div id="menuButton">
@@ -65,15 +65,41 @@
 	</header>
 	<article>
 		<div id="homePage">
-			<div id="serviceOutageAlert" class="mobile">
+			<div class="userInfoBox">
+				<div class="left userInfo">
+					<div class="userInfoLine">
+						<img class="desktop" src="images/phone_tools_logo_blue.png"> <span>Phone Tools</span>
+					</div>
+				</div>
+				<div class="right userInfoShortcuts">
+					<div>
+						<img src="images/phone_tools_logo_black.png">
+						<div class="">Phone Tools</div>
+					</div>
+					<div>
+						<img src="images/web_mail_icon.png">
+						<div class="blueText">Web Mail</div>
+					</div>
+					<div class="desktop">
+						<img src="images/address_blue.png">
+						<div class="blueText">Address Book</div>
+					</div>
+					<div class="desktop">
+						<img src="images/support_icon_blue.png">
+						<div class="blueText">Support</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="serviceOutageAlert" class="card">
 				<img class="closeIcon" src="images/close_black.png">
-				<div class="marginT40">
+				<div class="marginT25">
 					<img id="serviceErrorImg" src="images/errorIcon.png">
 					<div class="font20">
-						Service / Outage
+						Temporary Service Outage
 					</div>
-					<div class="font20">
-						Alert Message
+					<div class="">
+						<strong>We're sorry!</strong> We've detected a temporary service outage in your area. We are currently working to fix the problem.
 					</div>
 				</div>
 				<div class="hideOption">
@@ -81,15 +107,16 @@
 					<label for="alertDisable">Don't show this message again</label>
 				</div>
 			</div>
+			
 			<div class="notificationSummary card">
 				<div class="notification">
-					<span class="bigNumber">3</span><span>Missed Calls</span>
+					<span class="bigNumber">3</span><span>&nbsp;Missed &nbsp;Calls &nbsp;</span>
 				</div>
 				<div class="notification">
-					<span class="bigNumber">14</span><span>Messages</span>
+					<span class="bigNumber">14</span><span>Text Messages</span>
 				</div>
 				<div class="notification">
-					<span class="bigNumber">16</span><span>Voice Mails</span>
+					<span class="bigNumber">16</span><span>&nbsp; Voice Mails &nbsp;</span>
 				</div>
 				<div class="alertNotification">
 					<div><img src="images/warningIcon.png"/></div>
@@ -119,309 +146,125 @@
 			<div class="menuItems card">
 				<div class="menuItem callHistoryMenu">
 					<span class="accordionOpen">+</span><!-- <img src="images/order.png"/> --> <span class="menuItemText">Call History (10 New Calls)</span> <span class="rightArrow"></span>
-				</div>				
-				<div id="callHistoryPage">					
-					<div class="callHistoryOptionsTabs">		
-						<div class="callHistroyTab left tab tabSelected">
-							Calls History (10)	
-						</div>
-						<div class="voicemailTab left tab">
-							Voice Mail (16)
-						</div>
-						<div class="desktop">
-							desktop(16)
-						</div>
-					</div>
+				</div>
+				<div id="callHistoryPage">
 					<div class="callHistory">
-						<div class="callTypeFilter mobile">
+						<div class="callTypeFilter">
 							<span>
 								<input type="radio" name="filterCallType" id="filterAllCalls" checked>
 								<label for="filterAllCalls">All</label>
 								<input type="radio" name="filterCallType" id="filterMissedCalls">
 								<label for="filterMissedCalls">Missed</label>
+								<input type="radio" name="filterCallType" id="filterVoiceMails">
+								<label for="filterVoiceMails">Voice Mail</label>
 							</span>
 						</div>
-						<div class="missedCallsList">
-							<div class="dayFilters mobile">
-								<span class="left">
-									<input type="radio" name="radioCall" id="callFilter7" checked>
-									<label for="callFilter7">7 Days</label>
-								</span>
-								<span class="left">
-									<input type="radio" name="radioCall" id="callFilter30">
-									<label for="callFilter30">30 Days</label>
-								</span>
-								<span class="left">
-									<input type="radio" name="radioCall" id="callFilter60">
-									<label for="callFilter60">60 Days</label>
-								</span>
-								<div id="editCallList" class="right">
-									Edit
-								</div>
-							</div>
-							<div class="marginDiv2">								
-								<div class="callHistoryHeader desktop">
-									<span class="">Add Contact</span>
-									<span class="">Calls <img src="images/arrow_down_blue.png"/></span>
-									<span class="">Time <img src="images/arrow_down_blue.png"/></span>
-									<span class="">Date <img src="images/arrow_down_blue.png"/></span>
-									<span class="">Duration <img src="images/arrow_down_blue.png"/></span>
-									<span class="">Voice Mail <img src="images/arrow_down_blue.png"/></span>
-								</div>
-								<div class="callHistoryLine isMissedCall">
-									<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-									<span class="callTypeIcon">&nbsp;</span>
-									<span class="phNumber">Regina Watson</span>
-									<span class="callTime">7:23 PM</span>
-									<span class="callDate">04/13</span>
-									<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
-									<div class="editCallInfo isExistingContact">
-										<div class="btnEditContact">Edit Contact</div>
-									</div>
-								</div>
-								<div class="callHistoryLine">
-									<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-									<span class="callTypeIcon">&nbsp;</span>
-									<span class="phNumber">(404) 221-4340</span>
-									<span class="callTime">10:35 PM</span>
-									<span class="callDate">04/13</span>
-									<span class="vmDuration">2:14</span>
-									<div class="editCallInfo">
-										<div class="btnCreateContact">Create New Contact</div>
-										<div class="btnUpdateContact">Update Existing Contact</div>
-									</div>
-								</div>
-								<div class="callHistoryLine isOutGoingCall">
-									<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-									<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
-									<span class="phNumber">(201) 842-0142</span>
-									<span class="callTime">2:01 PM</span>
-									<span class="callDate">04/13</span>
-									<span class="vmDuration">00:53</span>
-									<div class="editCallInfo">
-										<div class="btnCreateContact">Create New Contact</div>
-										<div class="btnUpdateContact">Update Existing Contact</div>
-									</div>
-								</div>
-								<div class="callHistoryLine isMissedCall">
-									<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-									<span class="callTypeIcon">&nbsp;</span>
-									<span class="phNumber">(212) 672-6272</span>
-									<span class="callTime">4:42 PM</span>
-									<span class="callDate">04/10</span>
-									<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
-									<div class="editCallInfo">
-										<div class="btnCreateContact">Create New Contact</div>
-										<div class="btnUpdateContact">Update Existing Contact</div>
-									</div>
-								</div>
-								<div class="callHistoryLine isOutGoingCall">
-									<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-									<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
-									<span class="phNumber">Ashley Wingfield</span>
-									<span class="callTime">9:03 AM</span>
-									<span class="callDate">04/10</span>
-									<span class="vmDuration">0:28</span>
-									<div class="editCallInfo isExistingContact">
-										<div class="btnEditContact">Edit Contact</div>
-									</div>
-								</div>
-								<div class="callHistoryLine isMissedCall">
-									<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-									<span class="callTypeIcon">&nbsp;</span>
-									<span class="phNumber">Ben Johnson</span>
-									<span class="callTime">9:57 AM</span>
-									<span class="callDate">04/7</span>
-									<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
-									<div class="editCallInfo isExistingContact">
-										<div class="btnEditContact">Edit Contact</div>
-									</div>
-								</div>
-
-								<div class="listCalls30Days hidden">
-									<div class="callHistoryLine isMissedCall">
-										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-										<span class="callTypeIcon">&nbsp;</span>
-										<span class="phNumber">Regina Watson</span>
-										<span class="callTime">7:23 PM</span>
-										<span class="callDate">04/7</span>
-										<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
-										<div class="editCallInfo isExistingContact">
-											<div class="btnEditContact">Edit Contact</div>
-										</div>
-									</div>
-									<div class="callHistoryLine">
-										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-										<span class="callTypeIcon">&nbsp;</span>
-										<span class="phNumber">(404) 221-4340</span>
-										<span class="callTime">10:35 PM</span>
-										<span class="callDate">04/7</span>
-										<span class="vmDuration">2:14</span>
-										<div class="editCallInfo">
-											<div class="btnCreateContact">Create New Contact</div>
-											<div class="btnUpdateContact">Update Existing Contact</div>
-										</div>
-									</div>
-									<div class="callHistoryLine isOutGoingCall">
-										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-										<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
-										<span class="phNumber">(201) 842-0142</span>
-										<span class="callTime">2:01 PM</span>
-										<span class="callDate">04/3</span>
-										<span class="vmDuration">00:53</span>
-										<div class="editCallInfo">
-											<div class="btnCreateContact">Create New Contact</div>
-											<div class="btnUpdateContact">Update Existing Contact</div>
-										</div>
-									</div>
-									<div class="callHistoryLine isMissedCall">
-										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-										<span class="callTypeIcon">&nbsp;</span>
-										<span class="phNumber">(212) 672-6272</span>
-										<span class="callTime">4:42 PM</span>
-										<span class="callDate">04/3</span>
-										<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
-										<div class="editCallInfo">
-											<div class="btnCreateContact">Create New Contact</div>
-											<div class="btnUpdateContact">Update Existing Contact</div>
-										</div>
-									</div>
-									<div class="callHistoryLine isOutGoingCall">
-										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-										<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
-										<span class="phNumber">Ashley Wingfield</span>
-										<span class="callTime">9:03 AM</span>
-										<span class="callDate">04/3</span>
-										<span class="vmDuration">0:28</span>
-										<div class="editCallInfo isExistingContact">
-											<div class="btnEditContact">Edit Contact</div>
-										</div>
-									</div>
-									<div class="callHistoryLine isMissedCall">
-										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-										<span class="callTypeIcon">&nbsp;</span>
-										<span class="phNumber">Ben Johnson</span>
-										<span class="callTime">9:57 AM</span>
-										<span class="callDate">04/3</span>
-										<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
-										<div class="editCallInfo isExistingContact">
-											<div class="btnEditContact">Edit Contact</div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="listCalls60Days hidden">
-									<div class="callHistoryLine isMissedCall">
-										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-										<span class="callTypeIcon">&nbsp;</span>
-										<span class="phNumber">Regina Watson</span>
-										<span class="callTime">7:23 PM</span>
-										<span class="callDate">03/27</span>
-										<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
-										<div class="editCallInfo isExistingContact">
-											<div class="btnEditContact">Edit Contact</div>
-										</div>
-									</div>
-									<div class="callHistoryLine">
-										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-										<span class="callTypeIcon">&nbsp;</span>
-										<span class="phNumber">(404) 221-4340</span>
-										<span class="callTime">10:35 PM</span>
-										<span class="callDate">03/27</span>
-										<span class="vmDuration">2:14</span>
-										<div class="editCallInfo">
-											<div class="btnCreateContact">Create New Contact</div>
-											<div class="btnUpdateContact">Update Existing Contact</div>
-										</div>
-									</div>
-									<div class="callHistoryLine isOutGoingCall">
-										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-										<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
-										<span class="phNumber">(201) 842-0142</span>
-										<span class="callTime">2:01 PM</span>
-										<span class="callDate">03/27</span>
-										<span class="vmDuration">00:53</span>
-										<div class="editCallInfo">
-											<div class="btnCreateContact">Create New Contact</div>
-											<div class="btnUpdateContact">Update Existing Contact</div>
-										</div>
-									</div>
-									<div class="callHistoryLine isMissedCall">
-										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-										<span class="callTypeIcon">&nbsp;</span>
-										<span class="phNumber">(212) 672-6272</span>
-										<span class="callTime">4:42 PM</span>
-										<span class="callDate">03/25</span>
-										<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
-										<div class="editCallInfo">
-											<div class="btnCreateContact">Create New Contact</div>
-											<div class="btnUpdateContact">Update Existing Contact</div>
-										</div>
-									</div>
-									<div class="callHistoryLine isOutGoingCall">
-										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-										<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
-										<span class="phNumber">Ashley Wingfield</span>
-										<span class="callTime">9:03 AM</span>
-										<span class="callDate">03/25</span>
-										<span class="vmDuration">0:28</span>
-										<div class="editCallInfo isExistingContact">
-											<div class="btnEditContact">Edit Contact</div>
-										</div>
-									</div>
-									<div class="callHistoryLine isMissedCall">
-										<span class="editCallIcon"><img src="images/editCaller.png"/></span>
-										<span class="callTypeIcon">&nbsp;</span>
-										<span class="phNumber">Ben Johnson</span>
-										<span class="callTime">9:57 AM</span>
-										<span class="callDate">03/25</span>
-										<span class="vmDuration"><img src="images/vmPendingIcon.png"/></span>
-										<div class="editCallInfo isExistingContact">
-											<div class="btnEditContact">Edit Contact</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="voicemailHistory hidden">
-						<div class="full searchBox">
+						<div class="searchBox">
 							<input type="text" placeholder="Search"/>
 							<img src="images/searchIcon.png"/>
 						</div>
-						
-						<div class="missedVMsList">
-							<div class="marginDiv2">							
-								<div class="dayFilters">
-									<span class="left">
-										<input type="radio" name="radioVM" id="vmFilter7" checked>
-										<label for="vmFilter7">7 Days</label>
-									</span>
-									<span class="left">
-										<input type="radio" name="radioVM" id="vmFilter30">
-										<label for="vmFilter30">30 Days</label>
-									</span>
-									<span class="left">
-										<input type="radio" name="radioVM" id="vmFilterSaved">
-										<label for="vmFilterSaved">Saved</label>
-									</span>
-									<div id="editVMList" class="right">
-										Edit
+						<div class="dayFilters">
+							<div class="left">
+								<span class="">
+									<input type="radio" name="radioCall" id="dayFilter7" checked>
+									<label for="dayFilter7">7 Days</label>
+								</span>
+								<span class="">
+									<input type="radio" name="radioCall" id="dayFilter30">
+									<label for="dayFilter30">30 Days</label>
+								</span>
+								<span class="">
+									<input type="radio" name="radioCall" id="dayFilter60">
+									<label for="dayFilter60">60 Days</label>
+								</span>
+							</div>
+							<div id="" class="right mobile editCallList">
+								Edit
+							</div>
+							<div class="quickIcons right desktop">
+								<div class="chPrint">
+									<img src="images/print_icon.png">
+									<div>Print</div>
+								</div>
+								<div class="chDownload">
+									<img src="images/download.png">
+									<div>Download</div>
+								</div>
+								<div class="chEdit">
+									<img src="images/edit_icon_black.png">
+									<div class="">Edit</div>
+								</div>
+								<div class="chNotification">
+									<img src="images/notifications_icon.png">
+									<div>Notifications</div>
+								</div>
+							</div>
+						</div>
+						<div class="chExport hidden desktop">
+							<img src="images/export_call_history.png">
+						</div>
+						<div class="callHistoryHeader desktop">
+							<span class="">Add Contact</span>
+							<span class="">Calls <img src="images/arrow_down_blue.png"/></span>
+							<span class="">Time <img src="images/arrow_down_blue.png"/></span>
+							<span class="">Date <img src="images/arrow_down_blue.png"/></span>
+							<span class="">Duration <img src="images/arrow_down_blue.png"/></span>
+							<span class="vmDurHeader">Voice Mail <img src="images/arrow_down_blue.png"/></span>
+						</div>
+						<div class="missedCallsList">
+							<div class="marginDiv2">
+								<div class="callHistoryLine isMissedCall isNotOpened">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="editCallIcon">&nbsp;</span>
+									<span class="addContact desktop"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">Regina Watson</span>
+									<span class="callTime">7:23 PM</span>
+									<span class="callDate">05/13</span>
+									<span class="vmDuration"></span>
+									<div class="editCallInfo isExistingContact">
+										<div class="btnEditContact">Edit Contact</div>
+									</div>
+									
+									<div class="addEditContact">
+										<div class="contactInfo">
+											<div>
+												Enter the name and number of the new contact you would like to add to your Address Book list.
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="First Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Last Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Number" type="text">
+											</div>
+											
+											<div class="linkStyle">
+												Add Another Number
+											</div>								
+										</div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Add</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
 									</div>
 								</div>
-								<div class="voiceMailLine">
+								<div class="voiceMailLine isVoiceMail isNotOpened">
+									<span class="selectItem desktop"><input type="checkbox"></span>
 									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="addContact desktop"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
 									<span class="phNumber">(404) 221-4340</span>
 									<span class="callTime">10:35 PM</span>
-									<span class="callDate">12/5</span>
-									<span class="vmDuration">2:14</span>
+									<span class="callDate">05/12</span>
+									<span class="vmDuration">2:14 <img class="desktop" src="images/vmPendingIcon.png"/></span>
 
 									<div class="voicemailTranscript">
 										<div class="vmTranscriptText">
 											<p>Not sure if you heard the change of plans. Larry got sick and so we won't be going to dinner tonight.
-											Sorry for the late notice. Let's catch up this weekend.
-											Bye
-											</p>
+											Sorry for the late notice. Let's catch up this weekend. Bye</p>
 											<div class="vmRateTranscript">												
 												<img class="thumbsUp" src="images/thumbsUp.png">
 												<span>Rate this transcript</span>
@@ -454,11 +297,14 @@
 												</div>
 												<div class="button addButton">Add</div>
 											</div>
-											<select name="forwardType">
-												<option value="audioNText" selected>Audio & Text</option>
-												<option value="audio">Audio</option>
-												<option value="text">Text</option>
-											</select>
+											
+											<div>
+												<select name="forwardType">
+													<option value="audioNText" selected>Audio & Text</option>
+													<option value="audio">Audio</option>
+													<option value="text">Text</option>
+												</select>
+											</div>
 											<div>
 												<div class="button sendButton">Send</div>
 												<div class="button cancelButton cancelVMOverlay">Cancel</div>
@@ -472,20 +318,89 @@
 											</div>
 										</div>
 										<div class="vmOptions">
-											<div class="vmFlag">Flag</div>
-											<div class="vmSave">Save</div>
+											<div class="vmFlag">Mark</div>
+											<div class="vmSave desktop">Save</div>
 											<div class="vmForward">Forward</div>
 											<div class="vmDownload">Download</div>
 											<div class="vmDelete">Delete</div>
 										</div>
 									</div>
+									
+									<div class="addEditContact">
+										<div class="contactInfo">
+											<div>
+												Enter the name and number of the new contact you would like to add to your Address Book list.
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="First Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Last Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Number" type="text">
+											</div>
+											
+											<div class="linkStyle">
+												Add Another Number
+											</div>								
+										</div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Add</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
 								</div>
-								<div class="voiceMailLine">
+								<div class="callHistoryLine">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="editCallIcon">&nbsp;</span>
+									<span class="addContact desktop"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">(404) 221-4340</span>
+									<span class="callTime">10:35 PM</span>
+									<span class="callDate">05/13</span>
+									<span class="vmDuration">2:14</span>
+									<div class="editCallInfo">
+										<div class="btnCreateContact">Create New Contact</div>
+										<div class="btnUpdateContact">Update Existing Contact</div>
+									</div>
+									
+									<div class="addEditContact">
+										<div>
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton">Cancel</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="voiceMailLine isVoiceMail isNotOpened">
+									<span class="selectItem desktop"><input type="checkbox"></span>
 									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="addContact desktop"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
 									<span class="phNumber">Regina Watson</span>
 									<span class="callTime">7:23 PM</span>
-									<span class="callDate">12/5</span>
-									<span class="vmDuration">3:27</span>
+									<span class="callDate">05/10</span>
+									<span class="vmDuration">3:27 <img class="desktop" src="images/vmPendingIcon.png"/></span>
 
 									<div class="voicemailTranscript">
 										<div class="vmTranscriptText">
@@ -520,11 +435,14 @@
 												</div>
 												<div class="button addButton">Add</div>
 											</div>
-											<select name="forwardType">
-												<option value="audioNText" selected>Audio & Text</option>
-												<option value="audio">Audio</option>
-												<option value="text">Text</option>
-											</select>
+											
+											<div>
+												<select name="forwardType">
+													<option value="audioNText" selected>Audio & Text</option>
+													<option value="audio">Audio</option>
+													<option value="text">Text</option>
+												</select>
+											</div>
 											<div>
 												<div class="button sendButton">Send</div>
 												<div class="button cancelButton cancelVMOverlay">Cancel</div>
@@ -538,27 +456,92 @@
 											</div>
 										</div>
 										<div class="vmOptions">
-											<div class="vmFlag">Flag</div>
-											<div class="vmSave">Save</div>
+											<div class="vmFlag">Mark</div>
+											<div class="vmSave desktop">Save</div>
 											<div class="vmForward">Forward</div>
 											<div class="vmDownload">Download</div>
 											<div class="vmDelete">Delete</div>
 										</div>
 									</div>
+									
+									<div class="addEditContact">
+										<div class="contactInfo">
+											<div>
+												Enter the name and number of the new contact you would like to add to your Address Book list.
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="First Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Last Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Number" type="text">
+											</div>
+											
+											<div class="linkStyle">
+												Add Another Number
+											</div>								
+										</div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Add</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
 								</div>
-								<div class="voiceMailLine">
+								<div class="callHistoryLine isOutGoingCall">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="editCallIcon">&nbsp;</span>
+									<span class="addContact desktop"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+									<span class="phNumber">(201) 842-0142</span>
+									<span class="callTime">2:01 PM</span>
+									<span class="callDate">05/13</span>
+									<span class="vmDuration">00:53</span>
+									<div class="editCallInfo">
+										<div class="btnCreateContact">Create New Contact</div>
+										<div class="btnUpdateContact">Update Existing Contact</div>
+									</div>
+									
+									<div class="addEditContact">
+										<div class="contactInfo">
+											<div>
+												Enter the name and number of the new contact you would like to add to your Address Book list.
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="First Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Last Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Number" type="text">
+											</div>
+											
+											<div class="linkStyle">
+												Add Another Number
+											</div>								
+										</div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Add</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div>
+								<div class="voiceMailLine isVoiceMail">
+									<span class="selectItem desktop"><input type="checkbox"></span>
 									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="addContact desktop"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
 									<span class="phNumber">(212) 672-6272</span>
 									<span class="callTime">4:42 PM</span>
-									<span class="callDate">12/5</span>
-									<span class="vmDuration">6:42</span>
+									<span class="callDate">05/10</span>
+									<span class="vmDuration">6:42 <img class="desktop" src="images/vmPendingIcon.png"/></span>
 
 									<div class="voicemailTranscript">
 										<div class="vmTranscriptText">
 											<p>Not sure if you heard the change of plans. Larry got sick and so we won't be going to dinner tonight.
-											Sorry for the late notice. Let's catch up this weekend.
-											Bye
-											</p>
+											Sorry for the late notice. Let's catch up this weekend. Bye</p>
 											<div class="vmRateTranscript">												
 												<img class="thumbsUp" src="images/thumbsUp.png">
 												<span>Rate this transcript</span>
@@ -588,11 +571,14 @@
 												</div>
 												<div class="button addButton">Add</div>
 											</div>
-											<select name="forwardType">
-												<option value="audioNText" selected>Audio & Text</option>
-												<option value="audio">Audio</option>
-												<option value="text">Text</option>
-											</select>
+											
+											<div>
+												<select name="forwardType">
+													<option value="audioNText" selected>Audio & Text</option>
+													<option value="audio">Audio</option>
+													<option value="text">Text</option>
+												</select>
+											</div>
 											<div>
 												<div class="button sendButton">Send</div>
 												<div class="button cancelButton cancelVMOverlay">Cancel</div>
@@ -606,27 +592,53 @@
 											</div>
 										</div>
 										<div class="vmOptions">
-											<div class="vmFlag">Flag</div>
-											<div class="vmSave">Save</div>
+											<div class="vmFlag">Mark</div>
+											<div class="vmSave desktop">Save</div>
 											<div class="vmForward">Forward</div>
 											<div class="vmDownload">Download</div>
 											<div class="vmDelete">Delete</div>
 										</div>
 									</div>
+									
+									<div class="addEditContact">
+										<div class="contactInfo">
+											<div>
+												Enter the name and number of the new contact you would like to add to your Address Book list.
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="First Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Last Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Number" type="text">
+											</div>
+											
+											<div class="linkStyle">
+												Add Another Number
+											</div>								
+										</div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Add</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
 								</div>
-								<div class="voiceMailLine">
+								<div class="voiceMailLine isVoiceMail isNotOpened">
+									<span class="selectItem desktop"><input type="checkbox"></span>
 									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="addContact desktop"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
 									<span class="phNumber">(201) 842-0142</span>
 									<span class="callTime">2:01 PM</span>
-									<span class="callDate">12/5</span>
-									<span class="vmDuration">00:53</span>
+									<span class="callDate">05/09</span>
+									<span class="vmDuration">00:53 <img class="desktop" src="images/vmPendingIcon.png"/></span>
 
 									<div class="voicemailTranscript">
 										<div class="vmTranscriptText">
 											<p>Not sure if you heard the change of plans. Larry got sick and so we won't be going to dinner tonight.
-											Sorry for the late notice. Let's catch up this weekend.
-											Bye
-											</p>
+											Sorry for the late notice. Let's catch up this weekend. Bye</p>
 											<div class="vmRateTranscript">												
 												<img class="thumbsUp" src="images/thumbsUp.png">
 												<span>Rate this transcript</span>
@@ -656,11 +668,14 @@
 												</div>
 												<div class="button addButton">Add</div>
 											</div>
-											<select name="forwardType">
-												<option value="audioNText" selected>Audio & Text</option>
-												<option value="audio">Audio</option>
-												<option value="text">Text</option>
-											</select>
+											
+											<div>
+												<select name="forwardType">
+													<option value="audioNText" selected>Audio & Text</option>
+													<option value="audio">Audio</option>
+													<option value="text">Text</option>
+												</select>
+											</div>
 											<div>
 												<div class="button sendButton">Send</div>
 												<div class="button cancelButton cancelVMOverlay">Cancel</div>
@@ -674,27 +689,130 @@
 											</div>
 										</div>
 										<div class="vmOptions">
-											<div class="vmFlag">Flag</div>
-											<div class="vmSave">Save</div>
+											<div class="vmFlag">Mark</div>
+											<div class="vmSave desktop">Save</div>
 											<div class="vmForward">Forward</div>
 											<div class="vmDownload">Download</div>
 											<div class="vmDelete">Delete</div>
 										</div>
 									</div>
+									
+									<div class="addEditContact">
+										<div class="contactInfo">
+											<div>
+												Enter the name and number of the new contact you would like to add to your Address Book list.
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="First Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Last Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Number" type="text">
+											</div>
+											
+											<div class="linkStyle">
+												Add Another Number
+											</div>								
+										</div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Add</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
 								</div>
-								<div class="voiceMailLine">
+								<div class="callHistoryLine isMissedCall isNotOpened">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="editCallIcon">&nbsp;</span>
+									<span class="addContact desktop"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">(212) 672-6272</span>
+									<span class="callTime">4:42 PM</span>
+									<span class="callDate">05/10</span>
+									<span class="vmDuration"></span>
+									<div class="editCallInfo">
+										<div class="btnCreateContact">Create New Contact</div>
+										<div class="btnUpdateContact">Update Existing Contact</div>
+									</div>
+									
+									<div class="addEditContact">
+										<div class="contactInfo">
+											<div>
+												Enter the name and number of the new contact you would like to add to your Address Book list.
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="First Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Last Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Number" type="text">
+											</div>
+											
+											<div class="linkStyle">
+												Add Another Number
+											</div>								
+										</div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Add</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div>
+								<div class="callHistoryLine isOutGoingCall">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="editCallIcon">&nbsp;</span>
+									<span class="addContact desktop"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+									<span class="phNumber">Ashley Wingfield</span>
+									<span class="callTime">9:03 AM</span>
+									<span class="callDate">05/10</span>
+									<span class="vmDuration">0:28</span>
+									<div class="editCallInfo isExistingContact">
+										<div class="btnEditContact">Edit Contact</div>
+									</div>
+									
+									<div class="addEditContact">
+										<div class="contactInfo">
+											<div>
+												Enter the name and number of the new contact you would like to add to your Address Book list.
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="First Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Last Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Number" type="text">
+											</div>
+											
+											<div class="linkStyle">
+												Add Another Number
+											</div>								
+										</div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Add</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div>
+								<div class="voiceMailLine isVoiceMail">
+									<span class="selectItem desktop"><input type="checkbox"></span>
 									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="addContact desktop"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
 									<span class="phNumber">Ben Johnson</span>
 									<span class="callTime">9:57 AM</span>
-									<span class="callDate">12/5</span>
-									<span class="vmDuration">1:37</span>
+									<span class="callDate">05/08</span>
+									<span class="vmDuration">1:37 <img class="desktop" src="images/vmPendingIcon.png"/></span>
 
 									<div class="voicemailTranscript">
 										<div class="vmTranscriptText">
 											<p>Not sure if you heard the change of plans. Larry got sick and so we won't be going to dinner tonight.
-											Sorry for the late notice. Let's catch up this weekend.
-											Bye
-											</p>
+											Sorry for the late notice. Let's catch up this weekend. Bye</p>
 											<div class="vmRateTranscript">												
 												<img class="thumbsUp" src="images/thumbsUp.png">
 												<span>Rate this transcript</span>
@@ -724,11 +842,14 @@
 												</div>
 												<div class="button addButton">Add</div>
 											</div>
-											<select name="forwardType">
-												<option value="audioNText" selected>Audio & Text</option>
-												<option value="audio">Audio</option>
-												<option value="text">Text</option>
-											</select>
+											
+											<div>
+												<select name="forwardType">
+													<option value="audioNText" selected>Audio & Text</option>
+													<option value="audio">Audio</option>
+													<option value="text">Text</option>
+												</select>
+											</div>
 											<div>
 												<div class="button sendButton">Send</div>
 												<div class="button cancelButton cancelVMOverlay">Cancel</div>
@@ -742,27 +863,53 @@
 											</div>
 										</div>
 										<div class="vmOptions">
-											<div class="vmFlag">Flag</div>
-											<div class="vmSave">Save</div>
+											<div class="vmFlag">Mark</div>
+											<div class="vmSave desktop">Save</div>
 											<div class="vmForward">Forward</div>
 											<div class="vmDownload">Download</div>
 											<div class="vmDelete">Delete</div>
 										</div>
 									</div>
+									
+									<div class="addEditContact">
+										<div class="contactInfo">
+											<div>
+												Enter the name and number of the new contact you would like to add to your Address Book list.
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="First Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Last Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Number" type="text">
+											</div>
+											
+											<div class="linkStyle">
+												Add Another Number
+											</div>								
+										</div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Add</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
 								</div>
-								<div class="voiceMailLine">
+								<div class="voiceMailLine isVoiceMail">
+									<span class="selectItem desktop"><input type="checkbox"></span>
 									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="addContact desktop"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
 									<span class="phNumber">Ashley Wingfield</span>
 									<span class="callTime">9:03 AM</span>
-									<span class="callDate">12/5</span>
-									<span class="vmDuration">0:28</span>
+									<span class="callDate">05/08</span>
+									<span class="vmDuration">0:28 <img class="desktop" src="images/vmPendingIcon.png"/></span>
 
 									<div class="voicemailTranscript">
 										<div class="vmTranscriptText">
 											<p>Not sure if you heard the change of plans. Larry got sick and so we won't be going to dinner tonight.
-											Sorry for the late notice. Let's catch up this weekend.
-											Bye
-											</p>
+											Sorry for the late notice. Let's catch up this weekend. Bye</p>
 											<div class="vmRateTranscript">												
 												<img class="thumbsUp" src="images/thumbsUp.png">
 												<span>Rate this transcript</span>
@@ -792,11 +939,14 @@
 												</div>
 												<div class="button addButton">Add</div>
 											</div>
-											<select name="forwardType">
-												<option value="audioNText" selected>Audio & Text</option>
-												<option value="audio">Audio</option>
-												<option value="text">Text</option>
-											</select>
+											
+											<div>
+												<select name="forwardType">
+													<option value="audioNText" selected>Audio & Text</option>
+													<option value="audio">Audio</option>
+													<option value="text">Text</option>
+												</select>
+											</div>
 											<div>
 												<div class="button sendButton">Send</div>
 												<div class="button cancelButton cancelVMOverlay">Cancel</div>
@@ -810,21 +960,540 @@
 											</div>
 										</div>
 										<div class="vmOptions">
-											<div class="vmFlag">Flag</div>
-											<div class="vmSave">Save</div>
+											<div class="vmFlag">Mark</div>
+											<div class="vmSave desktop">Save</div>
 											<div class="vmForward">Forward</div>
 											<div class="vmDownload">Download</div>
 											<div class="vmDelete">Delete</div>
 										</div>
 									</div>
+									
+									<div class="addEditContact">
+										<div class="contactInfo">
+											<div>
+												Enter the name and number of the new contact you would like to add to your Address Book list.
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="First Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Last Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Number" type="text">
+											</div>
+											
+											<div class="linkStyle">
+												Add Another Number
+											</div>								
+										</div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Add</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div>
+								<div class="callHistoryLine isMissedCall isNotOpened">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="editCallIcon">&nbsp;</span>
+									<span class="addContact desktop"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">Ben Johnson</span>
+									<span class="callTime">9:57 AM</span>
+									<span class="callDate">05/7</span>
+									<span class="vmDuration"></span>
+									<div class="editCallInfo isExistingContact">
+										<div class="btnEditContact">Edit Contact</div>
+									</div>
+									
+									<div class="addEditContact">
+										<div class="contactInfo">
+											<div>
+												Enter the name and number of the new contact you would like to add to your Address Book list.
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="First Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Last Name" type="text">
+											</div>
+											<div class="searchAddUser">
+												<input placeholder="Number" type="text">
+											</div>
+											
+											<div class="linkStyle">
+												Add Another Number
+											</div>								
+										</div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Add</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="listCalls30Days hidden">
+									<div class="callHistoryLine isMissedCall isNotOpened">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">Regina Watson</span>
+										<span class="callTime">7:23 PM</span>
+										<span class="callDate">05/7</span>
+										<span class="vmDuration"></span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+									
+										<div class="addEditContact">
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												<div class="linkStyle">
+													Add Another Number
+												</div>							
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callHistoryLine">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">(404) 221-4340</span>
+										<span class="callTime">10:35 PM</span>
+										<span class="callDate">05/7</span>
+										<span class="vmDuration">2:14</span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+									
+										<div class="addEditContact">
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isOutGoingCall">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+										<span class="phNumber">(201) 842-0142</span>
+										<span class="callTime">2:01 PM</span>
+										<span class="callDate">05/3</span>
+										<span class="vmDuration">00:53</span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+									
+										<div class="addEditContact">
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isMissedCall isNotOpened">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">(212) 672-6272</span>
+										<span class="callTime">4:42 PM</span>
+										<span class="callDate">05/3</span>
+										<span class="vmDuration"></span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+									
+										<div class="addEditContact">
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isOutGoingCall">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+										<span class="phNumber">Ashley Wingfield</span>
+										<span class="callTime">9:03 AM</span>
+										<span class="callDate">05/3</span>
+										<span class="vmDuration">0:28</span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+									
+										<div class="addEditContact">
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isMissedCall isNotOpened">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">Ben Johnson</span>
+										<span class="callTime">9:57 AM</span>
+										<span class="callDate">05/3</span>
+										<span class="vmDuration"></span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+									
+										<div class="addEditContact">
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton">Cancel</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="listCalls60Days hidden">
+									<div class="callHistoryLine isMissedCall isNotOpened">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">Regina Watson</span>
+										<span class="callTime">7:23 PM</span>
+										<span class="callDate">03/27</span>
+										<span class="vmDuration"></span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+									
+										<div class="addEditContact">
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callHistoryLine">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">(404) 221-4340</span>
+										<span class="callTime">10:35 PM</span>
+										<span class="callDate">03/27</span>
+										<span class="vmDuration">2:14</span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+									
+										<div class="addEditContact">
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isOutGoingCall">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+										<span class="phNumber">(201) 842-0142</span>
+										<span class="callTime">2:01 PM</span>
+										<span class="callDate">03/27</span>
+										<span class="vmDuration">00:53</span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+									
+										<div class="addEditContact">
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isMissedCall isNotOpened">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">(212) 672-6272</span>
+										<span class="callTime">4:42 PM</span>
+										<span class="callDate">03/25</span>
+										<span class="vmDuration"></span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+									
+										<div class="addEditContact">
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isOutGoingCall">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+										<span class="phNumber">Ashley Wingfield</span>
+										<span class="callTime">9:03 AM</span>
+										<span class="callDate">03/25</span>
+										<span class="vmDuration">0:28</span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+									
+										<div class="addEditContact">
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isMissedCall isNotOpened">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">Ben Johnson</span>
+										<span class="callTime">9:57 AM</span>
+										<span class="callDate">03/25</span>
+										<span class="vmDuration"></span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+									
+										<div class="addEditContact">
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton">Cancel</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>		
+					</div>
 				</div>
 				
 				<div class="menuItem textMessageMenu">
-					<span class="accordionOpen">+</span> <!-- <img src="images/message.png"/> --> <span class="menuItemText">Messages</span> <span class="rightArrow"></span>
+					<span class="accordionOpen">+</span> <!-- <img src="images/message.png"/> --> <span class="menuItemText">Text Messages</span> <span class="rightArrow"></span>
 				</div>
 				<div id="textMessagePage">
 					<div class="textMessages">
@@ -933,97 +1602,436 @@
 				</div>
 				<div id="settingsPage">
 					<div class="settingsMenuItem">
-						<div class="left">
+						<div id="voicemailSettings" class="left changeSettings">
 							Voice Mail
 						</div>
-						<div class="left settingsHelp forVoicemailHelp">
-							<img src="images/help.png"/>
+						<div class="left settingsHelp">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							Voice Mail allows you to manage messages from missed calls. You can keep, delete, download or forward a message with this feature.
 						</div>
 						<div class="switch right">
-							<input id="settingsToggle1" class="toggle toggle-round" type="checkbox" checked>
-							<label for="settingsToggle1" data-on="On" data-off="Off"></label>
+							<input id="toggleVM" class="toggle toggle-round" type="checkbox" checked>
+							<label for="toggleVM" data-on="On" data-off="Off"></label>
 						</div>
 					</div>
-					<div id="voicemailSettings">
+					<div class="voicemailSettings">
 						<div class="marginDiv2">
-							<div class="inputLabel blueColor">Change Voice Mail PIN</div>
-							<div class="inputLabel">Enter new PIN <img class="helpQuestion" src="images/help.png"/></div>
-							<input type="password" maxlength="8">
-							<div class="inputLabel">Confirm new PIN</div>
-							<input type="password" maxlength="8">
+							<div class="settingsText settingsInfoText"></div>
+							
+							<div class="settingsDiv">
+								<div class="vmPinOptions settingsText"><span class="blueText">Change Voice Mail PIN</span>
+									<div class="right">
+										<span class="">
+											<input type="radio" name="" class="radioChangeSelection" id="radioUpdateVMPin">
+											<label for="radioUpdateVMPin">Update</label>
+										</span>
+									</div>
+								</div>
+								
+								<div class="changeVoicemailPin desktop">
+									<div class="full">
+										<input type="password" placeholder="Enter new PIN" maxlength="8">
+										<input type="password" placeholder="Confirm new PIN" maxlength="8">
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Save</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="vmPinOptions settingsText blueText">Voice Mail Notifications 
+									<div class="switch right">
+										<input id="toggleVMPin" class="toggle toggle-round" type="checkbox">
+										<label for="toggleVMPin" data-on="On" data-off="Off"></label>
+									</div>
+								</div>
+					
+								<!-- <div class="addNumsListParent hidden">
+									<div class="settingsText">Notify me at the following <span class="radioSelectedOption">email address</span></div>
+									<div class="searchAddUser">
+										<input class="addNumInput" type="text">
+										<img class="hidden" src="images/address.png"/>
+									</div>
+									<div class="button addButton desktop">Add</div>
+									<div class="vmSettingButtons mobile">
+										<div class="button saveButton btnAddToList">Add</div>
+									</div>
+									
+									<div class="addNumsList hidden">
+										<div class="numsList"></div>
+										<div class="editNumsList linkStyle">Edit</div>
+										<div></div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Save</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div> -->
+								
+								<div class="settingsText toggleVMPin hidden">
+									<div class="settingsText">Choose Notification Method</span></div>
+									<select name="forwardType">
+										<option selected>Email</option>
+										<option>SMS</option>
+										<option>MMS</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="changeVoicemailPin mobile">
+						<div class="marginDiv2">
+							<div class="settingsText blueText">Change Voice Mail PIN</div>
+							<div>
+								<div class="settingsText">Enter new PIN <img id="pinHelpInstr" class="helpQuestion" src="images/help.png"/></div>
+								<input type="password" maxlength="8">
+								<div class="settingsText">Confirm new PIN</div>
+								<input type="password" maxlength="8">
+							</div>
 							<div class="vmSettingButtons">
 								<div class="button saveButton">Save</div>
 								<div class="button cancelButton">Cancel</div>
 							</div>
 						</div>
-						<div class="pinHelpInstr hidden">
-							<div class="topArrowDiv"></div>
-							<div class="voicemailHelpHead">
-								PIN Help
-							</div>
-							<div class="">
-								<ul>
-									<li>PIN must be 4-8 digits</li>
-									<li>PIN cannot be a forward or reverse number sequence (1234 or 8765)</li>
-									<li>PIN cannot be repeating numbers</li>
-									<li>PIN must not match the last 4 or 7 digits of the Mailbox's primary or secondary phone number or be a digit followed by zeroes</li>
-								</ul>
-							</div>
+					</div>
+					<div class="pinHelpInstr helpOverlay hidden">
+						<img class="closeIcon1" src="images/close_white.png">
+						<div class="topArrowDiv"></div>
+						<div class="helpHeader">
+							PIN Help
+						</div>
+						<div class="">
+							<ul>This is a pin associated with your voice mail and is different from any other pin that you were provided or created.</ul>
+						</div>
+						<div class="helpHeader">
+							PIN Creation Help
+						</div>
+						<div class="">
+							<ul>
+								<li>PIN must be 4-8 digits</li>
+								<li>PIN cannot be a forward or reverse number sequence (1234 or 8765)</li>
+								<li>PIN cannot be repeating numbers</li>
+								<li>PIN must not match the last 4 or 7 digits of the Mailbox's primary or secondary phone number or be a digit followed by zeroes</li>
+							</ul>
 						</div>
 					</div>
 					<div id="voicemailSettingsConflict">
-						<div class="vmConflictInstr">
-							Activating voice mail requires that you to disable call forwarding.
-						</div>
-						<div class="">
-							<div id="btnDeacvtivateCf" class="button sendButton">Activate Voice Mail</div>
-							<div id="btnKeepCfOn" class="button cancelButton">Keep Call Forwarding On</div>
+						<div>
+							<div class="vmConflictInstr">
+								Activating voice mail requires that you to disable call forwarding.
+							</div>
+							<div class="">
+								<div id="btnDeacvtivateCf" class="button sendButton">Activate Voice Mail</div>
+								<div id="btnKeepCfOn" class="button cancelButton">Keep Call Forwarding On</div>
+							</div>
 						</div>
 					</div>
 					<div class="settingsMenuItem">
-						<div class="left">
+						<div id="callForwardSettings" class="left changeSettings">
 							Call Forwarding
 						</div>
 						<div class="left settingsHelp forCallForwardingHelp">
-							<img src="images/help.png"/>
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							With this feature you can forward all of your calls or selected calls to one or multiple numbers preventing you from missing important calls.
 						</div>
 						<div class="switch right">
-							<input id="settingsToggle2" class="toggle toggle-round" type="checkbox">
-							<label for="settingsToggle2" data-on="On" data-off="Off"></label>
+							<input id="toggleCallFrwd" class="toggle toggle-round" type="checkbox">
+							<label for="toggleCallFrwd" data-on="On" data-off="Off"></label>
 						</div>
 					</div>
 					<div id="callForwardingSettingsConflict">
-						<div class="callForwardingInstr">
-							Activating call forwarding requires that you turn off voice mail.
-						</div>
-						<div class="">
-							<div id="btnDeacvtivateVm" class="button sendButton">Activate Call Forwarding</div>
-							<div id="btnKeepVmOn" class="button cancelButton">Keep Voice Mail On</div>
+						<div>
+							<div class="callForwardingInstr">
+								Activating call forwarding requires that you turn off voice mail. Please choose one option below.
+							</div>
+							<div class="">
+								<div id="btnDeacvtivateVm" class="button sendButton">Activate Call Forwarding</div>
+								<div id="btnKeepVmOn" class="button cancelButton">Keep Voice Mail On</div>
+							</div>
 						</div>
 					</div>
-					<div id="callForwardTo">
-						<div>Forward calls to:</div>
-						<div>
-							<div class="searchAddUser">
-								<input type="text">
-								<img src="images/address.png"/>
+					<div class="callForwardSettings">
+						<div class="marginDiv2">
+							<div class="settingsText settingsInfoText mobile">Enter the numbers you would like to use below.</div>
+							
+							<div class="settingsDiv">
+								<div class="changeDiv">
+									<div class="settingsText">
+										<span class="">
+											<input type="radio" name="radioCallForward" class="radioChangeSelection" id="callForwardAll" checked>
+											<label for="callForwardAll">Forward All Calls</label>
+										</span>
+									</div>
+									<div class="settingsText">
+										<span class="">
+											<input type="radio" name="radioCallForward" class="radioChangeSelection" id="callForwardSelected">
+											<label for="callForwardSelected">Forward Selected Numbers</label>
+										</span>
+									</div>
+									
+									<div class="addNumsListParent hidden">
+										<div class="searchAddUser">
+											<input class="addNumInput" type="text">
+											<img src="images/address.png"/>
+										</div>
+										<div class="button addButton desktop">Add</div>
+										<div class="vmSettingButtons mobile">
+											<div class="button saveButton btnAddToList">Add</div>
+										</div>								
+										<div class="addNumsList hidden">
+											<div class="numsList"></div>
+											<div class="editNumsList linkStyle">Edit</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="hDivider mobile"><span>&nbsp;</span>to<span>&nbsp;</span></div>
+								<div class="vDivider desktop"><span>&nbsp;</span>to<span>&nbsp;</span></div>
+								
+								<div class="changeDiv">
+									<div class="settingsText">
+										<select name="forwardType">
+											<option selected>One of My Numbers</option>
+											<option>Enter a Single Number</option>
+											<option>Enter Multiple Numbers</option>
+										</select>
+										<img class="helpQ" src="images/help.png"/>
+									</div>
+									
+									
+									<div class="settingsText">Forward to following number</div>
+									<div class="addNumsListParent">
+										<div class="searchAddUser">
+											<input class="addNumInput" type="text">
+											<img src="images/address.png"/>
+										</div>
+										<div class="button addButton desktop">Add</div>
+										<div class="vmSettingButtons mobile">
+											<div class="button saveButton btnAddToList">Add</div>
+										</div>								
+										<div class="addNumsList hidden">
+											<div class="numsList"></div>
+											<div class="editNumsList linkStyle">Edit</div>
+											<div></div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Save</div>
+												<div class="button cancelButton">Cancel</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="button addButton">Add</div>
 						</div>
-						<div>
-							<div id="cfDoneButton" class="button sendButton">Done</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div id="callNotifySettings" class="left changeSettings">
+							Call Notify
+						</div>
+						<div class="left settingsHelp">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							If you never want to miss a call or voice mail, this feature allows you to set up notifications via email or mobile phone.
+						</div>
+						<div class="switch right">
+							<input id="toggleCallNtfy" class="toggle toggle-round" type="checkbox">
+							<label for="toggleCallNtfy" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="callNotifySettings">
+						<div class="marginDiv2">
+							<div class="settingsText settingsInfoText mobile">Enter the numbers you would like to use below.</div>
+							
+							<div class="settingsDiv">
+								<div class="changeDiv">
+									<div class="settingsText">
+										<select name="forwardType">
+											<option selected>Set All Numbers</option>
+											<option>Set Specific Numbers</option>
+										</select>
+										<img class="helpQ" src="images/help.png"/>
+									</div>
+									
+									<div class="addNumsListParent">
+										<div class="searchAddUser">
+											<input class="addNumInput" type="text">
+											<img src="images/address.png"/>
+										</div>
+										<div class="button addButton desktop">Add</div>
+										<div class="vmSettingButtons mobile">
+											<div class="button saveButton btnAddToList">Add</div>
+										</div>
+										<div class="addNumsList hidden">
+											<div class="numsList"></div>
+											<div class="editNumsList linkStyle">Edit</div>
+										</div>
+									</div>								
+								</div>
+								
+								<div class="hDivider mobile"><span>&nbsp;</span>to<span>&nbsp;</span></div>
+								<div class="vDivider desktop"><span>&nbsp;</span>to<span>&nbsp;</span></div>
+								
+								<div class="changeDiv">
+									<div class="settingsText">
+										<span class="">
+											<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+											<label for="callNotifyEmail">Notify Via Email</label>
+										</span>
+									</div>
+									<div class="settingsText">
+										<span class="">
+											<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+											<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+										</span>
+									</div>
+									
+									<div class="addNumsListParent">
+										<div class="settingsText">Notify me at the following <span class="radioSelectedOption">email address</span></div>
+										<div class="searchAddUser">
+											<input class="addNumInput" type="text">
+											<img class="hidden" src="images/address.png"/>
+										</div>
+										<div class="button addButton desktop">Add</div>
+										<div class="vmSettingButtons mobile">
+											<div class="button saveButton btnAddToList">Add</div>
+										</div>
+										
+										<div class="addNumsList hidden">
+											<div class="numsList"></div>
+											<div class="editNumsList linkStyle">Edit</div>
+											<div></div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Save</div>
+												<div class="button cancelButton">Cancel</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div id="simlutaneousRingSettings" class="left changeSettings">
+							Simultaneous Ringing
+						</div>
+						<div class="left settingsHelp">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							Simultaneous Ringing allows you to answers incoming calls from any capable device including your mobile phone or computer.
+						</div>
+						<div class="switch right">
+							<input id="toggleSimulRing" class="toggle toggle-round" type="checkbox">
+							<label for="toggleSimulRing" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="simlutaneousRingSettings">
+						<div class="marginDiv2">
+							<div class="settingsText settingsInfoText">Enter the numbers you would like to use below.</div>
+							
+							<div class="settingsDiv">
+								<div class="addNumsListParent">
+									<div class="settingsText mobile">Enter a Telephone Number</div>
+									<div class="searchAddUser">
+										<input class="addNumInput" placeholder="Enter a Telephone Number" type="text">
+										<img src="images/address.png"/>
+									</div>
+									<div class="button addButton desktop">Add</div>
+									<div class="vmSettingButtons mobile">
+										<div class="button saveButton btnAddToList">Add</div>
+									</div>
+									<div class="addNumsList hidden">
+										<div class="numsList"></div>
+										<div class="editNumsList linkStyle">Edit</div>
+										<div></div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Save</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div id="sequentialRingingSettings" class="left changeSettings">
+							Sequential Ringing
+						</div>
+						<div class="left settingsHelp">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							With Sequential Ringing, you set up calls to ring different numbers in a specific order. The number of rings before the call goes to the next number must be configured.
+						</div>
+						<div class="switch right">
+							<input id="toggleSeqRing" class="toggle toggle-round" type="checkbox">
+							<label for="toggleSeqRing" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="sequentialRingingSettings">
+						<div class="marginDiv2">
+							<div class="settingsText settingsInfoText">Enter the numbers you would like to use below.</div>
+							<div class="settingsDiv">
+								<div class="addNumsListParent">
+									<div class="settingsText">Enter a Number</div>
+									<div class="searchAddUser">
+										<input class="addNumInput" type="text">
+										<img src="images/address.png"/>
+									</div>
+									<div class="button addButton desktop">Add</div>
+									<div class="vmSettingButtons mobile">
+										<div class="button saveButton btnAddToList">Add</div>
+									</div>
+									<div class="addNumsList hidden">
+										<div class="numsList"></div>
+										<div class="editNumsList linkStyle">Edit</div>
+										<div></div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Save</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="settingsText">
+									<input type="checkbox" id="SeqRingCheck1">
+									<label for="SeqRingCheck1">Set Day and Time</label>
+								</div>
+								<div class="settingsText">
+									<input type="checkbox" id="SeqRingCheck2">
+									<label for="SeqRingCheck2">Specify Ring Profile</label>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="settingsMenuItem">
 						<div class="left">
-							Simultaneous Ringing
+							Priority Ringing
 						</div>
-						<div class="left settingsHelp">
-							<img src="images/help.png"/>
+						<div id="priorityRingingHelp" class="left settingsHelp helpQuestion">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							Priority Ringing allows you to differentiate the ring tone of Important callers.
 						</div>
 						<div class="switch right">
-							<input id="settingsToggle3" class="toggle toggle-round" type="checkbox">
-							<label for="settingsToggle3" data-on="On" data-off="Off"></label>
+							<input id="togglePriorRing" class="toggle toggle-round" type="checkbox">
+							<label for="togglePriorRing" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="priorityRingingHelp helpOverlay hidden">
+						<img class="closeIcon1" src="images/close_white.png">
+						<div class="topArrowDiv"></div>
+						<div class="helpHeader">
+							Priority Ringing Help
+						</div>
+						<div class="">
+							<ul>With Priority Ringing, you can create a special list of priority callers that will have a special ring when their call comes through.</ul>
+							<ul>If you have Call Waiting, you will hear a special Call Waiting tone for those priority callers, when Priority Ringing is activated.</ul>
 						</div>
 					</div>
 					<div class="settingsMenuItem">
@@ -1031,23 +2039,34 @@
 							Call Waiting
 						</div>
 						<div class="left settingsHelp">
-							<img src="images/help.png"/>
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							Call Waiting allows you to receive calls while on the phone.
 						</div>
 						<div class="switch right">
-							<input id="settingsToggle4" class="toggle toggle-round" type="checkbox">
-							<label for="settingsToggle4" data-on="On" data-off="Off"></label>
+							<input id="toggleCallWait" class="toggle toggle-round" type="checkbox">
+							<label for="toggleCallWait" data-on="On" data-off="Off"></label>
 						</div>
 					</div>
 					<div class="settingsMenuItem">
-						<div class="left">
+						<div id="doNotDisturbSettings" class="left changeSettings">
 							Do Not Disturb
 						</div>
 						<div class="left settingsHelp">
-							<img src="images/help.png"/>
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							The Do Not Disturb is the best option to use when you have a busy schedule to send your calls directly to voice mail.
 						</div>
 						<div class="switch right">
-							<input id="settingsToggle5" class="toggle toggle-round" type="checkbox">
-							<label for="settingsToggle5" data-on="On" data-off="Off"></label>
+							<input id="toggleDntDstrb" class="toggle toggle-round" type="checkbox">
+							<label for="toggleDntDstrb" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="doNotDisturbSettings">
+						<div class="marginDiv2">
+							<div class="settingsText">Do Not Disturb allows you to send incoming calls directly to your voice mail without ringing your phone. Your Voice Mail must be turned on to properly use this feature.</div>
 						</div>
 					</div>
 					<div class="settingsMenuItem">
@@ -1055,27 +2074,259 @@
 							Caller ID
 						</div>
 						<div class="left settingsHelp">
-							<img src="images/help.png"/>
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							If you would like know who’s calling, Caller ID  will display the information of the caller.
 						</div>
 						<div class="switch right">
-							<input id="settingsToggle6" class="toggle toggle-round" type="checkbox">
-							<label for="settingsToggle6" data-on="On" data-off="Off"></label>
+							<input id="toggleCallID" class="toggle toggle-round" type="checkbox">
+							<label for="toggleCallID" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div id="callBarringSettings" class="left changeSettings">
+							Call Barring
+						</div>
+						<div class="left settingsHelp">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							This is the perfect feature to use if you want to prevent outgoing calls to specific number and number groups.
+						</div>
+						<div class="switch right">
+							<input id="toggleCallBarr" class="toggle toggle-round" type="checkbox">
+							<label for="toggleCallBarr" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="callBarringSettings">
+						<div class="marginDiv2">
+							<div class="settingsText settingsInfoText">Enter the numbers that you would like to bar.</div>
+							
+							<div class="settingsDiv">
+								<div class="settingsText">
+									<select name="forwardType" id="callBarringSelect1">
+										<option value="all" selected>Bar Calls All Day, Everyday</option>
+										<option value="specific">Block Outgoing Calls for Specific Date</option>
+									</select>
+									<img class="helpQ" src="images/help.png"/>
+								</div>
+								
+								<div class="timePeriodSelector hidden">
+									<div class="half">
+										<div class="settingsText">Begin Date</div>
+										<div class="searchAddUser">
+											<input class="" type="text">
+											<img src="images/date_picker.png"/>
+										</div>
+									</div>
+									<div class="half">
+										<div class="settingsText">End Date</div>
+										<div class="searchAddUser">
+											<input class="" type="text">
+											<img src="images/date_picker.png"/>
+										</div>
+									</div>
+									
+									<div class="half">
+										<div class="settingsText">Start Time</div>
+										<select name="forwardType">
+											<option selected>12:00 PM</option>
+											<option>1:00 PM</option>
+											<option>2:00 PM</option>
+											<option>3:00 PM</option>
+											<option>4:00 PM</option>
+											<option>5:00 PM</option>
+											<option>6:00 PM</option>
+											<option>7:00 PM</option>
+											<option>8:00 PM</option>
+											<option>9:00 PM</option>
+											<option>10:00 PM</option>
+											<option>11:00 PM</option>
+											<option>12:00 AM</option>
+											<option>1:00 AM</option>
+											<option>2:00 AM</option>
+											<option>3:00 AM</option>
+											<option>4:00 AM</option>
+											<option>5:00 AM</option>
+											<option>6:00 AM</option>
+											<option>7:00 AM</option>
+											<option>8:00 AM</option>
+											<option>9:00 AM</option>
+											<option>10:00 AM</option>
+											<option>11:00 AM</option>
+										</select>
+									</div>
+									<div class="half">
+										<div class="settingsText">End Time</div>
+										<select name="forwardType">
+											<option selected>12:00 PM</option>
+											<option>1:00 PM</option>
+											<option>2:00 PM</option>
+											<option>3:00 PM</option>
+											<option>4:00 PM</option>
+											<option>5:00 PM</option>
+											<option>6:00 PM</option>
+											<option>7:00 PM</option>
+											<option>8:00 PM</option>
+											<option>9:00 PM</option>
+											<option>10:00 PM</option>
+											<option>11:00 PM</option>
+											<option>12:00 AM</option>
+											<option>1:00 AM</option>
+											<option>2:00 AM</option>
+											<option>3:00 AM</option>
+											<option>4:00 AM</option>
+											<option>5:00 AM</option>
+											<option>6:00 AM</option>
+											<option>7:00 AM</option>
+											<option>8:00 AM</option>
+											<option>9:00 AM</option>
+											<option>10:00 AM</option>
+											<option>11:00 AM</option>
+										</select>
+									</div>
+								</div>
+								
+								<div class="settingsText">
+									<input type="checkbox" id="callBarringCheck1">
+									<label for="callBarringCheck1">Block Outgoing Calls to All 411, 900, 976 Numbers</label>
+								</div>
+								<div class="settingsText">
+									<input type="checkbox" id="callBarringCheck2">
+									<label for="callBarringCheck2">Block Outgoing Calls to Specific Numbers</label>
+								</div>
+								
+								<div class="addNumsListParent hidden">
+									<div class="settingsText">Enter a Telephone Number</div>
+									<div class="searchAddUser">
+										<input class="addNumInput" type="text">
+										<img src="images/address.png"/>
+									</div>
+									<div class="button addButton desktop">Add</div>
+									<div class="vmSettingButtons mobile">
+										<div class="button saveButton btnAddToList">Add</div>
+									</div>
+									<div class="addNumsList hidden">
+										<div class="numsList"></div>
+										<div class="editNumsList linkStyle">Edit</div>
+										<div></div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Save</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="settingsMenuItem">
 						<div class="left">
-							Security
+							Call Blocking
 						</div>
 						<div class="left settingsHelp">
-							<img src="images/help.png"/>
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							If you would like to stop receiving calls from specific numbers, Call Blocking is the perfect feature to use.
 						</div>
 						<div class="switch right">
-							<span class="rightArrow"></span>
+							<input id="toggleCallBlk" class="toggle toggle-round" type="checkbox">
+							<label for="toggleCallBlk" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div id="selectiveAcceptSettings" class="left changeSettings">
+							Selective Call Accept
+						</div>
+						<div class="left settingsHelp">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							With this feature, you can choose to accept calls from a selective Call Accept list numbers created from your contact list and address book.
+						</div>
+						<div class="switch right">
+							<input id="toggleSelAccpt" class="toggle toggle-round" type="checkbox">
+							<label for="toggleSelAccpt" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="selectiveAcceptSettings">
+						<div class="marginDiv2">
+							<div class="settingsText settingsInfoText">Enter the numbers you would like to add to your Selective Call Accept list.</div>
+							
+							<div class="settingsDiv">
+								<div class="addNumsListParent">
+									<div class="settingsText">Enter a Telephone Number</div>
+									<div class="searchAddUser">
+										<input class="addNumInput" type="text">
+										<img src="images/address.png"/>
+									</div>
+									<div class="button addButton desktop">Add</div>
+									<div class="vmSettingButtons mobile">
+										<div class="button saveButton btnAddToList">Add</div>
+									</div>
+									<div class="addNumsList hidden">
+										<div class="numsList"></div>
+										<div class="editNumsList linkStyle">Edit</div>
+										<div></div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Save</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div id="myNumbersSettings" class="left changeSettings">
+							My Numbers
+						</div>
+						<div class="left settingsHelp">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							My Numbers is the perfect shortcut to use when setting up other features such as Call Forwarding and Selective Call Accept allowing you to find the numbers you want with ease.
+						</div>
+						<div class="switch right">
+							<input id="toggleMyNums" class="toggle toggle-round" type="checkbox">
+							<label for="toggleMyNums" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="myNumbersSettings">
+						<div class="marginDiv2">
+							<div class="settingsText settingsInfoText">Enter the name and number of the new contact you would like to add to your My Numbers list.</div>
+							
+							<div class="settingsDiv">
+								<div class="addNumsListParent">
+									<div class="settingsText mobile">Enter Name:</div>
+									<div class="searchAddUser">
+										<input class="addNameInput" type="text" placeholder="Name">
+									</div>
+									<div class="settingsText mobile">Enter a telephone number:</div>
+									<div class="searchAddUser">
+										<input class="addNumInput" type="text" placeholder="Enter Phone Number">
+									</div>
+									<div class="button addButton desktop">Add</div>
+									<div class="vmSettingButtons mobile">
+										<div class="button saveButton btnAddContact">Add Contact</div>
+									</div>
+									<div class="addNumsList hidden">
+										<div class="numsList"></div>
+										<div class="editNumsList linkStyle">Edit</div>
+										<div></div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Complete</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				
-				<div class="menuItem helpMenu">
+				<div class="menuItem helpMenu mobile">
 					<span class="accordionOpen">+</span> <!-- <img src="images/help.png"/> --> <span class="menuItemText">Help </span> <span class="rightArrow"></span>
 				</div>
 				<div id="helpPage">
@@ -1094,26 +2345,10 @@
 <script>
 	//  ONLOAD CODE
 	$(document).ready(function() {
-		// IF MOBILE
-		//if ($(window).width() <= 480) {
-			// LOADING MOBILE JS SCRIPT
-			function loadScript(url, callback) {
-				// Adding the script tag to the head as suggested before
-				var head = document.getElementsByTagName('head')[0];
-				var script = document.createElement('script');
-				script.type = 'text/javascript';
-				script.src = 'js/js.js';
-
-				// Then bind the event to the callback function.
-				// There are several events for cross browser compatibility.
-				script.onreadystatechange = callback;
-				script.onload = callback;
-
-				// Fire the loading
-				head.appendChild(script);
-			}
-
-			loadScript();
+		// LOADING MOBILE JS SCRIPT
+		$.getScript("js/script.js", function(){
+			console.log( "Load was performed." );
+		});
 	});
 	
 </script>
