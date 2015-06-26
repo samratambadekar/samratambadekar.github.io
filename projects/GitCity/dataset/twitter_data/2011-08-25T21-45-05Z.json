@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 5, "additions": 7, "changes": 12, "filename": "project/versions.properties"}], "stats": {"deletions": 5, "additions": 7, "total": 12}, "commit": {"date": "2011-08-25T21:45:05Z", "authorId": "hjz", "author": "Justin Zhu"}}

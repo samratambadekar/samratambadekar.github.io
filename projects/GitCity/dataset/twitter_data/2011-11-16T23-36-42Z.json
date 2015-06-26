@@ -1,0 +1,1 @@
+{"repo": "querulous", "files": [{"status": "modified", "deletions": 7, "additions": 30, "changes": 37, "filename": "querulous-core/src/main/scala/com/twitter/querulous/config/AsyncQueryEvaluator.scala"}], "stats": {"deletions": 7, "additions": 30, "total": 37}, "commit": {"date": "2011-11-16T23:36:42Z", "authorId": "freels", "author": "Matt Freels"}}

@@ -1,0 +1,1 @@
+{"repo": "cassovary", "files": [{"status": "added", "deletions": 0, "additions": 28, "changes": 28, "filename": "NOTICE"}, {"status": "modified", "deletions": 9, "additions": 12, "changes": 21, "filename": "README.md"}], "stats": {"deletions": 9, "additions": 40, "total": 49}, "commit": {"date": "2012-02-24T03:15:41Z", "authorId": "pankajgupta", "author": "Pankaj Gupta"}}

@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 20, "additions": 0, "changes": 20, "filename": "src/compiler/scala/tools/nsc/typechecker/RefChecks.scala"}], "stats": {"deletions": 20, "additions": 0, "total": 20}, "commit": {"date": "2012-02-22T03:27:22Z", "authorId": "paulp", "author": "Paul Phillips"}}

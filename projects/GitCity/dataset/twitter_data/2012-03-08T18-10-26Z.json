@@ -1,0 +1,1 @@
+{"repo": "commons", "files": [{"status": "modified", "deletions": 140, "additions": 207, "changes": 347, "filename": "build-support/commons/ivy/publish.properties"}], "stats": {"deletions": 140, "additions": 207, "total": 347}, "commit": {"date": "2012-03-08T18:10:26Z", "authorId": "", "author": "John Sirois"}}

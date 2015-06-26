@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 6, "changes": 8, "filename": "t/t3703-add-magic-pathspec.sh"}], "stats": {"deletions": 2, "additions": 6, "total": 8}, "commit": {"date": "2011-05-12T08:21:33Z", "authorId": "", "author": "Johannes Sixt"}}

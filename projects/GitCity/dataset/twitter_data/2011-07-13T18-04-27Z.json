@@ -1,0 +1,1 @@
+{"repo": "scala-bootstrapper", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "lib/template/TUTORIAL.md"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-07-13T18:04:27Z", "authorId": "evnm", "author": "Evan Meagher"}}

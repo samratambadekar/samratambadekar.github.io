@@ -1,0 +1,1 @@
+{"repo": "scala-bootstrapper", "files": [{"status": "renamed", "deletions": 0, "additions": 0, "changes": 0, "filename": "lib/template/.gitignore.erb"}], "stats": {"deletions": 0, "additions": 0, "total": 0}, "commit": {"date": "2011-05-11T17:55:33Z", "authorId": "", "author": "Kyle Maxwell"}}

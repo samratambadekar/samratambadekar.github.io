@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 2, "additions": 0, "changes": 2, "filename": "src/compiler/scala/reflect/internal/Required.scala"}], "stats": {"deletions": 2, "additions": 0, "total": 2}, "commit": {"date": "2011-07-06T15:52:04Z", "authorId": "odersky", "author": "Martin Odersky"}}

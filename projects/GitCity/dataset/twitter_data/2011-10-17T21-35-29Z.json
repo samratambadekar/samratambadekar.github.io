@@ -1,0 +1,1 @@
+{"repo": "ostrich", "files": [{"status": "modified", "deletions": 1, "additions": 6, "changes": 7, "filename": "src/main/scala/com/twitter/ostrich/admin/RuntimeEnvironment.scala"}], "stats": {"deletions": 1, "additions": 6, "total": 7}, "commit": {"date": "2011-10-17T21:35:29Z", "authorId": "mccv", "author": "mmcbride"}}

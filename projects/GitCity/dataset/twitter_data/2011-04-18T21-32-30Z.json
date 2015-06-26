@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "examples/src/main/java/org/apache/mahout/classifier/sgd/TrainLogistic.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-04-18T21:32:30Z", "authorId": "srowen", "author": "Sean R. Owen"}}

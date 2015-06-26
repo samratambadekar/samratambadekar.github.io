@@ -1,0 +1,1 @@
+{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 8, "additions": 7, "changes": 15, "filename": "lib/rewriter.rb"}], "stats": {"deletions": 8, "additions": 7, "total": 15}, "commit": {"date": "2012-02-16T06:08:17Z", "authorId": "niw", "author": "Yoshimasa Niwa"}}

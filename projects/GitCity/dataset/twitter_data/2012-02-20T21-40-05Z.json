@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 36, "additions": 10, "changes": 46, "filename": "src/build/maven/maven-deploy.xml"}], "stats": {"deletions": 36, "additions": 10, "total": 46}, "commit": {"date": "2012-02-20T21:40:05Z", "authorId": "jsuereth", "author": "Josh Suereth"}}

@@ -1,0 +1,1 @@
+{"repo": "bookkeeper", "files": [{"status": "removed", "deletions": 1027, "additions": 0, "changes": 1027, "filename": "bookkeeper-server/src/main/java/org/apache/bookkeeper/bookie/Bookie.java.orig"}], "stats": {"deletions": 1027, "additions": 0, "total": 1027}, "commit": {"date": "2012-02-01T12:01:49Z", "authorId": "ivankelly", "author": "Ivan Brendan Kelly"}}

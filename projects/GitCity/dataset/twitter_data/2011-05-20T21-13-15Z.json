@@ -1,0 +1,1 @@
+{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 4, "additions": 6, "changes": 10, "filename": "src/java/com/twitter/elephantbird/mapred/input/DeprecatedLzoThriftB64LineRecordReader.java"}], "stats": {"deletions": 4, "additions": 6, "total": 10}, "commit": {"date": "2011-05-20T21:13:15Z", "authorId": "", "author": "Yifan Shi"}}

@@ -1,0 +1,1 @@
+{"repo": "util", "files": [{"status": "modified", "deletions": 0, "additions": 5, "changes": 5, "filename": "util-hashing/src/main/scala/com/twitter/hashing/KeyHasher.scala"}], "stats": {"deletions": 0, "additions": 5, "total": 5}, "commit": {"date": "2011-05-19T19:55:59Z", "authorId": "arya", "author": "Arya Asemanfar"}}

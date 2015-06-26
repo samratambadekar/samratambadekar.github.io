@@ -1,0 +1,1 @@
+{"repo": "util", "files": [{"status": "modified", "deletions": 0, "additions": 90, "changes": 90, "filename": "util-core/src/main/scala/com/twitter/util/Config.scala"}], "stats": {"deletions": 0, "additions": 90, "total": 90}, "commit": {"date": "2011-06-23T21:27:20Z", "authorId": "jjmmcc", "author": "Jeremy Cloud"}}

@@ -1,0 +1,1 @@
+{"repo": "snowflake", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/plugins/Plugins.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-08-10T16:06:19Z", "authorId": "arya", "author": "Arya Asemanfar"}}

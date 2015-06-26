@@ -1,0 +1,1 @@
+{"repo": "cascading", "files": [{"status": "added", "deletions": 0, "additions": 50, "changes": 50, "filename": "README.md"}, {"status": "removed", "deletions": 47, "additions": 0, "changes": 47, "filename": "README.txt"}], "stats": {"deletions": 47, "additions": 50, "total": 97}, "commit": {"date": "2012-02-23T20:11:07Z", "authorId": "sritchie", "author": "Sam Ritchie"}}

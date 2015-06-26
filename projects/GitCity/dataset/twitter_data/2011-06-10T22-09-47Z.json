@@ -1,0 +1,1 @@
+{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/java/com/twitter/elephantbird/pig/load/HBaseLoader.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-06-10T22:09:47Z", "authorId": "rangadi", "author": "Raghu Angadi"}}

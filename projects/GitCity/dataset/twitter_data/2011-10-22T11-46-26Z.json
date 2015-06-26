@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 48, "additions": 55, "changes": 103, "filename": "math/src/main/java/org/apache/mahout/math/AbstractMatrix.java"}], "stats": {"deletions": 48, "additions": 55, "total": 103}, "commit": {"date": "2011-10-22T11:46:26Z", "authorId": "srowen", "author": "Sean R. Owen"}}

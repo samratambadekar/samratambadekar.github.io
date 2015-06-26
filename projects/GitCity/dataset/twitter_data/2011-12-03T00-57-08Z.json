@@ -1,0 +1,1 @@
+{"repo": "kestrel", "files": [{"status": "modified", "deletions": 1, "additions": 18, "changes": 19, "filename": "project/build/KestrelProject.scala"}], "stats": {"deletions": 1, "additions": 18, "total": 19}, "commit": {"date": "2011-12-03T00:57:08Z", "authorId": "", "author": "Robey Pointer"}}

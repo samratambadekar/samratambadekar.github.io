@@ -1,0 +1,1 @@
+{"repo": "sbt-package-dist", "files": [{"status": "modified", "deletions": 1, "additions": 37, "changes": 38, "filename": "src/main/scala/com/twitter/sbt/AdhocInlines.scala"}], "stats": {"deletions": 1, "additions": 37, "total": 38}, "commit": {"date": "2011-03-25T17:57:18Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

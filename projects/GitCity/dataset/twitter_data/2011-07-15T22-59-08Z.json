@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "src/library/scala/collection/immutable/Stream.scala"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2011-07-15T22:59:08Z", "authorId": "paulp", "author": "Paul Phillips"}}

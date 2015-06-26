@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "pom.xml"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2011-10-26T17:04:16Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

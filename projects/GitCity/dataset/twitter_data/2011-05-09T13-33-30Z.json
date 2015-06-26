@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "added", "deletions": 0, "additions": 71, "changes": 71, "filename": "t/t8008-blame-formats.sh"}], "stats": {"deletions": 0, "additions": 71, "total": 71}, "commit": {"date": "2011-05-09T13:33:30Z", "authorId": "peff", "author": "Jeff King"}}

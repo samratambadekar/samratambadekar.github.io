@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 5, "changes": 6, "filename": "test/files/specialized/SI-5005.scala"}], "stats": {"deletions": 1, "additions": 5, "total": 6}, "commit": {"date": "2012-02-16T15:54:27Z", "authorId": "VladUreche", "author": "Vlad Ureche"}}

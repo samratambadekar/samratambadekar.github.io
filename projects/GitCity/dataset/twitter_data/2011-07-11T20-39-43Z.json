@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "src/library/scala/collection/generic/GenTraversableFactory.scala"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2011-07-11T20:39:43Z", "authorId": "paulp", "author": "Paul Phillips"}}

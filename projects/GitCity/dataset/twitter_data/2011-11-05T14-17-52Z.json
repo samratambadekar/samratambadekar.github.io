@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 26, "additions": 35, "changes": 61, "filename": "src/conf/driver.classes.props"}], "stats": {"deletions": 26, "additions": 35, "total": 61}, "commit": {"date": "2011-11-05T14:17:52Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

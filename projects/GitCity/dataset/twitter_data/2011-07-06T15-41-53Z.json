@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/manual/scala/man1/scaladoc.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2011-07-06T15:41:53Z", "authorId": "kzys", "author": "Kato Kazuyoshi"}}

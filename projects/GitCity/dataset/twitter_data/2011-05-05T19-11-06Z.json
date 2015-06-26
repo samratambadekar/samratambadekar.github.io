@@ -1,0 +1,1 @@
+{"repo": "cassie", "files": [{"status": "modified", "deletions": 2, "additions": 7, "changes": 9, "filename": "cassie-core/src/main/scala/com/twitter/cassie/CounterColumn.scala"}], "stats": {"deletions": 2, "additions": 7, "total": 9}, "commit": {"date": "2011-05-05T19:11:06Z", "authorId": "ryanking", "author": "Ryan King"}}

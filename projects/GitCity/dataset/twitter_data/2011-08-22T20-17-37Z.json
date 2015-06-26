@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "finagle-b3/src/main/scala/com/twitter/finagle/b3/thrift/DeadlineSpanMap.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-08-22T20:17:37Z", "authorId": "johanoskarsson", "author": "Johan Oskarsson"}}

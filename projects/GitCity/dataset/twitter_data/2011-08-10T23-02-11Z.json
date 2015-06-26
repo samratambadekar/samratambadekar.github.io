@@ -1,0 +1,1 @@
+{"repo": "gizzard", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/test/scala/com/twitter/gizzard/shards/RoutingNodeSpec.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2011-08-10T23:02:11Z", "authorId": "freels", "author": "Matt Freels"}}

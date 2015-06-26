@@ -1,0 +1,1 @@
+{"repo": "cassie", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "cassie-core/src/main/scala/com/twitter/cassie/ColumnFamily.scala"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2011-04-04T20:30:56Z", "authorId": "", "author": "Kyle Maxwell"}}

@@ -1,0 +1,1 @@
+{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/java/com/twitter/elephantbird/mapreduce/input/LzoInputFormat.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-06-10T22:51:44Z", "authorId": "dvryaboy", "author": "dvryaboy"}}

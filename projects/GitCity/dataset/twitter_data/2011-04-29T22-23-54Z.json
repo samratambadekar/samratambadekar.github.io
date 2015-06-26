@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "added", "deletions": 0, "additions": 100, "changes": 100, "filename": "t/t6060-merge-index.sh"}], "stats": {"deletions": 0, "additions": 100, "total": 100}, "commit": {"date": "2011-04-29T22:23:54Z", "authorId": "peff", "author": "Jeff King"}}

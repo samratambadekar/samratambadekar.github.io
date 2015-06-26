@@ -1,0 +1,1 @@
+{"repo": "flockdb-client", "files": [{"status": "modified", "deletions": 5, "additions": 1, "changes": 6, "filename": "lib/flock/mixins/sizeable.rb"}], "stats": {"deletions": 5, "additions": 1, "total": 6}, "commit": {"date": "2011-06-15T22:06:14Z", "authorId": "", "author": "Josh Hull"}}

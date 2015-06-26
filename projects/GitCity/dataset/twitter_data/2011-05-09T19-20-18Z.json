@@ -1,0 +1,1 @@
+{"repo": "cassie", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "project/build/Cassie.scala"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2011-05-09T19:20:18Z", "authorId": "ryanking", "author": "Ryan King"}}

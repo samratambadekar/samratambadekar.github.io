@@ -1,0 +1,1 @@
+{"repo": "cloudhopper-smpp", "files": [{"status": "modified", "deletions": 5, "additions": 1, "changes": 6, "filename": "src/main/java/com/cloudhopper/smpp/impl/DefaultSmppClient.java"}], "stats": {"deletions": 5, "additions": 1, "total": 6}, "commit": {"date": "2011-05-05T08:01:04Z", "authorId": "jjlauer", "author": "Joe Lauer"}}

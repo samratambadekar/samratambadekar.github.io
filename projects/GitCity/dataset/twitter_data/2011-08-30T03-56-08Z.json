@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 30, "additions": 129, "changes": 159, "filename": "Documentation/git-remote-helpers.txt"}], "stats": {"deletions": 30, "additions": 129, "total": 159}, "commit": {"date": "2011-08-30T03:56:08Z", "authorId": "jrn", "author": "Jonathan Nieder"}}

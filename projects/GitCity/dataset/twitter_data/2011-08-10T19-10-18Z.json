@@ -1,0 +1,1 @@
+{"repo": "sbt-thrift", "files": [{"status": "modified", "deletions": 3, "additions": 16, "changes": 19, "filename": "project/plugins/Plugins.scala"}], "stats": {"deletions": 3, "additions": 16, "total": 19}, "commit": {"date": "2011-08-10T19:10:18Z", "authorId": "ryanking", "author": "Ryan King"}}

@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 6, "additions": 6, "changes": 12, "filename": "project/versions.properties"}], "stats": {"deletions": 6, "additions": 6, "total": 12}, "commit": {"date": "2011-08-12T20:23:50Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

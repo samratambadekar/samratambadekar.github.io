@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 12, "additions": 12, "changes": 24, "filename": "t/t3905-stash-include-untracked.sh"}], "stats": {"deletions": 12, "additions": 12, "total": 24}, "commit": {"date": "2011-08-27T00:59:24Z", "authorId": "drafnel", "author": "Brandon Casey"}}

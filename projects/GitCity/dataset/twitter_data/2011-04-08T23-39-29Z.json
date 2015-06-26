@@ -1,0 +1,1 @@
+{"repo": "sbt-package-dist", "files": [{"status": "modified", "deletions": 6, "additions": 17, "changes": 23, "filename": "src/main/resources/index.template"}], "stats": {"deletions": 6, "additions": 17, "total": 23}, "commit": {"date": "2011-04-08T23:39:29Z", "authorId": "", "author": "Robey Pointer"}}

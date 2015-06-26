@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "Documentation/git.txt"}, {"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "upload-pack.c"}], "stats": {"deletions": 1, "additions": 4, "total": 5}, "commit": {"date": "2011-08-24T19:18:02Z", "authorId": "gitster", "author": "Junio C Hamano"}}

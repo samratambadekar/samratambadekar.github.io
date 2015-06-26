@@ -1,0 +1,1 @@
+{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 49, "additions": 3, "changes": 52, "filename": "src/java/com/twitter/elephantbird/pig/load/LzoTextLoader.java"}], "stats": {"deletions": 49, "additions": 3, "total": 52}, "commit": {"date": "2011-06-24T23:45:01Z", "authorId": "rangadi", "author": "Raghu Angadi"}}

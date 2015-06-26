@@ -1,0 +1,1 @@
+{"repo": "pycascading", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "add_jar_to_build.sh"}, {"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "remote_deploy.sh"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2012-02-06T06:40:06Z", "authorId": "", "author": "Gabor Szabo"}}

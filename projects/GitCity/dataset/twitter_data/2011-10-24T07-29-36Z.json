@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 8, "changes": 9, "filename": "integration/src/main/java/org/apache/mahout/utils/vectors/RowIdJob.java"}], "stats": {"deletions": 1, "additions": 8, "total": 9}, "commit": {"date": "2011-10-24T07:29:36Z", "authorId": "srowen", "author": "Sean R. Owen"}}

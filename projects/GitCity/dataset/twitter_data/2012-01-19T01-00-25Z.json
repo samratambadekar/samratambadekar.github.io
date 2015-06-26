@@ -1,0 +1,1 @@
+{"repo": "thrift_client", "files": [{"status": "removed", "deletions": 33, "additions": 0, "changes": 33, "filename": "thrift_client.gemspec"}], "stats": {"deletions": 33, "additions": 0, "total": 33}, "commit": {"date": "2012-01-19T01:00:25Z", "authorId": "ryanking", "author": "Ryan King"}}

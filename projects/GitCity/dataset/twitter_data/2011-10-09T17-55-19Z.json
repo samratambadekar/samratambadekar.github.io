@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 16, "additions": 22, "changes": 38, "filename": "core/src/main/java/org/apache/mahout/df/mapreduce/partial/PartialBuilder.java"}], "stats": {"deletions": 16, "additions": 22, "total": 38}, "commit": {"date": "2011-10-09T17:55:19Z", "authorId": "", "author": "Abdel Hakim Deneche"}}

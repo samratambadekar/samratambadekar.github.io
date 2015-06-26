@@ -1,0 +1,1 @@
+{"repo": "cassie", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "cassie-core/src/main/thrift/cassandra.thrift"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-03-23T20:05:49Z", "authorId": "ryanking", "author": "Ryan King"}}

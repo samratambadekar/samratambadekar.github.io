@@ -1,0 +1,1 @@
+{"repo": "sbt-package-dist", "files": [{"status": "modified", "deletions": 15, "additions": 122, "changes": 137, "filename": "src/main/scala/com/twitter/sbt/ProjectInlines.scala"}], "stats": {"deletions": 15, "additions": 122, "total": 137}, "commit": {"date": "2012-01-31T16:07:38Z", "authorId": "mccv", "author": "mmcbride"}}

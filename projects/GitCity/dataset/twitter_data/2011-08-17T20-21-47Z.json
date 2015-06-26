@@ -1,0 +1,1 @@
+{"repo": "sbt-thrift", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/main/scala/com/twitter/sbt/CompileThrift.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-08-17T20:21:47Z", "authorId": "ryanking", "author": "Ryan King"}}

@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 62, "additions": 64, "changes": 126, "filename": "core/src/main/java/org/apache/mahout/cf/taste/hadoop/item/RecommenderJob.java"}], "stats": {"deletions": 62, "additions": 64, "total": 126}, "commit": {"date": "2011-11-03T19:52:07Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

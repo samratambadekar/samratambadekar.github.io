@@ -1,0 +1,1 @@
+{"repo": "libkestrel", "files": [{"status": "modified", "deletions": 23, "additions": 19, "changes": 42, "filename": "src/main/scala/com/twitter/libkestrel/PeriodicSyncFile.scala"}], "stats": {"deletions": 23, "additions": 19, "total": 42}, "commit": {"date": "2012-02-14T23:33:18Z", "authorId": "", "author": "Robey Pointer"}}

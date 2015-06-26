@@ -1,0 +1,1 @@
+{"repo": "scala-bootstrapper", "files": [{"status": "modified", "deletions": 2, "additions": 4, "changes": 6, "filename": "lib/template/project/plugins/Plugins.scala.erb"}], "stats": {"deletions": 2, "additions": 4, "total": 6}, "commit": {"date": "2011-05-06T00:35:05Z", "authorId": "", "author": "Robey Pointer"}}

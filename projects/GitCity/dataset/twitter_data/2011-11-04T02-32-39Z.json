@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 7, "additions": 8, "changes": 15, "filename": "core/src/main/java/org/apache/mahout/classifier/sgd/AbstractOnlineLogisticRegression.java"}], "stats": {"deletions": 7, "additions": 8, "total": 15}, "commit": {"date": "2011-11-04T02:32:39Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 146, "additions": 104, "changes": 250, "filename": "core/src/main/java/org/apache/mahout/fpm/pfpgrowth/FPGrowthDriver.java"}], "stats": {"deletions": 146, "additions": 104, "total": 250}, "commit": {"date": "2011-11-05T04:10:05Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

@@ -1,0 +1,1 @@
+{"repo": "cloudhopper-commons", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "src/main/java/com/cloudhopper/commons/io/Version.java"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2011-09-02T06:07:05Z", "authorId": "", "author": "joelauer"}}

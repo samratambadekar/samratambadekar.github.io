@@ -1,0 +1,1 @@
+{"repo": "twui", "files": [{"status": "modified", "deletions": 11, "additions": 8, "changes": 19, "filename": "lib/UIKit/TUINSView+NSTextInputClient.m"}], "stats": {"deletions": 11, "additions": 8, "total": 19}, "commit": {"date": "2011-12-17T03:42:54Z", "authorId": "joshaber", "author": "joshaber"}}

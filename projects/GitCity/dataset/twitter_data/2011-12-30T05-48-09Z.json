@@ -1,0 +1,1 @@
+{"repo": "pycascading", "files": [{"status": "modified", "deletions": 20, "additions": 0, "changes": 20, "filename": "java/src/com/twitter/pycascading/PythonFunctionWrapper.java"}], "stats": {"deletions": 20, "additions": 0, "total": 20}, "commit": {"date": "2011-12-30T05:48:09Z", "authorId": "", "author": "Gabor Szabo"}}

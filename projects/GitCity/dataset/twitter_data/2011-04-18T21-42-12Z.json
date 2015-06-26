@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 15, "additions": 13, "changes": 28, "filename": "core/src/main/java/org/apache/mahout/df/mapreduce/partial/Step0Job.java"}], "stats": {"deletions": 15, "additions": 13, "total": 28}, "commit": {"date": "2011-04-18T21:42:12Z", "authorId": "srowen", "author": "Sean R. Owen"}}

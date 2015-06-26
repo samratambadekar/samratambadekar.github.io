@@ -1,0 +1,1 @@
+{"repo": "scala_school", "files": [{"status": "modified", "deletions": 2, "additions": 13, "changes": 15, "filename": "publish.sh"}], "stats": {"deletions": 2, "additions": 13, "total": 15}, "commit": {"date": "2011-08-31T03:46:36Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

@@ -1,0 +1,1 @@
+{"repo": "naggati2", "files": [{"status": "modified", "deletions": 4, "additions": 1, "changes": 5, "filename": "src/main/scala/com/twitter/naggati/codec/MemcacheCodec.scala"}], "stats": {"deletions": 4, "additions": 1, "total": 5}, "commit": {"date": "2011-05-18T22:41:48Z", "authorId": "", "author": "Robey Pointer"}}

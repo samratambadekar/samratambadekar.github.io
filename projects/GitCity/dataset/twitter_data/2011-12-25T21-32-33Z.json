@@ -1,0 +1,1 @@
+{"repo": "hogan.js", "files": [{"status": "modified", "deletions": 16, "additions": 35, "changes": 51, "filename": "lib/hogan.js"}], "stats": {"deletions": 16, "additions": 35, "total": 51}, "commit": {"date": "2011-12-25T21:32:33Z", "authorId": "fat", "author": "Jacob Thornton"}}

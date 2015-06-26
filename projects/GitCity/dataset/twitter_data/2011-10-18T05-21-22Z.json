@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 6, "additions": 6, "changes": 12, "filename": "builtin/pack-objects.c"}], "stats": {"deletions": 6, "additions": 6, "total": 12}, "commit": {"date": "2011-10-18T05:21:22Z", "authorId": "toofishes", "author": "Dan McGee"}}

@@ -1,0 +1,1 @@
+{"repo": "thrift_client", "files": [{"status": "modified", "deletions": 5, "additions": 0, "changes": 5, "filename": "lib/thrift_client.rb"}], "stats": {"deletions": 5, "additions": 0, "total": 5}, "commit": {"date": "2011-05-09T21:27:30Z", "authorId": "bitbckt", "author": "Brandon Mitchell"}}

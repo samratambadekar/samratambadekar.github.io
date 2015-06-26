@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "extra/yassl/src/yassl_error.cpp"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-06-17T07:51:34Z", "authorId": "", "author": "Jon Olav Hauglid"}}

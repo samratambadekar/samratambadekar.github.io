@@ -1,0 +1,1 @@
+{"repo": "cassie", "files": [{"status": "modified", "deletions": 0, "additions": 6, "changes": 6, "filename": "cassie-core/src/test/scala/com/twitter/cassie/codecs/tests/VarIntCodecTest.scala"}], "stats": {"deletions": 0, "additions": 6, "total": 6}, "commit": {"date": "2011-03-25T21:03:34Z", "authorId": "", "author": "Kyle Maxwell"}}

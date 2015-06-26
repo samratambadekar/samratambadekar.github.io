@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "added", "deletions": 0, "additions": 254, "changes": 254, "filename": "core/src/test/java/org/apache/mahout/clustering/TestClusterClassifier.java"}], "stats": {"deletions": 0, "additions": 254, "total": 254}, "commit": {"date": "2011-04-18T04:20:36Z", "authorId": "", "author": "Jeff Eastman"}}

@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "finagle-memcached/src/test/scala/com/twitter/finagle/memcached/integration/ProxySpec.scala"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2011-08-29T17:48:05Z", "authorId": "bmatheny", "author": "Blake Matheny"}}

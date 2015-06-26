@@ -1,0 +1,1 @@
+{"repo": "cassie", "files": [{"status": "modified", "deletions": 7, "additions": 56, "changes": 63, "filename": "cassie-core/src/main/scala/com/twitter/cassie/ColumnFamily.scala"}], "stats": {"deletions": 7, "additions": 56, "total": 63}, "commit": {"date": "2011-09-20T18:27:12Z", "authorId": "johanoskarsson", "author": "Johan Oskarsson"}}

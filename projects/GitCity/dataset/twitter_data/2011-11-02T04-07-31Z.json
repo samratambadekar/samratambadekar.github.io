@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 10, "changes": 11, "filename": "examples/bin/build-reuters.sh"}], "stats": {"deletions": 1, "additions": 10, "total": 11}, "commit": {"date": "2011-11-02T04:07:31Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

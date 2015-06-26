@@ -1,0 +1,1 @@
+{"repo": "snowflake", "files": [{"status": "removed", "deletions": 3, "additions": 0, "changes": 3, "filename": "project/plugins/project/build.properties"}], "stats": {"deletions": 3, "additions": 0, "total": 3}, "commit": {"date": "2011-08-25T20:36:36Z", "authorId": "ryanking", "author": "Ryan King"}}

@@ -1,0 +1,1 @@
+{"repo": "twitter-text-conformance", "files": [{"status": "modified", "deletions": 60, "additions": 60, "changes": 120, "filename": "autolink.yml"}], "stats": {"deletions": 60, "additions": 60, "total": 120}, "commit": {"date": "2011-12-16T01:30:03Z", "authorId": "keitaf", "author": "Keita Fujii"}}

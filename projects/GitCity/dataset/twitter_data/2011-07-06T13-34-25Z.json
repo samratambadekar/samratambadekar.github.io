@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 10, "changes": 11, "filename": "src/compiler/scala/tools/nsc/doc/html/page/Template.scala"}], "stats": {"deletions": 1, "additions": 10, "total": 11}, "commit": {"date": "2011-07-06T13:34:25Z", "authorId": "kzys", "author": "Kato Kazuyoshi"}}

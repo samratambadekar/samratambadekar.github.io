@@ -1,0 +1,1 @@
+{"repo": "kestrel", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/build.properties"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-11-18T00:24:35Z", "authorId": "zuercher", "author": "Stephan Zuercher"}}

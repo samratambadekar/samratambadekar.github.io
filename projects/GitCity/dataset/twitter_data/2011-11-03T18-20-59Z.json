@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 13, "additions": 13, "changes": 26, "filename": "core/src/main/java/org/apache/mahout/cf/taste/hadoop/preparation/PreparePreferenceMatrixJob.java"}], "stats": {"deletions": 13, "additions": 13, "total": 26}, "commit": {"date": "2011-11-03T18:20:59Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

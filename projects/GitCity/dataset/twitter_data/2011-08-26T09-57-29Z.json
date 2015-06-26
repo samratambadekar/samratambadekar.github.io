@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 7, "changes": 8, "filename": "sql/rpl_rli.h"}, {"status": "modified", "deletions": 5, "additions": 6, "changes": 11, "filename": "sql/slave.cc"}], "stats": {"deletions": 6, "additions": 13, "total": 19}, "commit": {"date": "2011-08-26T09:57:29Z", "authorId": "", "author": "Rohit Kalhans"}}

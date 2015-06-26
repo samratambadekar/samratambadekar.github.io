@@ -1,0 +1,1 @@
+{"repo": "querulous", "files": [{"status": "modified", "deletions": 7, "additions": 7, "changes": 14, "filename": "querulous-core/src/main/scala/com/twitter/querulous/async/BlockingDatabaseWrapper.scala"}], "stats": {"deletions": 7, "additions": 7, "total": 14}, "commit": {"date": "2011-11-11T18:16:16Z", "authorId": "freels", "author": "Matt Freels"}}

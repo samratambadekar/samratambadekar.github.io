@@ -1,0 +1,1 @@
+{"repo": "ostrich", "files": [{"status": "modified", "deletions": 0, "additions": 7, "changes": 7, "filename": "CHANGELOG"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/build.properties"}], "stats": {"deletions": 1, "additions": 8, "total": 9}, "commit": {"date": "2011-06-28T12:39:42Z", "authorId": "jjmmcc", "author": "Jeremy Cloud"}}

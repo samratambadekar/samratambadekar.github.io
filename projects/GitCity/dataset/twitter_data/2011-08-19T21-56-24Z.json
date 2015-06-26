@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 4, "additions": 5, "changes": 9, "filename": "finagle-core/src/main/scala/com/twitter/finagle/ssl/Ssl.scala"}], "stats": {"deletions": 4, "additions": 5, "total": 9}, "commit": {"date": "2011-08-19T21:56:24Z", "authorId": "bierbaum", "author": "Wilhelm Bierbaum"}}

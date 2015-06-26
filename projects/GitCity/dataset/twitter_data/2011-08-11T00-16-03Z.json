@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 10, "additions": 13, "changes": 23, "filename": "finagle-core/src/main/scala/com/twitter/finagle/util/ChannelSnooper.scala"}], "stats": {"deletions": 10, "additions": 13, "total": 23}, "commit": {"date": "2011-08-11T00:16:03Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

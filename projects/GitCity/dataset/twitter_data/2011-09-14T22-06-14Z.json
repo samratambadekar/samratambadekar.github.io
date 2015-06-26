@@ -1,0 +1,1 @@
+{"repo": "twitter-text-java", "files": [{"status": "modified", "deletions": 1, "additions": 5, "changes": 6, "filename": "src/com/twitter/Autolink.java"}], "stats": {"deletions": 1, "additions": 5, "total": 6}, "commit": {"date": "2011-09-14T22:06:14Z", "authorId": "hjz", "author": "Justin Zhu"}}

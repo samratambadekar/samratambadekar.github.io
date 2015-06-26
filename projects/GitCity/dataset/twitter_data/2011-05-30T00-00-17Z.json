@@ -1,0 +1,1 @@
+{"repo": "cloudhopper-commons", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "src/main/java/com/cloudhopper/commons/util/ClassUtil.java"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2011-05-30T00:00:17Z", "authorId": "jwoolf", "author": "John Woolf"}}

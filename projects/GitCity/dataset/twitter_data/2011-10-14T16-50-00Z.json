@@ -1,0 +1,1 @@
+{"repo": "scala-bootstrapper", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "OWNERS"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2011-10-14T16:50:00Z", "authorId": "ryanking", "author": "Ryan King"}}

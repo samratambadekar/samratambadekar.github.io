@@ -1,0 +1,1 @@
+{"repo": "twitter4j", "files": [{"status": "added", "deletions": 0, "additions": 45, "changes": 45, "filename": "twitter4j-core/src/test/java/twitter4j/internal/KryoSerializationTest.java"}], "stats": {"deletions": 0, "additions": 45, "total": 45}, "commit": {"date": "2011-12-07T19:19:30Z", "authorId": "apetresc", "author": "Adrian Petrescu"}}

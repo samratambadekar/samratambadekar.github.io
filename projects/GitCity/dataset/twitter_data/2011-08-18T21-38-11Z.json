@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 7, "additions": 12, "changes": 19, "filename": "finagle-stream/src/main/scala/com/twitter/finagle/stream/HttpChunker.scala"}], "stats": {"deletions": 7, "additions": 12, "total": 19}, "commit": {"date": "2011-08-18T21:38:11Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

@@ -1,0 +1,1 @@
+{"repo": "snowflake", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/build/Snowflake.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-10-13T21:49:53Z", "authorId": "jjmmcc", "author": "Jeremy Cloud"}}

@@ -1,0 +1,1 @@
+{"repo": "scalding", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "src/test/scala/com/twitter/scalding/CoreTest.scala"}], "stats": {"deletions": 0, "additions": 2, "total": 2}, "commit": {"date": "2012-02-24T19:25:36Z", "authorId": "azymnis", "author": "azymnis"}}

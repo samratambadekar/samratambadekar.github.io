@@ -1,0 +1,1 @@
+{"repo": "commons", "files": [{"status": "modified", "deletions": 5, "additions": 6, "changes": 11, "filename": "src/python/twitter/pants/tasks/ivy_resolve.py"}], "stats": {"deletions": 5, "additions": 6, "total": 11}, "commit": {"date": "2012-02-13T03:01:12Z", "authorId": "", "author": "John Sirois"}}

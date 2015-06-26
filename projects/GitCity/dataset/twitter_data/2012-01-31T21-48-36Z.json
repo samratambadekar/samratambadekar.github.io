@@ -1,0 +1,1 @@
+{"repo": "twitter-text-conformance", "files": [{"status": "modified", "deletions": 1, "additions": 8, "changes": 9, "filename": "extract.yml"}], "stats": {"deletions": 1, "additions": 8, "total": 9}, "commit": {"date": "2012-01-31T21:48:36Z", "authorId": "keitaf", "author": "Keita Fujii"}}

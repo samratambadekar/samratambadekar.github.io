@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "core/src/main/java/org/apache/mahout/df/mapreduce/partial/Step0Job.java"}], "stats": {"deletions": 0, "additions": 2, "total": 2}, "commit": {"date": "2011-04-05T21:27:33Z", "authorId": "", "author": "Abdel Hakim Deneche"}}

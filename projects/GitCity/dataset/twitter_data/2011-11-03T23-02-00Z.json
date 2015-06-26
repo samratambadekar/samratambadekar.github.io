@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 20, "additions": 23, "changes": 43, "filename": "core/src/main/java/org/apache/mahout/classifier/naivebayes/training/TrainNaiveBayesJob.java"}], "stats": {"deletions": 20, "additions": 23, "total": 43}, "commit": {"date": "2011-11-03T23:02:00Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

@@ -1,0 +1,1 @@
+{"repo": "pycascading", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "java/src/com/twitter/pycascading/MetaScheme.java"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2011-12-30T05:47:45Z", "authorId": "", "author": "Gabor Szabo"}}

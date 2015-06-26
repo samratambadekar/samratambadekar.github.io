@@ -1,0 +1,1 @@
+{"repo": "cascading", "files": [{"status": "modified", "deletions": 5, "additions": 3, "changes": 8, "filename": "src/hadoop/cascading/flow/hadoop/HadoopFlowStepJob.java"}], "stats": {"deletions": 5, "additions": 3, "total": 8}, "commit": {"date": "2012-02-24T01:11:58Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

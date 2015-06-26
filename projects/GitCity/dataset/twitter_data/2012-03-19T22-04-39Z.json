@@ -1,0 +1,1 @@
+{"repo": "querulous", "files": [{"status": "modified", "deletions": 2, "additions": 4, "changes": 6, "filename": "querulous-core/src/main/scala/com/twitter/querulous/async/StandardAsyncQueryEvaluator.scala"}], "stats": {"deletions": 2, "additions": 4, "total": 6}, "commit": {"date": "2012-03-19T22:04:39Z", "authorId": "", "author": "Raghavendra Prabhu"}}

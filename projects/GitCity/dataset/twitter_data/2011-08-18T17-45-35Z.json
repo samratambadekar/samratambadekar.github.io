@@ -1,0 +1,1 @@
+{"repo": "standard-project", "files": [{"status": "modified", "deletions": 1, "additions": 4, "changes": 5, "filename": "src/main/scala/com/twitter/sbt/ProjectDependencies.scala"}], "stats": {"deletions": 1, "additions": 4, "total": 5}, "commit": {"date": "2011-08-18T17:45:35Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

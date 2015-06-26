@@ -1,0 +1,1 @@
+{"repo": "ostrich", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/test/scala/com/twitter/ostrich/stats/JsonStatsFetcherSpec.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-10-21T14:44:58Z", "authorId": "jjmmcc", "author": "Jeremy Cloud"}}

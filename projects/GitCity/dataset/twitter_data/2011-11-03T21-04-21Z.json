@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 18, "additions": 10, "changes": 28, "filename": "core/src/main/java/org/apache/mahout/classifier/bayes/mapreduce/common/BayesFeatureDriver.java"}], "stats": {"deletions": 18, "additions": 10, "total": 28}, "commit": {"date": "2011-11-03T21:04:21Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

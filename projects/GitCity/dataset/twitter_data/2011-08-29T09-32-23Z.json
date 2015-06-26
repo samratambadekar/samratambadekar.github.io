@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 11, "additions": 8, "changes": 19, "filename": "t/t9800-git-p4.sh"}], "stats": {"deletions": 11, "additions": 8, "total": 19}, "commit": {"date": "2011-08-29T09:32:23Z", "authorId": "", "author": "Pete Wyckoff"}}

@@ -1,0 +1,1 @@
+{"repo": "scala-bootstrapper", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "bin/scala-bootstrapper"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2011-05-26T20:15:21Z", "authorId": "maxhodak", "author": "Max Hodak"}}

@@ -1,0 +1,1 @@
+{"repo": "finatra", "files": [{"status": "modified", "deletions": 0, "additions": 1, "changes": 1, "filename": "src/main/scala/com/posterous/finatra/App.scala"}], "stats": {"deletions": 0, "additions": 1, "total": 1}, "commit": {"date": "2012-02-19T05:40:16Z", "authorId": "", "author": "Julio Capote and Christopher Burnett"}}

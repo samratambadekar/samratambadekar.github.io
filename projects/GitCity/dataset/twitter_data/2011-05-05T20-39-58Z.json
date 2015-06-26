@@ -1,0 +1,1 @@
+{"repo": "cassie", "files": [{"status": "modified", "deletions": 6, "additions": 3, "changes": 9, "filename": "cassie-core/src/main/scala/com/twitter/cassie/Order.scala"}], "stats": {"deletions": 6, "additions": 3, "total": 9}, "commit": {"date": "2011-05-05T20:39:58Z", "authorId": "ryanking", "author": "Ryan King"}}

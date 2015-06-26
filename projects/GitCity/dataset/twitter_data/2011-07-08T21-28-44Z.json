@@ -1,0 +1,1 @@
+{"repo": "twitter-text-js", "files": [{"status": "modified", "deletions": 2, "additions": 3, "changes": 5, "filename": "pkg/twitter-text-1.4.3.js"}], "stats": {"deletions": 2, "additions": 3, "total": 5}, "commit": {"date": "2011-07-08T21:28:44Z", "authorId": "mzsanford", "author": "Matt Sanford"}}

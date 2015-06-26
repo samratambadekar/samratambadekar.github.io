@@ -1,0 +1,1 @@
+{"repo": "sbt-package-dist", "files": [{"status": "added", "deletions": 0, "additions": 130, "changes": 130, "filename": "src/main/scala/com/twitter/sbt/ManagedClasspathFilter.scala"}], "stats": {"deletions": 0, "additions": 130, "total": 130}, "commit": {"date": "2011-03-28T18:57:26Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

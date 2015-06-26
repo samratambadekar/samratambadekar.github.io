@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "examples/src/main/java/org/apache/mahout/clustering/display/DisplayClustering.java"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2011-11-02T21:16:52Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

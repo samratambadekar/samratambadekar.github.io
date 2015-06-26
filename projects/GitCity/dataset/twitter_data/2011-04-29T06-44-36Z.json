@@ -1,0 +1,1 @@
+{"repo": "cloudhopper-commons", "files": [{"status": "added", "deletions": 0, "additions": 34, "changes": 34, "filename": "src/main/java/com/cloudhopper/commons/util/windowing/RequestCanceledException.java"}], "stats": {"deletions": 0, "additions": 34, "total": 34}, "commit": {"date": "2011-04-29T06:44:36Z", "authorId": "jjlauer", "author": "Joe Lauer"}}

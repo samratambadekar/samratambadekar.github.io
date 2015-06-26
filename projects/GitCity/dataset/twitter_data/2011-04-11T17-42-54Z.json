@@ -1,0 +1,1 @@
+{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 8, "additions": 8, "changes": 16, "filename": "src/test/com/twitter/elephantbird/pig/piggybank/TestThriftToPig.java"}], "stats": {"deletions": 8, "additions": 8, "total": 16}, "commit": {"date": "2011-04-11T17:42:54Z", "authorId": "dvryaboy", "author": "dvryaboy"}}

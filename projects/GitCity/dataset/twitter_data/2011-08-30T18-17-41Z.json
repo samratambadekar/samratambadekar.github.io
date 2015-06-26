@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 4, "additions": 1, "changes": 5, "filename": "finagle-memcached/src/main/scala/com/twitter/finagle/memcached/Client.scala"}], "stats": {"deletions": 4, "additions": 1, "total": 5}, "commit": {"date": "2011-08-30T18:17:41Z", "authorId": "bmatheny", "author": "Blake Matheny"}}

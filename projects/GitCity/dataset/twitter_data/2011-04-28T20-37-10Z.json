@@ -1,0 +1,1 @@
+{"repo": "cassie", "files": [{"status": "modified", "deletions": 21, "additions": 21, "changes": 42, "filename": "cassie-core/src/test/scala/com/twitter/cassie/tests/ClusterRemapperTest.scala"}], "stats": {"deletions": 21, "additions": 21, "total": 42}, "commit": {"date": "2011-04-28T20:37:10Z", "authorId": "ryanking", "author": "Ryan King"}}

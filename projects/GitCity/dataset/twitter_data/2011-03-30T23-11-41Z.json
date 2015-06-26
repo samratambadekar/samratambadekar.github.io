@@ -1,0 +1,1 @@
+{"repo": "scalacheck", "files": [{"status": "modified", "deletions": 0, "additions": 16, "changes": 16, "filename": "src/test/scala/org/scalacheck/TestSpecification.scala"}], "stats": {"deletions": 0, "additions": 16, "total": 16}, "commit": {"date": "2011-03-30T23:11:41Z", "authorId": "rickynils", "author": "Rickard Nilsson"}}

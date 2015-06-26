@@ -1,0 +1,1 @@
+{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 11, "additions": 22, "changes": 33, "filename": "lib/autolink.rb"}], "stats": {"deletions": 11, "additions": 22, "total": 33}, "commit": {"date": "2012-02-17T20:44:03Z", "authorId": "niw", "author": "Yoshimasa Niwa"}}

@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": ".gitignore"}, {"status": "modified", "deletions": 1, "additions": 9, "changes": 10, "filename": "bin/mahout"}], "stats": {"deletions": 1, "additions": 11, "total": 12}, "commit": {"date": "2011-10-06T18:18:19Z", "authorId": "tdunning", "author": "Ted Dunning"}}

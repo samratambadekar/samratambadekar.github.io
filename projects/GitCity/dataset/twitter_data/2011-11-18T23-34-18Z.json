@@ -1,0 +1,1 @@
+{"repo": "kestrel", "files": [{"status": "modified", "deletions": 5, "additions": 14, "changes": 19, "filename": "src/main/scala/net/lag/kestrel/KestrelHandler.scala"}], "stats": {"deletions": 5, "additions": 14, "total": 19}, "commit": {"date": "2011-11-18T23:34:18Z", "authorId": "", "author": "Robey Pointer"}}

@@ -1,0 +1,1 @@
+{"repo": "cloudhopper-commons", "files": [{"status": "added", "deletions": 0, "additions": 115, "changes": 115, "filename": "src/main/java/com/cloudhopper/commons/util/HexString.java"}], "stats": {"deletions": 0, "additions": 115, "total": 115}, "commit": {"date": "2011-06-06T22:26:05Z", "authorId": "jwoolf", "author": "John Woolf"}}

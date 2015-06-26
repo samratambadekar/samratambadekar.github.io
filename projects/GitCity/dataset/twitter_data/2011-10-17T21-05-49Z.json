@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "core/src/main/java/org/apache/mahout/cf/taste/hadoop/item/RecommenderJob.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-10-17T21:05:49Z", "authorId": "srowen", "author": "Sean R. Owen"}}

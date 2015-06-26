@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 4, "additions": 21, "changes": 25, "filename": "src/compiler/scala/tools/nsc/transform/SpecializeTypes.scala"}], "stats": {"deletions": 4, "additions": 21, "total": 25}, "commit": {"date": "2012-02-15T15:25:00Z", "authorId": "non", "author": "Erik Osheim"}}

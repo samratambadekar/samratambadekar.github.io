@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "project/build/Project.scala"}], "stats": {"deletions": 0, "additions": 2, "total": 2}, "commit": {"date": "2011-08-24T21:54:43Z", "authorId": "dhelder", "author": "David Helder"}}

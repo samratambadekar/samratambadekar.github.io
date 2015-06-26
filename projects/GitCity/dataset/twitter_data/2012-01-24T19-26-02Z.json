@@ -1,0 +1,1 @@
+{"repo": "commons", "files": [{"status": "modified", "deletions": 3, "additions": 80, "changes": 83, "filename": "src/java/com/twitter/common/zookeeper/ZooKeeperMap.java"}], "stats": {"deletions": 3, "additions": 80, "total": 83}, "commit": {"date": "2012-01-24T19:26:02Z", "authorId": "", "author": "C. Scott Andreas"}}

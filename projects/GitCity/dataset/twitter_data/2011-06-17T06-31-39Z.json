@@ -1,0 +1,1 @@
+{"repo": "libkestrel", "files": [{"status": "modified", "deletions": 10, "additions": 33, "changes": 43, "filename": "src/test/scala/com/twitter/libkestrel/ConcurrentBlockingQueueSpec.scala"}], "stats": {"deletions": 10, "additions": 33, "total": 43}, "commit": {"date": "2011-06-17T06:31:39Z", "authorId": "", "author": "Robey Pointer"}}

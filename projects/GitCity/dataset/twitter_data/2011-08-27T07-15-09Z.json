@@ -1,0 +1,1 @@
+{"repo": "twitter4j", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "twitter4j-media-support/src/test/resources/twitter4j.properties-template"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-08-27T07:15:09Z", "authorId": "withgod", "author": "noname"}}

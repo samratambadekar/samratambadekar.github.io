@@ -1,0 +1,1 @@
+{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 6, "additions": 35, "changes": 41, "filename": "src/java/com/twitter/elephantbird/mapreduce/output/LzoOutputFormat.java"}], "stats": {"deletions": 6, "additions": 35, "total": 41}, "commit": {"date": "2011-07-26T21:57:44Z", "authorId": "rangadi", "author": "Raghu Angadi"}}

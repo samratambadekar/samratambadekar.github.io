@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "core/src/main/scala/spark/SimpleJob.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-07-14T00:07:21Z", "authorId": "mateiz", "author": "Matei Zaharia"}}

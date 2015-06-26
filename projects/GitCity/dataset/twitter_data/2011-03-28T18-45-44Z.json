@@ -1,0 +1,1 @@
+{"repo": "spitball", "files": [{"status": "modified", "deletions": 0, "additions": 5, "changes": 5, "filename": "bin/spitball-server"}, {"status": "modified", "deletions": 5, "additions": 5, "changes": 10, "filename": "lib/spitball.rb"}], "stats": {"deletions": 5, "additions": 10, "total": 15}, "commit": {"date": "2011-03-28T18:45:44Z", "authorId": "", "author": "Josh Hull"}}

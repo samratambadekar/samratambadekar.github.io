@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 2, "additions": 62, "changes": 64, "filename": "src/continuations/library/scala/util/continuations/package.scala"}], "stats": {"deletions": 2, "additions": 62, "total": 64}, "commit": {"date": "2011-07-15T23:29:07Z", "authorId": "paulp", "author": "Paul Phillips"}}

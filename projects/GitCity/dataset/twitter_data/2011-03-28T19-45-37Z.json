@@ -1,0 +1,1 @@
+{"repo": "sbt-package-dist", "files": [{"status": "modified", "deletions": 1, "additions": 15, "changes": 16, "filename": "src/main/scala/com/twitter/sbt/ProjectDependencies.scala"}], "stats": {"deletions": 1, "additions": 15, "total": 16}, "commit": {"date": "2011-03-28T19:45:37Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

@@ -1,0 +1,1 @@
+{"repo": "kestrel", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/main/thrift/kestrel.thrift"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2012-01-19T01:39:21Z", "authorId": "", "author": "Robey Pointer"}}

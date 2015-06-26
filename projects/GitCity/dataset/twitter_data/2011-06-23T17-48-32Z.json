@@ -1,0 +1,1 @@
+{"repo": "haplocheirus", "files": [{"status": "modified", "deletions": 2, "additions": 9, "changes": 11, "filename": "src/main/scala/com/twitter/haplocheirus/TimelineStoreService.scala"}], "stats": {"deletions": 2, "additions": 9, "total": 11}, "commit": {"date": "2011-06-23T17:48:32Z", "authorId": "rcohen", "author": "Ross Cohen"}}

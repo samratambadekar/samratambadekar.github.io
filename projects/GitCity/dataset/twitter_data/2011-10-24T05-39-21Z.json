@@ -1,0 +1,1 @@
+{"repo": "libkestrel", "files": [{"status": "modified", "deletions": 10, "additions": 24, "changes": 34, "filename": "src/main/scala/com/twitter/libkestrel/JournalFile.scala"}], "stats": {"deletions": 10, "additions": 24, "total": 34}, "commit": {"date": "2011-10-24T05:39:21Z", "authorId": "", "author": "Robey Pointer"}}

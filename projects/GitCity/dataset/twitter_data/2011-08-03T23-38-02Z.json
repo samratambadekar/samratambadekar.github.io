@@ -1,0 +1,1 @@
+{"repo": "sbt-thrift", "files": [{"status": "modified", "deletions": 4, "additions": 14, "changes": 18, "filename": "src/main/scala/com/twitter/sbt/CompileThriftPython.scala"}], "stats": {"deletions": 4, "additions": 14, "total": 18}, "commit": {"date": "2011-08-03T23:38:02Z", "authorId": "olix0r", "author": "Oliver Gould"}}

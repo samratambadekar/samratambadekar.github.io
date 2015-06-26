@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 121, "additions": 125, "changes": 246, "filename": "core/src/main/java/org/apache/mahout/clustering/canopy/CanopyDriver.java"}], "stats": {"deletions": 121, "additions": 125, "total": 246}, "commit": {"date": "2011-04-17T15:09:46Z", "authorId": "srowen", "author": "Sean R. Owen"}}

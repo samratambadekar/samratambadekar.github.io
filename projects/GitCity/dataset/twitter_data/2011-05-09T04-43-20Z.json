@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 5, "changes": 7, "filename": "t/t1506-rev-parse-diagnosis.sh"}], "stats": {"deletions": 2, "additions": 5, "total": 7}, "commit": {"date": "2011-05-09T04:43:20Z", "authorId": "gitster", "author": "Junio C Hamano"}}

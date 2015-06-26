@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 4, "additions": 8, "changes": 12, "filename": "contrib/completion/git-completion.bash"}], "stats": {"deletions": 4, "additions": 8, "total": 12}, "commit": {"date": "2011-04-27T21:27:04Z", "authorId": "jrn", "author": "Jonathan Nieder"}}

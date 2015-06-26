@@ -1,0 +1,1 @@
+{"repo": "twui", "files": [{"status": "modified", "deletions": 2, "additions": 3, "changes": 5, "filename": "lib/UIKit/TUITextRenderer.m"}], "stats": {"deletions": 2, "additions": 3, "total": 5}, "commit": {"date": "2012-01-28T04:01:36Z", "authorId": "joshaber", "author": "joshaber"}}

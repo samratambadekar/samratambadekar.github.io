@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 35, "changes": 35, "filename": "t/t6019-rev-list-ancestry-path.sh"}], "stats": {"deletions": 0, "additions": 35, "total": 35}, "commit": {"date": "2011-08-25T16:49:13Z", "authorId": "bradking", "author": "Brad King"}}

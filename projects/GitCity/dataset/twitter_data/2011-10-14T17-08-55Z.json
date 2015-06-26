@@ -1,0 +1,1 @@
+{"repo": "scala-bootstrapper", "files": [{"status": "modified", "deletions": 4, "additions": 0, "changes": 4, "filename": "lib/template/project/build/BirdNameProject.scala.erb"}], "stats": {"deletions": 4, "additions": 0, "total": 4}, "commit": {"date": "2011-10-14T17:08:55Z", "authorId": "ryanking", "author": "Ryan King"}}

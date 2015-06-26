@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "finagle-http/src/main/scala/com/twitter/finagle/http/ParamMap.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2011-09-14T17:33:19Z", "authorId": "dhelder", "author": "David Helder"}}

@@ -1,0 +1,1 @@
+{"repo": "twitter-text-js", "files": [{"status": "modified", "deletions": 0, "additions": 8, "changes": 8, "filename": "test/tests.js"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "twitter-text.js"}], "stats": {"deletions": 1, "additions": 9, "total": 10}, "commit": {"date": "2011-09-15T19:15:57Z", "authorId": "keitaf", "author": "keita"}}
