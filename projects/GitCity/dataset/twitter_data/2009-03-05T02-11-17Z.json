@@ -1,0 +1,1 @@
+{"repo": "cascading", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/core/cascading/flow/stack/FlowReducerStack.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2009-03-05T02:11:17Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

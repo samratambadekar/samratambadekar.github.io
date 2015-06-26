@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 30, "changes": 31, "filename": "src/library/scala/util/Random.scala"}], "stats": {"deletions": 1, "additions": 30, "total": 31}, "commit": {"date": "2009-05-28T15:51:07Z", "authorId": "paulp", "author": "Paul Phillips"}}

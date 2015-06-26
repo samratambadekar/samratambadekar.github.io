@@ -1,0 +1,1 @@
+{"repo": "webrat", "files": [{"status": "modified", "deletions": 2, "additions": 14, "changes": 16, "filename": "lib/boot_merb.rb"}], "stats": {"deletions": 2, "additions": 14, "total": 16}, "commit": {"date": "2008-04-23T13:33:05Z", "authorId": "", "author": "Gwyn Morfey"}}

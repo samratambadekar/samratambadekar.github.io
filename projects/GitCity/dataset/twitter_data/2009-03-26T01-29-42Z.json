@@ -1,0 +1,1 @@
+{"repo": "cloudhopper-commons", "files": [{"status": "modified", "deletions": 8, "additions": 11, "changes": 19, "filename": "src/main/java/com/cloudhopper/commons/sql/DataSourceManager.java"}], "stats": {"deletions": 8, "additions": 11, "total": 19}, "commit": {"date": "2009-03-26T01:29:42Z", "authorId": "", "author": "joelauer"}}

@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "test/files/run/t0485.scala"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2008-02-28T13:33:16Z", "authorId": "", "author": "Geoffrey Washburn"}}

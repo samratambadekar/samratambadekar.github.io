@@ -1,0 +1,1 @@
+{"repo": "webrat", "files": [{"status": "modified", "deletions": 7, "additions": 14, "changes": 21, "filename": "lib/webrat/selenium/location_strategy_javascript/button.js"}], "stats": {"deletions": 7, "additions": 14, "total": 21}, "commit": {"date": "2009-05-27T12:02:09Z", "authorId": "mmarschall", "author": "Matthias Marschall"}}

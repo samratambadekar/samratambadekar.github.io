@@ -1,0 +1,1 @@
+{"repo": "webrat", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "lib/webrat/selenium/location_strategy_javascript/webratlink.js"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2009-05-29T06:23:09Z", "authorId": "", "author": "Larry Diehl"}}

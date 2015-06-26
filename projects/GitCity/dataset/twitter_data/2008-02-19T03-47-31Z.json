@@ -1,0 +1,1 @@
+{"repo": "scalacheck", "files": [{"status": "modified", "deletions": 6, "additions": 5, "changes": 11, "filename": "src/org/scalacheck/Arbitrary.scala"}], "stats": {"deletions": 6, "additions": 5, "total": 11}, "commit": {"date": "2008-02-19T03:47:31Z", "authorId": "tonymorris", "author": "Tony Morris"}}

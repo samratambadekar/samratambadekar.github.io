@@ -1,0 +1,1 @@
+{"repo": "webrat", "files": [{"status": "modified", "deletions": 3, "additions": 16, "changes": 19, "filename": "lib/webrat/merb_session.rb"}], "stats": {"deletions": 3, "additions": 16, "total": 19}, "commit": {"date": "2009-04-24T21:23:00Z", "authorId": "rcarver", "author": "Ryan Carver"}}

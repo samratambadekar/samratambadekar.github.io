@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 12, "changes": 13, "filename": "setup.c"}, {"status": "modified", "deletions": 0, "additions": 9, "changes": 9, "filename": "t/t1501-worktree.sh"}], "stats": {"deletions": 1, "additions": 21, "total": 22}, "commit": {"date": "2007-10-16T23:37:36Z", "authorId": "dscho", "author": "Johannes Schindelin"}}

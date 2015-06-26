@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 6, "changes": 6, "filename": "t/t3001-ls-files-others-exclude.sh"}], "stats": {"deletions": 0, "additions": 6, "total": 6}, "commit": {"date": "2008-12-18T17:11:18Z", "authorId": "mjg", "author": "Michael J Gruber"}}

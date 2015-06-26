@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 10, "additions": 20, "changes": 30, "filename": "mysql-test/r/table_definition_cache_basic.result"}], "stats": {"deletions": 10, "additions": 20, "total": 30}, "commit": {"date": "2008-05-20T17:07:11Z", "authorId": "", "author": "kostja@bodhi.(none)"}}

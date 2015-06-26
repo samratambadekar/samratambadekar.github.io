@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "added", "deletions": 0, "additions": 389, "changes": 389, "filename": "t/t7102-reset.sh"}], "stats": {"deletions": 0, "additions": 389, "total": 389}, "commit": {"date": "2007-09-11T01:09:52Z", "authorId": "jasampler", "author": "Carlos Rica"}}

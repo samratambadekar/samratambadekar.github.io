@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "added", "deletions": 0, "additions": 28, "changes": 28, "filename": "examples/src/main/java/org/apache/mahout/clustering/dirichlet/README.txt"}], "stats": {"deletions": 0, "additions": 28, "total": 28}, "commit": {"date": "2009-03-18T17:14:49Z", "authorId": "", "author": "Jeff Eastman"}}

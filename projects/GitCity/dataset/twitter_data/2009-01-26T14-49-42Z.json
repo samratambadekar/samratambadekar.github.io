@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "mysql-test/suite/rpl/t/rpl_cross_version-master.opt"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2009-01-26T14:49:42Z", "authorId": "", "author": "Andrei Elkin"}}

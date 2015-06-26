@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 3, "additions": 8, "changes": 11, "filename": "git-send-email.perl"}], "stats": {"deletions": 3, "additions": 8, "total": 11}, "commit": {"date": "2008-12-19T08:10:10Z", "authorId": "", "author": "Wu Fengguang"}}

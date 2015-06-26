@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "examples/build.xml"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2008-10-17T19:51:57Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

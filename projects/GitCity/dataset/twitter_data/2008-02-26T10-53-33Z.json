@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 6, "changes": 7, "filename": "src/compiler/scala/tools/nsc/typechecker/Infer.scala"}], "stats": {"deletions": 1, "additions": 6, "total": 7}, "commit": {"date": "2008-02-26T10:53:33Z", "authorId": "odersky", "author": "Martin Odersky"}}

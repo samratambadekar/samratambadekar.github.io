@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 18, "changes": 19, "filename": "pom.xml"}], "stats": {"deletions": 1, "additions": 18, "total": 19}, "commit": {"date": "2008-09-25T14:57:09Z", "authorId": "", "author": "Karl-Johan Wettin"}}

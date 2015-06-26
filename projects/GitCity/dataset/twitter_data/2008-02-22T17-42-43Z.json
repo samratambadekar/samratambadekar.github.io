@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 5, "additions": 14, "changes": 19, "filename": "src/library/scala/collection/mutable/Map.scala"}], "stats": {"deletions": 5, "additions": 14, "total": 19}, "commit": {"date": "2008-02-22T17:42:43Z", "authorId": "", "author": "michelou"}}

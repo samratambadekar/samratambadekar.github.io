@@ -1,0 +1,1 @@
+{"repo": "twitter4j", "files": [{"status": "modified", "deletions": 0, "additions": 1, "changes": 1, "filename": "src/test/java/twitter4j/AsyncTwitterTest.java"}], "stats": {"deletions": 0, "additions": 1, "total": 1}, "commit": {"date": "2009-05-13T16:56:14Z", "authorId": "", "author": "yusuke"}}

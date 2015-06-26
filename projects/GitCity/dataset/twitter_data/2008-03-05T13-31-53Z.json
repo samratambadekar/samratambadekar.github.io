@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "test/files/lib/nest.jar.desired.sha1"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2008-03-05T13:31:53Z", "authorId": "phaller", "author": "Philipp Haller"}}

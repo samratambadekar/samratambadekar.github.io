@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "mysql-test/include/default_ndbd.cnf"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2009-01-29T14:22:02Z", "authorId": "", "author": "Magnus Svensson"}}

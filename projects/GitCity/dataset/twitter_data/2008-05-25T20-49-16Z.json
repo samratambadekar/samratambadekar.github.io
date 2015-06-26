@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 5, "changes": 7, "filename": "t/t6031-merge-recursive.sh"}], "stats": {"deletions": 2, "additions": 5, "total": 7}, "commit": {"date": "2008-05-25T20:49:16Z", "authorId": "gitster", "author": "Junio C Hamano"}}

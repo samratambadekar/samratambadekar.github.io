@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "mysql-test/include/master-slave-reset.inc"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2008-07-15T10:01:54Z", "authorId": "", "author": "Sven Sandberg"}}

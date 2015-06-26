@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 25, "additions": 39, "changes": 64, "filename": "t/t9200-git-cvsexportcommit.sh"}], "stats": {"deletions": 25, "additions": 39, "total": 64}, "commit": {"date": "2007-07-25T06:25:38Z", "authorId": "gitster", "author": "Junio C Hamano"}}

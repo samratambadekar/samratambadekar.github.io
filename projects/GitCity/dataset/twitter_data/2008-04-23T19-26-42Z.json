@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "core/src/main/java/org/apache/mahout/utils/parameters/Parameter.java"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2008-04-23T19:26:42Z", "authorId": "", "author": "Karl-Johan Wettin"}}

@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 7, "additions": 5, "changes": 12, "filename": "builtin-tag.c"}, {"status": "modified", "deletions": 8, "additions": 0, "changes": 8, "filename": "t/t7004-tag.sh"}], "stats": {"deletions": 15, "additions": 5, "total": 20}, "commit": {"date": "2007-12-21T10:50:58Z", "authorId": "MadCoder", "author": "Pierre Habouzit"}}

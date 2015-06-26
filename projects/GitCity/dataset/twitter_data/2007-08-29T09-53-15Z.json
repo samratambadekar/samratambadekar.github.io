@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "mysql-test/t/information_schema_chmod.test"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2007-08-29T09:53:15Z", "authorId": "", "author": "msvensson@pilot.(none)"}}

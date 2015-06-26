@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 27, "changes": 29, "filename": "remote.c"}, {"status": "modified", "deletions": 0, "additions": 1, "changes": 1, "filename": "remote.h"}], "stats": {"deletions": 2, "additions": 28, "total": 30}, "commit": {"date": "2008-08-22T00:16:30Z", "authorId": "", "author": "Brandon Casey"}}

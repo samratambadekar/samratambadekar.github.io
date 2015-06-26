@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 4, "additions": 3, "changes": 7, "filename": "builtin-mailsplit.c"}], "stats": {"deletions": 4, "additions": 3, "total": 7}, "commit": {"date": "2008-05-25T08:23:55Z", "authorId": "gitster", "author": "Junio C Hamano"}}

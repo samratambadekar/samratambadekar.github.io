@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 24, "additions": 8, "changes": 32, "filename": "scripts/mysqlhotcopy.sh"}], "stats": {"deletions": 24, "additions": 8, "total": 32}, "commit": {"date": "2007-08-28T19:24:31Z", "authorId": "", "author": "tsmith@ramayana.hindu.god"}}

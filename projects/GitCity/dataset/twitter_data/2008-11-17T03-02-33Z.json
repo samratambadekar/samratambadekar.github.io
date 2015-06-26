@@ -1,0 +1,1 @@
+{"repo": "kestrel", "files": [{"status": "modified", "deletions": 64, "additions": 64, "changes": 128, "filename": "src/test/scala/com/twitter/scarling/TestClient.scala"}], "stats": {"deletions": 64, "additions": 64, "total": 128}, "commit": {"date": "2008-11-17T03:02:33Z", "authorId": "", "author": "Robey Pointer"}}

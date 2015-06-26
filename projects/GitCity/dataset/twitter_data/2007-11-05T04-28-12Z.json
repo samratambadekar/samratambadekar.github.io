@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 105, "changes": 105, "filename": "t/t7300-clean.sh"}], "stats": {"deletions": 0, "additions": 105, "total": 105}, "commit": {"date": "2007-11-05T04:28:12Z", "authorId": "sbohrer", "author": "Shawn Bohrer"}}

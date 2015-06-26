@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 27, "additions": 93, "changes": 120, "filename": "t/t1007-hash-object.sh"}], "stats": {"deletions": 27, "additions": 93, "total": 120}, "commit": {"date": "2008-05-23T14:19:37Z", "authorId": "aroben", "author": "Adam Roben"}}

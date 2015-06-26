@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 11, "changes": 12, "filename": "contrib/fast-import/git-p4"}], "stats": {"deletions": 1, "additions": 11, "total": 12}, "commit": {"date": "2007-10-16T05:15:06Z", "authorId": "cpettitt", "author": "Chris Pettitt"}}

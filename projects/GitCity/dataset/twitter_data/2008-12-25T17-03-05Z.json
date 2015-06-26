@@ -1,0 +1,1 @@
+{"repo": "webrat", "files": [{"status": "modified", "deletions": 3, "additions": 10, "changes": 13, "filename": "spec/webrat/mechanize/mechanize_session_spec.rb"}], "stats": {"deletions": 3, "additions": 10, "total": 13}, "commit": {"date": "2008-12-25T17:03:05Z", "authorId": "brynary", "author": "Bryan Helmkamp"}}

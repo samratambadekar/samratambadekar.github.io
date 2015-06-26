@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 6, "changes": 7, "filename": "mysys/my_copy.c"}], "stats": {"deletions": 1, "additions": 6, "total": 7}, "commit": {"date": "2007-04-30T21:04:14Z", "authorId": "", "author": "dkatz@damien-katzs-computer.local"}}

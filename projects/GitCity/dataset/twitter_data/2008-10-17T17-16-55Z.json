@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "core/src/main/java/org/apache/mahout/clustering/canopy/Canopy.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2008-10-17T17:16:55Z", "authorId": "", "author": "Jeff Eastman"}}

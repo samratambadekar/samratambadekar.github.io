@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 35, "additions": 123, "changes": 158, "filename": "t/t4024-diff-optimize-common.sh"}], "stats": {"deletions": 35, "additions": 123, "total": 158}, "commit": {"date": "2007-12-20T00:21:30Z", "authorId": "gitster", "author": "Junio C Hamano"}}

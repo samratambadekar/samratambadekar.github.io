@@ -1,0 +1,1 @@
+{"repo": "pig", "files": [{"status": "modified", "deletions": 2, "additions": 0, "changes": 2, "filename": "src/org/apache/pig/tools/pigstats/PigStats.java"}], "stats": {"deletions": 2, "additions": 0, "total": 2}, "commit": {"date": "2009-05-28T18:19:50Z", "authorId": "", "author": "Alan Gates"}}

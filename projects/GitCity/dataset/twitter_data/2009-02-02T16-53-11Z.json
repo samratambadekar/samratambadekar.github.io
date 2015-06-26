@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 25, "changes": 26, "filename": "core/src/test/java/org/apache/mahout/cf/taste/impl/model/file/FileDataModelTest.java"}], "stats": {"deletions": 1, "additions": 25, "total": 26}, "commit": {"date": "2009-02-02T16:53:11Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

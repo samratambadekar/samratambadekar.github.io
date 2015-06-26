@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 2, "additions": 5, "changes": 7, "filename": "core/src/main/java/org/apache/mahout/cf/taste/impl/eval/AverageAbsoluteDifferenceRecommenderEvaluator.java"}], "stats": {"deletions": 2, "additions": 5, "total": 7}, "commit": {"date": "2009-02-01T23:59:53Z", "authorId": "srowen", "author": "Sean R. Owen"}}

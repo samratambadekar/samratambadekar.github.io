@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 27, "additions": 22, "changes": 49, "filename": "src/compiler/scala/tools/nsc/symtab/classfile/UnPickler.scala"}], "stats": {"deletions": 27, "additions": 22, "total": 49}, "commit": {"date": "2009-05-30T13:06:52Z", "authorId": "paulp", "author": "Paul Phillips"}}

@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 276, "additions": 158, "changes": 434, "filename": "src/compiler/scala/tools/nsc/ast/parser/SymbolicXMLBuilder.scala"}], "stats": {"deletions": 276, "additions": 158, "total": 434}, "commit": {"date": "2009-05-30T19:24:25Z", "authorId": "paulp", "author": "Paul Phillips"}}

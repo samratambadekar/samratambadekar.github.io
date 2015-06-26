@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 13, "additions": 17, "changes": 30, "filename": "t/t9129-git-svn-i18n-commitencoding.sh"}], "stats": {"deletions": 13, "additions": 17, "total": 30}, "commit": {"date": "2008-12-23T01:09:24Z", "authorId": "vmiklos", "author": "Miklos Vajna"}}

@@ -1,0 +1,1 @@
+{"repo": "webrat", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "lib/webrat/core.rb"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2008-06-02T11:50:33Z", "authorId": "", "author": "Ismael Celis"}}

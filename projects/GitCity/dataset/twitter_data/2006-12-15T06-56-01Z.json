@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 21, "additions": 0, "changes": 21, "filename": "mysql-test/r/myisam.result"}], "stats": {"deletions": 21, "additions": 0, "total": 21}, "commit": {"date": "2006-12-15T06:56:01Z", "authorId": "", "author": "thek@kpdesk.mysql.com"}}

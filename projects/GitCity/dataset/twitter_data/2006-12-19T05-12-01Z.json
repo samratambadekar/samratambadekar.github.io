@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 2, "additions": 8, "changes": 10, "filename": "scripts/mysqldumpslow.sh"}], "stats": {"deletions": 2, "additions": 8, "total": 10}, "commit": {"date": "2006-12-19T05:12:01Z", "authorId": "", "author": "mtaylor@qualinost.(none)"}}

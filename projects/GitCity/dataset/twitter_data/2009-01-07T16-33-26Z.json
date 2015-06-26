@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 5, "additions": 4, "changes": 9, "filename": "examples/src/main/java/org/apache/mahout/cf/taste/example/jester/JesterDataModel.java"}], "stats": {"deletions": 5, "additions": 4, "total": 9}, "commit": {"date": "2009-01-07T16:33:26Z", "authorId": "srowen", "author": "Sean R. Owen"}}

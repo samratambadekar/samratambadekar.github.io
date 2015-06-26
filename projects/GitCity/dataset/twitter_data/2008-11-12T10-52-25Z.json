@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 4, "additions": 9, "changes": 13, "filename": "core/taste-build.xml"}], "stats": {"deletions": 4, "additions": 9, "total": 13}, "commit": {"date": "2008-11-12T10:52:25Z", "authorId": "srowen", "author": "Sean R. Owen"}}

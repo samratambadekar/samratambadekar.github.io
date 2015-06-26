@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 6, "changes": 7, "filename": "include/my_global.h"}], "stats": {"deletions": 1, "additions": 6, "total": 7}, "commit": {"date": "2007-04-24T11:06:58Z", "authorId": "", "author": "msvensson@pilot.blaudden"}}

@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 16, "additions": 45, "changes": 61, "filename": "src/partest/scala/tools/partest/nest/FileManager.scala"}], "stats": {"deletions": 16, "additions": 45, "total": 61}, "commit": {"date": "2008-02-26T23:58:38Z", "authorId": "phaller", "author": "Philipp Haller"}}

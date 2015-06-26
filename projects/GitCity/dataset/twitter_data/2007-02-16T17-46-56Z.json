@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/compiler/scala/tools/nsc/symtab/classfile/Pickler.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2007-02-16T17:46:56Z", "authorId": "odersky", "author": "Martin Odersky"}}

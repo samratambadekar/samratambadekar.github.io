@@ -1,0 +1,1 @@
+{"repo": "cascading", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/core/cascading/tuple/Fields.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2009-02-18T22:06:27Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

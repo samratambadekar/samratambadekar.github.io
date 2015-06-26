@@ -1,0 +1,1 @@
+{"repo": "twitter4j", "files": [{"status": "added", "deletions": 0, "additions": 5, "changes": 5, "filename": "jdk142test.sh"}], "stats": {"deletions": 0, "additions": 5, "total": 5}, "commit": {"date": "2009-05-09T14:37:01Z", "authorId": "", "author": "yusuke"}}

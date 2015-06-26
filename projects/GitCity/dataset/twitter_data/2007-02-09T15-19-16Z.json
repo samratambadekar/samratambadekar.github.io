@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 6, "additions": 15, "changes": 21, "filename": "src/compiler/scala/tools/nsc/backend/jvm/GenJVM.scala"}], "stats": {"deletions": 6, "additions": 15, "total": 21}, "commit": {"date": "2007-02-09T15:19:16Z", "authorId": "dragos", "author": "Iulian Dragos"}}

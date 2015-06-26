@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/compiler/scala/tools/nsc/symtab/clr/TypeParser.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2009-05-30T10:24:39Z", "authorId": "lrytz", "author": "Lukas Rytz"}}

@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 21, "additions": 35, "changes": 56, "filename": "BitKeeper/triggers/post-commit"}], "stats": {"deletions": 21, "additions": 35, "total": 56}, "commit": {"date": "2007-06-21T12:39:13Z", "authorId": "", "author": "df@pippilotta.erinye.com"}}

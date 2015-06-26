@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 5, "additions": 1, "changes": 6, "filename": "sql/ha_ndbcluster_cond.h"}], "stats": {"deletions": 5, "additions": 1, "total": 6}, "commit": {"date": "2007-06-19T11:56:02Z", "authorId": "", "author": "tomas@whalegate.ndb.mysql.com"}}

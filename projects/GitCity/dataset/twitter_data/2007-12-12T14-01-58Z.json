@@ -1,0 +1,1 @@
+{"repo": "scalacheck", "files": [{"status": "modified", "deletions": 3, "additions": 33, "changes": 36, "filename": "build.xml"}], "stats": {"deletions": 3, "additions": 33, "total": 36}, "commit": {"date": "2007-12-12T14:01:58Z", "authorId": "rickynils", "author": "Rickard Nilsson"}}

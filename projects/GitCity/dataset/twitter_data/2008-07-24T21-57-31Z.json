@@ -1,0 +1,1 @@
+{"repo": "kestrel", "files": [{"status": "modified", "deletions": 19, "additions": 17, "changes": 36, "filename": "scripts/scarling.debian.sh"}], "stats": {"deletions": 19, "additions": 17, "total": 36}, "commit": {"date": "2008-07-24T21:57:31Z", "authorId": "", "author": "Robey Pointer"}}

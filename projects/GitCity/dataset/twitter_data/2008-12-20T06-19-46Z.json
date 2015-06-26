@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 8, "additions": 6, "changes": 14, "filename": "http-push.c"}], "stats": {"deletions": 8, "additions": 6, "total": 14}, "commit": {"date": "2008-12-20T06:19:46Z", "authorId": "catap", "author": "Kirill A. Korinskiy"}}

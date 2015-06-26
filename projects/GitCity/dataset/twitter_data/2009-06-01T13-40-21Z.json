@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 4, "changes": 5, "filename": "test/files/neg/bug1241.check"}], "stats": {"deletions": 1, "additions": 4, "total": 5}, "commit": {"date": "2009-06-01T13:40:21Z", "authorId": "DRMacIver", "author": "David MacIver"}}

@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 12, "additions": 26, "changes": 38, "filename": "mysql-test/suite/rpl/t/rpl_trunc_temp.test"}], "stats": {"deletions": 12, "additions": 26, "total": 38}, "commit": {"date": "2008-07-23T10:13:55Z", "authorId": "", "author": "Sven Sandberg"}}

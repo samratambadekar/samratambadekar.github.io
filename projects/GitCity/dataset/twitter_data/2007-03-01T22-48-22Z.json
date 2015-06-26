@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 22, "additions": 15, "changes": 37, "filename": "VC++Files/mysql.sln"}], "stats": {"deletions": 22, "additions": 15, "total": 37}, "commit": {"date": "2007-03-01T22:48:22Z", "authorId": "", "author": "kent@mysql.com/kent-amd64.(none)"}}

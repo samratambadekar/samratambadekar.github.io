@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "added", "deletions": 0, "additions": 61, "changes": 61, "filename": "t/t1010-mktree.sh"}], "stats": {"deletions": 0, "additions": 61, "total": 61}, "commit": {"date": "2009-05-10T18:18:59Z", "authorId": "gitster", "author": "Junio C Hamano"}}

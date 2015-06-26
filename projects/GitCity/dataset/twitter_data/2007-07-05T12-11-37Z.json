@@ -1,0 +1,1 @@
+{"repo": "scalacheck", "files": [{"status": "modified", "deletions": 5, "additions": 13, "changes": 18, "filename": "src/scalacheck/Prop.scala"}], "stats": {"deletions": 5, "additions": 13, "total": 18}, "commit": {"date": "2007-07-05T12:11:37Z", "authorId": "rickynils", "author": "Rickard Nilsson"}}

@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "builtin-branch.c"}, {"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "t/t3200-branch.sh"}], "stats": {"deletions": 2, "additions": 4, "total": 6}, "commit": {"date": "2008-12-12T23:20:07Z", "authorId": "", "author": "Brandon Casey"}}

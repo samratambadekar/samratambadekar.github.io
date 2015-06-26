@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 4, "additions": 5, "changes": 9, "filename": "examples/src/main/java/org/apache/mahout/cf/taste/example/netflix/NetflixDataModel.java"}], "stats": {"deletions": 4, "additions": 5, "total": 9}, "commit": {"date": "2009-01-15T07:50:12Z", "authorId": "srowen", "author": "Sean R. Owen"}}

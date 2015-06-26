@@ -1,0 +1,1 @@
+{"repo": "webrat", "files": [{"status": "modified", "deletions": 2, "additions": 0, "changes": 2, "filename": "lib/webrat/core/session.rb"}], "stats": {"deletions": 2, "additions": 0, "total": 2}, "commit": {"date": "2008-12-29T02:05:22Z", "authorId": "brynary", "author": "Bryan Helmkamp"}}

@@ -1,0 +1,1 @@
+{"repo": "scalacheck", "files": [{"status": "modified", "deletions": 1, "additions": 23, "changes": 24, "filename": "src/scalacheck/Gen.scala"}], "stats": {"deletions": 1, "additions": 23, "total": 24}, "commit": {"date": "2007-11-29T06:51:25Z", "authorId": "tonymorris", "author": "Tony Morris"}}

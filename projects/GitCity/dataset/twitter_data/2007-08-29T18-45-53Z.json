@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 6, "changes": 7, "filename": "ndb/src/ndbapi/NdbBlob.cpp"}], "stats": {"deletions": 1, "additions": 6, "total": 7}, "commit": {"date": "2007-08-29T18:45:53Z", "authorId": "", "author": "pekka@sama.ndb.mysql.com"}}

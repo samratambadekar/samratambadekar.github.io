@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 6, "changes": 7, "filename": "mysql-test/lib/mtr_report.pl"}], "stats": {"deletions": 1, "additions": 6, "total": 7}, "commit": {"date": "2007-06-21T14:37:13Z", "authorId": "", "author": "msvensson@pilot.(none)"}}

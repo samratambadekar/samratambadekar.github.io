@@ -1,0 +1,1 @@
+{"repo": "pig", "files": [{"status": "modified", "deletions": 6, "additions": 8, "changes": 14, "filename": "src/org/apache/pig/PigServer.java"}], "stats": {"deletions": 6, "additions": 8, "total": 14}, "commit": {"date": "2009-05-15T17:51:12Z", "authorId": "", "author": "Olga Natkovich"}}

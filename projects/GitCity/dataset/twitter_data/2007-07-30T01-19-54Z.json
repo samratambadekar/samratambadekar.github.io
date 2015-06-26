@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 26, "additions": 0, "changes": 26, "filename": "git-gui.sh"}, {"status": "modified", "deletions": 4, "additions": 18, "changes": 22, "filename": "lib/browser.tcl"}], "stats": {"deletions": 30, "additions": 18, "total": 48}, "commit": {"date": "2007-07-30T01:19:54Z", "authorId": "spearce", "author": "Shawn O. Pearce"}}

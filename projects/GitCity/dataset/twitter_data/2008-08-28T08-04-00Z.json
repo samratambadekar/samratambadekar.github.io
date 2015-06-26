@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 51, "additions": 70, "changes": 121, "filename": "xdiff/xmerge.c"}], "stats": {"deletions": 51, "additions": 70, "total": 121}, "commit": {"date": "2008-08-28T08:04:00Z", "authorId": "gitster", "author": "Junio C Hamano"}}

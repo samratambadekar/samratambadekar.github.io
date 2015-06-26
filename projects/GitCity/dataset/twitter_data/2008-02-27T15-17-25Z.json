@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 7, "changes": 8, "filename": "mysql-test/t/func_time.test"}], "stats": {"deletions": 1, "additions": 7, "total": 8}, "commit": {"date": "2008-02-27T15:17:25Z", "authorId": "", "author": "kaa@kaamos.(none)"}}

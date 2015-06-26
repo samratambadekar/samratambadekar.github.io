@@ -1,0 +1,1 @@
+{"repo": "webrat", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "lib/webrat/sinatra.rb"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2008-12-29T03:40:14Z", "authorId": "foca", "author": "Nicolas Sanguinetti"}}

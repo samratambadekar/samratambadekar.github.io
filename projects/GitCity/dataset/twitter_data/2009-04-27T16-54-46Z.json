@@ -1,0 +1,1 @@
+{"repo": "webrat", "files": [{"status": "modified", "deletions": 4, "additions": 1, "changes": 5, "filename": "lib/webrat/rspec-rails.rb"}], "stats": {"deletions": 4, "additions": 1, "total": 5}, "commit": {"date": "2009-04-27T16:54:46Z", "authorId": "dchelimsky", "author": "David Chelimsky"}}
