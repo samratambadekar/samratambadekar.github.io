@@ -1,0 +1,1 @@
+{"repo": "cascading", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "src/core/cascading/scheme/TextDelimited.java"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2010-07-21T20:17:48Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

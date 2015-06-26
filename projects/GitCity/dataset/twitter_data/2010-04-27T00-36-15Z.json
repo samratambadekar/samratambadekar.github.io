@@ -1,0 +1,1 @@
+{"repo": "twitter-text-java", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "test-data/twitter-text-conformance"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-04-27T00:36:15Z", "authorId": "", "author": "Matt Sanford"}}

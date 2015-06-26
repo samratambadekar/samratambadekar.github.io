@@ -1,0 +1,1 @@
+{"repo": "grabby-hands", "files": [{"status": "modified", "deletions": 16, "additions": 3, "changes": 19, "filename": "src/test/java/com/twitter/grabbyhands/JavaTest.java"}], "stats": {"deletions": 16, "additions": 3, "total": 19}, "commit": {"date": "2010-02-18T19:45:29Z", "authorId": "", "author": "John Kalucki"}}

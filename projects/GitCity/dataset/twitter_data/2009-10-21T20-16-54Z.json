@@ -1,0 +1,1 @@
+{"repo": "hadoop-lzo", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "build.xml"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2009-10-21T20:16:54Z", "authorId": "toddlipcon", "author": "Todd Lipcon"}}

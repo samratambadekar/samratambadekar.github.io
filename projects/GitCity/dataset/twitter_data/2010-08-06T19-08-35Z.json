@@ -1,0 +1,1 @@
+{"repo": "ostrich", "files": [{"status": "modified", "deletions": 6, "additions": 98, "changes": 104, "filename": "src/test/scala/com/twitter/ostrich/AdminHttpServiceSpec.scala"}], "stats": {"deletions": 6, "additions": 98, "total": 104}, "commit": {"date": "2010-08-06T19:08:35Z", "authorId": "jorgeortiz85", "author": "Jorge Ortiz"}}

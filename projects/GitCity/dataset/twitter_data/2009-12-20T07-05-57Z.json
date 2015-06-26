@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "t/t9146-git-svn-empty-dirs.sh"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2009-12-20T07:05:57Z", "authorId": "", "author": "Eric Wong"}}

@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/swing/scala/swing/RootPanel.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-02-20T20:00:46Z", "authorId": "paulp", "author": "Paul Phillips"}}

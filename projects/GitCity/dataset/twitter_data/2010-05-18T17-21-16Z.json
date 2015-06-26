@@ -1,0 +1,1 @@
+{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 4, "additions": 15, "changes": 19, "filename": "lib/extractor.rb"}], "stats": {"deletions": 4, "additions": 15, "total": 19}, "commit": {"date": "2010-05-18T17:21:16Z", "authorId": "", "author": "Raffi Krikorian"}}

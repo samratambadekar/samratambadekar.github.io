@@ -1,0 +1,1 @@
+{"repo": "cascading", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/core/cascading/pipe/SubAssembly.java"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2010-08-02T01:02:31Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

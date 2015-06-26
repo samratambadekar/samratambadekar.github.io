@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 5, "additions": 5, "changes": 10, "filename": "src/compiler/scala/tools/nsc/ast/parser/Parsers.scala"}], "stats": {"deletions": 5, "additions": 5, "total": 10}, "commit": {"date": "2010-02-18T21:51:39Z", "authorId": "milessabin", "author": "Miles Sabin"}}

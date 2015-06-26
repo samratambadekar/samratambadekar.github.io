@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "mysys/charset.c"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2010-02-27T02:09:36Z", "authorId": "", "author": "Davi Arnaut"}}

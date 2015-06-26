@@ -1,0 +1,1 @@
+{"repo": "util", "files": [{"status": "modified", "deletions": 1, "additions": 8, "changes": 9, "filename": "src/main/scala/com/twitter/util/Pool.scala"}], "stats": {"deletions": 1, "additions": 8, "total": 9}, "commit": {"date": "2010-08-05T23:12:51Z", "authorId": "", "author": "Nick Kallen"}}

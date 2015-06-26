@@ -1,0 +1,1 @@
+{"repo": "ostrich", "files": [{"status": "modified", "deletions": 5, "additions": 0, "changes": 5, "filename": "src/main/scala/com/twitter/ostrich/AdminSocketService.scala"}], "stats": {"deletions": 5, "additions": 0, "total": 5}, "commit": {"date": "2010-01-19T18:43:13Z", "authorId": "", "author": "Steve Jenson"}}

@@ -1,0 +1,1 @@
+{"repo": "standard-project", "files": [{"status": "modified", "deletions": 1, "additions": 8, "changes": 9, "filename": "src/main/scala/com/twitter/sbt/StandardProject.scala"}], "stats": {"deletions": 1, "additions": 8, "total": 9}, "commit": {"date": "2010-05-07T02:56:00Z", "authorId": "", "author": "Robey Pointer"}}

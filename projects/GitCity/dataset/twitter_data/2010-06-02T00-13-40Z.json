@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 8, "changes": 10, "filename": "t/t5800-remote-helpers.sh"}], "stats": {"deletions": 2, "additions": 8, "total": 10}, "commit": {"date": "2010-06-02T00:13:40Z", "authorId": "drafnel", "author": "Brandon Casey"}}

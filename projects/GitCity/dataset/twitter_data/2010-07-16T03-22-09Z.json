@@ -1,0 +1,1 @@
+{"repo": "cascading", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/core/cascading/pipe/cogroup/Joiner.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-07-16T03:22:09Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

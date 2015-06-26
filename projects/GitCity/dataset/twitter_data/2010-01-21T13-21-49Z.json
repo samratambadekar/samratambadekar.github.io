@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "math/src/main/java/org/apache/mahout/math/map/OpenHashMap.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-01-21T13:21:49Z", "authorId": "jakemannix", "author": "Jacob Alexander Mannix"}}

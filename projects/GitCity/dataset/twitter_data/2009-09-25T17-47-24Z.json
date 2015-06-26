@@ -1,0 +1,1 @@
+{"repo": "pig", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "src/org/apache/pig/impl/logicalLayer/LOCast.java"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2009-09-25T17:47:24Z", "authorId": "", "author": "Pradeep Kamath"}}

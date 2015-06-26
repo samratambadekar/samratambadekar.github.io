@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 11, "additions": 40, "changes": 51, "filename": "examples/src/main/java/org/apache/mahout/classifier/bayes/WikipediaXmlSplitter.java"}], "stats": {"deletions": 11, "additions": 40, "total": 51}, "commit": {"date": "2010-01-22T14:38:53Z", "authorId": "srowen", "author": "Sean R. Owen"}}

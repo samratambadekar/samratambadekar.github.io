@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 4, "additions": 8, "changes": 12, "filename": "build.xml"}], "stats": {"deletions": 4, "additions": 8, "total": 12}, "commit": {"date": "2010-02-25T00:14:04Z", "authorId": "paulp", "author": "Paul Phillips"}}

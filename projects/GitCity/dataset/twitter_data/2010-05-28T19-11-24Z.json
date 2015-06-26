@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 15, "changes": 17, "filename": "git-instaweb.sh"}], "stats": {"deletions": 2, "additions": 15, "total": 17}, "commit": {"date": "2010-05-28T19:11:24Z", "authorId": "jnareb", "author": "Jakub Narebski"}}

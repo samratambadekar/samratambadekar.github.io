@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 0, "additions": 6, "changes": 6, "filename": "Makefile.am"}, {"status": "modified", "deletions": 27, "additions": 28, "changes": 55, "filename": "client/mysqltest.c"}], "stats": {"deletions": 27, "additions": 34, "total": 61}, "commit": {"date": "2009-10-14T22:40:40Z", "authorId": "", "author": "Hery Ramilison"}}

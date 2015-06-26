@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 4, "additions": 24, "changes": 28, "filename": "src/scala/spark/ParallelArray.scala"}], "stats": {"deletions": 4, "additions": 24, "total": 28}, "commit": {"date": "2010-06-17T20:19:02Z", "authorId": "mateiz", "author": "Matei Zaharia"}}

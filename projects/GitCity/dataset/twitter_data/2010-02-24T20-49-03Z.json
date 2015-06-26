@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "builtin-shortlog.c"}], "stats": {"deletions": 0, "additions": 2, "total": 2}, "commit": {"date": "2010-02-24T20:49:03Z", "authorId": "", "author": "Michele Ballabio"}}

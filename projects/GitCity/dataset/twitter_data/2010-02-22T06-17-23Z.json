@@ -1,0 +1,1 @@
+{"repo": "grabby-hands", "files": [{"status": "modified", "deletions": 1, "additions": 52, "changes": 53, "filename": "src/test/scala/com/twitter/grabbyhands/NegativeSpec.scala"}], "stats": {"deletions": 1, "additions": 52, "total": 53}, "commit": {"date": "2010-02-22T06:17:23Z", "authorId": "", "author": "John Kalucki"}}

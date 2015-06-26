@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "core/src/main/java/org/apache/mahout/math/hadoop/DistributedRowMatrix.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-08-06T01:02:00Z", "authorId": "jakemannix", "author": "Jacob Alexander Mannix"}}

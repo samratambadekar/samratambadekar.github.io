@@ -1,0 +1,1 @@
+{"repo": "pig", "files": [{"status": "modified", "deletions": 4, "additions": 6, "changes": 10, "filename": "src/org/apache/pig/impl/logicalLayer/optimizer/PushDownForeachFlatten.java"}], "stats": {"deletions": 4, "additions": 6, "total": 10}, "commit": {"date": "2010-04-17T00:38:48Z", "authorId": "", "author": "Jianyong Dai"}}

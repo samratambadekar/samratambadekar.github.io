@@ -1,0 +1,1 @@
+{"repo": "standard-project", "files": [{"status": "modified", "deletions": 2, "additions": 7, "changes": 9, "filename": "src/main/scala/com/twitter/sbt/StandardProject.scala"}], "stats": {"deletions": 2, "additions": 7, "total": 9}, "commit": {"date": "2010-04-26T00:36:19Z", "authorId": "", "author": "Ed Ceaser"}}

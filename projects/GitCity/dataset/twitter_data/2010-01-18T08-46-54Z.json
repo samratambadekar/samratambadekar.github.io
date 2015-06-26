@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "core/src/test/java/org/apache/mahout/common/DummyOutputCollector.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-01-18T08:46:54Z", "authorId": "srowen", "author": "Sean R. Owen"}}

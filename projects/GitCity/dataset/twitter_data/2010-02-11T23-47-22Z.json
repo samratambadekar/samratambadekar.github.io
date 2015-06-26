@@ -1,0 +1,1 @@
+{"repo": "gizzard", "files": [{"status": "modified", "deletions": 16, "additions": 15, "changes": 31, "filename": "src/main/scala/com/twitter/gizzard/thrift/ShardManagerService.scala"}], "stats": {"deletions": 16, "additions": 15, "total": 31}, "commit": {"date": "2010-02-11T23:47:22Z", "authorId": "", "author": "Nick Kallen"}}

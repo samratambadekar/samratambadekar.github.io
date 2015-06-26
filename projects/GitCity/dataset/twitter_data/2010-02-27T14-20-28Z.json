@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "added", "deletions": 0, "additions": 96, "changes": 96, "filename": "t/t4253-am-keep-cr-dos.sh"}], "stats": {"deletions": 0, "additions": 96, "total": 96}, "commit": {"date": "2010-02-27T14:20:28Z", "authorId": "", "author": "Stefan-W. Hahn"}}

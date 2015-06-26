@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 15, "additions": 11, "changes": 26, "filename": "src/library/scala/util/parsing/combinator/lexical/StdLexical.scala"}], "stats": {"deletions": 15, "additions": 11, "total": 26}, "commit": {"date": "2009-06-07T14:40:56Z", "authorId": "paulp", "author": "Paul Phillips"}}

@@ -1,0 +1,1 @@
+{"repo": "haplocheirus", "files": [{"status": "modified", "deletions": 3, "additions": 12, "changes": 15, "filename": "src/main/scala/com/twitter/haplocheirus/RedisShard.scala"}], "stats": {"deletions": 3, "additions": 12, "total": 15}, "commit": {"date": "2010-06-04T01:48:13Z", "authorId": "", "author": "Robey Pointer"}}

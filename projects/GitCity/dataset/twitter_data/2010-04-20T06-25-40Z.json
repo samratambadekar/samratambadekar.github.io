@@ -1,0 +1,1 @@
+{"repo": "flockdb", "files": [{"status": "modified", "deletions": 1, "additions": 0, "changes": 1, "filename": ".gitignore"}, {"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "project/build/Flockdb.scala"}], "stats": {"deletions": 3, "additions": 2, "total": 5}, "commit": {"date": "2010-04-20T06:25:40Z", "authorId": "", "author": "Ed Ceaser"}}

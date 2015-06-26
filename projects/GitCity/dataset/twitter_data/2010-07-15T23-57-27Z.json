@@ -1,0 +1,1 @@
+{"repo": "spitball", "files": [{"status": "added", "deletions": 0, "additions": 10, "changes": 10, "filename": "README"}, {"status": "modified", "deletions": 7, "additions": 14, "changes": 21, "filename": "Rakefile"}], "stats": {"deletions": 7, "additions": 24, "total": 31}, "commit": {"date": "2010-07-15T23:57:27Z", "authorId": "freels", "author": "Matt Freels"}}

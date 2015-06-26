@@ -1,0 +1,1 @@
+{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 2, "additions": 23, "changes": 25, "filename": "test/conformance_test.rb"}], "stats": {"deletions": 2, "additions": 23, "total": 25}, "commit": {"date": "2010-04-26T19:01:11Z", "authorId": "", "author": "Matt Sanford"}}

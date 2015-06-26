@@ -1,0 +1,1 @@
+{"repo": "webrat", "files": [{"status": "modified", "deletions": 1, "additions": 9, "changes": 10, "filename": "spec/private/mechanize/mechanize_adapter_spec.rb"}], "stats": {"deletions": 1, "additions": 9, "total": 10}, "commit": {"date": "2010-02-19T00:04:11Z", "authorId": "wemrysi", "author": "Emrys Ingersoll"}}

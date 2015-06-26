@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": ".gitignore"}], "stats": {"deletions": 0, "additions": 2, "total": 2}, "commit": {"date": "2010-07-26T03:54:56Z", "authorId": "mateiz", "author": "Matei Zaharia"}}

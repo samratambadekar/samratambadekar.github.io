@@ -1,0 +1,1 @@
+{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 5, "additions": 7, "changes": 12, "filename": "lib/hithighlighter.rb"}], "stats": {"deletions": 5, "additions": 7, "total": 12}, "commit": {"date": "2010-04-28T00:36:00Z", "authorId": "bcherry", "author": "Ben Cherry"}}

@@ -1,0 +1,1 @@
+{"repo": "webrat", "files": [{"status": "renamed", "deletions": 0, "additions": 0, "changes": 0, "filename": "spec/integration/rails/app/controllers/application_controller.rb"}], "stats": {"deletions": 0, "additions": 0, "total": 0}, "commit": {"date": "2009-11-14T01:52:14Z", "authorId": "brynary", "author": "Bryan Helmkamp"}}

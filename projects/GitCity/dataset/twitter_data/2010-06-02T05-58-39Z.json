@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "added", "deletions": 0, "additions": 95, "changes": 95, "filename": "t/t3508-cherry-pick-many-commits.sh"}], "stats": {"deletions": 0, "additions": 95, "total": 95}, "commit": {"date": "2010-06-02T05:58:39Z", "authorId": "chriscool", "author": "Christian Couder"}}

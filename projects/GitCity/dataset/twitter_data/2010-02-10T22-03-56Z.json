@@ -1,0 +1,1 @@
+{"repo": "gizzard", "files": [{"status": "added", "deletions": 0, "additions": 314, "changes": 314, "filename": "src/test/scala/com/twitter/gizzard/sharding/NameServerSpec.scala"}], "stats": {"deletions": 0, "additions": 314, "total": 314}, "commit": {"date": "2010-02-10T22:03:56Z", "authorId": "", "author": "Robey Pointer"}}

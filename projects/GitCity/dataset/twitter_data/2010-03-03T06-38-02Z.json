@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "t/lib-patch-mode.sh"}, {"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "t/t6000lib.sh"}], "stats": {"deletions": 0, "additions": 4, "total": 4}, "commit": {"date": "2010-03-03T06:38:02Z", "authorId": "gitster", "author": "Junio C Hamano"}}

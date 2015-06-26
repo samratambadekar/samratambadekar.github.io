@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 10, "additions": 3, "changes": 13, "filename": "remote-curl.c"}], "stats": {"deletions": 10, "additions": 3, "total": 13}, "commit": {"date": "2010-03-02T10:49:31Z", "authorId": "rctay", "author": "Tay Ray Chuan"}}

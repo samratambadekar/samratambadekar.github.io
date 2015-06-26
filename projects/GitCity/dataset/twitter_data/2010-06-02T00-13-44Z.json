@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "t/Makefile"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "t/aggregate-results.sh"}], "stats": {"deletions": 2, "additions": 4, "total": 6}, "commit": {"date": "2010-06-02T00:13:44Z", "authorId": "drafnel", "author": "Brandon Casey"}}

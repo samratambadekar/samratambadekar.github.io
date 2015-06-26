@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "builtin-clone.c"}, {"status": "modified", "deletions": 2, "additions": 4, "changes": 6, "filename": "t/t5601-clone.sh"}], "stats": {"deletions": 3, "additions": 7, "total": 10}, "commit": {"date": "2009-09-02T06:36:47Z", "authorId": "peff", "author": "Jeff King"}}

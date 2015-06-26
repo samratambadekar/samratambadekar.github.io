@@ -1,0 +1,1 @@
+{"repo": "gizzard", "files": [{"status": "modified", "deletions": 1, "additions": 7, "changes": 8, "filename": "src/main/scala/com/twitter/gizzard/jobs/JobParser.scala"}], "stats": {"deletions": 1, "additions": 7, "total": 8}, "commit": {"date": "2010-02-23T09:24:56Z", "authorId": "", "author": "Robey Pointer"}}

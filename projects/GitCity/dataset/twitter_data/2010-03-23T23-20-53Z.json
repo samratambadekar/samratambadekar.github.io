@@ -1,0 +1,1 @@
+{"repo": "pig", "files": [{"status": "modified", "deletions": 0, "additions": 10, "changes": 10, "filename": "CHANGES.txt"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "build.xml"}], "stats": {"deletions": 1, "additions": 11, "total": 12}, "commit": {"date": "2010-03-23T23:20:53Z", "authorId": "", "author": "Olga Natkovich"}}

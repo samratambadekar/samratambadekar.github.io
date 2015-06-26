@@ -1,0 +1,1 @@
+{"repo": "twitter-text-conformance", "files": [{"status": "modified", "deletions": 5, "additions": 1, "changes": 6, "filename": "autolink.yml"}], "stats": {"deletions": 5, "additions": 1, "total": 6}, "commit": {"date": "2010-02-03T06:41:17Z", "authorId": "hoverbird", "author": "Patrick Ewing"}}

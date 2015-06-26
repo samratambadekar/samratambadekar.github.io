@@ -1,0 +1,1 @@
+{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 7, "additions": 0, "changes": 7, "filename": "lib/regex.rb"}], "stats": {"deletions": 7, "additions": 0, "total": 7}, "commit": {"date": "2010-01-25T22:49:37Z", "authorId": "", "author": "Matt Sanford"}}

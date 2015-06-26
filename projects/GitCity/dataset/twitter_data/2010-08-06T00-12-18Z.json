@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 2, "additions": 21, "changes": 23, "filename": "math/src/main/java/org/apache/mahout/math/SequentialAccessSparseVector.java"}], "stats": {"deletions": 2, "additions": 21, "total": 23}, "commit": {"date": "2010-08-06T00:12:18Z", "authorId": "jakemannix", "author": "Jacob Alexander Mannix"}}

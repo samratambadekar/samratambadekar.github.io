@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "mysql-test/suite/rpl/t/disabled.def"}], "stats": {"deletions": 0, "additions": 2, "total": 2}, "commit": {"date": "2010-02-27T15:08:53Z", "authorId": "", "author": "Andrei Elkin"}}

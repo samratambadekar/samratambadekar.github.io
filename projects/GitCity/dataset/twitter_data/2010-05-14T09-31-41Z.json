@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "config.mak.in"}, {"status": "modified", "deletions": 7, "additions": 30, "changes": 37, "filename": "configure.ac"}], "stats": {"deletions": 7, "additions": 32, "total": 39}, "commit": {"date": "2010-05-14T09:31:41Z", "authorId": "", "author": "Gary V. Vaughan"}}

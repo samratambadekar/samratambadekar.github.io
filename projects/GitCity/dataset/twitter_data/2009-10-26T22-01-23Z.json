@@ -1,0 +1,1 @@
+{"repo": "thrift_client", "files": [{"status": "modified", "deletions": 41, "additions": 41, "changes": 82, "filename": "lib/thrift_client/simple.rb"}], "stats": {"deletions": 41, "additions": 41, "total": 82}, "commit": {"date": "2009-10-26T22:01:23Z", "authorId": "", "author": "Robey Pointer"}}

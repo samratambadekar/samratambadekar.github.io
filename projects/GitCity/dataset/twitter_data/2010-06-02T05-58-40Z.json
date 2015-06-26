@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 11, "additions": 53, "changes": 64, "filename": "Documentation/git-cherry-pick.txt"}], "stats": {"deletions": 11, "additions": 53, "total": 64}, "commit": {"date": "2010-06-02T05:58:40Z", "authorId": "chriscool", "author": "Christian Couder"}}

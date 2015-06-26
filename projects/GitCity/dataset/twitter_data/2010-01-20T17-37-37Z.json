@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 2, "additions": 16, "changes": 18, "filename": "core/src/main/java/org/apache/mahout/clustering/dirichlet/models/L1Model.java"}], "stats": {"deletions": 2, "additions": 16, "total": 18}, "commit": {"date": "2010-01-20T17:37:37Z", "authorId": "", "author": "Jeff Eastman"}}

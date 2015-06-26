@@ -1,0 +1,1 @@
+{"repo": "snowflake", "files": [{"status": "added", "deletions": 0, "additions": 14, "changes": 14, "filename": "src/test/ruby/client_test.rb"}], "stats": {"deletions": 0, "additions": 14, "total": 14}, "commit": {"date": "2010-05-25T23:16:26Z", "authorId": "ryanking", "author": "Ryan King"}}

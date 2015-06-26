@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 50, "additions": 50, "changes": 100, "filename": "core/src/main/java/org/apache/mahout/clustering/lda/LDADriver.java"}], "stats": {"deletions": 50, "additions": 50, "total": 100}, "commit": {"date": "2010-01-10T17:48:13Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

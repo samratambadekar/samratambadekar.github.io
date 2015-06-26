@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 7, "additions": 13, "changes": 20, "filename": "t/t9129-git-svn-i18n-commitencoding.sh"}], "stats": {"deletions": 7, "additions": 13, "total": 20}, "commit": {"date": "2010-06-02T19:15:48Z", "authorId": "gitster", "author": "Junio C Hamano"}}

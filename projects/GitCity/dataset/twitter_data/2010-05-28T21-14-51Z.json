@@ -1,0 +1,1 @@
+{"repo": "gizzard", "files": [{"status": "modified", "deletions": 4, "additions": 5, "changes": 9, "filename": "src/main/scala/com/twitter/gizzard/proxy/Proxy.scala"}], "stats": {"deletions": 4, "additions": 5, "total": 9}, "commit": {"date": "2010-05-28T21:14:51Z", "authorId": "freels", "author": "Matt Freels"}}

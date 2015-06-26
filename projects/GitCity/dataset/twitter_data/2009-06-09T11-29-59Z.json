@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 6, "additions": 6, "changes": 12, "filename": "test/files/run/colltest1.scala"}], "stats": {"deletions": 6, "additions": 6, "total": 12}, "commit": {"date": "2009-06-09T11:29:59Z", "authorId": "", "author": "Gilles Dubochet"}}

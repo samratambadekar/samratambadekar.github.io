@@ -1,0 +1,1 @@
+{"repo": "flockdb-client", "files": [{"status": "modified", "deletions": 1, "additions": 0, "changes": 1, "filename": "lib/flock/mock_service.rb"}], "stats": {"deletions": 1, "additions": 0, "total": 1}, "commit": {"date": "2010-04-29T23:49:12Z", "authorId": "freels", "author": "Matt Freels"}}

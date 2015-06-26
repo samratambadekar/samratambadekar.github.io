@@ -1,0 +1,1 @@
+{"repo": "sbt-package-dist", "files": [{"status": "modified", "deletions": 0, "additions": 26, "changes": 26, "filename": "src/main/scala/com/twitter/sbt/StandardProject.scala"}], "stats": {"deletions": 0, "additions": 26, "total": 26}, "commit": {"date": "2010-04-22T00:15:25Z", "authorId": "", "author": "Ed Ceaser"}}

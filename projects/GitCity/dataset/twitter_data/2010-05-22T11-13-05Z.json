@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 7, "changes": 9, "filename": "dir.c"}, {"status": "modified", "deletions": 2, "additions": 10, "changes": 12, "filename": "t/t1501-worktree.sh"}], "stats": {"deletions": 4, "additions": 17, "total": 21}, "commit": {"date": "2010-05-22T11:13:05Z", "authorId": "drizzd", "author": "Clemens Buchacher"}}

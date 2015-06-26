@@ -1,0 +1,1 @@
+{"repo": "querulous", "files": [{"status": "modified", "deletions": 2, "additions": 3, "changes": 5, "filename": "src/test/scala/com/twitter/querulous/unit/DebuggingQuerySpec.scala"}], "stats": {"deletions": 2, "additions": 3, "total": 5}, "commit": {"date": "2010-02-09T19:17:34Z", "authorId": "", "author": "Ed Ceaser"}}

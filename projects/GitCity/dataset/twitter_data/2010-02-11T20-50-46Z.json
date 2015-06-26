@@ -1,0 +1,1 @@
+{"repo": "gizzard", "files": [{"status": "modified", "deletions": 3, "additions": 5, "changes": 8, "filename": "src/main/scala/com/twitter/gizzard/sharding/Shard.scala"}], "stats": {"deletions": 3, "additions": 5, "total": 8}, "commit": {"date": "2010-02-11T20:50:46Z", "authorId": "", "author": "Robey Pointer"}}

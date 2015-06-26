@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 2, "additions": 12, "changes": 14, "filename": "src/compiler/scala/tools/nsc/symtab/Symbols.scala"}], "stats": {"deletions": 2, "additions": 12, "total": 14}, "commit": {"date": "2010-02-16T22:28:27Z", "authorId": "paulp", "author": "Paul Phillips"}}

@@ -1,0 +1,1 @@
+{"repo": "grabby-hands", "files": [{"status": "modified", "deletions": 18, "additions": 0, "changes": 18, "filename": "src/main/scala/com/twitter/grabbyhands/ConnectionRecv.scala"}], "stats": {"deletions": 18, "additions": 0, "total": 18}, "commit": {"date": "2010-02-24T04:46:32Z", "authorId": "", "author": "John Kalucki"}}

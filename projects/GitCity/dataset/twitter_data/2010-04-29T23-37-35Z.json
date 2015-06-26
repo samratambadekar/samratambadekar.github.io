@@ -1,0 +1,1 @@
+{"repo": "flockdb-client", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "VERSION"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "flockdb.gemspec"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2010-04-29T23:37:35Z", "authorId": "", "author": "Ed Ceaser"}}

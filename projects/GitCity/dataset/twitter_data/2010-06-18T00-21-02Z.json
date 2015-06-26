@@ -1,0 +1,1 @@
+{"repo": "flockdb", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "config/test.conf"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-06-18T00:21:02Z", "authorId": "", "author": "Robey Pointer"}}

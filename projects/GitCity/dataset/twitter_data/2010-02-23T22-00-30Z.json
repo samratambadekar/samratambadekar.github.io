@@ -1,0 +1,1 @@
+{"repo": "pig", "files": [{"status": "added", "deletions": 0, "additions": 62, "changes": 62, "filename": "test/org/apache/pig/test/utils/URLPARSE.java"}], "stats": {"deletions": 0, "additions": 62, "total": 62}, "commit": {"date": "2010-02-23T22:00:30Z", "authorId": "", "author": "Pradeep Kamath"}}

@@ -1,0 +1,1 @@
+{"repo": "gizzard", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "script/gizzer"}, {"status": "added", "deletions": 0, "additions": 335, "changes": 335, "filename": "vendor/simple.rb"}], "stats": {"deletions": 1, "additions": 336, "total": 337}, "commit": {"date": "2010-06-23T20:22:19Z", "authorId": "freels", "author": "Matt Freels"}}

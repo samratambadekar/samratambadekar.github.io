@@ -1,0 +1,1 @@
+{"repo": "ostrich", "files": [{"status": "modified", "deletions": 5, "additions": 107, "changes": 112, "filename": "src/test/scala/com/twitter/ostrich/AdminSocketServiceSpec.scala"}], "stats": {"deletions": 5, "additions": 107, "total": 112}, "commit": {"date": "2010-01-16T22:13:02Z", "authorId": "al3x", "author": "Alex Payne"}}

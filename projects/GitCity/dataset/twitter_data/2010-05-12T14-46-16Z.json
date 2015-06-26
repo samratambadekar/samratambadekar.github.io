@@ -1,0 +1,1 @@
+{"repo": "pig", "files": [{"status": "removed", "deletions": 183, "additions": 0, "changes": 183, "filename": "patches/Pig_1406_submit.patch"}], "stats": {"deletions": 183, "additions": 0, "total": 183}, "commit": {"date": "2010-05-12T14:46:16Z", "authorId": "", "author": "Jeff Zhang"}}

@@ -1,0 +1,1 @@
+{"repo": "cloudhopper-commons", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/main/java/com/cloudhopper/commons/rfs/provider/BaseRemoteFileSystem.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2009-10-27T06:26:55Z", "authorId": "", "author": "joelauer"}}

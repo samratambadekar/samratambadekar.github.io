@@ -1,0 +1,1 @@
+{"repo": "flockdb", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/test/scala/com/twitter/flockdb/ConfiguredSpecification.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2010-04-20T19:06:33Z", "authorId": "", "author": "Robey Pointer"}}

@@ -1,0 +1,1 @@
+{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "test/twitter-text-conformance"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-04-28T17:11:22Z", "authorId": "hoverbird", "author": "Patrick Ewing & Matt Sanford"}}

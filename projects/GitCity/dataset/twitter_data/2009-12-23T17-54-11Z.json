@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "added", "deletions": 0, "additions": 40, "changes": 40, "filename": "t/t9152-svn-empty-dirs-after-gc.sh"}], "stats": {"deletions": 0, "additions": 40, "total": 40}, "commit": {"date": "2009-12-23T17:54:11Z", "authorId": "razeh", "author": "Robert Zeh"}}

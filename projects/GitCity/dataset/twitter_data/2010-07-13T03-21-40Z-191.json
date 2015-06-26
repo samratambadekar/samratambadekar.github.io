@@ -1,0 +1,1 @@
+{"repo": "sbt-thrift", "files": [{"status": "modified", "deletions": 1, "additions": 13, "changes": 14, "filename": "project/build/StandardProjectPlugin.scala"}], "stats": {"deletions": 1, "additions": 13, "total": 14}, "commit": {"date": "2010-07-13T03:21:40Z", "authorId": "", "author": "Robey Pointer"}}

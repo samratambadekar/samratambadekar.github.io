@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 6, "changes": 7, "filename": "Documentation/git-am.txt"}, {"status": "modified", "deletions": 7, "additions": 15, "changes": 22, "filename": "git-am.sh"}], "stats": {"deletions": 8, "additions": 21, "total": 29}, "commit": {"date": "2010-02-27T14:20:26Z", "authorId": "", "author": "Stefan-W. Hahn"}}

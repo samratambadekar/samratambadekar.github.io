@@ -1,0 +1,1 @@
+{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "Rakefile"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "doc/created.rid"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2010-01-25T22:46:09Z", "authorId": "", "author": "Matt Sanford"}}

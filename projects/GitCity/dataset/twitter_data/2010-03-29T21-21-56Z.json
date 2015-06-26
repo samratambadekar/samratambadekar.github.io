@@ -1,0 +1,1 @@
+{"repo": "elephant-bird", "files": [{"status": "added", "deletions": 0, "additions": 201, "changes": 201, "filename": "LICENSE"}, {"status": "modified", "deletions": 4, "additions": 14, "changes": 18, "filename": "Readme.md"}], "stats": {"deletions": 4, "additions": 215, "total": 219}, "commit": {"date": "2010-03-29T21:21:56Z", "authorId": "kevinweil", "author": "Kevin Weil"}}

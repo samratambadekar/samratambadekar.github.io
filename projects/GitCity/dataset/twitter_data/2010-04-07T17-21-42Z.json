@@ -1,0 +1,1 @@
+{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 1, "additions": 6, "changes": 7, "filename": "src/java/com/twitter/elephantbird/pig/load/LzoJsonLoader.java"}], "stats": {"deletions": 1, "additions": 6, "total": 7}, "commit": {"date": "2010-04-07T17:21:42Z", "authorId": "", "author": "Dmitriy Ryaboy"}}
