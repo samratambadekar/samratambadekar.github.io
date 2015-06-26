@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8" />
+    <title>List files</title>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+<script>
+var dir = "./";
+	var fileextension=".json";
+	  $.ajax({
+		 //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+			url: dir,
+			success: function (data) {
+				//Lsit all png file names in the page
+				console.log(data);
+				$(data).find("a:contains(" + fileextension + ")").each(function () {
+					var filename = this.href.replace(window.location.host, "").replace("http:///","");
+					console.log(filename);
+					//$("body").append($("<img src=" + Dir + filename + "></img>"));
+				});
+			},
+			error: function(e) {
+				console.log(e);
+			}
+		});
+</script>
+</body>
+</html>
