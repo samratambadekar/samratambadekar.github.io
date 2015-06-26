@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "sources/scala/CaseClass.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2004-05-19T09:01:54Z", "authorId": "", "author": "buraq"}}

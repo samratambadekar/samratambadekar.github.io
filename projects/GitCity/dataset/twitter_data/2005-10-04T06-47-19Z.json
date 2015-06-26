@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "removed", "deletions": 67, "additions": 0, "changes": 67, "filename": "git-external-diff-script"}], "stats": {"deletions": 67, "additions": 0, "total": 67}, "commit": {"date": "2005-10-04T06:47:19Z", "authorId": "", "author": "Junio C Hamano"}}

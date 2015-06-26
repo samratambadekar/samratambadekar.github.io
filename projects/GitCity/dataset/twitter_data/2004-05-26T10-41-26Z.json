@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 0, "changes": 1, "filename": "config/list/dtd2scala.lst"}, {"status": "modified", "deletions": 0, "additions": 6, "changes": 6, "filename": "config/list/library.lst"}], "stats": {"deletions": 1, "additions": 6, "total": 7}, "commit": {"date": "2004-05-26T10:41:26Z", "authorId": "", "author": "buraq"}}

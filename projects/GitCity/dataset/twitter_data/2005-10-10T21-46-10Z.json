@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 22, "additions": 34, "changes": 56, "filename": "quote.c"}, {"status": "modified", "deletions": 2, "additions": 9, "changes": 11, "filename": "quote.h"}], "stats": {"deletions": 24, "additions": 43, "total": 67}, "commit": {"date": "2005-10-10T21:46:10Z", "authorId": "", "author": "H. Peter Anvin"}}

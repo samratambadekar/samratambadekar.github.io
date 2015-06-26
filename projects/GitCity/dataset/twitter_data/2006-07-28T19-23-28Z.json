@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "t/t4103-apply-binary.sh"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2006-07-28T19:23:28Z", "authorId": "", "author": "Junio C Hamano"}}

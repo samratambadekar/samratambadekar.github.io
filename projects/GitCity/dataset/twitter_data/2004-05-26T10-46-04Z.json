@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "removed", "deletions": 16, "additions": 0, "changes": 16, "filename": "sources/scala/tools/dtd2scala/XMLDecl.scala"}], "stats": {"deletions": 16, "additions": 0, "total": 16}, "commit": {"date": "2004-05-26T10:46:04Z", "authorId": "", "author": "buraq"}}

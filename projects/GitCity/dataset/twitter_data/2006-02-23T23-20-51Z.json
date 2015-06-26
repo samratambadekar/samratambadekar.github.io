@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 24, "changes": 24, "filename": "Documentation/git-cvsserver.txt"}], "stats": {"deletions": 0, "additions": 24, "total": 24}, "commit": {"date": "2006-02-23T23:20:51Z", "authorId": "", "author": "Martin Langhoff"}}

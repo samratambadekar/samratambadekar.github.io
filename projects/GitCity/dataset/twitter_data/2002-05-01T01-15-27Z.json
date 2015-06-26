@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "Docs/manual.texi"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2002-05-01T01:15:27Z", "authorId": "", "author": "arjen@fred.bitbike.com"}}

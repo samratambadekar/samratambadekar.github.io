@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 3, "additions": 4, "changes": 7, "filename": "src/library/scala/collection/mutable/DoubleLinkedList.scala"}], "stats": {"deletions": 3, "additions": 4, "total": 7}, "commit": {"date": "2006-01-09T18:01:43Z", "authorId": "", "author": "michelou"}}

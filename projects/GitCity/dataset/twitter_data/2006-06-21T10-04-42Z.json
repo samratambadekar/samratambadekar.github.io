@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 9, "changes": 9, "filename": "git-rebase.sh"}, {"status": "modified", "deletions": 0, "additions": 6, "changes": 6, "filename": "t/t3402-rebase-merge.sh"}], "stats": {"deletions": 0, "additions": 15, "total": 15}, "commit": {"date": "2006-06-21T10:04:42Z", "authorId": "", "author": "Eric Wong"}}

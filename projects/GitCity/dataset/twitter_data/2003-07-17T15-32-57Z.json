@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 37, "additions": 60, "changes": 97, "filename": "doc/reference/reference.verb.tex"}], "stats": {"deletions": 37, "additions": 60, "total": 97}, "commit": {"date": "2003-07-17T15:32:57Z", "authorId": "", "author": "buraq"}}

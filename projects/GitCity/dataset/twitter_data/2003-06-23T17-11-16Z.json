@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 62, "additions": 80, "changes": 142, "filename": "sources/scalac/transformer/matching/WordAutomInScala.java"}], "stats": {"deletions": 62, "additions": 80, "total": 142}, "commit": {"date": "2003-06-23T17:11:16Z", "authorId": "", "author": "michelou"}}

@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 2, "additions": 4, "changes": 6, "filename": "sources/meta/scalac/ast/MetaStrictTreeCopier.java"}], "stats": {"deletions": 2, "additions": 4, "total": 6}, "commit": {"date": "2003-07-02T15:51:59Z", "authorId": "", "author": "paltherr"}}

@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "sources/scala/tools/scalai/Interpreter.java"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2003-07-17T12:26:12Z", "authorId": "", "author": "paltherr"}}

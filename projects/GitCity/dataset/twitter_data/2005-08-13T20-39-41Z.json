@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 3, "additions": 9, "changes": 12, "filename": "templates/hooks--update"}], "stats": {"deletions": 3, "additions": 9, "total": 12}, "commit": {"date": "2005-08-13T20:39:41Z", "authorId": "weidendo", "author": "Josef Weidendorfer"}}

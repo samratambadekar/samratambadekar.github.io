@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "t/t5300-pack-object.sh"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2005-12-27T18:51:23Z", "authorId": "", "author": "Junio C Hamano"}}

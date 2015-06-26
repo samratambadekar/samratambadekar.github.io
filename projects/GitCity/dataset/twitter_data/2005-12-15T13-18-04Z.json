@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "sources/scala/tools/scalac/transformer/matching/PatternNode.scala"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2005-12-15T13:18:04Z", "authorId": "", "author": "Burak Emir"}}

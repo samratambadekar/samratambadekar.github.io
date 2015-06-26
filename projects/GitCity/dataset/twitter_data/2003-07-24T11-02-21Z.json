@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "sources/scalac/transformer/AddInterfacesPhase.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2003-07-24T11:02:21Z", "authorId": "", "author": "schinz"}}

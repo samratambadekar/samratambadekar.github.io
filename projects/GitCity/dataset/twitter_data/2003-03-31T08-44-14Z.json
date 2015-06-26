@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 3, "additions": 5, "changes": 8, "filename": "sources/scalac/Global.java"}], "stats": {"deletions": 3, "additions": 5, "total": 8}, "commit": {"date": "2003-03-31T08:44:14Z", "authorId": "", "author": "paltherr"}}

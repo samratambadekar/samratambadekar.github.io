@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "added", "deletions": 0, "additions": 17, "changes": 17, "filename": "sources/scala/tools/scalac/transformer/matching/GrammarPrinter.scala"}], "stats": {"deletions": 0, "additions": 17, "total": 17}, "commit": {"date": "2004-05-25T13:23:43Z", "authorId": "", "author": "buraq"}}

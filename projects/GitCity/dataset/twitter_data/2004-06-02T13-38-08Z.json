@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 69, "additions": 103, "changes": 172, "filename": "sources/scalac/backend/msil/TypeCreator.java"}], "stats": {"deletions": 69, "additions": 103, "total": 172}, "commit": {"date": "2004-06-02T13:38:08Z", "authorId": "", "author": "mihaylov"}}

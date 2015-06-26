@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "added", "deletions": 0, "additions": 7, "changes": 7, "filename": "test-nsc/files/neg/abstract.check"}], "stats": {"deletions": 0, "additions": 7, "total": 7}, "commit": {"date": "2005-12-15T10:19:07Z", "authorId": "", "author": "michelou"}}

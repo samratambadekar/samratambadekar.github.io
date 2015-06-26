@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 4, "additions": 2, "changes": 6, "filename": "sql/ha_innodb.cc"}], "stats": {"deletions": 4, "additions": 2, "total": 6}, "commit": {"date": "2002-12-31T08:17:35Z", "authorId": "", "author": "heikki@hundin.mysql.fi"}}

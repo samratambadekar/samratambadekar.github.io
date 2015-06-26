@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 7, "additions": 18, "changes": 25, "filename": "git-merge-one-file-script"}], "stats": {"deletions": 7, "additions": 18, "total": 25}, "commit": {"date": "2005-06-09T00:36:47Z", "authorId": "", "author": "Linus Torvalds"}}

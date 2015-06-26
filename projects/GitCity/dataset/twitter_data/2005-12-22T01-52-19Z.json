@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 2, "additions": 4, "changes": 6, "filename": "src/compiler/scala/tools/nsc/Main.scala"}], "stats": {"deletions": 2, "additions": 4, "total": 6}, "commit": {"date": "2005-12-22T01:52:19Z", "authorId": "", "author": "michelou"}}

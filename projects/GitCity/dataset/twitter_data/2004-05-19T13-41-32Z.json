@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "added", "deletions": 0, "additions": 245, "changes": 245, "filename": "sources/scala/runtime/matching/Matcher.scala"}], "stats": {"deletions": 0, "additions": 245, "total": 245}, "commit": {"date": "2004-05-19T13:41:32Z", "authorId": "", "author": "buraq"}}

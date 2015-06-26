@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 89, "changes": 90, "filename": "Documentation/cvs-migration.txt"}], "stats": {"deletions": 1, "additions": 89, "total": 90}, "commit": {"date": "2005-06-07T22:52:06Z", "authorId": "", "author": "Linus Torvalds"}}

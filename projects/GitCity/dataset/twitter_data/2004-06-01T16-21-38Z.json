@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "sources/scala/tools/scalac/typechecker/Analyzer.scala"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2004-06-01T16:21:38Z", "authorId": "", "author": "mihaylov"}}

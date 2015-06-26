@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 5, "additions": 5, "changes": 10, "filename": "Docs/Makefile.am"}], "stats": {"deletions": 5, "additions": 5, "total": 10}, "commit": {"date": "2006-01-06T16:32:25Z", "authorId": "", "author": "serg@serg.mylan"}}

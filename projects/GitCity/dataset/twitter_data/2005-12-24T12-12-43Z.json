@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 3, "changes": 3, "filename": "commit.c"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "diffcore-rename.c"}], "stats": {"deletions": 1, "additions": 4, "total": 5}, "commit": {"date": "2005-12-24T12:12:43Z", "authorId": "", "author": "Eric Wong"}}

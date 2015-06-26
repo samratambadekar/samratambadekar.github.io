@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "apply.c"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "entry.c"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2006-01-05T08:58:06Z", "authorId": "raalkml", "author": "Alex Riesen"}}

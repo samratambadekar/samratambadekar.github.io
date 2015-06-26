@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 11, "additions": 17, "changes": 28, "filename": "sources/scala/xml/PrettyPrinter.scala"}], "stats": {"deletions": 11, "additions": 17, "total": 28}, "commit": {"date": "2004-06-02T09:31:01Z", "authorId": "", "author": "buraq"}}

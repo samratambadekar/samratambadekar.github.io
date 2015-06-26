@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "added", "deletions": 0, "additions": 85, "changes": 85, "filename": "t/t4012-diff-binary.sh"}, {"status": "added", "deletions": 0, "additions": 0, "changes": 0, "filename": "t/test4012.png"}], "stats": {"deletions": 0, "additions": 85, "total": 85}, "commit": {"date": "2006-05-06T07:15:54Z", "authorId": "", "author": "Junio C Hamano"}}

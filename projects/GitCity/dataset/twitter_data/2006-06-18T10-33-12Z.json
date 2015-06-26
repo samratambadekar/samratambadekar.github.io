@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "added", "deletions": 0, "additions": 106, "changes": 106, "filename": "t/t3402-rebase-merge.sh"}], "stats": {"deletions": 0, "additions": 106, "total": 106}, "commit": {"date": "2006-06-18T10:33:12Z", "authorId": "", "author": "Junio C Hamano"}}

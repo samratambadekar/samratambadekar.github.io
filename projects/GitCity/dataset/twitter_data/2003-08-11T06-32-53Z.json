@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "support/make/jc.mk"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2003-08-11T06:32:53Z", "authorId": "", "author": "paltherr"}}

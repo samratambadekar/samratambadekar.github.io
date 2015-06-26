@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 10, "additions": 13, "changes": 23, "filename": "sources/scala/SingleLinkedList.scala"}], "stats": {"deletions": 10, "additions": 13, "total": 23}, "commit": {"date": "2003-06-25T14:17:52Z", "authorId": "", "author": "michelou"}}

@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 0, "additions": 3, "changes": 3, "filename": "configure.in"}, {"status": "modified", "deletions": 1, "additions": 4, "changes": 5, "filename": "libmysqld/Makefile.am"}], "stats": {"deletions": 1, "additions": 7, "total": 8}, "commit": {"date": "2005-05-10T11:53:47Z", "authorId": "", "author": "kent@mysql.com"}}

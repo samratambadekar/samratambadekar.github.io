@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "git-repack.sh"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "pack-objects.c"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2005-11-21T20:38:31Z", "authorId": "", "author": "Linus Torvalds"}}

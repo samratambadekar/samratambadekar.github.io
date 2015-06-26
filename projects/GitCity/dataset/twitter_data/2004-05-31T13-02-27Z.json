@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "sources/scalac/symtab/classfile/UnPickle.java"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2004-05-31T13:02:27Z", "authorId": "", "author": "mihaylov"}}

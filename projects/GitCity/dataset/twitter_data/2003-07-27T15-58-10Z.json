@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 2, "additions": 13, "changes": 15, "filename": "sources/scalac/symtab/Scope.java"}], "stats": {"deletions": 2, "additions": 13, "total": 15}, "commit": {"date": "2003-07-27T15:58:10Z", "authorId": "", "author": "paltherr"}}

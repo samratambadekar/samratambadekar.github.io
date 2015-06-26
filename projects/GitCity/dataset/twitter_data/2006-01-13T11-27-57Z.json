@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 4, "changes": 5, "filename": "src/compiler/scala/tools/nsc/Settings.scala"}], "stats": {"deletions": 1, "additions": 4, "total": 5}, "commit": {"date": "2006-01-13T11:27:57Z", "authorId": "", "author": "Sean McDirmid"}}

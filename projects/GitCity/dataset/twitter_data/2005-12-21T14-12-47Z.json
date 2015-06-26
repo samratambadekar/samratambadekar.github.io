@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "added", "deletions": 0, "additions": 25, "changes": 25, "filename": "src/library/scala/CountedIterator.scala"}], "stats": {"deletions": 0, "additions": 25, "total": 25}, "commit": {"date": "2005-12-21T14:12:47Z", "authorId": "odersky", "author": "Martin Odersky"}}

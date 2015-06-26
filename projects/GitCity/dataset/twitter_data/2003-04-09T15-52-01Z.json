@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "test/files/run/Course-2002-05.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2003-04-09T15:52:01Z", "authorId": "", "author": "paltherr"}}

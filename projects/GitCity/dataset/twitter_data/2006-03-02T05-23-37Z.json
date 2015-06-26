@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 6, "changes": 6, "filename": "git-annotate.perl"}], "stats": {"deletions": 0, "additions": 6, "total": 6}, "commit": {"date": "2006-03-02T05:23:37Z", "authorId": "pugmajere", "author": "Ryan Anderson"}}

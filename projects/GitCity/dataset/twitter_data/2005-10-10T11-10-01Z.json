@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "debian/control"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2005-10-10T11:10:01Z", "authorId": "", "author": "Matthias Urlichs"}}

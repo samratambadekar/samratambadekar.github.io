@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "man/mysqldump.1.in"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2005-05-11T17:14:46Z", "authorId": "", "author": "paul@kite-hub.kitebird.com"}}

@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "Makefile"}, {"status": "added", "deletions": 0, "additions": 167, "changes": 167, "filename": "git-shortlog"}], "stats": {"deletions": 1, "additions": 168, "total": 169}, "commit": {"date": "2005-06-05T03:21:35Z", "authorId": "", "author": "Linus Torvalds"}}

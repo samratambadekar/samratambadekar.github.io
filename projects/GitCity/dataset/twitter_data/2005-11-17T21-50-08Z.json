@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "added", "deletions": 0, "additions": 180, "changes": 180, "filename": "t1300-config-set.sh"}], "stats": {"deletions": 0, "additions": 180, "total": 180}, "commit": {"date": "2005-11-17T21:50:08Z", "authorId": "dscho", "author": "Johannes Schindelin"}}

@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 17, "additions": 8, "changes": 25, "filename": "sources/scala/tools/nsc/ant/NSC.scala"}], "stats": {"deletions": 17, "additions": 8, "total": 25}, "commit": {"date": "2005-12-16T15:03:41Z", "authorId": "", "author": "Gilles Dubochet"}}

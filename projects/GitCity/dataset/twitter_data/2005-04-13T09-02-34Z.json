@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 5, "changes": 7, "filename": "Makefile"}, {"status": "added", "deletions": 0, "additions": 53, "changes": 53, "filename": "ls-tree.c"}], "stats": {"deletions": 2, "additions": 58, "total": 60}, "commit": {"date": "2005-04-13T09:02:34Z", "authorId": "pasky", "author": "Petr Baudis"}}

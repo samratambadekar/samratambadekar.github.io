@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 28, "additions": 113, "changes": 141, "filename": "diffcore-delta.c"}], "stats": {"deletions": 28, "additions": 113, "total": 141}, "commit": {"date": "2006-03-03T05:15:06Z", "authorId": "", "author": "Junio C Hamano"}}

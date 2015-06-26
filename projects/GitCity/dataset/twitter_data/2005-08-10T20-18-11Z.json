@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 10, "additions": 21, "changes": 31, "filename": "gitk"}], "stats": {"deletions": 10, "additions": 21, "total": 31}, "commit": {"date": "2005-08-10T20:18:11Z", "authorId": "", "author": "Junio C Hamano"}}

@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "scripts/make_win_src_distribution.sh"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2005-10-11T19:16:08Z", "authorId": "", "author": "lenz@mysql.com"}}

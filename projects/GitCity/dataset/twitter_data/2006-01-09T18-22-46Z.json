@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 7, "additions": 7, "changes": 14, "filename": "src/compiler/scala/tools/ant/ScalaTool.scala"}], "stats": {"deletions": 7, "additions": 7, "total": 14}, "commit": {"date": "2006-01-09T18:22:46Z", "authorId": "", "author": "Gilles Dubochet"}}

@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "sources/scala/Array.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2003-03-28T16:08:58Z", "authorId": "", "author": "paltherr"}}

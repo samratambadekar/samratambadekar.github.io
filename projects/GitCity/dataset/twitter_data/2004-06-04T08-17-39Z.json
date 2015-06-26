@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 10, "changes": 11, "filename": "sources/scala/tools/scaladoc/ScalaSearch.java"}], "stats": {"deletions": 1, "additions": 10, "total": 11}, "commit": {"date": "2004-06-04T08:17:39Z", "authorId": "", "author": "cremet"}}

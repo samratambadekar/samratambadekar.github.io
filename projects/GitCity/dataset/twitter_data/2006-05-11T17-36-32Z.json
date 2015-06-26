@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "pack-objects.c"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "sha1_file.c"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2006-05-11T17:36:32Z", "authorId": "dstosberg", "author": "Dennis Stosberg"}}

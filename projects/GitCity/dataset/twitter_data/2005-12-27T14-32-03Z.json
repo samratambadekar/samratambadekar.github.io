@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "ndb/src/kernel/blocks/dbdih/DbdihMain.cpp"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2005-12-27T14:32:03Z", "authorId": "", "author": "stewart@mysql.com"}}

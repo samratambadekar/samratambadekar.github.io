@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 93, "additions": 89, "changes": 182, "filename": "sources/scalac/ast/parser/Parser.java"}], "stats": {"deletions": 93, "additions": 89, "total": 182}, "commit": {"date": "2003-06-30T15:01:37Z", "authorId": "", "author": "michelou"}}

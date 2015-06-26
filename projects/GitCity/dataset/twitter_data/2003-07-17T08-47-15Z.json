@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "sources/scalac/typechecker/RefCheck.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2003-07-17T08:47:15Z", "authorId": "", "author": "stenman"}}

@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 37, "additions": 17, "changes": 54, "filename": "sources/scalac/ast/SubstTransformer.java"}], "stats": {"deletions": 37, "additions": 17, "total": 54}, "commit": {"date": "2003-04-15T09:04:16Z", "authorId": "", "author": "paltherr"}}

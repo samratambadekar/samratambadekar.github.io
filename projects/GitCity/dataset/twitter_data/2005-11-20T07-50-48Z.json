@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "added", "deletions": 0, "additions": 105, "changes": 105, "filename": "Documentation/howto/update-hook-example.txt"}], "stats": {"deletions": 0, "additions": 105, "total": 105}, "commit": {"date": "2005-11-20T07:50:48Z", "authorId": "", "author": "Junio C Hamano"}}

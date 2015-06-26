@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 0, "additions": 17, "changes": 17, "filename": "client/mysqlbinlog.cc"}], "stats": {"deletions": 0, "additions": 17, "total": 17}, "commit": {"date": "2006-05-24T08:08:26Z", "authorId": "", "author": "ramil@production.mysql.com"}}

@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 14, "additions": 38, "changes": 52, "filename": "src/compiler/scala/tools/ant/templates/tool-windows.tmpl"}], "stats": {"deletions": 14, "additions": 38, "total": 52}, "commit": {"date": "2006-01-09T18:27:40Z", "authorId": "", "author": "michelou"}}

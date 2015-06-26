@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "sources/scalac/transformer/LambdaLift.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2003-07-08T14:23:04Z", "authorId": "", "author": "paltherr"}}

@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 19, "additions": 38, "changes": 57, "filename": "sources/scala/tools/scalac/ast/parser/MarkupParser.scala"}], "stats": {"deletions": 19, "additions": 38, "total": 57}, "commit": {"date": "2004-06-01T15:26:33Z", "authorId": "", "author": "buraq"}}

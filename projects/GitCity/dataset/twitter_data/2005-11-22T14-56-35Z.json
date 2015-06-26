@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 6, "additions": 26, "changes": 32, "filename": "pack-redundant.c"}], "stats": {"deletions": 6, "additions": 26, "total": 32}, "commit": {"date": "2005-11-22T14:56:35Z", "authorId": "raalkml", "author": "Alex Riesen"}}

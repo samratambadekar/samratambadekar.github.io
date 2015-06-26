@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "Docs/manual.texi"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2001-08-15T15:03:09Z", "authorId": "", "author": "tfr@sarvik.tfr.cafe.ee"}}

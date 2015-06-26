@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 11, "additions": 11, "changes": 22, "filename": "sources/scala/tools/scalac/transformer/matching/MutableGrammar.scala"}], "stats": {"deletions": 11, "additions": 11, "total": 22}, "commit": {"date": "2004-05-19T13:47:04Z", "authorId": "", "author": "buraq"}}

@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 12, "additions": 20, "changes": 32, "filename": "sources/scala/SeqTraceCons.scala"}], "stats": {"deletions": 12, "additions": 20, "total": 32}, "commit": {"date": "2003-07-16T08:16:48Z", "authorId": "", "author": "michelou"}}

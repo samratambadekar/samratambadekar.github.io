@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 5, "additions": 8, "changes": 13, "filename": "test/files/jvm/matching.scala"}], "stats": {"deletions": 5, "additions": 8, "total": 13}, "commit": {"date": "2004-05-26T08:18:26Z", "authorId": "", "author": "buraq"}}

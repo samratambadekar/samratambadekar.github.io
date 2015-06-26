@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 1, "changes": 3, "filename": "local-pull.c"}], "stats": {"deletions": 2, "additions": 1, "total": 3}, "commit": {"date": "2005-05-10T06:48:21Z", "authorId": "", "author": "Junio C Hamano"}}

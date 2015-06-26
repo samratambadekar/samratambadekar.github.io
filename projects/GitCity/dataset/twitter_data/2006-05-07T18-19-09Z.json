@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "git-clone.sh"}, {"status": "added", "deletions": 0, "additions": 78, "changes": 78, "filename": "t/t5700-clone-reference.sh"}], "stats": {"deletions": 1, "additions": 79, "total": 80}, "commit": {"date": "2006-05-07T18:19:09Z", "authorId": "tali", "author": "Martin Waitz"}}

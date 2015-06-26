@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 3, "additions": 4, "changes": 7, "filename": "t/t3000-ls-files-others.sh"}], "stats": {"deletions": 3, "additions": 4, "total": 7}, "commit": {"date": "2005-05-25T22:06:50Z", "authorId": "", "author": "Junio C Hamano"}}

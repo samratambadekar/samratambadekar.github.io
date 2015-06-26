@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 42, "additions": 102, "changes": 144, "filename": "sources/scalac/transformer/ExplicitOuterClasses.java"}], "stats": {"deletions": 42, "additions": 102, "total": 144}, "commit": {"date": "2003-07-23T11:39:00Z", "authorId": "", "author": "schinz"}}
