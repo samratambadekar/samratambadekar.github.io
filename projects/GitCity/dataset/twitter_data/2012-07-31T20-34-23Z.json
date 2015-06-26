@@ -1,0 +1,1 @@
+{"repo": "commons", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "src/python/twitter/pants/tasks/scala_repl.py"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2012-07-31T20:34:23Z", "authorId": "", "author": "Jackson Davis"}}

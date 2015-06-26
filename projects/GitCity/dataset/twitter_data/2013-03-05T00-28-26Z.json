@@ -1,0 +1,1 @@
+{"repo": "storehaus", "files": [{"status": "added", "deletions": 0, "additions": 25, "changes": 25, "filename": "storehaus-core/src/main/scala/com/twitter/storehaus/IndexedSeqReadableStore.scala"}], "stats": {"deletions": 0, "additions": 25, "total": 25}, "commit": {"date": "2013-03-05T00:28:26Z", "authorId": "sritchie", "author": "Sam Ritchie"}}

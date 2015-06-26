@@ -1,0 +1,1 @@
+{"repo": "algebird", "files": [{"status": "modified", "deletions": 5, "additions": 5, "changes": 10, "filename": "algebird-core/src/main/scala/com/twitter/algebird/SummingIterator.scala"}], "stats": {"deletions": 5, "additions": 5, "total": 10}, "commit": {"date": "2013-02-07T06:12:04Z", "authorId": "johnynek", "author": "Oscar Boykin"}}

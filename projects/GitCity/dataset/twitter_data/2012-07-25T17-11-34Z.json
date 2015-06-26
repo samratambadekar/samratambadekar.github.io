@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 5, "additions": 2, "changes": 7, "filename": "examples/src/main/java/spark/examples/JavaWordCount.java"}], "stats": {"deletions": 5, "additions": 2, "total": 7}, "commit": {"date": "2012-07-25T17:11:34Z", "authorId": "JoshRosen", "author": "Josh Rosen"}}

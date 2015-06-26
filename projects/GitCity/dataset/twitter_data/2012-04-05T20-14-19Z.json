@@ -1,0 +1,1 @@
+{"repo": "gizzmo", "files": [{"status": "modified", "deletions": 8, "additions": 25, "changes": 33, "filename": "lib/gizzard/nameserver.rb"}], "stats": {"deletions": 8, "additions": 25, "total": 33}, "commit": {"date": "2012-04-05T20:14:19Z", "authorId": "stuhood", "author": "Stu Hood"}}

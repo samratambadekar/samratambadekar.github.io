@@ -1,0 +1,1 @@
+{"repo": "twemproxy", "files": [{"status": "added", "deletions": 0, "additions": 3, "changes": 3, "filename": ".travis.yml"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "README.md"}], "stats": {"deletions": 1, "additions": 4, "total": 5}, "commit": {"date": "2012-06-19T13:53:33Z", "authorId": "caniszczyk", "author": "Chris Aniszczyk"}}

@@ -1,0 +1,1 @@
+{"repo": "commons", "files": [{"status": "modified", "deletions": 2, "additions": 5, "changes": 7, "filename": "src/antlr/twitter/thrift/descriptors/AntlrThrift.g"}], "stats": {"deletions": 2, "additions": 5, "total": 7}, "commit": {"date": "2012-07-27T02:49:33Z", "authorId": "", "author": "Benjy"}}

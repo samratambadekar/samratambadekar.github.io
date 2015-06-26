@@ -1,0 +1,1 @@
+{"repo": "algebird", "files": [{"status": "modified", "deletions": 1, "additions": 7, "changes": 8, "filename": "src/main/scala/com/twitter/algebird/Monad.scala"}], "stats": {"deletions": 1, "additions": 7, "total": 8}, "commit": {"date": "2013-01-29T20:15:54Z", "authorId": "johnynek", "author": "Oscar Boykin"}}

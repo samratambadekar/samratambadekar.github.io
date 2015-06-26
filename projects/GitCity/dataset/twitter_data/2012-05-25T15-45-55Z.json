@@ -1,0 +1,1 @@
+{"repo": "ambrose", "files": [{"status": "modified", "deletions": 0, "additions": 36, "changes": 36, "filename": "pig/src/main/java/com/twitter/ambrose/service/DAGNode.java"}], "stats": {"deletions": 0, "additions": 36, "total": 36}, "commit": {"date": "2012-05-25T15:45:55Z", "authorId": "billonahill", "author": "Bill Graham"}}

@@ -1,0 +1,1 @@
+{"repo": "twitter-cldr-rb", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "lib/twitter_cldr/resources/locales_resources_importer.rb"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2013-01-10T09:05:43Z", "authorId": "", "author": "Jason Katz-Brown"}}

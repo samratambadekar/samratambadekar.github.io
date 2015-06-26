@@ -1,0 +1,1 @@
+{"repo": "snowflake", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "pom.xml"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-05-08T21:27:23Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

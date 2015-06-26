@@ -1,0 +1,1 @@
+{"repo": "gizzard", "files": [{"status": "modified", "deletions": 2, "additions": 3, "changes": 5, "filename": "src/main/scala/com/twitter/gizzard/nameserver/LoadBalancer.scala"}], "stats": {"deletions": 2, "additions": 3, "total": 5}, "commit": {"date": "2012-04-12T21:18:38Z", "authorId": "stuhood", "author": "Stu Hood"}}

@@ -1,0 +1,1 @@
+{"repo": "cassovary", "files": [{"status": "modified", "deletions": 37, "additions": 10, "changes": 47, "filename": "src/main/scala/com/twitter/cassovary/graph/DirectedPathCollection.scala"}], "stats": {"deletions": 37, "additions": 10, "total": 47}, "commit": {"date": "2012-03-28T00:27:38Z", "authorId": "ningtwitter", "author": "Ning Liang"}}

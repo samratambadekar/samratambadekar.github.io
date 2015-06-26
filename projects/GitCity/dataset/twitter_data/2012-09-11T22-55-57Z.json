@@ -1,0 +1,1 @@
+{"repo": "cascading", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "cascading-xml/build.gradle"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2012-09-11T22:55:57Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

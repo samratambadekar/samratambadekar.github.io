@@ -1,0 +1,1 @@
+{"repo": "scala-bootstrapper", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "lib/template/console.erb"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-08-22T22:17:13Z", "authorId": "jowens", "author": "John Owens"}}

@@ -1,0 +1,1 @@
+{"repo": "scalding", "files": [{"status": "modified", "deletions": 3, "additions": 8, "changes": 11, "filename": "src/main/scala/com/twitter/scalding/TPipe.scala"}], "stats": {"deletions": 3, "additions": 8, "total": 11}, "commit": {"date": "2012-06-06T08:40:14Z", "authorId": "johnynek", "author": "Oscar Boykin"}}

@@ -1,0 +1,1 @@
+{"repo": "gizzard", "files": [{"status": "modified", "deletions": 8, "additions": 4, "changes": 12, "filename": "src/main/scala/com/twitter/gizzard/Stats.scala"}], "stats": {"deletions": 8, "additions": 4, "total": 12}, "commit": {"date": "2012-03-21T20:26:24Z", "authorId": "", "author": "Raghavendra Prabhu"}}

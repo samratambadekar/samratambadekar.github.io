@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 3, "additions": 2, "changes": 5, "filename": "core/src/main/scala/spark/scheduler/cluster/TaskSetManager.scala"}], "stats": {"deletions": 3, "additions": 2, "total": 5}, "commit": {"date": "2013-01-08T04:07:08Z", "authorId": "mbautin", "author": "Mikhail Bautin"}}

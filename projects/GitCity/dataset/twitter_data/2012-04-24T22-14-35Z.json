@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 0, "additions": 16, "changes": 16, "filename": "core/src/test/scala/spark/FailureSuite.scala"}], "stats": {"deletions": 0, "additions": 16, "total": 16}, "commit": {"date": "2012-04-24T22:14:35Z", "authorId": "rxin", "author": "Reynold Xin"}}

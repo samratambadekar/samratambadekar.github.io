@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 5, "changes": 6, "filename": "src/compiler/scala/tools/nsc/doc/html/page/Template.scala"}], "stats": {"deletions": 1, "additions": 5, "total": 6}, "commit": {"date": "2012-08-29T11:13:40Z", "authorId": "gkossakowski", "author": "Grzegorz Kossakowski"}}

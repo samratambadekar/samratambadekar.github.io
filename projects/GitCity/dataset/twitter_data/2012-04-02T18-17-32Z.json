@@ -1,0 +1,1 @@
+{"repo": "twitter-cldr-rb", "files": [{"status": "modified", "deletions": 6, "additions": 8, "changes": 14, "filename": "lib/tokenizers/base.rb"}], "stats": {"deletions": 6, "additions": 8, "total": 14}, "commit": {"date": "2012-04-02T18:17:32Z", "authorId": "KL-7", "author": "Kirill Lashuk"}}

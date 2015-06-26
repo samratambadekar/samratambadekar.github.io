@@ -1,0 +1,1 @@
+{"repo": "twitter-text-objc", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "lib/TwitterText.m"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2013-02-16T06:37:02Z", "authorId": "jakl", "author": "James Koval"}}

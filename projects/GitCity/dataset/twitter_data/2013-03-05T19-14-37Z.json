@@ -1,0 +1,1 @@
+{"repo": "storehaus", "files": [{"status": "modified", "deletions": 4, "additions": 6, "changes": 10, "filename": "storehaus-core/src/main/scala/com/twitter/storehaus/ReadableStore.scala"}], "stats": {"deletions": 4, "additions": 6, "total": 10}, "commit": {"date": "2013-03-05T19:14:37Z", "authorId": "johnynek", "author": "Oscar Boykin"}}

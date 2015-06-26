@@ -1,0 +1,1 @@
+{"repo": "sbt-package-dist", "files": [{"status": "modified", "deletions": 5, "additions": 7, "changes": 12, "filename": "src/main/scala/com/twitter/sbt/Versions.scala"}], "stats": {"deletions": 5, "additions": 7, "total": 12}, "commit": {"date": "2012-05-24T23:03:52Z", "authorId": "", "author": "Robey Pointer"}}

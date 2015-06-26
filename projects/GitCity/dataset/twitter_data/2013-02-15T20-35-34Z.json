@@ -1,0 +1,1 @@
+{"repo": "chill", "files": [{"status": "modified", "deletions": 0, "additions": 1, "changes": 1, "filename": ".travis.yml"}, {"status": "modified", "deletions": 7, "additions": 4, "changes": 11, "filename": "build.sbt"}], "stats": {"deletions": 7, "additions": 5, "total": 12}, "commit": {"date": "2013-02-15T20:35:34Z", "authorId": "", "author": "Sam Ritchie"}}

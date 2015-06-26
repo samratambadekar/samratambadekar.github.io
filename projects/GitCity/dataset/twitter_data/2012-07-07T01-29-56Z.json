@@ -1,0 +1,1 @@
+{"repo": "twitter-cldr-rb", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "js/lib/mustache/bundle.coffee"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-07-07T01:29:56Z", "authorId": "oreoshake", "author": "Neil Matatall"}}

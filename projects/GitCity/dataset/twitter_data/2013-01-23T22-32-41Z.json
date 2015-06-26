@@ -1,0 +1,1 @@
+{"repo": "algebird", "files": [{"status": "modified", "deletions": 27, "additions": 27, "changes": 54, "filename": "src/main/scala/com/twitter/algebird/Eventually.scala"}], "stats": {"deletions": 27, "additions": 27, "total": 54}, "commit": {"date": "2013-01-23T22:32:41Z", "authorId": "asiegel34", "author": "Aaron Siegel"}}

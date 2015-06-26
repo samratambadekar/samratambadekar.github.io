@@ -1,0 +1,1 @@
+{"repo": "pycascading", "files": [{"status": "modified", "deletions": 29, "additions": 32, "changes": 61, "filename": "examples/pagerank.py"}], "stats": {"deletions": 29, "additions": 32, "total": 61}, "commit": {"date": "2012-04-19T17:43:06Z", "authorId": "", "author": "Gabor Szabo"}}

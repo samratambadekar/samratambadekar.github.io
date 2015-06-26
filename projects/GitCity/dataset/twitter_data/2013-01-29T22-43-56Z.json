@@ -1,0 +1,1 @@
+{"repo": "bookkeeper", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "bookkeeper-server/src/test/resources/log4j.properties"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2013-01-29T22:43:56Z", "authorId": "robindh", "author": "Robin Dhamankar"}}

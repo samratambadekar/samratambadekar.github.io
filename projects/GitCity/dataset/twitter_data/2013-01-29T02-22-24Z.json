@@ -1,0 +1,1 @@
+{"repo": "bijection", "files": [{"status": "added", "deletions": 0, "additions": 30, "changes": 30, "filename": "bijection-core/src/main/scala/com/twitter/bijection/NumberSystems.scala"}], "stats": {"deletions": 0, "additions": 30, "total": 30}, "commit": {"date": "2013-01-29T02:22:24Z", "authorId": "krishnanraman", "author": "krishnanraman"}}

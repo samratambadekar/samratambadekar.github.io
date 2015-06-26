@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 55, "additions": 3, "changes": 58, "filename": "project/SparkBuild.scala"}], "stats": {"deletions": 55, "additions": 3, "total": 58}, "commit": {"date": "2012-08-02T17:37:50Z", "authorId": "mateiz", "author": "Matei Zaharia"}}

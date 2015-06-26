@@ -1,0 +1,1 @@
+{"repo": "sbt-scrooge", "files": [{"status": "modified", "deletions": 10, "additions": 11, "changes": 21, "filename": "project/Build.scala"}], "stats": {"deletions": 10, "additions": 11, "total": 21}, "commit": {"date": "2012-03-28T01:18:44Z", "authorId": "", "author": "Robey Pointer"}}

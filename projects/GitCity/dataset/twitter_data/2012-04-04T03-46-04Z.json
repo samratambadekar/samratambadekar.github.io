@@ -1,0 +1,1 @@
+{"repo": "commons", "files": [{"status": "modified", "deletions": 8, "additions": 5, "changes": 13, "filename": "src/java/com/twitter/common/zookeeper/ZooKeeperNode.java"}], "stats": {"deletions": 8, "additions": 5, "total": 13}, "commit": {"date": "2012-04-04T03:46:04Z", "authorId": "leothekim", "author": "leo"}}

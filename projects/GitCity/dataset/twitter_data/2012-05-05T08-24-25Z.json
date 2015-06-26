@@ -1,0 +1,1 @@
+{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 1, "additions": 4, "changes": 5, "filename": "src/java/com/twitter/elephantbird/pig/util/ThriftToPig.java"}], "stats": {"deletions": 1, "additions": 4, "total": 5}, "commit": {"date": "2012-05-05T08:24:25Z", "authorId": "rangadi", "author": "Raghu Angadi"}}

@@ -1,0 +1,1 @@
+{"repo": "commons", "files": [{"status": "modified", "deletions": 1, "additions": 7, "changes": 8, "filename": "src/python/twitter/pants/tasks/scala_repl.py"}], "stats": {"deletions": 1, "additions": 7, "total": 8}, "commit": {"date": "2012-08-08T22:50:09Z", "authorId": "jsirois", "author": "John Sirois"}}

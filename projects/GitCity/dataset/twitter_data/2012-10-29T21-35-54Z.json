@@ -1,0 +1,1 @@
+{"repo": "zipkin", "files": [{"status": "added", "deletions": 0, "additions": 13, "changes": 13, "filename": "CONTRIBUTING.md"}, {"status": "modified", "deletions": 6, "additions": 7, "changes": 13, "filename": "README.md"}], "stats": {"deletions": 6, "additions": 20, "total": 26}, "commit": {"date": "2012-10-29T21:35:54Z", "authorId": "franklinhu", "author": "Franklin Hu"}}

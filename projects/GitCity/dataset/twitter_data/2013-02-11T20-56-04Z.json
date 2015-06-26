@@ -1,0 +1,1 @@
+{"repo": "bijection", "files": [{"status": "modified", "deletions": 6, "additions": 30, "changes": 36, "filename": "bijection-clojure/src/main/scala/com/twitter/bijection/clojure/ClojureBijections.scala"}], "stats": {"deletions": 6, "additions": 30, "total": 36}, "commit": {"date": "2013-02-11T20:56:04Z", "authorId": "", "author": "Sam Ritchie"}}

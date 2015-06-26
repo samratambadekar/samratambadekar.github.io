@@ -1,0 +1,1 @@
+{"repo": "twitter-cldr-rb", "files": [{"status": "modified", "deletions": 23, "additions": 23, "changes": 46, "filename": "spec/shared/languages_spec.rb"}], "stats": {"deletions": 23, "additions": 23, "total": 46}, "commit": {"date": "2013-01-10T01:23:36Z", "authorId": "", "author": "Jason Katz-Brown"}}

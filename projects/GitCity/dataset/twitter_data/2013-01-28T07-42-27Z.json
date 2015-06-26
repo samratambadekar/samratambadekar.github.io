@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "renamed", "deletions": 5, "additions": 14, "changes": 19, "filename": "test/files/run/t6259.scala"}], "stats": {"deletions": 5, "additions": 14, "total": 19}, "commit": {"date": "2013-01-28T07:42:27Z", "authorId": "retronym", "author": "Jason Zaugg"}}

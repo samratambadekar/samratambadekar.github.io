@@ -1,0 +1,1 @@
+{"repo": "bookkeeper", "files": [{"status": "modified", "deletions": 20, "additions": 40, "changes": 60, "filename": "hedwig-server/src/main/java/org/apache/hedwig/server/subscriptions/AbstractSubscriptionManager.java"}], "stats": {"deletions": 20, "additions": 40, "total": 60}, "commit": {"date": "2012-10-30T22:49:28Z", "authorId": "", "author": "Aniruddha Laud"}}

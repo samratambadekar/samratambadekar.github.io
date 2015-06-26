@@ -1,0 +1,1 @@
+{"repo": "twemproxy", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/proto/nc_memcache.c"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2013-01-23T22:03:59Z", "authorId": "ferenyx", "author": "ferenyx"}}

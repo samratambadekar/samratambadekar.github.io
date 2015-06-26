@@ -1,0 +1,1 @@
+{"repo": "chill", "files": [{"status": "modified", "deletions": 0, "additions": 6, "changes": 6, "filename": "CHANGES.md"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "README.md"}], "stats": {"deletions": 1, "additions": 7, "total": 8}, "commit": {"date": "2012-10-17T23:28:12Z", "authorId": "", "author": "Sam Ritchie"}}

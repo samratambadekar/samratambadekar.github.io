@@ -1,0 +1,1 @@
+{"repo": "ostrich", "files": [{"status": "modified", "deletions": 1, "additions": 4, "changes": 5, "filename": "pom.xml"}], "stats": {"deletions": 1, "additions": 4, "total": 5}, "commit": {"date": "2012-05-03T06:05:56Z", "authorId": "mccv", "author": "mmcbride"}}

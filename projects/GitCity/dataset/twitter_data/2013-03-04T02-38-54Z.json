@@ -1,0 +1,1 @@
+{"repo": "typeahead.js", "files": [{"status": "modified", "deletions": 5, "additions": 11, "changes": 16, "filename": "src/typeahead_view.js"}], "stats": {"deletions": 5, "additions": 11, "total": 16}, "commit": {"date": "2013-03-04T02:38:54Z", "authorId": "jharding", "author": "Jake Harding"}}

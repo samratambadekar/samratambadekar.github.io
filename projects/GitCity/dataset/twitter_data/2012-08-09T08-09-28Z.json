@@ -1,0 +1,1 @@
+{"repo": "activerecord-reputation-system", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "lib/generators/reputation_system/templates/change_reputation_messages_index_to_unique.rb"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-08-09T08:09:28Z", "authorId": "", "author": "Katsuya Noguchi"}}

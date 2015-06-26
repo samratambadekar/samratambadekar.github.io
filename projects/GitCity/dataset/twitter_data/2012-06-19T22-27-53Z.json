@@ -1,0 +1,1 @@
+{"repo": "scalding", "files": [{"status": "modified", "deletions": 8, "additions": 10, "changes": 18, "filename": "src/main/scala/com/twitter/scalding/Job.scala"}], "stats": {"deletions": 8, "additions": 10, "total": 18}, "commit": {"date": "2012-06-19T22:27:53Z", "authorId": "azymnis", "author": "Argyris Zymnis"}}

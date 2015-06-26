@@ -1,0 +1,1 @@
+{"repo": "sprockets-commonjs-twitter", "files": [{"status": "modified", "deletions": 51, "additions": 50, "changes": 101, "filename": "assets/javascripts/commonjs.js"}], "stats": {"deletions": 51, "additions": 50, "total": 101}, "commit": {"date": "2012-03-27T04:10:18Z", "authorId": "maccman", "author": "Alex MacCaw"}}

@@ -1,0 +1,1 @@
+{"repo": "cascading", "files": [{"status": "modified", "deletions": 1, "additions": 0, "changes": 1, "filename": "cascading-core/src/main/java/cascading/property/AppProps.java"}], "stats": {"deletions": 1, "additions": 0, "total": 1}, "commit": {"date": "2012-08-13T23:56:15Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

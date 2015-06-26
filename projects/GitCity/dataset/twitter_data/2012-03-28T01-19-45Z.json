@@ -1,0 +1,1 @@
+{"repo": "sbt-scrooge", "files": [{"status": "modified", "deletions": 1, "additions": 22, "changes": 23, "filename": "src/sbt-test/sbt-scrooge/simple/project/plugins.sbt"}], "stats": {"deletions": 1, "additions": 22, "total": 23}, "commit": {"date": "2012-03-28T01:19:45Z", "authorId": "", "author": "Robey Pointer"}}

@@ -1,0 +1,1 @@
+{"repo": "bookkeeper", "files": [{"status": "removed", "deletions": 199, "additions": 0, "changes": 199, "filename": "bookkeeper-server/src/test/java/org/apache/bookkeeper/client/BookKeeperSharedSemaphoreTest.java"}], "stats": {"deletions": 199, "additions": 0, "total": 199}, "commit": {"date": "2012-11-12T23:31:42Z", "authorId": "", "author": "Aniruddha Laud"}}

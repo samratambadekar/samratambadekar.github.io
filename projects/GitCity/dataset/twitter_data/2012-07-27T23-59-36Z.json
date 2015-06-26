@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 0, "additions": 1, "changes": 1, "filename": "core/src/test/scala/spark/storage/BlockManagerSuite.scala"}], "stats": {"deletions": 0, "additions": 1, "total": 1}, "commit": {"date": "2012-07-27T23:59:36Z", "authorId": "mateiz", "author": "Matei Zaharia"}}

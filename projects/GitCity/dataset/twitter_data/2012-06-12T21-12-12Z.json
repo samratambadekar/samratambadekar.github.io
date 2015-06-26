@@ -1,0 +1,1 @@
+{"repo": "scalding", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/main/scala/com/twitter/scalding/TypedPipe.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2012-06-12T21:12:12Z", "authorId": "johnynek", "author": "Oscar Boykin"}}

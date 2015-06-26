@@ -1,0 +1,1 @@
+{"repo": "storehaus", "files": [{"status": "added", "deletions": 0, "additions": 64, "changes": 64, "filename": "storehaus-redis/src/main/scala/com/twitter/storehaus/redis/RedisHashStore.scala"}], "stats": {"deletions": 0, "additions": 64, "total": 64}, "commit": {"date": "2013-03-29T03:10:08Z", "authorId": "softprops", "author": "softprops"}}

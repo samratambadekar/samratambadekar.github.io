@@ -1,0 +1,1 @@
+{"repo": "storehaus", "files": [{"status": "modified", "deletions": 1, "additions": 26, "changes": 27, "filename": "storehaus-algebra/src/main/scala/com/twitter/storehaus/algebra/MergeableStore.scala"}], "stats": {"deletions": 1, "additions": 26, "total": 27}, "commit": {"date": "2013-03-01T04:55:07Z", "authorId": "johnynek", "author": "P. Oscar Boykin"}}

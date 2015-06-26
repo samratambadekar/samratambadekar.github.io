@@ -1,0 +1,1 @@
+{"repo": "zipkin", "files": [{"status": "modified", "deletions": 1, "additions": 4, "changes": 5, "filename": "zipkin-query-core/src/main/scala/com/twitter/zipkin/query/QueryService.scala"}], "stats": {"deletions": 1, "additions": 4, "total": 5}, "commit": {"date": "2012-10-15T22:16:01Z", "authorId": "mosesn", "author": "Moses Nakamura"}}

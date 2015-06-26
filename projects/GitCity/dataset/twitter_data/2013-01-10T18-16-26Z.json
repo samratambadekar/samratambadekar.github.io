@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "core/src/main/scala/spark/SparkContext.scala"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2013-01-10T18:16:26Z", "authorId": "stephenh", "author": "Stephen Haberman"}}

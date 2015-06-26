@@ -1,0 +1,1 @@
+{"repo": "scala-bootstrapper", "files": [{"status": "modified", "deletions": 2, "additions": 1, "changes": 3, "filename": "scala-bootstrapper.gemspec"}], "stats": {"deletions": 2, "additions": 1, "total": 3}, "commit": {"date": "2012-03-25T23:16:13Z", "authorId": "danielschonfeld", "author": "danielschonfeld"}}

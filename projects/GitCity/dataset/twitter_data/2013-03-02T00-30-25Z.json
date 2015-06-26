@@ -1,0 +1,1 @@
+{"repo": "twitter-cldr-rb", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "spec/localized/localized_time_spec.rb"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2013-03-02T00:30:25Z", "authorId": "", "author": "Cameron Dutro"}}

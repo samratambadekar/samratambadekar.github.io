@@ -1,0 +1,1 @@
+{"repo": "cascading", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "cascading-hadoop/src/main/java/cascading/flow/hadoop/stream/HadoopMapStreamGraph.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-12-17T15:57:09Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

@@ -1,0 +1,1 @@
+{"repo": "cascading", "files": [{"status": "modified", "deletions": 0, "additions": 22, "changes": 22, "filename": "src/core/cascading/flow/stream/SpliceGate.java"}], "stats": {"deletions": 0, "additions": 22, "total": 22}, "commit": {"date": "2012-03-24T00:05:33Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

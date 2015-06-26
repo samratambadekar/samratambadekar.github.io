@@ -1,0 +1,1 @@
+{"repo": "cassie", "files": [{"status": "modified", "deletions": 5, "additions": 6, "changes": 11, "filename": "cassie-core/src/main/scala/com/twitter/cassie/tests/util/FakeCassandra.scala"}], "stats": {"deletions": 5, "additions": 6, "total": 11}, "commit": {"date": "2012-07-10T22:09:47Z", "authorId": "sprsquish", "author": "Jeff Smick"}}

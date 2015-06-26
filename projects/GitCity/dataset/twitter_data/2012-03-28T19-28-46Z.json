@@ -1,0 +1,1 @@
+{"repo": "kestrel-client", "files": [{"status": "modified", "deletions": 4, "additions": 46, "changes": 50, "filename": "lib/kestrel/client/stats_helper.rb"}], "stats": {"deletions": 4, "additions": 46, "total": 50}, "commit": {"date": "2012-03-28T19:28:46Z", "authorId": "bitbckt", "author": "Brandon Mitchell"}}

@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "removed", "deletions": 33, "additions": 0, "changes": 33, "filename": "finagle-protobuf/pom.xml"}], "stats": {"deletions": 33, "additions": 0, "total": 33}, "commit": {"date": "2012-05-15T22:34:45Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

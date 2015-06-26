@@ -1,0 +1,1 @@
+{"repo": "bijection", "files": [{"status": "modified", "deletions": 1, "additions": 13, "changes": 14, "filename": "bijection-algebird/src/main/scala/com/twitter/bijection/algebird/AlgebirdBijections.scala"}], "stats": {"deletions": 1, "additions": 13, "total": 14}, "commit": {"date": "2013-02-04T20:19:30Z", "authorId": "", "author": "Sam Ritchie"}}

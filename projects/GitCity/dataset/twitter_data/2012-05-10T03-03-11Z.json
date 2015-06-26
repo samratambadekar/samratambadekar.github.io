@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "finagle-core/src/main/scala/com/twitter/finagle/loadbalancer/HeapBalancer.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2012-05-10T03:03:11Z", "authorId": "chunyan", "author": "Chunyan Song"}}

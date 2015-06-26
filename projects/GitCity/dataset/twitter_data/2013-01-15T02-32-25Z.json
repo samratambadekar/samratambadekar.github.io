@@ -1,0 +1,1 @@
+{"repo": "bijection", "files": [{"status": "modified", "deletions": 1, "additions": 7, "changes": 8, "filename": "bijection-core/src/main/scala/com/twitter/bijection/Pivot.scala"}], "stats": {"deletions": 1, "additions": 7, "total": 8}, "commit": {"date": "2013-01-15T02:32:25Z", "authorId": "", "author": "Sam Ritchie"}}

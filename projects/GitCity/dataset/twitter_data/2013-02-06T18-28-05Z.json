@@ -1,0 +1,1 @@
+{"repo": "twitter-server", "files": [{"status": "modified", "deletions": 4, "additions": 2, "changes": 6, "filename": "src/main/scala/com/twitter/server/Admin.scala"}], "stats": {"deletions": 4, "additions": 2, "total": 6}, "commit": {"date": "2013-02-06T18:28:05Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 7, "additions": 0, "changes": 7, "filename": "streaming/src/main/scala/spark/streaming/dstream/KafkaInputDStream.scala"}], "stats": {"deletions": 7, "additions": 0, "total": 7}, "commit": {"date": "2013-01-15T00:13:10Z", "authorId": "", "author": "seanm"}}

@@ -1,0 +1,1 @@
+{"repo": "twemproxy", "files": [{"status": "modified", "deletions": 0, "additions": 4, "changes": 4, "filename": "src/nc_core.c"}, {"status": "modified", "deletions": 1, "additions": 0, "changes": 1, "filename": "src/nc_core.h"}], "stats": {"deletions": 1, "additions": 4, "total": 5}, "commit": {"date": "2013-01-08T22:58:17Z", "authorId": "ferenyx", "author": "ferenyx"}}

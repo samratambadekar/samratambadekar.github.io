@@ -1,0 +1,1 @@
+{"repo": "commons", "files": [{"status": "modified", "deletions": 0, "additions": 12, "changes": 12, "filename": "src/python/twitter/pants/tasks/scala_compile.py"}], "stats": {"deletions": 0, "additions": 12, "total": 12}, "commit": {"date": "2012-07-24T04:38:51Z", "authorId": "leothekim", "author": "leo"}}

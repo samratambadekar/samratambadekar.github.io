@@ -1,0 +1,1 @@
+{"repo": "finatra", "files": [{"status": "modified", "deletions": 70, "additions": 60, "changes": 130, "filename": "src/main/scala/com/posterous/finatra/FinatraResponse.scala"}], "stats": {"deletions": 70, "additions": 60, "total": 130}, "commit": {"date": "2012-07-09T16:46:21Z", "authorId": "capotej", "author": "Julio Capote"}}

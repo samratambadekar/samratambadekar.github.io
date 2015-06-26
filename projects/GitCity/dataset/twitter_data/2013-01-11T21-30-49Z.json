@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 8, "additions": 11, "changes": 19, "filename": "core/src/main/scala/spark/util/RateLimitedOutputStream.scala"}], "stats": {"deletions": 8, "additions": 11, "total": 19}, "commit": {"date": "2013-01-11T21:30:49Z", "authorId": "ryanlecompte", "author": "Ryan LeCompte"}}

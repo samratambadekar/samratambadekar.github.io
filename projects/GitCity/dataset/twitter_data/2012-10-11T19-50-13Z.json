@@ -1,0 +1,1 @@
+{"repo": "libkestrel", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "docs/journal.md"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2012-10-11T19:50:13Z", "authorId": "zuercher", "author": "Stephan Zuercher"}}

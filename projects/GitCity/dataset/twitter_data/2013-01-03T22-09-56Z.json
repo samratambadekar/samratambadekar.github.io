@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 10, "additions": 26, "changes": 36, "filename": "core/src/main/scala/spark/MapOutputTracker.scala"}], "stats": {"deletions": 10, "additions": 26, "total": 36}, "commit": {"date": "2013-01-03T22:09:56Z", "authorId": "woggle", "author": "Charles Reiss"}}

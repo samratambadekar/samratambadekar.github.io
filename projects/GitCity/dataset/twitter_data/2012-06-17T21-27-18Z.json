@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 8, "additions": 4, "changes": 12, "filename": "core/src/main/scala/spark/util/ByteBufferInputStream.scala"}], "stats": {"deletions": 8, "additions": 4, "total": 12}, "commit": {"date": "2012-06-17T21:27:18Z", "authorId": "mateiz", "author": "Matei Zaharia"}}

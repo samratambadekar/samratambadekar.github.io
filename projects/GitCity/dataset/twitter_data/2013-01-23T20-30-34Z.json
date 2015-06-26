@@ -1,0 +1,1 @@
+{"repo": "storehaus", "files": [{"status": "modified", "deletions": 4, "additions": 39, "changes": 43, "filename": "storehaus-algebra/src/main/scala/com/twitter/storehaus/algebra/StoreAlgebra.scala"}], "stats": {"deletions": 4, "additions": 39, "total": 43}, "commit": {"date": "2013-01-23T20:30:34Z", "authorId": "", "author": "Sam Ritchie"}}

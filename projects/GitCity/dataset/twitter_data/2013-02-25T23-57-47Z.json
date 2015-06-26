@@ -1,0 +1,1 @@
+{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 2, "additions": 3, "changes": 5, "filename": "lib/twitter-text/validation.rb"}], "stats": {"deletions": 2, "additions": 3, "total": 5}, "commit": {"date": "2013-02-25T23:57:47Z", "authorId": "jakl", "author": "James Koval"}}

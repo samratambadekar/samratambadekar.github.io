@@ -1,0 +1,1 @@
+{"repo": "zipkin", "files": [{"status": "modified", "deletions": 2, "additions": 5, "changes": 7, "filename": "zipkin-finatra/src/test/scala/com/twitter/zipkin/web/QueryExtractorSpec.scala"}], "stats": {"deletions": 2, "additions": 5, "total": 7}, "commit": {"date": "2012-09-05T17:36:09Z", "authorId": "", "author": "Franklin Hu"}}

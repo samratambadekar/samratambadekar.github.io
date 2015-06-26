@@ -1,0 +1,1 @@
+{"repo": "bijection", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "bijection-guava/src/main/scala/com/twitter/bijection/guava/GuavaBijections.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2013-02-04T19:20:22Z", "authorId": "", "author": "Sam Ritchie"}}

@@ -1,0 +1,1 @@
+{"repo": "chill", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/main/scala/com/twitter/chill/KryoSerializer.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2013-03-20T04:12:57Z", "authorId": "", "author": "Ken Kawamoto"}}

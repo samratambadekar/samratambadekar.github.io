@@ -1,0 +1,1 @@
+{"repo": "twitter-cldr-rb", "files": [{"status": "modified", "deletions": 107, "additions": 107, "changes": 214, "filename": "spec/collation/tailoring_tests/da.txt"}], "stats": {"deletions": 107, "additions": 107, "total": 214}, "commit": {"date": "2012-07-14T23:50:47Z", "authorId": "KL-7", "author": "Kirill Lashuk"}}

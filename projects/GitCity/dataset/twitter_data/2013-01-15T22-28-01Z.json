@@ -1,0 +1,1 @@
+{"repo": "bijection", "files": [{"status": "modified", "deletions": 1, "additions": 4, "changes": 5, "filename": "bijection-core/src/main/scala/com/twitter/bijection/Bijection.scala"}], "stats": {"deletions": 1, "additions": 4, "total": 5}, "commit": {"date": "2013-01-15T22:28:01Z", "authorId": "johnynek", "author": "Oscar Boykin"}}

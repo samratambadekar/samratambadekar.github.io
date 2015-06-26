@@ -1,0 +1,1 @@
+{"repo": "twemproxy", "files": [{"status": "modified", "deletions": 6, "additions": 18, "changes": 24, "filename": "src/hashkit/nc_modula.c"}], "stats": {"deletions": 6, "additions": 18, "total": 24}, "commit": {"date": "2013-03-11T17:36:48Z", "authorId": "mezzatto", "author": "Daniel Mezzatto"}}

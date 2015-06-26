@@ -1,0 +1,1 @@
+{"repo": "zipkin", "files": [{"status": "modified", "deletions": 0, "additions": 9, "changes": 9, "filename": "CHANGELOG"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/Project.scala"}], "stats": {"deletions": 1, "additions": 10, "total": 11}, "commit": {"date": "2012-10-29T22:22:48Z", "authorId": "", "author": "Franklin Hu"}}

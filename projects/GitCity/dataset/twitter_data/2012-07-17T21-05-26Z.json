@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 5, "additions": 5, "changes": 10, "filename": "core/src/main/scala/spark/Executor.scala"}], "stats": {"deletions": 5, "additions": 5, "total": 10}, "commit": {"date": "2012-07-17T21:05:26Z", "authorId": "dennybritz", "author": "Denny"}}

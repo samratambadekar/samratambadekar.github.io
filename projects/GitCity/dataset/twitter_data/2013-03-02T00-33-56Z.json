@@ -1,0 +1,1 @@
+{"repo": "twitter-cldr-rb", "files": [{"status": "modified", "deletions": 2, "additions": 0, "changes": 2, "filename": "lib/twitter_cldr/formatters/calendars/datetime_formatter.rb"}], "stats": {"deletions": 2, "additions": 0, "total": 2}, "commit": {"date": "2013-03-02T00:33:56Z", "authorId": "", "author": "Cameron Dutro"}}

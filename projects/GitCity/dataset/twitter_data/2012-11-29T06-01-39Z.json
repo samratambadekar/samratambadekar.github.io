@@ -1,0 +1,1 @@
+{"repo": "libkestrel", "files": [{"status": "modified", "deletions": 2, "additions": 21, "changes": 23, "filename": "src/main/scala/com/twitter/libkestrel/Journal.scala"}], "stats": {"deletions": 2, "additions": 21, "total": 23}, "commit": {"date": "2012-11-29T06:01:39Z", "authorId": "kutchar", "author": "Drew Kutcharian"}}

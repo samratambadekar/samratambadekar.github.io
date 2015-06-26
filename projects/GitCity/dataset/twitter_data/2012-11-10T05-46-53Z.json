@@ -1,0 +1,1 @@
+{"repo": "clockworkraven", "files": [{"status": "modified", "deletions": 59, "additions": 49, "changes": 108, "filename": "Gemfile.lock"}], "stats": {"deletions": 59, "additions": 49, "total": 108}, "commit": {"date": "2012-11-10T05:46:53Z", "authorId": "echen", "author": "Edwin Chen"}}

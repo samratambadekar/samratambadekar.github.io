@@ -1,0 +1,1 @@
+{"repo": "activerecord-reputation-system", "files": [{"status": "modified", "deletions": 0, "additions": 3, "changes": 3, "filename": "lib/generators/reputation_system/reputation_system_generator.rb"}], "stats": {"deletions": 0, "additions": 3, "total": 3}, "commit": {"date": "2012-08-09T06:31:15Z", "authorId": "", "author": "Katsuya Noguchi"}}

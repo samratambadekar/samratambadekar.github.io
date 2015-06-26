@@ -1,0 +1,1 @@
+{"repo": "commons", "files": [{"status": "modified", "deletions": 3, "additions": 1, "changes": 4, "filename": "src/python/twitter/pants/tasks/ivy_utils.py"}], "stats": {"deletions": 3, "additions": 1, "total": 4}, "commit": {"date": "2012-05-15T21:34:22Z", "authorId": "", "author": "Benjy"}}

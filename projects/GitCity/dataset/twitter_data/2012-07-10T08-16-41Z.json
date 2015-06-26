@@ -1,0 +1,1 @@
+{"repo": "twitter-cldr-rb", "files": [{"status": "modified", "deletions": 3, "additions": 2, "changes": 5, "filename": "resources/collation/tailoring/eu.yml"}], "stats": {"deletions": 3, "additions": 2, "total": 5}, "commit": {"date": "2012-07-10T08:16:41Z", "authorId": "KL-7", "author": "Kirill Lashuk"}}

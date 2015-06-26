@@ -1,0 +1,1 @@
+{"repo": "scalding", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "build.sbt"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2012-06-05T20:05:36Z", "authorId": "azymnis", "author": "Argyris Zymnis"}}

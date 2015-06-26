@@ -1,0 +1,1 @@
+{"repo": "elephant-bird", "files": [{"status": "added", "deletions": 0, "additions": 51, "changes": 51, "filename": "src/java/com/twitter/elephantbird/mapreduce/input/FilterRecordReader.java"}], "stats": {"deletions": 0, "additions": 51, "total": 51}, "commit": {"date": "2012-05-05T08:20:21Z", "authorId": "rangadi", "author": "Raghu Angadi"}}

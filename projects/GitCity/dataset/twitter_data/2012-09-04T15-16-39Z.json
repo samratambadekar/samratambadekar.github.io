@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/library/scala/collection/parallel/ParIterableLike.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-09-04T15:16:39Z", "authorId": "jsuereth", "author": "Josh Suereth"}}

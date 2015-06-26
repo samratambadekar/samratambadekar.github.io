@@ -1,0 +1,1 @@
+{"repo": "twitter-text-java", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "test-data/twitter-text-conformance"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2013-01-30T17:17:16Z", "authorId": "jakl", "author": "James Koval"}}

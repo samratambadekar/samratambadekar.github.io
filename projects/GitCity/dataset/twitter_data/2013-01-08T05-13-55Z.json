@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 4, "additions": 15, "changes": 19, "filename": "streaming/src/main/scala/spark/streaming/api/java/JavaDStreamLike.scala"}], "stats": {"deletions": 4, "additions": 15, "total": 19}, "commit": {"date": "2013-01-08T05:13:55Z", "authorId": "pwendell", "author": "Patrick Wendell"}}

@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "Docs/INSTALL-BINARY"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2012-07-31T18:41:46Z", "authorId": "", "author": "Joerg Bruehe"}}

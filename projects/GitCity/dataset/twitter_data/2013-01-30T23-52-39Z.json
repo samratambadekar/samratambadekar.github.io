@@ -1,0 +1,1 @@
+{"repo": "twemproxy", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/proto/nc_redis.c"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2013-01-30T23:52:39Z", "authorId": "", "author": "Manju Rajashekhar"}}

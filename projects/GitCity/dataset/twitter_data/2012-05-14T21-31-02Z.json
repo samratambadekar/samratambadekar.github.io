@@ -1,0 +1,1 @@
+{"repo": "ambrose", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "pig/src/main/java/com/twitter/ambrose/pig/AmbrosePigProgressNotificationListener.java"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2012-05-14T21:31:02Z", "authorId": "billonahill", "author": "Bill Graham"}}

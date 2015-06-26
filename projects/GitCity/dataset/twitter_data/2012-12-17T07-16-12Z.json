@@ -1,0 +1,1 @@
+{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "lib/twitter-text/regex.rb"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-12-17T07:16:12Z", "authorId": "mathiasbynens", "author": "Mathias Bynens"}}

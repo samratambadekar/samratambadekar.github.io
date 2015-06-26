@@ -1,0 +1,1 @@
+{"repo": "bijection", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "bijection-protobuf/src/main/scala/com/twitter/bijection/protobuf/ProtobufCodecs.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2013-01-10T05:52:27Z", "authorId": "", "author": "Sam Ritchie"}}

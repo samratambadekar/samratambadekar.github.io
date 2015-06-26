@@ -1,0 +1,1 @@
+{"repo": "ostrich", "files": [{"status": "modified", "deletions": 5, "additions": 9, "changes": 14, "filename": "src/main/scala/com/twitter/ostrich/stats/GraphiteStatsLogger.scala"}], "stats": {"deletions": 5, "additions": 9, "total": 14}, "commit": {"date": "2012-05-09T23:19:12Z", "authorId": "", "author": "Robey Pointer"}}

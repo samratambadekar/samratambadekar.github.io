@@ -1,0 +1,1 @@
+{"repo": "sprockets-commonjs-twitter", "files": [{"status": "modified", "deletions": 11, "additions": 16, "changes": 27, "filename": "lib/sprockets/commonjs.rb"}], "stats": {"deletions": 11, "additions": 16, "total": 27}, "commit": {"date": "2012-09-20T16:52:26Z", "authorId": "mjackson", "author": "Michael Jackson"}}

@@ -1,0 +1,1 @@
+{"repo": "twitter-cldr-js", "files": [{"status": "modified", "deletions": 0, "additions": 1, "changes": 1, "filename": ".gitignore"}, {"status": "removed", "deletions": 103, "additions": 0, "changes": 103, "filename": "Gemfile.lock"}], "stats": {"deletions": 103, "additions": 1, "total": 104}, "commit": {"date": "2012-08-23T17:57:31Z", "authorId": "", "author": "Cameron Dutro"}}

@@ -1,0 +1,1 @@
+{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 24, "additions": 27, "changes": 51, "filename": "src/java/com/twitter/elephantbird/pig/mahout/VectorWritableConverter.java"}], "stats": {"deletions": 24, "additions": 27, "total": 51}, "commit": {"date": "2012-05-15T14:11:34Z", "authorId": "sagemintblue", "author": "Andy Schlaikjer"}}

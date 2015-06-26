@@ -1,0 +1,1 @@
+{"repo": "scalding", "files": [{"status": "added", "deletions": 0, "additions": 58, "changes": 58, "filename": "src/main/scala/com/twitter/scalding/CoGroupBuilder.scala"}], "stats": {"deletions": 0, "additions": 58, "total": 58}, "commit": {"date": "2012-04-05T21:06:12Z", "authorId": "azymnis", "author": "Argyris Zymnis"}}

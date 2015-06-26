@@ -1,0 +1,1 @@
+{"repo": "zipkin", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "zipkin-web/src/main/scala/com/twitter/zipkin/web/App.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2013-01-22T21:09:37Z", "authorId": "franklinhu", "author": "Franklin Hu"}}

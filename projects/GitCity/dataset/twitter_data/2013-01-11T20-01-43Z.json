@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 11, "additions": 27, "changes": 38, "filename": "core/src/main/scala/spark/deploy/master/MasterWebUI.scala"}], "stats": {"deletions": 11, "additions": 27, "total": 38}, "commit": {"date": "2013-01-11T20:01:43Z", "authorId": "", "author": "Tyson"}}

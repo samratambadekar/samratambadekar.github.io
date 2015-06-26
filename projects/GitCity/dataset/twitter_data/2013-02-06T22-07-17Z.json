@@ -1,0 +1,1 @@
+{"repo": "algebird", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "algebird-core/src/main/scala/com/twitter/algebird/Monad.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2013-02-06T22:07:17Z", "authorId": "", "author": "Mike Gagnon"}}

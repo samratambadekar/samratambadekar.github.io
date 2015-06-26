@@ -1,0 +1,1 @@
+{"repo": "storehaus", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "storehaus-core/src/main/scala/com/twitter/storehaus/cache/TTLCache.scala"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2013-03-28T17:25:36Z", "authorId": "", "author": "Sam Ritchie"}}

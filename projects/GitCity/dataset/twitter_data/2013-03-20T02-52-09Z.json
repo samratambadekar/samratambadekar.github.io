@@ -1,0 +1,1 @@
+{"repo": "chill", "files": [{"status": "modified", "deletions": 0, "additions": 7, "changes": 7, "filename": "build.sbt"}, {"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "project/plugins.sbt"}], "stats": {"deletions": 0, "additions": 9, "total": 9}, "commit": {"date": "2013-03-20T02:52:09Z", "authorId": "johnynek", "author": "Oscar Boykin"}}

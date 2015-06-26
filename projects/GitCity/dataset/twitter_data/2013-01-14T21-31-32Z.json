@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 2, "additions": 1, "changes": 3, "filename": "streaming/src/main/scala/spark/streaming/api/java/JavaPairDStream.scala"}], "stats": {"deletions": 2, "additions": 1, "total": 3}, "commit": {"date": "2013-01-14T21:31:32Z", "authorId": "pwendell", "author": "Patrick Wendell"}}

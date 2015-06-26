@@ -1,0 +1,1 @@
+{"repo": "kestrel", "files": [{"status": "modified", "deletions": 12, "additions": 6, "changes": 18, "filename": "docs/guide.md"}], "stats": {"deletions": 12, "additions": 6, "total": 18}, "commit": {"date": "2012-11-02T23:39:13Z", "authorId": "zuercher", "author": "Stephan Zuercher"}}

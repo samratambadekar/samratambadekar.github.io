@@ -1,0 +1,1 @@
+{"repo": "kestrel", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "project/plugins.sbt"}], "stats": {"deletions": 0, "additions": 2, "total": 2}, "commit": {"date": "2012-08-31T23:01:53Z", "authorId": "rvoicilas", "author": "Radu Voicilas"}}

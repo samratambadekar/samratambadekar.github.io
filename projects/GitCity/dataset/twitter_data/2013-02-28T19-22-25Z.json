@@ -1,0 +1,1 @@
+{"repo": "hbc", "files": [{"status": "modified", "deletions": 41, "additions": 0, "changes": 41, "filename": "hbc-core/pom.xml"}], "stats": {"deletions": 41, "additions": 0, "total": 41}, "commit": {"date": "2013-02-28T19:22:25Z", "authorId": "xsl", "author": "Steven Liu"}}

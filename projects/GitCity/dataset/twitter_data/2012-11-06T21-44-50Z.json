@@ -1,0 +1,1 @@
+{"repo": "cloudhopper-commons", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "src/test/java/com/cloudhopper/commons/charset/CharsetUtilTest.java"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2012-11-06T21:44:50Z", "authorId": "silbakor", "author": "dhoffman"}}

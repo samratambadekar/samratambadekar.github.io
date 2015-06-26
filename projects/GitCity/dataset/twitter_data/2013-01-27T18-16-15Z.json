@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "renamed", "deletions": 0, "additions": 0, "changes": 0, "filename": "test/files/disabled/run/t4602.scala"}], "stats": {"deletions": 0, "additions": 0, "total": 0}, "commit": {"date": "2013-01-27T18:16:15Z", "authorId": "JamesIry", "author": "James Iry"}}

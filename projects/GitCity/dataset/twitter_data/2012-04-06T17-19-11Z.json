@@ -1,0 +1,1 @@
+{"repo": "sbt-package-dist", "files": [{"status": "modified", "deletions": 94, "additions": 8, "changes": 102, "filename": "CHANGELOG"}], "stats": {"deletions": 94, "additions": 8, "total": 102}, "commit": {"date": "2012-04-06T17:19:11Z", "authorId": "", "author": "Robey Pointer"}}

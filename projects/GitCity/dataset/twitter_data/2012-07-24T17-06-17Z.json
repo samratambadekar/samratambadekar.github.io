@@ -1,0 +1,1 @@
+{"repo": "sprockets-commonjs-twitter", "files": [{"status": "modified", "deletions": 1, "additions": 5, "changes": 6, "filename": "lib/sprockets/commonjs.rb"}], "stats": {"deletions": 1, "additions": 5, "total": 6}, "commit": {"date": "2012-07-24T17:06:17Z", "authorId": "", "author": "James A. Rosen"}}

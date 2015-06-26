@@ -1,0 +1,1 @@
+{"repo": "bookkeeper", "files": [{"status": "modified", "deletions": 5, "additions": 0, "changes": 5, "filename": "bookkeeper-server/pom.xml"}], "stats": {"deletions": 5, "additions": 0, "total": 5}, "commit": {"date": "2012-11-27T21:30:08Z", "authorId": "", "author": "Yixue(Andrew) Zhu"}}

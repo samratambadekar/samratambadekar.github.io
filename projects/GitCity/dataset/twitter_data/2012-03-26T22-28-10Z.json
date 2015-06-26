@@ -1,0 +1,1 @@
+{"repo": "querulous", "files": [{"status": "modified", "deletions": 4, "additions": 18, "changes": 22, "filename": "querulous-core/src/main/scala/com/twitter/querulous/async/BlockingDatabaseWrapper.scala"}], "stats": {"deletions": 4, "additions": 18, "total": 22}, "commit": {"date": "2012-03-26T22:28:10Z", "authorId": "", "author": "Raghavendra Prabhu"}}

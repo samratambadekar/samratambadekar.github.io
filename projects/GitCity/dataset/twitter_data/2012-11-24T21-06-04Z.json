@@ -1,0 +1,1 @@
+{"repo": "hogan.js", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "lib/compiler.js"}, {"status": "modified", "deletions": 0, "additions": 13, "changes": 13, "filename": "test/index.js"}], "stats": {"deletions": 1, "additions": 14, "total": 15}, "commit": {"date": "2012-11-24T21:06:04Z", "authorId": "fat", "author": "billy gates"}}

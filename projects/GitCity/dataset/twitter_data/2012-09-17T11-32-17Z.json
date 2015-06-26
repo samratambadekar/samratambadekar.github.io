@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 0, "additions": 9, "changes": 9, "filename": "sql/hostname.cc"}, {"status": "modified", "deletions": 8, "additions": 60, "changes": 68, "filename": "sql/sql_connect.cc"}], "stats": {"deletions": 8, "additions": 69, "total": 77}, "commit": {"date": "2012-09-17T11:32:17Z", "authorId": "", "author": "Harin Vadodaria"}}

@@ -1,0 +1,1 @@
+{"repo": "bookkeeper", "files": [{"status": "modified", "deletions": 6, "additions": 6, "changes": 12, "filename": "bookkeeper-server/src/main/java/org/apache/bookkeeper/bookie/FileInfo.java"}], "stats": {"deletions": 6, "additions": 6, "total": 12}, "commit": {"date": "2012-11-12T15:42:59Z", "authorId": "robindh", "author": "Robin Dhamankar"}}

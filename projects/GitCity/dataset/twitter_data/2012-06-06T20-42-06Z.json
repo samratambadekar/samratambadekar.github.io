@@ -1,0 +1,1 @@
+{"repo": "zipkin", "files": [{"status": "modified", "deletions": 1, "additions": 5, "changes": 6, "filename": ".travis.yml"}], "stats": {"deletions": 1, "additions": 5, "total": 6}, "commit": {"date": "2012-06-06T20:42:06Z", "authorId": "", "author": "Franklin Hu"}}

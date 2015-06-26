@@ -1,0 +1,1 @@
+{"repo": "storehaus", "files": [{"status": "modified", "deletions": 15, "additions": 16, "changes": 31, "filename": "storehaus-core/src/main/scala/com/twitter/storehaus/Store.scala"}], "stats": {"deletions": 15, "additions": 16, "total": 31}, "commit": {"date": "2013-02-08T23:00:50Z", "authorId": "singhala", "author": "Ashutosh Singhal"}}

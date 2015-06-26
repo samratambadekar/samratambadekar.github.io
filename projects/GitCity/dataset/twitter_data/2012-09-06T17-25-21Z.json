@@ -1,0 +1,1 @@
+{"repo": "zipkin", "files": [{"status": "modified", "deletions": 17, "additions": 19, "changes": 36, "filename": "zipkin-server/src/main/scala/com/twitter/zipkin/storage/cassandra/CassandraAggregates.scala"}], "stats": {"deletions": 17, "additions": 19, "total": 36}, "commit": {"date": "2012-09-06T17:25:21Z", "authorId": "", "author": "Franklin Hu"}}

@@ -1,0 +1,1 @@
+{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "core/src/main/java/com/twitter/elephantbird/mapreduce/input/MultiInputFormat.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-07-03T02:58:53Z", "authorId": "rangadi", "author": "Raghu Angadi"}}

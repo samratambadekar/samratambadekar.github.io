@@ -1,0 +1,1 @@
+{"repo": "twemproxy", "files": [{"status": "modified", "deletions": 5, "additions": 3, "changes": 8, "filename": "src/nc_util.c"}], "stats": {"deletions": 5, "additions": 3, "total": 8}, "commit": {"date": "2012-12-27T05:24:45Z", "authorId": "conmame", "author": "Yutaka Hoshino"}}

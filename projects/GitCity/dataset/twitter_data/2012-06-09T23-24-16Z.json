@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "core/src/main/scala/spark/broadcast/HttpBroadcast.scala"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2012-06-09T23:24:16Z", "authorId": "mateiz", "author": "Matei Zaharia"}}

@@ -1,0 +1,1 @@
+{"repo": "twemproxy", "files": [{"status": "modified", "deletions": 7, "additions": 7, "changes": 14, "filename": "src/nc_parse.c"}], "stats": {"deletions": 7, "additions": 7, "total": 14}, "commit": {"date": "2012-10-27T22:18:23Z", "authorId": "", "author": "Manju Rajashekhar"}}

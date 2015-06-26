@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 5, "additions": 6, "changes": 11, "filename": "src/compiler/scala/tools/nsc/backend/jvm/GenASM.scala"}], "stats": {"deletions": 5, "additions": 6, "total": 11}, "commit": {"date": "2012-05-31T11:46:44Z", "authorId": "magarciaEPFL", "author": "Miguel Garcia"}}

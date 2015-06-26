@@ -1,0 +1,1 @@
+{"repo": "storehaus", "files": [{"status": "renamed", "deletions": 0, "additions": 0, "changes": 0, "filename": "storehaus-algebra/src/main/scala/com/twitter/storehaus/algebra/MergeableEnrichment.scala"}], "stats": {"deletions": 0, "additions": 0, "total": 0}, "commit": {"date": "2013-03-11T17:33:33Z", "authorId": "johnynek", "author": "P. Oscar Boykin"}}

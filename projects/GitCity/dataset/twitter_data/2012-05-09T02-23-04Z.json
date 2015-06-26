@@ -1,0 +1,1 @@
+{"repo": "twitter-text-objc", "files": [{"status": "modified", "deletions": 3, "additions": 1, "changes": 4, "filename": "lib/TwitterText.m"}], "stats": {"deletions": 3, "additions": 1, "total": 4}, "commit": {"date": "2012-05-09T02:23:04Z", "authorId": "psychs", "author": "Satoshi Nakagawa"}}

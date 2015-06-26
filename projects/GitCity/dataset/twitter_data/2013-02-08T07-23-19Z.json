@@ -1,0 +1,1 @@
+{"repo": "twitter-text-js", "files": [{"status": "modified", "deletions": 0, "additions": 4, "changes": 4, "filename": "test/tests.js"}, {"status": "modified", "deletions": 3, "additions": 9, "changes": 12, "filename": "twitter-text.js"}], "stats": {"deletions": 3, "additions": 13, "total": 16}, "commit": {"date": "2013-02-08T07:23:19Z", "authorId": "", "author": "Tom Wuttke"}}

@@ -1,0 +1,1 @@
+{"repo": "scalding", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "src/main/scala/com/twitter/scalding/mathematics/MatrixProduct.scala"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2012-08-30T22:54:03Z", "authorId": "johnynek", "author": "Oscar Boykin"}}

@@ -1,0 +1,1 @@
+{"repo": "iago", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/test/scala/com/twitter/parrot/integration/EndToEndSpec.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2012-08-05T12:38:43Z", "authorId": "", "author": "James Waldrop"}}

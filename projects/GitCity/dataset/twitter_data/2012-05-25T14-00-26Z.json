@@ -1,0 +1,1 @@
+{"repo": "activerecord-reputation-system", "files": [{"status": "modified", "deletions": 15, "additions": 10, "changes": 25, "filename": "lib/reputation_system/network.rb"}], "stats": {"deletions": 15, "additions": 10, "total": 25}, "commit": {"date": "2012-05-25T14:00:26Z", "authorId": "NARKOZ", "author": "Nihad Abbasov"}}

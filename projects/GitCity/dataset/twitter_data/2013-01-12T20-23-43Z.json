@@ -1,0 +1,1 @@
+{"repo": "twitter-cldr-rb", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "spec/shared/languages_spec.rb"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2013-01-12T20:23:43Z", "authorId": "camertron", "author": "Cameron Dutro"}}
