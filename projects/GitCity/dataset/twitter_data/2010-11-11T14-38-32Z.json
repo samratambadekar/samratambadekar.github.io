@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 25, "additions": 25, "changes": 50, "filename": "src/library/scala/collection/parallel/mutable/ParHashSet.scala"}], "stats": {"deletions": 25, "additions": 25, "total": 50}, "commit": {"date": "2010-11-11T14:38:32Z", "authorId": "axel22", "author": "Aleksandar Pokopec"}}

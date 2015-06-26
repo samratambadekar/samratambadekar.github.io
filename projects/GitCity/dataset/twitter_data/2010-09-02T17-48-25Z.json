@@ -1,0 +1,1 @@
+{"repo": "gizzard", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/build/GizzardProject.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-09-02T17:48:25Z", "authorId": "freels", "author": "Matt Freels"}}

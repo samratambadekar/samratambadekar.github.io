@@ -1,0 +1,1 @@
+{"repo": "grabby-hands", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "ant/compile.xml"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "ant/test.xml"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2010-11-01T23:21:53Z", "authorId": "", "author": "John Kalucki"}}

@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "builtin/commit.c"}, {"status": "modified", "deletions": 3, "additions": 11, "changes": 14, "filename": "t/t7500-commit.sh"}], "stats": {"deletions": 4, "additions": 12, "total": 16}, "commit": {"date": "2011-02-25T09:07:57Z", "authorId": "jrn", "author": "Jonathan Nieder"}}

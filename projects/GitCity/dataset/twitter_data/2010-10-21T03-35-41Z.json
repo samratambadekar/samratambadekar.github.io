@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "added", "deletions": 0, "additions": 59, "changes": 59, "filename": "src/test/scala/com/twitter/SunkChannel.scala"}], "stats": {"deletions": 0, "additions": 59, "total": 59}, "commit": {"date": "2010-10-21T03:35:41Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

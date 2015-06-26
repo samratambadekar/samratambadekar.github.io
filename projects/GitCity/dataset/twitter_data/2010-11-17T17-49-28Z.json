@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 7, "additions": 25, "changes": 32, "filename": "src/library/scala/collection/immutable/ListMap.scala"}], "stats": {"deletions": 7, "additions": 25, "total": 32}, "commit": {"date": "2010-11-17T17:49:28Z", "authorId": "axel22", "author": "Aleksandar Pokopec"}}

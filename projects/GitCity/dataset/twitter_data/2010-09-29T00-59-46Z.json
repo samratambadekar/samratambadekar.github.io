@@ -1,0 +1,1 @@
+{"repo": "twitter-text-conformance", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "hit_highlighting.yml"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-09-29T00:59:46Z", "authorId": "bcherry", "author": "Ben Cherry"}}

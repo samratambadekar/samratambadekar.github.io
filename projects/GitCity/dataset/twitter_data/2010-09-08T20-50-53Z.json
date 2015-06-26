@@ -1,0 +1,1 @@
+{"repo": "spitball", "files": [{"status": "modified", "deletions": 1, "additions": 6, "changes": 7, "filename": "bin/spitball-server"}], "stats": {"deletions": 1, "additions": 6, "total": 7}, "commit": {"date": "2010-09-08T20:50:53Z", "authorId": "freels", "author": "Matt Freels"}}

@@ -1,0 +1,1 @@
+{"repo": "gizzard", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/main/scala/com/twitter/gizzard/shards/BlackHoleShard.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-01-26T02:58:53Z", "authorId": "freels", "author": "Matt Freels"}}

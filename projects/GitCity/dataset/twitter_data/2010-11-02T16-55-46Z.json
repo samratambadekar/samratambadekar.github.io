@@ -1,0 +1,1 @@
+{"repo": "grabby-hands", "files": [{"status": "modified", "deletions": 1, "additions": 16, "changes": 17, "filename": "project/build/GrabbyHandsProject.scala"}], "stats": {"deletions": 1, "additions": 16, "total": 17}, "commit": {"date": "2010-11-02T16:55:46Z", "authorId": "mccv", "author": "mmcbride"}}

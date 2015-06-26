@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 12, "additions": 16, "changes": 28, "filename": "finagle-memcached/src/test/scala/com/twitter/finagle/memcached/integration/ClientSpec.scala"}], "stats": {"deletions": 12, "additions": 16, "total": 28}, "commit": {"date": "2011-01-26T19:26:20Z", "authorId": "bierbaum", "author": "wilhelm bierbaum"}}

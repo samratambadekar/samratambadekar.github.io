@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "src/library/scala/collection/mutable/LinkedListLike.scala"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2010-11-17T17:04:06Z", "authorId": "axel22", "author": "Aleksandar Pokopec"}}

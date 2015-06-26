@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 16, "additions": 27, "changes": 43, "filename": "symlinks.c"}], "stats": {"deletions": 16, "additions": 27, "total": 43}, "commit": {"date": "2010-10-09T13:52:59Z", "authorId": "drizzd", "author": "Clemens Buchacher"}}

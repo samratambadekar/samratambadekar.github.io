@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 10, "additions": 17, "changes": 27, "filename": "core/src/main/java/org/apache/mahout/vectors/InteractionValueEncoder.java"}], "stats": {"deletions": 10, "additions": 17, "total": 27}, "commit": {"date": "2010-08-30T19:34:00Z", "authorId": "tdunning", "author": "Ted Dunning"}}

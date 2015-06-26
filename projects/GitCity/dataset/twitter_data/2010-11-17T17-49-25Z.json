@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 0, "additions": 3, "changes": 3, "filename": "src/library/scala/collection/TraversableOnce.scala"}], "stats": {"deletions": 0, "additions": 3, "total": 3}, "commit": {"date": "2010-11-17T17:49:25Z", "authorId": "axel22", "author": "Aleksandar Pokopec"}}

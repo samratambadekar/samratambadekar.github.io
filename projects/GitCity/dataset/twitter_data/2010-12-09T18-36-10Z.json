@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "diff.c"}, {"status": "modified", "deletions": 0, "additions": 9, "changes": 9, "filename": "t/t4019-diff-wserror.sh"}], "stats": {"deletions": 1, "additions": 10, "total": 11}, "commit": {"date": "2010-12-09T18:36:10Z", "authorId": "gitster", "author": "Junio C Hamano"}}

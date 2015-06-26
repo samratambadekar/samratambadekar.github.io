@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "t/t3302-notes-index-expensive.sh"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-08-24T07:14:53Z", "authorId": "jrn", "author": "Jonathan Nieder"}}

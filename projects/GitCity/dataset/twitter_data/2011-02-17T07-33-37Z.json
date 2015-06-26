@@ -1,0 +1,1 @@
+{"repo": "flockdb", "files": [{"status": "modified", "deletions": 5, "additions": 6, "changes": 11, "filename": "config/test.scala"}], "stats": {"deletions": 5, "additions": 6, "total": 11}, "commit": {"date": "2011-02-17T07:33:37Z", "authorId": "freels", "author": "Matt Freels"}}

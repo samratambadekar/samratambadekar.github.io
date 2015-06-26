@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "removed", "deletions": 132, "additions": 0, "changes": 132, "filename": "core/src/main/java/org/apache/mahout/clustering/ClusterBase.java"}], "stats": {"deletions": 132, "additions": 0, "total": 132}, "commit": {"date": "2010-08-17T20:16:35Z", "authorId": "", "author": "Jeff Eastman"}}

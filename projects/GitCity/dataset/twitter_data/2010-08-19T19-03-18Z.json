@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "t/t9155-git-svn-fetch-deleted-tag.sh"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-08-19T19:03:18Z", "authorId": "", "author": "Eric Wong"}}

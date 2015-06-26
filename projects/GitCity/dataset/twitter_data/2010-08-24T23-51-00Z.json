@@ -1,0 +1,1 @@
+{"repo": "cascading", "files": [{"status": "modified", "deletions": 1, "additions": 6, "changes": 7, "filename": "src/core/cascading/operation/regex/RegexReplace.java"}], "stats": {"deletions": 1, "additions": 6, "total": 7}, "commit": {"date": "2010-08-24T23:51:00Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

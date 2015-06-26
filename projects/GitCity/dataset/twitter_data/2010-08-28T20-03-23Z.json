@@ -1,0 +1,1 @@
+{"repo": "util", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/main/scala/com/twitter/util/Future.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-08-28T20:03:23Z", "authorId": "", "author": "Nick Kallen"}}

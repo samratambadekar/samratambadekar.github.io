@@ -1,0 +1,1 @@
+{"repo": "kestrel", "files": [{"status": "modified", "deletions": 2, "additions": 4, "changes": 6, "filename": "src/main/scala/net/lag/kestrel/PersistentQueue.scala"}], "stats": {"deletions": 2, "additions": 4, "total": 6}, "commit": {"date": "2011-01-12T00:51:37Z", "authorId": "", "author": "eaceaser"}}

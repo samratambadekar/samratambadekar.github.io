@@ -1,0 +1,1 @@
+{"repo": "kestrel-client", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "VERSION"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "kestrel-client.gemspec"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2010-10-06T04:37:48Z", "authorId": "", "author": "Evan Weaver"}}

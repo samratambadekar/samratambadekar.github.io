@@ -1,0 +1,1 @@
+{"repo": "grabby-hands", "files": [{"status": "modified", "deletions": 0, "additions": 3, "changes": 3, "filename": "README"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/build.properties"}], "stats": {"deletions": 1, "additions": 4, "total": 5}, "commit": {"date": "2010-11-29T23:47:10Z", "authorId": "", "author": "John Kalucki"}}

@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 12, "changes": 12, "filename": "Documentation/git-for-each-ref.txt"}], "stats": {"deletions": 0, "additions": 12, "total": 12}, "commit": {"date": "2011-03-08T13:16:10Z", "authorId": "alco", "author": "Alexei Sholik"}}

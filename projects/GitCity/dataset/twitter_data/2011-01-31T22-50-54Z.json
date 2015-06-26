@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "renamed", "deletions": 0, "additions": 0, "changes": 0, "filename": "finagle-core/src/test/scala/com/twitter/finagle/integration/NettyAssumptionsSpec.scala"}], "stats": {"deletions": 0, "additions": 0, "total": 0}, "commit": {"date": "2011-01-31T22:50:54Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

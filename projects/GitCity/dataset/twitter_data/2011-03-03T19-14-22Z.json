@@ -1,0 +1,1 @@
+{"repo": "cassie", "files": [{"status": "modified", "deletions": 2, "additions": 29, "changes": 31, "filename": "src/main/scala/com/twitter/cassie/mr/CassieReducer.scala"}], "stats": {"deletions": 2, "additions": 29, "total": 31}, "commit": {"date": "2011-03-03T19:14:22Z", "authorId": "", "author": "Kyle Maxwell"}}

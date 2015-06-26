@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 1, "additions": 42, "changes": 43, "filename": "finagle-core/src/main/scala/com/twitter/finagle/util/LifecycleFactory.scala"}], "stats": {"deletions": 1, "additions": 42, "total": 43}, "commit": {"date": "2011-01-22T01:09:13Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

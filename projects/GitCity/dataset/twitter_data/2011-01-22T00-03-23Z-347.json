@@ -1,0 +1,1 @@
+{"repo": "standard-project", "files": [{"status": "modified", "deletions": 3, "additions": 4, "changes": 7, "filename": "src/main/scala/com/twitter/sbt/AdhocInlines.scala"}], "stats": {"deletions": 3, "additions": 4, "total": 7}, "commit": {"date": "2011-01-22T00:03:23Z", "authorId": "", "author": "Josh Hull"}}

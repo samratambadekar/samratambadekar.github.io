@@ -1,0 +1,1 @@
+{"repo": "sbt-thrift", "files": [{"status": "modified", "deletions": 4, "additions": 13, "changes": 17, "filename": "src/main/scala/com/twitter/sbt/Tartifactory.scala"}], "stats": {"deletions": 4, "additions": 13, "total": 17}, "commit": {"date": "2011-02-22T23:07:02Z", "authorId": "", "author": "Kyle Maxwell"}}

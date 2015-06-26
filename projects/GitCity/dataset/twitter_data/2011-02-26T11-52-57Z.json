@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "added", "deletions": 0, "additions": 44, "changes": 44, "filename": "math/src/main/java/org/apache/mahout/math/function/DoubleFunction.java"}], "stats": {"deletions": 0, "additions": 44, "total": 44}, "commit": {"date": "2011-02-26T11:52:57Z", "authorId": "srowen", "author": "Sean R. Owen"}}

@@ -1,0 +1,1 @@
+{"repo": "ostrich", "files": [{"status": "modified", "deletions": 4, "additions": 3, "changes": 7, "filename": "project/build.properties"}], "stats": {"deletions": 4, "additions": 3, "total": 7}, "commit": {"date": "2010-09-13T18:59:00Z", "authorId": "", "author": "Robey Pointer"}}

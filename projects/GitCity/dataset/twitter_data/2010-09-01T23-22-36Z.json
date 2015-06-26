@@ -1,0 +1,1 @@
+{"repo": "joauth", "files": [{"status": "modified", "deletions": 10, "additions": 6, "changes": 16, "filename": "src/main/scala/com/twitter/joauth/Normalizer.scala"}], "stats": {"deletions": 10, "additions": 6, "total": 16}, "commit": {"date": "2010-09-01T23:22:36Z", "authorId": "9len", "author": "Glen D Sanford"}}

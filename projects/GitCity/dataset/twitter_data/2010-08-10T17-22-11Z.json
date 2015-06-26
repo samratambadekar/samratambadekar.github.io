@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 29, "additions": 12, "changes": 41, "filename": "core/src/main/java/org/apache/mahout/cf/taste/impl/neighborhood/NearestNUserNeighborhood.java"}], "stats": {"deletions": 29, "additions": 12, "total": 41}, "commit": {"date": "2010-08-10T17:22:11Z", "authorId": "srowen", "author": "Sean R. Owen"}}

@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/main/scala/com/twitter/finagle/service/Service.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2010-12-20T23:20:30Z", "authorId": "jaked", "author": "Jake Donham"}}

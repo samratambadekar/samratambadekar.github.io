@@ -1,0 +1,1 @@
+{"repo": "twitter4j", "files": [{"status": "modified", "deletions": 779, "additions": 779, "changes": 1558, "filename": "twitter4j-core/src/main/java/twitter4j/util/ImageUpload.java"}], "stats": {"deletions": 779, "additions": 779, "total": 1558}, "commit": {"date": "2010-10-02T12:59:56Z", "authorId": "yusuke", "author": "Yusuke Yamamoto"}}

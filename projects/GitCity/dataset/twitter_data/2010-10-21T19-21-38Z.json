@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 8, "additions": 4, "changes": 12, "filename": "src/main/scala/com/twitter/finagle/thrift/ThriftCodec.scala"}], "stats": {"deletions": 8, "additions": 4, "total": 12}, "commit": {"date": "2010-10-21T19:21:38Z", "authorId": "bierbaum", "author": "Wilhelm Bierbaum"}}

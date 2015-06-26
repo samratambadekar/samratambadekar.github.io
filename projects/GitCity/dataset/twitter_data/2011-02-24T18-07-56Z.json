@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 2, "additions": 9, "changes": 11, "filename": "core/src/main/java/org/apache/mahout/cf/taste/impl/recommender/CachingRecommender.java"}], "stats": {"deletions": 2, "additions": 9, "total": 11}, "commit": {"date": "2011-02-24T18:07:56Z", "authorId": "srowen", "author": "Sean R. Owen"}}

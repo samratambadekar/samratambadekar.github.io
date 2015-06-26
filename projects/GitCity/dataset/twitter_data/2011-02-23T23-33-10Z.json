@@ -1,0 +1,1 @@
+{"repo": "thrift_client", "files": [{"status": "modified", "deletions": 2, "additions": 0, "changes": 2, "filename": "Rakefile"}], "stats": {"deletions": 2, "additions": 0, "total": 2}, "commit": {"date": "2011-02-23T23:33:10Z", "authorId": "ryanking", "author": "Ryan King"}}

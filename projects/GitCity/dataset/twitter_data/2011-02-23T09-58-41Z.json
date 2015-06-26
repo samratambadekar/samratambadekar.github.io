@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 8, "additions": 24, "changes": 32, "filename": "pretty.c"}, {"status": "modified", "deletions": 0, "additions": 84, "changes": 84, "filename": "t/t4014-format-patch.sh"}], "stats": {"deletions": 8, "additions": 108, "total": 116}, "commit": {"date": "2011-02-23T09:58:41Z", "authorId": "peff", "author": "Jeff King"}}

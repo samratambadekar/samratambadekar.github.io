@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "added", "deletions": 0, "additions": 204, "changes": 204, "filename": "src/compiler/scala/tools/nsc/interactive/tests/Tester.scala"}], "stats": {"deletions": 0, "additions": 204, "total": 204}, "commit": {"date": "2010-11-23T15:15:54Z", "authorId": "odersky", "author": "Martin Odersky"}}

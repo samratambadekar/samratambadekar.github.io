@@ -1,0 +1,1 @@
+{"repo": "kestrel-client", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "spec/kestrel_benchmark.rb"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-10-08T14:59:47Z", "authorId": "skade", "author": "Florian Gilcher"}}

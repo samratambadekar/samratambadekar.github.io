@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 15, "additions": 6, "changes": 21, "filename": "finagle-core/src/main/scala/com/twitter/finagle/service/SingletonFactory.scala"}], "stats": {"deletions": 15, "additions": 6, "total": 21}, "commit": {"date": "2011-02-02T19:18:25Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

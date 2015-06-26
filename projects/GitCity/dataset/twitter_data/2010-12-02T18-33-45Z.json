@@ -1,0 +1,1 @@
+{"repo": "twitter-text-java", "files": [{"status": "modified", "deletions": 55, "additions": 49, "changes": 104, "filename": "src/com/twitter/Autolink.java"}], "stats": {"deletions": 55, "additions": 49, "total": 104}, "commit": {"date": "2010-12-02T18:33:45Z", "authorId": "kakugawa", "author": "Kelvin Kakugawa"}}

@@ -1,0 +1,1 @@
+{"repo": "querulous", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/main/scala/com/twitter/querulous/config/Database.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-12-05T17:28:43Z", "authorId": "freels", "author": "Matt Freels"}}

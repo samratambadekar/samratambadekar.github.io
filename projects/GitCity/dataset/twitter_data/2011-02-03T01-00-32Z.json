@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "contrib/hooks/post-receive-email"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-02-03T01:00:32Z", "authorId": "sitaramc", "author": "Sitaram Chamarty"}}

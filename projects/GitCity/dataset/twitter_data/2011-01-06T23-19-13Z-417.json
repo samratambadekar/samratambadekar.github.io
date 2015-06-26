@@ -1,0 +1,1 @@
+{"repo": "standard-project", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/build.properties"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-01-06T23:19:13Z", "authorId": "", "author": "Nick Kallen"}}

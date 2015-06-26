@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 0, "additions": 1, "changes": 1, "filename": "finagle-stream/src/main/scala/com/twitter/finagle/stream/ChannelToHttpChunk.scala"}], "stats": {"deletions": 0, "additions": 1, "total": 1}, "commit": {"date": "2011-02-02T19:41:39Z", "authorId": "", "author": "Nick Kallen"}}

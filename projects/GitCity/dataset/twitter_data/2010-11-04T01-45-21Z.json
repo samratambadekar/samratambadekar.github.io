@@ -1,0 +1,1 @@
+{"repo": "ostrich", "files": [{"status": "modified", "deletions": 1, "additions": 33, "changes": 34, "filename": "src/test/scala/com/twitter/ostrich/TimeSeriesCollectorSpec.scala"}], "stats": {"deletions": 1, "additions": 33, "total": 34}, "commit": {"date": "2010-11-04T01:45:21Z", "authorId": "stevej", "author": "Steve Jenson"}}

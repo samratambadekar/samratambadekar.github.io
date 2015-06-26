@@ -1,0 +1,1 @@
+{"repo": "naggati2", "files": [{"status": "modified", "deletions": 3, "additions": 17, "changes": 20, "filename": "src/main/scala/com/twitter/naggati/Stages.scala"}], "stats": {"deletions": 3, "additions": 17, "total": 20}, "commit": {"date": "2010-10-26T00:55:08Z", "authorId": "", "author": "Robey Pointer"}}

@@ -1,0 +1,1 @@
+{"repo": "sbt-thrift", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/build.properties"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-01-21T23:31:59Z", "authorId": "", "author": "Josh Hull"}}

@@ -1,0 +1,1 @@
+{"repo": "gizzard", "files": [{"status": "modified", "deletions": 21, "additions": 13, "changes": 34, "filename": "src/main/scala/com/twitter/gizzard/nameserver/SqlShard.scala"}], "stats": {"deletions": 21, "additions": 13, "total": 34}, "commit": {"date": "2011-01-11T03:26:10Z", "authorId": "freels", "author": "Matt Freels"}}

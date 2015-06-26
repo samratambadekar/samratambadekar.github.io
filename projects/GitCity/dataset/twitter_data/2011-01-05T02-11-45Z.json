@@ -1,0 +1,1 @@
+{"repo": "gizzmo", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "lib/gizzard/commands.rb"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2011-01-05T02:11:45Z", "authorId": "freels", "author": "Matt Freels"}}

@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 3, "additions": 2, "changes": 5, "filename": "core/src/main/java/org/apache/mahout/cf/taste/impl/recommender/svd/SVDPreference.java"}], "stats": {"deletions": 3, "additions": 2, "total": 5}, "commit": {"date": "2011-03-22T08:48:57Z", "authorId": "srowen", "author": "Sean R. Owen"}}

@@ -1,0 +1,1 @@
+{"repo": "standard-project", "files": [{"status": "modified", "deletions": 11, "additions": 22, "changes": 33, "filename": "src/main/scala/com/twitter/sbt/Tartifactory.scala"}], "stats": {"deletions": 11, "additions": 22, "total": 33}, "commit": {"date": "2010-12-23T22:25:24Z", "authorId": "mccv", "author": "mmcbride"}}

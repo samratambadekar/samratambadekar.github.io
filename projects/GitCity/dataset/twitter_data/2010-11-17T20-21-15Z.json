@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "src/partest/scala/tools/partest/nest/DirectRunner.scala"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2010-11-17T20:21:15Z", "authorId": "paulp", "author": "Paul Phillips"}}

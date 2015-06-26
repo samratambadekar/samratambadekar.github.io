@@ -1,0 +1,1 @@
+{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 4, "changes": 5, "filename": "config/ac-macros/maintainer.m4"}], "stats": {"deletions": 1, "additions": 4, "total": 5}, "commit": {"date": "2010-12-07T15:06:20Z", "authorId": "", "author": "Davi Arnaut"}}

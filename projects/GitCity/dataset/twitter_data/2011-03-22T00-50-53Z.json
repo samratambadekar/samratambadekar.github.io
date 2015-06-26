@@ -1,0 +1,1 @@
+{"repo": "naggati2", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/main/scala/com/twitter/naggati/codec/MemcacheCodec.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-03-22T00:50:53Z", "authorId": "alpire", "author": "Alexandre Rebert"}}

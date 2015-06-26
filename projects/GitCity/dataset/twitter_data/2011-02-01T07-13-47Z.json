@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 6, "changes": 7, "filename": "config.c"}, {"status": "modified", "deletions": 0, "additions": 4, "changes": 4, "filename": "t/t1300-repo-config.sh"}], "stats": {"deletions": 1, "additions": 10, "total": 11}, "commit": {"date": "2011-02-01T07:13:47Z", "authorId": "lpechacek", "author": "Libor Pechacek"}}

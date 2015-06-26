@@ -1,0 +1,1 @@
+{"repo": "twitter-text-js", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "test/twitter-text-conformance"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-10-22T21:32:45Z", "authorId": "bcherry", "author": "Ben Cherry"}}

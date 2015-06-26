@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "renamed", "deletions": 0, "additions": 0, "changes": 0, "filename": "t/t7611-merge-abort.sh"}], "stats": {"deletions": 0, "additions": 0, "total": 0}, "commit": {"date": "2010-12-13T10:14:02Z", "authorId": "", "author": "Johannes Sixt"}}

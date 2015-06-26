@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/scala/spark/MesosScheduler.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-09-29T00:28:54Z", "authorId": "", "author": "Justin Ma"}}

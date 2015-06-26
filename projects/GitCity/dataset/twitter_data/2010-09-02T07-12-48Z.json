@@ -1,0 +1,1 @@
+{"repo": "gizzard", "files": [{"status": "modified", "deletions": 4, "additions": 0, "changes": 4, "filename": "src/test/scala/com/twitter/gizzard/jobs/CopySpec.scala"}], "stats": {"deletions": 4, "additions": 0, "total": 4}, "commit": {"date": "2010-09-02T07:12:48Z", "authorId": "", "author": "Ed Ceaser"}}

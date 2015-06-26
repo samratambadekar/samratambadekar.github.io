@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 7, "additions": 3, "changes": 10, "filename": "core/src/test/java/org/apache/mahout/math/hadoop/stochasticsvd/LocalSSVDSolverTest.java"}], "stats": {"deletions": 7, "additions": 3, "total": 10}, "commit": {"date": "2011-03-22T19:18:10Z", "authorId": "", "author": "Sebastian Schelter"}}

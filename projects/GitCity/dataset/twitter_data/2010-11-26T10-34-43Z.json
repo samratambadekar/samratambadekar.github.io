@@ -1,0 +1,1 @@
+{"repo": "scala", "files": [{"status": "added", "deletions": 0, "additions": 78, "changes": 78, "filename": "test/files/run/pc-conversions.scala"}], "stats": {"deletions": 0, "additions": 78, "total": 78}, "commit": {"date": "2010-11-26T10:34:43Z", "authorId": "axel22", "author": "Aleksandar Pokopec"}}

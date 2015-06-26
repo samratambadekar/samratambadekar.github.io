@@ -1,0 +1,1 @@
+{"repo": "thrift_client", "files": [{"status": "added", "deletions": 0, "additions": 34, "changes": 34, "filename": "thrift_client.gemspec"}], "stats": {"deletions": 0, "additions": 34, "total": 34}, "commit": {"date": "2010-10-28T17:06:35Z", "authorId": "wr0ngway", "author": "Matt Conway"}}

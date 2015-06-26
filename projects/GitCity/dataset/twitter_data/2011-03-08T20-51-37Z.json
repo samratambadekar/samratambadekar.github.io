@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 4, "additions": 7, "changes": 11, "filename": "Documentation/diff-generate-patch.txt"}], "stats": {"deletions": 4, "additions": 7, "total": 11}, "commit": {"date": "2011-03-08T20:51:37Z", "authorId": "meonkeys", "author": "Adam Monsen"}}

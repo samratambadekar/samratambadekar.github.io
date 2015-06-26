@@ -1,0 +1,1 @@
+{"repo": "flockdb", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/main/thrift/Flockdb.thrift"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-09-03T21:23:49Z", "authorId": "", "author": "Kyle Maxwell"}}

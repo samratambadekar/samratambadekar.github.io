@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "utils/src/main/java/org/apache/mahout/utils/vectors/VectorDumper.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-08-16T15:19:12Z", "authorId": "", "author": "Sebastian Schelter"}}

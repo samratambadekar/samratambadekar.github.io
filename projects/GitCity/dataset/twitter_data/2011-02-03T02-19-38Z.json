@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 21, "additions": 33, "changes": 54, "filename": "finagle-core/src/main/scala/com/twitter/finagle/builder/ClientBuilder.scala"}], "stats": {"deletions": 21, "additions": 33, "total": 54}, "commit": {"date": "2011-02-03T02:19:38Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

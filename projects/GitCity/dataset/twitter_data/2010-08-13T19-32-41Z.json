@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 7, "additions": 9, "changes": 16, "filename": "examples/src/main/java/org/apache/mahout/clustering/display/DisplayDirichlet.java"}], "stats": {"deletions": 7, "additions": 9, "total": 16}, "commit": {"date": "2010-08-13T19:32:41Z", "authorId": "srowen", "author": "Sean R. Owen"}}

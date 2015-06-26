@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 82, "additions": 79, "changes": 161, "filename": "math/src/main/java/org/apache/mahout/math/jet/random/Fun.java"}], "stats": {"deletions": 82, "additions": 79, "total": 161}, "commit": {"date": "2010-08-15T07:02:48Z", "authorId": "tdunning", "author": "Ted Dunning"}}

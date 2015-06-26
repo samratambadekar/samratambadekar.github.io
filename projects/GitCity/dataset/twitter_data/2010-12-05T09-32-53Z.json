@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "vcs-svn/repo_tree.c"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2010-12-05T09:32:53Z", "authorId": "jrn", "author": "Jonathan Nieder"}}

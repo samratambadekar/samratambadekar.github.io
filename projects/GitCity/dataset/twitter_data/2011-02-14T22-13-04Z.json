@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 5, "additions": 20, "changes": 25, "filename": "perl/Git.pm"}, {"status": "modified", "deletions": 0, "additions": 10, "changes": 10, "filename": "t/t9700/test.pl"}], "stats": {"deletions": 5, "additions": 30, "total": 35}, "commit": {"date": "2011-02-14T22:13:04Z", "authorId": "unpush", "author": "Masatake Osanai"}}

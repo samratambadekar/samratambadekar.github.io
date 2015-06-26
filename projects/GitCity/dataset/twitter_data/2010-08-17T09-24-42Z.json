@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 1, "changes": 1, "filename": "config.mak.in"}, {"status": "modified", "deletions": 0, "additions": 21, "changes": 21, "filename": "configure.ac"}], "stats": {"deletions": 0, "additions": 22, "total": 22}, "commit": {"date": "2010-08-17T09:24:42Z", "authorId": "jrn", "author": "Jonathan Nieder"}}

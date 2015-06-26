@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "core/src/main/java/org/apache/mahout/common/AbstractJob.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-01-31T17:40:15Z", "authorId": "", "author": "Jeff Eastman"}}

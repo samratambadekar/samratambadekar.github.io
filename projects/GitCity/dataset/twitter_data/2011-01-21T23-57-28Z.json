@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "finagle-core/src/main/scala/com/twitter/finagle/util/WatermarkPool.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-01-21T23:57:28Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

@@ -1,0 +1,1 @@
+{"repo": "sbt-package-dist", "files": [{"status": "modified", "deletions": 10, "additions": 10, "changes": 20, "filename": "src/main/scala/com/twitter/sbt/ProjectWrapper.scala"}], "stats": {"deletions": 10, "additions": 10, "total": 20}, "commit": {"date": "2011-03-03T23:10:56Z", "authorId": "", "author": "Robey Pointer"}}

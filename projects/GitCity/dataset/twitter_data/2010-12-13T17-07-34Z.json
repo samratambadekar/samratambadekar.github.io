@@ -1,0 +1,1 @@
+{"repo": "git", "files": [{"status": "changed", "deletions": 0, "additions": 0, "changes": 0, "filename": "t/t9158-git-svn-mergeinfo.sh"}], "stats": {"deletions": 0, "additions": 0, "total": 0}, "commit": {"date": "2010-12-13T17:07:34Z", "authorId": "peff", "author": "Jeff King"}}

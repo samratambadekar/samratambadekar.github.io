@@ -1,0 +1,1 @@
+{"repo": "mahout", "files": [{"status": "modified", "deletions": 6, "additions": 10, "changes": 16, "filename": "core/src/main/java/org/apache/mahout/cf/taste/impl/recommender/svd/ExpectationMaximizationSVDFactorizer.java"}], "stats": {"deletions": 6, "additions": 10, "total": 16}, "commit": {"date": "2011-03-09T14:41:01Z", "authorId": "srowen", "author": "Sean R. Owen"}}

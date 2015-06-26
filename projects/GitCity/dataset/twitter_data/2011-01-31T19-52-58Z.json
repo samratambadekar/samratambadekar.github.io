@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 5, "additions": 6, "changes": 11, "filename": "finagle-core/src/test/scala/com/twitter/finagle/channel/ChannelServiceSpec.scala"}], "stats": {"deletions": 5, "additions": 6, "total": 11}, "commit": {"date": "2011-01-31T19:52:58Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

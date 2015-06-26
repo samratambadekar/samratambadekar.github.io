@@ -1,0 +1,1 @@
+{"repo": "spark", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "alltests"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "run"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2010-10-16T19:18:02Z", "authorId": "mateiz", "author": "Matei Zaharia"}}

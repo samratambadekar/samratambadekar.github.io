@@ -1,0 +1,1 @@
+{"repo": "sbt-thrift", "files": [{"status": "modified", "deletions": 8, "additions": 13, "changes": 21, "filename": "src/main/scala/com/twitter/sbt/DefaultRepos.scala"}], "stats": {"deletions": 8, "additions": 13, "total": 21}, "commit": {"date": "2010-12-23T01:11:06Z", "authorId": "mccv", "author": "mmcbride"}}

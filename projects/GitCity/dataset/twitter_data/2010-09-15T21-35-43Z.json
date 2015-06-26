@@ -1,0 +1,1 @@
+{"repo": "thrift_client", "files": [{"status": "modified", "deletions": 6, "additions": 8, "changes": 14, "filename": "test/thrift_client_test.rb"}], "stats": {"deletions": 6, "additions": 8, "total": 14}, "commit": {"date": "2010-09-15T21:35:43Z", "authorId": "ryanking", "author": "Ryan King"}}

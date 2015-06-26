@@ -1,0 +1,1 @@
+{"repo": "ostrich", "files": [{"status": "modified", "deletions": 2, "additions": 1, "changes": 3, "filename": "project/plugins/Plugins.scala"}], "stats": {"deletions": 2, "additions": 1, "total": 3}, "commit": {"date": "2010-12-01T22:31:57Z", "authorId": "", "author": "Robey Pointer"}}

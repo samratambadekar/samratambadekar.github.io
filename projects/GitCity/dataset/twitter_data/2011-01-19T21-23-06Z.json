@@ -1,0 +1,1 @@
+{"repo": "sbt-package-dist", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "src/main/scala/com/twitter/sbt/CompileThrift.scala"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2011-01-19T21:23:06Z", "authorId": "9len", "author": "Glen D Sanford"}}

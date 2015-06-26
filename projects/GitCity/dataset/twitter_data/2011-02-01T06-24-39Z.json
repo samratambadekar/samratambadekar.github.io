@@ -1,0 +1,1 @@
+{"repo": "finagle", "files": [{"status": "modified", "deletions": 13, "additions": 34, "changes": 47, "filename": "finagle-stream/src/test/scala/com/twitter/finagle/stream/EndToEndSpec.scala"}], "stats": {"deletions": 13, "additions": 34, "total": 47}, "commit": {"date": "2011-02-01T06:24:39Z", "authorId": "", "author": "Nick Kallen"}}

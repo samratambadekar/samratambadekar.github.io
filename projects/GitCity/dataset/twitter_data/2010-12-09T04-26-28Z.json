@@ -1,0 +1,1 @@
+{"repo": "ostrich", "files": [{"status": "modified", "deletions": 5, "additions": 5, "changes": 10, "filename": "src/main/scala/com/twitter/ostrich/W3CReporter.scala"}], "stats": {"deletions": 5, "additions": 5, "total": 10}, "commit": {"date": "2010-12-09T04:26:28Z", "authorId": "", "author": "Robey Pointer"}}

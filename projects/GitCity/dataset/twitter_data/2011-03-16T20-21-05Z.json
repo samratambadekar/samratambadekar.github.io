@@ -1,0 +1,1 @@
+{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 6, "additions": 4, "changes": 10, "filename": "src/java/com/twitter/elephantbird/pig/util/PigCounterHelper.java"}], "stats": {"deletions": 6, "additions": 4, "total": 10}, "commit": {"date": "2011-03-16T20:21:05Z", "authorId": "rangadi", "author": "Raghu Angadi"}}

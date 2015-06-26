@@ -1,0 +1,1 @@
+{"repo": "sbt-package-dist", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/main/scala/com/twitter/sbt/Tartifactory.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2011-03-14T07:07:14Z", "authorId": "", "author": "Robey Pointer"}}

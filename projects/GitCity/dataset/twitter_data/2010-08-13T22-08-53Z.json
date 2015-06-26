@@ -1,0 +1,1 @@
+{"repo": "ostrich", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/build/OstrichProject.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-08-13T22:08:53Z", "authorId": "", "author": "Nick Kallen"}}

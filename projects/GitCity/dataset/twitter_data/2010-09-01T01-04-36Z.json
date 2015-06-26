@@ -1,0 +1,1 @@
+{"repo": "joauth", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "src/main/scala/com/twitter/joauth/Unpacker.scala"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2010-09-01T01:04:36Z", "authorId": "9len", "author": "Glen D Sanford"}}
