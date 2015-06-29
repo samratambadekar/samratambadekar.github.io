@@ -1,1 +1,0 @@
-{"repo": "flockdb", "files": [{"status": "modified", "deletions": 10, "additions": 0, "changes": 10, "filename": "src/test/scala/com/twitter/flockdb/unit/CopySpec.scala"}], "stats": {"deletions": 10, "additions": 0, "total": 10}, "commit": {"date": "2010-07-30T21:48:12Z", "authorId": "", "author": "Ed Ceaser"}}

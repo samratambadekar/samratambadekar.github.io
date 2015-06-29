@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 16, "additions": 22, "changes": 38, "filename": "builtin-tag.c"}, {"status": "modified", "deletions": 0, "additions": 35, "changes": 35, "filename": "t/t7004-tag.sh"}], "stats": {"deletions": 16, "additions": 57, "total": 73}, "commit": {"date": "2007-07-21T12:13:12Z", "authorId": "jasampler", "author": "Carlos Rica"}}

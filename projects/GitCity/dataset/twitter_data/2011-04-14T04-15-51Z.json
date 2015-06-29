@@ -1,1 +1,0 @@
-{"repo": "sbt-thrift", "files": [{"status": "modified", "deletions": 0, "additions": 0, "changes": 0, "filename": "src/main/resources/thrift/thrift.linux32"}], "stats": {"deletions": 0, "additions": 0, "total": 0}, "commit": {"date": "2011-04-14T04:15:51Z", "authorId": "olix0r", "author": "Oliver Gould"}}

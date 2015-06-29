@@ -1,1 +1,0 @@
-{"repo": "cassie", "files": [{"status": "modified", "deletions": 0, "additions": 1, "changes": 1, "filename": "CHANGELOG"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/build/Cassie.scala"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2011-05-17T20:31:06Z", "authorId": "ryanking", "author": "Ryan King"}}

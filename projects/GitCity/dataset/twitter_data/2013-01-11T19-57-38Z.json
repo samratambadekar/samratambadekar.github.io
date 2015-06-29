@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "modified", "deletions": 1, "additions": 22, "changes": 23, "filename": "core/src/main/scala/spark/deploy/JsonProtocol.scala"}], "stats": {"deletions": 1, "additions": 22, "total": 23}, "commit": {"date": "2013-01-11T19:57:38Z", "authorId": "", "author": "Tyson"}}

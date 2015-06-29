@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 11, "additions": 25, "changes": 36, "filename": "Makefile"}, {"status": "modified", "deletions": 0, "additions": 10, "changes": 10, "filename": "sources/meta/GenerateAll.java"}], "stats": {"deletions": 11, "additions": 35, "total": 46}, "commit": {"date": "2003-04-16T13:47:26Z", "authorId": "", "author": "paltherr"}}

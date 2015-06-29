@@ -1,1 +1,0 @@
-{"repo": "hbc", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "hbc-twitter4j/src/main/java/com/twitter/hbc/twitter4j/handler/SitestreamHandler.java"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2013-02-14T19:02:34Z", "authorId": "xsl", "author": "Steven Liu"}}

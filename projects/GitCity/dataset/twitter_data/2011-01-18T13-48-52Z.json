@@ -1,1 +1,0 @@
-{"repo": "twitter4j", "files": [{"status": "modified", "deletions": 18, "additions": 39, "changes": 57, "filename": "twitter4j-core/src/test/java/twitter4j/util/TimeSpanConverterTest.java"}], "stats": {"deletions": 18, "additions": 39, "total": 57}, "commit": {"date": "2011-01-18T13:48:52Z", "authorId": "ciaranj", "author": "ciaranj"}}

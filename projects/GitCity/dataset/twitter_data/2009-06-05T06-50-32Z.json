@@ -1,1 +1,0 @@
-{"repo": "twitter4j", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "bin/getTimelines.cmd"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2009-06-05T06:50:32Z", "authorId": "", "author": "yusuke"}}

@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "renamed", "deletions": 1, "additions": 2, "changes": 3, "filename": "src/main/scala/com/twitter/finagle/thrift/ThriftFrameCodec.scala"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2010-10-20T06:03:25Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

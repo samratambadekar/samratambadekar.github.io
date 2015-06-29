@@ -1,1 +1,0 @@
-{"repo": "twitter-server", "files": [{"status": "modified", "deletions": 4, "additions": 10, "changes": 14, "filename": "src/main/scala/com/twitter/server/Stats.scala"}], "stats": {"deletions": 4, "additions": 10, "total": 14}, "commit": {"date": "2013-03-28T21:26:18Z", "authorId": "sprsquish", "author": "Jeff Smick"}}

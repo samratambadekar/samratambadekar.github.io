@@ -1,1 +1,0 @@
-{"repo": "sbt-thrift", "files": [{"status": "modified", "deletions": 4, "additions": 15, "changes": 19, "filename": "src/main/scala/com/twitter/sbt/AdhocInlines.scala"}], "stats": {"deletions": 4, "additions": 15, "total": 19}, "commit": {"date": "2011-02-16T19:50:27Z", "authorId": "freels", "author": "Matt Freels"}}

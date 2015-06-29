@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 0, "changes": 2, "filename": "t/t4200-rerere.sh"}], "stats": {"deletions": 2, "additions": 0, "total": 2}, "commit": {"date": "2009-05-06T22:56:17Z", "authorId": "", "author": "Brandon Casey"}}

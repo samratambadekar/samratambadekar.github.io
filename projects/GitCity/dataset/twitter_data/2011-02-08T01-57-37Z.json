@@ -1,1 +1,0 @@
-{"repo": "cassie", "files": [{"status": "modified", "deletions": 8, "additions": 21, "changes": 29, "filename": "src/main/scala/com/twitter/cassie/ClusterMapper.scala"}], "stats": {"deletions": 8, "additions": 21, "total": 29}, "commit": {"date": "2011-02-08T01:57:37Z", "authorId": "ryanking", "author": "Ryan King"}}

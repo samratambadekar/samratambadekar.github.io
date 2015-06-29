@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "src/compiler/scala/tools/ant/templates/tool-unix.tmpl"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2008-02-23T12:43:28Z", "authorId": "", "author": "Burak Emir"}}

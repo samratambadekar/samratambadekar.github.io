@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "modified", "deletions": 0, "additions": 4, "changes": 4, "filename": "conf/log4j.properties"}], "stats": {"deletions": 0, "additions": 4, "total": 4}, "commit": {"date": "2010-09-29T06:58:19Z", "authorId": "mateiz", "author": "Matei Zaharia"}}

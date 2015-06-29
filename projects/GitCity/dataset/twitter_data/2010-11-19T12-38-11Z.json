@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 33, "additions": 111, "changes": 144, "filename": "src/library/scala/collection/immutable/RedBlack.scala"}], "stats": {"deletions": 33, "additions": 111, "total": 144}, "commit": {"date": "2010-11-19T12:38:11Z", "authorId": "axel22", "author": "Aleksandar Pokopec"}}

@@ -1,1 +1,0 @@
-{"repo": "twitter4j", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "twitter4j-core/src/main/java/twitter4j/http/AccessToken.java"}], "stats": {"deletions": 0, "additions": 2, "total": 2}, "commit": {"date": "2011-01-18T21:57:09Z", "authorId": "jloomis", "author": "Jenny Williamson"}}

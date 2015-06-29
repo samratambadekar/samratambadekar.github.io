@@ -1,1 +1,0 @@
-{"repo": "scalding", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "src/main/scala/com/twitter/scalding/FileSource.scala"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2012-08-10T19:32:02Z", "authorId": "avibryant", "author": "Avi Bryant"}}

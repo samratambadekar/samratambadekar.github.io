@@ -1,1 +1,0 @@
-{"repo": "storehaus", "files": [{"status": "modified", "deletions": 4, "additions": 21, "changes": 25, "filename": "storehaus-core/src/main/scala/com/twitter/storehaus/CachedReadableStore.scala"}], "stats": {"deletions": 4, "additions": 21, "total": 25}, "commit": {"date": "2013-03-28T18:06:39Z", "authorId": "", "author": "Sam Ritchie"}}

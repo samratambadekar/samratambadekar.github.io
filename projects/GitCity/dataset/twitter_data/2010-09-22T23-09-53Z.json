@@ -1,1 +1,0 @@
-{"repo": "ostrich", "files": [{"status": "modified", "deletions": 2, "additions": 15, "changes": 17, "filename": "src/main/scala/com/twitter/ostrich/ServiceTracker.scala"}], "stats": {"deletions": 2, "additions": 15, "total": 17}, "commit": {"date": "2010-09-22T23:09:53Z", "authorId": "", "author": "eaceaser"}}

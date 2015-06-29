@@ -1,1 +1,0 @@
-{"repo": "haplocheirus", "files": [{"status": "modified", "deletions": 6, "additions": 4, "changes": 10, "filename": "src/main/scala/com/twitter/haplocheirus/PipelinedRedisClient.scala"}], "stats": {"deletions": 6, "additions": 4, "total": 10}, "commit": {"date": "2011-08-16T02:27:23Z", "authorId": "rcohen", "author": "Ross Cohen"}}

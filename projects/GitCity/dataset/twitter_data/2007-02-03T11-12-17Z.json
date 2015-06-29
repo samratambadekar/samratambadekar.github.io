@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 6, "additions": 12, "changes": 18, "filename": "src/library/scala/List.scala"}], "stats": {"deletions": 6, "additions": 12, "total": 18}, "commit": {"date": "2007-02-03T11:12:17Z", "authorId": "", "author": "Burak Emir"}}

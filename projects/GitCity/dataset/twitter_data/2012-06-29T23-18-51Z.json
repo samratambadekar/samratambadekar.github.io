@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "modified", "deletions": 8, "additions": 12, "changes": 20, "filename": "core/src/main/scala/spark/scheduler/mesos/CoarseMesosScheduler.scala"}], "stats": {"deletions": 8, "additions": 12, "total": 20}, "commit": {"date": "2012-06-29T23:18:51Z", "authorId": "mateiz", "author": "Matei Zaharia"}}

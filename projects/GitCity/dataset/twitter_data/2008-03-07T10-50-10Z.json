@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 479, "additions": 9, "changes": 488, "filename": "src/library/scala/Either.scala"}], "stats": {"deletions": 479, "additions": 9, "total": 488}, "commit": {"date": "2008-03-07T10:50:10Z", "authorId": "", "author": "Geoffrey Washburn"}}

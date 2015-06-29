@@ -1,1 +1,0 @@
-{"repo": "twitter-cldr-rb", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "spec/formatters/calendars/datetime_formatter_spec.rb"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-04-02T18:51:23Z", "authorId": "KL-7", "author": "Kirill Lashuk"}}

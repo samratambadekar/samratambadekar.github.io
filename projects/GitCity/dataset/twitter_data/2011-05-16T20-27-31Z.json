@@ -1,1 +1,0 @@
-{"repo": "sbt-thrift", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "src/main/resources/ruby/codegen.rb"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2011-05-16T20:27:31Z", "authorId": "", "author": "Kyle Maxwell"}}

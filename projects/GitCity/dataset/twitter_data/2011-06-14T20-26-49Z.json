@@ -1,1 +1,0 @@
-{"repo": "libkestrel", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/main/scala/com/twitter/libkestrel/PutTest.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2011-06-14T20:26:49Z", "authorId": "", "author": "Robey Pointer"}}

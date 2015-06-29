@@ -1,1 +1,0 @@
-{"repo": "gizzard", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "src/main/thrift/ShardManager.thrift"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2010-07-11T20:26:52Z", "authorId": "", "author": "Robey Pointer"}}

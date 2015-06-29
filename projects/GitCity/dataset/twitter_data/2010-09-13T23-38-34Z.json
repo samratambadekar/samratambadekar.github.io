@@ -1,1 +1,0 @@
-{"repo": "haplocheirus", "files": [{"status": "modified", "deletions": 3, "additions": 64, "changes": 67, "filename": "src/main/thrift/TimelineStore.thrift"}], "stats": {"deletions": 3, "additions": 64, "total": 67}, "commit": {"date": "2010-09-13T23:38:34Z", "authorId": "", "author": "Robey Pointer"}}

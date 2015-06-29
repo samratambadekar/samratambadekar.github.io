@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 9, "additions": 11, "changes": 20, "filename": "src/compiler/scala/tools/nsc/transform/CleanUp.scala"}], "stats": {"deletions": 9, "additions": 11, "total": 20}, "commit": {"date": "2007-02-13T08:07:04Z", "authorId": "", "author": "mihaylov"}}

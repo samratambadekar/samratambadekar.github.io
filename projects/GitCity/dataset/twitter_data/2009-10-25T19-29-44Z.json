@@ -1,1 +1,0 @@
-{"repo": "hadoop-lzo", "files": [{"status": "modified", "deletions": 2, "additions": 6, "changes": 8, "filename": "src/java/com/hadoop/compression/lzo/LzoIndex.java"}], "stats": {"deletions": 2, "additions": 6, "total": 8}, "commit": {"date": "2009-10-25T19:29:44Z", "authorId": "kevinweil", "author": "Kevin Weil"}}

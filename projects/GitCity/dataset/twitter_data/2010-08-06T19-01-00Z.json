@@ -1,1 +1,0 @@
-{"repo": "ostrich", "files": [{"status": "modified", "deletions": 8, "additions": 58, "changes": 66, "filename": "src/test/scala/com/twitter/ostrich/AdminSocketServiceSpec.scala"}], "stats": {"deletions": 8, "additions": 58, "total": 66}, "commit": {"date": "2010-08-06T19:01:00Z", "authorId": "jorgeortiz85", "author": "Jorge Ortiz"}}

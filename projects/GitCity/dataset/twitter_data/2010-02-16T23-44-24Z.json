@@ -1,1 +1,0 @@
-{"repo": "gizzard", "files": [{"status": "modified", "deletions": 6, "additions": 6, "changes": 12, "filename": "src/main/scala/com/twitter/gizzard/jobs/CopyMachine.scala"}], "stats": {"deletions": 6, "additions": 6, "total": 12}, "commit": {"date": "2010-02-16T23:44:24Z", "authorId": "", "author": "Robey Pointer"}}

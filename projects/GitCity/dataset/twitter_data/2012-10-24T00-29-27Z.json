@@ -1,1 +1,0 @@
-{"repo": "zipkin", "files": [{"status": "modified", "deletions": 78, "additions": 30, "changes": 108, "filename": "project/Project.scala"}], "stats": {"deletions": 78, "additions": 30, "total": 108}, "commit": {"date": "2012-10-24T00:29:27Z", "authorId": "franklinhu", "author": "Franklin Hu"}}

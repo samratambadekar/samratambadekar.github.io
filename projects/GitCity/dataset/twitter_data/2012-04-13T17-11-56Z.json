@@ -1,1 +1,0 @@
-{"repo": "commons", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "src/python/twitter/common/python/pex_builder.py"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2012-04-13T17:11:56Z", "authorId": "wickman", "author": "brian wickman"}}

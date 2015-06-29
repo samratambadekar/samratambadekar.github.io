@@ -1,1 +1,0 @@
-{"repo": "finatra", "files": [{"status": "added", "deletions": 0, "additions": 202, "changes": 202, "filename": "LICENSE"}, {"status": "modified", "deletions": 10, "additions": 0, "changes": 10, "filename": "README.markdown"}], "stats": {"deletions": 10, "additions": 202, "total": 212}, "commit": {"date": "2012-04-18T18:55:59Z", "authorId": "capotej", "author": "Julio Capote"}}

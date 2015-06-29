@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 189, "additions": 193, "changes": 382, "filename": "ndb/src/ndbapi/NdbRecAttr.cpp"}], "stats": {"deletions": 189, "additions": 193, "total": 382}, "commit": {"date": "2007-03-07T03:37:30Z", "authorId": "", "author": "tomas@poseidon.mysql.com"}}

@@ -1,1 +1,0 @@
-{"repo": "twitcher", "files": [{"status": "modified", "deletions": 4, "additions": 3, "changes": 7, "filename": "README"}, {"status": "modified", "deletions": 0, "additions": 3, "changes": 3, "filename": "twitcher/config.py"}], "stats": {"deletions": 4, "additions": 6, "total": 10}, "commit": {"date": "2010-08-03T07:05:27Z", "authorId": "", "author": "Brady Catherman"}}

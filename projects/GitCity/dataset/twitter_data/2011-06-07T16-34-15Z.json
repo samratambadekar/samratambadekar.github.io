@@ -1,1 +1,0 @@
-{"repo": "util", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "util-core/src/main/scala/com/twitter/util/Future.scala"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2011-06-07T16:34:15Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

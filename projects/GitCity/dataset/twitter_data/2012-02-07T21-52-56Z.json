@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 20, "additions": 24, "changes": 44, "filename": "integration/src/main/java/org/apache/mahout/utils/vectors/lucene/LuceneIterator.java"}], "stats": {"deletions": 20, "additions": 24, "total": 44}, "commit": {"date": "2012-02-07T21:52:56Z", "authorId": "srowen", "author": "Sean R. Owen"}}

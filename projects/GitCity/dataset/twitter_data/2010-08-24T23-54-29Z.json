@@ -1,1 +1,0 @@
-{"repo": "twitter4j", "files": [{"status": "modified", "deletions": 1, "additions": 320, "changes": 321, "filename": "twitter4j-core/src/main/java/twitter4j/util/ImageUpload.java"}], "stats": {"deletions": 1, "additions": 320, "total": 321}, "commit": {"date": "2010-08-24T23:54:29Z", "authorId": "", "author": "nakaguchi"}}

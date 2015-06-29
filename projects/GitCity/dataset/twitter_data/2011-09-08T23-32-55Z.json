@@ -1,1 +1,0 @@
-{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/java/com/twitter/elephantbird/mapreduce/input/LzoBinaryB64LineRecordReader.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-09-08T23:32:55Z", "authorId": "dvryaboy", "author": "dvryaboy"}}

@@ -1,1 +1,0 @@
-{"repo": "summingbird", "files": [{"status": "added", "deletions": 0, "additions": 28, "changes": 28, "filename": "src/main/scala/com/twitter/summingbird/source/RangedSource.scala"}], "stats": {"deletions": 0, "additions": 28, "total": 28}, "commit": {"date": "2013-01-07T20:20:10Z", "authorId": "", "author": "Sam Ritchie"}}

@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 8, "changes": 9, "filename": "sources/scalac/transformer/Erasure.java"}], "stats": {"deletions": 1, "additions": 8, "total": 9}, "commit": {"date": "2004-06-03T09:18:54Z", "authorId": "", "author": "paltherr"}}

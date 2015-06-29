@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/compiler/scala/tools/nsc/typechecker/Typers.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2013-01-20T00:07:12Z", "authorId": "retronym", "author": "Jason Zaugg"}}

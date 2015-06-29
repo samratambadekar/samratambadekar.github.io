@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 18, "additions": 21, "changes": 39, "filename": "git-clean.sh"}], "stats": {"deletions": 18, "additions": 21, "total": 39}, "commit": {"date": "2007-11-04T10:30:55Z", "authorId": "MadCoder", "author": "Pierre Habouzit"}}

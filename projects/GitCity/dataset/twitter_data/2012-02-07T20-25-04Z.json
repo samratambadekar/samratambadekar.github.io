@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 5, "additions": 17, "changes": 22, "filename": "integration/src/main/java/org/apache/mahout/cf/taste/impl/model/mongodb/MongoDBDataModel.java"}], "stats": {"deletions": 5, "additions": 17, "total": 22}, "commit": {"date": "2012-02-07T20:25:04Z", "authorId": "srowen", "author": "Sean R. Owen"}}

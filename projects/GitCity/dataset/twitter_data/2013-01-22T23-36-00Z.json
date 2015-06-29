@@ -1,1 +1,0 @@
-{"repo": "algebird", "files": [{"status": "modified", "deletions": 6, "additions": 13, "changes": 19, "filename": "src/main/scala/com/twitter/algebird/BloomFilter.scala"}], "stats": {"deletions": 6, "additions": 13, "total": 19}, "commit": {"date": "2013-01-22T23:36:00Z", "authorId": "", "author": "rhall"}}

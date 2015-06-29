@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "t/t7060-wtstatus.sh"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "wt-status.c"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2009-12-12T08:18:12Z", "authorId": "gitster", "author": "Junio C Hamano"}}

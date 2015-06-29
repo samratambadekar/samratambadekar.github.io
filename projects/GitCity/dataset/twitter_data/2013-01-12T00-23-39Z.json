@@ -1,1 +1,0 @@
-{"repo": "bijection", "files": [{"status": "modified", "deletions": 2, "additions": 4, "changes": 6, "filename": "bijection-core/src/test/java/com/twitter/bijection/TestBijectionInJava.java"}], "stats": {"deletions": 2, "additions": 4, "total": 6}, "commit": {"date": "2013-01-12T00:23:39Z", "authorId": "jcoveney", "author": "Jonathan Coveney"}}

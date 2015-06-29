@@ -1,1 +1,0 @@
-{"repo": "sbt-package-dist", "files": [{"status": "removed", "deletions": 27, "additions": 0, "changes": 27, "filename": "src/main/scala/com/twitter/sbt/CompileScalaWrappers.scala"}], "stats": {"deletions": 27, "additions": 0, "total": 27}, "commit": {"date": "2011-02-17T00:19:57Z", "authorId": "", "author": "Kyle Maxwell"}}

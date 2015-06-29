@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 5, "additions": 2, "changes": 7, "filename": "compat/regex/regcomp.c"}], "stats": {"deletions": 5, "additions": 2, "total": 7}, "commit": {"date": "2010-08-17T09:24:40Z", "authorId": "lznuaa", "author": "Frank Li"}}

@@ -1,1 +1,0 @@
-{"repo": "snowflake", "files": [{"status": "modified", "deletions": 3, "additions": 4, "changes": 7, "filename": "src/test/scala/com/twitter/service/snowflake/IdWorkerSpec.scala"}], "stats": {"deletions": 3, "additions": 4, "total": 7}, "commit": {"date": "2010-04-23T00:09:41Z", "authorId": "ryanking", "author": "Ryan King"}}

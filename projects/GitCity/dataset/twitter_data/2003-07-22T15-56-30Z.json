@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 32, "additions": 16, "changes": 48, "filename": "sources/scalac/transformer/ExpandMixins.java"}], "stats": {"deletions": 32, "additions": 16, "total": 48}, "commit": {"date": "2003-07-22T15:56:30Z", "authorId": "", "author": "paltherr"}}

@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 0, "additions": 10, "changes": 10, "filename": "core/src/main/java/org/apache/mahout/cf/taste/impl/model/file/FileDataModel.java"}], "stats": {"deletions": 0, "additions": 10, "total": 10}, "commit": {"date": "2010-08-16T00:32:20Z", "authorId": "srowen", "author": "Sean R. Owen"}}

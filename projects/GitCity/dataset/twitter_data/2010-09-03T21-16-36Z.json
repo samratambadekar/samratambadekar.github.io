@@ -1,1 +1,0 @@
-{"repo": "flockdb-client", "files": [{"status": "modified", "deletions": 3, "additions": 0, "changes": 3, "filename": "lib/flock/client.rb"}], "stats": {"deletions": 3, "additions": 0, "total": 3}, "commit": {"date": "2010-09-03T21:16:36Z", "authorId": "", "author": "Kyle Maxwell"}}

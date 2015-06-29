@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 43, "changes": 43, "filename": "t/t7502-commit.sh"}], "stats": {"deletions": 0, "additions": 43, "total": 43}, "commit": {"date": "2010-05-27T15:34:50Z", "authorId": "rctay", "author": "Tay Ray Chuan"}}

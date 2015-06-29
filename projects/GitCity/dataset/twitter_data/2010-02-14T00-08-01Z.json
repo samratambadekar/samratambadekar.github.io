@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 4, "additions": 2, "changes": 6, "filename": "src/compiler/scala/tools/nsc/symtab/classfile/ClassfileParser.scala"}], "stats": {"deletions": 4, "additions": 2, "total": 6}, "commit": {"date": "2010-02-14T00:08:01Z", "authorId": "paulp", "author": "Paul Phillips"}}

@@ -1,1 +1,0 @@
-{"repo": "util", "files": [{"status": "modified", "deletions": 1, "additions": 8, "changes": 9, "filename": "util-jvm/src/main/scala/com/twitter/jvm/Hotspot.scala"}], "stats": {"deletions": 1, "additions": 8, "total": 9}, "commit": {"date": "2012-06-11T19:03:29Z", "authorId": "jpinner", "author": "Jeff Pinner"}}

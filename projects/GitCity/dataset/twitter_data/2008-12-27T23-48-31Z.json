@@ -1,1 +1,0 @@
-{"repo": "webrat", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "spec/api/matchers_spec.rb"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2008-12-27T23:48:31Z", "authorId": "gaffo", "author": "Mike Gaffney"}}

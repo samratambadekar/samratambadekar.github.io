@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 11, "changes": 12, "filename": "transport-helper.c"}, {"status": "modified", "deletions": 15, "additions": 61, "changes": 76, "filename": "transport.c"}], "stats": {"deletions": 16, "additions": 72, "total": 88}, "commit": {"date": "2009-12-09T15:26:29Z", "authorId": "", "author": "Ilari Liusvaara"}}

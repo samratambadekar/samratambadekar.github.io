@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/compiler/scala/tools/nsc/typechecker/Namers.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2005-12-20T12:56:25Z", "authorId": "", "author": "Gilles Dubochet"}}

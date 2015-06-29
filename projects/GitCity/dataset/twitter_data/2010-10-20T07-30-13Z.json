@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "modified", "deletions": 1, "additions": 4, "changes": 5, "filename": "src/test/scala/com/twitter/finagle/thrift/EndToEnd.scala"}], "stats": {"deletions": 1, "additions": 4, "total": 5}, "commit": {"date": "2010-10-20T07:30:13Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

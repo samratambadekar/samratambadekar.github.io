@@ -1,1 +1,0 @@
-{"repo": "cascading", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/core/cascading/pipe/cogroup/CoGroupClosure.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-06-28T02:08:50Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

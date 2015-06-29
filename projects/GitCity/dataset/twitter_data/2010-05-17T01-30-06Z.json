@@ -1,1 +1,0 @@
-{"repo": "pig", "files": [{"status": "modified", "deletions": 29, "additions": 31, "changes": 60, "filename": "src/org/apache/pig/impl/logicalLayer/parser/QueryParser.jjt"}], "stats": {"deletions": 29, "additions": 31, "total": 60}, "commit": {"date": "2010-05-17T01:30:06Z", "authorId": "", "author": "Jianyong Dai"}}

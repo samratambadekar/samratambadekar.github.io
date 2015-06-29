@@ -1,1 +1,0 @@
-{"repo": "kestrel", "files": [{"status": "added", "deletions": 0, "additions": 6, "changes": 6, "filename": "src/main/ruby/kcluster/BUILDING"}], "stats": {"deletions": 0, "additions": 6, "total": 6}, "commit": {"date": "2012-07-20T22:41:00Z", "authorId": "zuercher", "author": "Stephan Zuercher"}}

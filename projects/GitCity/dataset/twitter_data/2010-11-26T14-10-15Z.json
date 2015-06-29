@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 10, "changes": 11, "filename": "src/library/scala/collection/immutable/Vector.scala"}], "stats": {"deletions": 1, "additions": 10, "total": 11}, "commit": {"date": "2010-11-26T14:10:15Z", "authorId": "axel22", "author": "Aleksandar Pokopec"}}

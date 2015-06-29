@@ -1,1 +1,0 @@
-{"repo": "joauth", "files": [{"status": "added", "deletions": 0, "additions": 40, "changes": 40, "filename": "src/main/scala/com/twitter/joauth/NonceValidator.scala"}], "stats": {"deletions": 0, "additions": 40, "total": 40}, "commit": {"date": "2010-09-02T01:47:06Z", "authorId": "9len", "author": "Glen D Sanford"}}

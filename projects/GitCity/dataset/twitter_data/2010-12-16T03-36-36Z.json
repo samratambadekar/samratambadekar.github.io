@@ -1,1 +1,0 @@
-{"repo": "gizzard", "files": [{"status": "modified", "deletions": 0, "additions": 7, "changes": 7, "filename": "src/test/scala/com/twitter/gizzard/thrift/ShardManagerServiceSpec.scala"}], "stats": {"deletions": 0, "additions": 7, "total": 7}, "commit": {"date": "2010-12-16T03:36:36Z", "authorId": "", "author": "Kyle Maxwell"}}

@@ -1,1 +1,0 @@
-{"repo": "scribe", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "CHANGELOG"}, {"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "lib/scribe/scribe.rb"}], "stats": {"deletions": 1, "additions": 5, "total": 6}, "commit": {"date": "2009-10-28T19:12:55Z", "authorId": "", "author": "Evan Weaver"}}

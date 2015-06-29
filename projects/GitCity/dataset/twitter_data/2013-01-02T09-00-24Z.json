@@ -1,1 +1,0 @@
-{"repo": "twemproxy", "files": [{"status": "modified", "deletions": 28, "additions": 28, "changes": 56, "filename": "scripts/nutcracker.init"}], "stats": {"deletions": 28, "additions": 28, "total": 56}, "commit": {"date": "2013-01-02T09:00:24Z", "authorId": "", "author": "Thomas Parrott"}}

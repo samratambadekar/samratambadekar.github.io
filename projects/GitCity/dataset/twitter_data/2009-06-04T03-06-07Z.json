@@ -1,1 +1,0 @@
-{"repo": "webrat", "files": [{"status": "modified", "deletions": 2, "additions": 22, "changes": 24, "filename": "spec/public/selenium/selenium_session_spec.rb"}], "stats": {"deletions": 2, "additions": 22, "total": 24}, "commit": {"date": "2009-06-04T03:06:07Z", "authorId": "gaffo", "author": "Mike Gaffney"}}

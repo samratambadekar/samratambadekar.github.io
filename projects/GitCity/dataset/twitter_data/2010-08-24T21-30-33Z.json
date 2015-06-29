@@ -1,1 +1,0 @@
-{"repo": "ostrich", "files": [{"status": "modified", "deletions": 2, "additions": 3, "changes": 5, "filename": "src/main/scala/com/twitter/ostrich/W3CStats.scala"}], "stats": {"deletions": 2, "additions": 3, "total": 5}, "commit": {"date": "2010-08-24T21:30:33Z", "authorId": "", "author": "Ed Ceaser"}}

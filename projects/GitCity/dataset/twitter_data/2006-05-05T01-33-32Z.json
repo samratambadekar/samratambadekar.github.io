@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 10, "additions": 34, "changes": 44, "filename": "builtin-log.c"}], "stats": {"deletions": 10, "additions": 34, "total": 44}, "commit": {"date": "2006-05-05T01:33:32Z", "authorId": "dscho", "author": "Johannes Schindelin"}}

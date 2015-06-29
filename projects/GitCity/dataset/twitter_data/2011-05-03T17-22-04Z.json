@@ -1,1 +1,0 @@
-{"repo": "util", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "util-logging/src/test/scala/com/twitter/logging/QueueingHandlerSpec.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-05-03T17:22:04Z", "authorId": "dhelder", "author": "David Helder"}}

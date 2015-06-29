@@ -1,1 +1,0 @@
-{"repo": "twurl", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "lib/twurl/rcfile.rb"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-03-12T21:55:31Z", "authorId": "sferik", "author": "Erik Michaels-Ober"}}

@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 9, "additions": 11, "changes": 20, "filename": "src/compiler/scala/tools/nsc/backend/opt/Inliners.scala"}], "stats": {"deletions": 9, "additions": 11, "total": 20}, "commit": {"date": "2012-08-16T14:01:58Z", "authorId": "paulp", "author": "Paul Phillips"}}

@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 9, "additions": 2, "changes": 11, "filename": "test/files/jvm/javasigs.scala"}], "stats": {"deletions": 9, "additions": 2, "total": 11}, "commit": {"date": "2010-11-13T19:18:30Z", "authorId": "dragos", "author": "Iulian Dragos"}}

@@ -1,1 +1,0 @@
-{"repo": "algebird", "files": [{"status": "modified", "deletions": 1, "additions": 11, "changes": 12, "filename": "src/main/scala/com/twitter/algebird/Monad.scala"}], "stats": {"deletions": 1, "additions": 11, "total": 12}, "commit": {"date": "2013-01-29T20:36:40Z", "authorId": "sritchie", "author": "Sam Ritchie"}}

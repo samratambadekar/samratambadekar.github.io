@@ -1,1 +1,0 @@
-{"repo": "flockdb", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/main/scala/com/twitter/flockdb/shards/SqlShard.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2011-02-24T23:19:46Z", "authorId": "", "author": "Josh Hull"}}

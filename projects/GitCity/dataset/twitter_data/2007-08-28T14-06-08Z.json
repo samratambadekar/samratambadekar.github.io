@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "mysql-test/include/have_bug25714.inc"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2007-08-28T14:06:08Z", "authorId": "", "author": "df@pippilotta.erinye.com"}}

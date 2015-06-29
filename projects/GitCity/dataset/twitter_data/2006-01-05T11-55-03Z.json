@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 8, "changes": 8, "filename": "t/t4000-diff-format.sh"}], "stats": {"deletions": 0, "additions": 8, "total": 8}, "commit": {"date": "2006-01-05T11:55:03Z", "authorId": "raalkml", "author": "Alex Riesen"}}

@@ -1,1 +1,0 @@
-{"repo": "kestrel", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/com/twitter/scarling/PersistentQueue.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2008-05-27T02:45:46Z", "authorId": "", "author": "Robey Pointer"}}

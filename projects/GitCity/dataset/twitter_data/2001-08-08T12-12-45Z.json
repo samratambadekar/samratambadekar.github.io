@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 2, "additions": 8, "changes": 10, "filename": "Docs/manual.texi"}], "stats": {"deletions": 2, "additions": 8, "total": 10}, "commit": {"date": "2001-08-08T12:12:45Z", "authorId": "", "author": "mwagner@evoq.mwagner.org"}}

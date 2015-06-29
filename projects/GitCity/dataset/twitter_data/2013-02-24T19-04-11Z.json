@@ -1,1 +1,0 @@
-{"repo": "bookkeeper", "files": [{"status": "modified", "deletions": 6, "additions": 7, "changes": 13, "filename": "hedwig-client/src/main/java/org/apache/hedwig/client/loadtest/MessageProvider.java"}], "stats": {"deletions": 6, "additions": 7, "total": 13}, "commit": {"date": "2013-02-24T19:04:11Z", "authorId": "", "author": "Aniruddha Laud"}}

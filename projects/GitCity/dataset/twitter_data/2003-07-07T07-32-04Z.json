@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 25, "additions": 49, "changes": 74, "filename": "sources/scalac/transformer/matching/FreshVariableTraverser.java"}], "stats": {"deletions": 25, "additions": 49, "total": 74}, "commit": {"date": "2003-07-07T07:32:04Z", "authorId": "", "author": "michelou"}}

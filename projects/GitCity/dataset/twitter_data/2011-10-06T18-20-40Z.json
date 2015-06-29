@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 5, "additions": 15, "changes": 20, "filename": "bin/mahout"}], "stats": {"deletions": 5, "additions": 15, "total": 20}, "commit": {"date": "2011-10-06T18:20:40Z", "authorId": "tdunning", "author": "Ted Dunning"}}

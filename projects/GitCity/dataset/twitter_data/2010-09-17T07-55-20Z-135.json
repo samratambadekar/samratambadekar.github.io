@@ -1,1 +1,0 @@
-{"repo": "sbt-thrift", "files": [{"status": "modified", "deletions": 32, "additions": 26, "changes": 58, "filename": "src/main/scala/com/twitter/sbt/ReleaseManagement.scala"}], "stats": {"deletions": 32, "additions": 26, "total": 58}, "commit": {"date": "2010-09-17T07:55:20Z", "authorId": "freels", "author": "Matt Freels"}}

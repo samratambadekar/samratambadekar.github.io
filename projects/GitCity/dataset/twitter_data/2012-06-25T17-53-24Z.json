@@ -1,1 +1,0 @@
-{"repo": "util", "files": [{"status": "modified", "deletions": 2, "additions": 4, "changes": 6, "filename": "util-jvm/src/main/scala/com/twitter/jvm/Jvm.scala"}], "stats": {"deletions": 2, "additions": 4, "total": 6}, "commit": {"date": "2012-06-25T17:53:24Z", "authorId": "stevegury", "author": "Steve Gury"}}

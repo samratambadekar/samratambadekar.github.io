@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 5, "additions": 1, "changes": 6, "filename": "src/actors/scala/actors/Actor.scala"}], "stats": {"deletions": 5, "additions": 1, "total": 6}, "commit": {"date": "2010-02-24T12:18:45Z", "authorId": "phaller", "author": "Philipp Haller"}}

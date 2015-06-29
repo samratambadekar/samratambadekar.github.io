@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 10, "additions": 14, "changes": 24, "filename": "diff.c"}, {"status": "modified", "deletions": 0, "additions": 7, "changes": 7, "filename": "t/t4031-diff-rewrite-binary.sh"}], "stats": {"deletions": 10, "additions": 21, "total": 31}, "commit": {"date": "2011-02-19T08:04:56Z", "authorId": "peff", "author": "Jeff King"}}

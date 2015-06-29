@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "t/t9300-fast-import.sh"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2011-10-14T22:53:33Z", "authorId": "dscho", "author": "Johannes Schindelin"}}

@@ -1,1 +1,0 @@
-{"repo": "ostrich", "files": [{"status": "modified", "deletions": 0, "additions": 9, "changes": 9, "filename": "README.md"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/build.properties"}], "stats": {"deletions": 1, "additions": 10, "total": 11}, "commit": {"date": "2010-11-16T18:45:55Z", "authorId": "", "author": "Steve Jenson"}}

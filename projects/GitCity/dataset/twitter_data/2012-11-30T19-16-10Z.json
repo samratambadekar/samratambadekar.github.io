@@ -1,1 +1,0 @@
-{"repo": "zipkin", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "zipkin-web/src/main/resources/templates/index.mustache"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-11-30T19:16:10Z", "authorId": "franklinhu", "author": "Franklin Hu"}}

@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 6, "additions": 0, "changes": 6, "filename": "builtin-merge.c"}, {"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "git-pull.sh"}], "stats": {"deletions": 9, "additions": 3, "total": 12}, "commit": {"date": "2009-12-08T23:21:02Z", "authorId": "gitster", "author": "Junio C Hamano"}}

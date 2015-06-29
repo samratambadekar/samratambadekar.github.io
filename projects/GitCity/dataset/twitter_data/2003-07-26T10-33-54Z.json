@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 34, "changes": 35, "filename": "sources/scalac/symtab/SymbolSubstTypeMap.java"}], "stats": {"deletions": 1, "additions": 34, "total": 35}, "commit": {"date": "2003-07-26T10:33:54Z", "authorId": "", "author": "paltherr"}}

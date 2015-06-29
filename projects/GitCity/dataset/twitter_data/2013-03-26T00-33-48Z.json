@@ -1,1 +1,0 @@
-{"repo": "cloudhopper-commons", "files": [{"status": "removed", "deletions": 22, "additions": 0, "changes": 22, "filename": "src/main/java/com/cloudhopper/sxmp/Version.java"}], "stats": {"deletions": 22, "additions": 0, "total": 22}, "commit": {"date": "2013-03-26T00:33:48Z", "authorId": "silbakor", "author": "dhoffman"}}

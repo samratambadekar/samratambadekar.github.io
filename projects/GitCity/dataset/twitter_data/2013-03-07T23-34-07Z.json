@@ -1,1 +1,0 @@
-{"repo": "storehaus", "files": [{"status": "modified", "deletions": 30, "additions": 53, "changes": 83, "filename": "storehaus-algebra/src/main/scala/com/twitter/storehaus/algebra/BufferingMergeableStore.scala"}], "stats": {"deletions": 30, "additions": 53, "total": 83}, "commit": {"date": "2013-03-07T23:34:07Z", "authorId": "", "author": "Sam Ritchie"}}

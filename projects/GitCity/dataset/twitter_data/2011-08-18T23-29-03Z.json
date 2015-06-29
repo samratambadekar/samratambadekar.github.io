@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "finagle-core/src/test/scala/com/twitter/finagle/channel/ChannelServiceSpec.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2011-08-18T23:29:03Z", "authorId": "holdenk", "author": "Holden Karau"}}

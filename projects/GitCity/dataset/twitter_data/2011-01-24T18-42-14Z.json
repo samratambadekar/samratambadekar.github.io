@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "modified", "deletions": 0, "additions": 23, "changes": 23, "filename": "finagle-core/src/test/scala/com/twitter/finagle/loadbalancer/FailureAccrualStrategySpec.scala"}], "stats": {"deletions": 0, "additions": 23, "total": 23}, "commit": {"date": "2011-01-24T18:42:14Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

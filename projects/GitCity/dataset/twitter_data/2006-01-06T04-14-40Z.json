@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 3, "additions": 6, "changes": 9, "filename": "t/t3300-funny-names.sh"}], "stats": {"deletions": 3, "additions": 6, "total": 9}, "commit": {"date": "2006-01-06T04:14:40Z", "authorId": "", "author": "Junio C Hamano"}}

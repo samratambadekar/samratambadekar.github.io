@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "removed", "deletions": 75, "additions": 0, "changes": 75, "filename": "sources/scala/tools/dtd2scala/DeclToSQL.scala"}], "stats": {"deletions": 75, "additions": 0, "total": 75}, "commit": {"date": "2004-05-27T09:55:30Z", "authorId": "", "author": "buraq"}}

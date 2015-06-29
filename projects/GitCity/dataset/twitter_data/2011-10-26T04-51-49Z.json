@@ -1,1 +1,0 @@
-{"repo": "cloudhopper-commons", "files": [{"status": "modified", "deletions": 20, "additions": 52, "changes": 72, "filename": "src/main/java/com/cloudhopper/commons/charset/GSMCharset.java"}], "stats": {"deletions": 20, "additions": 52, "total": 72}, "commit": {"date": "2011-10-26T04:51:49Z", "authorId": "jjlauer", "author": "Joe Lauer"}}

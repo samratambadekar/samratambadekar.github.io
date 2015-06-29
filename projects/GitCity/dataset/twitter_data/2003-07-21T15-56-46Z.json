@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "added", "deletions": 0, "additions": 94, "changes": 94, "filename": "sources/scalac/symtab/SymbolCloner.java"}], "stats": {"deletions": 0, "additions": 94, "total": 94}, "commit": {"date": "2003-07-21T15:56:46Z", "authorId": "", "author": "paltherr"}}

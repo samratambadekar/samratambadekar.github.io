@@ -1,1 +1,0 @@
-{"repo": "bookkeeper", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "CHANGES.txt"}, {"status": "modified", "deletions": 1, "additions": 5, "changes": 6, "filename": "NOTICE.txt"}], "stats": {"deletions": 1, "additions": 7, "total": 8}, "commit": {"date": "2011-12-02T19:33:43Z", "authorId": "ivankelly", "author": "Ivan Brendan Kelly"}}

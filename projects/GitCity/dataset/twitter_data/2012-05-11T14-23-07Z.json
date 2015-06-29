@@ -1,1 +1,0 @@
-{"repo": "sprockets-commonjs-twitter", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "lib/sprockets/engine.rb"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-05-11T14:23:07Z", "authorId": "", "author": "Niels van Hoorn"}}

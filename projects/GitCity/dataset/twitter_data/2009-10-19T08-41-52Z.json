@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "sql/sql_locale.cc"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2009-10-19T08:41:52Z", "authorId": "", "author": "Alexander Barkov"}}

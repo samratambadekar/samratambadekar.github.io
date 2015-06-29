@@ -1,1 +1,0 @@
-{"repo": "webrat", "files": [{"status": "modified", "deletions": 0, "additions": 1, "changes": 1, "filename": "History.txt"}, {"status": "modified", "deletions": 4, "additions": 5, "changes": 9, "filename": "README.txt"}], "stats": {"deletions": 4, "additions": 6, "total": 10}, "commit": {"date": "2008-03-03T00:55:22Z", "authorId": "brynary", "author": "Bryan Helmkamp"}}

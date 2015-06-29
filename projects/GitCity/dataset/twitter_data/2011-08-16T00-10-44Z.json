@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/plugins/Plugins.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-08-16T00:10:44Z", "authorId": "", "author": "Robey Pointer"}}

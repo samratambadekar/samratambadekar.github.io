@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 8, "additions": 8, "changes": 16, "filename": "mysql-test/r/bdb_notembedded.result"}], "stats": {"deletions": 8, "additions": 8, "total": 16}, "commit": {"date": "2009-05-31T12:10:59Z", "authorId": "", "author": "He Zhenxing"}}

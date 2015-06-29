@@ -1,1 +1,0 @@
-{"repo": "webrat", "files": [{"status": "modified", "deletions": 4, "additions": 16, "changes": 20, "filename": "lib/webrat/selenium/location_strategy_javascript/webratlink.js"}], "stats": {"deletions": 4, "additions": 16, "total": 20}, "commit": {"date": "2009-09-18T19:48:08Z", "authorId": "brynary", "author": "Bryan Helmkamp"}}

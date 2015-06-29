@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "python/pyspark/context.py"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2013-01-10T15:45:12Z", "authorId": "JoshRosen", "author": "Josh Rosen"}}

@@ -1,1 +1,0 @@
-{"repo": "webrat", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "lib/webrat/selenium.rb"}], "stats": {"deletions": 0, "additions": 2, "total": 2}, "commit": {"date": "2008-12-07T19:02:06Z", "authorId": "brynary", "author": "Bryan Helmkamp"}}

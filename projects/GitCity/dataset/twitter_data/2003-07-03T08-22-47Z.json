@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 6, "additions": 11, "changes": 17, "filename": "sources/scalac/transformer/AddInterfacesPhase.java"}], "stats": {"deletions": 6, "additions": 11, "total": 17}, "commit": {"date": "2003-07-03T08:22:47Z", "authorId": "", "author": "paltherr"}}

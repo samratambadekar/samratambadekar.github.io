@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "math/src/main/java/org/apache/mahout/math/AbstractVector.java"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2010-01-28T07:51:31Z", "authorId": "jakemannix", "author": "Jacob Alexander Mannix"}}

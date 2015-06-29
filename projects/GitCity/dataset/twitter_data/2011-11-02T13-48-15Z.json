@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 3, "additions": 2, "changes": 5, "filename": "core/src/main/java/org/apache/mahout/clustering/minhash/MinHashMapper.java"}], "stats": {"deletions": 3, "additions": 2, "total": 5}, "commit": {"date": "2011-11-02T13:48:15Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

@@ -1,1 +1,0 @@
-{"repo": "standard-project", "files": [{"status": "modified", "deletions": 1, "additions": 6, "changes": 7, "filename": "src/main/scala/com/twitter/sbt/PackageDist.scala"}], "stats": {"deletions": 1, "additions": 6, "total": 7}, "commit": {"date": "2011-06-29T03:21:03Z", "authorId": "kmonkeyjam", "author": "Tina Huang"}}

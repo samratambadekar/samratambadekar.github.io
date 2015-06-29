@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 7, "additions": 3, "changes": 10, "filename": "src/compiler/scala/tools/nsc/typechecker/Typers.scala"}], "stats": {"deletions": 7, "additions": 3, "total": 10}, "commit": {"date": "2010-02-23T21:59:14Z", "authorId": "milessabin", "author": "Miles Sabin"}}

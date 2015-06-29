@@ -1,1 +1,0 @@
-{"repo": "ostrich", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/main/scala/com/twitter/ostrich/TimingStat.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2010-08-06T16:46:49Z", "authorId": "jorgeortiz85", "author": "Jorge Ortiz"}}

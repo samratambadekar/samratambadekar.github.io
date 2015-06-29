@@ -1,1 +1,0 @@
-{"repo": "thrift_client", "files": [{"status": "modified", "deletions": 7, "additions": 6, "changes": 13, "filename": "thrift_client.gemspec"}], "stats": {"deletions": 7, "additions": 6, "total": 13}, "commit": {"date": "2011-04-28T03:26:38Z", "authorId": "sferik", "author": "Erik Michaels-Ober"}}

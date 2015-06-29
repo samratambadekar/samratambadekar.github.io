@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "mysql-test/suite/rpl/t/disabled.def"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2008-07-21T19:05:06Z", "authorId": "", "author": "Sven Sandberg"}}

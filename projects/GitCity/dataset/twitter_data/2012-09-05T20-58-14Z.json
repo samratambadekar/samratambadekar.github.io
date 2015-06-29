@@ -1,1 +1,0 @@
-{"repo": "scalding", "files": [{"status": "modified", "deletions": 1, "additions": 22, "changes": 23, "filename": "src/main/scala/com/twitter/scalding/mathematics/Matrix.scala"}], "stats": {"deletions": 1, "additions": 22, "total": 23}, "commit": {"date": "2012-09-05T20:58:14Z", "authorId": "avibryant", "author": "avibryant"}}

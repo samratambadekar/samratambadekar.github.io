@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "removed", "deletions": 52, "additions": 0, "changes": 52, "filename": "test/files/jvm/xmlParsing.scala"}], "stats": {"deletions": 52, "additions": 0, "total": 52}, "commit": {"date": "2004-05-26T14:00:37Z", "authorId": "", "author": "buraq"}}

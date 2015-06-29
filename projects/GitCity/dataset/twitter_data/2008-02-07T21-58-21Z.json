@@ -1,1 +1,0 @@
-{"repo": "cascading", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/java/cascading/operation/Identity.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2008-02-07T21:58:21Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

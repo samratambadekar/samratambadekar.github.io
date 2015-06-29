@@ -1,1 +1,0 @@
-{"repo": "thrift_client", "files": [{"status": "modified", "deletions": 1, "additions": 14, "changes": 15, "filename": "lib/thrift_client/abstract_thrift_client.rb"}], "stats": {"deletions": 1, "additions": 14, "total": 15}, "commit": {"date": "2012-11-15T18:00:39Z", "authorId": "sprsquish", "author": "Jeff Smick"}}

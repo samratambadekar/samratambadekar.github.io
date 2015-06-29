@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "examples/src/main/scala/spark/examples/LocalLR.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2013-01-13T07:33:11Z", "authorId": "ericzhang-cn", "author": "Eric Zhang"}}

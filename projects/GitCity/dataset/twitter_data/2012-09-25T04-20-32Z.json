@@ -1,1 +1,0 @@
-{"repo": "twurl", "files": [{"status": "removed", "deletions": 4, "additions": 0, "changes": 4, "filename": "CHANGELOG"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "twurl.gemspec"}], "stats": {"deletions": 5, "additions": 1, "total": 6}, "commit": {"date": "2012-09-25T04:20:32Z", "authorId": "sferik", "author": "Erik Michaels-Ober"}}

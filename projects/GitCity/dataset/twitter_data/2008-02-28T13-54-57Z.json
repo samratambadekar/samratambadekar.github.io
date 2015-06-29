@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 11, "additions": 26, "changes": 37, "filename": "src/compiler/scala/tools/nsc/symtab/Types.scala"}], "stats": {"deletions": 11, "additions": 26, "total": 37}, "commit": {"date": "2008-02-28T13:54:57Z", "authorId": "odersky", "author": "Martin Odersky"}}

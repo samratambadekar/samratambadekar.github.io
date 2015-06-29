@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 8, "additions": 18, "changes": 26, "filename": "builtin/tag.c"}], "stats": {"deletions": 8, "additions": 18, "total": 26}, "commit": {"date": "2011-05-09T23:36:36Z", "authorId": "", "author": "Michael Schubert"}}

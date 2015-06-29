@@ -1,1 +1,0 @@
-{"repo": "pycascading", "files": [{"status": "modified", "deletions": 104, "additions": 88, "changes": 192, "filename": "python/pycascading/decorators.py"}], "stats": {"deletions": 104, "additions": 88, "total": 192}, "commit": {"date": "2012-04-19T00:31:53Z", "authorId": "", "author": "Gabor Szabo"}}

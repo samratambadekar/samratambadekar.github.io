@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 13, "changes": 14, "filename": "test/files/jvm/future-spec/TryTests.scala"}], "stats": {"deletions": 1, "additions": 13, "total": 14}, "commit": {"date": "2012-08-29T11:14:20Z", "authorId": "gkossakowski", "author": "Grzegorz Kossakowski"}}

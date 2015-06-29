@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "core/src/main/java/org/apache/mahout/classifier/naivebayes/test/TestNaiveBayesDriver.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-10-09T19:22:55Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

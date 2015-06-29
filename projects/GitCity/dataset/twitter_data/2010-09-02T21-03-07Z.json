@@ -1,1 +1,0 @@
-{"repo": "cascading", "files": [{"status": "modified", "deletions": 0, "additions": 54, "changes": 54, "filename": "src/test/cascading/ClusterTestCase.java"}], "stats": {"deletions": 0, "additions": 54, "total": 54}, "commit": {"date": "2010-09-02T21:03:07Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

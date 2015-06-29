@@ -1,1 +1,0 @@
-{"repo": "cascading", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/core/cascading/flow/ElementGraph.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-07-30T20:51:39Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

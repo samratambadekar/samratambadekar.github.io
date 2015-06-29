@@ -1,1 +1,0 @@
-{"repo": "cassovary", "files": [{"status": "removed", "deletions": 182, "additions": 0, "changes": 182, "filename": "src/main/scala/com/twitter/cassovary/graph/NodeTourist.scala"}], "stats": {"deletions": 182, "additions": 0, "total": 182}, "commit": {"date": "2012-04-01T17:17:49Z", "authorId": "ningtwitter", "author": "Ning Liang"}}

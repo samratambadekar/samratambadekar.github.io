@@ -1,1 +1,0 @@
-{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 5, "additions": 8, "changes": 13, "filename": "lib/extractor.rb"}], "stats": {"deletions": 5, "additions": 8, "total": 13}, "commit": {"date": "2010-01-19T17:51:11Z", "authorId": "", "author": "Matt Sanford"}}

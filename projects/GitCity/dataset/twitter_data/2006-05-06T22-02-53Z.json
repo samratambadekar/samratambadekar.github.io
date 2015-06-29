@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "checkout-index.c"}, {"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "update-index.c"}], "stats": {"deletions": 5, "additions": 5, "total": 10}, "commit": {"date": "2006-05-06T22:02:53Z", "authorId": "dscho", "author": "Johannes Schindelin"}}

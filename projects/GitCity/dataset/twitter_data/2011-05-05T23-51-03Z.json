@@ -1,1 +1,0 @@
-{"repo": "scala-bootstrapper", "files": [{"status": "modified", "deletions": 9, "additions": 12, "changes": 21, "filename": "lib/template/TUTORIAL.md"}], "stats": {"deletions": 9, "additions": 12, "total": 21}, "commit": {"date": "2011-05-05T23:51:03Z", "authorId": "dloft", "author": "Dave Loftesness"}}

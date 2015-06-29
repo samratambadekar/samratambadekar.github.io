@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "added", "deletions": 0, "additions": 44, "changes": 44, "filename": "finagle-core/src/test/scala/com/twitter/finagle/pool/PoolServiceWrapperSpec.scala"}], "stats": {"deletions": 0, "additions": 44, "total": 44}, "commit": {"date": "2011-01-31T23:08:20Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

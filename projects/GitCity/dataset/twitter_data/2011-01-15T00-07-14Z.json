@@ -1,1 +1,0 @@
-{"repo": "gizzard", "files": [{"status": "added", "deletions": 0, "additions": 19, "changes": 19, "filename": "src/main/scala/com/twitter/gizzard/shards/FanoutResults.scala"}], "stats": {"deletions": 0, "additions": 19, "total": 19}, "commit": {"date": "2011-01-15T00:07:14Z", "authorId": "", "author": "Kyle Maxwell"}}

@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 15, "changes": 17, "filename": "contrib/examples/git-merge.sh"}], "stats": {"deletions": 2, "additions": 15, "total": 17}, "commit": {"date": "2010-08-17T07:10:17Z", "authorId": "jrn", "author": "Jonathan Nieder"}}

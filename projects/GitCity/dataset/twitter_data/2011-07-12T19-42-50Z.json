@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 4, "additions": 8, "changes": 12, "filename": "src/compiler/scala/tools/nsc/typechecker/TreeCheckers.scala"}], "stats": {"deletions": 4, "additions": 8, "total": 12}, "commit": {"date": "2011-07-12T19:42:50Z", "authorId": "paulp", "author": "Paul Phillips"}}

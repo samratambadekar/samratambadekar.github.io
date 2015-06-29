@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/compiler/scala/tools/nsc/Interpreter.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-02-16T19:59:22Z", "authorId": "paulp", "author": "Paul Phillips"}}

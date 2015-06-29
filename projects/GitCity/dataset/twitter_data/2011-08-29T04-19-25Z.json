@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "git.c"}, {"status": "modified", "deletions": 0, "additions": 36, "changes": 36, "filename": "t/t7006-pager.sh"}], "stats": {"deletions": 0, "additions": 38, "total": 38}, "commit": {"date": "2011-08-29T04:19:25Z", "authorId": "gitster", "author": "Junio C Hamano"}}

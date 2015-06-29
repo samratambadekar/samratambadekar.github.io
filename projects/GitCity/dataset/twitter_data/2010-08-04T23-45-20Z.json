@@ -1,1 +1,0 @@
-{"repo": "ostrich", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/main/scala/com/twitter/ostrich/Stats.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2010-08-04T23:45:20Z", "authorId": "", "author": "Kyle Maxwell"}}

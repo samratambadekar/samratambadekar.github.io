@@ -1,1 +1,0 @@
-{"repo": "ostrich", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "src/main/scala/com/twitter/ostrich/stats/GraphiteStatsLogger.scala"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2012-05-09T20:30:58Z", "authorId": "dan-cx", "author": "Daniel McDonald"}}

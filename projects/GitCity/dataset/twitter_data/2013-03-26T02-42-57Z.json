@@ -1,1 +1,0 @@
-{"repo": "storehaus", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "project/Build.scala"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2013-03-26T02:42:57Z", "authorId": "softprops", "author": "softprops"}}

@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "renamed", "deletions": 1, "additions": 12, "changes": 13, "filename": "core/src/test/scala/spark/UtilsSuite.scala"}], "stats": {"deletions": 1, "additions": 12, "total": 13}, "commit": {"date": "2012-05-19T13:42:54Z", "authorId": "Benky", "author": "Richard Benkovsky"}}

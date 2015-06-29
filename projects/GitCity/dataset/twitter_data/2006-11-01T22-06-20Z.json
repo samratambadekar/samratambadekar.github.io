@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 15, "changes": 15, "filename": "builtin-unpack-objects.c"}, {"status": "modified", "deletions": 0, "additions": 13, "changes": 13, "filename": "index-pack.c"}], "stats": {"deletions": 0, "additions": 28, "total": 28}, "commit": {"date": "2006-11-01T22:06:20Z", "authorId": "", "author": "Nicolas Pitre"}}

@@ -1,1 +1,0 @@
-{"repo": "twitter-cldr-rb", "files": [{"status": "modified", "deletions": 4, "additions": 6, "changes": 10, "filename": "spec/collation/tailoring_spec.rb"}], "stats": {"deletions": 4, "additions": 6, "total": 10}, "commit": {"date": "2012-07-13T18:53:33Z", "authorId": "KL-7", "author": "Kirill Lashuk"}}

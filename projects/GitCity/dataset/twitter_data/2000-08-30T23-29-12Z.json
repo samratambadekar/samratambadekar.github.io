@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 0, "additions": 11, "changes": 11, "filename": "libmysql_r/Makefile.am"}], "stats": {"deletions": 0, "additions": 11, "total": 11}, "commit": {"date": "2000-08-30T23:29:12Z", "authorId": "", "author": "monty@work.mysql.com"}}

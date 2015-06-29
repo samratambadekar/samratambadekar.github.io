@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 3, "additions": 9, "changes": 12, "filename": "src/library/scala/xml/Xhtml.scala"}], "stats": {"deletions": 3, "additions": 9, "total": 12}, "commit": {"date": "2009-06-07T13:55:47Z", "authorId": "paulp", "author": "Paul Phillips"}}

@@ -1,1 +1,0 @@
-{"repo": "haplocheirus", "files": [{"status": "modified", "deletions": 0, "additions": 1, "changes": 1, "filename": "src/main/scala/com/twitter/haplocheirus/RedisPool.scala"}], "stats": {"deletions": 0, "additions": 1, "total": 1}, "commit": {"date": "2010-06-03T01:35:59Z", "authorId": "", "author": "Robey Pointer"}}

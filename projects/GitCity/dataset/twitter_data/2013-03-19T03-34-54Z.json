@@ -1,1 +1,0 @@
-{"repo": "twitter-text-java", "files": [{"status": "modified", "deletions": 0, "additions": 16, "changes": 16, "filename": "README.md"}, {"status": "modified", "deletions": 8, "additions": 122, "changes": 130, "filename": "pom.xml"}], "stats": {"deletions": 8, "additions": 138, "total": 146}, "commit": {"date": "2013-03-19T03:34:54Z", "authorId": "jakl", "author": "James Koval"}}

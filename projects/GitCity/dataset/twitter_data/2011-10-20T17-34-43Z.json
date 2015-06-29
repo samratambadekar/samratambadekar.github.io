@@ -1,1 +1,0 @@
-{"repo": "gizzmo", "files": [{"status": "modified", "deletions": 9, "additions": 7, "changes": 16, "filename": "lib/gizzard/transformation_scheduler.rb"}], "stats": {"deletions": 9, "additions": 7, "total": 16}, "commit": {"date": "2011-10-20T17:34:43Z", "authorId": "boazavital", "author": "Boaz Avital"}}

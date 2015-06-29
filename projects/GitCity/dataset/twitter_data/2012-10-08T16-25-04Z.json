@@ -1,1 +1,0 @@
-{"repo": "libkestrel", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "project/Build.scala"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2012-10-08T16:25:04Z", "authorId": "zuercher", "author": "Stephan Zuercher"}}

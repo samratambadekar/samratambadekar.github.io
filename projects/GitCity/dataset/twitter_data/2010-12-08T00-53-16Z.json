@@ -1,1 +1,0 @@
-{"repo": "kestrel", "files": [{"status": "modified", "deletions": 0, "additions": 50, "changes": 50, "filename": "src/main/scala/net/lag/kestrel/PersistentQueue.scala"}], "stats": {"deletions": 0, "additions": 50, "total": 50}, "commit": {"date": "2010-12-08T00:53:16Z", "authorId": "", "author": "Robey Pointer"}}

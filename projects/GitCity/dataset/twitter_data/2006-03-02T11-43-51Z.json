@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "t/t8001-annotate.sh"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2006-03-02T11:43:51Z", "authorId": "dscho", "author": "Johannes Schindelin"}}

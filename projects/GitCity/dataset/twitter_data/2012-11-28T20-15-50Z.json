@@ -1,1 +1,0 @@
-{"repo": "cassie", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "cassie-serversets/pom.xml"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2012-11-28T20:15:50Z", "authorId": "boazavital", "author": "Boaz Avital"}}

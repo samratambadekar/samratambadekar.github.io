@@ -1,1 +1,0 @@
-{"repo": "haplocheirus", "files": [{"status": "modified", "deletions": 3, "additions": 49, "changes": 52, "filename": "src/test/scala/com/twitter/haplocheirus/IntegrationSpec.scala"}], "stats": {"deletions": 3, "additions": 49, "total": 52}, "commit": {"date": "2010-08-25T21:20:29Z", "authorId": "", "author": "Robey Pointer"}}

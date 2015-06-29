@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 17, "additions": 34, "changes": 51, "filename": "sql/item_strfunc.cc"}], "stats": {"deletions": 17, "additions": 34, "total": 51}, "commit": {"date": "2012-08-05T10:59:28Z", "authorId": "", "author": "Chaithra Gopalareddy"}}

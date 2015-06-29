@@ -1,1 +1,0 @@
-{"repo": "bookkeeper", "files": [{"status": "modified", "deletions": 6, "additions": 2, "changes": 8, "filename": "hedwig-server/src/main/java/org/apache/hedwig/server/persistence/BookkeeperPersistenceManager.java"}], "stats": {"deletions": 6, "additions": 2, "total": 8}, "commit": {"date": "2012-10-23T22:00:49Z", "authorId": "", "author": "Aniruddha Laud"}}

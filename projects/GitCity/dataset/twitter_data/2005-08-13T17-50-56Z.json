@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "git-resolve-script"}, {"status": "modified", "deletions": 7, "additions": 3, "changes": 10, "filename": "sha1_name.c"}], "stats": {"deletions": 9, "additions": 5, "total": 14}, "commit": {"date": "2005-08-13T17:50:56Z", "authorId": "", "author": "Linus Torvalds"}}

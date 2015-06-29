@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 14, "changes": 16, "filename": "config.c"}, {"status": "modified", "deletions": 0, "additions": 9, "changes": 9, "filename": "t/t4202-log.sh"}], "stats": {"deletions": 2, "additions": 23, "total": 25}, "commit": {"date": "2010-12-11T00:13:14Z", "authorId": "gitster", "author": "Junio C Hamano"}}

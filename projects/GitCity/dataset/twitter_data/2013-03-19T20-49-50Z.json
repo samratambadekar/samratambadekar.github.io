@@ -1,1 +1,0 @@
-{"repo": "storehaus", "files": [{"status": "modified", "deletions": 0, "additions": 6, "changes": 6, "filename": "storehaus-algebra/src/main/scala/com/twitter/storehaus/algebra/ConvertedMergeableStore.scala"}], "stats": {"deletions": 0, "additions": 6, "total": 6}, "commit": {"date": "2013-03-19T20:49:50Z", "authorId": "", "author": "Sam Ritchie"}}

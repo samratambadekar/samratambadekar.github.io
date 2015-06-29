@@ -1,1 +1,0 @@
-{"repo": "gizzard", "files": [{"status": "modified", "deletions": 17, "additions": 17, "changes": 34, "filename": "src/main/scala/com/twitter/gizzard/shards/ReplicatingShard.scala"}], "stats": {"deletions": 17, "additions": 17, "total": 34}, "commit": {"date": "2010-12-15T21:59:50Z", "authorId": "freels", "author": "Matt Freels"}}

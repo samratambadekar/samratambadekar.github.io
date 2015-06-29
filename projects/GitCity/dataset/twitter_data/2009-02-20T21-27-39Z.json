@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 7, "additions": 9, "changes": 16, "filename": "maven/mahout-assembly.xml"}], "stats": {"deletions": 7, "additions": 9, "total": 16}, "commit": {"date": "2009-02-20T21:27:39Z", "authorId": "MaineC", "author": "Isabel Drost"}}

@@ -1,1 +1,0 @@
-{"repo": "twitter-text-java", "files": [{"status": "modified", "deletions": 23, "additions": 9, "changes": 32, "filename": "src/com/twitter/Autolink.java"}], "stats": {"deletions": 23, "additions": 9, "total": 32}, "commit": {"date": "2011-10-09T21:52:20Z", "authorId": "", "author": "Sam Pullara"}}

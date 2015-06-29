@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 8, "changes": 9, "filename": "integration/src/main/java/org/apache/mahout/utils/clustering/ClusterDumper.java"}], "stats": {"deletions": 1, "additions": 8, "total": 9}, "commit": {"date": "2011-10-15T10:12:37Z", "authorId": "srowen", "author": "Sean R. Owen"}}

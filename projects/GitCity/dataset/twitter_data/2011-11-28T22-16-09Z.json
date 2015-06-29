@@ -1,1 +1,0 @@
-{"repo": "kestrel", "files": [{"status": "modified", "deletions": 6, "additions": 12, "changes": 18, "filename": "src/main/scala/net/lag/kestrel/PeriodicSyncFile.scala"}], "stats": {"deletions": 6, "additions": 12, "total": 18}, "commit": {"date": "2011-11-28T22:16:09Z", "authorId": "zuercher", "author": "Stephan Zuercher"}}

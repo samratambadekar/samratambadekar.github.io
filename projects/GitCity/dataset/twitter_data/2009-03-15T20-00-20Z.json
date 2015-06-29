@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 0, "additions": 17, "changes": 17, "filename": "core/pom.xml"}, {"status": "modified", "deletions": 4, "additions": 5, "changes": 9, "filename": "pom.xml"}], "stats": {"deletions": 4, "additions": 22, "total": 26}, "commit": {"date": "2009-03-15T20:00:20Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

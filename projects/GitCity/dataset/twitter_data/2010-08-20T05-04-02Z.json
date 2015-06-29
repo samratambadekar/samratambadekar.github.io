@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 4, "changes": 5, "filename": "Documentation/docbook.xsl"}], "stats": {"deletions": 1, "additions": 4, "total": 5}, "commit": {"date": "2010-08-20T05:04:02Z", "authorId": "jrn", "author": "Jonathan Nieder"}}

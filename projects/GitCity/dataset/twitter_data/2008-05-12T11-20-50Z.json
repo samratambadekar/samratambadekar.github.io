@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 7, "additions": 1, "changes": 8, "filename": "core/pom.xml"}], "stats": {"deletions": 7, "additions": 1, "total": 8}, "commit": {"date": "2008-05-12T11:20:50Z", "authorId": "srowen", "author": "Sean R. Owen"}}

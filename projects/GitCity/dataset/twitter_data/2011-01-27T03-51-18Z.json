@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "finagle-kestrel/src/test/scala/com/twitter/finagle/kestrel/integration/ClientSpec.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2011-01-27T03:51:18Z", "authorId": "", "author": "Nick Kallen"}}

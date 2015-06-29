@@ -1,1 +1,0 @@
-{"repo": "cascading", "files": [{"status": "modified", "deletions": 1, "additions": 21, "changes": 22, "filename": "src/core/cascading/cascade/Cascade.java"}], "stats": {"deletions": 1, "additions": 21, "total": 22}, "commit": {"date": "2010-09-02T16:33:31Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

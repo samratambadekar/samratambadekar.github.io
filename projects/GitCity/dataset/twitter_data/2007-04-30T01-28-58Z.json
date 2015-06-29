@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "mysql-test/t/olap.test"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2007-04-30T01:28:58Z", "authorId": "", "author": "igor@olga.mysql.com"}}

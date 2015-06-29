@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "added", "deletions": 0, "additions": 170, "changes": 170, "filename": "core/src/main/scala/spark/HadoopWriter.scala"}], "stats": {"deletions": 0, "additions": 170, "total": 170}, "commit": {"date": "2011-07-14T16:42:57Z", "authorId": "mateiz", "author": "Matei Zaharia"}}

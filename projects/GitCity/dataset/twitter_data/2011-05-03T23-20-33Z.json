@@ -1,1 +1,0 @@
-{"repo": "cassie", "files": [{"status": "modified", "deletions": 19, "additions": 18, "changes": 37, "filename": "cassie-core/src/main/scala/com/twitter/cassie/Keyspace.scala"}], "stats": {"deletions": 19, "additions": 18, "total": 37}, "commit": {"date": "2011-05-03T23:20:33Z", "authorId": "", "author": "Kyle Maxwell"}}

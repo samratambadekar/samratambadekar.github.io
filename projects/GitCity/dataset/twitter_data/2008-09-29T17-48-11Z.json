@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "core/src/main/java/org/apache/mahout/cf/taste/impl/similarity/TanimotoCoefficientSimilarity.java"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2008-09-29T17:48:11Z", "authorId": "", "author": "Otis Gospodnetic"}}

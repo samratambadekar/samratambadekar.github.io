@@ -1,1 +1,0 @@
-{"repo": "hadoop-lzo", "files": [{"status": "modified", "deletions": 9, "additions": 37, "changes": 46, "filename": "README"}], "stats": {"deletions": 9, "additions": 37, "total": 46}, "commit": {"date": "2010-01-11T08:48:47Z", "authorId": "kevinweil", "author": "Kevin Weil"}}

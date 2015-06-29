@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "cmd-line-utils/readline/complete.c"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2005-10-11T12:03:41Z", "authorId": "", "author": "bar@mysql.com"}}

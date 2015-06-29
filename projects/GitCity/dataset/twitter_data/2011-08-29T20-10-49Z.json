@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 8, "changes": 9, "filename": "Documentation/git-format-patch.txt"}], "stats": {"deletions": 1, "additions": 8, "total": 9}, "commit": {"date": "2011-08-29T20:10:49Z", "authorId": "trast", "author": "Thomas Rast"}}

@@ -1,1 +1,0 @@
-{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "lib/regex.rb"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2012-02-16T06:17:49Z", "authorId": "niw", "author": "Yoshimasa Niwa"}}

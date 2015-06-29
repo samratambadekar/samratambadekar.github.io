@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "streaming/src/main/scala/spark/streaming/DStream.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2013-01-14T05:25:57Z", "authorId": "tdas", "author": "Tathagata Das"}}

@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "checkout-cache.c"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2005-08-13T15:29:32Z", "authorId": "", "author": "James Bottomley"}}

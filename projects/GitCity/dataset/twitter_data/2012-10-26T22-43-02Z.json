@@ -1,1 +1,0 @@
-{"repo": "cloudhopper-commons", "files": [{"status": "modified", "deletions": 2, "additions": 1, "changes": 3, "filename": "README.md"}, {"status": "modified", "deletions": 8, "additions": 11, "changes": 19, "filename": "pom.xml"}], "stats": {"deletions": 10, "additions": 12, "total": 22}, "commit": {"date": "2012-10-26T22:43:02Z", "authorId": "jjlauer", "author": "Joe Lauer"}}

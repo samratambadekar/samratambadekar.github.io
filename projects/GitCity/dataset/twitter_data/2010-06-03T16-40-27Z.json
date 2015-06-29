@@ -1,1 +1,0 @@
-{"repo": "haplocheirus", "files": [{"status": "modified", "deletions": 0, "additions": 13, "changes": 13, "filename": "src/test/scala/com/twitter/haplocheirus/TimelineStoreServiceSpec.scala"}], "stats": {"deletions": 0, "additions": 13, "total": 13}, "commit": {"date": "2010-06-03T16:40:27Z", "authorId": "", "author": "Brandon Mitchell"}}

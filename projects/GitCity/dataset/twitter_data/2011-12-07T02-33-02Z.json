@@ -1,1 +1,0 @@
-{"repo": "gizzmo", "files": [{"status": "modified", "deletions": 4, "additions": 20, "changes": 24, "filename": "lib/gizzard/commands.rb"}], "stats": {"deletions": 4, "additions": 20, "total": 24}, "commit": {"date": "2011-12-07T02:33:02Z", "authorId": "boazavital", "author": "Boaz Avital"}}

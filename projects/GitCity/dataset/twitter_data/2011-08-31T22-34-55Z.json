@@ -1,1 +1,0 @@
-{"repo": "twurl", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "README"}, {"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "twurl.gemspec"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2011-08-31T22:34:55Z", "authorId": "", "author": "Marcel Molina"}}

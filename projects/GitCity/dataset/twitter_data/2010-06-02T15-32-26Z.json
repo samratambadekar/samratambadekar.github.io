@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 5, "additions": 5, "changes": 10, "filename": "t/t7006-pager.sh"}], "stats": {"deletions": 5, "additions": 5, "total": 10}, "commit": {"date": "2010-06-02T15:32:26Z", "authorId": "drafnel", "author": "Brandon Casey"}}

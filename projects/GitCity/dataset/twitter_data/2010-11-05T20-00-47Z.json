@@ -1,1 +1,0 @@
-{"repo": "ostrich", "files": [{"status": "modified", "deletions": 0, "additions": 6, "changes": 6, "filename": "src/test/scala/com/twitter/ostrich/AdminHttpServiceSpec.scala"}], "stats": {"deletions": 0, "additions": 6, "total": 6}, "commit": {"date": "2010-11-05T20:00:47Z", "authorId": "", "author": "Steve Jenson"}}

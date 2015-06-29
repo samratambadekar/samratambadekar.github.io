@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 4, "additions": 29, "changes": 33, "filename": "core/src/main/java/org/apache/mahout/cf/taste/impl/neighborhood/NearestNUserNeighborhood.java"}], "stats": {"deletions": 4, "additions": 29, "total": 33}, "commit": {"date": "2009-01-29T19:38:03Z", "authorId": "", "author": "Otis Gospodnetic"}}

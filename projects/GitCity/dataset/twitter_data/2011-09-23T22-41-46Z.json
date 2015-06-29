@@ -1,1 +1,0 @@
-{"repo": "gizzard", "files": [{"status": "modified", "deletions": 0, "additions": 1, "changes": 1, "filename": "src/main/scala/net/lag/kestrel/Journal.scala"}], "stats": {"deletions": 0, "additions": 1, "total": 1}, "commit": {"date": "2011-09-23T22:41:46Z", "authorId": "rcohen", "author": "Ross Cohen"}}

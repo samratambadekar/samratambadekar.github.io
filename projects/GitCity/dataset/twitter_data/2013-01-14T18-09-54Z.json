@@ -1,1 +1,0 @@
-{"repo": "twitter-text-js", "files": [{"status": "modified", "deletions": 0, "additions": 7, "changes": 7, "filename": "test/tests.js"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "twitter-text.js"}], "stats": {"deletions": 1, "additions": 8, "total": 9}, "commit": {"date": "2013-01-14T18:09:54Z", "authorId": "jakl", "author": "James Koval"}}

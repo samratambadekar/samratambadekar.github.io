@@ -1,1 +1,0 @@
-{"repo": "storehaus", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "README.md"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/Build.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2013-01-22T23:13:42Z", "authorId": "", "author": "Sam Ritchie"}}

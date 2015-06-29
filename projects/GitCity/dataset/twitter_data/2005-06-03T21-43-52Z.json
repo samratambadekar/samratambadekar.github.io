@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 26, "changes": 26, "filename": "rpull.c"}, {"status": "modified", "deletions": 32, "additions": 67, "changes": 99, "filename": "rpush.c"}], "stats": {"deletions": 32, "additions": 93, "total": 125}, "commit": {"date": "2005-06-03T21:43:52Z", "authorId": "", "author": "Daniel Barkalow"}}

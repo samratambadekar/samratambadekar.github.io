@@ -1,1 +1,0 @@
-{"repo": "twitter-cldr-rb", "files": [{"status": "modified", "deletions": 5, "additions": 1, "changes": 6, "filename": "lib/twitter_cldr.rb"}], "stats": {"deletions": 5, "additions": 1, "total": 6}, "commit": {"date": "2013-01-12T20:05:16Z", "authorId": "camertron", "author": "Cameron Dutro"}}

@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 21, "additions": 25, "changes": 46, "filename": "Makefile"}, {"status": "modified", "deletions": 4, "additions": 3, "changes": 7, "filename": "tools/Makefile"}], "stats": {"deletions": 25, "additions": 28, "total": 53}, "commit": {"date": "2005-08-06T05:36:15Z", "authorId": "proski", "author": "Pavel Roskin"}}

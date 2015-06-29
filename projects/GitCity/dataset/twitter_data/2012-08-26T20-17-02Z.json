@@ -1,1 +1,0 @@
-{"repo": "twitter-cldr-js", "files": [{"status": "modified", "deletions": 5, "additions": 5, "changes": 10, "filename": "lib/twitter_cldr/js/tasks/tasks.rb"}], "stats": {"deletions": 5, "additions": 5, "total": 10}, "commit": {"date": "2012-08-26T20:17:02Z", "authorId": "KL-7", "author": "Kirill Lashuk"}}

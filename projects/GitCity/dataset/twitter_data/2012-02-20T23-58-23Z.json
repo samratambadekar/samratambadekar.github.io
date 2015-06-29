@@ -1,1 +1,0 @@
-{"repo": "cascading", "files": [{"status": "modified", "deletions": 3, "additions": 35, "changes": 38, "filename": "src/hadoop/cascading/tap/hadoop/Hfs.java"}], "stats": {"deletions": 3, "additions": 35, "total": 38}, "commit": {"date": "2012-02-20T23:58:23Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

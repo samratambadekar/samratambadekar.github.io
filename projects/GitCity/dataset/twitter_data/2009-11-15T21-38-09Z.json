@@ -1,1 +1,0 @@
-{"repo": "webrat", "files": [{"status": "modified", "deletions": 11, "additions": 9, "changes": 20, "filename": "spec/private/core/field_spec.rb"}], "stats": {"deletions": 11, "additions": 9, "total": 20}, "commit": {"date": "2009-11-15T21:38:09Z", "authorId": "brynary", "author": "Bryan Helmkamp"}}

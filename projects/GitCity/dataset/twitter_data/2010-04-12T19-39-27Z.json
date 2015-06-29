@@ -1,1 +1,0 @@
-{"repo": "webrat", "files": [{"status": "modified", "deletions": 1, "additions": 6, "changes": 7, "filename": "lib/webrat/selenium/selenium_session.rb"}], "stats": {"deletions": 1, "additions": 6, "total": 7}, "commit": {"date": "2010-04-12T19:39:27Z", "authorId": "djanowski", "author": "Damian Janowski"}}

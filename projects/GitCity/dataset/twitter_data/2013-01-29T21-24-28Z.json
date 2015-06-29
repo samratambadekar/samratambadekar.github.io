@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "added", "deletions": 0, "additions": 48, "changes": 48, "filename": "test/pending/pos/t5459.scala"}], "stats": {"deletions": 0, "additions": 48, "total": 48}, "commit": {"date": "2013-01-29T21:24:28Z", "authorId": "paulp", "author": "Paul Phillips"}}

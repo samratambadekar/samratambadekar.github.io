@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "git-rebase--interactive.sh"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2007-12-20T07:12:12Z", "authorId": "spearce", "author": "Shawn O. Pearce"}}

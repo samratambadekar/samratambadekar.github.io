@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 2, "additions": 3, "changes": 5, "filename": "src/library/scala/sys/process/BasicIO.scala"}], "stats": {"deletions": 2, "additions": 3, "total": 5}, "commit": {"date": "2012-02-17T16:43:38Z", "authorId": "dcsobral", "author": "Daniel C. Sobral"}}

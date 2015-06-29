@@ -1,1 +1,0 @@
-{"repo": "flockdb", "files": [{"status": "added", "deletions": 0, "additions": 202, "changes": 202, "filename": "LICENSE"}, {"status": "modified", "deletions": 1, "additions": 70, "changes": 71, "filename": "README.markdown"}], "stats": {"deletions": 1, "additions": 272, "total": 273}, "commit": {"date": "2010-04-12T04:28:31Z", "authorId": "", "author": "Nick Kallen"}}

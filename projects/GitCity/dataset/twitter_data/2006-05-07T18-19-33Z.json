@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 5, "additions": 1, "changes": 6, "filename": "git-clone.sh"}], "stats": {"deletions": 5, "additions": 1, "total": 6}, "commit": {"date": "2006-05-07T18:19:33Z", "authorId": "tali", "author": "Martin Waitz"}}

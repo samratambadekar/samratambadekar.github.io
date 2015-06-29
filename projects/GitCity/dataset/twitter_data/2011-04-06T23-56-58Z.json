@@ -1,1 +1,0 @@
-{"repo": "flockdb", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/main/scala/com/twitter/flockdb/FlockDB.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-04-06T23:56:58Z", "authorId": "", "author": "eaceaser"}}

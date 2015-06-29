@@ -1,1 +1,0 @@
-{"repo": "scalacheck", "files": [{"status": "modified", "deletions": 0, "additions": 9, "changes": 9, "filename": "src/org/scalacheck/Pretty.scala"}], "stats": {"deletions": 0, "additions": 9, "total": 9}, "commit": {"date": "2008-07-28T11:27:52Z", "authorId": "rickynils", "author": "Rickard Nilsson"}}

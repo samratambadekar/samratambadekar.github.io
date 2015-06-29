@@ -1,1 +1,0 @@
-{"repo": "sbt-thrift", "files": [{"status": "modified", "deletions": 1, "additions": 7, "changes": 8, "filename": "src/main/scala/com/twitter/sbt/AdhocInlines.scala"}], "stats": {"deletions": 1, "additions": 7, "total": 8}, "commit": {"date": "2011-01-07T21:04:59Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

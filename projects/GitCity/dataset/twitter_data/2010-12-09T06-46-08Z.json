@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 5, "additions": 33, "changes": 38, "filename": "builtin/describe.c"}], "stats": {"deletions": 5, "additions": 33, "total": 38}, "commit": {"date": "2010-12-09T06:46:08Z", "authorId": "", "author": "Anders Kaseorg"}}

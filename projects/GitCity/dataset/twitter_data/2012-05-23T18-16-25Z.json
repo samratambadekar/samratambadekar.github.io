@@ -1,1 +1,0 @@
-{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/java/com/twitter/elephantbird/pig/util/ThriftToPig.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-05-23T18:16:25Z", "authorId": "sagemintblue", "author": "Andy Schlaikjer"}}

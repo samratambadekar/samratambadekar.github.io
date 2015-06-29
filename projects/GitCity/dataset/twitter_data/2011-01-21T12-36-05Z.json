@@ -1,1 +1,0 @@
-{"repo": "twitter4j", "files": [{"status": "modified", "deletions": 0, "additions": 1, "changes": 1, "filename": ".gitignore"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "readme.txt"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2011-01-21T12:36:05Z", "authorId": "yusuke", "author": "Yusuke Yamamoto"}}

@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 68, "additions": 66, "changes": 134, "filename": "math/src/main/java/org/apache/mahout/math/jet/stat/Gamma.java"}], "stats": {"deletions": 68, "additions": 66, "total": 134}, "commit": {"date": "2010-08-16T14:13:52Z", "authorId": "tdunning", "author": "Ted Dunning"}}

@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 6, "additions": 21, "changes": 27, "filename": "src/compiler/scala/tools/nsc/typechecker/Typers.scala"}], "stats": {"deletions": 6, "additions": 21, "total": 27}, "commit": {"date": "2010-02-10T14:21:57Z", "authorId": "TiarkRompf", "author": "Tiark Rompf"}}

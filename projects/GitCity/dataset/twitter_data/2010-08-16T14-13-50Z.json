@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 145, "additions": 130, "changes": 275, "filename": "math/src/main/java/org/apache/mahout/math/jet/stat/quantile/QuantileFinderFactory.java"}], "stats": {"deletions": 145, "additions": 130, "total": 275}, "commit": {"date": "2010-08-16T14:13:50Z", "authorId": "tdunning", "author": "Ted Dunning"}}

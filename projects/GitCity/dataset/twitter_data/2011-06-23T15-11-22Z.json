@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "modified", "deletions": 5, "additions": 11, "changes": 16, "filename": "core/src/main/scala/spark/HadoopFileWriter.scala"}], "stats": {"deletions": 5, "additions": 11, "total": 16}, "commit": {"date": "2011-06-23T15:11:22Z", "authorId": "tdas", "author": "Tathagata Das"}}

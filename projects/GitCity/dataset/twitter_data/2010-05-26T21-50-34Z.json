@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 0, "changes": 2, "filename": "fsck.c"}, {"status": "modified", "deletions": 0, "additions": 8, "changes": 8, "filename": "t/t1450-fsck.sh"}], "stats": {"deletions": 2, "additions": 8, "total": 10}, "commit": {"date": "2010-05-26T21:50:34Z", "authorId": "jrn", "author": "Jonathan Nieder"}}

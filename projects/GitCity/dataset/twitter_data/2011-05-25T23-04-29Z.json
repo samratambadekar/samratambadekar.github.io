@@ -1,1 +1,0 @@
-{"repo": "twitter-text-java", "files": [{"status": "modified", "deletions": 4, "additions": 24, "changes": 28, "filename": "tests/com/twitter/ExtractorTest.java"}], "stats": {"deletions": 4, "additions": 24, "total": 28}, "commit": {"date": "2011-05-25T23:04:29Z", "authorId": "hjz", "author": "Justin Zhu"}}

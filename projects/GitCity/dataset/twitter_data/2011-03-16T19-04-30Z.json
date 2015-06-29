@@ -1,1 +1,0 @@
-{"repo": "commons", "files": [{"status": "modified", "deletions": 1, "additions": 6, "changes": 7, "filename": "src/python/pants/commands/doc/templates/javadoc.html"}], "stats": {"deletions": 1, "additions": 6, "total": 7}, "commit": {"date": "2011-03-16T19:04:30Z", "authorId": "", "author": "John Sirois"}}

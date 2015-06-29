@@ -1,1 +1,0 @@
-{"repo": "storehaus", "files": [{"status": "modified", "deletions": 19, "additions": 19, "changes": 38, "filename": "storehaus-memcache/src/main/scala/com/twitter/storehaus/memcache/MemcacheStore.scala"}], "stats": {"deletions": 19, "additions": 19, "total": 38}, "commit": {"date": "2013-02-25T18:23:08Z", "authorId": "sritchie", "author": "Sam Ritchie"}}

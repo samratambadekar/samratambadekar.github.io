@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 4, "additions": 2, "changes": 6, "filename": "builtin-reflog.c"}, {"status": "modified", "deletions": 0, "additions": 41, "changes": 41, "filename": "t/t1410-reflog.sh"}], "stats": {"deletions": 4, "additions": 43, "total": 47}, "commit": {"date": "2010-02-27T03:50:03Z", "authorId": "", "author": "Adam Simpkins"}}

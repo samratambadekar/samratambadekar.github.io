@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 5, "changes": 6, "filename": "src/compiler/scala/tools/nsc/symtab/Symbols.scala"}], "stats": {"deletions": 1, "additions": 5, "total": 6}, "commit": {"date": "2006-01-03T17:14:56Z", "authorId": "odersky", "author": "Martin Odersky"}}

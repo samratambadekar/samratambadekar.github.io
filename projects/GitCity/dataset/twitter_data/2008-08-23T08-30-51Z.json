@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 10, "additions": 38, "changes": 48, "filename": "lib/blame.tcl"}], "stats": {"deletions": 10, "additions": 38, "total": 48}, "commit": {"date": "2008-08-23T08:30:51Z", "authorId": "angavrilov", "author": "Alexander Gavrilov"}}

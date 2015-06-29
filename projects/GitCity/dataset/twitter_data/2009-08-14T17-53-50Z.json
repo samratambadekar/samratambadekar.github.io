@@ -1,1 +1,0 @@
-{"repo": "pig", "files": [{"status": "removed", "deletions": 0, "additions": 0, "changes": 0, "filename": "src/org/apache/pig/backend/hadoop/executionengine/mapReduceLayer/plans/MRStreamHandler.java"}], "stats": {"deletions": 0, "additions": 0, "total": 0}, "commit": {"date": "2009-08-14T17:53:50Z", "authorId": "", "author": "Pradeep Kamath"}}

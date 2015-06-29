@@ -1,1 +1,0 @@
-{"repo": "standard-project", "files": [{"status": "modified", "deletions": 3, "additions": 8, "changes": 11, "filename": "src/main/scala/com/twitter/sbt/AdhocInlines.scala"}], "stats": {"deletions": 3, "additions": 8, "total": 11}, "commit": {"date": "2011-01-07T18:34:56Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

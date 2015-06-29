@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "modified", "deletions": 0, "additions": 4, "changes": 4, "filename": "core/pom.xml"}, {"status": "modified", "deletions": 0, "additions": 6, "changes": 6, "filename": "pom.xml"}], "stats": {"deletions": 0, "additions": 10, "total": 10}, "commit": {"date": "2013-01-13T08:48:21Z", "authorId": "mateiz", "author": "Matei Zaharia"}}

@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "modified", "deletions": 12, "additions": 20, "changes": 32, "filename": "src/scala/spark/MesosScheduler.scala"}], "stats": {"deletions": 12, "additions": 20, "total": 32}, "commit": {"date": "2010-08-09T23:46:14Z", "authorId": "mateiz", "author": "Matei Zaharia"}}

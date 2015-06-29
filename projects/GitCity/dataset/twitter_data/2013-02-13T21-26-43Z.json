@@ -1,1 +1,0 @@
-{"repo": "cascading", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "cascading-core/src/main/java/cascading/tuple/Tuple.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2013-02-13T21:26:43Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

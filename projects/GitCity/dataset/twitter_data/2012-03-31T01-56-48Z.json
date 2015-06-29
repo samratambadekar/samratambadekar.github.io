@@ -1,1 +1,0 @@
-{"repo": "scala-bootstrapper", "files": [{"status": "removed", "deletions": 125, "additions": 0, "changes": 125, "filename": "lib/template/run"}], "stats": {"deletions": 125, "additions": 0, "total": 125}, "commit": {"date": "2012-03-31T01:56:48Z", "authorId": "", "author": "Robey Pointer"}}

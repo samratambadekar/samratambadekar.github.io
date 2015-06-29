@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "math/src/main/java/org/apache/mahout/math/AbstractMatrix.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-01-21T14:13:26Z", "authorId": "jakemannix", "author": "Jacob Alexander Mannix"}}

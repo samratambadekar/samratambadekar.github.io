@@ -1,1 +1,0 @@
-{"repo": "cassie", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "cassie-core/src/main/scala/com/twitter/cassie/Cluster.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-12-08T22:59:47Z", "authorId": "zuercher", "author": "Stephan Zuercher"}}

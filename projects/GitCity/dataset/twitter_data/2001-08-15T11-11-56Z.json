@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "innobase/sync/sync0sync.c"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2001-08-15T11:11:56Z", "authorId": "", "author": "heikki@donna.mysql.fi"}}

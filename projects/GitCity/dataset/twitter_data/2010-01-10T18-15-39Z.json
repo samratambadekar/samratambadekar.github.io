@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "removed", "deletions": 23, "additions": 0, "changes": 23, "filename": "core/src/main/java/org/apache/mahout/classifier/discriminative/PerceptronTrainingMapper.java"}], "stats": {"deletions": 23, "additions": 0, "total": 23}, "commit": {"date": "2010-01-10T18:15:39Z", "authorId": "MaineC", "author": "Isabel Drost"}}

@@ -1,1 +1,0 @@
-{"repo": "haplocheirus", "files": [{"status": "modified", "deletions": 2, "additions": 11, "changes": 13, "filename": "src/main/scala/com/twitter/haplocheirus/RedisShard.scala"}], "stats": {"deletions": 2, "additions": 11, "total": 13}, "commit": {"date": "2011-06-22T21:22:40Z", "authorId": "rcohen", "author": "Ross Cohen"}}

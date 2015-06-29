@@ -1,1 +1,0 @@
-{"repo": "sbt-thrift", "files": [{"status": "added", "deletions": 0, "additions": 43, "changes": 43, "filename": "src/main/scala/com/twitter/sbt/NoisyDependencies.scala"}], "stats": {"deletions": 0, "additions": 43, "total": 43}, "commit": {"date": "2010-09-20T23:24:22Z", "authorId": "", "author": "Kyle Maxwell"}}

@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "added", "deletions": 0, "additions": 113, "changes": 113, "filename": "t/t6001-rev-list-graft.sh"}], "stats": {"deletions": 0, "additions": 113, "total": 113}, "commit": {"date": "2006-09-27T19:34:37Z", "authorId": "", "author": "Junio C Hamano"}}

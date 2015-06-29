@@ -1,1 +1,0 @@
-{"repo": "cascading", "files": [{"status": "modified", "deletions": 4, "additions": 27, "changes": 31, "filename": "src/core/cascading/operation/text/DateParser.java"}], "stats": {"deletions": 4, "additions": 27, "total": 31}, "commit": {"date": "2009-03-19T18:25:44Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

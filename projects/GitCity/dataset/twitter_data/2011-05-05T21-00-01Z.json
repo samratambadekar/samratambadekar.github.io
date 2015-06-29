@@ -1,1 +1,0 @@
-{"repo": "cassie", "files": [{"status": "modified", "deletions": 2, "additions": 1, "changes": 3, "filename": "cassie-core/src/main/scala/com/twitter/cassie/FNV1A.scala"}], "stats": {"deletions": 2, "additions": 1, "total": 3}, "commit": {"date": "2011-05-05T21:00:01Z", "authorId": "ryanking", "author": "Ryan King"}}

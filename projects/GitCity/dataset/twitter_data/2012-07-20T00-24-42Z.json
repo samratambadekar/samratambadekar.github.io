@@ -1,1 +1,0 @@
-{"repo": "hadoop-lzo", "files": [{"status": "modified", "deletions": 2, "additions": 1, "changes": 3, "filename": "src/java/com/hadoop/compression/lzo/DistributedLzoIndexer.java"}], "stats": {"deletions": 2, "additions": 1, "total": 3}, "commit": {"date": "2012-07-20T00:24:42Z", "authorId": "rangadi", "author": "Raghu Angadi"}}

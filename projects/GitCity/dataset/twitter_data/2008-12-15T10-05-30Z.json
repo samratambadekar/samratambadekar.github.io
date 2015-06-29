@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 11, "additions": 44, "changes": 55, "filename": "t/t3409-rebase-preserve-merges.sh"}], "stats": {"deletions": 11, "additions": 44, "total": 55}, "commit": {"date": "2008-12-15T10:05:30Z", "authorId": "", "author": "Johannes Sixt"}}

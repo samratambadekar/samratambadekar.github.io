@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 0, "additions": 15, "changes": 15, "filename": "libmysql/libmysql.c"}], "stats": {"deletions": 0, "additions": 15, "total": 15}, "commit": {"date": "2007-06-21T06:58:39Z", "authorId": "", "author": "df@pippilotta.erinye.com"}}

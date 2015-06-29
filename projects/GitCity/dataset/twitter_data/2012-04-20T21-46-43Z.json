@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "core/src/main/scala/spark/LocalScheduler.scala"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2012-04-20T21:46:43Z", "authorId": "alupher", "author": "Antonio"}}

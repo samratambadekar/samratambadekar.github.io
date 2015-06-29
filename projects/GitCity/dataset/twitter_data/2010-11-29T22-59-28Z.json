@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 26, "additions": 43, "changes": 69, "filename": "src/library/scala/math/Equiv.scala"}], "stats": {"deletions": 26, "additions": 43, "total": 69}, "commit": {"date": "2010-11-29T22:59:28Z", "authorId": "paulp", "author": "Paul Phillips"}}

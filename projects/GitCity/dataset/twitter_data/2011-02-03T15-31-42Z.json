@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 4, "changes": 6, "filename": "t/t3509-cherry-pick-merge-df.sh"}], "stats": {"deletions": 2, "additions": 4, "total": 6}, "commit": {"date": "2011-02-03T15:31:42Z", "authorId": "patthoyts", "author": "Pat Thoyts"}}

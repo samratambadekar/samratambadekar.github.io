@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 19, "additions": 34, "changes": 53, "filename": "core/src/main/java/org/apache/mahout/clustering/kmeans/RandomSeedGenerator.java"}], "stats": {"deletions": 19, "additions": 34, "total": 53}, "commit": {"date": "2010-02-03T21:36:51Z", "authorId": "robinanil", "author": "Robin Anil"}}

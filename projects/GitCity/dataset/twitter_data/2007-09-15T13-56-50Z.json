@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 15, "additions": 52, "changes": 67, "filename": "strbuf.c"}, {"status": "modified", "deletions": 0, "additions": 5, "changes": 5, "filename": "strbuf.h"}], "stats": {"deletions": 15, "additions": 57, "total": 72}, "commit": {"date": "2007-09-15T13:56:50Z", "authorId": "MadCoder", "author": "Pierre Habouzit"}}

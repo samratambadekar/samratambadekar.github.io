@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "Documentation/rev-list-options.txt"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-03-08T08:31:24Z", "authorId": "mjg", "author": "Michael J Gruber"}}

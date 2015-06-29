@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 19, "additions": 25, "changes": 44, "filename": "builtin/revert.c"}], "stats": {"deletions": 19, "additions": 25, "total": 44}, "commit": {"date": "2010-06-02T05:58:36Z", "authorId": "chriscool", "author": "Christian Couder"}}

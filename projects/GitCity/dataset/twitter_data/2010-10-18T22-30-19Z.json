@@ -1,1 +1,0 @@
-{"repo": "flockdb", "files": [{"status": "modified", "deletions": 24, "additions": 58, "changes": 82, "filename": "src/main/scala/com/twitter/flockdb/EdgesService.scala"}], "stats": {"deletions": 24, "additions": 58, "total": 82}, "commit": {"date": "2010-10-18T22:30:19Z", "authorId": "fizx", "author": "Kyle Maxwell"}}

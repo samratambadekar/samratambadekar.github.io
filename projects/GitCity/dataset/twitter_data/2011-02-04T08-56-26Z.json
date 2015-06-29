@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 10, "additions": 2, "changes": 12, "filename": "core/src/main/java/org/apache/mahout/df/mapreduce/Builder.java"}], "stats": {"deletions": 10, "additions": 2, "total": 12}, "commit": {"date": "2011-02-04T08:56:26Z", "authorId": "", "author": "Abdel Hakim Deneche"}}

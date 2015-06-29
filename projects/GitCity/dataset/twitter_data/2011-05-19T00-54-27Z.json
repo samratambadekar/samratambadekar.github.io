@@ -1,1 +1,0 @@
-{"repo": "scala-bootstrapper", "files": [{"status": "modified", "deletions": 2, "additions": 3, "changes": 5, "filename": "lib/template/Gemfile"}], "stats": {"deletions": 2, "additions": 3, "total": 5}, "commit": {"date": "2011-05-19T00:54:27Z", "authorId": "", "author": "Robey Pointer"}}

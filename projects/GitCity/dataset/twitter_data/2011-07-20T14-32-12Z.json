@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 12, "changes": 13, "filename": "src/compiler/scala/tools/nsc/doc/html/resource/lib/index.js"}], "stats": {"deletions": 1, "additions": 12, "total": 13}, "commit": {"date": "2011-07-20T14:32:12Z", "authorId": "kzys", "author": "Kato Kazuyoshi"}}

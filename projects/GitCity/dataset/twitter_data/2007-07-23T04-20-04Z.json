@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "lib/commit.tcl"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2007-07-23T04:20:04Z", "authorId": "spearce", "author": "Shawn O. Pearce"}}

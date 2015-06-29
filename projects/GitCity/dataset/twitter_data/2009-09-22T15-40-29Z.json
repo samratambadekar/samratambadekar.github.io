@@ -1,1 +1,0 @@
-{"repo": "twitter4j", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "pom.xml"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/main/java/twitter4j/Version.java"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2009-09-22T15:40:29Z", "authorId": "", "author": "yusuke"}}

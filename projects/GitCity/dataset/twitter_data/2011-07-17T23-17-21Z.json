@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "modified", "deletions": 5, "additions": 4, "changes": 9, "filename": "project/plugins/build.sbt"}], "stats": {"deletions": 5, "additions": 4, "total": 9}, "commit": {"date": "2011-07-17T23:17:21Z", "authorId": "ijuma", "author": "Ismael Juma"}}

@@ -1,1 +1,0 @@
-{"repo": "pig", "files": [{"status": "modified", "deletions": 0, "additions": 3, "changes": 3, "filename": "CHANGES.txt"}, {"status": "modified", "deletions": 2, "additions": 12, "changes": 14, "filename": "build.xml"}], "stats": {"deletions": 2, "additions": 15, "total": 17}, "commit": {"date": "2009-03-20T15:54:45Z", "authorId": "", "author": "Santhosh Muthur Srinivasan"}}

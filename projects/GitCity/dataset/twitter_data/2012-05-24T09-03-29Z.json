@@ -1,1 +1,0 @@
-{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 43, "additions": 33, "changes": 76, "filename": "src/java/com/twitter/elephantbird/pig/store/RCFilePigStorage.java"}], "stats": {"deletions": 43, "additions": 33, "total": 76}, "commit": {"date": "2012-05-24T09:03:29Z", "authorId": "rangadi", "author": "Raghu Angadi"}}

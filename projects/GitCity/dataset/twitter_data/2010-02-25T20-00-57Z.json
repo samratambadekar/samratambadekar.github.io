@@ -1,1 +1,0 @@
-{"repo": "pig", "files": [{"status": "removed", "deletions": 193, "additions": 0, "changes": 193, "filename": "contrib/piggybank/java/src/test/java/org/apache/pig/piggybank/test/TestPigStorageSchema.java"}], "stats": {"deletions": 193, "additions": 0, "total": 193}, "commit": {"date": "2010-02-25T20:00:57Z", "authorId": "", "author": "Jianyong Dai"}}

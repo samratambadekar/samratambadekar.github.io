@@ -1,1 +1,0 @@
-{"repo": "twitter-cldr-rb", "files": [{"status": "modified", "deletions": 13, "additions": 150, "changes": 163, "filename": "resources/custom/locales/he/units.yml"}], "stats": {"deletions": 13, "additions": 150, "total": 163}, "commit": {"date": "2013-01-31T05:53:17Z", "authorId": "camertron", "author": "Cameron Dutro"}}

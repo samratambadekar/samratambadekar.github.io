@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 3, "additions": 10, "changes": 13, "filename": "builtin-apply.c"}], "stats": {"deletions": 3, "additions": 10, "total": 13}, "commit": {"date": "2007-09-16T22:49:00Z", "authorId": "", "author": "J. Bruce Fields"}}

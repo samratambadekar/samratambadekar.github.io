@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "renamed", "deletions": 10, "additions": 123, "changes": 133, "filename": "doc/tutorial/tutorial.scala.tex"}], "stats": {"deletions": 10, "additions": 123, "total": 133}, "commit": {"date": "2003-08-05T08:40:57Z", "authorId": "", "author": "schinz"}}

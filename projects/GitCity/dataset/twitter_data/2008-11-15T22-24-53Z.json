@@ -1,1 +1,0 @@
-{"repo": "kestrel", "files": [{"status": "modified", "deletions": 18, "additions": 47, "changes": 65, "filename": "src/main/scala/com/twitter/scarling/Journal.scala"}], "stats": {"deletions": 18, "additions": 47, "total": 65}, "commit": {"date": "2008-11-15T22:24:53Z", "authorId": "", "author": "Robey Pointer"}}

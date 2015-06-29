@@ -1,1 +1,0 @@
-{"repo": "twitter4j", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "twitter4j-core/src/main/java/twitter4j/TwitterStream.java"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2010-08-02T08:39:37Z", "authorId": "", "author": "hkhumanoid"}}

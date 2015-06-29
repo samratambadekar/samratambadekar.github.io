@@ -1,1 +1,0 @@
-{"repo": "webrat", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "spec/integration/mechanize/spec/mechanize_spec.rb"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-04-13T16:25:28Z", "authorId": "djanowski", "author": "Damian Janowski"}}

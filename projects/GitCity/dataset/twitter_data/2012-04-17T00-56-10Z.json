@@ -1,1 +1,0 @@
-{"repo": "pig", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "test/org/apache/pig/test/TestMultiQueryLocal.java"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2012-04-17T00:56:10Z", "authorId": "", "author": "Jianyong Dai"}}

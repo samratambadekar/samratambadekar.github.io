@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 7, "changes": 8, "filename": "src/compiler/scala/tools/nsc/interactive/Global.scala"}], "stats": {"deletions": 1, "additions": 7, "total": 8}, "commit": {"date": "2010-11-21T11:45:04Z", "authorId": "", "author": "Eugene Vigdorchik"}}

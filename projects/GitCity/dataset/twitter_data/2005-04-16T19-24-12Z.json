@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 4, "additions": 1, "changes": 5, "filename": "Makefile"}, {"status": "removed", "deletions": 145, "additions": 0, "changes": 145, "filename": "merge-tree.c"}], "stats": {"deletions": 149, "additions": 1, "total": 150}, "commit": {"date": "2005-04-16T19:24:12Z", "authorId": "", "author": "Linus Torvalds"}}

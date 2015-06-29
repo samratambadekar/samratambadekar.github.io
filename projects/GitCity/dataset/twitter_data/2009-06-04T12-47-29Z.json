@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "added", "deletions": 0, "additions": 1, "changes": 1, "filename": "src/dotnet-library/scala/util/NameTransformer.scala"}], "stats": {"deletions": 0, "additions": 1, "total": 1}, "commit": {"date": "2009-06-04T12:47:29Z", "authorId": "paulp", "author": "Paul Phillips"}}

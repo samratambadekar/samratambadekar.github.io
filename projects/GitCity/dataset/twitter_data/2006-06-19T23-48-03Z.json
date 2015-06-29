@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 9, "additions": 25, "changes": 34, "filename": "config.c"}, {"status": "modified", "deletions": 6, "additions": 33, "changes": 39, "filename": "repo-config.c"}], "stats": {"deletions": 15, "additions": 58, "total": 73}, "commit": {"date": "2006-06-19T23:48:03Z", "authorId": "dscho", "author": "Johannes Schindelin"}}

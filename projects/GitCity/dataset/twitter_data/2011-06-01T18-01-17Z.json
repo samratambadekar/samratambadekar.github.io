@@ -1,1 +1,0 @@
-{"repo": "ostrich", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/plugins/Plugins.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-06-01T18:01:17Z", "authorId": "olix0r", "author": "Oliver Gould"}}

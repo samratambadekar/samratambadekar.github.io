@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 5, "changes": 7, "filename": "setup.c"}, {"status": "modified", "deletions": 0, "additions": 15, "changes": 15, "filename": "t/t1501-worktree.sh"}], "stats": {"deletions": 2, "additions": 20, "total": 22}, "commit": {"date": "2009-12-16T18:50:09Z", "authorId": "gitster", "author": "Junio C Hamano"}}

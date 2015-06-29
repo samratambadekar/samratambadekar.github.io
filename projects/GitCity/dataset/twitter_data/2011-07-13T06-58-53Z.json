@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "added", "deletions": 0, "additions": 9, "changes": 9, "filename": "test/files/pos/bug3371.scala"}], "stats": {"deletions": 0, "additions": 9, "total": 9}, "commit": {"date": "2011-07-13T06:58:53Z", "authorId": "paulp", "author": "Paul Phillips"}}

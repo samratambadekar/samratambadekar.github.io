@@ -1,1 +1,0 @@
-{"repo": "cascading", "files": [{"status": "modified", "deletions": 0, "additions": 4, "changes": 4, "filename": "cascading-hadoop/src/main/java/cascading/tap/hadoop/TemplateTap.java"}], "stats": {"deletions": 0, "additions": 4, "total": 4}, "commit": {"date": "2012-10-16T22:57:42Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

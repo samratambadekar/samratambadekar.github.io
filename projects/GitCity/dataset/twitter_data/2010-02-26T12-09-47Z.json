@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "mysql-test/suite/rpl/t/rpl_show_slave_running.test"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2010-02-26T12:09:47Z", "authorId": "", "author": "Andrei Elkin"}}

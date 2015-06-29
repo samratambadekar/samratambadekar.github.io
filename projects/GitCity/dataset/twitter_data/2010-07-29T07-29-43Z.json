@@ -1,1 +1,0 @@
-{"repo": "spitball", "files": [{"status": "modified", "deletions": 1, "additions": 5, "changes": 6, "filename": "lib/spitball/remote.rb"}], "stats": {"deletions": 1, "additions": 5, "total": 6}, "commit": {"date": "2010-07-29T07:29:43Z", "authorId": "freels", "author": "Matt Freels"}}

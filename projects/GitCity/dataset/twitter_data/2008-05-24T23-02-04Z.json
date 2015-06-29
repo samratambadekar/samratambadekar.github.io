@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 13, "additions": 66, "changes": 79, "filename": "graph.c"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "revision.c"}], "stats": {"deletions": 14, "additions": 67, "total": 81}, "commit": {"date": "2008-05-24T23:02:04Z", "authorId": "simpkins", "author": "Adam Simpkins"}}

@@ -1,1 +1,0 @@
-{"repo": "gizzmo", "files": [{"status": "modified", "deletions": 0, "additions": 9, "changes": 9, "filename": "lib/gizzard/commands.rb"}, {"status": "modified", "deletions": 0, "additions": 3, "changes": 3, "filename": "lib/gizzmo.rb"}], "stats": {"deletions": 0, "additions": 12, "total": 12}, "commit": {"date": "2010-07-09T20:36:31Z", "authorId": "", "author": "Robey Pointer"}}

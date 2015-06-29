@@ -1,1 +1,0 @@
-{"repo": "gizzard", "files": [{"status": "added", "deletions": 0, "additions": 43, "changes": 43, "filename": "src/test/scala/com/twitter/gizzard/shards/DDLIdempotenceIntegrationSpec.scala"}], "stats": {"deletions": 0, "additions": 43, "total": 43}, "commit": {"date": "2010-06-28T20:36:14Z", "authorId": "", "author": "Kyle Maxwell"}}

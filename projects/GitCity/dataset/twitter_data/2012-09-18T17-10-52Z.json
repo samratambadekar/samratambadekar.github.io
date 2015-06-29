@@ -1,1 +1,0 @@
-{"repo": "cassie", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "cassie-stress/pom.xml"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2012-09-18T17:10:52Z", "authorId": "areitz", "author": "Andy Reitz"}}

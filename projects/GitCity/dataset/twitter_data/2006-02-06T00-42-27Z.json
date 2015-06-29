@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "Documentation/git-push.txt"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2006-02-06T00:42:27Z", "authorId": "bfields", "author": "J. Bruce Fields"}}

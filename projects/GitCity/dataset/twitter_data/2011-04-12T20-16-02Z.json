@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 0, "additions": 8, "changes": 8, "filename": "examples/src/main/java/org/apache/mahout/cf/taste/example/kddcup/track1/svd/ParallelArraysSGDFactorizer.java"}], "stats": {"deletions": 0, "additions": 8, "total": 8}, "commit": {"date": "2011-04-12T20:16:02Z", "authorId": "srowen", "author": "Sean R. Owen"}}

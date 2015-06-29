@@ -1,1 +1,0 @@
-{"repo": "ambrose", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "pig/src/main/resources/web/js/ambrose-ui.js"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2012-06-12T06:16:01Z", "authorId": "sagemintblue", "author": "Andy Schlaikjer"}}

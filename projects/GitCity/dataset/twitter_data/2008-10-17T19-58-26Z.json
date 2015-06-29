@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "examples/src/main/java/org/apache/mahout/classifier/bayes/TrainClassifier.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2008-10-17T19:58:26Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

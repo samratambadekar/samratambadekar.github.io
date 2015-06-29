@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 4, "additions": 24, "changes": 28, "filename": "git-parse-remote.sh"}], "stats": {"deletions": 4, "additions": 24, "total": 28}, "commit": {"date": "2006-05-03T13:20:21Z", "authorId": "dscho", "author": "Johannes Schindelin"}}

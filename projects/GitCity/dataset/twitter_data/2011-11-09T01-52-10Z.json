@@ -1,1 +1,0 @@
-{"repo": "haplocheirus", "files": [{"status": "modified", "deletions": 6, "additions": 18, "changes": 24, "filename": "src/main/scala/com/twitter/haplocheirus/RedisShard.scala"}], "stats": {"deletions": 6, "additions": 18, "total": 24}, "commit": {"date": "2011-11-09T01:52:10Z", "authorId": "garru", "author": "Gary Tsang"}}

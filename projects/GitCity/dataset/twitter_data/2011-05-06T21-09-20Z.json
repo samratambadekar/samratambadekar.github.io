@@ -1,1 +1,0 @@
-{"repo": "cloudhopper-commons", "files": [{"status": "modified", "deletions": 11, "additions": 9, "changes": 20, "filename": "src/main/java/com/cloudhopper/commons/util/NamingThreadFactory.java"}], "stats": {"deletions": 11, "additions": 9, "total": 20}, "commit": {"date": "2011-05-06T21:09:20Z", "authorId": "jjlauer", "author": "Joe Lauer"}}

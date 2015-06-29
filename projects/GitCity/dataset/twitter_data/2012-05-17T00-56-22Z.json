@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "finagle-zipkin/pom.xml"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-05-17T00:56:22Z", "authorId": "", "author": "Johan Oskarsson"}}

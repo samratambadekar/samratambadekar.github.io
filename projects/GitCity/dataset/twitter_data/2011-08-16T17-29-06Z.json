@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 6, "additions": 1, "changes": 7, "filename": "extra/innochecksum.c"}], "stats": {"deletions": 6, "additions": 1, "total": 7}, "commit": {"date": "2011-08-16T17:29:06Z", "authorId": "hramilison", "author": "hery.ramilison@oracle.com"}}

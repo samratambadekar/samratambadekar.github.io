@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/compiler/scala/reflect/internal/Constants.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-07-13T12:13:31Z", "authorId": "gkossakowski", "author": "Grzegorz Kossakowski"}}

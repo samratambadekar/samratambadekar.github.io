@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 4, "additions": 8, "changes": 12, "filename": "innobase/row/row0ins.c"}], "stats": {"deletions": 4, "additions": 8, "total": 12}, "commit": {"date": "2002-05-02T08:12:49Z", "authorId": "", "author": "heikki@hundin.mysql.fi"}}

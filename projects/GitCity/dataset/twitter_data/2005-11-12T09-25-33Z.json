@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 27, "additions": 28, "changes": 55, "filename": "git-archimport.perl"}], "stats": {"deletions": 27, "additions": 28, "total": 55}, "commit": {"date": "2005-11-12T09:25:33Z", "authorId": "", "author": "Eric Wong"}}

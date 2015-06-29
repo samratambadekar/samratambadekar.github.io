@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 2, "additions": 4, "changes": 6, "filename": "scripts/make_sharedlib_distribution.sh"}], "stats": {"deletions": 2, "additions": 4, "total": 6}, "commit": {"date": "2006-05-22T22:50:39Z", "authorId": "", "author": "kent@mysql.com"}}

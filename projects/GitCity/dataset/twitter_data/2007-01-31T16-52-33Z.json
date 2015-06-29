@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 0, "additions": 12, "changes": 12, "filename": "src/library/scala/Console.scala"}], "stats": {"deletions": 0, "additions": 12, "total": 12}, "commit": {"date": "2007-01-31T16:52:33Z", "authorId": "dragos", "author": "Iulian Dragos"}}

@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "modified", "deletions": 47, "additions": 175, "changes": 222, "filename": "src/test/scala/com/twitter/finagle/thrift/EndToEnd.scala"}], "stats": {"deletions": 47, "additions": 175, "total": 222}, "commit": {"date": "2010-10-21T02:03:24Z", "authorId": "", "author": "Nick Kallen"}}

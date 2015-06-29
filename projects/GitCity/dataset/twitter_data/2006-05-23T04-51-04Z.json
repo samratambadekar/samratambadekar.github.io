@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 3, "additions": 24, "changes": 27, "filename": "ndb/src/mgmapi/mgmapi.cpp"}], "stats": {"deletions": 3, "additions": 24, "total": 27}, "commit": {"date": "2006-05-23T04:51:04Z", "authorId": "", "author": "stewart@mysql.com"}}

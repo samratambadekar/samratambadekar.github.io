@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 23, "additions": 15, "changes": 38, "filename": "t/t7607-merge-overwrite.sh"}], "stats": {"deletions": 23, "additions": 15, "total": 38}, "commit": {"date": "2010-10-10T08:35:43Z", "authorId": "drizzd", "author": "Clemens Buchacher"}}

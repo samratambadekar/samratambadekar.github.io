@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "aclocal.m4"}, {"status": "modified", "deletions": 37, "additions": 19, "changes": 56, "filename": "configure.ac"}], "stats": {"deletions": 39, "additions": 21, "total": 60}, "commit": {"date": "2011-01-02T10:24:55Z", "authorId": "", "author": "Ralf Wildenhues"}}

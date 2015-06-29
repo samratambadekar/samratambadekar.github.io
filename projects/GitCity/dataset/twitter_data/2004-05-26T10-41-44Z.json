@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 27, "additions": 28, "changes": 55, "filename": "sources/scala/tools/dtd2scala/template/ObjectTemplate.scala.xml"}], "stats": {"deletions": 27, "additions": 28, "total": 55}, "commit": {"date": "2004-05-26T10:41:44Z", "authorId": "", "author": "buraq"}}

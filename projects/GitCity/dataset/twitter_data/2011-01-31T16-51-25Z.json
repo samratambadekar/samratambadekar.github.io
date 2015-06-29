@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "t/t5526-fetch-submodules.sh"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-01-31T16:51:25Z", "authorId": "jlehmann", "author": "Jens Lehmann"}}

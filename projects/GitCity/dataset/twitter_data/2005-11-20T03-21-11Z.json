@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 5, "additions": 2, "changes": 7, "filename": "Documentation/howto/rebase-from-internal-branch.txt"}], "stats": {"deletions": 5, "additions": 2, "total": 7}, "commit": {"date": "2005-11-20T03:21:11Z", "authorId": "", "author": "Junio C Hamano"}}

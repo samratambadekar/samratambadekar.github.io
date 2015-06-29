@@ -1,1 +1,0 @@
-{"repo": "querulous", "files": [{"status": "modified", "deletions": 12, "additions": 6, "changes": 18, "filename": "src/main/scala/com/twitter/querulous/database/ThrottledPoolingDatabase.scala"}], "stats": {"deletions": 12, "additions": 6, "total": 18}, "commit": {"date": "2011-05-10T21:04:01Z", "authorId": "", "author": "eaceaser"}}

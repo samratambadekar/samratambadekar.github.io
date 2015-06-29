@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 7, "additions": 154, "changes": 161, "filename": "src/library/scala/util/matching/Regex.scala"}], "stats": {"deletions": 7, "additions": 154, "total": 161}, "commit": {"date": "2011-07-16T05:51:44Z", "authorId": "paulp", "author": "Paul Phillips"}}

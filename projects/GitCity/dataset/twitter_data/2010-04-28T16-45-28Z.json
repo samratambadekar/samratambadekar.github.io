@@ -1,1 +1,0 @@
-{"repo": "cassie", "files": [{"status": "modified", "deletions": 1, "additions": 12, "changes": 13, "filename": "src/main/scala/com/codahale/cassie/codecs.scala"}], "stats": {"deletions": 1, "additions": 12, "total": 13}, "commit": {"date": "2010-04-28T16:45:28Z", "authorId": "codahale", "author": "Coda Hale"}}

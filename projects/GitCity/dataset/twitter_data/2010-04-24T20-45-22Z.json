@@ -1,1 +1,0 @@
-{"repo": "cassie", "files": [{"status": "modified", "deletions": 5, "additions": 9, "changes": 14, "filename": "src/main/scala/com/codahale/cassie/ColumnFamily.scala"}], "stats": {"deletions": 5, "additions": 9, "total": 14}, "commit": {"date": "2010-04-24T20:45:22Z", "authorId": "codahale", "author": "Coda Hale"}}

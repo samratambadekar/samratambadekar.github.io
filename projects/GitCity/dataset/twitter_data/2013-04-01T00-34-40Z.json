@@ -1,1 +1,0 @@
-{"repo": "typeahead.js", "files": [{"status": "modified", "deletions": 0, "additions": 18, "changes": 18, "filename": "CHANGELOG.md"}, {"status": "modified", "deletions": 2, "additions": 4, "changes": 6, "filename": "README.md"}], "stats": {"deletions": 2, "additions": 22, "total": 24}, "commit": {"date": "2013-04-01T00:34:40Z", "authorId": "jharding", "author": "Jake Harding"}}

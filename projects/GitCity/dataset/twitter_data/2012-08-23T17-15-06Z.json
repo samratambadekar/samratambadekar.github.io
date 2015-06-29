@@ -1,1 +1,0 @@
-{"repo": "scalding", "files": [{"status": "modified", "deletions": 3, "additions": 0, "changes": 3, "filename": ".travis.yml"}, {"status": "modified", "deletions": 2, "additions": 1, "changes": 3, "filename": "README.md"}], "stats": {"deletions": 5, "additions": 1, "total": 6}, "commit": {"date": "2012-08-23T17:15:06Z", "authorId": "johnynek", "author": "P. Oscar Boykin"}}

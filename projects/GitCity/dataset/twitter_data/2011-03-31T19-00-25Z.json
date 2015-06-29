@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 10, "additions": 105, "changes": 115, "filename": "utils/src/main/java/org/apache/mahout/benchmark/VectorBenchmarks.java"}], "stats": {"deletions": 10, "additions": 105, "total": 115}, "commit": {"date": "2011-03-31T19:00:25Z", "authorId": "srowen", "author": "Sean R. Owen"}}

@@ -1,1 +1,0 @@
-{"repo": "scala-bootstrapper", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "lib/template/src/scripts/startup.sh"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-06-18T04:28:39Z", "authorId": "", "author": "Robey Pointer"}}

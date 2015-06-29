@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 4, "additions": 8, "changes": 12, "filename": "http-fetch.c"}], "stats": {"deletions": 4, "additions": 8, "total": 12}, "commit": {"date": "2005-12-22T17:09:05Z", "authorId": "", "author": "Nick Hengeveld"}}

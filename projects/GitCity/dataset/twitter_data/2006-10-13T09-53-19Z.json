@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "mysql-test/t/rpl_dual_pos_advance-master.opt"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2006-10-13T09:53:19Z", "authorId": "", "author": "msvensson@shellback.(none)"}}

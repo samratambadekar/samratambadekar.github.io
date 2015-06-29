@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 9, "changes": 10, "filename": "src/library/scala/collection/Iterator.scala"}], "stats": {"deletions": 1, "additions": 9, "total": 10}, "commit": {"date": "2011-07-13T11:39:16Z", "authorId": "gkossakowski", "author": "Grzegorz Kossakowski"}}

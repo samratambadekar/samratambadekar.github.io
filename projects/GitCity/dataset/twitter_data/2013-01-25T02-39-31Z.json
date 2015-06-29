@@ -1,1 +1,0 @@
-{"repo": "storehaus", "files": [{"status": "added", "deletions": 0, "additions": 34, "changes": 34, "filename": "storehaus-memcache/src/main/scala/com/twitter/storehaus/memcache/ChannelBufferBijection.scala"}], "stats": {"deletions": 0, "additions": 34, "total": 34}, "commit": {"date": "2013-01-25T02:39:31Z", "authorId": "sritchie", "author": "Sam Ritchie"}}

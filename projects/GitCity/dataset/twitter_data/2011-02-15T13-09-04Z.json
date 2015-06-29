@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "builtin/commit.c"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "builtin/tag.c"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2011-02-15T13:09:04Z", "authorId": "mjg", "author": "Michael J Gruber"}}

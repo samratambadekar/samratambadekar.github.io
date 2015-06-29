@@ -1,1 +1,0 @@
-{"repo": "cassovary", "files": [{"status": "modified", "deletions": 4, "additions": 7, "changes": 11, "filename": "src/main/scala/com/twitter/cassovary/graph/Traverser.scala"}], "stats": {"deletions": 4, "additions": 7, "total": 11}, "commit": {"date": "2012-04-03T18:32:20Z", "authorId": "ningtwitter", "author": "Ning Liang"}}

@@ -1,1 +1,0 @@
-{"repo": "gizzard", "files": [{"status": "removed", "deletions": 89, "additions": 0, "changes": 89, "filename": "src/main/scala/com/twitter/gizzard/sharding/ReplicatingShard.scala.orig"}], "stats": {"deletions": 89, "additions": 0, "total": 89}, "commit": {"date": "2010-02-17T00:19:34Z", "authorId": "", "author": "Robey Pointer"}}

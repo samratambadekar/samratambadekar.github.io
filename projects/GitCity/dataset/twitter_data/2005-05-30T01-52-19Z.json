@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 15, "additions": 42, "changes": 57, "filename": "git-deltafy-script"}, {"status": "modified", "deletions": 157, "additions": 203, "changes": 360, "filename": "mkdelta.c"}], "stats": {"deletions": 172, "additions": 245, "total": 417}, "commit": {"date": "2005-05-30T01:52:19Z", "authorId": "", "author": "Nicolas Pitre"}}

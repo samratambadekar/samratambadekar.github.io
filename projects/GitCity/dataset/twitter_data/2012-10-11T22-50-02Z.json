@@ -1,1 +1,0 @@
-{"repo": "cassie", "files": [{"status": "modified", "deletions": 5, "additions": 12, "changes": 17, "filename": "cassie-serversets/src/main/scala/com/twitter/cassie/serversets/ServerSetsCluster.scala"}], "stats": {"deletions": 5, "additions": 12, "total": 17}, "commit": {"date": "2012-10-11T22:50:02Z", "authorId": "asiegel34", "author": "Aaron Siegel"}}

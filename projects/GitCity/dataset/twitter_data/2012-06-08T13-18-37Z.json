@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 21, "additions": 13, "changes": 34, "filename": "src/compiler/scala/tools/nsc/backend/jvm/GenASM.scala"}], "stats": {"deletions": 21, "additions": 13, "total": 34}, "commit": {"date": "2012-06-08T13:18:37Z", "authorId": "adriaanm", "author": "Adriaan Moors"}}

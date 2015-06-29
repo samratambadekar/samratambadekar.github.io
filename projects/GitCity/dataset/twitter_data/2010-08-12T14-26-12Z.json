@@ -1,1 +1,0 @@
-{"repo": "util", "files": [{"status": "modified", "deletions": 12, "additions": 17, "changes": 29, "filename": "src/main/scala/com/twitter/util/Future.scala"}], "stats": {"deletions": 12, "additions": 17, "total": 29}, "commit": {"date": "2010-08-12T14:26:12Z", "authorId": "jjmmcc", "author": "Jeremy Cloud"}}

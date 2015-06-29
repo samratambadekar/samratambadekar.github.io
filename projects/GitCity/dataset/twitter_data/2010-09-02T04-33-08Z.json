@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "core/src/test/java/org/apache/mahout/classifier/sgd/AdaptiveLogisticRegressionTest.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-09-02T04:33:08Z", "authorId": "tdunning", "author": "Ted Dunning"}}

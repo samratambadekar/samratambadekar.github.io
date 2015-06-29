@@ -1,1 +1,0 @@
-{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "lib/autolink.rb"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2011-12-08T23:38:34Z", "authorId": "tommyh", "author": "Tom Hallett"}}

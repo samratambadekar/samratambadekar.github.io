@@ -1,1 +1,0 @@
-{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "lib/autolink.rb"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2010-01-27T22:47:43Z", "authorId": "", "author": "Matt Sanford"}}

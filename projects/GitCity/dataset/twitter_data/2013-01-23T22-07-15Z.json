@@ -1,1 +1,0 @@
-{"repo": "twemproxy", "files": [{"status": "modified", "deletions": 1, "additions": 0, "changes": 1, "filename": "src/Makefile.am"}], "stats": {"deletions": 1, "additions": 0, "total": 1}, "commit": {"date": "2013-01-23T22:07:15Z", "authorId": "ferenyx", "author": "ferenyx"}}

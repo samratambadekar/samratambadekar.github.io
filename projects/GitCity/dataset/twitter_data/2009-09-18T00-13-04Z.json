@@ -1,1 +1,0 @@
-{"repo": "webrat", "files": [{"status": "modified", "deletions": 9, "additions": 17, "changes": 26, "filename": "spec/integration/rails/test/integration/webrat_test.rb"}], "stats": {"deletions": 9, "additions": 17, "total": 26}, "commit": {"date": "2009-09-18T00:13:04Z", "authorId": "brynary", "author": "Bryan Helmkamp"}}

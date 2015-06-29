@@ -1,1 +1,0 @@
-{"repo": "pycascading", "files": [{"status": "modified", "deletions": 41, "additions": 53, "changes": 94, "filename": "java/src/com/twitter/pycascading/CascadingRecordProducerWrapper.java"}], "stats": {"deletions": 41, "additions": 53, "total": 94}, "commit": {"date": "2012-02-16T01:55:15Z", "authorId": "", "author": "Gabor Szabo"}}

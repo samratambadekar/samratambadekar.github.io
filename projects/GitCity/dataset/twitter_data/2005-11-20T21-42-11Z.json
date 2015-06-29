@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 4, "additions": 15, "changes": 19, "filename": "Documentation/git-reset.txt"}], "stats": {"deletions": 4, "additions": 15, "total": 19}, "commit": {"date": "2005-11-20T21:42:11Z", "authorId": "", "author": "Andreas Ericsson"}}

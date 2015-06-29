@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 3, "additions": 19, "changes": 22, "filename": "t/lib-terminal.sh"}], "stats": {"deletions": 3, "additions": 19, "total": 22}, "commit": {"date": "2011-02-17T12:38:52Z", "authorId": "jrn", "author": "Jonathan Nieder"}}

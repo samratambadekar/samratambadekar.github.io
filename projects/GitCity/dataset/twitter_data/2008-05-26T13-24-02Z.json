@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 10, "additions": 12, "changes": 22, "filename": "Documentation/git-rev-parse.txt"}], "stats": {"deletions": 10, "additions": 12, "total": 22}, "commit": {"date": "2008-05-26T13:24:02Z", "authorId": "", "author": "Michele Ballabio"}}

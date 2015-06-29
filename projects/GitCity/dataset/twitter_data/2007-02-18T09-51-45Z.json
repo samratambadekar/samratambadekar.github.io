@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 16, "additions": 20, "changes": 36, "filename": "src/library/scala/collection/mutable/Queue.scala"}], "stats": {"deletions": 16, "additions": 20, "total": 36}, "commit": {"date": "2007-02-18T09:51:45Z", "authorId": "", "author": "mihaylov"}}

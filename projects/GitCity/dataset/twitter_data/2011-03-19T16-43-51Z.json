@@ -1,1 +1,0 @@
-{"repo": "commons", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "build-support/commons/scripts/publish-docs.sh"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-03-19T16:43:51Z", "authorId": "", "author": "John Sirois"}}

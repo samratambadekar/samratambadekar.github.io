@@ -1,1 +1,0 @@
-{"repo": "standard-project", "files": [{"status": "modified", "deletions": 5, "additions": 2, "changes": 7, "filename": "project/build/StandardProjectPlugin.scala"}], "stats": {"deletions": 5, "additions": 2, "total": 7}, "commit": {"date": "2011-06-27T17:24:16Z", "authorId": "", "author": "Robey Pointer"}}

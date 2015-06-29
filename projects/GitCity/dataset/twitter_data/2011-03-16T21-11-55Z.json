@@ -1,1 +1,0 @@
-{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "examples/src/pig/people_phone_number_count.pig"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2011-03-16T21:11:55Z", "authorId": "rangadi", "author": "Raghu Angadi"}}

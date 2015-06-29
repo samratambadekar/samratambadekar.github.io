@@ -1,1 +1,0 @@
-{"repo": "hogan.js", "files": [{"status": "modified", "deletions": 31, "additions": 42, "changes": 73, "filename": "lib/hogan.js"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "test/index.js"}], "stats": {"deletions": 32, "additions": 43, "total": 75}, "commit": {"date": "2011-12-23T17:12:33Z", "authorId": "sayrer", "author": "Rob Sayre"}}

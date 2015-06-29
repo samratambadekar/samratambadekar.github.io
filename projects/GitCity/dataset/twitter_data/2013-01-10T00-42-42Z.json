@@ -1,1 +1,0 @@
-{"repo": "bijection", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "bijection-core/src/test/scala/com/twitter/bijection/StringBijectionLaws.scala"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2013-01-10T00:42:42Z", "authorId": "", "author": "Jed Wesley-Smith"}}

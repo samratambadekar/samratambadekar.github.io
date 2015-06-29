@@ -1,1 +1,0 @@
-{"repo": "snowflake", "files": [{"status": "modified", "deletions": 3, "additions": 1, "changes": 4, "filename": "scripts/snowflake.sh"}], "stats": {"deletions": 3, "additions": 1, "total": 4}, "commit": {"date": "2010-05-25T00:52:52Z", "authorId": "ryanking", "author": "Ryan King"}}

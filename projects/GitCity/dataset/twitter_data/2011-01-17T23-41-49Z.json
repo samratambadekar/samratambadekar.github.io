@@ -1,1 +1,0 @@
-{"repo": "gizzmo", "files": [{"status": "modified", "deletions": 12, "additions": 33, "changes": 45, "filename": "lib/gizzard/rebalancer.rb"}], "stats": {"deletions": 12, "additions": 33, "total": 45}, "commit": {"date": "2011-01-17T23:41:49Z", "authorId": "freels", "author": "Matt Freels"}}

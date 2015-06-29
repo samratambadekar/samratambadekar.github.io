@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "core/src/main/java/org/apache/mahout/ep/State.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-08-19T16:15:05Z", "authorId": "tdunning", "author": "Ted Dunning"}}

@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "changed", "deletions": 0, "additions": 0, "changes": 0, "filename": "t/t0000-basic.sh"}, {"status": "changed", "deletions": 0, "additions": 0, "changes": 0, "filename": "t/test-lib.sh"}], "stats": {"deletions": 0, "additions": 0, "total": 0}, "commit": {"date": "2005-05-14T15:42:02Z", "authorId": "pasky", "author": "Petr Baudis"}}

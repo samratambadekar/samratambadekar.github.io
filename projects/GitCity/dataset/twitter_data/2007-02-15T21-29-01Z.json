@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 36, "additions": 28, "changes": 64, "filename": "docs/examples/actors/pingpong.scala"}], "stats": {"deletions": 36, "additions": 28, "total": 64}, "commit": {"date": "2007-02-15T21:29:01Z", "authorId": "phaller", "author": "Philipp Haller"}}

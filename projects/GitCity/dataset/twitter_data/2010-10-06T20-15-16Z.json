@@ -1,1 +1,0 @@
-{"repo": "kestrel-client", "files": [{"status": "modified", "deletions": 9, "additions": 3, "changes": 12, "filename": "lib/kestrel/client/transactional.rb"}], "stats": {"deletions": 9, "additions": 3, "total": 12}, "commit": {"date": "2010-10-06T20:15:16Z", "authorId": "", "author": "Evan Weaver"}}

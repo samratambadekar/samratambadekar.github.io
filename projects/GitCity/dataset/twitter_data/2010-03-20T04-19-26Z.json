@@ -1,1 +1,0 @@
-{"repo": "gizzard", "files": [{"status": "renamed", "deletions": 103, "additions": 50, "changes": 153, "filename": "src/test/scala/com/twitter/gizzard/nameserver/SqlNameServerSpec.scala"}], "stats": {"deletions": 103, "additions": 50, "total": 153}, "commit": {"date": "2010-03-20T04:19:26Z", "authorId": "", "author": "Ed Ceaser"}}

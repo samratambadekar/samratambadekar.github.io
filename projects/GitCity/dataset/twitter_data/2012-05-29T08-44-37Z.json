@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 38, "additions": 47, "changes": 85, "filename": "src/compiler/scala/tools/nsc/typechecker/PatternMatching.scala"}], "stats": {"deletions": 38, "additions": 47, "total": 85}, "commit": {"date": "2012-05-29T08:44:37Z", "authorId": "adriaanm", "author": "Adriaan Moors"}}

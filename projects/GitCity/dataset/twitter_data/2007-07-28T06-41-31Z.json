@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 6, "additions": 17, "changes": 23, "filename": "git-stash.sh"}], "stats": {"deletions": 6, "additions": 17, "total": 23}, "commit": {"date": "2007-07-28T06:41:31Z", "authorId": "gitster", "author": "Junio C Hamano"}}

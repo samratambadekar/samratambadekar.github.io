@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 37, "additions": 61, "changes": 98, "filename": "support/emacs/scala-mode.el"}], "stats": {"deletions": 37, "additions": 61, "total": 98}, "commit": {"date": "2003-08-14T08:31:32Z", "authorId": "", "author": "schinz"}}

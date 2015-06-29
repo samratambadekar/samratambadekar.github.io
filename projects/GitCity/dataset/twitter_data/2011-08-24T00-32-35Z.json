@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 31, "additions": 27, "changes": 58, "filename": "Documentation/gitrepository-layout.txt"}], "stats": {"deletions": 31, "additions": 27, "total": 58}, "commit": {"date": "2011-08-24T00:32:35Z", "authorId": "", "author": "Ben Walton"}}

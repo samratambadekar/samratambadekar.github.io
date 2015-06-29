@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "mysys/errors.c"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2008-06-16T08:05:00Z", "authorId": "", "author": "Hakan Kuecuekyilmaz"}}

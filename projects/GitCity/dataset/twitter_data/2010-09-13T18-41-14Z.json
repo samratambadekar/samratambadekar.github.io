@@ -1,1 +1,0 @@
-{"repo": "gizzard", "files": [{"status": "removed", "deletions": 47, "additions": 0, "changes": 47, "filename": "ivy/ivy.xml"}, {"status": "removed", "deletions": 30, "additions": 0, "changes": 30, "filename": "ivy/ivysettings.xml"}], "stats": {"deletions": 77, "additions": 0, "total": 77}, "commit": {"date": "2010-09-13T18:41:14Z", "authorId": "", "author": "Ed Ceaser"}}

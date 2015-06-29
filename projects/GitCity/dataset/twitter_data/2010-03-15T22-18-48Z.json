@@ -1,1 +1,0 @@
-{"repo": "gizzard", "files": [{"status": "modified", "deletions": 10, "additions": 7, "changes": 17, "filename": "src/main/scala/com/twitter/gizzard/proxy/LoggingProxy.scala"}], "stats": {"deletions": 10, "additions": 7, "total": 17}, "commit": {"date": "2010-03-15T22:18:48Z", "authorId": "", "author": "Robey Pointer"}}

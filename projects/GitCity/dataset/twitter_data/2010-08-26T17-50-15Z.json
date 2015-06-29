@@ -1,1 +1,0 @@
-{"repo": "kestrel-client", "files": [{"status": "modified", "deletions": 5, "additions": 15, "changes": 20, "filename": "lib/kestrel/client/blocking.rb"}], "stats": {"deletions": 5, "additions": 15, "total": 20}, "commit": {"date": "2010-08-26T17:50:15Z", "authorId": "freels", "author": "Matt Freels"}}

@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "removed", "deletions": 0, "additions": 0, "changes": 0, "filename": "README"}, {"status": "added", "deletions": 0, "additions": 3, "changes": 3, "filename": "README.md"}], "stats": {"deletions": 0, "additions": 3, "total": 3}, "commit": {"date": "2010-12-10T18:08:52Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

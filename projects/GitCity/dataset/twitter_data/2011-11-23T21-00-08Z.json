@@ -1,1 +1,0 @@
-{"repo": "kestrel", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/test/scala/net/lag/kestrel/load/Flood.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-11-23T21:00:08Z", "authorId": "", "author": "Robey Pointer"}}

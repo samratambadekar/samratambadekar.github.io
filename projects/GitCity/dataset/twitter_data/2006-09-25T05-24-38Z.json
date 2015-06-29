@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 8, "changes": 9, "filename": "git-checkout.sh"}, {"status": "modified", "deletions": 0, "additions": 9, "changes": 9, "filename": "t/t7201-co.sh"}], "stats": {"deletions": 1, "additions": 17, "total": 18}, "commit": {"date": "2006-09-25T05:24:38Z", "authorId": "spearce", "author": "Shawn Pearce"}}

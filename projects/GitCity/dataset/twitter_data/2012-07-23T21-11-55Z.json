@@ -1,1 +1,0 @@
-{"repo": "cassie", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "cassie-core/src/main/scala/com/twitter/cassie/connection/ClusterClientProvider.scala"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2012-07-23T21:11:55Z", "authorId": "", "author": "Xian Xu"}}

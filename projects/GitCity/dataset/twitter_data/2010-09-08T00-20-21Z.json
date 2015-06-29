@@ -1,1 +1,0 @@
-{"repo": "gizzard", "files": [{"status": "modified", "deletions": 3, "additions": 2, "changes": 5, "filename": "src/main/scala/com/twitter/gizzard/thrift/TSelectorServer.scala"}], "stats": {"deletions": 3, "additions": 2, "total": 5}, "commit": {"date": "2010-09-08T00:20:21Z", "authorId": "", "author": "Ed Ceaser"}}

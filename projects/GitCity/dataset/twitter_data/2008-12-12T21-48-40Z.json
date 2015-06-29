@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 9, "additions": 43, "changes": 52, "filename": "git-mergetool.sh"}], "stats": {"deletions": 9, "additions": 43, "total": 52}, "commit": {"date": "2008-12-12T21:48:40Z", "authorId": "hashpling", "author": "Charles Bailey"}}

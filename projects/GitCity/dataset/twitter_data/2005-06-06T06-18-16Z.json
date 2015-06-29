@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 18, "changes": 19, "filename": "t/t1000-read-tree-m-3way.sh"}], "stats": {"deletions": 1, "additions": 18, "total": 19}, "commit": {"date": "2005-06-06T06:18:16Z", "authorId": "", "author": "Junio C Hamano"}}

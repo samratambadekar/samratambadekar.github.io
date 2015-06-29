@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "mysql-test/r/cache_innodb.result"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2009-01-31T17:55:06Z", "authorId": "", "author": "Davi Arnaut"}}

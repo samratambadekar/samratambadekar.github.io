@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 19, "changes": 20, "filename": "git-count-objects.sh"}], "stats": {"deletions": 1, "additions": 19, "total": 20}, "commit": {"date": "2005-11-19T10:54:07Z", "authorId": "", "author": "Junio C Hamano"}}

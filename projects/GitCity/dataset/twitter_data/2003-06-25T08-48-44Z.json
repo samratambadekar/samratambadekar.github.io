@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "sources/scalac/symtab/Type.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2003-06-25T08:48:44Z", "authorId": "odersky", "author": "Martin Odersky"}}

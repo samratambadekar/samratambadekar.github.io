@@ -1,1 +1,0 @@
-{"repo": "cassie", "files": [{"status": "modified", "deletions": 0, "additions": 31, "changes": 31, "filename": "src/test/scala/com/codahale/cassie/tests/ColumnFamilyTest.scala"}], "stats": {"deletions": 0, "additions": 31, "total": 31}, "commit": {"date": "2010-04-23T21:32:18Z", "authorId": "codahale", "author": "Coda Hale"}}

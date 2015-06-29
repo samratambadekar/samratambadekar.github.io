@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 8, "changes": 9, "filename": "Documentation/git-merge-cache.txt"}], "stats": {"deletions": 1, "additions": 8, "total": 9}, "commit": {"date": "2005-05-11T02:49:36Z", "authorId": "pasky", "author": "Petr Baudis"}}

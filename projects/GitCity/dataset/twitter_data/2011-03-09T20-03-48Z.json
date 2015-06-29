@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "Documentation/git-ls-remote.txt"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-03-09T20:03:48Z", "authorId": "cvbge", "author": "Piotr Krukowiecki"}}

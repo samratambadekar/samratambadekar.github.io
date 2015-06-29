@@ -1,1 +1,0 @@
-{"repo": "pig", "files": [{"status": "modified", "deletions": 3, "additions": 1, "changes": 4, "filename": "src/org/apache/pig/data/DefaultDataBag.java"}], "stats": {"deletions": 3, "additions": 1, "total": 4}, "commit": {"date": "2010-02-12T20:02:45Z", "authorId": "", "author": "Jianyong Dai"}}

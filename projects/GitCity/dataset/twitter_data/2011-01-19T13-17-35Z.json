@@ -1,1 +1,0 @@
-{"repo": "twitter4j", "files": [{"status": "modified", "deletions": 0, "additions": 9, "changes": 9, "filename": "twitter4j-core/src/main/java/twitter4j/util/TimeSpanConverter.java"}], "stats": {"deletions": 0, "additions": 9, "total": 9}, "commit": {"date": "2011-01-19T13:17:35Z", "authorId": "yusuke", "author": "Yusuke Yamamoto"}}

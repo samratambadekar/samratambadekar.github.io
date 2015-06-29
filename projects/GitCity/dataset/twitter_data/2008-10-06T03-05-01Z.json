@@ -1,1 +1,0 @@
-{"repo": "webrat", "files": [{"status": "modified", "deletions": 92, "additions": 94, "changes": 186, "filename": "lib/boot_merb.rb"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "lib/webrat.rb"}], "stats": {"deletions": 93, "additions": 95, "total": 188}, "commit": {"date": "2008-10-06T03:05:01Z", "authorId": "", "author": "Jeremy Burks"}}

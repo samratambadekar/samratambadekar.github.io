@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "modified", "deletions": 8, "additions": 14, "changes": 22, "filename": "src/main/scala/com/twitter/finagle/service/Service.scala"}], "stats": {"deletions": 8, "additions": 14, "total": 22}, "commit": {"date": "2010-11-29T18:44:36Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

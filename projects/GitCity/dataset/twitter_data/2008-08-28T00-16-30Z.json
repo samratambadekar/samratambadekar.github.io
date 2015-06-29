@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "git-submodule.sh"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2008-08-28T00:16:30Z", "authorId": "gitster", "author": "Junio C Hamano"}}

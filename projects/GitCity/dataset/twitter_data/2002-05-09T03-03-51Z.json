@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 91, "additions": 44, "changes": 135, "filename": "Docs/glibc-2.2.5.patch"}], "stats": {"deletions": 91, "additions": 44, "total": 135}, "commit": {"date": "2002-05-09T03:03:51Z", "authorId": "", "author": "monty@hundin.mysql.fi"}}

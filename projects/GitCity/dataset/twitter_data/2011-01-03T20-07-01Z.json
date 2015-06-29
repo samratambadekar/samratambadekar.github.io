@@ -1,1 +1,0 @@
-{"repo": "sbt-package-dist", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/main/scala/com/twitter/sbt/StandardProject.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-01-03T20:07:01Z", "authorId": "", "author": "Jeremy Cloud"}}

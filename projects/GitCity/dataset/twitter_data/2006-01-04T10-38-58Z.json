@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 7, "additions": 20, "changes": 27, "filename": "ndb/test/ndbapi/testDataBuffers.cpp"}], "stats": {"deletions": 7, "additions": 20, "total": 27}, "commit": {"date": "2006-01-04T10:38:58Z", "authorId": "", "author": "jonas@perch.ndb.mysql.com"}}

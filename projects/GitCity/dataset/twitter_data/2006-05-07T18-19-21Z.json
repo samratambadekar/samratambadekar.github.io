@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 72, "additions": 106, "changes": 178, "filename": "sha1_file.c"}], "stats": {"deletions": 72, "additions": 106, "total": 178}, "commit": {"date": "2006-05-07T18:19:21Z", "authorId": "tali", "author": "Martin Waitz"}}

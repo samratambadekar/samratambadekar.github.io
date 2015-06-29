@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 5, "additions": 9, "changes": 14, "filename": "config.c"}, {"status": "added", "deletions": 0, "additions": 37, "changes": 37, "filename": "t/t1303-wacky-config.sh"}], "stats": {"deletions": 5, "additions": 46, "total": 51}, "commit": {"date": "2008-01-01T06:17:34Z", "authorId": "peff", "author": "Jeff King"}}

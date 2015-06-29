@@ -1,1 +1,0 @@
-{"repo": "recess", "files": [{"status": "modified", "deletions": 0, "additions": 6, "changes": 6, "filename": "README.md"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "package.json"}], "stats": {"deletions": 1, "additions": 7, "total": 8}, "commit": {"date": "2012-07-11T01:02:24Z", "authorId": "fat", "author": "Jacob Thornton"}}

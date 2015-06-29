@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "configure.in"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2005-05-09T16:14:10Z", "authorId": "", "author": "kent@mysql.com"}}

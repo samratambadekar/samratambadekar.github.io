@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "sources/scala/concurrent/ops.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2003-08-07T13:29:43Z", "authorId": "", "author": "paltherr"}}

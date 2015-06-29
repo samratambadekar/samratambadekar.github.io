@@ -1,1 +1,0 @@
-{"repo": "scala-bootstrapper", "files": [{"status": "modified", "deletions": 1, "additions": 6, "changes": 7, "filename": "lib/template/src/main/scala/com/twitter/birdname/BirdNameServiceImpl.scala.erb"}], "stats": {"deletions": 1, "additions": 6, "total": 7}, "commit": {"date": "2012-08-21T22:00:46Z", "authorId": "jowens", "author": "John Owens"}}

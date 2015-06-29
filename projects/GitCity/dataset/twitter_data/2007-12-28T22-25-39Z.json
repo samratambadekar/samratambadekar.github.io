@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 9, "changes": 9, "filename": "Documentation/git-sh-setup.txt"}], "stats": {"deletions": 0, "additions": 9, "total": 9}, "commit": {"date": "2007-12-28T22:25:39Z", "authorId": "vmiklos", "author": "Miklos Vajna"}}

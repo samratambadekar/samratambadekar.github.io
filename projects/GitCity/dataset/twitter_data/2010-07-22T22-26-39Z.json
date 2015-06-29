@@ -1,1 +1,0 @@
-{"repo": "kestrel-client", "files": [{"status": "modified", "deletions": 39, "additions": 0, "changes": 39, "filename": "spec/kestrel/client/blocking_spec.rb"}], "stats": {"deletions": 39, "additions": 0, "total": 39}, "commit": {"date": "2010-07-22T22:26:39Z", "authorId": "", "author": "Brandon Mitchell"}}

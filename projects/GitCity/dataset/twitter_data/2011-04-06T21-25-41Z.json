@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "added", "deletions": 0, "additions": 197, "changes": 197, "filename": "utils/bin/prep_asf_mail_archives.sh"}], "stats": {"deletions": 0, "additions": 197, "total": 197}, "commit": {"date": "2011-04-06T21:25:41Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

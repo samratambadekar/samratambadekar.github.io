@@ -1,1 +1,0 @@
-{"repo": "twurl", "files": [{"status": "modified", "deletions": 21, "additions": 2, "changes": 23, "filename": "Rakefile"}, {"status": "added", "deletions": 0, "additions": 22, "changes": 22, "filename": "twurl.gemspec"}], "stats": {"deletions": 21, "additions": 24, "total": 45}, "commit": {"date": "2010-09-30T03:15:36Z", "authorId": "sferik", "author": "Erik Michaels-Ober"}}

@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 4, "changes": 5, "filename": "src/compiler/scala/reflect/runtime/JavaConversions.scala"}], "stats": {"deletions": 1, "additions": 4, "total": 5}, "commit": {"date": "2011-07-18T14:02:26Z", "authorId": "odersky", "author": "Martin Odersky"}}

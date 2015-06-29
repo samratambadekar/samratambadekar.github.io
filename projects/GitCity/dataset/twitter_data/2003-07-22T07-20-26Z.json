@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 2, "additions": 0, "changes": 2, "filename": "sources/scala/collection/mutable/ImmutableMapAdaptor.scala"}], "stats": {"deletions": 2, "additions": 0, "total": 2}, "commit": {"date": "2003-07-22T07:20:26Z", "authorId": "", "author": "schinz"}}

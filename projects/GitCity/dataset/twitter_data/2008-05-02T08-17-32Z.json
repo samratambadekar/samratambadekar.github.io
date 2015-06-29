@@ -1,1 +1,0 @@
-{"repo": "kestrel", "files": [{"status": "modified", "deletions": 15, "additions": 56, "changes": 71, "filename": "src/com/twitter/scarling/memcache/Codec.scala"}], "stats": {"deletions": 15, "additions": 56, "total": 71}, "commit": {"date": "2008-05-02T08:17:32Z", "authorId": "", "author": "Robey Pointer"}}

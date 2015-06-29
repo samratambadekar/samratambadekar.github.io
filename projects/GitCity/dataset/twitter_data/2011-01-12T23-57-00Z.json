@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "added", "deletions": 0, "additions": 61, "changes": 61, "filename": "finagle-core/src/test/scala/com/twitter/finagle/service/RetryingFilterSpec.scala"}], "stats": {"deletions": 0, "additions": 61, "total": 61}, "commit": {"date": "2011-01-12T23:57:00Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

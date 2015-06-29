@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 3, "additions": 21, "changes": 24, "filename": "fsck-cache.c"}], "stats": {"deletions": 3, "additions": 21, "total": 24}, "commit": {"date": "2005-05-07T21:43:32Z", "authorId": "", "author": "Junio C Hamano"}}

@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "added", "deletions": 0, "additions": 31, "changes": 31, "filename": "test/files/run/arraycopy.scala"}], "stats": {"deletions": 0, "additions": 31, "total": 31}, "commit": {"date": "2010-02-17T12:23:13Z", "authorId": "axel22", "author": "Aleksandar Pokopec"}}

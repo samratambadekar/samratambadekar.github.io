@@ -1,1 +1,0 @@
-{"repo": "sbt-thrift", "files": [{"status": "modified", "deletions": 8, "additions": 19, "changes": 27, "filename": "src/main/scala/com/twitter/sbt/ReleaseManagement.scala"}], "stats": {"deletions": 8, "additions": 19, "total": 27}, "commit": {"date": "2011-01-01T15:55:26Z", "authorId": "", "author": "Jeremy Cloud"}}

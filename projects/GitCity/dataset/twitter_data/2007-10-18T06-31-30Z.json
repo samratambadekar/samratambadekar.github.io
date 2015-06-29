@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "read-cache.c"}, {"status": "added", "deletions": 0, "additions": 73, "changes": 73, "filename": "t/t8004-blame.sh"}], "stats": {"deletions": 0, "additions": 75, "total": 75}, "commit": {"date": "2007-10-18T06:31:30Z", "authorId": "torvalds", "author": "Linus Torvalds"}}

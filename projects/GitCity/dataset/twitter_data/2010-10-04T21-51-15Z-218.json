@@ -1,1 +1,0 @@
-{"repo": "sbt-thrift", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "src/main/scala/com/twitter/sbt/NoisyDependencies.scala"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2010-10-04T21:51:15Z", "authorId": "", "author": "Robey Pointer"}}

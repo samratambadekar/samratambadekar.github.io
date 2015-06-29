@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "added", "deletions": 0, "additions": 585, "changes": 585, "filename": "t/t4047-diff-dirstat.sh"}], "stats": {"deletions": 0, "additions": 585, "total": 585}, "commit": {"date": "2011-04-29T09:36:16Z", "authorId": "jherland", "author": "Johan Herland"}}

@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 12, "additions": 14, "changes": 26, "filename": "git-mv.perl"}], "stats": {"deletions": 12, "additions": 14, "total": 26}, "commit": {"date": "2006-03-01T18:09:23Z", "authorId": "weidendo", "author": "Josef Weidendorfer"}}

@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 4, "changes": 6, "filename": "t/t5541-http-push.sh"}], "stats": {"deletions": 2, "additions": 4, "total": 6}, "commit": {"date": "2010-03-02T10:49:25Z", "authorId": "rctay", "author": "Tay Ray Chuan"}}

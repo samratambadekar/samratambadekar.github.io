@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 0, "additions": 16, "changes": 16, "filename": "utils/src/main/java/org/apache/mahout/text/SequenceFilesFromCsvFilter.java"}], "stats": {"deletions": 0, "additions": 16, "total": 16}, "commit": {"date": "2011-03-25T13:44:17Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

@@ -1,1 +1,0 @@
-{"repo": "kestrel-client", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "lib/kestrel/client/stats_helper.rb"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-09-06T20:46:00Z", "authorId": "eric", "author": "Eric Lindvall"}}

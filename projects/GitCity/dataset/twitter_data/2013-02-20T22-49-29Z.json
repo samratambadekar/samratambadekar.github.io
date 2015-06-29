@@ -1,1 +1,0 @@
-{"repo": "hbc", "files": [{"status": "modified", "deletions": 2, "additions": 1, "changes": 3, "filename": "hbc-core/src/main/java/com/twitter/hbc/httpclient/ClientBase.java"}], "stats": {"deletions": 2, "additions": 1, "total": 3}, "commit": {"date": "2013-02-20T22:49:29Z", "authorId": "xsl", "author": "Steven Liu"}}

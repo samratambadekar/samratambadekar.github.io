@@ -1,1 +1,0 @@
-{"repo": "pig", "files": [{"status": "added", "deletions": 0, "additions": 158, "changes": 158, "filename": "test/org/apache/pig/parser/TestErrorHandling.java"}], "stats": {"deletions": 0, "additions": 158, "total": 158}, "commit": {"date": "2011-04-04T18:36:20Z", "authorId": "", "author": "Xuefu Zhang"}}

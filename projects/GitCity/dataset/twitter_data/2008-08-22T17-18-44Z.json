@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 18, "additions": 18, "changes": 36, "filename": "builtin-merge-recursive.c"}], "stats": {"deletions": 18, "additions": 18, "total": 36}, "commit": {"date": "2008-08-22T17:18:44Z", "authorId": "", "author": "Jonathan del Strother"}}

@@ -1,1 +1,0 @@
-{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 0, "additions": 6, "changes": 6, "filename": "spec/autolinking_spec.rb"}], "stats": {"deletions": 0, "additions": 6, "total": 6}, "commit": {"date": "2012-01-31T00:40:23Z", "authorId": "keitaf", "author": "keita"}}

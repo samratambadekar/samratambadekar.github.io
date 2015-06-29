@@ -1,1 +1,0 @@
-{"repo": "gizzard", "files": [{"status": "modified", "deletions": 2, "additions": 3, "changes": 5, "filename": "src/main/scala/com/twitter/gizzard/KestrelMessageQueue.scala"}], "stats": {"deletions": 2, "additions": 3, "total": 5}, "commit": {"date": "2010-02-16T18:50:11Z", "authorId": "", "author": "Robey Pointer"}}

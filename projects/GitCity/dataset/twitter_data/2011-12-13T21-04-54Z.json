@@ -1,1 +1,0 @@
-{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 7, "additions": 23, "changes": 30, "filename": "spec/spec_helper.rb"}], "stats": {"deletions": 7, "additions": 23, "total": 30}, "commit": {"date": "2011-12-13T21:04:54Z", "authorId": "rylnd", "author": "Ryland Herrick"}}

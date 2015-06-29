@@ -1,1 +1,0 @@
-{"repo": "thrift_client", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "lib/thrift_client/abstract_thrift_client.rb"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2011-06-09T00:19:48Z", "authorId": "", "author": "Lennon Day-Reynolds"}}

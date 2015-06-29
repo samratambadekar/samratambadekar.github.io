@@ -1,1 +1,0 @@
-{"repo": "kestrel", "files": [{"status": "modified", "deletions": 3, "additions": 8, "changes": 11, "filename": "src/main/scala/net/lag/kestrel/Kestrel.scala"}], "stats": {"deletions": 3, "additions": 8, "total": 11}, "commit": {"date": "2012-08-22T16:12:48Z", "authorId": "zuercher", "author": "Stephan Zuercher"}}

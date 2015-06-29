@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 19, "changes": 19, "filename": "t/t0001-init.sh"}, {"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "wrap-for-bin.sh"}], "stats": {"deletions": 1, "additions": 21, "total": 22}, "commit": {"date": "2010-02-26T04:00:21Z", "authorId": "", "author": "Steven Drake"}}

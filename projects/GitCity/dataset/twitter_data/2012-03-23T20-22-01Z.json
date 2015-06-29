@@ -1,1 +1,0 @@
-{"repo": "scalding", "files": [{"status": "modified", "deletions": 4, "additions": 7, "changes": 11, "filename": "src/main/scala/com/twitter/scalding/Mode.scala"}], "stats": {"deletions": 4, "additions": 7, "total": 11}, "commit": {"date": "2012-03-23T20:22:01Z", "authorId": "azymnis", "author": "Argyris Zymnis"}}

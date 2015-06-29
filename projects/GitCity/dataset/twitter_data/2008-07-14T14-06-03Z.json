@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 8, "additions": 4, "changes": 12, "filename": "mysql-test/suite/rpl_ndb/r/rpl_ndb_log.result"}], "stats": {"deletions": 8, "additions": 4, "total": 12}, "commit": {"date": "2008-07-14T14:06:03Z", "authorId": "", "author": "Sven Sandberg"}}

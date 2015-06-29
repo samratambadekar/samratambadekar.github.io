@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "debian/rules"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "git-core.spec.in"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2005-08-12T19:25:34Z", "authorId": "", "author": "Junio C Hamano"}}

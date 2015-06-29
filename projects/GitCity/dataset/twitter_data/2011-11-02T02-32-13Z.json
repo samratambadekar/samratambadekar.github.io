@@ -1,1 +1,0 @@
-{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 1, "additions": 66, "changes": 67, "filename": "src/java/com/twitter/elephantbird/pig/load/LzoBaseLoadFunc.java"}], "stats": {"deletions": 1, "additions": 66, "total": 67}, "commit": {"date": "2011-11-02T02:32:13Z", "authorId": "rangadi", "author": "Raghu Angadi"}}

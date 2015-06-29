@@ -1,1 +1,0 @@
-{"repo": "scalacheck", "files": [{"status": "added", "deletions": 0, "additions": 85, "changes": 85, "filename": "src/test/scala/org/scalacheck/examples/StringUtils.scala"}], "stats": {"deletions": 0, "additions": 85, "total": 85}, "commit": {"date": "2013-04-01T18:41:29Z", "authorId": "rickynils", "author": "Rickard Nilsson"}}

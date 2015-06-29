@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 5, "changes": 6, "filename": "git-compat-util.h"}], "stats": {"deletions": 1, "additions": 5, "total": 6}, "commit": {"date": "2007-12-29T19:22:14Z", "authorId": "dscho", "author": "Johannes Schindelin"}}

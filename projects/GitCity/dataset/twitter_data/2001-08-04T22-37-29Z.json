@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "mysql-test/t/union.test"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2001-08-04T22:37:29Z", "authorId": "", "author": "sasha@mysql.sashanet.com"}}

@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "cmd-line-utils/libedit/vi.c"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2005-05-13T17:04:15Z", "authorId": "", "author": "jimw@mysql.com"}}

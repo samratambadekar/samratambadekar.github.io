@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 11, "changes": 12, "filename": "src/library/scala/concurrent/FutureTaskRunner.scala"}], "stats": {"deletions": 1, "additions": 11, "total": 12}, "commit": {"date": "2010-11-20T17:18:22Z", "authorId": "odersky", "author": "Martin Odersky"}}

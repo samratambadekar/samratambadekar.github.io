@@ -1,1 +1,0 @@
-{"repo": "scala_school", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": ".gitignore"}, {"status": "added", "deletions": 0, "additions": 4, "changes": 4, "filename": "Makefile"}], "stats": {"deletions": 1, "additions": 6, "total": 7}, "commit": {"date": "2011-08-23T00:14:14Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

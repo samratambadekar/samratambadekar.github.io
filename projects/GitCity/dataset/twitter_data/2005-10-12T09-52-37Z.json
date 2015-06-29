@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "sql/sp_head.cc"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2005-10-12T09:52:37Z", "authorId": "", "author": "pem@mysql.com"}}

@@ -1,1 +1,0 @@
-{"repo": "querulous", "files": [{"status": "removed", "deletions": 95, "additions": 0, "changes": 95, "filename": "src/main/scala/com/twitter/querulous/QuerulousConnection.scala"}], "stats": {"deletions": 95, "additions": 0, "total": 95}, "commit": {"date": "2011-05-04T22:50:50Z", "authorId": "", "author": "eaceaser"}}

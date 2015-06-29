@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "added", "deletions": 0, "additions": 106, "changes": 106, "filename": "t/t4021-format-patch-numbered.sh"}], "stats": {"deletions": 0, "additions": 106, "total": 106}, "commit": {"date": "2007-11-04T05:50:23Z", "authorId": "Benabik", "author": "Brian Gernhardt"}}

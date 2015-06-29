@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "diff.c"}, {"status": "added", "deletions": 0, "additions": 85, "changes": 85, "filename": "t/t4011-diff-symlink.sh"}], "stats": {"deletions": 1, "additions": 86, "total": 87}, "commit": {"date": "2005-12-26T21:31:42Z", "authorId": "dscho", "author": "Johannes Schindelin"}}

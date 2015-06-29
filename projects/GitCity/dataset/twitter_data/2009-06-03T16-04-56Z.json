@@ -1,1 +1,0 @@
-{"repo": "twitter4j", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "src/main/java/twitter4j/http/AccessToken.java"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2009-06-03T16:04:56Z", "authorId": "", "author": "yusuke"}}

@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 6, "additions": 11, "changes": 17, "filename": "Documentation/RelNotes-1.6.0.1.txt"}], "stats": {"deletions": 6, "additions": 11, "total": 17}, "commit": {"date": "2008-08-24T21:47:24Z", "authorId": "gitster", "author": "Junio C Hamano"}}

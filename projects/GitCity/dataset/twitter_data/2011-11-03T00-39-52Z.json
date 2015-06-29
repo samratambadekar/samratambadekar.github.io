@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 48, "additions": 47, "changes": 95, "filename": "core/src/main/java/org/apache/mahout/common/distance/MahalanobisDistanceMeasure.java"}], "stats": {"deletions": 48, "additions": 47, "total": 95}, "commit": {"date": "2011-11-03T00:39:52Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

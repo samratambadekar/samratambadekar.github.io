@@ -1,1 +1,0 @@
-{"repo": "zipkin", "files": [{"status": "modified", "deletions": 10, "additions": 22, "changes": 32, "filename": "zipkin-web/src/main/scala/com/twitter/zipkin/web/App.scala"}], "stats": {"deletions": 10, "additions": 22, "total": 32}, "commit": {"date": "2013-03-12T17:51:32Z", "authorId": "bmdhacks", "author": "Brian Degenhardt"}}

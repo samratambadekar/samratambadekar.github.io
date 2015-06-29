@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 5, "additions": 82, "changes": 87, "filename": "builtin-mv.c"}, {"status": "modified", "deletions": 0, "additions": 4, "changes": 4, "filename": "t/t7001-mv.sh"}], "stats": {"deletions": 5, "additions": 86, "total": 91}, "commit": {"date": "2006-07-26T17:47:54Z", "authorId": "dscho", "author": "Johannes Schindelin"}}

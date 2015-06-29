@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 15, "changes": 16, "filename": "sha1_file.c"}, {"status": "modified", "deletions": 0, "additions": 7, "changes": 7, "filename": "t/t5300-pack-object.sh"}], "stats": {"deletions": 1, "additions": 22, "total": 23}, "commit": {"date": "2005-12-23T06:57:20Z", "authorId": "", "author": "Junio C Hamano"}}

@@ -1,1 +1,0 @@
-{"repo": "pig", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "test/org/apache/pig/test/TestGrunt.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-11-01T18:03:09Z", "authorId": "", "author": "Jianyong Dai"}}

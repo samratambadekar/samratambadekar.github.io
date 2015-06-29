@@ -1,1 +1,0 @@
-{"repo": "twitter-text-java", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/com/twitter/Regex.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-12-08T01:02:27Z", "authorId": "keitaf", "author": "Keita Fujii"}}

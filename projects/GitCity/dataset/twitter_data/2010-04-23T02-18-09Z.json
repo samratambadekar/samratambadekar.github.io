@@ -1,1 +1,0 @@
-{"repo": "cassie", "files": [{"status": "added", "deletions": 0, "additions": 20, "changes": 20, "filename": "LICENSE"}, {"status": "added", "deletions": 0, "additions": 116, "changes": 116, "filename": "README.md"}], "stats": {"deletions": 0, "additions": 136, "total": 136}, "commit": {"date": "2010-04-23T02:18:09Z", "authorId": "codahale", "author": "Coda Hale"}}

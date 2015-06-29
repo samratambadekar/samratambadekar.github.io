@@ -1,1 +1,0 @@
-{"repo": "bijection", "files": [{"status": "modified", "deletions": 46, "additions": 52, "changes": 98, "filename": "bijection-core/src/main/scala/com/twitter/bijection/CollectionBijections.scala"}], "stats": {"deletions": 46, "additions": 52, "total": 98}, "commit": {"date": "2013-02-04T09:16:23Z", "authorId": "", "author": "Sam Ritchie"}}

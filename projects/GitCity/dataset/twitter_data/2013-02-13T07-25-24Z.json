@@ -1,1 +1,0 @@
-{"repo": "bijection", "files": [{"status": "modified", "deletions": 0, "additions": 18, "changes": 18, "filename": "bijection-core/src/test/java/com/twitter/bijection/TestBijectionInJava.java"}], "stats": {"deletions": 0, "additions": 18, "total": 18}, "commit": {"date": "2013-02-13T07:25:24Z", "authorId": "sritchie", "author": "Sam Ritchie"}}

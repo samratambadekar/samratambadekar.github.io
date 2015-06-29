@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 6, "additions": 4, "changes": 10, "filename": "vio/viossl.c"}], "stats": {"deletions": 6, "additions": 4, "total": 10}, "commit": {"date": "2006-10-16T15:01:02Z", "authorId": "", "author": "msvensson@neptunus.(none)"}}

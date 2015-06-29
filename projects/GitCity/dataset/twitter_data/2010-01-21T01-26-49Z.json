@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "renamed", "deletions": 38, "additions": 104, "changes": 142, "filename": "utils/src/test/java/org/apache/mahout/clustering/dirichlet/TestL1ModelClustering.java"}], "stats": {"deletions": 38, "additions": 104, "total": 142}, "commit": {"date": "2010-01-21T01:26:49Z", "authorId": "", "author": "Jeff Eastman"}}

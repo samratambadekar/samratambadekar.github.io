@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 15, "additions": 15, "changes": 30, "filename": "src/compiler/scala/tools/cmd/gen/AnyVals.scala"}], "stats": {"deletions": 15, "additions": 15, "total": 30}, "commit": {"date": "2012-02-15T00:29:50Z", "authorId": "paulp", "author": "Paul Phillips"}}

@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 5, "changes": 6, "filename": "core/src/main/java/org/apache/mahout/cf/taste/recommender/Rescorer.java"}], "stats": {"deletions": 1, "additions": 5, "total": 6}, "commit": {"date": "2008-11-06T18:55:05Z", "authorId": "", "author": "Otis Gospodnetic"}}

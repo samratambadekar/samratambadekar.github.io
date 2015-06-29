@@ -1,1 +1,0 @@
-{"repo": "bijection", "files": [{"status": "modified", "deletions": 9, "additions": 16, "changes": 25, "filename": "bijection-core/src/main/scala/com/twitter/bijection/Rep.scala"}], "stats": {"deletions": 9, "additions": 16, "total": 25}, "commit": {"date": "2013-01-10T04:09:28Z", "authorId": "", "author": "Jed Wesley-Smith"}}

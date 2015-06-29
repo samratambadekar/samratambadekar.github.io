@@ -1,1 +1,0 @@
-{"repo": "util", "files": [{"status": "modified", "deletions": 1, "additions": 5, "changes": 6, "filename": "util-core/src/main/scala/com/twitter/util/TimeoutException.scala"}], "stats": {"deletions": 1, "additions": 5, "total": 6}, "commit": {"date": "2011-06-13T22:39:13Z", "authorId": "jmhodges", "author": "Jeff Hodges"}}

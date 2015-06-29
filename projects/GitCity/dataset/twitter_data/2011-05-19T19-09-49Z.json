@@ -1,1 +1,0 @@
-{"repo": "scala-bootstrapper", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "lib/template/src/scripts/startup.sh"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-05-19T19:09:49Z", "authorId": "", "author": "Kyle Maxwell"}}

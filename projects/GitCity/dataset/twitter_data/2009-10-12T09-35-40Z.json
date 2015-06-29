@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "mysql-test/std_data/latin1.xml"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2009-10-12T09:35:40Z", "authorId": "", "author": "V Narayanan"}}

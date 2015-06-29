@@ -1,1 +1,0 @@
-{"repo": "twurl", "files": [{"status": "modified", "deletions": 2, "additions": 8, "changes": 10, "filename": "Gemfile.lock"}, {"status": "modified", "deletions": 1, "additions": 4, "changes": 5, "filename": "twurl.gemspec"}], "stats": {"deletions": 3, "additions": 12, "total": 15}, "commit": {"date": "2010-09-30T03:30:05Z", "authorId": "sferik", "author": "Erik Michaels-Ober"}}

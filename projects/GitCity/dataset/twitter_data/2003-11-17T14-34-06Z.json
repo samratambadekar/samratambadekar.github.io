@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 7, "additions": 8, "changes": 15, "filename": "sql/sql_parse.cc"}], "stats": {"deletions": 7, "additions": 8, "total": 15}, "commit": {"date": "2003-11-17T14:34:06Z", "authorId": "", "author": "gluh@gluh.mysql.r18.ru"}}

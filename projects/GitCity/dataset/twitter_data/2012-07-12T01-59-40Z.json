@@ -1,1 +1,0 @@
-{"repo": "twemcache", "files": [{"status": "modified", "deletions": 3, "additions": 17, "changes": 20, "filename": "tests/functional/advanced.py"}], "stats": {"deletions": 3, "additions": 17, "total": 20}, "commit": {"date": "2012-07-12T01:59:40Z", "authorId": "thinkingfish", "author": "Yao Yue"}}

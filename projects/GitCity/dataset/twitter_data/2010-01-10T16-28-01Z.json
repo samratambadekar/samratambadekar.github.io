@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 25, "additions": 25, "changes": 50, "filename": "core/src/main/java/org/apache/mahout/clustering/lda/LDAPrintTopics.java"}], "stats": {"deletions": 25, "additions": 25, "total": 50}, "commit": {"date": "2010-01-10T16:28:01Z", "authorId": "gsingers", "author": "Grant Ingersoll"}}

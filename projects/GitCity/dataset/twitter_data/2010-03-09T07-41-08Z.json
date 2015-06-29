@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 0, "additions": 6, "changes": 6, "filename": "ChangeLog"}, {"status": "modified", "deletions": 37, "additions": 84, "changes": 121, "filename": "handler/ha_innodb.cc"}], "stats": {"deletions": 37, "additions": 90, "total": 127}, "commit": {"date": "2010-03-09T07:41:08Z", "authorId": "", "author": "marko"}}

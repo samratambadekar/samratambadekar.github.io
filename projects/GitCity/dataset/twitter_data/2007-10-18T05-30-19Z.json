@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 24, "additions": 30, "changes": 54, "filename": "diffcore-delta.c"}], "stats": {"deletions": 24, "additions": 30, "total": 54}, "commit": {"date": "2007-10-18T05:30:19Z", "authorId": "spearce", "author": "Shawn O. Pearce"}}

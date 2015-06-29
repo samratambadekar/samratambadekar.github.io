@@ -1,1 +1,0 @@
-{"repo": "bookkeeper", "files": [{"status": "modified", "deletions": 1, "additions": 11, "changes": 12, "filename": "bookkeeper-server/src/main/java/org/apache/bookkeeper/bookie/BufferedReadChannel.java"}], "stats": {"deletions": 1, "additions": 11, "total": 12}, "commit": {"date": "2012-10-25T14:33:33Z", "authorId": "robindh", "author": "Robin Dhamankar"}}

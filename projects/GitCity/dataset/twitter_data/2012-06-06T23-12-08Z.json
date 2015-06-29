@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "renamed", "deletions": 1, "additions": 1, "changes": 2, "filename": "core/src/test/scala/spark/BoundedMemoryCacheSuite.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-06-06T23:12:08Z", "authorId": "mateiz", "author": "Matei Zaharia"}}

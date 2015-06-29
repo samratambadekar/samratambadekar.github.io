@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "core/src/main/java/org/apache/mahout/math/hadoop/stochasticsvd/BtJob.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-09-24T00:26:56Z", "authorId": "dlyubimov", "author": "Dmitriy Lyubimov"}}

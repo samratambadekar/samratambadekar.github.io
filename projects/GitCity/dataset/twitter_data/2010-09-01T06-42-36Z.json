@@ -1,1 +1,0 @@
-{"repo": "joauth", "files": [{"status": "modified", "deletions": 202, "additions": 201, "changes": 403, "filename": "LICENSE"}, {"status": "removed", "deletions": 0, "additions": 0, "changes": 0, "filename": "README"}], "stats": {"deletions": 202, "additions": 201, "total": 403}, "commit": {"date": "2010-09-01T06:42:36Z", "authorId": "9len", "author": "Glen D Sanford"}}

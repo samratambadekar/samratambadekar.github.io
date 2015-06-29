@@ -1,1 +1,0 @@
-{"repo": "hadoop-lzo", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/java/com/hadoop/compression/lzo/LzopCodec.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-04-24T23:15:35Z", "authorId": "yuxutw", "author": "Yu Xu"}}

@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 13, "additions": 22, "changes": 35, "filename": "object.c"}], "stats": {"deletions": 13, "additions": 22, "total": 35}, "commit": {"date": "2007-12-21T10:56:32Z", "authorId": "", "author": "Jim Meyering"}}

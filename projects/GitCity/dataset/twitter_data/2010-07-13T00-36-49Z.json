@@ -1,1 +1,0 @@
-{"repo": "twitter-text-java", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "src/com/twitter/Regex.java"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2010-07-13T00:36:49Z", "authorId": "", "author": "Matt Sanford"}}

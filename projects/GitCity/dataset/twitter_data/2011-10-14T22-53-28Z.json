@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "t/t1020-subdirectory.sh"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-10-14T22:53:28Z", "authorId": "dscho", "author": "Johannes Schindelin"}}

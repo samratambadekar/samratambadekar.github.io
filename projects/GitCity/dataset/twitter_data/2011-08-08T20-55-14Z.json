@@ -1,1 +1,0 @@
-{"repo": "haplocheirus", "files": [{"status": "modified", "deletions": 1, "additions": 7, "changes": 8, "filename": "src/main/thrift/TimelineStore.thrift"}], "stats": {"deletions": 1, "additions": 7, "total": 8}, "commit": {"date": "2011-08-08T20:55:14Z", "authorId": "rcohen", "author": "Ross Cohen"}}

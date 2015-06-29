@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "remote.c"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "t/t6040-tracking-info.sh"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2009-05-11T14:42:54Z", "authorId": "mjg", "author": "Michael J Gruber"}}

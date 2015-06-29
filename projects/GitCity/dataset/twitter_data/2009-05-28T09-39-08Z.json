@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "build.xml"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/build/pack.xml"}], "stats": {"deletions": 2, "additions": 3, "total": 5}, "commit": {"date": "2009-05-28T09:39:08Z", "authorId": "lrytz", "author": "Lukas Rytz"}}

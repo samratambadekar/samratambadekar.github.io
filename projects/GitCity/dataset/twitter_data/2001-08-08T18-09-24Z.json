@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 4, "changes": 5, "filename": "Docs/manual.texi"}, {"status": "modified", "deletions": 0, "additions": 1, "changes": 1, "filename": "sql/sql_select.cc"}], "stats": {"deletions": 1, "additions": 5, "total": 6}, "commit": {"date": "2001-08-08T18:09:24Z", "authorId": "", "author": "monty@tik.mysql.fi"}}

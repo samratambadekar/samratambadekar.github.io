@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 9, "additions": 15, "changes": 24, "filename": "builtin-pickaxe.c"}], "stats": {"deletions": 9, "additions": 15, "total": 24}, "commit": {"date": "2006-11-04T20:37:02Z", "authorId": "", "author": "Junio C Hamano"}}

@@ -1,1 +1,0 @@
-{"repo": "querulous", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "src/main/scala/com/twitter/querulous/Timeout.scala"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2011-01-05T22:23:22Z", "authorId": "", "author": "Benjy Weinberger"}}

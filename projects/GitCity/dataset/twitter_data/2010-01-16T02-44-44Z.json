@@ -1,1 +1,0 @@
-{"repo": "ostrich", "files": [{"status": "modified", "deletions": 11, "additions": 3, "changes": 14, "filename": "src/main/scala/com/twitter/ostrich/AdminHttpService.scala"}], "stats": {"deletions": 11, "additions": 3, "total": 14}, "commit": {"date": "2010-01-16T02:44:44Z", "authorId": "", "author": "Alex Payne"}}

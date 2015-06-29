@@ -1,1 +1,0 @@
-{"repo": "chill", "files": [{"status": "modified", "deletions": 3, "additions": 27, "changes": 30, "filename": "src/main/scala/com/twitter/chill/KryoSerializer.scala"}], "stats": {"deletions": 3, "additions": 27, "total": 30}, "commit": {"date": "2013-01-22T23:37:32Z", "authorId": "", "author": "rhall"}}

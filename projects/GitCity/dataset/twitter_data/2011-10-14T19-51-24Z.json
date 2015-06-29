@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 5, "changes": 5, "filename": "t/t1304-default-acl.sh"}], "stats": {"deletions": 0, "additions": 5, "total": 5}, "commit": {"date": "2011-10-14T19:51:24Z", "authorId": "gitster", "author": "Junio C Hamano"}}

@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 5, "additions": 13, "changes": 18, "filename": "t/t9500-gitweb-standalone-no-errors.sh"}], "stats": {"deletions": 5, "additions": 13, "total": 18}, "commit": {"date": "2007-09-11T18:16:51Z", "authorId": "", "author": "Ramsay Jones"}}

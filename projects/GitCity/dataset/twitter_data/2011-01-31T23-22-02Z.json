@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "modified", "deletions": 0, "additions": 39, "changes": 39, "filename": "finagle-core/src/test/scala/com/twitter/finagle/pool/CachingPoolSpec.scala"}], "stats": {"deletions": 0, "additions": 39, "total": 39}, "commit": {"date": "2011-01-31T23:22:02Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

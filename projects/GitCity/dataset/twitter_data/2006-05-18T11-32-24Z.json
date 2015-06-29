@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "ndb/src/mgmclient/CommandInterpreter.cpp"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2006-05-18T11:32:24Z", "authorId": "", "author": "stewart@mysql.com"}}

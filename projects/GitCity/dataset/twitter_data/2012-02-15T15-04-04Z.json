@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 2, "additions": 1, "changes": 3, "filename": "src/library/scala/collection/parallel/mutable/ParCtrie.scala"}], "stats": {"deletions": 2, "additions": 1, "total": 3}, "commit": {"date": "2012-02-15T15:04:04Z", "authorId": "axel22", "author": "Aleksandar Prokopec"}}

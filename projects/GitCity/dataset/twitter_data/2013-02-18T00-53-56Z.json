@@ -1,1 +1,0 @@
-{"repo": "sprockets-commonjs-twitter", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "lib/sprockets/commonjs/engine.rb"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2013-02-18T00:53:56Z", "authorId": "dominicpacquing", "author": "Paul Pacquing"}}

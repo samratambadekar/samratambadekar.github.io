@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 0, "changes": 1, "filename": "test/files/xml/lnk.check"}, {"status": "modified", "deletions": 4, "additions": 3, "changes": 7, "filename": "test/files/xml/lnk.scala"}], "stats": {"deletions": 5, "additions": 3, "total": 8}, "commit": {"date": "2004-06-03T07:57:51Z", "authorId": "", "author": "buraq"}}

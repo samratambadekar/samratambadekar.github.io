@@ -1,1 +1,0 @@
-{"repo": "flockdb", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/main/thrift/Flockdb.thrift"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2010-10-13T19:19:49Z", "authorId": "", "author": "Robey Pointer"}}

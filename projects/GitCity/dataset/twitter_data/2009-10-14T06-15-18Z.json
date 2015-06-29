@@ -1,1 +1,0 @@
-{"repo": "thrift_client", "files": [{"status": "modified", "deletions": 6, "additions": 10, "changes": 16, "filename": "lib/thrift_client.rb"}], "stats": {"deletions": 6, "additions": 10, "total": 16}, "commit": {"date": "2009-10-14T06:15:18Z", "authorId": "", "author": "Evan Weaver"}}

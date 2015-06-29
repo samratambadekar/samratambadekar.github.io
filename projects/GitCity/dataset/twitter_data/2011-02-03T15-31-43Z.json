@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 7, "changes": 9, "filename": "t/t4120-apply-popt.sh"}], "stats": {"deletions": 2, "additions": 7, "total": 9}, "commit": {"date": "2011-02-03T15:31:43Z", "authorId": "", "author": "Johannes Sixt"}}

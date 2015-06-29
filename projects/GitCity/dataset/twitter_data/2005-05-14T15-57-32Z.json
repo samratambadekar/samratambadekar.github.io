@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 4, "additions": 3, "changes": 7, "filename": "t/Makefile"}], "stats": {"deletions": 4, "additions": 3, "total": 7}, "commit": {"date": "2005-05-14T15:57:32Z", "authorId": "pasky", "author": "Petr Baudis"}}

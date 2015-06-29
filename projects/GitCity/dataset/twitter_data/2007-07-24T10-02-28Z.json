@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "contrib/emacs/git.el"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2007-07-24T10:02:28Z", "authorId": "julliard", "author": "Alexandre Julliard"}}

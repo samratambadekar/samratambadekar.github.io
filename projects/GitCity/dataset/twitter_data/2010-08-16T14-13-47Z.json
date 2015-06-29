@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 368, "additions": 319, "changes": 687, "filename": "math/src/main/java/org/apache/mahout/math/matrix/linalg/Property.java"}], "stats": {"deletions": 368, "additions": 319, "total": 687}, "commit": {"date": "2010-08-16T14:13:47Z", "authorId": "tdunning", "author": "Ted Dunning"}}

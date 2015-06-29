@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 2, "additions": 0, "changes": 2, "filename": "mysys/my_getopt.c"}], "stats": {"deletions": 2, "additions": 0, "total": 2}, "commit": {"date": "2003-11-24T11:25:08Z", "authorId": "", "author": "jani@rhols221.adsl.netsonic.fi"}}

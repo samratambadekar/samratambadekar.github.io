@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 17, "additions": 64, "changes": 81, "filename": "builtin-send-pack.c"}], "stats": {"deletions": 17, "additions": 64, "total": 81}, "commit": {"date": "2007-11-05T05:11:15Z", "authorId": "peff", "author": "Jeff King"}}

@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "core/src/test/java/org/apache/mahout/common/MahoutTestCase.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-08-13T05:12:33Z", "authorId": "jakemannix", "author": "Jacob Alexander Mannix"}}

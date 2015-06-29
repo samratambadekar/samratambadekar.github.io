@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "sources/bin/.scala_wrapper.tmpl"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2003-07-21T15:37:10Z", "authorId": "", "author": "paltherr"}}

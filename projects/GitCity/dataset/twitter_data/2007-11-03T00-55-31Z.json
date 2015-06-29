@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "added", "deletions": 0, "additions": 42, "changes": 42, "filename": "t/t4021-format-patch-signer-mime.sh"}], "stats": {"deletions": 0, "additions": 42, "total": 42}, "commit": {"date": "2007-11-03T00:55:31Z", "authorId": "gitster", "author": "Junio C Hamano"}}

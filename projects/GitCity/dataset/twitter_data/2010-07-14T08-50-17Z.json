@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 0, "additions": 6, "changes": 6, "filename": "sql/sql_class.cc"}, {"status": "modified", "deletions": 7, "additions": 10, "changes": 17, "filename": "sql/sql_class.h"}], "stats": {"deletions": 7, "additions": 16, "total": 23}, "commit": {"date": "2010-07-14T08:50:17Z", "authorId": "", "author": "Georgi Kodinov"}}

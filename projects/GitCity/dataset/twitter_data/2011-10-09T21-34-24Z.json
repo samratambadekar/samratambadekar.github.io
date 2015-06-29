@@ -1,1 +1,0 @@
-{"repo": "twitter-text-java", "files": [{"status": "modified", "deletions": 4, "additions": 18, "changes": 22, "filename": "tests/com/twitter/Benchmark.java"}], "stats": {"deletions": 4, "additions": 18, "total": 22}, "commit": {"date": "2011-10-09T21:34:24Z", "authorId": "", "author": "Sam Pullara"}}

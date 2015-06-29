@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 22, "additions": 56, "changes": 78, "filename": "diff.c"}], "stats": {"deletions": 22, "additions": 56, "total": 78}, "commit": {"date": "2005-05-05T23:10:21Z", "authorId": "", "author": "Junio C Hamano"}}

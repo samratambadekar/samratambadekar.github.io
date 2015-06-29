@@ -1,1 +1,0 @@
-{"repo": "sbt-package-dist", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/build.properties"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-01-07T20:02:08Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

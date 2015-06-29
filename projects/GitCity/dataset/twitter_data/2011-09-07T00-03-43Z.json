@@ -1,1 +1,0 @@
-{"repo": "sbt-scrooge", "files": [{"status": "modified", "deletions": 36, "additions": 37, "changes": 73, "filename": "src/main/scala/com/twitter/sbt/CompileScrooge.scala"}], "stats": {"deletions": 36, "additions": 37, "total": 73}, "commit": {"date": "2011-09-07T00:03:43Z", "authorId": "", "author": "Robey Pointer"}}

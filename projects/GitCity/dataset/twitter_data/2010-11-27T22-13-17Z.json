@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 7, "additions": 8, "changes": 15, "filename": "src/compiler/scala/tools/nsc/transform/UnCurry.scala"}], "stats": {"deletions": 7, "additions": 8, "total": 15}, "commit": {"date": "2010-11-27T22:13:17Z", "authorId": "axel22", "author": "Aleksandar Pokopec"}}

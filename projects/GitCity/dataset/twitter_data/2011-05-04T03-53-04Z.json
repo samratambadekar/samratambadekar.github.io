@@ -1,1 +1,0 @@
-{"repo": "commons", "files": [{"status": "modified", "deletions": 27, "additions": 14, "changes": 41, "filename": "LICENSE"}, {"status": "modified", "deletions": 1, "additions": 42, "changes": 43, "filename": "README"}], "stats": {"deletions": 28, "additions": 56, "total": 84}, "commit": {"date": "2011-05-04T03:53:04Z", "authorId": "", "author": "John Sirois"}}

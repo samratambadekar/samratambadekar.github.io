@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 0, "additions": 1, "changes": 1, "filename": "scripts/make_binary_distribution.sh"}], "stats": {"deletions": 0, "additions": 1, "total": 1}, "commit": {"date": "2006-12-15T16:57:31Z", "authorId": "", "author": "df@kahlann.erinye.com"}}

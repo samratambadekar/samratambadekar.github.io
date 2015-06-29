@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 11, "additions": 66, "changes": 77, "filename": "sources/scalac/symtab/classfile/PackageParser.java"}], "stats": {"deletions": 11, "additions": 66, "total": 77}, "commit": {"date": "2004-05-31T13:06:17Z", "authorId": "", "author": "mihaylov"}}

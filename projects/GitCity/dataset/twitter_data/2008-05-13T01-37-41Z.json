@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 43, "additions": 92, "changes": 135, "filename": "core/src/main/java/org/apache/mahout/cf/taste/web/RecommenderServlet.java"}], "stats": {"deletions": 43, "additions": 92, "total": 135}, "commit": {"date": "2008-05-13T01:37:41Z", "authorId": "srowen", "author": "Sean R. Owen"}}

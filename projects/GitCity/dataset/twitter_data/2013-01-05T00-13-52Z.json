@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "modified", "deletions": 4, "additions": 3, "changes": 7, "filename": "streaming/src/test/scala/spark/streaming/JavaAPISuite.java"}], "stats": {"deletions": 4, "additions": 3, "total": 7}, "commit": {"date": "2013-01-05T00:13:52Z", "authorId": "pwendell", "author": "Patrick Wendell"}}

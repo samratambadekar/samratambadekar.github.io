@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 5, "additions": 76, "changes": 81, "filename": "sources/scalac/transformer/matching/CodeFactory.java"}], "stats": {"deletions": 5, "additions": 76, "total": 81}, "commit": {"date": "2003-06-20T16:02:39Z", "authorId": "", "author": "buraq"}}

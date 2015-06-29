@@ -1,1 +1,0 @@
-{"repo": "kestrel", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/main/scala/net/lag/kestrel/MemcacheHandler.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-08-22T21:21:28Z", "authorId": "zuercher", "author": "Stephan Zuercher"}}

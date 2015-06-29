@@ -1,1 +1,0 @@
-{"repo": "bijection", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "bijection-netty/src/main/scala/com/twitter/bijection/netty/ChannelBufferBijection.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2013-03-04T23:59:57Z", "authorId": "", "author": "Sam Ritchie"}}

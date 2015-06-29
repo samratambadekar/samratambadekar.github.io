@@ -1,1 +1,0 @@
-{"repo": "haplocheirus", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "src/main/scala/com/twitter/haplocheirus/TimelineStoreService.scala"}], "stats": {"deletions": 0, "additions": 2, "total": 2}, "commit": {"date": "2010-09-17T22:38:51Z", "authorId": "", "author": "Robey Pointer"}}

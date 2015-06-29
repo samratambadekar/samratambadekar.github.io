@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 3, "additions": 9, "changes": 12, "filename": "git-rebase--interactive.sh"}], "stats": {"deletions": 3, "additions": 9, "total": 12}, "commit": {"date": "2011-08-24T18:54:50Z", "authorId": "gitster", "author": "Junio C Hamano"}}

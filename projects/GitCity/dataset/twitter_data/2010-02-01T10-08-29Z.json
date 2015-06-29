@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 9, "additions": 15, "changes": 24, "filename": "core/src/test/java/org/apache/mahout/clustering/kmeans/TestKmeansClustering.java"}], "stats": {"deletions": 9, "additions": 15, "total": 24}, "commit": {"date": "2010-02-01T10:08:29Z", "authorId": "robinanil", "author": "Robin Anil"}}

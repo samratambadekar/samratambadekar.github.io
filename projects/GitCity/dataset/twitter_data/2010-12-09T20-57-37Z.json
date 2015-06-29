@@ -1,1 +1,0 @@
-{"repo": "ostrich", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/scripts/json_stats_fetcher.rb"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-12-09T20:57:37Z", "authorId": "", "author": "Steve Jenson"}}

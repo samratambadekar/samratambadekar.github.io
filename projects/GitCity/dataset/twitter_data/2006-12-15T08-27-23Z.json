@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 9, "changes": 10, "filename": "support-files/mysql.spec.sh"}], "stats": {"deletions": 1, "additions": 9, "total": 10}, "commit": {"date": "2006-12-15T08:27:23Z", "authorId": "", "author": "df@kahlann.erinye.com"}}

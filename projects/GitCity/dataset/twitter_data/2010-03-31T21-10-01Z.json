@@ -1,1 +1,0 @@
-{"repo": "Rowz", "files": [{"status": "modified", "deletions": 4, "additions": 5, "changes": 9, "filename": "src/main/scala/com/twitter/rowz/Rowz.scala"}], "stats": {"deletions": 4, "additions": 5, "total": 9}, "commit": {"date": "2010-03-31T21:10:01Z", "authorId": "", "author": "Nick Kallen"}}

@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "modified", "deletions": 1, "additions": 3, "changes": 4, "filename": "python/examples/kmeans.py"}], "stats": {"deletions": 1, "additions": 3, "total": 4}, "commit": {"date": "2013-01-10T05:21:23Z", "authorId": "JoshRosen", "author": "Josh Rosen"}}

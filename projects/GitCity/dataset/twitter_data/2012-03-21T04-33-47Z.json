@@ -1,1 +1,0 @@
-{"repo": "ostrich", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/main/scala/com/twitter/ostrich/admin/AdminHttpService.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-03-21T04:33:47Z", "authorId": "j3h", "author": "Josh Hoyt"}}

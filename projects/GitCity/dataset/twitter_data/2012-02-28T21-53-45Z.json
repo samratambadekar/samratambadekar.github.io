@@ -1,1 +1,0 @@
-{"repo": "snowflake", "files": [{"status": "modified", "deletions": 5, "additions": 5, "changes": 10, "filename": "project/versions.properties"}], "stats": {"deletions": 5, "additions": 5, "total": 10}, "commit": {"date": "2012-02-28T21:53:45Z", "authorId": "dhelder", "author": "David Helder"}}

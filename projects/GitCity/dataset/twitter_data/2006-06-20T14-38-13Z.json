@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 24, "additions": 34, "changes": 58, "filename": "daemon.c"}], "stats": {"deletions": 24, "additions": 34, "total": 58}, "commit": {"date": "2006-06-20T14:38:13Z", "authorId": "dwmw2", "author": "David Woodhouse"}}

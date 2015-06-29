@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "added", "deletions": 0, "additions": 105, "changes": 105, "filename": "t/t5710-info-alternate.sh"}], "stats": {"deletions": 0, "additions": 105, "total": 105}, "commit": {"date": "2006-05-07T18:19:47Z", "authorId": "tali", "author": "Martin Waitz"}}

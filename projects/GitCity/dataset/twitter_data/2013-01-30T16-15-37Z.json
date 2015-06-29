@@ -1,1 +1,0 @@
-{"repo": "twemproxy", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "src/proto/nc_redis.c"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2013-01-30T16:15:37Z", "authorId": "ferenyx", "author": "ferenyx"}}

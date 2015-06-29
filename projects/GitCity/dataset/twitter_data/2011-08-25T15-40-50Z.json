@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "builtin/update-ref.c"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-08-25T15:40:50Z", "authorId": "yanhan", "author": "Pang Yan Han"}}

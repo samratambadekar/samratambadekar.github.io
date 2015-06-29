@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "BitKeeper/triggers/post-commit"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2002-05-02T22:57:31Z", "authorId": "", "author": "arjen@fred.bitbike.com"}}

@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "quote.c"}, {"status": "modified", "deletions": 0, "additions": 7, "changes": 7, "filename": "t/t5510-fetch.sh"}], "stats": {"deletions": 1, "additions": 8, "total": 9}, "commit": {"date": "2007-11-04T20:26:22Z", "authorId": "", "author": "Johannes Sixt"}}

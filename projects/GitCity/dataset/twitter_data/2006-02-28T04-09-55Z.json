@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 13, "additions": 56, "changes": 69, "filename": "diff-delta.c"}], "stats": {"deletions": 13, "additions": 56, "total": 69}, "commit": {"date": "2006-02-28T04:09:55Z", "authorId": "", "author": "Nicolas Pitre"}}

@@ -1,1 +1,0 @@
-{"repo": "joauth", "files": [{"status": "modified", "deletions": 5, "additions": 5, "changes": 10, "filename": "src/main/scala/com/twitter/joauth/Verifier.scala"}], "stats": {"deletions": 5, "additions": 5, "total": 10}, "commit": {"date": "2010-09-02T15:25:28Z", "authorId": "9len", "author": "Glen D Sanford"}}

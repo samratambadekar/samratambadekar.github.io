@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 4, "changes": 5, "filename": "test/partest"}], "stats": {"deletions": 1, "additions": 4, "total": 5}, "commit": {"date": "2013-01-25T16:43:31Z", "authorId": "paulp", "author": "Paul Phillips"}}

@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 20, "additions": 17, "changes": 37, "filename": "Documentation/git-fast-import.txt"}], "stats": {"deletions": 20, "additions": 17, "total": 37}, "commit": {"date": "2010-11-28T19:43:57Z", "authorId": "jrn", "author": "Jonathan Nieder"}}

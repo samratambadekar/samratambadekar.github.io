@@ -1,1 +1,0 @@
-{"repo": "pig", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "CHANGES.txt"}, {"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "ivy/libraries.properties"}], "stats": {"deletions": 3, "additions": 5, "total": 8}, "commit": {"date": "2012-03-01T08:02:33Z", "authorId": "", "author": "Jianyong Dai"}}

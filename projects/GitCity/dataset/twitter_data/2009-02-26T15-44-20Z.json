@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "core/src/main/java/org/apache/mahout/cf/taste/impl/common/FastMap.java"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2009-02-26T15:44:20Z", "authorId": "srowen", "author": "Sean R. Owen"}}

@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 16, "changes": 16, "filename": "t/t7004-tag.sh"}], "stats": {"deletions": 0, "additions": 16, "total": 16}, "commit": {"date": "2007-11-04T00:11:15Z", "authorId": "glandium", "author": "Mike Hommey"}}

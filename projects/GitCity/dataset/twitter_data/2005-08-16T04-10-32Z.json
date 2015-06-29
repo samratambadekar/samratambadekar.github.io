@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 21, "additions": 91, "changes": 112, "filename": "local-pull.c"}], "stats": {"deletions": 21, "additions": 91, "total": 112}, "commit": {"date": "2005-08-16T04:10:32Z", "authorId": "", "author": "Daniel Barkalow"}}

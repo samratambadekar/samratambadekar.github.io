@@ -1,1 +1,0 @@
-{"repo": "util", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "util-core/src/main/scala/com/twitter/util/Future.scala"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2011-06-06T17:37:52Z", "authorId": "9len", "author": "Glen D Sanford"}}

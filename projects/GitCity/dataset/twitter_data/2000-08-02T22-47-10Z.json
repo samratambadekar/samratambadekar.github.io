@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 0, "additions": 12, "changes": 12, "filename": "BitKeeper/etc/logging_ok"}], "stats": {"deletions": 0, "additions": 12, "total": 12}, "commit": {"date": "2000-08-02T22:47:10Z", "authorId": "", "author": "sasha@mysql.sashanet.com"}}

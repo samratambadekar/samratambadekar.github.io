@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 90, "additions": 60, "changes": 150, "filename": "sources/scalac/symtab/classfile/CLRPackageParser.java"}], "stats": {"deletions": 90, "additions": 60, "total": 150}, "commit": {"date": "2004-06-02T19:02:52Z", "authorId": "", "author": "mihaylov"}}

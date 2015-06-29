@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 7, "additions": 12, "changes": 19, "filename": "update-index.c"}], "stats": {"deletions": 7, "additions": 12, "total": 19}, "commit": {"date": "2006-05-06T05:53:56Z", "authorId": "", "author": "Junio C Hamano"}}

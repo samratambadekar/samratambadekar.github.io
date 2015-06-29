@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 4, "changes": 4, "filename": "t/t7407-submodule-foreach.sh"}], "stats": {"deletions": 0, "additions": 4, "total": 4}, "commit": {"date": "2011-02-03T15:31:44Z", "authorId": "patthoyts", "author": "Pat Thoyts"}}

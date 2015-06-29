@@ -1,1 +1,0 @@
-{"repo": "cascading", "files": [{"status": "modified", "deletions": 9, "additions": 19, "changes": 28, "filename": "cascading-hadoop/src/main/java/cascading/stats/hadoop/HadoopStepStats.java"}], "stats": {"deletions": 9, "additions": 19, "total": 28}, "commit": {"date": "2013-01-09T02:58:36Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

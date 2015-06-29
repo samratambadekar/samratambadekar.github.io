@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 127, "additions": 130, "changes": 257, "filename": "math/src/main/java/org/apache/mahout/math/jet/stat/Probability.java"}], "stats": {"deletions": 127, "additions": 130, "total": 257}, "commit": {"date": "2010-08-15T07:02:46Z", "authorId": "tdunning", "author": "Ted Dunning"}}

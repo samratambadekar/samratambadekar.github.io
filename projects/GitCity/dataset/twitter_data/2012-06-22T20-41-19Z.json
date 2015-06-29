@@ -1,1 +1,0 @@
-{"repo": "iago", "files": [{"status": "modified", "deletions": 1, "additions": 10, "changes": 11, "filename": "src/main/scala/com/twitter/parrot/launcher/ParrotLauncher.scala"}], "stats": {"deletions": 1, "additions": 10, "total": 11}, "commit": {"date": "2012-06-22T20:41:19Z", "authorId": "", "author": "Trisha Quan"}}

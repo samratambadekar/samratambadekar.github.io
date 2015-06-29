@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "finagle-ostrich4/src/main/scala/com/twitter/finagle/stats/OstrichStatsReceiver.scala"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2012-05-01T16:58:26Z", "authorId": "", "author": "Charles Yang"}}

@@ -1,1 +1,0 @@
-{"repo": "storehaus", "files": [{"status": "modified", "deletions": 6, "additions": 0, "changes": 6, "filename": "storehaus-algebra/src/main/scala/com/twitter/storehaus/algebra/FutureAlgebra.scala"}], "stats": {"deletions": 6, "additions": 0, "total": 6}, "commit": {"date": "2013-01-24T19:29:43Z", "authorId": "johnynek", "author": "Oscar Boykin"}}

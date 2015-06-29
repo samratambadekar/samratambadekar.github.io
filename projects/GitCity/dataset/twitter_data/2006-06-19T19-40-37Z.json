@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "t/annotate-tests.sh"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2006-06-19T19:40:37Z", "authorId": "dstosberg", "author": "Dennis Stosberg"}}

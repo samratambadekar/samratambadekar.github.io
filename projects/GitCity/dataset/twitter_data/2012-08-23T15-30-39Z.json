@@ -1,1 +1,0 @@
-{"repo": "scalding", "files": [{"status": "modified", "deletions": 3, "additions": 15, "changes": 18, "filename": "scripts/scald.rb"}], "stats": {"deletions": 3, "additions": 15, "total": 18}, "commit": {"date": "2012-08-23T15:30:39Z", "authorId": "azymnis", "author": "Argyris Zymnis"}}

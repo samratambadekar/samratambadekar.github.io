@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "modified", "deletions": 9, "additions": 31, "changes": 40, "filename": "src/main/scala/com/twitter/finagle/util/Future.scala"}], "stats": {"deletions": 9, "additions": 31, "total": 40}, "commit": {"date": "2010-10-21T06:37:01Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

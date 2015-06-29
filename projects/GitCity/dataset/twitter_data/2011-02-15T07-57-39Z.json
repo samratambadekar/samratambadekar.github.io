@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 8, "additions": 8, "changes": 16, "filename": "core/src/main/java/org/apache/mahout/classifier/ConfusionMatrix.java"}], "stats": {"deletions": 8, "additions": 8, "total": 16}, "commit": {"date": "2011-02-15T07:57:39Z", "authorId": "srowen", "author": "Sean R. Owen"}}

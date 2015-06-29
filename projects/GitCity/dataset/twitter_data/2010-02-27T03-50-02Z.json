@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 14, "additions": 11, "changes": 25, "filename": "builtin-prune.c"}, {"status": "modified", "deletions": 0, "additions": 32, "changes": 32, "filename": "t/t5304-prune.sh"}], "stats": {"deletions": 14, "additions": 43, "total": 57}, "commit": {"date": "2010-02-27T03:50:02Z", "authorId": "", "author": "Adam Simpkins"}}

@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 3, "additions": 6, "changes": 9, "filename": "sha1_name.c"}, {"status": "added", "deletions": 0, "additions": 33, "changes": 33, "filename": "t/t6101-rev-parse-parents.sh"}], "stats": {"deletions": 3, "additions": 39, "total": 42}, "commit": {"date": "2005-08-10T17:55:54Z", "authorId": "", "author": "Junio C Hamano"}}

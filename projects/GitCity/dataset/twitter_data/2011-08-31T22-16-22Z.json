@@ -1,1 +1,0 @@
-{"repo": "twurl", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "lib/twurl/cli.rb"}, {"status": "modified", "deletions": 0, "additions": 8, "changes": 8, "filename": "test/cli_test.rb"}], "stats": {"deletions": 1, "additions": 9, "total": 10}, "commit": {"date": "2011-08-31T22:16:22Z", "authorId": "marcel", "author": "Marcel Molina"}}

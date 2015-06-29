@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 3, "additions": 0, "changes": 3, "filename": "sources/scala/tools/scalac/typechecker/Analyzer.scala"}], "stats": {"deletions": 3, "additions": 0, "total": 3}, "commit": {"date": "2004-06-03T14:19:30Z", "authorId": "odersky", "author": "Martin Odersky"}}

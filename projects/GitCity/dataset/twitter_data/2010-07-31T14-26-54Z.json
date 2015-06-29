@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 6, "changes": 7, "filename": "core/src/main/java/org/apache/mahout/cf/taste/impl/similarity/LogLikelihoodSimilarity.java"}], "stats": {"deletions": 1, "additions": 6, "total": 7}, "commit": {"date": "2010-07-31T14:26:54Z", "authorId": "srowen", "author": "Sean R. Owen"}}

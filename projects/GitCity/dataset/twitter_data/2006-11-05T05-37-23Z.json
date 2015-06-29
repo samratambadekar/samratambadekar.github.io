@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 2, "additions": 0, "changes": 2, "filename": "archive.h"}, {"status": "modified", "deletions": 11, "additions": 12, "changes": 23, "filename": "builtin-archive.c"}], "stats": {"deletions": 13, "additions": 12, "total": 25}, "commit": {"date": "2006-11-05T05:37:23Z", "authorId": "spearce", "author": "Shawn O. Pearce"}}

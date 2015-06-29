@@ -1,1 +1,0 @@
-{"repo": "bijection", "files": [{"status": "modified", "deletions": 1, "additions": 0, "changes": 1, "filename": "project/Build.scala"}, {"status": "added", "deletions": 0, "additions": 2, "changes": 2, "filename": "version.sbt"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2013-02-11T09:16:05Z", "authorId": "", "author": "Sam Ritchie"}}

@@ -1,1 +1,0 @@
-{"repo": "twemproxy", "files": [{"status": "modified", "deletions": 0, "additions": 10, "changes": 10, "filename": "ChangeLog"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "configure.ac"}], "stats": {"deletions": 1, "additions": 11, "total": 12}, "commit": {"date": "2013-01-31T01:35:17Z", "authorId": "", "author": "Manju Rajashekhar"}}

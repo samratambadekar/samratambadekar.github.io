@@ -1,1 +1,0 @@
-{"repo": "snowflake", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "config/development.conf"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-04-24T01:15:26Z", "authorId": "jmhodges", "author": "Jeff Hodges"}}

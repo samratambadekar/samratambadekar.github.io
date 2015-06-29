@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 5, "additions": 3, "changes": 8, "filename": "sql/sql_load.cc"}, {"status": "modified", "deletions": 0, "additions": 3, "changes": 3, "filename": "sql/sql_show.cc"}], "stats": {"deletions": 5, "additions": 6, "total": 11}, "commit": {"date": "2010-03-09T10:19:10Z", "authorId": "", "author": "Alexey Botchkov"}}

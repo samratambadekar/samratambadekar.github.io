@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "added", "deletions": 0, "additions": 35, "changes": 35, "filename": "finagle-core/src/test/scala/com/twitter/finagle/loadbalancer/LeastLoadedStrategySpec.scala"}], "stats": {"deletions": 0, "additions": 35, "total": 35}, "commit": {"date": "2011-01-13T00:42:32Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

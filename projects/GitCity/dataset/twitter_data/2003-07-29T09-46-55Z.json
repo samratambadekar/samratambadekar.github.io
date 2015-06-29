@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 8, "additions": 8, "changes": 16, "filename": "test/files/run/regularpatmat.scala"}], "stats": {"deletions": 8, "additions": 8, "total": 16}, "commit": {"date": "2003-07-29T09:46:55Z", "authorId": "", "author": "buraq"}}

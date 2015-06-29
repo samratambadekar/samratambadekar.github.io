@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 9, "additions": 11, "changes": 20, "filename": "sql/sql_show.cc"}], "stats": {"deletions": 9, "additions": 11, "total": 20}, "commit": {"date": "2011-01-04T18:34:39Z", "authorId": "", "author": "kevin.lewis@oracle.com"}}

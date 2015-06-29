@@ -1,1 +1,0 @@
-{"repo": "elephant-twin", "files": [{"status": "modified", "deletions": 2, "additions": 11, "changes": 13, "filename": ".travis.yml"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "README.md"}], "stats": {"deletions": 3, "additions": 12, "total": 15}, "commit": {"date": "2012-06-13T08:21:34Z", "authorId": "dvryaboy", "author": "dvryaboy"}}

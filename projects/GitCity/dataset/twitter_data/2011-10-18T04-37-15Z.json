@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 36, "additions": 52, "changes": 88, "filename": "t/t1402-check-ref-format.sh"}], "stats": {"deletions": 36, "additions": 52, "total": 88}, "commit": {"date": "2011-10-18T04:37:15Z", "authorId": "gitster", "author": "Junio C Hamano"}}

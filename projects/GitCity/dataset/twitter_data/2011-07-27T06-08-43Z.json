@@ -1,1 +1,0 @@
-{"repo": "gizzard", "files": [{"status": "modified", "deletions": 0, "additions": 9, "changes": 9, "filename": "src/test/scala/com/twitter/gizzard/scheduler_new/NestedJobSpec.scala"}], "stats": {"deletions": 0, "additions": 9, "total": 9}, "commit": {"date": "2011-07-27T06:08:43Z", "authorId": "", "author": "eaceaser"}}

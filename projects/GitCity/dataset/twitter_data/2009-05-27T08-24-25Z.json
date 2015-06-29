@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 4, "additions": 30, "changes": 34, "filename": "client/mysql_upgrade.c"}], "stats": {"deletions": 4, "additions": 30, "total": 34}, "commit": {"date": "2009-05-27T08:24:25Z", "authorId": "", "author": "Alexey Kopytov"}}

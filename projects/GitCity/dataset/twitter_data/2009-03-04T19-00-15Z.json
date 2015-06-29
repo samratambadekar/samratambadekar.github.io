@@ -1,1 +1,0 @@
-{"repo": "cascading", "files": [{"status": "modified", "deletions": 18, "additions": 0, "changes": 18, "filename": "src/core/cascading/pipe/Pipe.java"}], "stats": {"deletions": 18, "additions": 0, "total": 18}, "commit": {"date": "2009-03-04T19:00:15Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

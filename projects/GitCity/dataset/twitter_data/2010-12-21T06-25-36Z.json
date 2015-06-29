@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "modified", "deletions": 11, "additions": 11, "changes": 22, "filename": "src/main/scala/com/twitter/finagle/builder/Server.scala"}], "stats": {"deletions": 11, "additions": 11, "total": 22}, "commit": {"date": "2010-12-21T06:25:36Z", "authorId": "", "author": "Nick Kallen"}}

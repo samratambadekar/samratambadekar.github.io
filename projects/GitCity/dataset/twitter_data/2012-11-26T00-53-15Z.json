@@ -1,1 +1,0 @@
-{"repo": "algebird", "files": [{"status": "modified", "deletions": 4, "additions": 22, "changes": 26, "filename": "src/test/scala/com/twitter/algebird/BaseProperties.scala"}], "stats": {"deletions": 4, "additions": 22, "total": 26}, "commit": {"date": "2012-11-26T00:53:15Z", "authorId": "johnynek", "author": "Oscar Boykin"}}

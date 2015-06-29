@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "finagle-thrift/src/main/java/com/twitter/finagle/thrift/ThriftClientRequest.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-08-10T20:49:20Z", "authorId": "", "author": "James Waldrop"}}

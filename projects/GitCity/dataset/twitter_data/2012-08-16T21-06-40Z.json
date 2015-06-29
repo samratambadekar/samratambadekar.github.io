@@ -1,1 +1,0 @@
-{"repo": "clockworkraven", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "config/auth.example_password.yml"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-08-16T21:06:40Z", "authorId": "benweissmann", "author": "Ben Weissmann"}}

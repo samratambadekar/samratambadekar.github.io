@@ -1,1 +1,0 @@
-{"repo": "cascading", "files": [{"status": "modified", "deletions": 6, "additions": 7, "changes": 13, "filename": "src/core/cascading/util/SingleValueIterator.java"}], "stats": {"deletions": 6, "additions": 7, "total": 13}, "commit": {"date": "2012-01-24T18:20:16Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

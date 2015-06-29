@@ -1,1 +1,0 @@
-{"repo": "commons", "files": [{"status": "modified", "deletions": 0, "additions": 13, "changes": 13, "filename": "src/python/twitter/pants/tasks/scala_compile.py"}], "stats": {"deletions": 0, "additions": 13, "total": 13}, "commit": {"date": "2012-07-25T21:35:46Z", "authorId": "jsirois", "author": "John Sirois"}}

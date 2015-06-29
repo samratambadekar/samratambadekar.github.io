@@ -1,1 +1,0 @@
-{"repo": "spitball", "files": [{"status": "added", "deletions": 0, "additions": 1, "changes": 1, "filename": "VERSION"}, {"status": "added", "deletions": 0, "additions": 42, "changes": 42, "filename": "spitball.gemspec"}], "stats": {"deletions": 0, "additions": 43, "total": 43}, "commit": {"date": "2010-07-15T23:46:28Z", "authorId": "freels", "author": "Matt Freels"}}

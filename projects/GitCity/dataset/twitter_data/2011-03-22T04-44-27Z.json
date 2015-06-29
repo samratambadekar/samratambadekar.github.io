@@ -1,1 +1,0 @@
-{"repo": "sbt-package-dist", "files": [{"status": "modified", "deletions": 33, "additions": 57, "changes": 90, "filename": "src/main/scala/com/twitter/sbt/PublishSite.scala"}], "stats": {"deletions": 33, "additions": 57, "total": 90}, "commit": {"date": "2011-03-22T04:44:27Z", "authorId": "mccv", "author": "mmcbride"}}

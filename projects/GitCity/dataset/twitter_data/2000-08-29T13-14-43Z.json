@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 11, "additions": 15, "changes": 26, "filename": "mysys/charset.c"}], "stats": {"deletions": 11, "additions": 15, "total": 26}, "commit": {"date": "2000-08-29T13:14:43Z", "authorId": "", "author": "sasha@mysql.sashanet.com"}}

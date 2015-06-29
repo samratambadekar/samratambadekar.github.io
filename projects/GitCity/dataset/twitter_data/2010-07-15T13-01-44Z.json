@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "sql/opt_range.cc"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-07-15T13:01:44Z", "authorId": "", "author": "Alexey Kopytov"}}

@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 18, "additions": 25, "changes": 43, "filename": "index-pack.c"}], "stats": {"deletions": 18, "additions": 25, "total": 43}, "commit": {"date": "2008-08-29T20:08:01Z", "authorId": "", "author": "Nicolas Pitre"}}

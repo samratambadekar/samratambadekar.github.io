@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 27, "changes": 28, "filename": "ssh-fetch.c"}], "stats": {"deletions": 1, "additions": 27, "total": 28}, "commit": {"date": "2005-10-04T04:24:55Z", "authorId": "", "author": "Daniel Barkalow"}}

@@ -1,1 +1,0 @@
-{"repo": "cassie", "files": [{"status": "modified", "deletions": 31, "additions": 36, "changes": 67, "filename": "cassie-core/src/main/scala/com/twitter/cassie/tests/util/FakeCassandra.scala"}], "stats": {"deletions": 31, "additions": 36, "total": 67}, "commit": {"date": "2012-06-07T21:03:50Z", "authorId": "kevinoliver", "author": "Kevin Oliver"}}

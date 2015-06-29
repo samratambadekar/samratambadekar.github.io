@@ -1,1 +1,0 @@
-{"repo": "twitterActors", "files": [{"status": "removed", "deletions": 14, "additions": 0, "changes": 14, "filename": "README"}, {"status": "added", "deletions": 0, "additions": 22, "changes": 22, "filename": "README.markdown"}], "stats": {"deletions": 14, "additions": 22, "total": 36}, "commit": {"date": "2010-09-16T13:25:33Z", "authorId": "szegedi", "author": "Attila Szegedi"}}

@@ -1,1 +1,0 @@
-{"repo": "secureheaders", "files": [{"status": "modified", "deletions": 22, "additions": 14, "changes": 36, "filename": "lib/secure_headers.rb"}], "stats": {"deletions": 22, "additions": 14, "total": 36}, "commit": {"date": "2013-01-23T00:00:25Z", "authorId": "oreoshake", "author": "Neil Matatall"}}

@@ -1,1 +1,0 @@
-{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 5, "additions": 7, "changes": 12, "filename": "src/java/com/twitter/elephantbird/pig/load/LzoTextLoader.java"}], "stats": {"deletions": 5, "additions": 7, "total": 12}, "commit": {"date": "2011-06-10T03:00:09Z", "authorId": "dvryaboy", "author": "dvryaboy"}}

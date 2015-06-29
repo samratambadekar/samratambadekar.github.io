@@ -1,1 +1,0 @@
-{"repo": "twitter4j", "files": [{"status": "modified", "deletions": 15, "additions": 14, "changes": 29, "filename": "twitter4j-core/src/test/java/twitter4j/TwitterTest.java"}], "stats": {"deletions": 15, "additions": 14, "total": 29}, "commit": {"date": "2011-01-14T02:05:49Z", "authorId": "yusuke", "author": "Yusuke Yamamoto"}}

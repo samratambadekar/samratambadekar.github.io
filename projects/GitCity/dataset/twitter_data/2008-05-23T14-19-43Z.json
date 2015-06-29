@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "t/t1006-cat-file.sh"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2008-05-23T14:19:43Z", "authorId": "", "author": "Michele Ballabio"}}

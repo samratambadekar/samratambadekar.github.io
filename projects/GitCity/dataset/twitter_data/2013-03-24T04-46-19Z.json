@@ -1,1 +1,0 @@
-{"repo": "storehaus", "files": [{"status": "modified", "deletions": 2, "additions": 3, "changes": 5, "filename": "storehaus-redis/src/main/scala/com/twitter/storehaus/redis/RedisStore.scala"}], "stats": {"deletions": 2, "additions": 3, "total": 5}, "commit": {"date": "2013-03-24T04:46:19Z", "authorId": "softprops", "author": "softprops"}}

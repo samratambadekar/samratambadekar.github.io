@@ -1,1 +1,0 @@
-{"repo": "cassie", "files": [{"status": "modified", "deletions": 5, "additions": 9, "changes": 14, "filename": "src/main/scala/com/twitter/cassie/Cluster.scala"}], "stats": {"deletions": 5, "additions": 9, "total": 14}, "commit": {"date": "2011-02-18T00:39:47Z", "authorId": "", "author": "Kyle Maxwell"}}

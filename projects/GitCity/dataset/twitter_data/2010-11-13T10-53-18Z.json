@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "src/compiler/scala/tools/nsc/transform/Erasure.scala"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2010-11-13T10:53:18Z", "authorId": "dragos", "author": "Iulian Dragos"}}

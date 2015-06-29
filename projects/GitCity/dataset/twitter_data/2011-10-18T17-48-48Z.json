@@ -1,1 +1,0 @@
-{"repo": "kestrel", "files": [{"status": "modified", "deletions": 8, "additions": 12, "changes": 20, "filename": "src/test/scala/net/lag/kestrel/load/PutMany.scala"}], "stats": {"deletions": 8, "additions": 12, "total": 20}, "commit": {"date": "2011-10-18T17:48:48Z", "authorId": "", "author": "Robey Pointer"}}

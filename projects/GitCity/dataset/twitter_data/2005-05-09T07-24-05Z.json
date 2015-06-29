@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 4, "additions": 1, "changes": 5, "filename": "scripts/mysql_install_db.sh"}], "stats": {"deletions": 4, "additions": 1, "total": 5}, "commit": {"date": "2005-05-09T07:24:05Z", "authorId": "", "author": "serg@sergbook.mylan"}}

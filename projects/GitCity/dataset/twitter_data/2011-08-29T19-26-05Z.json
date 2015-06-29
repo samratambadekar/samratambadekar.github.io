@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 6, "additions": 33, "changes": 39, "filename": "tree-walk.c"}, {"status": "modified", "deletions": 0, "additions": 1, "changes": 1, "filename": "tree-walk.h"}], "stats": {"deletions": 6, "additions": 34, "total": 40}, "commit": {"date": "2011-08-29T19:26:05Z", "authorId": "gitster", "author": "Junio C Hamano"}}

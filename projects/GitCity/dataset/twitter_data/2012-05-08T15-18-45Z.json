@@ -1,1 +1,0 @@
-{"repo": "commons", "files": [{"status": "modified", "deletions": 0, "additions": 7, "changes": 7, "filename": "3rdparty/BUILD"}, {"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "pants.ini"}], "stats": {"deletions": 0, "additions": 9, "total": 9}, "commit": {"date": "2012-05-08T15:18:45Z", "authorId": "", "author": "John Sirois"}}

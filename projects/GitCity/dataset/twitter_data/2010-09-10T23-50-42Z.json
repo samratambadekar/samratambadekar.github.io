@@ -1,1 +1,0 @@
-{"repo": "gizzard", "files": [{"status": "modified", "deletions": 2, "additions": 10, "changes": 12, "filename": "src/main/scala/com/twitter/gizzard/shards/ReplicatingShard.scala"}], "stats": {"deletions": 2, "additions": 10, "total": 12}, "commit": {"date": "2010-09-10T23:50:42Z", "authorId": "", "author": "Ed Ceaser"}}

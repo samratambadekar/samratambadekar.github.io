@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 4, "additions": 3, "changes": 7, "filename": "sources/scala/xml/BindingFactoryAdapter.scala"}], "stats": {"deletions": 4, "additions": 3, "total": 7}, "commit": {"date": "2004-06-02T18:39:17Z", "authorId": "", "author": "buraq"}}

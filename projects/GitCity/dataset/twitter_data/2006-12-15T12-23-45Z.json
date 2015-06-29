@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 4, "additions": 0, "changes": 4, "filename": "mysql-test/t/rpl_openssl.test"}], "stats": {"deletions": 4, "additions": 0, "total": 4}, "commit": {"date": "2006-12-15T12:23:45Z", "authorId": "", "author": "msvensson@neptunus.(none)"}}

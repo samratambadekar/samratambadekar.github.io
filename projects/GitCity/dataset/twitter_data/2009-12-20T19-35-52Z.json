@@ -1,1 +1,0 @@
-{"repo": "twitter4j", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "bin/setEnv.cmd"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "bin/setEnv.sh"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2009-12-20T19:35:52Z", "authorId": "", "author": "yusuke"}}

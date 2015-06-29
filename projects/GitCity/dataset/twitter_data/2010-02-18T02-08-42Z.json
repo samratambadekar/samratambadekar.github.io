@@ -1,1 +1,0 @@
-{"repo": "gizzard", "files": [{"status": "added", "deletions": 0, "additions": 35, "changes": 35, "filename": "src/test/scala/com/twitter/gizzard/Database.scala"}], "stats": {"deletions": 0, "additions": 35, "total": 35}, "commit": {"date": "2010-02-18T02:08:42Z", "authorId": "", "author": "Robey Pointer"}}

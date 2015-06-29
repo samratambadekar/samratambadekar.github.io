@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "Makefile"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2010-10-17T05:01:05Z", "authorId": "mateiz", "author": "Matei Zaharia"}}

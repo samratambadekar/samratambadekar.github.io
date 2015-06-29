@@ -1,1 +1,0 @@
-{"repo": "gizzard", "files": [{"status": "removed", "deletions": 11, "additions": 0, "changes": 11, "filename": "src/main/scala/com/twitter/gizzard/test/FakeReadWriteShard.scala"}], "stats": {"deletions": 11, "additions": 0, "total": 11}, "commit": {"date": "2011-07-26T18:12:04Z", "authorId": "freels", "author": "Matt Freels"}}

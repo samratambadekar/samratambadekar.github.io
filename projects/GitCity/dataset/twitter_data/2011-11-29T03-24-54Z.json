@@ -1,1 +1,0 @@
-{"repo": "naggati2", "files": [{"status": "modified", "deletions": 7, "additions": 16, "changes": 23, "filename": "src/main/scala/com/twitter/naggati/Codec.scala"}], "stats": {"deletions": 7, "additions": 16, "total": 23}, "commit": {"date": "2011-11-29T03:24:54Z", "authorId": "", "author": "Robey Pointer"}}

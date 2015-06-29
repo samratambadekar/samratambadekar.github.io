@@ -1,1 +1,0 @@
-{"repo": "cascading", "files": [{"status": "modified", "deletions": 1, "additions": 38, "changes": 39, "filename": "src/core/cascading/scheme/TextLine.java"}], "stats": {"deletions": 1, "additions": 38, "total": 39}, "commit": {"date": "2009-02-27T16:05:20Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

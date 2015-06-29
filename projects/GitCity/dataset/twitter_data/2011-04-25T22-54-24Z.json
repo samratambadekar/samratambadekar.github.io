@@ -1,1 +1,0 @@
-{"repo": "spitball", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "lib/spitball/version.rb"}, {"status": "modified", "deletions": 3, "additions": 1, "changes": 4, "filename": "spitball.gemspec"}], "stats": {"deletions": 4, "additions": 2, "total": 6}, "commit": {"date": "2011-04-25T22:54:24Z", "authorId": "", "author": "Josh Hull"}}

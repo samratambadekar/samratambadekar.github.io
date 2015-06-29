@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "modified", "deletions": 3, "additions": 3, "changes": 6, "filename": "core/src/main/scala/spark/RDD.scala"}], "stats": {"deletions": 3, "additions": 3, "total": 6}, "commit": {"date": "2011-06-01T18:32:07Z", "authorId": "mateiz", "author": "Matei Zaharia"}}

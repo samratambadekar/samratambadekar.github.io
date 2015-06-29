@@ -1,1 +1,0 @@
-{"repo": "twitter-text-java", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/com/twitter/Validator.java"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2013-03-01T18:46:54Z", "authorId": "jakl", "author": "James Koval"}}

@@ -1,1 +1,0 @@
-{"repo": "twitter4j", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "twitter4j-httpclient-support/pom.xml"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2011-01-15T00:56:47Z", "authorId": "jloomis", "author": "Jenny Loomis"}}

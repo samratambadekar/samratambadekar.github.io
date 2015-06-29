@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": ".bzr-mysql/default.conf"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2011-08-17T10:13:44Z", "authorId": "", "author": "Georgi Kodinov"}}

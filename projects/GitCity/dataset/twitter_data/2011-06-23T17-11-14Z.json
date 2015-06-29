@@ -1,1 +1,0 @@
-{"repo": "spark", "files": [{"status": "removed", "deletions": 48, "additions": 0, "changes": 48, "filename": "README"}, {"status": "added", "deletions": 0, "additions": 63, "changes": 63, "filename": "README.md"}], "stats": {"deletions": 48, "additions": 63, "total": 111}, "commit": {"date": "2011-06-23T17:11:14Z", "authorId": "mateiz", "author": "Matei Zaharia"}}

@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 16, "additions": 15, "changes": 31, "filename": "sources/scala/List.scala"}], "stats": {"deletions": 16, "additions": 15, "total": 31}, "commit": {"date": "2003-04-08T07:58:39Z", "authorId": "", "author": "schinz"}}

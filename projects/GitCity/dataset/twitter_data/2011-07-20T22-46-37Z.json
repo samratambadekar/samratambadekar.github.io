@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 3, "additions": 4, "changes": 7, "filename": "src/library/scala/collection/MapLike.scala"}], "stats": {"deletions": 3, "additions": 4, "total": 7}, "commit": {"date": "2011-07-20T22:46:37Z", "authorId": "phaller", "author": "Philipp Haller"}}

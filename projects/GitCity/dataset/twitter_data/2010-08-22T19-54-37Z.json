@@ -1,1 +1,0 @@
-{"repo": "streamyj", "files": [{"status": "modified", "deletions": 62, "additions": 65, "changes": 127, "filename": "src/main/scala/com/twitter/streamyj/StreamyUnpacker.scala"}], "stats": {"deletions": 62, "additions": 65, "total": 127}, "commit": {"date": "2010-08-22T19:54:37Z", "authorId": "", "author": "Robey Pointer"}}

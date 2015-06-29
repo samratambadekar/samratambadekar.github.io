@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/library/scala/collection/IterableLike.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2010-02-24T16:55:31Z", "authorId": "axel22", "author": "Aleksandar Pokopec"}}

@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "examples/bin/build-cluster-syntheticcontrol.sh"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-04-14T11:13:36Z", "authorId": "srowen", "author": "Sean R. Owen"}}

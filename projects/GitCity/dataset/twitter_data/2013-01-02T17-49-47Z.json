@@ -1,1 +1,0 @@
-{"repo": "twemproxy", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/nc.c"}, {"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/nc_util.c"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2013-01-02T17:49:47Z", "authorId": "", "author": "Manju Rajashekhar"}}

@@ -1,1 +1,0 @@
-{"repo": "scalding", "files": [{"status": "modified", "deletions": 14, "additions": 42, "changes": 56, "filename": "src/main/scala/com/twitter/scalding/Source.scala"}], "stats": {"deletions": 14, "additions": 42, "total": 56}, "commit": {"date": "2012-03-01T23:19:28Z", "authorId": "johnynek", "author": "P. Oscar Boykin"}}

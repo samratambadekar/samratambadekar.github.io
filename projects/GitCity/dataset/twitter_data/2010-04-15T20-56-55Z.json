@@ -1,1 +1,0 @@
-{"repo": "pig", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "src/org/apache/pig/backend/hadoop/executionengine/mapReduceLayer/MRCompiler.java"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2010-04-15T20:56:55Z", "authorId": "", "author": "Jianyong Dai"}}

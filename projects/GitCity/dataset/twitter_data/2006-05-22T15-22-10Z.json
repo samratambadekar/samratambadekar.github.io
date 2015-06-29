@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 31, "additions": 39, "changes": 70, "filename": "ndb/src/common/util/socket_io.cpp"}], "stats": {"deletions": 31, "additions": 39, "total": 70}, "commit": {"date": "2006-05-22T15:22:10Z", "authorId": "", "author": "gkodinov@mysql.com"}}

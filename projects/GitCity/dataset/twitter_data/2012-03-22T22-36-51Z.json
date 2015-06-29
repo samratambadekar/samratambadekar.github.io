@@ -1,1 +1,0 @@
-{"repo": "mahout", "files": [{"status": "modified", "deletions": 8, "additions": 21, "changes": 29, "filename": "core/src/main/java/org/apache/mahout/clustering/lda/cvb/TopicModel.java"}], "stats": {"deletions": 8, "additions": 21, "total": 29}, "commit": {"date": "2012-03-22T22:36:51Z", "authorId": "sagemintblue", "author": "Andy Schlaikjer"}}

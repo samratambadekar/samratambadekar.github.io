@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 4, "additions": 64, "changes": 68, "filename": "mysql-test/t/wait_timeout.test"}], "stats": {"deletions": 4, "additions": 64, "total": 68}, "commit": {"date": "2006-05-23T13:45:16Z", "authorId": "", "author": "msvensson@neptunus.(none)"}}

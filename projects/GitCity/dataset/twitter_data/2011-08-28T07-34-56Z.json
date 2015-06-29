@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 10, "additions": 12, "changes": 22, "filename": "t/t3005-ls-files-relative.sh"}], "stats": {"deletions": 10, "additions": 12, "total": 22}, "commit": {"date": "2011-08-28T07:34:56Z", "authorId": "", "author": "Johannes Sixt"}}

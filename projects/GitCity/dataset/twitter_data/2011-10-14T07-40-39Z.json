@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 8, "additions": 35, "changes": 43, "filename": "http.c"}, {"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "t/t5550-http-fetch.sh"}], "stats": {"deletions": 10, "additions": 37, "total": 47}, "commit": {"date": "2011-10-14T07:40:39Z", "authorId": "mjg", "author": "Michael J Gruber"}}

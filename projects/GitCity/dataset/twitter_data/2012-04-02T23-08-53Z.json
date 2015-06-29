@@ -1,1 +1,0 @@
-{"repo": "cassovary", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/main/scala/com/twitter/cassovary/graph/tourist/InfoKeeper.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2012-04-02T23:08:53Z", "authorId": "ningtwitter", "author": "Ning Liang"}}

@@ -1,1 +1,0 @@
-{"repo": "webrat", "files": [{"status": "modified", "deletions": 0, "additions": 22, "changes": 22, "filename": "spec/api/within_spec.rb"}], "stats": {"deletions": 0, "additions": 22, "total": 22}, "commit": {"date": "2008-12-26T03:53:23Z", "authorId": "brynary", "author": "Bryan Helmkamp"}}

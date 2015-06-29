@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 7, "changes": 7, "filename": "Makefile"}, {"status": "modified", "deletions": 4, "additions": 13, "changes": 17, "filename": "read-cache.c"}], "stats": {"deletions": 4, "additions": 20, "total": 24}, "commit": {"date": "2005-04-13T09:20:38Z", "authorId": "pasky", "author": "Petr Baudis"}}

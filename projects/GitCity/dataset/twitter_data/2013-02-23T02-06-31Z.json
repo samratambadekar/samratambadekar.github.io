@@ -1,1 +1,0 @@
-{"repo": "bookkeeper", "files": [{"status": "modified", "deletions": 8, "additions": 9, "changes": 17, "filename": "bookkeeper-server/src/main/java/org/apache/bookkeeper/bookie/Bookie.java"}], "stats": {"deletions": 8, "additions": 9, "total": 17}, "commit": {"date": "2013-02-23T02:06:31Z", "authorId": "", "author": "Yixue(Andrew) Zhu"}}

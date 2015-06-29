@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 17, "changes": 18, "filename": "Makefile"}, {"status": "added", "deletions": 0, "additions": 17, "changes": 17, "filename": "config/list/scaladoc.lst"}], "stats": {"deletions": 1, "additions": 34, "total": 35}, "commit": {"date": "2003-07-30T08:50:36Z", "authorId": "", "author": "paltherr"}}

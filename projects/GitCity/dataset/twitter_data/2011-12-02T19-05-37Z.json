@@ -1,1 +1,0 @@
-{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 1, "additions": 8, "changes": 9, "filename": "lib/autolink.rb"}], "stats": {"deletions": 1, "additions": 8, "total": 9}, "commit": {"date": "2011-12-02T19:05:37Z", "authorId": "keitaf", "author": "Keita Fujii"}}

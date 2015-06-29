@@ -1,1 +1,0 @@
-{"repo": "sbt-thrift", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/build.properties"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-08-03T23:40:32Z", "authorId": "olix0r", "author": "Oliver Gould"}}

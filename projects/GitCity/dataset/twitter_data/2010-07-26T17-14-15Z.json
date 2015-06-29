@@ -1,1 +1,0 @@
-{"repo": "kestrel-client", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "lib/kestrel/client.rb"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2010-07-26T17:14:15Z", "authorId": "", "author": "Brandon Mitchell"}}

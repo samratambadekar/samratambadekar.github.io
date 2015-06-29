@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 7, "additions": 0, "changes": 7, "filename": "src/compiler/scala/tools/nsc/backend/icode/GenICode.scala"}], "stats": {"deletions": 7, "additions": 0, "total": 7}, "commit": {"date": "2007-02-12T09:17:05Z", "authorId": "dragos", "author": "Iulian Dragos"}}

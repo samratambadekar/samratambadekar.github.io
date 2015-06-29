@@ -1,1 +1,0 @@
-{"repo": "util", "files": [{"status": "modified", "deletions": 0, "additions": 3, "changes": 3, "filename": "util-logging/src/test/scala/com/twitter/logging/ScribeHandlerSpec.scala"}], "stats": {"deletions": 0, "additions": 3, "total": 3}, "commit": {"date": "2011-04-13T23:50:45Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

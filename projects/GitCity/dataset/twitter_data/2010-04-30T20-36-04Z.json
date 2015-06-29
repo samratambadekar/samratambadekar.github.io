@@ -1,1 +1,0 @@
-{"repo": "pig", "files": [{"status": "modified", "deletions": 0, "additions": 2, "changes": 2, "filename": "CHANGES.txt"}, {"status": "modified", "deletions": 14, "additions": 14, "changes": 28, "filename": "build.xml"}], "stats": {"deletions": 14, "additions": 16, "total": 30}, "commit": {"date": "2010-04-30T20:36:04Z", "authorId": "", "author": "Thejas Madhavan Nair"}}

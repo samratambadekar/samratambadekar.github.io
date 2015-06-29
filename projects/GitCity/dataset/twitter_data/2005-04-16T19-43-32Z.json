@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 10, "changes": 11, "filename": "show-files.c"}], "stats": {"deletions": 1, "additions": 10, "total": 11}, "commit": {"date": "2005-04-16T19:43:32Z", "authorId": "", "author": "Linus Torvalds"}}

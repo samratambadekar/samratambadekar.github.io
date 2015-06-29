@@ -1,1 +1,0 @@
-{"repo": "hdfs-du", "files": [{"status": "modified", "deletions": 10, "additions": 1, "changes": 11, "filename": "README.md"}, {"status": "added", "deletions": 0, "additions": 16, "changes": 16, "filename": "start.sh"}], "stats": {"deletions": 10, "additions": 17, "total": 27}, "commit": {"date": "2012-08-07T18:03:19Z", "authorId": "traviscrawford", "author": "Travis Crawford"}}

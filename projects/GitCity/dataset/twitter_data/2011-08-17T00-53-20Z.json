@@ -1,1 +1,0 @@
-{"repo": "sbt-thrift", "files": [{"status": "added", "deletions": 0, "additions": 0, "changes": 0, "filename": "src/main/resources/thrift/thrift.bsd64"}], "stats": {"deletions": 0, "additions": 0, "total": 0}, "commit": {"date": "2011-08-17T00:53:20Z", "authorId": "ryanking", "author": "Ryan King"}}

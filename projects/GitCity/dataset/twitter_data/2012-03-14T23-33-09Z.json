@@ -1,1 +1,0 @@
-{"repo": "querulous", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "querulous-core/src/main/scala/com/twitter/querulous/DaemonThreadFactory.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-03-14T23:33:09Z", "authorId": "", "author": "Raghavendra Prabhu"}}

@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/library/scala/runtime/RichString.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2007-02-11T16:44:10Z", "authorId": "", "author": "mihaylov"}}

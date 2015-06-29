@@ -1,1 +1,0 @@
-{"repo": "twitter-text-rb", "files": [{"status": "modified", "deletions": 1, "additions": 13, "changes": 14, "filename": "lib/regex.rb"}], "stats": {"deletions": 1, "additions": 13, "total": 14}, "commit": {"date": "2012-02-10T19:30:16Z", "authorId": "keitaf", "author": "Keita Fujii"}}

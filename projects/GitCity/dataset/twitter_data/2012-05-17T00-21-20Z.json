@@ -1,1 +1,0 @@
-{"repo": "cassie", "files": [{"status": "modified", "deletions": 0, "additions": 8, "changes": 8, "filename": "cassie-serversets/src/main/scala/com/twitter/cassie/serversets/ServerSetsCluster.scala"}], "stats": {"deletions": 0, "additions": 8, "total": 8}, "commit": {"date": "2012-05-17T00:21:20Z", "authorId": "", "author": "Kyle Maxwell"}}

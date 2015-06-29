@@ -1,1 +1,0 @@
-{"repo": "cascading", "files": [{"status": "modified", "deletions": 1, "additions": 15, "changes": 16, "filename": "src/core/cascading/pipe/assembly/AggregateBy.java"}], "stats": {"deletions": 1, "additions": 15, "total": 16}, "commit": {"date": "2012-02-02T00:57:47Z", "authorId": "cwensel", "author": "Chris K Wensel"}}

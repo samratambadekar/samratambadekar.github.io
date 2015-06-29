@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "added", "deletions": 0, "additions": 386, "changes": 386, "filename": "src/compiler/scala/tools/nsc/ast/TreePrinters.scala"}], "stats": {"deletions": 0, "additions": 386, "total": 386}, "commit": {"date": "2007-02-08T11:35:07Z", "authorId": "odersky", "author": "Martin Odersky"}}

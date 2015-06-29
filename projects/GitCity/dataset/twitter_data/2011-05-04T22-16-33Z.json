@@ -1,1 +1,0 @@
-{"repo": "pig", "files": [{"status": "modified", "deletions": 4, "additions": 0, "changes": 4, "filename": "test/commit-tests"}, {"status": "modified", "deletions": 12, "additions": 0, "changes": 12, "filename": "test/unit-tests"}], "stats": {"deletions": 16, "additions": 0, "total": 16}, "commit": {"date": "2011-05-04T22:16:33Z", "authorId": "", "author": "Jianyong Dai"}}

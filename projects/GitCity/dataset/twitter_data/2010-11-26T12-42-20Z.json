@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "src/partest/scala/tools/partest/nest/Worker.scala"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2010-11-26T12:42:20Z", "authorId": "hubertp", "author": "Hubert Plociniczak"}}

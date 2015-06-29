@@ -1,1 +1,0 @@
-{"repo": "commons", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "src/java/com/twitter/common/thrift/callers/RetryingCaller.java"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-03-17T15:45:55Z", "authorId": "", "author": "jsirois"}}

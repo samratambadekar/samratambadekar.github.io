@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 0, "additions": 13, "changes": 13, "filename": "lockfile.c"}], "stats": {"deletions": 0, "additions": 13, "total": 13}, "commit": {"date": "2007-07-25T23:22:55Z", "authorId": "gitster", "author": "Junio C Hamano"}}

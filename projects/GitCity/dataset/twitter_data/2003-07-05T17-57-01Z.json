@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 1, "additions": 2, "changes": 3, "filename": "sources/scalac/ast/printer/TextTreePrinter.java"}], "stats": {"deletions": 1, "additions": 2, "total": 3}, "commit": {"date": "2003-07-05T17:57:01Z", "authorId": "", "author": "buraq"}}

@@ -1,1 +1,0 @@
-{"repo": "elephant-bird", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "src/java/com/twitter/elephantbird/mapreduce/io/BinaryBlockWriter.java"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2011-03-22T18:06:01Z", "authorId": "rangadi", "author": "Raghu Angadi"}}

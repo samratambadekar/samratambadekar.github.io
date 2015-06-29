@@ -1,1 +1,0 @@
-{"repo": "sbt-scrooge", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "project/build/SbtScroogePlugin.scala"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2011-10-25T12:47:59Z", "authorId": "jjmmcc", "author": "Jeremy Cloud"}}

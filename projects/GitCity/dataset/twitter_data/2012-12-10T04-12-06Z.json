@@ -1,1 +1,0 @@
-{"repo": "algebird", "files": [{"status": "modified", "deletions": 0, "additions": 14, "changes": 14, "filename": "src/test/scala/com/twitter/algebird/LinearScalingOperatorProperties.scala"}], "stats": {"deletions": 0, "additions": 14, "total": 14}, "commit": {"date": "2012-12-10T04:12:06Z", "authorId": "azymnis", "author": "Argyris Zymnis"}}

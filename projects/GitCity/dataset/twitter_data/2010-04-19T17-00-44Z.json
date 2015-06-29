@@ -1,1 +1,0 @@
-{"repo": "flockdb-client", "files": [{"status": "added", "deletions": 0, "additions": 13, "changes": 13, "filename": "LICENSE"}, {"status": "added", "deletions": 0, "additions": 60, "changes": 60, "filename": "README.md"}], "stats": {"deletions": 0, "additions": 73, "total": 73}, "commit": {"date": "2010-04-19T17:00:44Z", "authorId": "freels", "author": "Matt Freels"}}

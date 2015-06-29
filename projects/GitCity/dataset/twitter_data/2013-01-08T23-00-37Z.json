@@ -1,1 +1,0 @@
-{"repo": "twemproxy", "files": [{"status": "modified", "deletions": 32, "additions": 5, "changes": 37, "filename": "src/nc_kqueue.c"}], "stats": {"deletions": 32, "additions": 5, "total": 37}, "commit": {"date": "2013-01-08T23:00:37Z", "authorId": "ferenyx", "author": "ferenyx"}}

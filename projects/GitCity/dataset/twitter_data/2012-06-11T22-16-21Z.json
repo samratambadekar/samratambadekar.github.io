@@ -1,1 +1,0 @@
-{"repo": "ambrose", "files": [{"status": "modified", "deletions": 1, "additions": 1, "changes": 2, "filename": "pig/src/main/resources/web/js/ambrose-dag.js"}], "stats": {"deletions": 1, "additions": 1, "total": 2}, "commit": {"date": "2012-06-11T22:16:21Z", "authorId": "philogb", "author": "Nicolas Garcia Belmonte"}}

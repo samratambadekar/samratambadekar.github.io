@@ -1,1 +1,0 @@
-{"repo": "finagle", "files": [{"status": "modified", "deletions": 2, "additions": 0, "changes": 2, "filename": "finagle-core/src/test/scala/com/twitter/finagle/http/HttpServerConnectionLifecycleManagerSpec.scala"}], "stats": {"deletions": 2, "additions": 0, "total": 2}, "commit": {"date": "2011-02-02T01:45:26Z", "authorId": "mariusae", "author": "marius a. eriksen"}}

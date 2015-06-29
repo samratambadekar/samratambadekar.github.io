@@ -1,1 +1,0 @@
-{"repo": "mysql", "files": [{"status": "modified", "deletions": 2, "additions": 2, "changes": 4, "filename": "ndb/src/ndbapi/NdbScanOperation.cpp"}], "stats": {"deletions": 2, "additions": 2, "total": 4}, "commit": {"date": "2006-10-12T16:55:22Z", "authorId": "", "author": "jonas@perch.ndb.mysql.com"}}

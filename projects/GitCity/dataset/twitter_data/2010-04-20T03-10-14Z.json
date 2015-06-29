@@ -1,1 +1,0 @@
-{"repo": "flockdb", "files": [{"status": "modified", "deletions": 3, "additions": 2, "changes": 5, "filename": "src/test/scala/com/twitter/flockdb/unit/ReadWriteShardAdapterSpec.scala"}], "stats": {"deletions": 3, "additions": 2, "total": 5}, "commit": {"date": "2010-04-20T03:10:14Z", "authorId": "", "author": "Robey Pointer"}}

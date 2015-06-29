@@ -1,1 +1,0 @@
-{"repo": "util", "files": [{"status": "added", "deletions": 0, "additions": 21, "changes": 21, "filename": "src/main/scala/com/twitter/util/StateMachine.scala"}], "stats": {"deletions": 0, "additions": 21, "total": 21}, "commit": {"date": "2010-08-12T22:33:25Z", "authorId": "", "author": "Nick Kallen"}}

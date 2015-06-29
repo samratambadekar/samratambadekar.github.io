@@ -1,1 +1,0 @@
-{"repo": "util", "files": [{"status": "modified", "deletions": 22, "additions": 17, "changes": 39, "filename": "src/main/scala/com/twitter/util/ParallelProcessor.scala"}], "stats": {"deletions": 22, "additions": 17, "total": 39}, "commit": {"date": "2010-08-11T23:39:58Z", "authorId": "", "author": "Nick Kallen"}}

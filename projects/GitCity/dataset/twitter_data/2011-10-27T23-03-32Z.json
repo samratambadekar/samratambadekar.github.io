@@ -1,1 +1,0 @@
-{"repo": "ostrich", "files": [{"status": "modified", "deletions": 2, "additions": 9, "changes": 11, "filename": "src/main/scala/com/twitter/ostrich/stats/StatsCollection.scala"}], "stats": {"deletions": 2, "additions": 9, "total": 11}, "commit": {"date": "2011-10-27T23:03:32Z", "authorId": "olix0r", "author": "Oliver Gould"}}

@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 4, "additions": 4, "changes": 8, "filename": "t/t7606-merge-custom.sh"}], "stats": {"deletions": 4, "additions": 4, "total": 8}, "commit": {"date": "2010-08-23T20:15:47Z", "authorId": "Benabik", "author": "Brian Gernhardt"}}

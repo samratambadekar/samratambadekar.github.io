@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 23, "additions": 16, "changes": 39, "filename": "git-quiltimport.sh"}], "stats": {"deletions": 23, "additions": 16, "total": 39}, "commit": {"date": "2007-11-04T10:31:01Z", "authorId": "MadCoder", "author": "Pierre Habouzit"}}

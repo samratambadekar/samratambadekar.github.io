@@ -1,1 +1,0 @@
-{"repo": "git", "files": [{"status": "modified", "deletions": 1, "additions": 0, "changes": 1, "filename": "Makefile"}, {"status": "modified", "deletions": 13, "additions": 3, "changes": 16, "filename": "git-bisect.sh"}], "stats": {"deletions": 14, "additions": 3, "total": 17}, "commit": {"date": "2009-04-24T06:29:00Z", "authorId": "chriscool", "author": "Christian Couder"}}

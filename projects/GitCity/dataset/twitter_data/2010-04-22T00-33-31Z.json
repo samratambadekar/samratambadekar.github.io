@@ -1,1 +1,0 @@
-{"repo": "twurl", "files": [{"status": "modified", "deletions": 4, "additions": 17, "changes": 21, "filename": "lib/twurl/oauth_client.rb"}], "stats": {"deletions": 4, "additions": 17, "total": 21}, "commit": {"date": "2010-04-22T00:33:31Z", "authorId": "", "author": "Raffi Krikorian"}}

@@ -1,1 +1,0 @@
-{"repo": "scala", "files": [{"status": "modified", "deletions": 81, "additions": 71, "changes": 152, "filename": "src/compiler/scala/tools/nsc/typechecker/Macros.scala"}], "stats": {"deletions": 81, "additions": 71, "total": 152}, "commit": {"date": "2012-06-05T21:14:51Z", "authorId": "xeno-by", "author": "Eugene Burmako"}}
