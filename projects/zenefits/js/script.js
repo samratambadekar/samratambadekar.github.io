@@ -49,7 +49,6 @@ $.ajax( {
 	
     //console.log(location.city + "\n" + location.region_code + "\n" + location.region_name + "\n" + location.metro_code + "\n" + location.ip + "\n" + location.zip_code + "\n" + location.longitude + "\n" + location.latitude + "\n" + location.country_name + "\n" + location.country_code);
 	console.log(lat_lng);
-	$(".button").html(lat_lng);
 	initialize();
   }
 });
