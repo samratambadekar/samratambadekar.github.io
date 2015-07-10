@@ -40,8 +40,8 @@ $(".searchbox, .button").on("click", function(e) {
 });
 
 $.ajax( { 
-  url: "https://freegeoip.net/json", 
-  type: "POST", 
+  url: "https://freegeoip.net/json/", 
+  type: "GET", 
   dataType: "JSONP",
   success: function(location) {
     // example where I update content on the page.
