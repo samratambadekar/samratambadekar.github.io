@@ -1,4 +1,4 @@
-$(".searchbox, .button").on("click", function(e) {
+$("body").on("click", ".button, .card", function(e){
 	// if ($(window).width() <= 480) {
 		/* e.preventDefault(); */
 		/* remove the div with class ripple from all other elements */
@@ -16,7 +16,7 @@ $(".searchbox, .button").on("click", function(e) {
 		ripple = parent.find(".ripple");
 		//incase of quick double clicks stop the previous animation
 		ripple.removeClass("animate");
-		parent.css({overflow: "hidden"});
+		// parent.css({overflow: "hidden"});
 		// parent.css({position: "relative"});
 		// parent.css({background: "#F8F8F8"});
 		
@@ -55,49 +55,99 @@ $.ajax( {
 
 
 
-var map;
-var infowindow;
 var lat_lng = [];
+var map;
+var infoWindow;
+var service;
 
 function initialize() {
-  // var location = new google.maps.LatLng(-33.8665433, 151.1956316);
-  var location = new google.maps.LatLng(lat_lng[0], lat_lng[1]);
-
-  map = new google.maps.Map(document.getElementById("map_canvas"), {
-    center: location,
-    zoom: 15
+  map = new google.maps.Map(document.getElementById('map_canvas'), {
+    center: new google.maps.LatLng(lat_lng[0], lat_lng[1]),
+    zoom: 15,
+    styles: [
+      {
+        stylers: [
+          { visibility: 'simplified' }
+        ]
+      },
+      {
+        elementType: 'labels',
+        stylers: [
+          { visibility: 'on' }
+        ]
+      }
+    ]
   });
 
+  infoWindow = new google.maps.InfoWindow();
+  service = new google.maps.places.PlacesService(map);
+
+  google.maps.event.addListenerOnce(map, 'bounds_changed', performSearch);
+}
+
+function performSearch() {
   var request = {
-    location: location,
-    radius: 500,
-    types: ['store']
+    bounds: map.getBounds(),
+    radius: map.zoom * 1,
+    types: ['food', 'storage']
   };
-  infowindow = new google.maps.InfoWindow();
-  var service = new google.maps.places.PlacesService(map);
-  service.nearbySearch(request, callback);
+  service.radarSearch(request, callback);
 }
 
 function callback(results, status) {
-  if (status == google.maps.places.PlacesServiceStatus.OK) {
-    for (var i = 0; i < results.length; i++) {
-      createMarker(results[i]);
-    }
+  if (status != google.maps.places.PlacesServiceStatus.OK) {
+    alert(status);
+    return;
+  }
+  for (var i = 0, result; result = results[i]; i++) {
+    //createMarker(result);
+	
+	if(i < 10) {
+		service.getDetails(result, function(place, status) {
+		  if (status != google.maps.places.PlacesServiceStatus.OK) {
+			alert(status);
+			return;
+		  }
+		  console.log(place.name);
+		  //infoWindow.setContent(place.name);
+		  $("article").append('<div class="card"><div class="place_name">' + place.name + '</div><div class="place_phone">' + place.formatted_phone_number + '</div><div class="place_address">' + place.formatted_address + '</div><div class="place_open">' + place.opening_hours.open_now + '</div></div>');
+		});
+	}
   }
 }
 
 function createMarker(place) {
-  var placeLoc = place.geometry.location;
   var marker = new google.maps.Marker({
     map: map,
-    position: place.geometry.location
+    position: place.geometry.location,
+    icon: {
+      // Star
+      path: 'M 0,-24 6,-7 24,-7 10,4 15,21 0,11 -15,21 -10,4 -24,-7 -6,-7 z',
+      fillColor: '#ffff00',
+      fillOpacity: 1,
+      scale: 1/4,
+      strokeColor: '#bd8d2c',
+      strokeWeight: 1
+    }
   });
 
   google.maps.event.addListener(marker, 'click', function() {
-    infowindow.setContent(place.name);
-    infowindow.open(map, this);
+    /* service.getDetails(place, function(result, status) {
+      if (status != google.maps.places.PlacesServiceStatus.OK) {
+        alert(status);
+        return;
+      }
+	  console.log(result);
+      infoWindow.setContent(result.name);
+      infoWindow.open(map, marker);
+    }); */
   });
 }
+
+$("article").on("click", ".card", function(e){
+	$(".card").css("opacity", 0);
+	$("#map_canvas").css("opacity", 1);
+});
 
 //google.maps.event.addDomListener(window, 'load', initialize);
 
