@@ -42,7 +42,7 @@ $(".searchbox, .button").on("click", function(e) {
 $.ajax( { 
   url: "https://freegeoip.net/json", 
   type: "POST", 
-  dataType: "JSON",
+  dataType: "JSONP",
   success: function(location) {
     // example where I update content on the page.
 	lat_lng[0] = location.latitude;
