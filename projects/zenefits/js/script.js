@@ -63,7 +63,7 @@ function initialize() {
   // var location = new google.maps.LatLng(-33.8665433, 151.1956316);
   var location = new google.maps.LatLng(lat_lng[0], lat_lng[1]);
 
-  map = new google.maps.Map(document.getElementById("map-canvas"), {
+  map = new google.maps.Map(document.getElementById("map_canvas"), {
     center: location,
     zoom: 15
   });
