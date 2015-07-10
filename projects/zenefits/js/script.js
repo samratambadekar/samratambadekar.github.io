@@ -143,7 +143,7 @@ function createMarker(place) {
 }
 
 $("article").on("click", ".card", function(){
-	$("#map_canvas").css({"opacity": 1, "z-index": 3});
+	$("#map_canvas").css({"opacity": 1, "z-index": 1});
 	$("article").css("display", "none");
 });
 $("#changeView").on("click", function(){
