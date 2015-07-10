@@ -40,8 +40,8 @@ body {
 	background-color: $background-color;
 }
 
-header, article {
-
+header > div {
+	z-index: 2;
 }
 
 .button {
@@ -51,6 +51,7 @@ header, article {
 	margin: 0;
 	color: #FFF;
 	cursor: pointer;
+	position: relative;
 	overflow: hidden;
 	@include border-radius(5px);
 	background: #CDCECF;
@@ -71,7 +72,7 @@ input[type="text"]{
 	display: inline-block;
 	position: relative;
 	margin: 20px auto 10px auto;
-	width: 80%;
+	width: 90%;
 	max-width: 748px;
 }
 .searchbox input[type="text"]{
@@ -95,7 +96,7 @@ input[type="text"]{
 	height: 100%;
 	position: absolute;
 	top:0;
-	opacity: 0;
+	opacity: 0.2;
 	z-index: -1;
 }
 

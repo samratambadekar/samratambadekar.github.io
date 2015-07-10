@@ -63,7 +63,7 @@ var service;
 function initialize() {
   map = new google.maps.Map(document.getElementById('map_canvas'), {
     center: new google.maps.LatLng(lat_lng[0], lat_lng[1]),
-    zoom: 15,
+    zoom: 14,
     styles: [
       {
         stylers: [
@@ -88,7 +88,7 @@ function initialize() {
 function performSearch() {
   var request = {
     bounds: map.getBounds(),
-    radius: map.zoom * 1,
+    radius: 1000,
     types: ['food', 'storage']
   };
   service.radarSearch(request, callback);
@@ -100,19 +100,7 @@ function callback(results, status) {
     return;
   }
   for (var i = 0, result; result = results[i]; i++) {
-    //createMarker(result);
-	
-	if(i < 10) {
-		service.getDetails(result, function(place, status) {
-		  if (status != google.maps.places.PlacesServiceStatus.OK) {
-			alert(status);
-			return;
-		  }
-		  console.log(place.name);
-		  //infoWindow.setContent(place.name);
-		  $("article").append('<div class="card"><div class="place_name">' + place.name + '</div><div class="place_phone">' + place.formatted_phone_number + '</div><div class="place_address">' + place.formatted_address + '</div><div class="place_open">' + place.opening_hours.open_now + '</div></div>');
-		});
-	}
+    createMarker(result);
   }
 }
 
@@ -131,6 +119,16 @@ function createMarker(place) {
     }
   });
 
+	service.getDetails(place, function(result, status) {
+	  if (status != google.maps.places.PlacesServiceStatus.OK) {
+		alert(status);
+		return;
+	  }
+	  console.log(result.name);
+	  //infoWindow.setContent(result);
+	  $("article").append('<div class="card"><div class="place_name">' + result.name + '</div><div class="place_phone">' + result.formatted_phone_number + '</div><div class="place_address">' + result.formatted_address + '</div><div class="place_open">' + result.opening_hours.open_now + '</div></div>');
+	});
+
   google.maps.event.addListener(marker, 'click', function() {
     /* service.getDetails(place, function(result, status) {
       if (status != google.maps.places.PlacesServiceStatus.OK) {
@@ -144,9 +142,13 @@ function createMarker(place) {
   });
 }
 
-$("article").on("click", ".card", function(e){
-	$(".card").css("opacity", 0);
-	$("#map_canvas").css("opacity", 1);
+$("article").on("click", ".card", function(){
+	$("#map_canvas").css({"opacity": 1, "z-index": 1});
+	$("article").css("display", "none");
+});
+$("#changeView").on("click", function(){
+	$("#map_canvas").css({"opacity": 0.1, "z-index": -1});
+	$("article").css("display", "initial");
 });
 
 //google.maps.event.addDomListener(window, 'load', initialize);
