@@ -123,11 +123,11 @@ function createMarker(place) {
 			// alert(status);
 			return;
 		}
-		console.log(result.name);
+		console.log(result.geometry.location);
 		//infoWindow.setContent(result);
 
-		$("article").append('<div class="card"><div class="card_info"><div class="place_name">' + result.name + '</div><div class="place_phone more_card_info hidden">' + result.formatted_phone_number + '</div><div class="place_address more_card_info hidden">' + result.formatted_address + '</div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "open" : "closed") + '</div><div class="blue_link show_on_map more_card_info hidden">Show on Map</div></div></div>');
-		
+		$("article").append('<div class="card"><div class="card_info"><div class="place_name">' + result.name + '</div><div class="place_phone more_card_info hidden">' + result.formatted_phone_number + '</div><div class="place_address more_card_info hidden">' + result.formatted_address + '</div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "open" : "closed") + '</div><div class="blue_link show_on_map more_card_info hidden">Show on Map</div><div class="location hidden">' + result.geometry.location + '</div></div></div>');
+
 		// $(".card").css("height", $(".card").find(".card_info").outerHeight() + 40);
 	});
 
@@ -162,11 +162,19 @@ $("article").on("click", ".show_on_map", function() {
 	// $(".card").css("opacity", "0");
 	$(".card").css({"opacity": 0, "height": "60px"});
 	$(this).css("opacity", "1");
-
+	var lat_lng = $(this).parent().find(".location").text().trim().toString().substring(1, $(this).parent().find(".location").html().trim().length - 1).split(',');
+	var location = new google.maps.LatLng(lat_lng[0], lat_lng[1]);
+	console.log(lat_lng);
 	window.setTimeout(function() {
 		$("article").css("display", "none");
 		$(".card").css("opacity", "0");
 		$(".card").find(".more_card_info").addClass("hidden");
+
+		var marker = new google.maps.Marker({
+			map: map,
+			position: location,
+			animation: google.maps.Animation.DROP
+		});
 	}, 1000);
 });
 
