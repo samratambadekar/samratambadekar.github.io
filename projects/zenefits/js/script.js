@@ -159,7 +159,7 @@ $("article").on("click", ".card", function() {
 });
 
 $("article").on("click", ".show_on_map", function() {
-	$("#map_canvas").css({"filter": "grayscale(0)", "z-index": 1});
+	$("#map_canvas").css({"filter": "grayscale(0)", "-webkit-filter": "grayscale(0)", "z-index": 1});
 	// $("article").css("display", "none");
 	// $(".card").css("opacity", "0");
 	$(".card").css({"opacity": 0, "height": "60px"});
@@ -190,7 +190,7 @@ function clearMarkers() {
 }
 
 $("#changeView").on("click", function(){
-	$("#map_canvas").css({"filter": "grayscale(1)", "z-index": -1});
+	$("#map_canvas").css({"filter": "grayscale(1)", "-webkit-filter": "grayscale(1)", "z-index": -1});
 	$("article").css("display", "initial");
 	
 	$(".card").each(function() {
