@@ -57,6 +57,7 @@ var lat_lng = [];
 var map;
 var infoWindow;
 var service;
+var markers = [];
 
 function initialize() {
   map = new google.maps.Map(document.getElementById('map_canvas'), {
@@ -117,6 +118,7 @@ function createMarker(place) {
 			strokeWeight: 1
 		}
 	});
+	markers.push(marker);
 
 	service.getDetails(place, function(result, status) {
 		if (status != google.maps.places.PlacesServiceStatus.OK) {
@@ -165,18 +167,27 @@ $("article").on("click", ".show_on_map", function() {
 	var lat_lng = $(this).parent().find(".location").text().trim().toString().substring(1, $(this).parent().find(".location").html().trim().length - 1).split(',');
 	var location = new google.maps.LatLng(lat_lng[0], lat_lng[1]);
 	console.log(lat_lng);
+	
 	window.setTimeout(function() {
 		$("article").css("display", "none");
 		$(".card").css("opacity", "0");
 		$(".card").find(".more_card_info").addClass("hidden");
 
+		clearMarkers();
 		var marker = new google.maps.Marker({
 			map: map,
 			position: location,
 			animation: google.maps.Animation.DROP
 		});
+		markers.push(marker);
 	}, 1000);
 });
+
+function clearMarkers() {
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(null);
+  }
+}
 
 $("#changeView").on("click", function(){
 	$("#map_canvas").css({"filter": "grayscale(1)", "z-index": -1});
