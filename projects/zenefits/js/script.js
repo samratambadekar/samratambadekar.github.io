@@ -152,6 +152,7 @@ function createMarker(place) {
 }
 
 function calcRoute(start, end) {
+  selectedMode = "TRANSIT";
   var request = {
     origin:start,
     destination:end,
