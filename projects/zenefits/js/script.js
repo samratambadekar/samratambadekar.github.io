@@ -48,7 +48,7 @@ $.ajax( {
 	lat_lng[1] = location.longitude;
 	
     //console.log(location.city + "\n" + location.region_code + "\n" + location.region_name + "\n" + location.metro_code + "\n" + location.ip + "\n" + location.zip_code + "\n" + location.longitude + "\n" + location.latitude + "\n" + location.country_name + "\n" + location.country_code);
-	console.log(lat_lng);
+	//console.log(lat_lng);
 	initialize();
   }
 });
@@ -58,8 +58,13 @@ var map;
 var infoWindow;
 var service;
 var markers = [];
+var directionsDisplay;
+var directionsService = new google.maps.DirectionsService();
+var startLoc, endLoc;
 
 function initialize() {
+  directionsDisplay = new google.maps.DirectionsRenderer();
+  startLoc = new google.maps.LatLng(lat_lng[0], lat_lng[1]);
   map = new google.maps.Map(document.getElementById('map_canvas'), {
     center: new google.maps.LatLng(lat_lng[0], lat_lng[1]),
     zoom: 14,
@@ -125,10 +130,10 @@ function createMarker(place) {
 			// alert(status);
 			return;
 		}
-		console.log(result.geometry.location);
+		//console.log(result.geometry.location);
 		//infoWindow.setContent(result);
 
-		$("article").append('<div class="card"><div class="card_info"><div class="place_name">' + result.name + '</div><div class="place_phone more_card_info hidden">' + result.formatted_phone_number + '</div><div class="place_address more_card_info hidden">' + result.formatted_address + '</div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "open" : "closed") + '</div><div class="blue_link show_on_map more_card_info hidden">Show on Map</div><div class="location hidden">' + result.geometry.location + '</div></div></div>');
+		$("article").append('<div class="card"><div class="card_info"><div class="place_name">' + result.name + '</div><div class="place_phone more_card_info hidden">' + result.formatted_phone_number + '</div><div class="place_address more_card_info hidden">' + result.formatted_address + '</div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "<span class='green_text'>open</span>" : "<span class='red_text'>closed</span>") + '</div><div class="blue_link show_on_map more_card_info hidden">Show on Map</div><div class="location hidden">' + result.geometry.location + '</div></div></div>');
 
 		// $(".card").css("height", $(".card").find(".card_info").outerHeight() + 40);
 	});
@@ -146,13 +151,27 @@ function createMarker(place) {
 	});
 }
 
+function calcRoute(start, end) {
+  var request = {
+    origin:start,
+    destination:end,
+    travelMode: google.maps.TravelMode[selectedMode]
+  };
+  directionsService.route(request, function(result, status) {
+    if (status == google.maps.DirectionsStatus.OK) {
+	  directionsDisplay.setMap(map);
+      directionsDisplay.setDirections(result);
+    }
+  });
+}
+
 $("article").on("click", ".card", function() {
 	if($(this).find(".more_card_info").hasClass("hidden")) {
 		$(this).find(".more_card_info").removeClass("hidden");
 	} else {
 		$(this).find(".more_card_info").addClass("hidden");
 	}
-	console.log($(this).find(".card_info").outerHeight());
+	//console.log($(this).find(".card_info").outerHeight());
 	$(this).css("height", $(this).find(".card_info").outerHeight() + 40);
 
 	timeout_counter = 0;
@@ -164,22 +183,24 @@ $("article").on("click", ".show_on_map", function() {
 	// $(".card").css("opacity", "0");
 	$(".card").css({"opacity": 0, "height": "60px"});
 	$(this).css("opacity", "1");
-	var lat_lng = $(this).parent().find(".location").text().trim().toString().substring(1, $(this).parent().find(".location").html().trim().length - 1).split(',');
-	var location = new google.maps.LatLng(lat_lng[0], lat_lng[1]);
-	console.log(lat_lng);
+	var lat_lng_dst = $(this).parent().find(".location").text().trim().toString().substring(1, $(this).parent().find(".location").html().trim().length - 1).split(',');
+	var endLoc = new google.maps.LatLng(lat_lng_dst[0], lat_lng_dst[1]);
+	//console.log(lat_lng_dst);
 	
 	window.setTimeout(function() {
 		$("article").css("display", "none");
 		$(".card").css("opacity", "0");
 		$(".card").find(".more_card_info").addClass("hidden");
 
-		clearMarkers();
+		clearMarkers();		
 		var marker = new google.maps.Marker({
 			map: map,
-			position: location,
+			position: endLoc,
 			animation: google.maps.Animation.DROP
 		});
 		markers.push(marker);
+		map.setCenter(endLoc);
+		calcRoute(startLoc, endLoc);
 	}, 1000);
 });
 
@@ -187,11 +208,22 @@ function clearMarkers() {
   for (var i = 0; i < markers.length; i++) {
     markers[i].setMap(null);
   }
+  directionsDisplay.setMap(null);
+}
+function showMarkers() {
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(map);
+  }
+  directionsDisplay.setMap(null);
 }
 
 $("#changeView").on("click", function(){
 	$("#map_canvas").css({"filter": "grayscale(1)", "-webkit-filter": "grayscale(1)", "z-index": -1});
 	$("article").css("display", "initial");
+	
+	/* REMOVE THE LAST MARKER */
+	markers.splice((markers.length), 1);
+	showMarkers();
 	
 	$(".card").each(function() {
 		var card = $(this);

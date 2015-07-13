@@ -43,6 +43,9 @@ body {
 header > div {
 	z-index: 2;
 }
+article {
+	height: 100%;
+}
 
 .hidden {
 	display: none;
@@ -135,6 +138,10 @@ input[type="text"] {
 .blue_link {
 	color: $button-color;
 	cursor: pointer;
+}
+.green_text {
+}
+.red_text {
 }
 
 .ripple {
