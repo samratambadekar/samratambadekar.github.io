@@ -58,6 +58,7 @@ var map;
 var infoWindow;
 var service;
 var markers = [];
+var locationTypes = ['book_store', 'cafe'];
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 var startLoc, endLoc;
@@ -95,7 +96,7 @@ function performSearch() {
   var request = {
     bounds: map.getBounds(),
     radius: 1000,
-    types: ['food', 'storage']
+    types: locationTypes
   };
   service.radarSearch(request, callback);
 }
@@ -130,12 +131,13 @@ function createMarker(place) {
 	service.getDetails(place, function(result, status) {
 		if (status != google.maps.places.PlacesServiceStatus.OK) {
 			// alert(status);
+			console.log(status);
 			return;
 		}
-		//console.log(result.geometry.location);
+		console.log(result.types);
 		//infoWindow.setContent(result);
-
-		$("article").append('<div class="card"><div class="card_info"><div class="place_name">' + result.name + '</div><div class="place_phone more_card_info hidden">' + result.formatted_phone_number + '</div><div class="place_address more_card_info hidden">' + result.formatted_address + '</div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "<span class='green_text'>open</span>" : "<span class='red_text'>closed</span>") + '</div><div class="blue_link show_on_map more_card_info hidden right">Navigate here</div><div class="similar_locations blue_link more_card_info hidden">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div></div></div>');
+		
+		$("article").append('<div class="card"><div class="card_info"><div class="place_name">' + result.name + '</div><div class="place_phone more_card_info hidden">' + result.formatted_phone_number + '</div><div class="place_address more_card_info hidden">' + result.formatted_address + '</div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "<span class='green_text'>open</span>" : "<span class='red_text'>closed</span>") + '</div><div class="blue_link show_on_map more_card_info hidden right">Navigate here</div><div class="similar_locations blue_link more_card_info hidden">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div><div class="location_type hidden">' + result.types[0] + '</div></div></div>');
 
 		// $(".card").css("height", $(".card").find(".card_info").outerHeight() + 40);
 	});
@@ -170,8 +172,10 @@ function calcRoute(start, end) {
 $("article").on("click", ".card", function() {
 	if($(this).find(".more_card_info").hasClass("hidden")) {
 		$(this).find(".more_card_info").removeClass("hidden");
+		$(this).find(".place_name").css("white-space", "initial");
 	} else {
 		$(this).find(".more_card_info").addClass("hidden");
+		$(this).find(".place_name").css("white-space", "nowrap");
 	}
 	//console.log($(this).find(".card_info").outerHeight());
 	$(this).css("height", $(this).find(".card_info").outerHeight() + 40);
@@ -205,7 +209,6 @@ $("article").on("click", ".show_on_map", function(e) {
 		calcRoute(startLoc, endLoc);
 	}, 1000);
 });
-
 function clearMarkers() {
   for (var i = 0; i < markers.length; i++) {
     markers[i].setMap(null);
@@ -218,6 +221,14 @@ function showMarkers() {
   }
   directionsDisplay.setMap(null);
 }
+$("article").on("click", ".similar_locations", function(e) {
+	locationTypes = [];
+	locationTypes.push($(this).parent().find(".location_type").text().trim());
+	
+	/* CLEAR EXISTING LIST */
+	$("article").empty();
+	performSearch();
+});
 
 $("#changeView").on("click", function(){
 	$("#map_canvas").css({"filter": "grayscale(1)", "-webkit-filter": "grayscale(1)", "z-index": -1});
