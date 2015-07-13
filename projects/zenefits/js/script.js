@@ -61,6 +61,8 @@ var markers = [];
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 var startLoc, endLoc;
+selectedMode = "DRIVING"; /* DEFAULT MODE */
+var timeout_counter = 0;
 
 function initialize() {
   directionsDisplay = new google.maps.DirectionsRenderer();
@@ -152,7 +154,6 @@ function createMarker(place) {
 }
 
 function calcRoute(start, end) {
-  selectedMode = "TRANSIT";
   var request = {
     origin:start,
     destination:end,
@@ -200,7 +201,7 @@ $("article").on("click", ".show_on_map", function() {
 			animation: google.maps.Animation.DROP
 		});
 		markers.push(marker);
-		map.setCenter(endLoc);
+		// map.setCenter(endLoc);
 		calcRoute(startLoc, endLoc);
 	}, 1000);
 });
@@ -233,5 +234,18 @@ $("#changeView").on("click", function(){
 		}, 140 * timeout_counter++);
 	});
 });
-var timeout_counter = 0;
 //google.maps.event.addDomListener(window, 'load', initialize);
+
+
+$(".icon").on("click", function() {
+	if($(this).hasClass("icon_walking") {
+		selectedMode = "WALKING";
+	} else if($(this).hasClass("icon_transit") {
+		selectedMode = "TRANSIT";
+	} else if($(this).hasClass("icon_bicycle") {
+		selectedMode = "BICYCLING";
+	} else if($(this).hasClass("icon_driving") {
+		selectedMode = "DRIVING";
+	}
+	calcRoute(startLoc, endLoc);
+});
