@@ -1,4 +1,4 @@
-$("body").on("click", ".button, .card", function(e){
+$("body").on("click", ".button, .card, .icon", function(e){
 	// if ($(window).width() <= 480) {
 		/* e.preventDefault(); */
 		/* remove the div with class ripple from all other elements */
@@ -135,7 +135,7 @@ function createMarker(place) {
 		//console.log(result.geometry.location);
 		//infoWindow.setContent(result);
 
-		$("article").append('<div class="card"><div class="card_info"><div class="place_name">' + result.name + '</div><div class="place_phone more_card_info hidden">' + result.formatted_phone_number + '</div><div class="place_address more_card_info hidden">' + result.formatted_address + '</div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "<span class='green_text'>open</span>" : "<span class='red_text'>closed</span>") + '</div><div class="blue_link show_on_map more_card_info hidden">Show on Map</div><div class="location hidden">' + result.geometry.location + '</div></div></div>');
+		$("article").append('<div class="card"><div class="card_info"><div class="place_name">' + result.name + '</div><div class="place_phone more_card_info hidden">' + result.formatted_phone_number + '</div><div class="place_address more_card_info hidden">' + result.formatted_address + '</div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "<span class='green_text'>open</span>" : "<span class='red_text'>closed</span>") + '</div><div class="blue_link show_on_map more_card_info hidden right">Navigate here</div><div class="similar_locations blue_link more_card_info hidden">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div></div></div>');
 
 		// $(".card").css("height", $(".card").find(".card_info").outerHeight() + 40);
 	});
@@ -179,14 +179,14 @@ $("article").on("click", ".card", function() {
 	timeout_counter = 0;
 });
 
-$("article").on("click", ".show_on_map", function() {
+$("article").on("click", ".show_on_map", function(e) {
 	$("#map_canvas").css({"filter": "grayscale(0)", "-webkit-filter": "grayscale(0)", "z-index": 1});
 	// $("article").css("display", "none");
 	// $(".card").css("opacity", "0");
 	$(".card").css({"opacity": 0, "height": "60px"});
 	$(this).css("opacity", "1");
 	var lat_lng_dst = $(this).parent().find(".location").text().trim().toString().substring(1, $(this).parent().find(".location").html().trim().length - 1).split(',');
-	var endLoc = new google.maps.LatLng(lat_lng_dst[0], lat_lng_dst[1]);
+	endLoc = new google.maps.LatLng(lat_lng_dst[0], lat_lng_dst[1]);
 	//console.log(lat_lng_dst);
 	
 	window.setTimeout(function() {
@@ -238,13 +238,13 @@ $("#changeView").on("click", function(){
 
 
 $(".icon").on("click", function() {
-	if($(this).hasClass("icon_walking") {
+	if($(this).hasClass("icon_walking")) {
 		selectedMode = "WALKING";
-	} else if($(this).hasClass("icon_transit") {
+	} else if($(this).hasClass("icon_transit")) {
 		selectedMode = "TRANSIT";
-	} else if($(this).hasClass("icon_bicycle") {
+	} else if($(this).hasClass("icon_bicycle")) {
 		selectedMode = "BICYCLING";
-	} else if($(this).hasClass("icon_driving") {
+	} else if($(this).hasClass("icon_driving")) {
 		selectedMode = "DRIVING";
 	}
 	calcRoute(startLoc, endLoc);

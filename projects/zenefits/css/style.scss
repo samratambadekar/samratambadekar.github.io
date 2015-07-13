@@ -50,7 +50,23 @@ article {
 }
 
 .hidden {
-	display: none;
+	display: none !important;
+}
+.blue_link {
+	color: $button-color;
+	cursor: pointer;
+}
+.green_text {
+	color: $green-color;
+}
+.red_text {
+	color: $red-color;
+}
+.right {
+	float: right;
+}
+.left {
+	float: left;
 }
 
 .button {
@@ -137,16 +153,12 @@ input[type="text"] {
 .place_name {
 	white-space: nowrap;
 }
-
-.blue_link {
-	color: $button-color;
-	cursor: pointer;
-}
-.green_text {
-	color: $green-color;
-}
-.red_text {
-	color: $red-color;
+.show_on_map, .similar_locations {
+	display: inline-block;
+	text-align: right;
+	padding: 5px 0;
+	position: relative;
+	overflow: hidden;
 }
 
 aside {
@@ -157,6 +169,8 @@ aside {
 }
 .icon {
 	display: block;
+	position: relative;
+	overflow: hidden;
 	width: 80px;
 	height: 80px;
 	padding: 15px;
