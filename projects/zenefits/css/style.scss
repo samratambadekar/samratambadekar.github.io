@@ -1,8 +1,8 @@
 $font-stack:  "Open Sans", sans-serif;
 $primary-color: #333;
 $button-color: #4683EA;
-$red-color: #FF5722;
-$green-color: #00C853;
+$red-color: #F44336;
+$green-color: #4CAf50;
 $alert-header-color: #D8544C;
 $offerCard-header-color: #2757A7;
 $button-payment-color: #00892D;
@@ -63,6 +63,12 @@ article {
 }
 .red_text {
 	color: $red-color;
+}
+.green_border {
+	border: 2px solid #4CAf50;
+}
+.red_border {
+	border: 2px solid #F44336;
 }
 .right {
 	float: right;
@@ -144,13 +150,15 @@ input[type="text"] {
 	width: 30%;
 	height: 60px;
 	margin: 10px 15px;
-	padding: 20px;
 	background-color: #FFF;
 	opacity: 1;
 	overflow: hidden;
 	vertical-align: top;
 	cursor: pointer;
 	box-shadow: 2px 2px 4px #888;
+}
+.card_info {
+	padding: 20px;
 }
 .place_name {
 	white-space: nowrap;
