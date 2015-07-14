@@ -44,11 +44,18 @@ body {
 	-webkit-tap-highlight-color: transparent;
 }
 
-header > div {
-	z-index: 2;
+header {
+	& > div {
+		z-index: 2;
+	}
+	& .icon {
+		display: inline-block;
+		margin: auto;
+	}
 }
 article {
 	height: 100%;
+	z-index: 2;
 }
 
 .hidden {
@@ -106,7 +113,7 @@ input[type="text"] {
 	display: inline-block;
 	position: relative;
 	margin: 20px auto 10px auto;
-	width: 90%;
+	width: 75%;
 	max-width: 748px;
 }
 .searchbox input[type="text"] {
@@ -189,7 +196,6 @@ aside {
 	border-radius: 100px;
 	/* max-height: 30px; */
 	vertical-align: middle;
-	background-color: #888;
 	cursor: pointer;
 }
 .icon img {
@@ -235,4 +241,26 @@ aside {
 @keyframes ripple {
 	/*scale the element to 250% to safely cover the entire link and fade it out*/
 	100% {opacity: 0; transform: scale(3.0);}
+}
+
+/* TABLET */
+@media screen and (min-width: 481px) and (max-width: 768px) {	
+	.card {
+		width: 45%;
+	}
+}
+
+/* MOBILE */
+@media screen and (max-width: 480px) {
+	.searchbox {
+		width: 67%;
+	}
+	.searchbox .button  {
+		width: 55px;
+		padding-left: 5px;
+	}
+	
+	.card  {
+		width: 75%;
+	}
 }
