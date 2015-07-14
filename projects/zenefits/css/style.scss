@@ -40,6 +40,8 @@ body {
 	text-align: center;
 	color: $primary-color;
 	background-color: $background-color;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
 }
 
 header > div {

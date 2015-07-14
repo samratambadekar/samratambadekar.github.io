@@ -169,6 +169,33 @@ function calcRoute(start, end) {
   });
 }
 
+function getDistance() {
+	var distanceService = new google.maps.DistanceMatrixService();
+	distanceService.getDistanceMatrix({
+		origins: [startLoc],
+		destinations: [endLoc],
+		travelMode: google.maps.TravelMode.selectedMode,
+		durationInTraffic: true
+	}, getETA);
+}
+function getETA(response, status) {
+	if (status == google.maps.DistanceMatrixStatus.OK) {
+		var origins = response.originAddresses;
+		var destinations = response.destinationAddresses;
+
+		for (var i = 0; i < origins.length; i++) {
+			var results = response.rows[i].elements;
+			for (var j = 0; j < results.length; j++) {
+				var element = results[j];
+				var distance = element.distance.text;
+				var duration = element.duration.text;
+				var from = origins[i];
+				var to = destinations[j];
+			}
+		}
+	}
+}
+
 $("article").on("click", ".card", function() {
 	if($(this).find(".more_card_info").hasClass("hidden")) {
 		$(this).find(".more_card_info").removeClass("hidden");
