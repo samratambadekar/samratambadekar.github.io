@@ -45,8 +45,14 @@ body {
 }
 
 header {
+	position: fixed;
+	width: 100%;
+	overflow: hidden;
+	z-index: 4;
+	background-color: $background-color;
+	
 	& > div {
-		z-index: 2;
+		
 	}
 	& .icon {
 		display: inline-block;
@@ -54,6 +60,8 @@ header {
 	}
 }
 article {
+	position: relative;
+	top: 70px;
 	height: 100%;
 	z-index: 2;
 }
@@ -88,7 +96,7 @@ article {
 	display: inline-block;
 	min-width: 50px;
 	min-height: 35px;
-	padding: 6px 15px;
+	padding: 7px 15px;
 	margin: 0;
 	color: #FFF;
 	cursor: pointer;
@@ -120,6 +128,7 @@ input[type="text"] {
 	width: 100%;
 	margin: 0 auto;
 	border: 1px solid $border-color;
+	background-color: $background-color;
 }
 .searchbox .button  {
 	position: absolute;
@@ -157,7 +166,7 @@ input[type="text"] {
 	width: 30%;
 	height: 60px;
 	margin: 10px 15px;
-	background-color: #FFF;
+	background-color: $background-color;
 	opacity: 1;
 	overflow: hidden;
 	vertical-align: top;
