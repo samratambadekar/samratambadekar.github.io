@@ -70,7 +70,7 @@ function initialize() {
   startLoc = new google.maps.LatLng(lat_lng[0], lat_lng[1]);
   map = new google.maps.Map(document.getElementById('map_canvas'), {
     center: new google.maps.LatLng(lat_lng[0], lat_lng[1]),
-    zoom: 14,
+    zoom: 13,
     styles: [
       {
         stylers: [
