@@ -58,12 +58,13 @@ var map;
 var infoWindow;
 var service;
 var markers = [];
-var locationTypes = ['book_store', 'cafe'];
+var locationTypes = ['book_store', 'cafe', 'food'];
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 var startLoc, endLoc;
 selectedMode = "DRIVING"; /* DEFAULT MODE */
 var timeout_counter = 0;
+var searchBox, input, bounds;
 
 function initialize() {
   directionsDisplay = new google.maps.DirectionsRenderer();
@@ -85,38 +86,121 @@ function initialize() {
       }
     ]
   });
-
+  
+  
   infoWindow = new google.maps.InfoWindow();
   service = new google.maps.places.PlacesService(map);
-
   google.maps.event.addListenerOnce(map, 'bounds_changed', performSearch);
+  // google.maps.event.addListenerOnce(map, 'zoom_changed', performSearch);
+  google.maps.event.addListenerOnce(map, 'center_changed', performSearch);
+  
+  google.maps.event.addListener(map, 'bounds_changed', function() {
+    var bounds = map.getBounds();
+    searchBox.setBounds(bounds);
+  });
+  
+  // Create the search box and link it to the UI element.
+  input = (document.getElementById("search_place"));
+  searchBox = new google.maps.places.SearchBox((input));
+  google.maps.event.addListener(searchBox, 'places_changed', searchPlaces);
+
+  
+}
+
+function searchPlaces() {
+    var places = searchBox.getPlaces();
+	
+	map.setCenter(new google.maps.LatLng(places[0].geometry.location.A, places[0].geometry.location.F));
+
+    if (places.length == 0) {
+      return;
+    }
+	
+	clearMarkers();
+	/* CLEAR EXISTING LIST */
+	$("article").empty();
+	
+    // bounds = new google.maps.LatLngBounds();
+    bounds = map.getBounds();
+	
+	if (places.length == 1) {
+		// console.log(places);
+		map.setZoom(13);
+		performSearch();
+	} else {
+		console.log(places);
+		locationTypes = [];
+		for (var i = 0, result; result = places[i]; i++) {
+			$("article").append('<div class="card multiple_locations"><div class="' + (result.opening_hours == undefined ? "gray_border":(result.opening_hours.open_now ? "green_border" : "red_border")) + '"></div><div class="card_info"><div class="hidden place_address">' + result.formatted_address + '</div><div class="place_name">' + result.name + '</div><div class="place_rating more_card_info hidden">Ratings: ' + result.rating + '</div><div class="place_price_level more_card_info hidden">Price Level: ' + result.price_level + '</div><div class="blue_link show_on_map more_card_info hidden right">Navigate here</div><div class="similar_locations blue_link more_card_info hidden">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div><div class="location_type hidden">' + result.types[0] + '</div></div></div>');
+			
+			$(this).parents(".card").css("height", $(this).find(".card_info").outerHeight());
+			locationTypes.push(result.types[0]);
+		}
+		
+		
+		// lat_lng[0] = map.getCenter().A;
+		// lat_lng[1] = map.getCenter().F;
+		// startLoc = new google.maps.LatLng(lat_lng[0], lat_lng[1]);
+		// map.setCenter(new google.maps.LatLng(lat_lng[0], lat_lng[1]));
+		// zoom: 13,
+		// console.log(map.getCenter().A);
+		
+		for (var i = 0, place; place = places[i]; i++) {
+		  var image = {
+			url: place.icon,
+			size: new google.maps.Size(71, 71),
+			origin: new google.maps.Point(0, 0),
+			anchor: new google.maps.Point(17, 34),
+			scaledSize: new google.maps.Size(25, 25)
+		  };
+
+		  // Create a marker for each place.
+		  var marker = new google.maps.Marker({
+			map: map,
+			icon: image,
+			title: place.name,
+			position: place.geometry.location
+		  });	  
+		  markers.push(marker);
+
+		  bounds.extend(place.geometry.location);
+		}
+		map.fitBounds(bounds);
+	}
 }
 
 function performSearch() {
+  if(!bounds) {
+	  bounds = map.getBounds();
+  }
+  
+  // console.log(new google.maps.LatLng(lat_lng[0], lat_lng[1]));
   var request = {
-    bounds: map.getBounds(),
-    radius: 1000,
+    location: new google.maps.LatLng(lat_lng[0], lat_lng[1]),
+    bounds: bounds,
+	radius: 1000,
     types: locationTypes
   };
-  service.radarSearch(request, callback);
+  // service.radarSearch(request, callback);
+  service.nearbySearch(request, callback);
 }
 
 function callback(results, status) {
   if (status != google.maps.places.PlacesServiceStatus.OK) {
-    alert(status);
+    console.log(status);
     return;
   }
   for (var i = 0, result; result = results[i]; i++) {
     createMarker(result);
   }
-  hideMarkers();
+  // hideMarkers();
 }
 
 function createMarker(place) {
 	var marker = new google.maps.Marker({
 		map: map,
 		position: place.geometry.location,
-		animation: google.maps.Animation.DROP,
+		animation: google.maps.Animation.DROP/* ,
 		icon: {
 			// Star
 			path: 'M 0,-24 6,-7 24,-7 10,4 15,21 0,11 -15,21 -10,4 -24,-7 -6,-7 z',
@@ -125,19 +209,18 @@ function createMarker(place) {
 			scale: 1/3,
 			strokeColor: '#bd8d2c',
 			strokeWeight: 1
-		}
+		} */
 	});
 	markers.push(marker);
 
 	service.getDetails(place, function(result, status) {
 		if (status != google.maps.places.PlacesServiceStatus.OK) {
-			// alert(status);
-			//console.log(status);
+			console.log(status);
 			return;
 		}
-		//console.log(result.types);
+		console.log(result.opening_hours);
 		//infoWindow.setContent(result);
-		$("article").append('<div class="card"><div class="' + (result.opening_hours.open_now ? "green_border" : "red_border") + '"></div><div class="card_info"><div class="place_name">' + result.name + '</div><div class="place_phone more_card_info hidden">' + result.formatted_phone_number + '</div><div class="place_address more_card_info hidden">' + result.formatted_address + '</div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "<span class='green_text'>open</span>" : "<span class='red_text'>closed</span>") + '</div><div class="blue_link show_on_map more_card_info hidden right">Navigate here</div><div class="similar_locations blue_link more_card_info hidden">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div><div class="location_type hidden">' + result.types[0] + '</div></div></div>');
+		$("article").append('<div class="card"><div class="' + (result.opening_hours == undefined ? "gray_border":(result.opening_hours.open_now ? "green_border" : "red_border")) + '"></div><div class="card_info"><div class="place_name">' + result.name + '</div><div class="place_phone more_card_info hidden">' + result.formatted_phone_number + '</div><div class="place_address more_card_info hidden">' + result.formatted_address + '</div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "<span class='green_text'>open</span>" : "<span class='red_text'>closed</span>") + '</div><div class="blue_link show_on_map more_card_info hidden right">Navigate here</div><div class="similar_locations blue_link more_card_info hidden">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div><div class="location_type hidden">' + result.types[0] + '</div></div></div>');
 
 		// $(".card").css("height", $(".card").find(".card_info").outerHeight() + 40);
 	});
@@ -145,10 +228,11 @@ function createMarker(place) {
 	google.maps.event.addListener(marker, 'click', function() {
 		service.getDetails(place, function(result, status) {
 			if (status != google.maps.places.PlacesServiceStatus.OK) {
-				alert(status);
+				//alert(status);
+				console.log(status);
 				return;
 			}
-			console.log(result);
+			// console.log(result);
 			infoWindow.setContent(result.name + '<br/>' + result.formatted_phone_number + '<br/>' + result.formatted_address + '<br/>' + result.types[0]);
 			infoWindow.open(map, marker);
 		});
@@ -229,9 +313,10 @@ $("article").on("click", ".show_on_map", function(e) {
 		$("article").css("display", "none");
 		// $(".card").css("opacity", "0");
 		$(".card").find(".more_card_info").addClass("hidden");
-	}, 1000);
+	}, 1500);
 	
-	hideMarkers();		
+	hideMarkers();
+	$("aside").removeClass("hidden");
 	var marker = new google.maps.Marker({
 		map: map,
 		position: endLoc,
@@ -247,12 +332,20 @@ function hideMarkers() {
   }
   directionsDisplay.setMap(null);
 }
+function clearMarkers() {
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(null);
+  }
+  markers = [];
+  directionsDisplay.setMap(null);
+}
 function showMarkers() {
   for (var i = 0; i < markers.length; i++) {
     markers[i].setMap(map);
   }
   directionsDisplay.setMap(null);
 }
+
 $("article").on("click", ".similar_locations", function(e) {
 	locationTypes = [];
 	locationTypes.push($(this).parent().find(".location_type").text().trim());
@@ -262,14 +355,21 @@ $("article").on("click", ".similar_locations", function(e) {
 	performSearch();
 });
 
+$("article").on("click", ".multiple_locations", function(e) {
+	$("#search_place").val($(this).find(".place_address").text().trim());
+	performSearch();
+});
+
 $("#changeView").on("click", function() {
 	if($("article").css("display") == "none") {
 		timeout_counter = 0;
 		$("#map_canvas").css({"filter": "grayscale(1)", "-webkit-filter": "grayscale(1)", "z-index": -1});
 		$("article").css("display", "initial");
+		$("aside").addClass("hidden");
 		
 		$(this).find("img").attr("src","images/map.svg");
 		hideMarkers();
+		
 		
 		$(".card").each(function() {
 			var card = $(this);
@@ -293,6 +393,7 @@ $("#changeView").on("click", function() {
 			/* REMOVE THE LAST MARKER */
 			// markers.splice((markers.length), 1);
 			showMarkers();
+			$("aside").removeClass("hidden");
 		}, 1500);
 	}
 });

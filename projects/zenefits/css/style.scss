@@ -50,6 +50,8 @@ header {
 	overflow: hidden;
 	z-index: 4;
 	background-color: $background-color;
+	box-shadow: 0px 2px 10px #888;
+	overflow: hidden;
 	
 	& > div {
 		
@@ -84,6 +86,9 @@ article {
 }
 .red_border {
 	border: 2px solid #F44336;
+}
+.gray_border {
+	border: 2px solid #607D8B;
 }
 .right {
 	float: right;
@@ -154,9 +159,11 @@ input[type="text"] {
 	-moz-filter: grayscale(1);
 	filter: grayscale(1);
 	
-	-webkit-transition: all 0s ease-in-out;
-	   -o-transition: all 0s ease-in-out;
-		  transition: all 0s ease-in-out;
+	div {
+		-webkit-transition: all 0s ease-in-out;
+		   -o-transition: all 0s ease-in-out;
+			  transition: all 0s ease-in-out;
+	}
 }
 
 .card  {
