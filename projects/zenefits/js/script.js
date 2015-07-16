@@ -65,6 +65,7 @@ var startLoc, endLoc;
 selectedMode = "DRIVING"; /* DEFAULT MODE */
 var timeout_counter = 0;
 var searchBox, input, bounds;
+var distances = [];
 
 function initialize() {
   directionsDisplay = new google.maps.DirectionsRenderer();
@@ -92,12 +93,9 @@ function initialize() {
   service = new google.maps.places.PlacesService(map);
   google.maps.event.addListenerOnce(map, 'bounds_changed', performSearch);
   // google.maps.event.addListenerOnce(map, 'zoom_changed', performSearch);
-  google.maps.event.addListenerOnce(map, 'center_changed', performSearch);
+  // google.maps.event.addListenerOnce(map, 'center_changed', performSearch);
   
-  google.maps.event.addListener(map, 'bounds_changed', function() {
-    var bounds = map.getBounds();
-    searchBox.setBounds(bounds);
-  });
+  // google.maps.event.addListener(map, 'bounds_changed', function() {});
   
   // Create the search box and link it to the UI element.
   input = (document.getElementById("search_place"));
@@ -131,7 +129,7 @@ function searchPlaces() {
 		console.log(places);
 		locationTypes = [];
 		for (var i = 0, result; result = places[i]; i++) {
-			$("article").append('<div class="card multiple_locations"><div class="' + (result.opening_hours == undefined ? "gray_border":(result.opening_hours.open_now ? "green_border" : "red_border")) + '"></div><div class="card_info"><div class="hidden place_address">' + result.formatted_address + '</div><div class="place_name">' + result.name + '</div><div class="place_rating more_card_info hidden">Ratings: ' + result.rating + '</div><div class="place_price_level more_card_info hidden">Price Level: ' + result.price_level + '</div><div class="blue_link show_on_map more_card_info hidden right">Navigate here</div><div class="similar_locations blue_link more_card_info hidden">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div><div class="location_type hidden">' + result.types[0] + '</div></div></div>');
+			$("article").append('<div class="card multiple_locations"><div class="' + (result.opening_hours == undefined ? "gray_border":(result.opening_hours.open_now ? "green_border" : "red_border")) + '"></div><div class="card_info"><div class="hidden place_address">' + result.formatted_address + '</div><div class="place_name">' + result.name + '</div><div class="place_rating more_card_info hidden">Ratings: ' + (result.rating?result.rating:" - ") + '</div><div class="place_price_level more_card_info hidden">Price Level: ' + (result.price_level?result.price_level:" - ") + '</div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "<span class='green_text'>open</span>" : "<span class='red_text'>closed</span>") + '</div><div class="blue_link show_on_map more_card_info hidden right">Navigate here</div><div class="similar_locations blue_link more_card_info hidden">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div><div class="location_type hidden">' + result.types[0] + '</div></div></div>');
 			
 			$(this).parents(".card").css("height", $(this).find(".card_info").outerHeight());
 			locationTypes.push(result.types[0]);
@@ -170,10 +168,12 @@ function searchPlaces() {
 }
 
 function performSearch() {
-  if(!bounds) {
+  /* if(!bounds) {
 	  bounds = map.getBounds();
-  }
-  
+  } */
+	bounds = map.getBounds();
+	searchBox.setBounds(bounds);
+
   // console.log(new google.maps.LatLng(lat_lng[0], lat_lng[1]));
   var request = {
     location: new google.maps.LatLng(lat_lng[0], lat_lng[1]),
@@ -191,6 +191,7 @@ function callback(results, status) {
     return;
   }
   for (var i = 0, result; result = results[i]; i++) {
+	getDistance(startLoc, new google.maps.LatLng(result.geometry.location.A, result.geometry.location.F));
     createMarker(result);
   }
   // hideMarkers();
@@ -218,9 +219,9 @@ function createMarker(place) {
 			console.log(status);
 			return;
 		}
-		console.log(result.opening_hours);
+		
 		//infoWindow.setContent(result);
-		$("article").append('<div class="card"><div class="' + (result.opening_hours == undefined ? "gray_border":(result.opening_hours.open_now ? "green_border" : "red_border")) + '"></div><div class="card_info"><div class="place_name">' + result.name + '</div><div class="place_phone more_card_info hidden">' + result.formatted_phone_number + '</div><div class="place_address more_card_info hidden">' + result.formatted_address + '</div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "<span class='green_text'>open</span>" : "<span class='red_text'>closed</span>") + '</div><div class="blue_link show_on_map more_card_info hidden right">Navigate here</div><div class="similar_locations blue_link more_card_info hidden">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div><div class="location_type hidden">' + result.types[0] + '</div></div></div>');
+		$("article").append('<div class="card"><div class="' + (result.opening_hours == undefined ? "gray_border":(result.opening_hours.open_now ? "green_border" : "red_border")) + '"></div><div class="card_info"><div class="place_name">' + result.name + '</div><div class="place_phone more_card_info hidden">' + (result.formatted_phone_number?result.formatted_phone_number:" - ") + '</div><div class="place_address more_card_info hidden">' + result.formatted_address + '</div><div class="place_distance more_card_info hidden"></div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "<span class='green_text'>open</span>" : "<span class='red_text'>closed</span>") + '</div><div class="blue_link show_on_map more_card_info hidden right">Navigate here</div><div class="similar_locations blue_link more_card_info hidden">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div><div class="location_type hidden">' + result.types[0] + '</div></div></div>');
 
 		// $(".card").css("height", $(".card").find(".card_info").outerHeight() + 40);
 	});
@@ -252,40 +253,47 @@ function calcRoute(start, end) {
     }
   });
   
-  getDistance();
+  getDistance(startLoc, endLoc);
 }
 
-function getDistance() {
+function getDistance(start, end) {
 	var distanceService = new google.maps.DistanceMatrixService();
 	distanceService.getDistanceMatrix({
-		origins: [startLoc],
-		destinations: [endLoc],
+		origins: [start],
+		destinations: [end],
 		travelMode: google.maps.TravelMode[selectedMode],
 		unitSystem: google.maps.UnitSystem.IMPERIAL,
 		durationInTraffic: true
-	}, getETA);
-}
-function getETA(response, status) {
-	if (status == google.maps.DistanceMatrixStatus.OK) {
-		var origins = response.originAddresses;
-		var destinations = response.destinationAddresses;
+	}, function (response, status) {
+		if (status == google.maps.DistanceMatrixStatus.OK) {
+			var origins = response.originAddresses;
+			var destinations = response.destinationAddresses;
 
-		for (var i = 0; i < origins.length; i++) {
-			var results = response.rows[i].elements;
-			for (var j = 0; j < results.length; j++) {
-				var element = results[j];
-				var distance = element.distance.text;
-				var duration = element.duration.text;
-				var from = origins[i];
-				var to = destinations[j];
-				
-				$(".arrival_info").html(distance + " - " + duration);
+			for (var i = 0; i < origins.length; i++) {
+				var results = response.rows[i].elements;
+				for (var j = 0; j < results.length; j++) {
+					var element = results[j];
+					var distance = element.distance.text;
+					var duration = element.duration.text;
+					var from = origins[i];
+					var to = destinations[j];
+					
+					distances.push(distance);
+					// console.log(distances[distances.length-1]);
+					$(".arrival_info").html(distance + " - " + duration);
+				}
 			}
 		}
-	}
+	});
 }
 
+
 $("article").on("click", ".card", function() {
+	/* ADD DISTANCE ON FIRST CLICK AS THE ARRAY IS NOT UPDATED QUICKLY */
+	if($(this).find(".place_distance").text().trim() == "") {
+		$(this).find(".place_distance").text(distances[$(this).index()]);
+	}
+	
 	if($(this).find(".more_card_info").hasClass("hidden")) {
 		$(this).find(".more_card_info").removeClass("hidden");
 		$(this).find(".place_name").css("white-space", "initial");
@@ -293,6 +301,7 @@ $("article").on("click", ".card", function() {
 		$(this).find(".more_card_info").addClass("hidden");
 		$(this).find(".place_name").css("white-space", "nowrap");
 	}
+	// console.log();
 	//console.log($(this).find(".card_info").outerHeight());
 	$(this).css("height", $(this).find(".card_info").outerHeight());
 
@@ -303,8 +312,9 @@ $("article").on("click", ".show_on_map", function(e) {
 	$("#map_canvas").css({"filter": "grayscale(0)", "-webkit-filter": "grayscale(0)", "z-index": 1});
 	// $("article").css("display", "none");
 	$(".card").css("opacity", "0");
-	$(".card").css({"opacity": 0, "height": "60px"});
+	$(".card").css({"opacity": 0, "height": "60px", "background-color": "#FFF"});
 	$(this).parents(".card").css("opacity", "1");
+	$(this).parents(".card").css({"background-color": "#F1F1F1"});
 	var lat_lng_dst = $(this).parent().find(".location").text().trim().toString().substring(1, $(this).parent().find(".location").html().trim().length - 1).split(',');
 	endLoc = new google.maps.LatLng(lat_lng_dst[0], lat_lng_dst[1]);
 	//console.log(lat_lng_dst);
@@ -357,7 +367,6 @@ $("article").on("click", ".similar_locations", function(e) {
 
 $("article").on("click", ".multiple_locations", function(e) {
 	$("#search_place").val($(this).find(".place_address").text().trim());
-	performSearch();
 });
 
 $("#changeView").on("click", function() {
