@@ -328,7 +328,6 @@ $("body").on("click", ".show_on_map", function(e) {
 	$("#map_canvas").css({"filter": "grayscale(0)", "-webkit-filter": "grayscale(0)", "z-index": 1});
 	$(".arrival_info").removeClass("hidden");
 	highlightNavMode();
-	$("#map").css("height", "80%");
 	$(".card").css("opacity", "0");
 	$(".card").css({"opacity": 0, "height": "55px", "background-color": "#FFF"});
 	$(this).parents(".card").css("opacity", "1");
@@ -345,6 +344,7 @@ $("body").on("click", ".show_on_map", function(e) {
 	
 	hideMarkers();
 	$("footer").removeClass("hidden");
+	$("#map").css("height", $("#map").outerHeight() - $("footer").outerHeight());
 	var marker = new google.maps.Marker({
 		map: map,
 		position: endLoc,
@@ -408,7 +408,6 @@ $("#changeView").on("click", function() {
 			}, 140 * timeout_counter++);
 		});
 	} else {
-		$("#map").css("height", "80%");
 		timeout_counter = 0;
 		$(this).find("img").attr("src","images/list.svg");
 		$(".card").each(function() {
@@ -425,6 +424,7 @@ $("#changeView").on("click", function() {
 			// markers.splice((markers.length), 1);
 			showMarkers();
 			$("footer").removeClass("hidden");
+			$("#map").css("height", $("#map").outerHeight() - $("footer").outerHeight());
 		}, 1500);
 	}
 });
