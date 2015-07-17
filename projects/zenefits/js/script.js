@@ -326,7 +326,7 @@ $(".place_list").on("click", ".card", function() {
 
 $("body").on("click", ".show_on_map", function(e) {
 	$("#map_canvas").css({"filter": "grayscale(0)", "-webkit-filter": "grayscale(0)", "z-index": 1});
-	$(".arrival_info").removeClass("hidden");
+	$(".nav_info").removeClass("hidden");
 	highlightNavMode();
 	$(".card").css("opacity", "0");
 	$(".card").css({"opacity": 0, "height": "55px", "background-color": "#FFF"});
@@ -388,7 +388,7 @@ $(".place_list").on("click", ".card", function(e) {
 });
 
 $("#changeView").on("click", function() {
-	$(".arrival_info").addClass("hidden");
+	$(".nav_info").addClass("hidden");
 	highlightNavMode();
 	if($(".place_list").css("display") == "none") {
 		$("#map").css("height", "90%");

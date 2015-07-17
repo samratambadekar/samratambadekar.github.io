@@ -95,9 +95,10 @@ article {
 	cursor: pointer;
 }
 .navigate {
+	display: inline-block;
 	position: relative;
 	overflow: hidden;
-	padding: 10px 0;
+	padding: 10px;
 }
 .green_text {
 	color: $green-color;
@@ -274,9 +275,12 @@ input[type="text"] {
 	/* box-shadow: inset 0px -2px 4px #888; */
 }
 .arrival_info {
-	display: block;
-	/* text-align: center; */
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
 	padding: 10px;
+}
+.nav_info {
 	background-color: $background-color;
 	box-shadow: inset 0px -3px 3px #888;
 }
