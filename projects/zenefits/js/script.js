@@ -328,7 +328,7 @@ $("body").on("click", ".show_on_map", function(e) {
 	$("#map_canvas").css({"filter": "grayscale(0)", "-webkit-filter": "grayscale(0)", "z-index": 1});
 	$(".arrival_info").removeClass("hidden");
 	highlightNavMode();
-	// $(".place_list").css("display", "none");
+	$("#map").css("height", "80%");
 	$(".card").css("opacity", "0");
 	$(".card").css({"opacity": 0, "height": "55px", "background-color": "#FFF"});
 	$(this).parents(".card").css("opacity", "1");
@@ -391,6 +391,7 @@ $("#changeView").on("click", function() {
 	$(".arrival_info").addClass("hidden");
 	highlightNavMode();
 	if($(".place_list").css("display") == "none") {
+		$("#map").css("height", "90%");
 		timeout_counter = 0;
 		$("#map_canvas").css({"filter": "grayscale(1)", "-webkit-filter": "grayscale(1)", "z-index": -1});
 		$(".place_list").css("display", "initial");
@@ -407,6 +408,7 @@ $("#changeView").on("click", function() {
 			}, 140 * timeout_counter++);
 		});
 	} else {
+		$("#map").css("height", "80%");
 		timeout_counter = 0;
 		$(this).find("img").attr("src","images/list.svg");
 		$(".card").each(function() {
