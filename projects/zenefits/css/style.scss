@@ -161,14 +161,16 @@ input[type="text"] {
 	border: 0px solid $border-color;
 	background-color: #f3e5f5;
 }
-.searchbox .button  {
+.searchbox img  {
 	position: absolute;
 	right: 0;
 	top: 0;
-	/* height: 100%; */
-	/* font-weight: 500; */
-	width: 80px;
-	background-color: $button-color;
+	height: 35px;
+	width: 50px;
+	padding: 8px 10px;
+	margin: auto;
+	cursor: pointer;
+	background-color: #DDD;
 	border-radius: 0 5px 5px 0;
 }
 

@@ -1,4 +1,4 @@
-$("body").on("click", ".button, .card, .icon,.blue_link", function(e){
+$("body").on("click", ".button, .card, .icon, .blue_link", function(e){
 	// if ($(window).width() <= 480) {
 		/* e.preventDefault(); */
 		/* remove the div with class ripple from all other elements */
@@ -448,9 +448,24 @@ $(".nav_mode").on("click", function() {
 		selectedMode = "DRIVING";
 		// $(this).css("background-color", "#F44336");
 	}
-	
+
 	highlightNavMode();
 	calcRoute(startLoc, endLoc);
+});
+
+
+$(".clear_search").on("click", function(e) {
+	e.stopPropagation();
+	$("#search_place").val("");
+	$("#search_place").focus();
+	$(".clear_search").addClass("hidden");
+});
+$("#search_place").on("click keypress", function() {
+	if($("#search_place").val() != "") {
+		$(".clear_search").removeClass("hidden");
+	}
+});
+$("#search_place").focusout(function() {
 });
 
 function highlightNavMode() {
