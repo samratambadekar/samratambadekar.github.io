@@ -94,6 +94,11 @@ article {
 	color: $button-color;
 	cursor: pointer;
 }
+.navigate {
+	position: relative;
+	overflow: hidden;
+	padding: 10px 0;
+}
 .green_text {
 	color: $green-color;
 }
@@ -153,7 +158,7 @@ input[type="text"] {
 	width: 100%;
 	margin: 0 auto;
 	border: 0px solid $border-color;
-	background-color: #E3F2FD;
+	background-color: #f3e5f5;
 }
 .searchbox .button  {
 	position: absolute;
@@ -241,8 +246,8 @@ input[type="text"] {
 	display: inline-block;
 	position: relative;
 	overflow: hidden;
-	width: 60px;
-	height: 60px;
+	width: 55px;
+	height: 55px;
 	padding: 15px;
 	margin: 12px 8px;
 	opacity: 0.9;

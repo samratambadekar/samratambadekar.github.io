@@ -1,4 +1,4 @@
-$("body").on("click", ".button, .card, .icon", function(e){
+$("body").on("click", ".button, .card, .icon,.blue_link", function(e){
 	// if ($(window).width() <= 480) {
 		/* e.preventDefault(); */
 		/* remove the div with class ripple from all other elements */
