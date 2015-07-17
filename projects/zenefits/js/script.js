@@ -250,7 +250,7 @@ function createMarker(place) {
 				return;
 			}
 			// console.log(result);
-			infoWindow.setContent('<div class="place_name">' + result.name + '</div><div class="blue_link place_phone">' + (result.formatted_phone_number?result.formatted_phone_number:" - ") + '</div><div class="place_rating">Ratings: ' + (result.rating?result.rating:" - ") + '</div><div class="place_price_level">Price Level: ' + (result.price_level?price_index:" - ") + '</div><div class="blue_link show_on_map">Navigate here</div><div class="similar_locations blue_link">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div>');
+			infoWindow.setContent('<div class="place_name">' + result.name + '</div><div class="blue_link place_phone">' + (result.formatted_phone_number?result.formatted_phone_number:" - ") + '</div><div class="place_rating">Ratings: ' + (result.rating?result.rating:" - ") + '</div><div class="place_price_level">Price Level: ' + (result.price_level?price_index:" - ") + '</div><br/><div class="blue_link show_on_map right">Navigate here</div><div class="similar_locations blue_link">Similar locations</div><div class="location hidden">' + result.geometry.location + '</div>');
 			infoWindow.open(map, marker);
 		});
 	});
