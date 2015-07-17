@@ -327,6 +327,8 @@ $(".place_list").on("click", ".card", function() {
 $("body").on("click", ".show_on_map", function(e) {
 	$("#map_canvas").css({"filter": "grayscale(0)", "-webkit-filter": "grayscale(0)", "z-index": 1});
 	$(".nav_info").removeClass("hidden");
+	$("#nav_to").attr("href", "https://maps.google.com?saddr=Current+Location&daddr=" + $("#search_place").val());
+	
 	highlightNavMode();
 	$(".card").css("opacity", "0");
 	$(".card").css({"opacity": 0, "height": "55px", "background-color": "#FFF"});
