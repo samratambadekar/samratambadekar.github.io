@@ -20,22 +20,26 @@
 			</div>
 			<div id="changeView" class="icon"><img src="images/map.svg"></div>
 		</header>
-		<div id="map_canvas"></div>
+		<div id="map"><div id="map_canvas"></div></div>
 		<article>
-			<!-- <div class="card">
-				<div class="place_name">Test</div>
-				<div class="place_phone">Test</div>
-				<div class="place_address">Test</div>
-				<div class="place_open">Test</div>
-			</div> -->
+			<div class="place_list" id="open_places">
+				<!-- <div class="card">
+					<div class="place_name">Test</div>
+					<div class="place_phone">Test</div>
+					<div class="place_address">Test</div>
+					<div class="place_open">Test</div>
+				</div> -->
+			</div>
+			<div class="place_list" id="closed_places">
+			</div>
 		</article>
-		<aside class="hidden">
-			<div class="icon icon_walking"><img src="images/walk.svg"></div>
-			<div class="icon icon_driving"><img src="images/drive.svg"></div>
-			<div class="icon icon_bicycle"><img src="images/bicycle.svg"></div>
-			<div class="icon icon_transit"><img src="images/transit.svg"></div>
-			<div class="arrival_info"></div>
-		</aside>
+		<footer class="hidden">
+			<div class="arrival_info hidden"></div>
+			<div class="icon nav_mode icon_walking"><img src="images/walk.svg"></div>
+			<div class="icon nav_mode icon_driving"><img src="images/drive.svg"></div>
+			<div class="icon nav_mode icon_bicycle"><img src="images/bicycle.svg"></div>
+			<div class="icon nav_mode icon_transit"><img src="images/transit.svg"></div>
+		</footer>
 	</body>
 	
 	<script>

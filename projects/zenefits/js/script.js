@@ -101,8 +101,6 @@ function initialize() {
   input = (document.getElementById("search_place"));
   searchBox = new google.maps.places.SearchBox((input));
   google.maps.event.addListener(searchBox, 'places_changed', searchPlaces);
-
-  
 }
 
 function searchPlaces() {
@@ -116,7 +114,7 @@ function searchPlaces() {
 	
 	clearMarkers();
 	/* CLEAR EXISTING LIST */
-	$("article").empty();
+	$(".place_list").empty();
 	
     // bounds = new google.maps.LatLngBounds();
     bounds = map.getBounds();
@@ -126,12 +124,19 @@ function searchPlaces() {
 		map.setZoom(13);
 		performSearch();
 	} else {
-		console.log(places);
 		locationTypes = [];
 		for (var i = 0, result; result = places[i]; i++) {
-			$("article").append('<div class="card multiple_locations"><div class="' + (result.opening_hours == undefined ? "gray_border":(result.opening_hours.open_now ? "green_border" : "red_border")) + '"></div><div class="card_info"><div class="hidden place_address">' + result.formatted_address + '</div><div class="place_name">' + result.name + '</div><div class="place_rating more_card_info hidden">Ratings: ' + (result.rating?result.rating:" - ") + '</div><div class="place_price_level more_card_info hidden">Price Level: ' + (result.price_level?result.price_level:" - ") + '</div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "<span class='green_text'>open</span>" : "<span class='red_text'>closed</span>") + '</div><div class="blue_link show_on_map more_card_info hidden right">Navigate here</div><div class="similar_locations blue_link more_card_info hidden">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div><div class="location_type hidden">' + result.types[0] + '</div></div></div>');
+			var price_index = "";
+			for(var j = 0; j < result.price_level; j++) {
+				price_index += "$";
+			}
+			if(result.opening_hours && result.opening_hours.open_now) {
+				$(".place_list#open_places").append('<div class="card multiple_locations"><div class="' + (result.opening_hours == undefined ? "gray_border":(result.opening_hours.open_now ? "green_border" : "red_border")) + '"></div><div class="card_info"><div class="hidden place_address">' + result.formatted_address + '</div><div class="place_name">' + result.name + '</div><div class="place_rating more_card_info hidden">Ratings: ' + (result.rating?result.rating:" - ") + '</div><div class="place_price_level more_card_info hidden">Price Level: ' + (result.price_level?price_index:" - ") + '</div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "<span class='green_text'>open</span>" : "<span class='red_text'>closed</span>") + '</div><div class="blue_link show_on_map more_card_info hidden right">Navigate here</div><div class="similar_locations blue_link more_card_info hidden">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div><div class="location_type hidden">' + result.types[0] + '</div></div></div>');
+			} else {
+				$(".place_list#closed_places").append('<div class="card multiple_locations"><div class="' + (!result.opening_hours ? "gray_border":(result.opening_hours.open_now ? "green_border" : "red_border")) + '"></div><div class="card_info"><div class="hidden place_address">' + result.formatted_address + '</div><div class="place_name">' + result.name + '</div><div class="place_rating more_card_info hidden">Ratings: ' + (result.rating?result.rating:" - ") + '</div><div class="place_price_level more_card_info hidden">Price Level: ' + (result.price_level?price_index:" - ") + '</div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "<span class='green_text'>open</span>" : "<span class='red_text'>closed</span>") + '</div><div class="blue_link show_on_map more_card_info hidden right">Navigate here</div><div class="similar_locations blue_link more_card_info hidden">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div><div class="location_type hidden">' + result.types[0] + '</div></div></div>');
+			}
 			
-			$(this).parents(".card").css("height", $(this).find(".card_info").outerHeight());
+			$(this).parents(".card").css("height", $(this).find(".card_info").outerHeight() + 5);
 			locationTypes.push(result.types[0]);
 		}
 		
@@ -190,6 +195,7 @@ function callback(results, status) {
     console.log(status);
     return;
   }
+  distances = [];
   for (var i = 0, result; result = results[i]; i++) {
 	getDistance(startLoc, new google.maps.LatLng(result.geometry.location.A, result.geometry.location.F));
     createMarker(result);
@@ -213,6 +219,7 @@ function createMarker(place) {
 		} */
 	});
 	markers.push(marker);
+	var price_index = "";
 
 	service.getDetails(place, function(result, status) {
 		if (status != google.maps.places.PlacesServiceStatus.OK) {
@@ -220,8 +227,17 @@ function createMarker(place) {
 			return;
 		}
 		
+		for(var j = 0; j < result.price_level; j++) {
+			price_index += "$";
+		}
+		
+		// console.log(result.opening_hours.open_now);
 		//infoWindow.setContent(result);
-		$("article").append('<div class="card"><div class="' + (result.opening_hours == undefined ? "gray_border":(result.opening_hours.open_now ? "green_border" : "red_border")) + '"></div><div class="card_info"><div class="place_name">' + result.name + '</div><div class="place_phone more_card_info hidden">' + (result.formatted_phone_number?result.formatted_phone_number:" - ") + '</div><div class="place_address more_card_info hidden">' + result.formatted_address + '</div><div class="place_distance more_card_info hidden"></div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "<span class='green_text'>open</span>" : "<span class='red_text'>closed</span>") + '</div><div class="blue_link show_on_map more_card_info hidden right">Navigate here</div><div class="similar_locations blue_link more_card_info hidden">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div><div class="location_type hidden">' + result.types[0] + '</div></div></div>');
+		if(result.opening_hours && result.opening_hours.open_now) {
+			$(".place_list#open_places").append('<div class="card"><div class="' + (result.opening_hours == undefined ? "gray_border":(result.opening_hours.open_now ? "green_border" : "red_border")) + '"></div><div class="card_info"><div class="place_name">' + result.name + '</div><div class="blue_link place_phone more_card_info hidden">' + (result.formatted_phone_number?result.formatted_phone_number:" - ") + '</div><div class="place_address hidden">' + result.formatted_address + '</div><div class="place_distance more_card_info hidden"></div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "<span class='green_text'>open</span>" : "<span class='red_text'>closed</span>") + '</div><div class="blue_link show_on_map more_card_info hidden right">Navigate here</div><div class="similar_locations blue_link more_card_info hidden">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div><div class="location_type hidden">' + result.types[0] + '</div></div></div>');
+		} else {
+			$(".place_list#closed_places").append('<div class="card"><div class="' + (result.opening_hours == undefined ? "gray_border":(result.opening_hours.open_now ? "green_border" : "red_border")) + '"></div><div class="card_info"><div class="place_name">' + result.name + '</div><div class="blue_link place_phone more_card_info hidden">' + (result.formatted_phone_number?result.formatted_phone_number:" - ") + '</div><div class="place_address hidden">' + result.formatted_address + '</div><div class="place_distance more_card_info hidden"></div><div class="place_open more_card_info hidden">' + (result.opening_hours.open_now ? "<span class='green_text'>open</span>" : "<span class='red_text'>closed</span>") + '</div><div class="blue_link show_on_map more_card_info hidden right">Navigate here</div><div class="similar_locations blue_link more_card_info hidden">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div><div class="location_type hidden">' + result.types[0] + '</div></div></div>');
+		}
 
 		// $(".card").css("height", $(".card").find(".card_info").outerHeight() + 40);
 	});
@@ -234,7 +250,7 @@ function createMarker(place) {
 				return;
 			}
 			// console.log(result);
-			infoWindow.setContent(result.name + '<br/>' + result.formatted_phone_number + '<br/>' + result.formatted_address + '<br/>' + result.types[0]);
+			infoWindow.setContent('<div class="place_name">' + result.name + '</div><div class="blue_link place_phone">' + (result.formatted_phone_number?result.formatted_phone_number:" - ") + '</div><div class="place_rating">Ratings: ' + (result.rating?result.rating:" - ") + '</div><div class="place_price_level">Price Level: ' + (result.price_level?price_index:" - ") + '</div><div class="blue_link show_on_map">Navigate here</div><div class="similar_locations blue_link">Find similar locations</div><div class="location hidden">' + result.geometry.location + '</div>');
 			infoWindow.open(map, marker);
 		});
 	});
@@ -278,9 +294,9 @@ function getDistance(start, end) {
 					var from = origins[i];
 					var to = destinations[j];
 					
-					distances.push(distance);
+					distances.push(distance + " - " + duration + " " + selectedMode.toLowerCase());
 					// console.log(distances[distances.length-1]);
-					$(".arrival_info").html(distance + " - " + duration);
+					$(".arrival_info").html(distance + " - " + duration + " " + selectedMode.toLowerCase());
 				}
 			}
 		}
@@ -288,7 +304,7 @@ function getDistance(start, end) {
 }
 
 
-$("article").on("click", ".card", function() {
+$(".place_list").on("click", ".card", function() {
 	/* ADD DISTANCE ON FIRST CLICK AS THE ARRAY IS NOT UPDATED QUICKLY */
 	if($(this).find(".place_distance").text().trim() == "") {
 		$(this).find(".place_distance").text(distances[$(this).index()]);
@@ -303,16 +319,18 @@ $("article").on("click", ".card", function() {
 	}
 	// console.log();
 	//console.log($(this).find(".card_info").outerHeight());
-	$(this).css("height", $(this).find(".card_info").outerHeight());
+	$(this).css("height", $(this).find(".card_info").outerHeight() + 5);
 
 	timeout_counter = 0;
 });
 
-$("article").on("click", ".show_on_map", function(e) {
+$("body").on("click", ".show_on_map", function(e) {
 	$("#map_canvas").css({"filter": "grayscale(0)", "-webkit-filter": "grayscale(0)", "z-index": 1});
-	// $("article").css("display", "none");
+	$(".arrival_info").removeClass("hidden");
+	highlightNavMode();
+	// $(".place_list").css("display", "none");
 	$(".card").css("opacity", "0");
-	$(".card").css({"opacity": 0, "height": "60px", "background-color": "#FFF"});
+	$(".card").css({"opacity": 0, "height": "55px", "background-color": "#FFF"});
 	$(this).parents(".card").css("opacity", "1");
 	$(this).parents(".card").css({"background-color": "#F1F1F1"});
 	var lat_lng_dst = $(this).parent().find(".location").text().trim().toString().substring(1, $(this).parent().find(".location").html().trim().length - 1).split(',');
@@ -320,13 +338,13 @@ $("article").on("click", ".show_on_map", function(e) {
 	//console.log(lat_lng_dst);
 
 	window.setTimeout(function() {
-		$("article").css("display", "none");
+		$(".place_list").css("display", "none");
 		// $(".card").css("opacity", "0");
 		$(".card").find(".more_card_info").addClass("hidden");
 	}, 1500);
 	
 	hideMarkers();
-	$("aside").removeClass("hidden");
+	$("footer").removeClass("hidden");
 	var marker = new google.maps.Marker({
 		map: map,
 		position: endLoc,
@@ -356,25 +374,27 @@ function showMarkers() {
   directionsDisplay.setMap(null);
 }
 
-$("article").on("click", ".similar_locations", function(e) {
+$("body").on("click", ".similar_locations", function(e) {
 	locationTypes = [];
 	locationTypes.push($(this).parent().find(".location_type").text().trim());
 	
 	/* CLEAR EXISTING LIST */
-	$("article").empty();
+	$(".place_list").empty();
 	performSearch();
 });
 
-$("article").on("click", ".multiple_locations", function(e) {
+$(".place_list").on("click", ".card", function(e) {
 	$("#search_place").val($(this).find(".place_address").text().trim());
 });
 
 $("#changeView").on("click", function() {
-	if($("article").css("display") == "none") {
+	$(".arrival_info").addClass("hidden");
+	highlightNavMode();
+	if($(".place_list").css("display") == "none") {
 		timeout_counter = 0;
 		$("#map_canvas").css({"filter": "grayscale(1)", "-webkit-filter": "grayscale(1)", "z-index": -1});
-		$("article").css("display", "initial");
-		$("aside").addClass("hidden");
+		$(".place_list").css("display", "initial");
+		$("footer").addClass("hidden");
 		
 		$(this).find("img").attr("src","images/map.svg");
 		hideMarkers();
@@ -398,26 +418,45 @@ $("#changeView").on("click", function() {
 
 		window.setTimeout(function() {
 			$("#map_canvas").css({"filter": "grayscale(0)", "-webkit-filter": "grayscale(0)", "z-index": 1});
-			$("article").css("display", "none");
+			$(".place_list").css("display", "none");
 			/* REMOVE THE LAST MARKER */
 			// markers.splice((markers.length), 1);
 			showMarkers();
-			$("aside").removeClass("hidden");
+			$("footer").removeClass("hidden");
 		}, 1500);
 	}
 });
 //google.maps.event.addDomListener(window, 'load', initialize);
 
 
-$(".icon").on("click", function() {
+$(".nav_mode").on("click", function() {
+	$(".nav_mode").css("background-color", "#DDD");
 	if($(this).hasClass("icon_walking")) {
 		selectedMode = "WALKING";
+		// $(this).css("background-color", "#009688");
 	} else if($(this).hasClass("icon_transit")) {
+		// $(this).css("background-color", "#ff9800");
 		selectedMode = "TRANSIT";
 	} else if($(this).hasClass("icon_bicycle")) {
 		selectedMode = "BICYCLING";
+		// $(this).css("background-color", "#4CAf50");
 	} else if($(this).hasClass("icon_driving")) {
 		selectedMode = "DRIVING";
+		// $(this).css("background-color", "#F44336");
 	}
+	
+	highlightNavMode();
 	calcRoute(startLoc, endLoc);
 });
+
+function highlightNavMode() {
+	if(selectedMode == "WALKING") {
+		$(".icon_walking").css("background-color", "#009688");
+	} else if(selectedMode == "TRANSIT") {
+		$(".icon_transit").css("background-color", "#ff9800");
+	} else if(selectedMode == "BICYCLING") {
+		$(".icon_bicycle").css("background-color", "#4CAf50");
+	} else if(selectedMode == "DRIVING") {
+		$(".icon_driving").css("background-color", "#F44336");
+	}
+}
