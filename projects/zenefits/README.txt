@@ -5,7 +5,7 @@ A week long project to leverage Google's places API. The design language is loos
 - You can switch between map and list view from the icon next to the search box.
 - Details of each place are shown by clicking on the card / marker.
 
-### Design
+Design:
 The design is partly exploratory. Some elements require trial and error by the user to understand its relevance:
 - A Green bar on top of card indicates that the place is open. A red bar indicates it's closed.
 - Similarly color coding is used for navigation icons. Green(ish) icons are eco-friendly, red icon is not.
@@ -14,7 +14,7 @@ The design is partly exploratory. Some elements require trial and error by the u
 - The 'Find Similar Locations' link will repopulate the list with filtered establishments. For e.g. similar locations for Walgreens will show other pharmaceuticals and that for CPK will show more pizza places.
 
 
-### Limitations
+Limitations:
 - Works on Chrome and Firefox (desktop and mobile). Might not work on IE/Safari/Opera.
 - The animations tend to lag on Firefox for Mobile.
 - Sometimes the api takes longer to load the page.
