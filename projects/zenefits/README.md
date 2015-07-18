@@ -7,7 +7,7 @@ A week long project to leverage Google's places API. The design language is loos
 
 ### Design
 The design is partly exploratory. Some elements require trial and error by the user to understand its relevance:
-- A Green bar on top of card indicates that the place is open. A red bar indicates it's closed.
+- A Green bar on top of a card indicates that the place is open. A red bar indicates it's closed.
 - Similarly color coding is used for navigation icons. Green(ish) icons are eco-friendly, red icon is not.
 - The additional info on the card has two stages. The first list of card shows basic info about an establishment for e.g. time to travel and distance. The same design is used when user searches for a location e.g. New York. But when user searches for specific filters e.g. 'pizza near me' or 'pharmacy' then the card shows the place's ratings and price level.
 - The location of an establishment is auto populated in the search box. This will allow user to quickly search the nearby locations.
