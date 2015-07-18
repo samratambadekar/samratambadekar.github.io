@@ -36,9 +36,7 @@ footer {
 	position: absolute;
 	min-width: 320px;
 	width: 100%;
-	/* margin: 0 auto; */
 	bottom: 0px;
-	/* right: 0; */
 	text-align: center;
 	z-index: 3;
 	background-color: $background-color;
@@ -162,7 +160,6 @@ input[type="text"] {
 	position: absolute;
 	float: left;
 	left: 0;
-	/* opacity: 0; */
 	z-index: -1;
 	
 	-webkit-filter: grayscale(1);
@@ -262,7 +259,6 @@ input[type="text"] {
 	display: block; 
 	position: absolute;
 	background: #EEE;
-	/* background: hsl(180, 40%, 80%); */
 	border-radius: 100%;
 	transform: scale(0);
 	-webkit-transform: scale(0);
