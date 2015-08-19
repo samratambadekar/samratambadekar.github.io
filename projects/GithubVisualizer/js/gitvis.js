@@ -546,12 +546,12 @@ function filterData(extentVals){
 
 function renderFunc(error, csv){
     rawdata = csv;
-    console.log(rawdata[0]);
+    //console.log(rawdata[0]);
 
     // Data Manipulation
     var dataobj = filterData(null);
     uniTimeSeries = $.extend(true, [], dataobj.all_timeline_data);
-    console.log(dataobj);
+    //console.log(dataobj);
 
     render_routine(dataobj);
     renderTimeBrush();
@@ -567,7 +567,7 @@ function render_routine(dataobj){
     renderHeatMap(dataobj);
 }
 
-function renderTimeLine(dataobj){
+function renderTimeLine(dataobj) {
 
     var timeData = dataobj.all_timeline_data;
 
