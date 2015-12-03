@@ -73,6 +73,12 @@ var distances = [];
 function initialize() {
 	directionsDisplay = new google.maps.DirectionsRenderer();
 	startLoc = new google.maps.LatLng(lat_lng[0], lat_lng[1]);
+	// Create the search box and link it to the UI element.
+	
+	input = (document.getElementById("search_place"));
+	searchBox = new google.maps.places.SearchBox((input));
+	google.maps.event.addListener(searchBox, 'places_changed', searchPlaces);
+
 	map = new google.maps.Map(document.getElementById('map_canvas'), {
 		center: new google.maps.LatLng(lat_lng[0], lat_lng[1]),
 		zoom: 13,
@@ -95,10 +101,6 @@ function initialize() {
 	service = new google.maps.places.PlacesService(map);
 	google.maps.event.addListenerOnce(map, 'bounds_changed', performSearch);
 
-	// Create the search box and link it to the UI element.
-	input = (document.getElementById("search_place"));
-	searchBox = new google.maps.places.SearchBox((input));
-	google.maps.event.addListener(searchBox, 'places_changed', searchPlaces);
 }
 
 function searchPlaces() {
