@@ -62,7 +62,7 @@ var infoWindow;
 var service;
 var markers = [];
 var locationTypes = ['book_store', 'cafe', 'food'];
-var directionsDisplay;
+var directionsDisplay = new google.maps.DirectionsRenderer();
 var directionsService = new google.maps.DirectionsService();
 var startLoc, endLoc;
 selectedMode = "DRIVING"; /* DEFAULT MODE */
@@ -71,10 +71,10 @@ var searchBox, input, bounds;
 var distances = [];
 
 function initialize() {
-	directionsDisplay = new google.maps.DirectionsRenderer();
+	
 	startLoc = new google.maps.LatLng(lat_lng[0], lat_lng[1]);
 	// Create the search box and link it to the UI element.
-	
+
 	input = (document.getElementById("search_place"));
 	searchBox = new google.maps.places.SearchBox((input));
 	google.maps.event.addListener(searchBox, 'places_changed', searchPlaces);
