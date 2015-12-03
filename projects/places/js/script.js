@@ -100,7 +100,6 @@ function initialize() {
 	infoWindow = new google.maps.InfoWindow();
 	service = new google.maps.places.PlacesService(map);
 	google.maps.event.addListenerOnce(map, 'bounds_changed', performSearch);
-
 }
 
 function searchPlaces() {
@@ -158,6 +157,7 @@ function searchPlaces() {
 			bounds.extend(place.geometry.location);
 		}
 		map.fitBounds(bounds);
+		console.log("searchPlaces");
 	}
 }
 
@@ -172,6 +172,8 @@ function performSearch() {
 		types: locationTypes
 	};
 	service.nearbySearch(request, callback);
+
+	console.log("performSearch");
 }
 
 function callback(results, status) {
@@ -184,6 +186,8 @@ function callback(results, status) {
 		getDistance(startLoc, new google.maps.LatLng(result.geometry.location.A, result.geometry.location.F));
 		createMarker(result);
 	}
+
+	console.log("callback");
 }
 
 function createMarker(place) {
@@ -222,6 +226,8 @@ function createMarker(place) {
 			infoWindow.open(map, marker);
 		});
 	});
+
+	console.log("createMarker");
 }
 
 function calcRoute(start, end) {
@@ -237,6 +243,8 @@ function calcRoute(start, end) {
 		}
 	});
 	getDistance(startLoc, endLoc);
+
+	console.log("calcRoute");
 }
 
 function getDistance(start, end) {
@@ -267,6 +275,8 @@ function getDistance(start, end) {
 			}
 		}
 	});
+
+	console.log("getDistance");
 }
 
 
