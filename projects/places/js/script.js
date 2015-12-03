@@ -105,7 +105,7 @@ function initialize() {
 
 function searchPlaces() {
     var places = searchBox.getPlaces();	
-	//map.setCenter(new google.maps.LatLng(places[0].geometry.location.A, places[0].geometry.location.F));
+	map.setCenter(new google.maps.LatLng(places[0].geometry.location.A, places[0].geometry.location.F));
 
     if (places.length == 0) {
       return;
@@ -115,10 +115,10 @@ function searchPlaces() {
 	/* CLEAR EXISTING LIST */
 	$(".place_list").empty();
 
-    //bounds = map.getBounds();
+    bounds = map.getBounds();
 	
 	if (places.length == 1) {
-		//map.setZoom(13);
+		map.setZoom(13);
 		performSearch();
 	} else {
 		locationTypes = [];
@@ -157,12 +157,12 @@ function searchPlaces() {
 
 			bounds.extend(place.geometry.location);
 		}
-		//map.fitBounds(bounds);
+		map.fitBounds(bounds);
 	}
 }
 
 function performSearch() {
-	//bounds = map.getBounds();
+	bounds = map.getBounds();
 	searchBox.setBounds(bounds);
 
 	var request = {
