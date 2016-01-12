@@ -45,14 +45,21 @@ $("body").on("click", ".card, .icon, .blue_link", function(e){
 // });
 window.onload = function() {
   var startPos;
-  var geoSuccess = function(position) {
-    startPos = position;
-    lat_lng[0] = startPos.coords.latitude;
-    lat_lng[1] = startPos.coords.longitude;
-  };
-  navigator.geolocation.getCurrentPosition(geoSuccess);
 
-	initialize();
+  if(navigator.geolocation) {
+  	navigator.geolocation.getCurrentPosition(function(position) {
+	    startPos = position;
+	    
+	    lat_lng[0] = startPos.coords.latitude;
+	    lat_lng[1] = startPos.coords.longitude;
+
+		console.log(lat_lng);
+		initialize();
+	  });
+  } else {
+  	initialize();
+  }
+
 };
 
 
