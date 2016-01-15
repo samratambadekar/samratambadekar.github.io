@@ -1841,7 +1841,7 @@
 					    begin="ani1.end+5;"
 					    fill="freeze" />
 			</g>
-			<g id="rock" transform="scale(2)">
+			<g id="rock" transform="scale(2)" style="opacity:0;">
 				<path d="m0,680
 						 l250,0
 						 q120,0 250,-10
@@ -1866,6 +1866,14 @@
 					    begin="ani8.end"
 					    fill="freeze"/> -->
 				</path>
+
+				<animate id=""
+				    attributeName="opacity"
+				    attributeType="CSS"
+				    to="1"
+				    dur="3s"
+				    begin="5s"
+				    fill="freeze"/>
 
 				<animateTransform id=""
 				  attributeName="transform"
@@ -1903,7 +1911,7 @@
 		</g>
 
 
-		<g id="rock2" transform="translate(0,200)">
+		<g id="rock2" transform="translate(0,200)" style="opacity:0;">
 			<path d="m10,720
 					 q-5,-20 0,-40
 					 q0,-20 30,-30
@@ -1915,6 +1923,14 @@
 					 q10,0 0,20"
 				style="stroke: #BBB; stroke-width: 0;fill:url(#linearGradientRock2);">
 			</path>
+
+			<animate id=""
+			    attributeName="opacity"
+			    attributeType="CSS"
+			    to="1"
+			    dur="3s"
+			    begin="ani8.end+4"
+			    fill="freeze"/>
 
 			<animateTransform id="ani11"
 			  attributeName="transform"
@@ -2717,4 +2733,4 @@
 
 
     </body>
-</html>
+</html>     
