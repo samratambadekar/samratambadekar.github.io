@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>GitCity | 3D Visualization</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="manifest" href="/manifest.json">
+  <style>
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+  }
+  div {
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+  </style>
+</head>
+<body style="margin: 0;">
+  <div id="overlayDiv">
+    - Works with google cardboard VR . I don't know if this works on Oculus.<br/><br/>
+    - Click the bottom right button to toggle VR mode.<br/>
+    - This is 3D visualization of Mozilla's projects on Github.<br/>
+    - The base rings are months between 2007 - 2013.
+    The buildings are projects.
+    The stars are people who contributed to these projects.<br/>
+    - You are looking at 2688 people who worked on 710 projects over 87 months.<br/><br/>
+    - Starting in <span id="seconds">12</span> seconds.
+  </div>
+</body>
+  <script>
+  /*
+   * Debug parameters.
+   */
+  WebVRConfig = {
+    /**
+     * webvr-polyfill configuration
+     */
+
+    // Forces availability of VR mode.
+    FORCE_ENABLE_VR: true, // Default: false.
+    // Complementary filter coefficient. 0 for accelerometer, 1 for gyro.
+    //K_FILTER: 0.98, // Default: 0.98.
+    // How far into the future to predict during fast motion.
+    //PREDICTION_TIME_S: 0.040, // Default: 0.040 (in seconds).
+    // Flag to disable touch panner. In case you have your own touch controls
+    //TOUCH_PANNER_DISABLED: true, // Default: false.
+    // Enable yaw panning only, disabling roll and pitch. This can be useful for
+    // panoramas with nothing interesting above or below.
+    //YAW_ONLY: true, // Default: false.
+
+    /**
+     * webvr-boilerplate configuration
+     */
+    // Forces distortion in VR mode.
+    //FORCE_DISTORTION: true, // Default: false.
+    // Override the distortion background color.
+    // DISTORTION_BGCOLOR: {x: 1, y: 0, z: 0, w: 1}, // Default: (0,0,0,1).
+    // Prevent distortion from happening.
+    //PREVENT_DISTORTION: true, // Default: false.
+    // Show eye centers for debugging.
+    // SHOW_EYE_CENTERS: true, // Default: false.
+    // Prevent the online DPDB from being fetched.
+    // NO_DPDB_FETCH: true,  // Default: false.
+  };
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r72/three.min.js"></script>
+    <script src="fonts/helvetiker_regular.typeface.js"></script>
+  <!-- <script src="js/three-everything.js"></script> -->
+  <script src="js/Promise.min.js"></script>
+  <script src="js/VRControls.js"></script>
+  <script src="js/VREffect.js"></script>
+  <script src="js/webvr-polyfill.js"></script>
+  <script src="js/webvr-manager.js"></script>
+
+  <!-- <script src="data/commitData.js"></script> -->
+  <script src="data/contributorInfoData.js"></script>
+  <script src="data/initialCommitData.js"></script>
+
+  <script>
+    var TOTAL_RINGS = 87,
+        RINGRADIUS = 30;
+
+    var yearColorLookup = {2007: 0xFCEECB, 2008: 0xEBD3AD, 2009: 0xAE8663, 2010: 0xFCEECB, 2011: 0xEBD3AD, 2012: 0xAE8663, 2013: 0xFCEECB, 2014: 0xEBD3AD	};
+    // Setup three.js WebGL renderer. Note: Antialiasing is a big performance hit.
+    // Only enable it if you actually need to.
+    var renderer = new THREE.WebGLRenderer({antialias: true});
+    renderer.setPixelRatio(window.devicePixelRatio);
+
+    // Append the canvas element created by the renderer to document body element.
+    document.body.appendChild(renderer.domElement);
+
+    // Create a three.js scene.
+    var scene = new THREE.Scene();
+    // var container = new THREE.Group();
+    // scene.add(container);
+
+    // Create a three.js camera.
+    var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 20000);
+    //console.log(camera.position);
+    camera.position.set(0,0,5);
+    // Apply VR headset positional data to camera.
+    var controls = new THREE.VRControls(camera);
+    // container.add(camera);
+
+    // Apply VR stereo rendering to renderer.
+    var effect = new THREE.VREffect(renderer);
+    effect.setSize(window.innerWidth, window.innerHeight);
+
+    // Create a VR manager helper to enter and exit VR mode.
+    var params = {
+      hideButton: false, // Default: false.
+      isUndistorted: false // Default: false.
+    };
+    var manager = new WebVRManager(renderer, effect, params);
+
+  function init() {
+    hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, 0.6 );
+    //hemiLight.color.setHSL( 0.6, 1, 0.6 );
+    hemiLight.color.set( 0xf7b763 );
+    //hemiLight.groundColor.setHSL( 0.095, 1, 0.75 );
+    hemiLight.position.set( 0, 500, 0 );
+    //scene.add( hemiLight );
+    scene.add(new THREE.AmbientLight(0x888));
+
+    dirLight = new THREE.DirectionalLight( 0xffffff, 1 );
+    dirLight.position.set(0,50,400);
+
+    dirLight.castShadow = true;
+    dirLight.shadowMapWidth = 2048;
+    dirLight.shadowMapHeight = 2048;
+
+    var d = 50;
+    dirLight.shadowCameraLeft = -d * 70;
+    dirLight.shadowCameraRight = d * 70;
+    dirLight.shadowCameraTop = d;
+    dirLight.shadowCameraBottom = -d;
+
+    dirLight.shadowCameraFar = 7000;
+    dirLight.shadowBias = -0.0001;
+    dirLight.shadowDarkness = 0.10;
+    //dirLight.shadowCameraVisible = true;
+    //sun.add( halo );
+    scene.add( dirLight );
+
+  	var sky, water;
+  	var cameraPath;
+    // skybox
+  	var geometry = new THREE.SphereGeometry( 10000, 64, 32 );
+
+  	var colorTop = new THREE.Color( 0xdc72aa );
+  	var colorMiddle = new THREE.Color( 0xfbdfd3 );
+  	var colorBottom = new THREE.Color( 0xdc72aa );
+
+  	var material = new THREE.MeshBasicMaterial({
+  		//vertexColors: THREE.VertexColors,
+  		side: THREE.BackSide,
+  		depthWrite: false,
+  		depthTest: false,
+  		fog: false,
+  		map: THREE.ImageUtils.loadTexture( 'images/bg-2.png' )
+  	});
+
+  	sky = new THREE.Mesh( geometry, material );
+  	// scene.add( sky );
+    // water
+
+  	var geometry = new THREE.PlaneBufferGeometry( 100000, 100000 );
+  	var material = new THREE.MeshBasicMaterial( {
+  		color: colorMiddle,
+  		opacity: 0.75,
+  		transparent: true
+  	} );
+  	water = new THREE.Mesh( geometry, material );
+  	water.position.y = -0.5;
+  	water.rotation.x = - Math.PI / 2;
+  	water.renderDepth = 2;
+  	// scene.add( water );
+
+    particles = new THREE.Geometry();
+
+    var discTexture = THREE.ImageUtils.loadTexture( 'images/disc.png' );
+    var pMaterial = new THREE.PointsMaterial( {map: discTexture, size: 0.1, vertexColors: THREE.VertexColors});
+        particleSystem = new THREE.Points(particles, pMaterial);
+        scene.add(particleSystem);
+    var vertexColors = [];
+
+    for(var cNum = 0; cNum < contributorInfo.length; cNum++)
+    {
+      vertexColors[cNum] = new THREE.Color();
+      if(contributorInfo[cNum].type == -1)
+      {
+        //orangered
+        vertexColors[cNum].setRGB(255,255,0);
+      }
+      else
+      {
+        //green
+        vertexColors[cNum].setRGB(255,0,0);
+      }
+
+      var pX = Math.random() * 100 - 50,
+          pY = Math.random() * 100 - 10,
+          pZ = Math.random() * 100 - 50,
+          particle = new THREE.Vector3(pX, pY, pZ);
+
+      particles.vertices.push(particle);
+    }
+    particleSystem.geometry.colors = vertexColors;
+
+    var ringStep = 0.2;
+    var rings = [];
+    var month = 1, year = 2007;
+
+    for(var i = 0;i<TOTAL_RINGS;i++) {
+      var innerRadius = ringStep;
+      var outerRadius = ringStep + 0.2;
+      ringStep+=0.21;
+
+      var color = yearColorLookup[year];
+
+      var ring = new THREE.Mesh(new THREE.RingGeometry(innerRadius, outerRadius, 32), new THREE.MeshBasicMaterial({ color: color, side: THREE.DoubleSide,visible: false}));
+      ring.rotation.x = - 90 * Math.PI / 180;
+
+      rings.push(ring);
+      scene.add(ring);
+
+      month++;
+
+      if(month>12) {
+        year++;
+        month=1;
+      }
+    }
+
+    var projects = [];
+    initialRepoData.forEach(function(repo) {
+      var cylinderGeometry = new THREE.CylinderGeometry(0.1, 0.1, 0.1, 12,6);
+      cylinderGeometry.applyMatrix( new THREE.Matrix4().makeTranslation( 0, 0.05, 0 ) );
+      var cylinder = new THREE.Mesh(cylinderGeometry, new THREE.MeshLambertMaterial({color: 0x537979}));
+      // cylinder.position.y = 0;
+      cylinder.scaley = repo.initialSize/1000;
+      var cyl_pos = ((parseInt(repo.created_at.substring(0,4)) - 2007) * 12 + parseInt(repo.created_at.substring(5,8))+0.2)*1.02/5;
+
+      angle = 2 * Math.PI * repo.created_at.substring(8,10)/31;
+      cylinder.position.x = cyl_pos * Math.cos(angle);
+      cylinder.position.z = cyl_pos * Math.sin(angle);
+      // scene.add(cylinder);
+      projects.push(cylinder);
+      // console.log((parseInt(repo.created_at.substring(0,4)) - 2007) * 12 + parseInt(repo.created_at.substring(5,8)));
+      // console.log();
+    });
+
+
+    // Request animation frame loop function
+    var lastRender = 0;
+    var add_rings = 0;
+    var ringsAdded = false;
+    var moveCamera = false;
+
+    t = 0;
+    function animate(timestamp) {
+      var delta = Math.min(timestamp - lastRender, 500);
+      lastRender = timestamp;
+
+      if(!moveCamera) {
+        camera.position.y += 0.1;
+        camera.position.x -= 0.1;
+        camera.position.z += 0.25;
+      }
+
+      // console.log(delta);
+      if(delta > 16 && add_rings < TOTAL_RINGS) {
+        // scene.add(rings[add_rings]);
+        rings[add_rings].material.visible = true;
+        add_rings++;
+      } else if(add_rings == TOTAL_RINGS){
+        add_rings++;
+        projects.forEach(function(proj){
+          scene.add(proj);
+        });
+        ringsAdded = true;
+        moveCamera = true;
+        // scene.add(sky);
+        // scene.add(water);
+      }
+      if(moveCamera) {
+        t += 0.01;
+        // container.rotation.y += 0.03;
+        camera.position.x = -13*Math.cos(t);
+        camera.position.z = 20*Math.sin(t); // These to strings make it work
+        camera.lookAt(new THREE.Vector3(0,0,0));
+        // camera.position.z += 0.1;
+      }
+      if(ringsAdded) {
+        projects.forEach(function(proj){
+          if(proj.scale.y<proj.scaley) {
+            proj.scale.y += 1;
+          } else {
+            proj.scale.y = proj.scaley;
+          }
+        });
+      }
+      // Update VR headset position and apply to camera.
+      controls.update();
+
+      // Render the scene through the manager.
+      manager.render(scene, camera, timestamp);
+
+      requestAnimationFrame(animate);
+    }
+
+    // Kick off animation loop
+    animate(performance ? performance.now() : Date.now());
+
+    // Reset the position sensor when 'z' pressed.
+    function onKey(event) {
+      if (event.keyCode == 90) { // z
+        controls.resetSensor();
+      }
+    }
+
+    window.addEventListener('keydown', onKey, true);
+  }
+
+  var seconds = 12;
+  var startExp = setInterval(startFun, 1000);
+  function startFun() {
+    seconds--;
+    if(seconds === 0) {
+      clearInterval(startExp);
+      document.getElementById("overlayDiv").style.display = "none";
+      init();
+    } else {
+      document.getElementById("seconds").innerHTML = seconds;
+    }
+  }
+  </script>
+
+</html>
