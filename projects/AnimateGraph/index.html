@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=360"/> -->
+    <title>Animate Graph</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600,700,400' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/d3.v3.min.js"></script>
+</head>
+
+<body onload="initialize()">
+  <article>
+    <div class="background">
+      <!-- <img src="images/background.png"/> -->
+    </div>
+    <div class="head">
+      Wifi Details
+    </div>
+    <div class="card">
+      <div class="filter_options row">
+        <div class="speed selected">Speed</div>
+        <div class="wifi selected">Wifi Performance</div>
+        <div class="connectivity selected">Connectivity</div>
+      </div>
+      <div class="graphs row">
+      </div>
+      <div class="filter_date row">
+        <div class="time_period">
+          <div class="selected">Day</div>
+          <div>Week</div>
+          <div>Month</div>
+        </div>
+        <div class="date">
+          <select class="styled_select">
+            <option>Tuesday July 22, 2015</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="indicator signal">
+      <svg class="indicator ">
+        <circle class="inner_circle" r="30" cx="50%" cy="50%" fill="transparent"></circle>
+        <circle r="30" cx="50%" cy="50%" fill="transparent" stroke-dasharray="190" stroke-dashoffset="190" transform="rotate(90,35,35)"></circle>
+        <path d="m35,70 l0,-10" stroke-width="4" stroke="#FFF"></path>
+        <path d="m35,70 l0,-10" stroke-width="3" stroke="#FFF" transform="rotate(120,35,35)"></path>
+        <path d="m35,70 l0,-10" stroke-width="3" stroke="#FFF" transform="rotate(240,35,35)"></path>
+      </svg>
+      <img src="images/Wifi_Grey.svg"/>
+    </div> -->
+  </article>
+</body>
+
+<script>
+	//  ONLOAD CODE
+	$(document).ready(function() {
+		$.getScript("js/script.js", function(){
+			console.log("Loaded Script.");
+		});
+	});
+</script>
+</html>

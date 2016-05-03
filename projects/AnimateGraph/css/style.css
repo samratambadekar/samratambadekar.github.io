@@ -1,0 +1,103 @@
+* {
+	-webkit-transition: all 0.25s ease-in-out;
+	   -o-transition: all 0.25s ease-in-out;
+		  transition: all 0.25s ease-in-out;
+	-webkit-animation: all 0.5s ease-in;
+	   -o-animation: all 0.5s ease-in;
+		  animation: all 0.5s ease-in;
+
+	box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /*text-align: center;*/
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+article {
+  position: relative;
+  padding: 40px;
+  background-image: url(../images/background.png);
+}
+.head {
+  font-size: 48px;
+  font-weight: 200;
+  color: #FFF;
+  margin: 40px auto;
+}
+.card {
+  background-color: #FFF;
+  width: 750px;
+  padding: 50px;
+  margin: 80px auto 40px 0;
+  box-shadow: 0px 0px 4px #888;
+}
+.right {
+  float: right;
+}
+.row {
+  display: block;
+}
+.filter_date {
+  position: relative;
+}
+.date {
+  float: right;
+  margin: 15px auto;
+}
+.row > div, .time_period > div {
+  display: inline-block;
+}
+.time_period {
+  overflow: hidden;
+}
+.time_period > div {
+  margin: 20px 30px 20px 0;
+  color: #008DCD;
+  cursor: pointer;
+}
+.time_period > div.selected {
+  color: #1B5C9C;
+  font-weight: bold;
+}
+.filter_options > div.selected {
+  font-weight: bold;
+}
+.filter_options > div {
+  margin: 0 40px 30px 0;
+  cursor: pointer;
+}
+.filter_options > .speed {
+  color: #FC9770;
+}
+.filter_options > .wifi {
+  color: #4BB2D9;
+}
+.filter_options > .connectivity {
+  color: #B495B4;
+}
+.styled_select {
+  width: 250px;
+  height: 35px;
+  font-size: inherit;
+  overflow: hidden;
+  background: url(../images/select_arrow.png) no-repeat 95%;
+  border: 1px solid #CDE0F3;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  /*-webkit-border-radius: 0px;*/
+  -moz-appearance: none;
+  color: #008DCD;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
