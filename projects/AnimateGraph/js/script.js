@@ -262,3 +262,5 @@ function initialize() {
       .transition().duration(1450)
       .attr("d", area3(data));
 }
+
+$(window).on("load", initialize);
