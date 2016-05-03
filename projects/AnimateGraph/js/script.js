@@ -198,43 +198,43 @@ $(".filter_options>div").click(function() {
   if($(this).hasClass("connectivity")) {
     svg.select(".area1")
         .transition().duration(1350)
-        .ease("cubic-in-out")
+
         .attr("d", area1(data));
     svg.select(".area2")
         .transition().duration(350)
-        .ease("cubic-in-out")
+
         .attr("d", area2(newData));
     svg.select(".area3")
         .transition().duration(350)
-        .ease("cubic-in-out")
+
         .attr("d", area3(newData));
   }
   else if($(this).hasClass("speed")) {
     svg.select(".area1")
         .transition().duration(350)
-        .ease("cubic-in-out")
+
         .attr("d", area1(newData));
     svg.select(".area2")
         .transition().duration(1350)
-        .ease("cubic-in-out")
+
         .attr("d", area2(data));
     svg.select(".area3")
         .transition().duration(350)
-        .ease("cubic-in-out")
+
         .attr("d", area3(newData));
   }
   if($(this).hasClass("wifi")) {
   svg.select(".area1")
       .transition().duration(350)
-      .ease("cubic-in-out")
+
       .attr("d", area1(newData));
   svg.select(".area2")
       .transition().duration(350)
-      .ease("cubic-in-out")
+
       .attr("d", area2(newData));
   svg.select(".area3")
       .transition().duration(1350)
-      .ease("cubic-in-out")
+
       .attr("d", area3(data));
   }
 });
