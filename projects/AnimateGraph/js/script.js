@@ -263,4 +263,4 @@ function initialize() {
       .attr("d", area3(data));
 }
 
-$(window).on("load", initialize);
+window.setTimeout(function(){initialize();},700);
