@@ -120,13 +120,25 @@ var margin = {top: 20, right: 0, bottom: 30, left: 0},
       .attr("x2", 0)
       .attr("y1", height)
       .attr("y2", 0);
-  // svg.append("line")
-  //     .style("stroke", "#cdcdcd")
-  //     // .style("stroke-width", "2")
-  //     .attr("x1", 0)
-  //     .attr("x2", width)
-  //     .attr("y1", height)
-  //     .attr("y2", height);
+  svg.append("line")
+      .style("stroke", "#cdcdcd")
+      // .style("stroke-width", "2")
+      .attr("x1", 0)
+      .attr("x2", width)
+      .attr("y1", height)
+      .attr("y2", height);
+
+  // svg.append("text")
+  //   .data([data])
+  //   .attr("x", function(d){return d.x1})
+  //   .attr("y", height+15)
+  //   .style("font-size", "12px")
+  //   .attr("fill", "#cdcdcd")
+  //   .text(function(d,i){
+  //     return i * 2;
+  //   });
+    // .text("12am 2 4 6 8 10 12pm 2 4 6 8 10 12am");
+
 // svg.append("g")
 //     .attr("class", "x axis")
 //     .attr("transform", "translate(0," + height + ")")
