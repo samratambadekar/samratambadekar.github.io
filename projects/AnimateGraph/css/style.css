@@ -90,7 +90,7 @@ article {
   /*-webkit-border-radius: 0px;*/
   -moz-appearance: none;
   color: #008DCD;
-  font-weight: 600;
+  /*font-weight: 600;*/
   cursor: pointer;
 }
 

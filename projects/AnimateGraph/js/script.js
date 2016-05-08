@@ -5,11 +5,11 @@ var data = [
     { x1: 3, y1: 5, x2: 3, y2: 45, x3: 3, y3: 50, },
     { x1: 4, y1: 5, x2: 4, y2: 70, x3: 4, y3: 40, },
     { x1: 5, y1: 5, x2: 5, y2: 15, x3: 5, y3: 15, },
-    { x1: 6, y1: 5, x2: 6, y2: 2, x3: 6, y3: 2, },
-    { x1: 7, y1: 0, x2: 7, y2: 8, x3: 7, y3: 2, },
-    { x1: 8, y1: 5, x2: 8, y2: 90, x3: 8, y3: 25, },
-    { x1: 9, y1: 5, x2: 9, y2: 7, x3: 9, y3: 45, },
-    { x1: 10, y1: 0, x2: 10, y2: 7, x3: 10, y3: 45, },
+    { x1: 6, y1: 5, x2: 6, y2: 0, x3: 6, y3: 2, },
+    { x1: 7, y1: 0, x2: 7, y2: 0, x3: 7, y3: 2, },
+    { x1: 8, y1: 5, x2: 8, y2: 95, x3: 8, y3: 25, },
+    { x1: 9, y1: 5, x2: 9, y2: 0, x3: 9, y3: 45, },
+    { x1: 10, y1: 0, x2: 10, y2: 0, x3: 10, y3: 45, },
     { x1: 11, y1: 5, x2: 11, y2: 50, x3: 11, y3: 25, },
     { x1: 12, y1: 5, x2: 12, y2: 20, x3: 12, y3: 15, },
 ];
@@ -79,9 +79,9 @@ var margin = {top: 20, right: 0, bottom: 30, left: 0},
 
   var area3 = d3.svg.area()
       .x(function(d) { return x(d.x3); })
-      // .y0(height-5)
-      .y0(height)
-      .y1(function(d) { return y(d.y3); })
+      .y0(height-7)
+      // .y0(height)
+      .y1(function(d) { return y(d.y3 + 4.7); })
       .interpolate("cardinal");
   svg.append("path")
       .data([newData])
@@ -91,10 +91,10 @@ var margin = {top: 20, right: 0, bottom: 30, left: 0},
 
   var area2 = d3.svg.area()
       .x(function(d) { return x(d.x2); })
-      // .y0(height-5)
-      .y0(height)
-      .y1(function(d) { return y(d.y2); })
-      .interpolate("cardinal");
+      .y0(height-7)
+      // .y0(height)
+      .y1(function(d) { return y(d.y2 + 4.7); })
+      .interpolate("monotone");
   svg.append("path")
       .data([newData])
       .attr("class", "area2")
