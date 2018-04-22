@@ -3,7 +3,7 @@ var map;
 var infoWindow;
 var service;
 var markers = [];
-var locationTypes = ['book_store', 'cafe', 'food'];
+var locationTypes = ['restaurants', 'book_store', 'cafe', 'food'];
 var startLoc, endLoc;
 selectedMode = "DRIVING"; /* DEFAULT MODE */
 var timeout_counter = 0;
@@ -289,8 +289,8 @@ $(document).ready(function() {
 						var results = response.rows[i].elements;
 						for (var j = 0; j < results.length; j++) {
 							var element = results[j];
-							var distance = element.distance.text;
-							var duration = element.duration.text;
+							var distance = (element.distance?element.distance.text:"undefined");
+							var duration = (element.duration?element.duration.text:"undefined");
 							var from = origins[i];
 							var to = destinations[j];
 
