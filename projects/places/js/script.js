@@ -441,7 +441,9 @@ $(document).ready(function() {
 			}
 
 			highlightNavMode();
-			calcRoute(startLoc, endLoc);
+			if(startLoc && endLoc) {
+				calcRoute(startLoc, endLoc);
+			}
 		});
 
 		$(".clear_search").on("click", function(e) {
