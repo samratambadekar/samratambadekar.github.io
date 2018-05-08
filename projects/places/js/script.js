@@ -129,6 +129,7 @@ $(document).ready(function() {
 
 		function searchPlaces() {
 		    var places = searchBox.getPlaces();
+				console.log(places[0]);
 			map.setCenter(new google.maps.LatLng(places[0].geometry.location.A, places[0].geometry.location.F));
 
 		    if (places.length == 0) {
@@ -375,7 +376,7 @@ $(document).ready(function() {
 		}
 
 		$("body").on("click", ".similar_locations", function(e) {
-			locationTypes = [];
+			// locationTypes = [];
 			locationTypes.push($(this).parent().find(".location_type").text().trim());
 
 			/* CLEAR EXISTING LIST */
