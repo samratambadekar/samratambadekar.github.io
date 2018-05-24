@@ -1,0 +1,256 @@
+* {
+	-webkit-transition: all 0.3s ease-in-out;
+	   -o-transition: all 0.3s ease-in-out;
+		  transition: all 0.3s ease-in-out;
+	-webkit-animation: all 0.5s ease-in;
+	   -o-animation: all 0.5s ease-in;
+		  animation: all 0.5s ease-in;
+
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans";
+	font-size: 14px;
+	min-width: 320px;
+	background-color: #FAFAFA;
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.hidden {
+	display: none !important;
+}
+
+/*#1B5C9C - selected
+#008DCD - Light blue*/
+.blue_text {
+	color: #008DCD;
+}
+.green_text {
+	color: #90D963;
+}
+
+.half {
+	display: inline-block;
+	min-width: 45%;
+	max-width: 49.3%;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 481px) {
+	.mobile { /* USING THIS FOR EFFECTIVE TRANSITION */
+		display: none !important;
+	}
+
+	article {
+		margin: 0 auto;
+		min-width: 768px;
+		max-width: 960px;
+	}
+
+	header {
+		background-color: #00192A;
+		min-width: 768px;
+	}
+	header .navTop {
+		max-width: 960px;
+		color: #FFF;
+		overflow: hidden;
+		margin: auto;
+	}
+	header .navTop div {
+		display: inline-block;
+		margin-top: 5px;
+		height: 30px;
+	}
+	header .navTop span {
+		margin: 0 10px;
+	}
+	header .locationImage {
+		margin-right: 8px;
+	}
+
+	nav {
+		color: #FFF;
+		font-size: 20px;
+		height: 80px;
+		line-height: 80px;
+		min-width: 768px;
+		vertical-align: middle;
+		background: -webkit-linear-gradient(#045690, #0679CA);
+		background: -o-linear-gradient(#045690, #0679CA);
+		background: -moz-linear-gradient(#045690, #0679CA);
+		background: linear-gradient(#045690, #0679CA);
+	}
+	nav .navMain {
+		position: relative;
+		max-width: 960px;
+		min-width: 768px;
+		width: 100%;
+		overflow: hidden;
+		margin: auto;
+	}
+	nav .navMain div {
+		display: inline-block;
+		margin-left: 0px;
+	}
+	nav .navMain div:first-child {
+		margin-left: 10px;
+	}
+	nav .navMain img {
+		position: relative;
+		top: 5px;
+	}
+	nav .navMain .right img {
+		margin: 0 15px;
+	}
+
+	.coxLogo {
+		position: relative;
+		top: 8px;
+	}
+
+	.signIn {
+		position: relative;
+		top: 8px;
+	}
+
+	.signInLine {
+		line-height: 25px;
+		display: block;
+		font-size: 16px;
+	}
+
+	.signInLine:last-child {
+		font-weight: bold;
+	}
+
+	.signInLine img {
+		position: relative;
+		top: 0px !important;
+	}
+
+	.nav_menu_mmu {
+		width: 100%;
+		overflow: hidden;
+		background-color: #FCFAFA;
+		box-shadow: 0px 2px 3px #888;
+		height: 0;
+	}
+	.nav_menu_mmu > div {
+		width: 100%;
+		font-size: 0px;
+		margin: 30px auto;
+		max-width: 960px;
+		min-width: 768px;
+	}
+	.mega_menu_list {
+		display: inline-block;
+		text-align: left;
+		font-size: 18px;
+		width: 25%;
+		vertical-align: top;
+	}
+	.mega_menu_list div {
+		margin: 10px 0;
+	}
+
+	.semi_bold {
+		font-weight: 600;
+	}
+
+	.mega_menu_item {
+		padding: 0 12px;
+		cursor: pointer;
+	}
+	#myAccount_mega_menu.mega_menu_item {
+		padding: 0;
+	}
+	.mega_menu_item.mmu_selected {
+		color: #333;
+		background-color: #FCFAFA;
+	}
+	.shortcut_img_mmu {
+		max-width: 22px;
+		margin-bottom: -4px;
+		margin-right: 10px;
+	}
+	.border_left {
+		padding-left: 20px;
+		border-left: 1px solid #DCDCDC;
+	}
+	.border_top {
+		padding-top: 10px;
+		border-top: 1px solid #DCDCDC;
+	}
+}
+
+/* MOBILE */
+@media screen and (max-width: 480px) {
+	.desktop {
+		display: none !important;
+	}
+
+	header {
+		background-color: #00192A;
+	}
+	nav {
+		color: #FFF;
+		font-size: 20px;
+		width: 100%;
+		z-index: 10;
+	}
+
+	#navigationBar {
+		width: 100%;
+		padding: 0 2%;
+		height: 45px;
+		color: #FFF;
+		overflow: hidden;
+		background: -webkit-linear-gradient(#245590, #437AB2);
+		background: -o-linear-gradient(#245590, #437AB2);
+		background: -moz-linear-gradient(#245590, #437AB2);
+		background: linear-gradient(#245590, #437AB2);
+	}
+
+	#businessType {
+		height: 25px;
+		line-height: 25px;
+		color: #FFF;
+		background: #04214A;
+	}
+	#menuButton {
+		display: inline-block;
+		text-align: left;
+		float: left;
+		cursor: pointer;
+		margin: 10px 0;
+		border-right: 1px solid #FFF;
+	}
+	#menuIcon {
+		margin-right: 10px;
+	}
+
+	#logoMain {
+		display: inline-block;
+		width: 80%;
+		margin: 10px auto;
+		text-align: center;
+	}
+
+	#profileButton {
+		display: inline-block;
+		float: right;
+		text-align: right;
+		margin: 10px 0;
+		cursor: pointer;
+	}
+}

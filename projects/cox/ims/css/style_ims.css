@@ -1,0 +1,1826 @@
+	* {
+		-webkit-transition: all 0.4s ease-in-out;
+		   -o-transition: all 0.4s ease-in-out;
+			  transition: all 0.4s ease-in-out;
+		-webkit-animation: all 0.5s ease-in;
+		   -o-animation: all 0.5s ease-in;
+			  animation: all 0.5s ease-in;
+			  
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: "Open Sans";
+		font-size: 14px;
+		min-width: 320px;
+		background-color: #FAFAFA;
+		margin: 0;
+		padding: 0;
+		color: #333;
+	}
+	article {
+		/* max-width: 480px; */
+		text-align: center;
+		cursor: default;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+	}
+	
+	footer {
+		text-align: center;
+	}
+	footer img {
+		width: 100%;
+		min-width: 960px; 
+		max-width: 1260px; 
+	}
+	
+	.userInfoBox {
+		overflow: hidden;
+		padding: 0 10px;
+		font-size: 15px;
+		margin-top: 50px;
+		height: 70px;
+		min-width: 768px;
+	}
+	.userInfoBox .userInfoLine {
+		font-size: 36px;
+		vertical-align: bottom;
+	}
+	.userInfoBox .userInfoLine span {
+		display: inline-block;
+		line-height: 70px;
+		margin-left: 10px;
+	}
+	.userInfoBox .userInfoLine > * {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.userInfoBox .userInfoShortcuts > div {
+		overflow: hidden;
+		display: inline-block;
+		margin: 10px 0 0 10px;
+		cursor: pointer; 
+	}
+	.userInfoBox .userInfoShortcuts > div:not(:first-child) {
+		padding-left: 15px;
+		border-left: 1px solid #BCBCBC; 
+	}
+	.userInfoBox .userInfoShortcuts img {
+		display: block;
+		margin: 2px auto;
+		height: 31px; 
+	}
+
+	.marginDiv2 {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.card {
+		box-shadow: 0px 0px 3px #666;
+	}
+
+	.hidden {
+		display: none !important;
+	}
+	.hideElement {
+		visibility: hidden;
+	}
+	
+	.bottomBanner img {
+		width: 100%;
+	}
+		
+	.alternateNotificationSummary {
+		background-color: #E8E8E8;
+		height: 220px;
+		overflow: auto;
+		/* margin: 10px 0; */
+		background-color: #FFF;
+		/* box-shadow: 0px 0px 3px #666; */
+	}	
+	.alternateNotificationSummary .header {display: block;
+		width: 100%;
+		height: 60px;
+		font-size: 22px;
+		font-weight: bold;
+		line-height: 60px;				
+	}	
+	.alternateNotification {
+		display: block;
+		/* width: 100%; */
+		height: 50px;
+		text-align: left;
+		line-height: 50px;
+		border-top: 1px solid #BCBCBC;
+		
+	}	
+	.alternateNotification .phNumber{
+		color: #F00;
+		width: 55%;
+	}
+	.notificationSummary {
+		/* width: 100%; */
+		/* margin: 10px auto; */
+		font-size: 0px;
+		/* height: 193px; */
+		overflow: hidden;
+		background-color: #FFF;
+		/* box-shadow: 0px 0px 3px #666; */
+	}
+	.alertNotification {
+		position: relative;
+		font-size:18px;
+		display: block;
+		padding: 5px 0;
+		/* margin: 2%; */
+		line-height: 30px;		
+		cursor: pointer;
+		background-color: #FFE4D3;		
+		border-top: 3px solid #FFBE73;
+		border-bottom: 3px solid #FFBE73;
+		overflow: hidden;
+	}
+	.alertNotification img {
+		height: 27px;
+		margin-bottom: -5px;
+	}
+	.alertNotification > div {
+		display: inline-block;
+		text-align: left;
+		vertical-align: middle;
+		margin-right: 20px;
+	}
+	.clearAlertBar {
+		display: block;
+		clear: right;
+		line-height: 21px;
+	}
+	#serviceOutageAlert {
+		position: relative;
+		padding: 10px 2%;
+		background-color: #FFE4D3;		
+		border-top: 3px solid #DD0000;
+		border-bottom: 3px solid #DD0000;
+		height: 200px;
+	}
+	#serviceOutageAlert div {
+		margin-top: 10px;
+	}
+
+	.marginT25 {
+		margin-top: 25px;
+	}
+	.font20 {
+		font-size: 20px;
+	}
+	.hideOption {
+		width: 100%;
+		position: absolute;
+		vertical-align: bottom;
+		margin-left: -15px;
+		bottom: 20px;
+	}
+	#serviceErrorImg {
+		position: relative;
+		width: 30px;
+	}
+	#alertDisable {
+		position: relative;
+		bottom: -1px;
+	}
+	.closeIcon {
+		position: absolute;
+		right: 2%;
+		top: 10px;
+		width: 18px;
+		cursor: pointer;
+	}
+	.closeIcon1 {
+		position: absolute;
+		right: 2%;
+		top: 10px;
+		width: 18px;
+		cursor: pointer;
+	}
+	
+	.notification {
+		font-size: 18px;
+		display: inline-block;
+		width: 33%;
+		padding: 0 .2%;
+		position: relative;		
+		margin: 10px auto;
+		cursor: pointer;
+		overflow: hidden;
+		vertical-align: top;
+	}
+	.notification:not(:nth-child(3)) {
+		border-right: 1px solid #AAA;
+	}
+	
+	.bigNumber {
+		font-size: 40px;
+	}	
+	
+	.notification > span {
+		display: block;
+	}
+	
+	.notification > span:not(.bigNumber) {
+		display: inline-block;
+		min-width: 105px;
+		/* width: 100%; */
+	}	
+	
+	.menuItems {
+		/* width: 100%; */
+		/* margin-bottom: 10px; */
+		/* font-size: 0px; */
+		/* height: 193px; */
+		overflow: hidden;
+		background-color: #FFF;
+		/* box-shadow: 0px 0px 3px #666; */
+	}
+	
+	.menuItem {
+		position: relative;
+		text-align: left;
+		display: block;
+		font-size: 18px;
+		color: #4279B2;
+		padding: 15px 2%;
+		/* margin: 0 2%; */
+		line-height: 30px;
+		
+		cursor: pointer;
+		overflow: hidden;
+		z-index: 5;
+	}
+	.menuItem:not(:last-child) {
+		border-bottom: 1px solid #BBB;
+		/* box-shadow: 0px 2px 3px #999; */
+	}
+	.menuItem img {
+		float: left;
+		margin-bottom: -5px;
+		margin-right: 20px;
+		width: 30px;
+	}
+	.accordionOpen {
+		font-size: 25px;		
+		float: left;
+		text-align: center;
+		line-height: 25px;
+		vertical-align: middle;
+		margin-right: 15px;
+		width: 30px;
+		height: 30px;
+		border: 2px solid #4279B2;
+		border-radius: 20px;
+		
+		/* disable transitions */
+		-webkit-transition: all 0s ease-in-out;
+		   -o-transition: all 0s ease-in-out;
+			  transition: all 0s ease-in-out;
+	}
+
+	.rightArrow {
+		float: right;
+		margin-right: 5px;
+		background: url(../images/rightArrow_black.png) no-repeat center;
+	}
+
+	.expandArrow {
+		-webkit-transform: rotate(90deg);
+	}
+
+	.callTypeIcon {
+		float: left;
+		width: 16px;
+		overflow: hidden;
+	}
+	.callTypeIcon img {
+		width: 16px;
+		margin-bottom: -3px;
+	}
+	.callHistoryLine .phNumber {
+		/* width: 40%; */
+	}
+	.callHistoryLine .callTime {
+		width: 20%;
+	}
+	.editCallIcon {
+		float: left;
+		width: 0;
+		overflow: hidden;
+	}
+	.editCallIcon img{
+		width: 20px;
+		margin-bottom: -5px;
+	}
+	
+	.deleteVMIcon {
+		float: left;
+		width: 0;
+		overflow: hidden;
+	}
+	.deleteVMIcon img {
+		width: 15px;
+		margin-bottom: -3px;
+	}
+	.phNumber {
+		text-align: left;
+		float: left;
+		width: 40%;
+		padding-left: 10px;
+		/* font-weight: bold; */
+	}
+	.callTime{
+		float: left;
+		width: 21%;
+	}
+	.callDate{
+		float: left;
+		width: 15%;
+	}
+	.vmDuration {
+		float: right;
+		width: 10%;
+		overflow: hidden;
+	}
+	.vmDuration img {
+		width: 18px;
+	}
+	
+	#callHistoryPage, #settingsPage, #helpPage, #addressBookPage , #textMessagePage{
+		position: relative;
+		height: 0px;
+		background-color: #FFF;
+		overflow: hidden;
+		/* border-top: 1px solid #CCC; */
+	}
+	
+	.callHistoryOptionsTabs, #settingsPage, #helpPage, #addressBookPage, #textMessagePage {
+		overflow: auto;
+	}
+	.callHistoryOptionsTabs {
+		border-top: 1px solid #BCBCBC;
+	}
+	
+	.dayFilters span:not(:first-child) {
+		border-left: 1px solid #BCBCBC;
+	}
+	.dayFilters input[type="radio"] {
+		visibility: hidden;
+		margin-left: -8px;
+	}
+	.dayFilters input[type="radio"] + label {
+		cursor: pointer;
+		padding-right: 10px;
+	}
+	.dayFilters input[type="radio"]:checked + label {
+		font-weight: bold;
+		color: #4279B2;
+	}
+	#editVMList {
+		display: inline;
+		font-weight: bold;
+		color: #4279B2;
+		cursor: pointer;
+	}
+	#editCallList {
+		display: inline;
+		font-weight: bold;
+		color: #4279B2;
+		cursor: pointer;
+		margin: 0 2%;
+	}
+	
+	.closeCallHistoryMenu {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		color: #FFF;
+		padding: 0 2%;
+		height: 30px;
+		line-height: 30px;
+		background-color: #4279B2;
+		border-top: 1px solid #FFF;
+		cursor: pointer;
+	}
+	.closeCallHistoryMenu span {
+		float: right;
+		margin-left: 15px;
+	}
+	.closeCallHistoryMenu .rightArrow {
+		-webkit-transform: rotate(-90deg);
+	}
+	
+	.tab {
+		color: #437AB2;
+		padding: 20px 0;
+		font-size: 16px;
+		background-color: #F1F1F1; 
+		cursor: pointer;
+		box-shadow: inset 0px 2px 1px #BCBCBC;
+		width: 50%;
+		min-width: 160px;
+		/* max-width: 200px; */
+
+		/* delay transitions */
+		-webkit-transition: all 0.5s ease-in-out 0.3s;
+		   -o-transition: all 0.5s ease-in-out 0.3s;
+			  transition: all 0.5s ease-in-out 0.3s;
+	}
+	.tabSelected {
+		background-color: #FFF; 		
+	}
+	.tab:not(.tabSelected) {
+		box-shadow: inset 0px 0px 5px #BCBCBC;
+	}
+	
+	.quarter {
+		display: inline-block;
+		width: 24%;		
+	}
+	.half {
+		display: inline-block;
+		width: 49%;
+	}
+	.left {
+		float: left;
+	}
+	.right {
+		float: right;
+	}
+	
+	.dayFilters {
+		overflow: hidden;
+		padding: 10px 0;
+		position: relative;
+		border-bottom: 1px solid #BCBCBC;
+	}
+	
+	.searchBox {
+		position: relative;
+		margin: 20px 2%;
+		height: 40px;
+		overflow: hidden;
+	}
+	
+	.searchBox input[type=text] {
+		/* left: 0; */
+		/* margin: 0; */
+		padding: 10px;
+		/* position: absolute; */
+		height: 98%;
+		width: 98%;
+		border: 0;
+		border-radius: 5px;
+		box-shadow: inset -1px 1px 4px #888;
+	}
+		
+	.searchBox input[type=text]:focus { 
+		outline: 1px solid #9ecaed;
+	}
+
+	.searchBox img {
+		right: 2%;
+		padding: 8px 10px;
+		width: 38px;
+		position: absolute;
+	}
+	
+	.missedCallsList {
+		max-height: 500px;
+		overflow: auto;
+	}
+	.missedVMsList {
+		max-height: 450px;
+		overflow: auto;
+	}
+	
+	.voiceMailLine, .callHistoryLine {
+		position: relative;
+		overflow: hidden;
+		padding: 20px 0;
+		line-height: 23px;
+		vertical-align: middle;
+		border-top: 1px solid #BCBCBC;
+		cursor: pointer;
+		font-size: 13px;
+	}
+	.isMissedCall {
+		color: #DD0000;
+	}
+	.isNotOpened > span {
+		font-weight: bold;
+	}
+	
+	.editCallInfo {
+		height: 0px;
+		width: 100%;
+		overflow: hidden;
+	}
+	.btnEditContact, .btnCreateContact, .btnUpdateContact {
+		width: 100%;
+		padding: 3px 0;
+		color: #FFF;
+		margin-top: 10px;
+		background-color: #437AB2;
+	}
+	
+	.callTypeFilter span {
+		display: inline-block;
+		margin: 20px auto;
+		border: 2px solid #245590;
+		border-radius: 4px;
+	}
+	.callTypeFilter input[type="radio"] {
+		display: none;
+		margin-left: -8px;
+	}
+	label[for="filterAllCalls"], label[for="filterMissedCalls"], label[for="filterVoiceMails"] {
+		display: inline-block;
+		width: 100px;
+	}
+	.callTypeFilter input[type="radio"] + label {
+		cursor: pointer;
+		padding: 0;
+	}
+	.callTypeFilter input[type="radio"]:checked + label {
+		background-color: #245590;
+		color: #FFF;
+	}
+	
+	.voicemailTranscript {
+		position: relative;
+		text-align: left;
+		background-color: #E8E8E8;
+		top: 20px;
+		/* overflow: hidden; */
+		/* border-top: 3px solid #FFF; */
+		height: 0;
+		/* box-sizing: content-box; */
+	}
+	/* .voicemailTranscript > div:not(.vmControls) { */
+	.voicemailTranscript .vmTranscriptText, .voicemailTranscript .vmOptions { 
+		margin: 0 2%;
+		padding: 10px 0;
+		/* overflow: hidden; */
+	}
+	.voicemailTranscript .vmFlagOverlay, .voicemailTranscript .vmDeleteOverlay, .voicemailTranscript .vmForwardOverlay {
+		position: absolute;
+		/* color: #FFF; */
+		background-color: #E8E8E8;
+		opacity: 1;
+		width: 100%;
+		height: 0px;
+		z-index: 1;
+		overflow: hidden;
+	}
+	.vmFlagOverlay > div, .vmDeleteOverlay > div, .vmForwardOverlay > div {
+		position: relative;
+		text-align: center;
+		width: 90%;
+		z-index: 2;
+		margin: 10px auto;
+		opacity: 1;
+	}
+	.vmFlagOverlay > div:first-of-type, .vmDeleteOverlay > div:first-of-type, .vmForwardOverlay > div:first-of-type {
+		margin-top: 30px;
+	}
+	.vmFlagOverlay .cancelButton {
+		display: none;
+	}
+
+	.vmTranscriptText {
+		/* display: inline-block; */
+		position: relative;
+		width: 96%;
+		/* overflow: auto; */
+		height: auto;
+		min-height: 220px;
+	}
+	.vmTranscriptText p {
+		display: inline-block;
+		width: 100%;
+		margin: 0;
+	}
+	.vmRateTranscript {
+		position: absolute;
+		right: 2%;
+		bottom: 10px;
+	}
+	.vmRateTranscript img {
+		width: 15px;
+	}
+	.vmRateTranscript span {
+		margin: 0 5px;
+	}
+	.vmRateTranscript .thumbsDown {
+		margin-bottom: -6px;
+	}
+	
+	.vmControls {
+		background-color: #FFF;
+		padding: 10px 2%;
+		line-height: 30px;
+		overflow: hidden;
+	}
+	.vmPlayPause {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		border: 2px solid #437AB2;
+		border-radius: 50%;
+		margin-right: 10px;
+	}
+	.vmPlayPause .playButton {
+		display: inline-block;
+		position:relative;
+		width: 8px;
+		height: 12px;
+		top: 1px;
+		left: 9px;
+		border-top: 8px solid transparent;
+		border-bottom: 8px solid transparent;
+		border-left: 12px solid #437AB2;
+		-webkit-transition: all 0;
+		   -o-transition: all 0;
+			  transition: all 0;
+	}
+	.vmPlayPause .pauseButton {
+		display: inline-block;
+		position:relative;
+		width: 8px;
+		height: 12px;
+		top: -1px;
+		left: 9px;
+		border-left: 2px solid #437AB2;
+		border-right: 2px solid #437AB2;
+		-webkit-transition: all 0;
+		   -o-transition: all 0;
+			  transition: all 0;
+	}
+	.vmSeeker {
+		display: inline-block;
+		width: 60%;
+	}
+	.vmSeeker input[type="range"] {
+		position: relative;
+		top: -5px;
+		-webkit-appearance: none;
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+		width: 100%;
+		height: 2px;
+		margin: 0;
+		border: none;
+		background: #ADADAD;
+		outline: none; /* no focus outline */
+	}
+	input[type="range"]::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		width: 20px;
+		height: 20px;
+		border: 2px solid #437AB2;
+		border-radius: 12px;
+		cursor: pointer;
+		background-color: #FEFEFE;
+		box-shadow: 2px 2px 5px #777;
+	}	
+	input[type="range"]::-moz-range-thumb {
+		width: 20px;
+		height: 20px;
+		border: 2px solid #437AB2;
+		border-radius: 12px;
+		cursor: pointer;
+		background-color: #FEFEFE;
+		box-shadow: 2px 2px 5px #777;
+	}
+	.vmProgress {
+		display: inline-block;
+		width: 20%;
+		float: right;
+		margin-left: 5px;
+		font-size: 11px;
+	}
+	
+	.vmOptions {
+		font-size: 0px;
+		/* position: absolute; */
+		/* margin-bottom: 0; */
+	}
+	.vmOptions > div {
+		display: inline-block;
+		font-size: 11.5px;
+		width: 25%;
+		text-align: center;
+		min-height: 50px;
+		color: #555;
+		line-height: 80px;
+		/* overflow: hidden; */
+		background-size: 20px auto;
+		background-position: 50% 0;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.vmFlag {
+		background-image: url(../images/flag.png);
+	}
+	.vmFlagSelected {
+		background-image: url(../images/flag_blue.png);
+	}
+	.vmSave {
+		background-image: url(../images/save.png);
+	}
+	.vmSaveSelected {
+		background-image: url(../images/save_blue.png);
+	}
+	.vmForward {
+		background-image: url(../images/forward.png);
+	}
+	.vmForwardSelected {
+		background-image: url(../images/forward_blue.png);
+	}
+	.vmDownload {
+		background-image: url(../images/download.png);
+	}
+	.vmDownloadSelected {
+		background-image: url(../images/download_blue.png);
+	}
+	.vmDelete {
+		background-image: url(../images/delete.png);
+	}
+	.vmDeleteSelected {
+		background-image: url(../images/delete_blue.png);
+	}
+	
+	.textMessage {
+		padding: 10px 2%;
+		border-top: 1px solid #DCDCDC;
+	}
+	.textMessageLine1 , .textMessageLine2 {
+		height: auto;
+		margin: 2px 0;
+		overflow: hidden;
+	}
+	.textMessageSenderName {
+		color: #437AB2;
+		text-align: left;
+	}
+	.textMessageReceivedTime {
+		text-align: right;		
+	}
+	.textMessageExcerpt {
+		width: 80%;
+		float: left;
+		text-align: left;
+	}
+	.textMessageAttachmentsIcon {
+		width: 20%;
+		float: right;
+		text-align: right;		
+	}
+	.textMessageAttachmentsIcon img {
+		width: 20px;
+	}
+
+	.button {
+		position: relative;
+		display: inline-block;
+		padding: 7px 30px;
+		border-radius: 5px;
+		width: 90%;		
+		background-color: #ACACAC;
+		cursor: pointer;
+		margin-bottom: 10px;
+	}
+	.cancelButton {
+		background-color: #FFF;
+		color: #437AB2;
+	}
+	.deleteButton, .sendButton, .saveButton {
+		background-color: #437AB2;  
+		color: #FFF;
+	}
+	.searchAddUser {
+		position: relative;
+		display: inline-block;
+		width: 80%;
+		height: 30px;
+		overflow: hidden;
+	}	
+	.searchAddUser input[type=text] {
+		left: 0;
+		float: left;
+		margin: 0;
+		padding: 2px;
+		padding-left: 6px;
+		position: absolute;
+		height: 30px;
+		width: 100%;
+		border: 0;
+		border-radius: 3px;
+		box-shadow: inset -1px 1px 2px #888;
+	}		
+	.searchAddUser input[type=text]:focus { 
+		outline: 1px solid #9ecaed;
+	}
+	.searchAddUser img {
+		right: 0;
+		height: 100%;
+		padding: 5px;
+		position: absolute;
+		cursor: pointer;
+		/* border-left: 1px solid #BCBCBC; */
+	}	
+	.searchAddUser + .addButton {
+		width: 15%;
+		height: 30px;
+		padding: 2px 0;
+		display: inline-block;
+		float: right;
+	}
+	
+	select[name="forwardType"] {
+		display: inline-block;
+		margin: 0 auto;
+		border-radius: 3px;
+		padding: 3px 5px;
+		width: 120px;
+		border: 1px solid #ccc;
+		box-shadow: none;
+		cursor: pointer;
+		background: #FFF url("../images/arrowDown_black.png") no-repeat 95% 50%;
+		-webkit-appearance: none;
+		   -moz-appearance: none;
+				appearance: none;
+	}
+	select[name="forwardType"]:focus {
+		outline: none;
+	}
+	select[name="forwardType"] + .helpQ {
+		width: 40px;
+		padding: 0 10px;
+		vertical-align: middle;
+		cursor: pointer;
+	}
+	#settingsPage select[name="forwardType"] {
+		min-width: 40%;
+		width: auto;
+		max-width: 85%;
+	}
+	
+	.select-style {
+    width: 120px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
+}
+
+
+	.toggle {
+	  position: absolute;
+	  margin-left: -9999px;
+	  visibility: hidden;
+	}
+	.toggle + label {
+	  display: block;
+	  position: relative;
+	  cursor: pointer;
+	  outline: none;
+	  margin: 0 auto;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	}
+	.vmFlagOverlay input.toggle-round + label {
+		width: 90px;
+	}
+	.vmFlagOverlay input.toggle-round:checked + label:after {
+		margin-left: 58px;
+	}
+	input.toggle-round + label {
+	  padding: 2px;
+	  width: 60px;
+	  height: 30px;
+	  line-height: 30px;
+	  background-color: #dddddd;
+	  -webkit-border-radius: 30px;
+	  -moz-border-radius: 30px;
+	  -ms-border-radius: 30px;
+	  -o-border-radius: 30px;
+	  border-radius: 30px;
+	}
+	input.toggle-round + label:before, input.toggle-round + label:after {
+	  display: block;
+	  position: absolute;
+	  top: 1px;
+	  left: 1px;
+	  bottom: 1px;
+	  content: "";
+	}
+	input.toggle-round + label:before {
+	  right: 1px;
+	  text-align: right;
+	  padding-right: 7px;
+	  background-color: #f1f1f1;
+	  content: attr(data-off);
+	  color: #444;
+	  -webkit-border-radius: 30px;
+	  -moz-border-radius: 30px;
+	  -ms-border-radius: 30px;
+	  -o-border-radius: 30px;
+	  border-radius: 30px;
+	}
+	input.toggle-round + label:after {
+	  width: 30px;
+	  background-color: #fff;
+	  
+	  -webkit-border-radius: 100%;
+	  -moz-border-radius: 100%;
+	  -ms-border-radius: 100%;
+	  -o-border-radius: 100%;
+	  border-radius: 100%;
+	  
+	  -webkit-transition: margin 0.3s;
+	  -moz-transition: margin 0.3s;
+	  -o-transition: margin 0.3s;
+	  transition: margin 0.3s;
+	}
+	input.toggle-round:checked + label:before {
+	  background-color: #437AB2;
+	  color: #FFF;
+	  content: attr(data-on);
+	  text-align: left;
+	  padding-left: 5px;
+	}
+	input.toggle-round:checked + label:after {
+	  margin-left: 28px;
+	}
+	
+	.settingsMenuItem {
+		width: 100%;
+		/* position: relative; */
+		font-size: 18px;
+		padding: 20px 2%;
+		overflow: hidden;
+		border-bottom: 1px solid #DCDCDC;
+	}
+	.settingsMenuItem .switch {
+		color: #FFF;
+		font-size: 14px;
+	}
+	.switch .rightArrow {
+		background: url(../images/rightArrow_black.png) no-repeat center;
+	}
+	
+	.changeSettings {
+		cursor: pointer;
+	}
+	.settingsInfo {
+		display: inline-block;
+		max-width: 59%;
+		font-size: 13px;
+		line-height: 14px;
+		height: 30px;
+		text-align: left;
+	}
+	.settingsHelp {
+		margin: 0;
+		cursor: pointer;
+		width: 10%;
+	}
+	.settingsHelp > img {
+		width: 18px;
+		background-color: #437AB2;
+		border-radius: 100%;
+	}
+	.settingsHelp > span {
+		display: inline-block;
+		font-size: 14px;
+		width: 20px;
+		color: #FFF;
+		background-color: #437AB2;
+		border-radius: 20px;
+	}
+	
+	#callForwardingSettingsConflict, #callForwardTo, #voicemailSettingsConflict {
+		/* color: #FFF; */
+		background-color: #E8E8E8;
+		overflow: hidden;
+		height: 0px;
+	}
+	/* #callForwardingSettingsConflict, #callForwardTo, #voicemailSettingsConflict {
+		background-color: #245590;
+	} */
+	.voicemailSettings, .changeVoicemailPin, .selectiveAcceptSettings, .selectiveRejectSettings, .anonRejectSettings, .callBlockingSettings, 
+	.callNotifySettings, .callForwardSettings, .doNotDisturbSettings, .sequentialRingingSettings, .simlutaneousRingSettings, .speedDialSettings, .addressBookSettings {
+		position: relative;
+		text-align: left;
+		background-color: #E8E8E8;
+		overflow: hidden;
+		height: 0px;
+		box-shadow: inset 1px 0px 3px #888;
+	}
+	
+	.changeDiv {
+		display: inline-block;
+		width: 40%;
+		vertical-align: top;
+	}
+	.callForwardSettings .settingsDiv, .callNotifySettings .settingsDiv, .callNotifyCallHistory .settingsDiv , .callRejectCallHistory .settingsDiv {
+		width: 100%;
+	}
+	.speedDialSettings {
+		text-align: center;
+	}
+	.speedDialSettings .settingsDiv {
+		text-align: left;
+		width: 80%;
+	}
+	.speedDialSettings .quarter {
+		width: 35%;		
+	}
+	
+	.settingsText {
+		margin-top: 10px;
+	}
+	.vmPinOptions {
+		margin: 10px 0;
+		padding: 10px 0;
+		/* font-size: 16px; */
+		vertical-align: middle;
+	}
+	.vmPinOptions:not(:first-child) {
+		border-top: 1px solid #BCBCBC;
+	}
+	.helpQuestion {
+		cursor: pointer;
+	}
+	.blueText {
+		color: #437AB2;
+	}
+	.linkStyle {
+		color: #437AB2;
+		text-decoration: underline;
+	}
+	.vmSettingButtons {
+		text-align: center;
+	}
+	.vmSettingButtons .button {
+		margin-top: 10px;
+		margin-bottom: 0px;
+		width: 100%;
+	}
+	.callForwardingInstr {
+		width: 80%;
+		/* color: #FFF; */
+		margin: 20px auto;
+	}
+	.vmConflictInstr {
+		width: 80%;
+		/* color: #FFF; */
+		margin: 20px auto;
+	}
+	.helpHeader {
+		margin: 10px 2%;
+		padding: 0 15px;
+		text-align: left;
+		font-size: 16px;
+		font-weight: 600;
+	}
+	.changeVoicemailPin input[type="password"] {
+		width: 70%;
+		left: 0;
+		margin: 0;
+		padding: 7px;
+		position: relative;
+		border: 0;
+		border-radius: 4px;
+		box-shadow: inset 0px 1px 1px #888;
+		background-color: #F5F5F5;
+	}
+	.changeVoicemailPin.desktop {
+		box-shadow: none;
+	}
+	.changeVoicemailPin.desktop .vmSettingButtons .button {
+		margin-top: 0;
+	}
+	.changeVoicemailPin.desktop input {
+		width: 24%;
+		display: inline-block;
+	}
+	.pinHelpInstr {
+	}
+	.topArrowDiv {
+		position: absolute;
+		width: 0;
+		left: 50px;
+		top: -10px;
+		border-left: 15px solid transparent;
+		border-right: 15px solid transparent;
+		border-bottom: 15px solid #437AB2;
+	}
+	.helpOverlay {
+		position: absolute;
+		font-size: 13px;
+		color: #FFF;
+		width: 100%;
+		background-color: #437AB2;
+		z-index: 10;
+	}
+	.helpOverlay ul {
+		text-align: left;
+		margin: 15px 2%;
+		padding: 0 20px;
+	}
+	
+	.sequentialRingingSettings .addNumsList .numsList span {
+		/* width: 25%; */
+	}
+	.sequentialRingingSettings .numsList button {
+		height: 25px;
+		width: 30px;
+		margin-right: 2px;
+		vertical-align: middle;
+	}
+	.sequentialRingingSettings .numsList button img {
+		width: 15px;
+		padding: 0 2px;
+		margin-top: 0;
+	}
+	.addNumsList {
+		overflow: hidden;
+		margin-bottom: 15px;
+	}
+	.addNumsList .numsList {
+		position: relative;
+		margin-top: 20px;
+		box-shadow: inset 1px 1px 3px #888;
+	}
+	.addNumsList .numsList span {
+		display: inline-block;
+		width: 35%;
+		margin-top: 5px;
+		min-height: 40px;
+		padding: 5px 5px;
+	}
+	.addNumsList .numsList img {
+		float: right;
+		width: 40px;
+		padding: 0 12px;
+		margin-top: 12px;
+		cursor: pointer;
+	}
+	.editNumsList {
+		display: inline-block;
+		min-width: 45px;
+		text-align: left;
+		padding: 10px 0;
+		cursor: pointer;
+	}
+	.addNumsListParent {
+		margin-top: 20px;
+	}
+	.hDivider {
+		text-align: center;
+		height: 20px;
+		margin: 20px auto;
+	}
+	.hDivider span{
+		display: inline-block;
+		width: 40%;
+		height: 10px;
+		margin: 0 10px;
+		border-bottom: 1px solid #BCBCBC;
+	}
+	.vDivider {
+		display: inline-block;
+		vertical-align: middle;
+		width: 20px;
+		height: 150px;
+		margin: auto 20px;
+	}
+	.vDivider span{
+		display: inline-block;
+		height: 40%;
+		width: 7px;
+		margin: 5px 0px;
+		border-right: 1px solid #BCBCBC;
+	}
+	
+	.addEditContact, .callNotifyCallHistory, .callRejectCallHistory, .callHistoryIcons {
+		color: #333;
+		font-size: 14px;
+		position: relative;
+		text-align: left;
+		background-color: #E8E8E8;
+		top: 20px;
+		height: 0;
+		width: 100%;
+		overflow: hidden;
+	}
+	.callNotifyCallHistory .searchAddUser {
+		margin-top: 20px;
+		width: 100%;
+		max-width: 300px;
+	}
+	.addEditContact .contactInfo {
+		display: inline-block;
+		padding-left: 30px;
+		width: 73%;
+	}
+	.addEditContact .vmSettingButtons {
+		position: absolute;
+		width: 25%;
+		bottom: 20px;
+		right: 20px;
+	}
+	.contactInfo > div {
+		margin-top: 20px;
+	}
+	.contactInfo select {
+		width: 180px;
+	}
+	.contactInfo .searchAddUser {
+		display: inline-block;
+		width: 45%;
+		margin-right: 2%;
+	}
+	
+	.addContact {
+		float: left;
+		height: 26px;
+		width: 25px;
+	}
+	.addContact img {
+		width: 20px;
+		margin-top: -3px;
+	}
+	
+	.missedCallsList .callHistoryIcons {
+		text-align: center;
+		position: relative;
+	}
+	.missedCallsList .callHistoryIcons > div {
+		max-width: 480px;
+		margin: auto;
+		border-bottom: 1px solid #888;
+	}
+	.missedCallsList .callHistoryIcons .icon {
+		display: inline-block;
+		position: relative;
+		overflow: hidden;
+		padding: 10px 0;
+		vertical-align: bottom;
+		color: #888;
+		width: 24%;
+	}
+	.missedCallsList .callHistoryIcons img {
+		display: block;
+		width: 80%;
+		max-width: 50px;
+		padding: 0 10px;
+		margin: 0 auto;
+	}
+	
+	/* DESKTOP */
+	@media screen and (min-width: 481px) {
+		.mobile { /* USING THIS FOR EFFECTIVE TRANSITION */
+			display: none !important;
+		}
+
+		article {
+			margin: 0 auto;
+			max-width: 960px;
+		}
+
+		header {
+			background-color: #00192A;
+			min-width: 768px; 
+		}
+		header .navTop {
+			max-width: 960px;
+			color: #FFF;
+			overflow: hidden;
+			margin: auto; 
+		}
+		header .navTop div {
+			display: inline-block;
+			margin-top: 5px;
+			height: 30px; 
+		}
+		header .navTop span {
+			margin: 0 10px; 
+		}
+		header .locationImage {
+			margin-right: 8px; 
+		}
+
+		nav {
+			color: #FFF;
+			font-size: 20px;
+			height: 80px;
+			line-height: 80px;
+			min-width: 768px;
+			vertical-align: middle;
+			background: -webkit-linear-gradient(#045690, #0679CA);
+			background: -o-linear-gradient(#045690, #0679CA);
+			background: -moz-linear-gradient(#045690, #0679CA);
+			background: linear-gradient(#045690, #0679CA);
+		}
+		nav .navMain {
+			position: relative;
+			max-width: 960px;
+			min-width: 768px;
+			width: 100%;
+			overflow: hidden;
+			margin: auto; 
+		}
+		nav .navMain div {
+			display: inline-block;
+			margin-left: 15px; 
+		}
+		nav .navMain div:first-child {
+			margin-left: 10px; 
+		}
+		nav .navMain img {
+			position: relative;
+			top: 5px; 
+		}
+		nav .navMain .right img {
+			margin: 0 15px; 
+		}
+		
+		.coxLogo {
+			position: relative;
+			top: 8px; 
+		}
+
+		.signIn {
+			position: relative;
+			top: 8px; 
+		}
+
+		.signInLine {
+			line-height: 25px;
+			display: block;
+			font-size: 16px; 
+		}
+
+		.signInLine:last-child {
+			font-weight: bold; 
+		}
+
+		.signInLine img {
+			position: relative;
+			top: 0px !important; 
+		}
+		
+		.card {
+			width: 100%;
+			margin: 20px auto;
+		}
+		
+		.tab {
+			max-width: 170px;
+		}
+		
+		.callHistoryHeader {
+			color: #437AB2;
+			font-size: 0px; /* hack for spacing in width */
+			padding: 10px 0;
+			box-shadow: 0px 2px 3px #888;
+		}
+		.callHistoryHeader span img {
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 2px;
+		}
+		.callHistoryHeader span {
+			display: inline-block;
+			font-size: 16px;
+			/* width: 15%; */
+			width: 19%;
+			min-width: 92px;
+		}
+		.callHistoryHeader span:nth-child(1) {
+			width: 10%;
+		}
+		.callHistoryHeader span:nth-child(2) {
+			width: 23%;
+		}
+
+		.callHistoryLine .selectItem {
+			float: left;
+			height: 26px;
+			margin-right: 15px;
+			/* width: 5%; */
+		}
+		.addContact {
+			float: left;
+			height: 26px;
+			width: 12%;
+		}
+		.addContact img {
+			width: 30px;
+			margin-top: -3px;
+		}
+		.callHistoryLine .callTypeIcon {
+			float: left;
+			/* text-align: right; */
+			width: 16px;
+			overflow: hidden;
+		}
+		.callHistoryLine .callTypeIcon img {
+			width: 16px;
+			margin-bottom: -3px;
+		}
+		.callHistoryLine .phNumber {
+			width: 20%;
+			/* text-align: center; */
+			overflow: hidden;
+			white-space: nowrap;
+		}
+		.callHistoryLine .callTime{
+			float: left;
+			width: 14%;
+		}
+		.callHistoryLine .callDate{
+			float: left;
+			width: 14%;
+		}
+		.callHistoryLine .vmDuration {
+			float: right;
+			text-align: left;
+			width: 25%;
+			overflow: hidden;
+		}
+		.callHistoryLine .vmDuration img {
+			width: 18px;
+			float: right;
+			margin-right: 30%;
+		}
+		
+
+		.voiceMailLine .selectItem {
+			float: left;
+			height: 26px;
+			margin-right: 15px;
+			/* width: 7%; */
+		}
+		.voiceMailLine .callTypeIcon {
+			float: left;
+			/* text-align: right; */
+			width: 16px;
+			overflow: hidden;
+		}
+		.voiceMailLine .callTypeIcon img {
+			width: 16px;
+			margin-bottom: -3px;
+		}
+		.voiceMailLine .phNumber {
+			width: 20%;
+			/* text-align: center; */
+			overflow: hidden;
+			white-space: nowrap;
+		}
+		.voiceMailLine .callTime{
+			float: left;
+			width: 14%;
+		}
+		.voiceMailLine .callDate{
+			float: left;
+			width: 14%;
+		}
+		.voiceMailLine .vmDuration {
+			float: right;
+			text-align: left;
+			width: 25%;
+			overflow: hidden;
+		}
+		.voiceMailLine .vmDuration img {
+			width: 18px;
+			float: right;
+			margin-right: 30%;
+			margin-top: 5px;
+		}
+		.voicemailTranscript .vmOptions {
+			max-width: 500px;
+			margin: auto;
+		}
+		.vmOptions > div {
+			width: 19.2%;
+		}
+		.vmSeeker {
+			width: 70%;
+		}
+
+		.callHistoryOptions {
+			margin-right: 2%;
+			/* width: auto; */
+		}
+		.desktopFilters {
+			display: inline-block;
+		}
+		.desktopFilters select {
+			width: 44%;
+			margin: 0 10px 0 0;
+			
+			/* display: block; */
+			/* margin: 0 auto; */
+			border-radius: 3px;
+			padding: 3px 5px;
+			width: 110px;
+			border: 1px solid #ccc;
+			box-shadow: none;
+			 
+			background: url("../images/arrowDown_black.png") no-repeat 95% #FFF;
+			box-shadow: inset 0 -10px 10px #ECECEC;
+			/* background: linear-gradient(#FFF, #ECECEC); */
+			/* background-image: url("../images/arrowDown_black.png"); */
+			/* background-size: 20px auto; *//* 
+			background-position: 95% 50%;
+			background-repeat: no-repeat; */
+			-webkit-appearance: none;
+			   -moz-appearance: none;
+					appearance: none;
+		}
+		.desktopFilters select:focus {
+			outline: none;
+		}
+		.dayFilters > div:first-child {
+			line-height: 50px;
+		}
+		.quickIcons {
+			display: inline-block;
+			vertical-align: middle;
+			padding: 10px 0;
+		}
+		.quickIcons > div {
+			display: inline-block;
+			font-size: 12px;
+			width: 70px;
+			text-align: center;
+			min-height: 30px;
+			margin: 0 5px;
+			color: #555;
+			/* line-height: 60px; */
+			vertical-align: bottom;
+			overflow: hidden;
+			cursor: pointer;
+		}
+		.quickIcons > div img {
+			display: inline-block;
+			height: 20px;
+		}
+		.chExport {
+			position: absolute;
+			top: 205px;
+			right: 104px;
+			height: 200px;
+			z-index: 1;
+		}
+		.chExport img {
+			height: 100%;
+		}
+		.chDownload {
+			/* background-image: url(../images/download.png); */
+		}
+		.chEdit {
+			/* background-image: url(../images/edit_icon_black.png); */
+		}
+		
+		.vmSettingButtons .cancelButton {
+			background: transparent;
+			color: #437AB2;
+			text-decoration: underline;
+		}
+		.button {
+			width: 30%;
+			overflow: hidden;
+		}
+		.vmSettingButtons .button {
+			width: 49%;
+		}
+		.vmSettingButtons {
+			/* width: 70%; */
+			clear: both;
+			display: block;
+			float:right;
+			overflow: hidden;
+		}
+		.searchAddUser + .addButton {
+			text-align: center;
+			background-color: #437AB2;  
+			color: #FFF;
+			padding-top: 4px;
+		}
+		/* .myNumbersSettings .searchAddUser {
+			width: 38%;
+			margin-right: 2%;
+		} */
+
+		.settingsDiv {
+			display: inline-block;
+			width: 70%;
+			margin-top: 10px;
+			vertical-align: top;
+		}
+		.settingsText.settingsInfoText {
+			display: inline-block;
+			width: 25%;
+			height: 100%;
+			vertical-align: top;
+			margin-top: 20px;
+			margin-right: 15px;
+		}
+		
+		.addNumsList .vmSettingButtons .button {
+			margin-top: 0px;
+		}
+	}
+
+	/* TABLET */
+	@media screen and (min-width: 481px) and (max-width: 960px) {	
+		.card {
+			width: 95%;
+			min-width: 768px;
+			margin: 20px auto;
+		}
+	}
+
+	/* MOBILE */
+	@media screen and (max-width: 480px) {
+		.desktop { /* USING THIS FOR EFFECTIVE TRANSITION */
+			display: none !important;
+		}
+		
+		article {
+			margin: 0;
+			max-width: 480px;
+		}
+		
+		header {
+			background-color: #00192A;
+		}
+		nav {
+			color: #FFF;
+			font-size: 20px;
+			width: 100%;
+			z-index: 10;
+		}
+		#navigationBar {
+			width: 100%;
+			height: 45px;
+			color: #FFF;
+			overflow: hidden;
+			background: -webkit-linear-gradient(#245590, #437AB2); 
+			background: -o-linear-gradient(#245590, #437AB2); 
+			background: -moz-linear-gradient(#245590, #437AB2); 
+			background: linear-gradient(#245590, #437AB2); 
+		}
+		
+		#businessType {
+			/* margin: 5px 0; */
+			height: 25px;
+			line-height: 25px;
+			color: #FFF;
+			background: #04214A;
+		}
+		#menuButton {
+			display: inline-block;
+			text-align: left;
+			float: left;
+			/* width: 36px; */
+			cursor: pointer;
+			margin: 10px 0;
+			border-right: 1px solid #FFF;
+			/* background:linear-gradient(to bottom, #fff 0%, #fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%, #fff 100%); */
+		}
+		#menuIcon {
+			margin-right: 10px;
+		}
+		
+		#logoMain {
+			display: inline-block;
+			width: 80%;
+			margin: 10px auto;
+			/* margin-right: 3%; */
+			text-align: center;
+		}
+		
+		#profileButton {
+			display: inline-block;
+			float: right;
+			text-align: right;
+			margin: 10px 0;
+			cursor: pointer;
+		}
+
+		.userInfoBox {
+			min-width: 320px;
+			margin-top: 10px;
+			height: 50px;
+			padding: 0 2%;
+		}
+		.userInfoBox .userInfoLine {
+			font-size: 20px;
+		}
+		.userInfoBox .userInfoLine span {
+			line-height: 50px;
+			margin-left: 0;
+		}
+		.userInfoBox .userInfoShortcuts > div {
+			margin: 0;
+		}
+		.userInfoBox .userInfoShortcuts > div:not(:first-child) {
+			padding-left: 10px;
+		}
+		.userInfoBox .userInfoShortcuts img {
+			height: 25px; 
+		}
+		
+		.card {
+			width: 100%;
+			margin: 10px auto;
+		}
+		
+		.tab {
+			max-width: 240px;
+		}
+
+		.dayFilters {
+			border-bottom: 0 none;
+			box-shadow: 0px 2px 3px #888;
+		}
+		
+		.callHistoryLine .vmDuration, 
+		.voiceMailLine .vmDuration {
+			width: 10%;
+		}
+		
+		.changeDiv {
+			width: 100%;
+		}
+			
+		.addEditContact .contactInfo {
+			display: block;
+			padding: 0 2%;
+			width: 100%;
+		}
+		.addEditContact .vmSettingButtons {
+			position: relative;
+			margin: auto;
+			width: 90%;
+			bottom: 0px;
+			right: 0px;
+		}
+		.contactInfo .searchAddUser {
+			display: block;
+			width: 100%;
+		}
+		.speedDialSettings .settingsDiv {
+			width: 100%;
+		}
+		
+		.missedCallsList .callHistoryIcons .icon {
+			font-size: 12px;
+		}
+		
+		.ripple {
+			display: block; 
+			position: absolute;
+			background: #EEE;
+			/* background: hsl(180, 40%, 80%); */
+			border-radius: 100%;
+			transform: scale(0);
+			-webkit-transform: scale(0);
+			
+			/* disable transitions */
+			-webkit-transition: all 0s ease-in-out;
+			   -o-transition: all 0s ease-in-out;
+				  transition: all 0s ease-in-out;
+		}
+		/*animation effect*/
+		.animate {
+			-webkit-animation: ripple 0.85s ease-in;
+			animation: ripple 0.85s ease-in;
+		}	
+		@-webkit-keyframes ripple {
+			/*scale the element to 250% to safely cover the entire link and fade it out*/
+			100% {opacity: 0; -webkit-transform: scale(3.0);}
+		}
+		@keyframes ripple {
+			/*scale the element to 250% to safely cover the entire link and fade it out*/
+			100% {opacity: 0; transform: scale(3.0);}
+		}
+	}

@@ -1,0 +1,2166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=360"/> -->
+    <title>ACS</title>
+
+    <link href="css/style_mmu.css" rel="stylesheet" type="text/css" />
+    <link href="css/style_acs.css" rel="stylesheet" type="text/css" />
+
+    <!-- LOADING OPEN SANS VIA GOOGLE FONTS TO MAINTAIN CONSISTENCY OF FONT CROSS BROWSER -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/velocity.min.js"></script>
+    <script type="text/javascript" src="js/velocity.ui.min.js"></script>
+    <!-- <script type="text/javascript" src="js/js.js"></script> -->
+</head>
+
+<body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
+	<header>
+		<div class="navTop desktop">
+			<div class="left">
+				<span><strong>Residential</strong></span>
+				<img src="images/line.png">
+				<span>Cox Business</span>
+			</div>
+			<div class="right">
+				<span>Contact Us</span>
+				<img src="images/line.png">
+				<span><img class="locationImage" src="images/location.png">Atlanta, GA</span>
+			</div>
+		</div>
+		<nav>
+			<div class="navMain desktop">
+				<div class="left">
+					<span class="coxLogo"><img src="images/cox.png"></span>
+					<div id="shop_mega_menu" class="mega_menu_item">Shop</div>
+					<div id="myConnection_mega_menu" class="mega_menu_item">My Connection</div>
+					<div id="support_mega_menu" class="mega_menu_item">Support</div>
+				</div>
+				<div class="right">
+					<img src="images/search.png">
+					<img src="images/cart.png">
+					<div id="myAccount_mega_menu" class="mega_menu_item">
+						<img class="profile_img_mmu" src="images/profile.png">
+						<div class="signIn">
+							<span class="signInLine">Hi, Jane!</span>
+							<span class="signInLine">My Account<img class="arrow_img_mmu" src="images/arrow_down_white_mmu.png"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="navigationBar" class="mobile">
+				<div class="marginDiv2">
+					<div id="menuButton">
+						<img src="images/menuIcon.png" id="menuIcon"></img>
+					</div>
+					<div id="logoMain">
+						<img src="images/coxLogoWhite.png"></img>
+					</div>
+					<div id="profileButton">
+						<img src="images/profileIcon.png" id="profileIcon"></img>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="nav_menu_mmu desktop">
+			<div class="shop_mega_menu hidden">
+				<div class="mega_menu_list">
+					<div><span class="semi_bold">Products and Services</span></div>
+					<div>TV & Contour</div>
+					<div>Internet</div>
+					<div>Digital Telephone</div>
+					<div>Home Security</div>
+					<div>Cox Tech Solutions</div>
+				</div>
+				<div class="mega_menu_list">
+					<div><span class="semi_bold">Shop Deals</span></div>
+					<div>See Special Offers</div>
+					<div>Upgrade Service or Equipment</div>
+					<div>Add TV Channels</div>
+					<div>Check Order Status</div>
+					<div>Move My Service</div>
+				</div>
+				<div class="mega_menu_list">
+					<div><span class="semi_bold">Community Solutions</span></div>
+					<div>MDU Offers</div>
+					<div>For Property Owners</div>
+					<div>For Residents</div>
+				</div>
+				<div class="mega_menu_list">
+					<div><span class="semi_bold">Popular Options</span></div>
+					<div>Sports & TV Packages</div>
+					<div>HBO, STARZ, Showtime & Cinemax</div>
+					<div>WiFi Hotspots</div>
+					<div>Channel Lineups</div>
+				</div>
+			</div>
+			<div class="myConnection_mega_menu hidden">
+				<div class="mega_menu_list">
+					<div><span class="semi_bold">My Connection Home</span></div>
+					<div>Today's News</div>
+					<div>Top Stories</div>
+					<div>Local News</div>
+					<div>Weather</div>
+					<div>Sports</div>
+					<div>Entertainment</div>
+				</div>
+				<div class="mega_menu_list">
+					<div><span class="semi_bold">My Programming</span></div>
+					<div>View Channels and Programming</div>
+					<div>Watch TV Online</div>
+					<div>Set My DVR</div>
+					<div>On DEMAND</div>
+					<div>Pay-Per-View Events</div>
+				</div>
+				<div class="mega_menu_list">
+					<div><span class="semi_bold">My Apps</span></div>
+					<div>ESPN3 on WatchESPN</div>
+					<div>Mobile Connect App</div>
+					<div>Cloud Backup</div>
+				</div>
+			</div>
+			<div class="support_mega_menu hidden">
+				<div class="mega_menu_list">
+					<div><span class="semi_bold">Help Articles</span></div>
+					<div>TV</div>
+					<div>Internet</div>
+					<div>Phone</div>
+					<div>Home Security</div>
+					<div>Billing & Account</div>
+				</div>
+				<div class="mega_menu_list">
+					<div><span class="semi_bold">Step-by-Step Solutions</span></div>
+					<div>TV Picture Problems</div>
+					<div>Email Settings</div>
+					<div>Call Forwarding</div>
+					<div>Program Your Remote</div>
+				</div>
+				<div class="mega_menu_list">
+					<div><span class="semi_bold">Popular Resources</span></div>
+					<div>Support Forums</div>
+					<div>Premium Support</div>
+					<div>Tutorials</div>
+					<div>Tips & Tricks</div>
+				</div>
+				<div class="mega_menu_list">
+					<div><span class="semi_bold">Contact Us</span></div>
+					<div>Technical Support</div>
+					<div>Sales Support</div>
+					<div>Live Chat</div>
+					<div>Premium Support</div>
+				</div>
+			</div>
+
+			<div class="myAccount_mega_menu hidden">
+				<div class="mega_menu_list">
+					<div><span class="semi_bold">My Account Home</span></div>
+					<div>Explore My Services</div>
+					<div>Move or Transfer Services</div>
+					<div>Add or Upgrade</div>
+					<div>Manage Appointments</div>
+				</div>
+				<div class="mega_menu_list">
+					<div><span class="semi_bold">My Bill</span></div>
+					<div>View Bill</div>
+					<div>Pay Bill</div>
+					<div>View Recent Activity</div>
+					<div>Enroll in Paperless Billing</div>
+					<div>Automatic Payments</div>
+				</div>
+				<div class="mega_menu_list">
+					<div><span class="semi_bold">My Tools</span></div>
+					<div>Webmail Inbox</div>
+					<div>TV tools</div>
+					<div>Internet Tools</div>
+					<div>Phone Tools</div>
+					<div>Home Security Portal</div>
+				</div>
+				<div class="mega_menu_list border_left">
+					<div><span class="semi_bold">My Shortcuts</span></div>
+					<div><img class="shortcut_img_mmu" src="images/paybill_mmu.png">Pay Bill</div>
+					<div><img class="shortcut_img_mmu" src="images/viewwebmail_mmu.png">View WebMail</div>
+					<div><img class="shortcut_img_mmu" src="images/managemyservices_mmu.png">Manage My Service</div>
+					<div><img class="shortcut_img_mmu" src="images/viewmytools_mmu.png">View My Tools</div>
+					<div class="border_top blueText">Sign Out</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+  <article>
+    <div class="margin2">
+      <div class="info">
+        <div class="bold blue_text">
+          <img src="images/ReturnArrow.svg" class=""/> Return to My Account
+        </div>
+        <div class="right desktop">
+          <span class="semi_bold">Account: </span> 1234567890123 | 123 Anystreet
+        </div>
+      </div>
+    </div>
+
+    <div id="serviceOutageAlert" class="outageAlert card">
+      <div class="head">
+        <img id="serviceErrorImg" src="images/Alert_White.svg"> Alert!
+      </div>
+			<div class="">
+				<div class="semi_bold red_text">
+					Temporary Service Outage
+				</div>
+				<div class="">
+					<strong>We're sorry!</strong> We've detected a temporary service outage in your area. We are currently working to fix the problem.
+				</div>
+				<div class="blue_text inline_block">
+          Find a WiFi hotspot
+				</div>
+				<div class="blue_text inline_block">
+          Learn more about service outages
+				</div>
+			</div>
+		</div>
+
+    <div class="margin2">
+      <div class="header page_header">
+        My WiFi
+      </div>
+
+      <div class="acs_nav">
+        <div id="internet_nav" class="nav_item ">
+          <div class="status">
+            <div>The Internet is</div> <div class="green_text status_text">Connected</div>
+          </div>
+          <div class="nav_icon">
+            <img src="images/InternetGlobe.svg" class="icon"/>
+            <img src="images/Check_Green.svg" class="status_check"/>
+          </div>
+          <div class="name">
+            <div class="desktop">Internet Info</div>
+            <div class="mobile"><span class="change_text">View</span> Info</div>
+          </div>
+        </div>
+        <div class="card internet_info mobile">
+          <div>
+            <div class="">
+              <div class="internet_details">
+                <div>
+                  2.4GHz Network Name:
+                </div>
+                <div class="semi_bold">
+                  COXNAH12N4Q
+                </div>
+              </div>
+              <div class="internet_details">
+                <div>
+                  Password:
+                </div>
+                <div class="show_this semi_bold hidden">1234567890123</div>
+                <div class="show_password semi_bold dark_blue_text">
+                  Show Password
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="internet_details">
+                <div>
+                  5GHz Network Name:
+                </div>
+                <div class="semi_bold">
+                  COXNAH13N5D
+                </div>
+              </div>
+              <div class="internet_details">
+                <div>
+                  Password:
+                </div>
+                <div class="show_this semi_bold hidden">1234567890123</div>
+                <div class="show_password semi_bold dark_blue_text">
+                  Show Password
+                </div>
+              </div>
+            </div>
+
+            <div class="guest_network1 hidden">
+              <div class="internet_details">
+                <div>
+                  Guest 2.4GHz Network:
+                </div>
+                <div class="semi_bold">
+                  COXNAH12N4Q
+                </div>
+              </div>
+              <div class="internet_details">
+                <div>
+                  Password:
+                </div>
+                <div class="show_this semi_bold hidden">1234567890123</div>
+                <div class="show_password semi_bold dark_blue_text">
+                  Show Password
+                </div>
+              </div>
+            </div>
+            <div class="guest_network2 hidden">
+              <div class="internet_details">
+                <div>
+                  Guest 5GHz Network..:
+                </div>
+                <div class="semi_bold">
+                  COXNAH13N5D
+                </div>
+              </div>
+              <div class="internet_details">
+                <div>
+                  Password:
+                </div>
+                <div class="show_this semi_bold hidden">1234567890123</div>
+                <div class="show_password semi_bold dark_blue_text">
+                  Show Password
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg id="internet_modem_line" class="connectivity_line">
+          <line x1="0" y1="0" x2="0" y2="0" stroke-width="100%" stroke="#008DCD"></line>
+        </svg>
+        <div id="modem_nav" class="nav_item">
+          <div class="status">
+            <div>Your Wifi Modem is</div> <div class="green_text status_text">Connected</div>
+          </div>
+          <div class="nav_icon">
+            <img src="images/Modem.svg" class="icon"/>
+            <img src="images/Check_Green.svg" class="status_check"/>
+          </div>
+          <div class="name">
+            <div class="desktop">Network Settings</div>
+            <div class="mobile"><span class="change_text">View</span> Network Settings</div>
+          </div>
+        </div>
+        <div class="card modem_info mobile">
+          <div>
+            <div class="half semi_bold">
+              Parental Controls
+              <div class="hidden_text toggleParCtrl blue_text">Edit Parental Controls</div>
+            </div>
+            <div class="switch right">
+              <input id="toggleParCtrl" class="toggle toggle-round" type="checkbox">
+              <label for="toggleParCtrl" data-on="On" data-off="Off"></label>
+            </div>
+            <!-- <div class="half semi_bold">
+              Firewall
+              <div class="hidden_text toggleFirewall blue_text">Edit Firewall</div>
+            </div>
+            <div class="switch right">
+              <input id="toggleFirewall" class="toggle toggle-round" type="checkbox">
+              <label for="toggleFirewall" data-on="On" data-off="Off"></label>
+            </div> -->
+            <div class="half semi_bold">
+              Guest Network
+              <div class="hidden_text toggleGuestNet blue_text">Edit Guest Network</div>
+            </div>
+            <div class="switch right">
+              <input id="toggleGuestNet" class="toggle toggle-round" type="checkbox">
+              <label for="toggleGuestNet" data-on="On" data-off="Off"></label>
+            </div>
+            <div class="more_settings blue_text">More Settings</div>
+          </div>
+        </div>
+        <svg id="modem_devices_line" class="connectivity_line">
+          <line x1="0" y1="0" x2="0" y2="0" stroke-width="100%" stroke="#008DCD"></line>
+        </svg>
+        <div id="devices_nav" class="nav_item ">
+          <div class="status">
+            <div><span class="icon_text">?</span> Devices are
+            <span class="green_text status_text">Connected</span></div>
+            <div class=""><span class="status_text">1 has a </span>
+            <span class="red_text status_text">Weak Signal</span></div>
+          </div>
+          <div class="nav_icon">
+            <!-- <img src="images/Modem.svg" class="icon"/> -->
+            <div class="icon_text">?</div>
+            <img src="images/X_Red.svg" class="status_check"/>
+          </div>
+          <div class="name">
+            <div class="desktop">Device List</div>
+            <div class="mobile"><span class="change_text">Show</span> Devices</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav_tab desktop">
+      <div class="card left internet_nav">
+      </div>
+      <div class="card modem_nav">
+      </div>
+      <div class="card right devices_nav selected">
+      </div>
+    </div>
+
+    <div class="acs_menu_item devices_menu">
+      <div class="card status_bar">
+        <div class="timestamp mobile">
+          As of 3:04pm 02/03/16
+        </div>
+        <div class="">
+          <div class="timestamp left desktop">
+            As of 3:04pm 02/03/16
+          </div>
+          <div class="filter blue_text">
+            <span class="filter_item selected">
+              All
+            </span>
+            <span class="filter_item">
+              2.4GHz
+            </span>
+            <span class="filter_item">
+              5GHz
+            </span>
+          </div>
+          <!-- <div class="filter blue_text semi_bold right">
+            <span class="desktop">Filter</span>
+            <img src="images/Filter.svg" class="mobile"/>
+          </div> -->
+        </div>
+      </div>
+      <div class="card has_error_state">
+        <div class="tool_tip_alert hide">
+          <div class=""><img class="alert_icon" src="images/Alert_White.svg"/> <span class="bigger">Experiencing Issues?</span> Use our Step By Step Guide to fix the problem.
+          <div class="inline_block">
+            <div class="button">Step By Step Guide</div>
+          </div>
+        </div>
+          <!-- <img class="arrow" src="images/Arrow.svg"/> -->
+        </div>
+      </div>
+      <div class="card device active has_error_state">
+        <div class="error_state hide">
+        </div>
+        <div class="device_info">
+          <div class="device_icon">
+            <img src="images/Active_Tablet.svg"/>
+          </div>
+          <div class="name">
+            <div class="editable">
+              iPad Air 3 - 60:f8:1d:b3:b0:54
+            </div>
+            <div class="blue_text device_settings">
+              <!-- <span class="mobile"><img src="images/Gear.svg"/></span> --><span class="desktop">Device Settings</span>
+            </div>
+          </div>
+        </div>
+        <div class="device_stats">
+          <!-- <div class="stat desktop">
+            <div class="indicator bandwidth">
+              <svg class="indicator ">
+                <circle class="inner_circle" r="30" cx="50%" cy="50%" fill="transparent"></circle>
+                <circle r="30" cx="50%" cy="50%" fill="transparent" stroke-dasharray="190" stroke-dashoffset="190" transform="rotate(90,35,35)"></circle>
+              </svg>
+              <img src="images/Bandwidth_Grey.svg"/>
+            </div>
+            <div class="indicator_text">Current Data <br/> Being Used</div>
+          </div> -->
+          <div class="stat">
+            <div class="indicator signal">
+              <svg class="indicator ">
+                <circle class="inner_circle" r="30" cx="50%" cy="50%" fill="transparent"></circle>
+                <circle r="30" cx="50%" cy="50%" fill="transparent" stroke-dasharray="190" stroke-dashoffset="190" transform="rotate(90,35,35)"></circle>
+                <path d="m35,70 l0,-10" stroke-width="4" stroke="#FFF"></path>
+                <path d="m35,70 l0,-10" stroke-width="3" stroke="#FFF" transform="rotate(120,35,35)"></path>
+                <path d="m35,70 l0,-10" stroke-width="3" stroke="#FFF" transform="rotate(240,35,35)"></path>
+              </svg>
+              <img src="images/Wifi_Grey.svg"/>
+            </div>
+            <div class="indicator_text">Wifi Signal</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="bold blue_text device_return mobile">
+          <img src="images/ReturnArrow.svg" class=""/> Return to Device List
+        </div>
+        <div class="buttons align_right desktop">
+          <div class="button saveButton disabled">Save</div>
+
+          <div class="button cancelButton">Cancel</div>
+        </div>
+        <div class="card no_margin mobile">
+          <div class="device_info">
+            <img src="images/Active_Tablet.svg"/>
+            <div class="name">
+              <input type="text" class="semi_bold" value="iPad Air 3"/>
+            </div>
+          </div>
+        </div>
+        <div class="settings_item parental_settings">
+          <div class="header blue_text">
+            <img src="images/Minus_White.svg"/>
+            Device Parental Controls
+          </div>
+          <div class="card">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">Restrict Access by Time of Day</span> <img class="helpQ" src="images/help.png"/>
+                <span class="hidden">
+        					<div class="radio_menu">
+        						<input type="radio" name="radio_prntl_ctrl_D11" class="radio_device_option">
+        							<label class="radio_label">On</label>
+        						<input type="radio" name="radio_prntl_ctrl_D11" class="radio_device_option" checked>
+        							<label class="radio_label">Off</label>
+        					</div>
+                </span>
+                <div class="switch right">
+                  <input id="togglePrntlCtrl_D11" class="toggle toggle-round" type="checkbox">
+                  <label for="togglePrntlCtrl_D11" data-on="On" data-off="Off"></label>
+                </div>
+              </div>
+              <div class="detailed_settings hide">
+                <div>
+                  <div class="semi_bold">
+                    <span>Step 1: Set time of day this device cannot access the network.</span>
+                  </div>
+                  <div class="changeDiv">
+                    <span>Start Time</span> <span><input class="input_time start_hr" type="text" value="6" maxlength="2"/></span> : <span><input class="input_time start_min" type="text" value="00" maxlength="2"/></span>
+                    <select class="start_AM"><option>AM</option><option checked>PM</option></select>
+                  </div>
+                  <div class="changeDiv">
+                    <span>End Time</span> <span><input class="input_time end_hr" type="text" value="8" maxlength="2"/></span> : <span><input class="input_time end_min" type="text" value="00" maxlength="2"/></span>
+                    <select class="end_AM"><option>AM</option><option checked>PM</option></select>
+                  </div>
+
+                  <div class="semi_bold">
+                    <span>Step 2 (optional): Set day of the week the above time restriction is active.</span>
+                  </div>
+                  <div class="">
+                    <input type="checkbox"/> <span>S</span>
+                    <input type="checkbox"/> <span>M</span>
+                    <input type="checkbox"/> <span>T</span>
+                    <input type="checkbox"/> <span>W</span>
+                    <input type="checkbox"/> <span>T</span>
+                    <input type="checkbox"/> <span>F</span>
+                    <input type="checkbox"/> <span>S</span>
+                  </div>
+
+                  <div class="semi_bold">
+                    Summary
+                  </div>
+                  <div class="">
+                    Devices will not be able to access the network between <span class="start_time">6:00pm</span>and <span class="end_time">8:00pm</span><span class="summary_details"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">Restrict Access to Certain Sites</span> <img class="helpQ" src="images/help.png"/>
+                <span class="hidden">
+        					<div class="radio_menu">
+        						<input type="radio" name="radio_site_accs_D12" class="radio_device_option">
+        							<label class="radio_label">On</label>
+        						<input type="radio" name="radio_site_accs_D12" class="radio_device_option" checked>
+        							<label class="radio_label">Off</label>
+        					</div>
+                </span>
+                <div class="switch right">
+                  <input id="toggleSiteAccs_D12" class="toggle toggle-round" type="checkbox">
+                  <label for="toggleSiteAccs_D12" data-on="On" data-off="Off"></label>
+                </div>
+              </div>
+              <div class="detailed_settings hide">
+                <div class="form">
+                  <div class="">
+                    <span class="semi_bold">Step 1: Input site you would like to restrict access to for this device.</span>
+                    <span class="delete_icon disabled right">Delete <img src="images/Delete.svg"/></span>
+                  </div>
+                  <div class="changeDiv">
+                    <input type="text" value="www.netflix.com"/>
+                  </div>
+                  <div>
+                    <span class="semi_bold">Step 2: Would you like to always block this site or based on a schedule?</span>
+                  </div>
+                  <div class="changeDiv">
+                    <input type="radio" name="radio_resct_accs1_D13" class="radio_device_option" checked>
+        							<label class="radio_label" checked>Always</label>
+        						<input type="radio" name="radio_resct_accs1_D13" class="radio_device_option">
+        							<label class="radio_label">Per Schedule</label>
+                  </div>
+                  <div class="per_schedule">
+                    <div>
+                      <div class="semi_bold">
+                        <span class="">Step 3: Set time of day this device cannot access this site.</span>
+                      </div>
+                      <div class="changeDiv">
+                        <span>Start Time</span> <span><input class="input_time start_hr" type="text" value="6" maxlength="2"/></span> : <span><input class="input_time start_min" type="text" value="00" maxlength="2"/></span>
+                        <select class="start_AM"><option>AM</option><option checked>PM</option></select>
+                      </div>
+                      <div class="changeDiv">
+                        <span>End Time</span> <span><input class="input_time end_hr" type="text" value="8" maxlength="2"/></span> : <span><input class="input_time end_min" type="text" value="00" maxlength="2"/></span>
+                        <select class="end_AM"><option>AM</option><option checked>PM</option></select>
+                      </div>
+
+                      <div class="semi_bold">
+                        <span>Step 4 (optional): Set day of the week the above time restriction is active.</span>
+                      </div>
+                      <div class="">
+                        <input type="checkbox"/> <span>S</span>
+                        <input type="checkbox"/> <span>M</span>
+                        <input type="checkbox"/> <span>T</span>
+                        <input type="checkbox"/> <span>W</span>
+                        <input type="checkbox"/> <span>T</span>
+                        <input type="checkbox"/> <span>F</span>
+                        <input type="checkbox"/> <span>S</span>
+                      </div>
+
+                      <div class="semi_bold">
+                        Summary
+                      </div>
+                      <div class="">
+                        Devices will not be able to access the network between <span class="start_time">6:00pm</span>and <span class="end_time">8:00PM</span><span class="summary_details"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               <div class="button add right restrictAccessButton">+ Add New</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="settings_item">
+          <div class="header blue_text">
+            <img src="images/Plus_Blue.svg"/>
+            Prioritize Device
+          </div>
+          <div class="card hide">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">Prioritize Device</span> <img class="helpQ" src="images/help.png"/>
+                <div class="switch right">
+                  <input id="togglePrtzDev_1" class="toggle toggle-round prioritize_device" type="checkbox">
+                  <label for="togglePrtzDev_1" data-on="On" data-off="Off"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="settings_item">
+          <div class="card first keep_open">
+            <div class="settings_options">
+              <div class="semi_bold">Block Device</div>
+              <div class="block_dev_text">Block this device from accessing your internet. You will be able to unblock it. It will still remain on your Saved Device List until you remove it.</div>
+              <div class="inline_block">
+                <div class="button blue blockButton">Block Device</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons align_right desktop">
+          <div class="button saveButton disabled">Save</div>
+
+          <div class="button cancelButton">Cancel</div>
+        </div>
+
+        <div class="buttons align_right mobile float_buttons hide">
+          <div class="button saveButton left disabled">Save</div>
+          <div class="button cancelButton">Cancel</div>
+        </div>
+      </div>
+
+      <div class="card device active">
+        <div class="device_info">
+          <div class="device_icon">
+            <img src="images/Active_Smartphone.svg"/>
+          </div>
+          <div class="name">
+            <div class="editable">
+              iPhone 4s - 00:0a:95:9d:68:16
+            </div>
+            <div class="blue_text device_settings">
+              <!-- <span class="mobile"><img src="images/Gear.svg"/></span> --><span class="desktop">Device Settings</span>
+            </div>
+          </div>
+        </div>
+        <div class="device_stats">
+          <div class="stat">
+            <div class="indicator signal">
+              <svg class="indicator ">
+                <circle class="inner_circle" r="30" cx="50%" cy="50%" fill="transparent"></circle>
+                <circle r="30" cx="50%" cy="50%" fill="transparent" stroke-dasharray="190" stroke-dashoffset="190" transform="rotate(90,35,35)"></circle>
+                <path d="m35,70 l0,-10" stroke-width="4" stroke="#FFF"></path>
+                <path d="m35,70 l0,-10" stroke-width="3" stroke="#FFF" transform="rotate(120,35,35)"></path>
+                <path d="m35,70 l0,-10" stroke-width="3" stroke="#FFF" transform="rotate(240,35,35)"></path>
+              </svg>
+              <img src="images/Wifi_Grey.svg"/>
+            </div>
+            <div class="indicator_text">Wifi Signal</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="bold blue_text device_return mobile">
+          <img src="images/ReturnArrow.svg" class=""/> Return to Device List
+        </div>
+        <div class="buttons align_right desktop">
+          <div class="button saveButton disabled">Save</div>
+
+          <div class="button cancelButton">Cancel</div>
+        </div>
+        <div class="card no_margin mobile">
+          <div class="device_info">
+            <img src="images/Active_Tablet.svg"/>
+            <div class="name">
+              <input type="text" class="semi_bold" value="iPhone 4s"/>
+            </div>
+          </div>
+        </div>
+        <div class="settings_item parental_settings">
+          <div class="header blue_text">
+            <img src="images/Minus_White.svg"/>
+            Device Parental Controls
+          </div>
+          <div class="card">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">Restrict Access by Time of Day</span> <img class="helpQ" src="images/help.png"/>
+                <div class="switch right">
+                  <input id="togglePrntlCtrl_D21" class="toggle toggle-round" type="checkbox">
+                  <label for="togglePrntlCtrl_D21" data-on="On" data-off="Off"></label>
+                </div>
+              </div>
+              <div class="detailed_settings hide">
+                <div>
+                  <div class="semi_bold">
+                    <span>Step 1: Set time of day this device cannot access the network.</span>
+                  </div>
+                  <div class="changeDiv">
+                    <span>Start Time</span> <span><input class="input_time start_hr" type="text" value="6" maxlength="2"/></span> : <span><input class="input_time start_min" type="text" value="00" maxlength="2"/></span>
+                    <select class="start_AM"><option>AM</option><option checked>PM</option></select>
+                  </div>
+                  <div class="changeDiv">
+                    <span>End Time</span> <span><input class="input_time end_hr" type="text" value="8" maxlength="2"/></span> : <span><input class="input_time end_min" type="text" value="00" maxlength="2"/></span>
+                    <select class="end_AM"><option>AM</option><option checked>PM</option></select>
+                  </div>
+
+                  <div class="semi_bold">
+                    <span>Step 2 (optional): Set day of the week the above time restriction is active.</span>
+                  </div>
+                  <div class="">
+                    <input type="checkbox"/> <span>S</span>
+                    <input type="checkbox"/> <span>M</span>
+                    <input type="checkbox"/> <span>T</span>
+                    <input type="checkbox"/> <span>W</span>
+                    <input type="checkbox"/> <span>T</span>
+                    <input type="checkbox"/> <span>F</span>
+                    <input type="checkbox"/> <span>S</span>
+                  </div>
+
+                  <div class="semi_bold">
+                    Summary
+                  </div>
+                  <div class="">
+                    Devices will not be able to access the network between <span class="start_time">6:00pm</span>and <span class="end_time">8:00pm</span><span class="summary_details"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">Restrict Access to Certain Sites</span> <img class="helpQ" src="images/help.png"/>
+                <div class="switch right">
+                  <input id="toggleSiteAccs_D22" class="toggle toggle-round" type="checkbox">
+                  <label for="toggleSiteAccs_D22" data-on="On" data-off="Off"></label>
+                </div>
+              </div>
+              <div class="detailed_settings hide">
+                <div class="form">
+                  <div class="">
+                    <span class="semi_bold">Step 1: Input site you would like to restrict access to for this device.</span>
+                    <span class="delete_icon disabled right">Delete <img src="images/Delete.svg"/></span>
+                  </div>
+                  <div class="changeDiv">
+                    <input type="text" value="www.netflix.com"/>
+                  </div>
+                  <div>
+                    <span class="semi_bold">Step 2: Would you like to always block this site or based on a schedule?</span>
+                  </div>
+                  <div class="changeDiv">
+                    <input type="radio" name="radio_resct_accs1_D23" class="radio_device_option" checked>
+        							<label class="radio_label" checked>Always</label>
+        						<input type="radio" name="radio_resct_accs1_D23" class="radio_device_option">
+        							<label class="radio_label">Per Schedule</label>
+                  </div>
+                  <div class="per_schedule">
+                    <div>
+                      <div class="semi_bold">
+                        <span class="">Step 3: Set time of day this device cannot access this site.</span>
+                      </div>
+                      <div class="changeDiv">
+                        <span>Start Time</span> <span><input class="input_time start_hr" type="text" value="6" maxlength="2"/></span> : <span><input class="input_time start_min" type="text" value="00" maxlength="2"/></span>
+                        <select class="start_AM"><option>AM</option><option checked>PM</option></select>
+                      </div>
+                      <div class="changeDiv">
+                        <span>End Time</span> <span><input class="input_time end_hr" type="text" value="8" maxlength="2"/></span> : <span><input class="input_time end_min" type="text" value="00" maxlength="2"/></span>
+                        <select class="end_AM"><option>AM</option><option checked>PM</option></select>
+                      </div>
+
+                      <div class="semi_bold">
+                        <span>Step 4 (optional): Set day of the week the above time restriction is active.</span>
+                      </div>
+                      <div class="">
+                        <input type="checkbox"/> <span>S</span>
+                        <input type="checkbox"/> <span>M</span>
+                        <input type="checkbox"/> <span>T</span>
+                        <input type="checkbox"/> <span>W</span>
+                        <input type="checkbox"/> <span>T</span>
+                        <input type="checkbox"/> <span>F</span>
+                        <input type="checkbox"/> <span>S</span>
+                      </div>
+
+                      <div class="semi_bold">
+                        Summary
+                      </div>
+                      <div class="">
+                        Devices will not be able to access the network between <span class="start_time">6:00pm</span>and <span class="end_time">8:00PM</span><span class="summary_details"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               <div class="button add right restrictAccessButton">+ Add New</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="settings_item">
+          <div class="header blue_text">
+            <img src="images/Plus_Blue.svg"/>
+            Prioritize Device
+          </div>
+          <div class="card hide">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">Prioritize Device</span> <img class="helpQ" src="images/help.png"/>
+                <div class="switch right">
+                  <input id="togglePrtzDev_2" class="toggle toggle-round prioritize_device" type="checkbox">
+                  <label for="togglePrtzDev_2" data-on="On" data-off="Off"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="settings_item">
+          <div class="card first keep_open">
+            <div class="settings_options">
+              <div class="semi_bold">Block Device</div>
+              <div class="block_dev_text">Block this device from accessing your internet. You will be able to unblock it. It will still remain on your Saved Device List until you remove it.</div>
+              <div class="inline_block">
+                <div class="button blue blockButton">Block Device</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons align_right desktop">
+          <div class="button saveButton disabled">Save</div>
+
+          <div class="button cancelButton">Cancel</div>
+        </div>
+
+        <div class="buttons align_right mobile float_buttons hide">
+          <div class="button saveButton left disabled">Save</div>
+          <div class="button cancelButton">Cancel</div>
+        </div>
+      </div>
+
+      <div class="card device active">
+        <div class="device_info">
+          <div class="device_icon">
+            <img src="images/Active_Laptop.svg"/>
+          </div>
+          <div class="name">
+            <div class="editable">
+              Macbook - 00:0d:95:9f:98:33
+            </div>
+            <div class="blue_text device_settings">
+              <!-- <span class="mobile"><img src="images/Gear.svg"/></span> --><span class="desktop">Device Settings</span>
+            </div>
+          </div>
+        </div>
+        <div class="device_stats">
+          <div class="stat">
+            <div class="indicator signal">
+              <svg class="indicator ">
+                <circle class="inner_circle" r="30" cx="50%" cy="50%" fill="transparent"></circle>
+                <circle r="30" cx="50%" cy="50%" fill="transparent" stroke-dasharray="190" stroke-dashoffset="190" transform="rotate(90,35,35)"></circle>
+                <path d="m35,70 l0,-10" stroke-width="4" stroke="#FFF"></path>
+                <path d="m35,70 l0,-10" stroke-width="3" stroke="#FFF" transform="rotate(120,35,35)"></path>
+                <path d="m35,70 l0,-10" stroke-width="3" stroke="#FFF" transform="rotate(240,35,35)"></path>
+              </svg>
+              <img src="images/Wifi_Grey.svg"/>
+            </div>
+            <div class="indicator_text">Wifi Signal</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="bold blue_text device_return mobile">
+          <img src="images/ReturnArrow.svg" class=""/> Return to Device List
+        </div>
+        <div class="buttons align_right desktop">
+          <div class="button saveButton disabled">Save</div>
+
+          <div class="button cancelButton">Cancel</div>
+        </div>
+        <div class="card no_margin mobile">
+          <div class="device_info">
+            <img src="images/Active_Tablet.svg"/>
+            <div class="name">
+              <input type="text" class="semi_bold" value="Macbook - 00:0d:95:9f:98:33"/>
+            </div>
+          </div>
+        </div>
+        <div class="settings_item parental_settings">
+          <div class="header blue_text">
+            <img src="images/Minus_White.svg"/>
+            Device Parental Controls
+          </div>
+          <div class="card">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">Restrict Access by Time of Day</span> <img class="helpQ" src="images/help.png"/>
+                <div class="switch right">
+                  <input id="togglePrntlCtrl_D31" class="toggle toggle-round" type="checkbox">
+                  <label for="togglePrntlCtrl_D31" data-on="On" data-off="Off"></label>
+                </div>
+              </div>
+              <div class="detailed_settings hide">
+                <div>
+                  <div class="semi_bold">
+                    <span>Step 1: Set time of day this device cannot access the network.</span>
+                  </div>
+                  <div class="changeDiv">
+                    <span>Start Time</span> <span><input class="input_time start_hr" type="text" value="6" maxlength="2"/></span> : <span><input class="input_time start_min" type="text" value="00" maxlength="2"/></span>
+                    <select class="start_AM"><option>AM</option><option checked>PM</option></select>
+                  </div>
+                  <div class="changeDiv">
+                    <span>End Time</span> <span><input class="input_time end_hr" type="text" value="8" maxlength="2"/></span> : <span><input class="input_time end_min" type="text" value="00" maxlength="2"/></span>
+                    <select class="end_AM"><option>AM</option><option checked>PM</option></select>
+                  </div>
+
+                  <div class="semi_bold">
+                    <span>Step 2 (optional): Set day of the week the above time restriction is active.</span>
+                  </div>
+                  <div class="">
+                    <input type="checkbox"/> <span>S</span>
+                    <input type="checkbox"/> <span>M</span>
+                    <input type="checkbox"/> <span>T</span>
+                    <input type="checkbox"/> <span>W</span>
+                    <input type="checkbox"/> <span>T</span>
+                    <input type="checkbox"/> <span>F</span>
+                    <input type="checkbox"/> <span>S</span>
+                  </div>
+
+                  <div class="semi_bold">
+                    Summary
+                  </div>
+                  <div class="">
+                    Devices will not be able to access the network between <span class="start_time">6:00pm</span>and <span class="end_time">8:00pm</span><span class="summary_details"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">Restrict Access to Certain Sites</span> <img class="helpQ" src="images/help.png"/>
+                <div class="switch right">
+                  <input id="toggleSiteAccs_D32" class="toggle toggle-round" type="checkbox">
+                  <label for="toggleSiteAccs_D32" data-on="On" data-off="Off"></label>
+                </div>
+              </div>
+              <div class="detailed_settings hide">
+                <div class="form">
+                  <div class="">
+                    <span class="semi_bold">Step 1: Input site you would like to restrict access to for this device.</span>
+                    <span class="delete_icon disabled right">Delete <img src="images/Delete.svg"/></span>
+                  </div>
+                  <div class="changeDiv">
+                    <input type="text" value="www.netflix.com"/>
+                  </div>
+                  <div>
+                    <span class="semi_bold">Step 2: Would you like to always block this site or based on a schedule?</span>
+                  </div>
+                  <div class="changeDiv">
+                    <input type="radio" name="radio_resct_accs1_D33" class="radio_device_option" checked>
+        							<label class="radio_label" checked>Always</label>
+        						<input type="radio" name="radio_resct_accs1_D33" class="radio_device_option">
+        							<label class="radio_label">Per Schedule</label>
+                  </div>
+                  <div class="per_schedule">
+                    <div>
+                      <div class="semi_bold">
+                        <span class="">Step 3: Set time of day this device cannot access this site.</span>
+                      </div>
+                      <div class="changeDiv">
+                        <span>Start Time</span> <span><input class="input_time start_hr" type="text" value="6" maxlength="2"/></span> : <span><input class="input_time start_min" type="text" value="00" maxlength="2"/></span>
+                        <select class="start_AM"><option>AM</option><option checked>PM</option></select>
+                      </div>
+                      <div class="changeDiv">
+                        <span>End Time</span> <span><input class="input_time end_hr" type="text" value="8" maxlength="2"/></span> : <span><input class="input_time end_min" type="text" value="00" maxlength="2"/></span>
+                        <select class="end_AM"><option>AM</option><option checked>PM</option></select>
+                      </div>
+
+                      <div class="semi_bold">
+                        <span>Step 4 (optional): Set day of the week the above time restriction is active.</span>
+                      </div>
+                      <div class="">
+                        <input type="checkbox"/> <span>S</span>
+                        <input type="checkbox"/> <span>M</span>
+                        <input type="checkbox"/> <span>T</span>
+                        <input type="checkbox"/> <span>W</span>
+                        <input type="checkbox"/> <span>T</span>
+                        <input type="checkbox"/> <span>F</span>
+                        <input type="checkbox"/> <span>S</span>
+                      </div>
+
+                      <div class="semi_bold">
+                        Summary
+                      </div>
+                      <div class="">
+                        Devices will not be able to access the network between <span class="start_time">6:00pm</span>and <span class="end_time">8:00PM</span><span class="summary_details"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               <div class="button add right restrictAccessButton">+ Add New</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="settings_item">
+          <div class="header blue_text">
+            <img src="images/Plus_Blue.svg"/>
+            Prioritize Device
+          </div>
+          <div class="card hide">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">Prioritize Device</span> <img class="helpQ" src="images/help.png"/>
+                <div class="switch right">
+                  <input id="togglePrtzDev_3" class="toggle toggle-round prioritize_device" type="checkbox">
+                  <label for="togglePrtzDev_3" data-on="On" data-off="Off"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="settings_item">
+          <div class="card first keep_open">
+            <div class="settings_options">
+              <div class="semi_bold">Block Device</div>
+              <div class="block_dev_text">Block this device from accessing your internet. You will be able to unblock it. It will still remain on your Saved Device List until you remove it.</div>
+              <div class="inline_block">
+                <div class="button blue blockButton">Block Device</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons align_right desktop">
+          <div class="button saveButton disabled">Save</div>
+
+          <div class="button cancelButton">Cancel</div>
+        </div>
+
+        <div class="buttons align_right mobile float_buttons hide">
+          <div class="button saveButton left disabled">Save</div>
+          <div class="button cancelButton">Cancel</div>
+        </div>
+      </div>
+
+      <div class="card device active">
+        <div class="device_info">
+          <div class="device_icon">
+            <img src="images/Active_StreamingDevice.svg"/>
+          </div>
+          <div class="name">
+            <div class="editable">
+              Roku - 00:3d:45:3f:63:21
+            </div>
+            <div class="blue_text device_settings">
+              <!-- <span class="mobile"><img src="images/Gear.svg"/></span> --><span class="desktop">Device Settings</span>
+            </div>
+          </div>
+        </div>
+        <div class="device_stats">
+          <div class="stat">
+            <div class="indicator signal">
+              <svg class="indicator ">
+                <circle class="inner_circle" r="30" cx="50%" cy="50%" fill="transparent"></circle>
+                <circle r="30" cx="50%" cy="50%" fill="transparent" stroke-dasharray="190" stroke-dashoffset="190" transform="rotate(90,35,35)"></circle>
+                <path d="m35,70 l0,-10" stroke-width="4" stroke="#FFF"></path>
+                <path d="m35,70 l0,-10" stroke-width="3" stroke="#FFF" transform="rotate(120,35,35)"></path>
+                <path d="m35,70 l0,-10" stroke-width="3" stroke="#FFF" transform="rotate(240,35,35)"></path>
+              </svg>
+              <img src="images/Wifi_Grey.svg"/>
+            </div>
+            <div class="indicator_text">Wifi Signal</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="bold blue_text device_return mobile">
+          <img src="images/ReturnArrow.svg" class=""/> Return to Device List
+        </div>
+        <div class="buttons align_right desktop">
+          <div class="button saveButton disabled">Save</div>
+
+          <div class="button cancelButton">Cancel</div>
+        </div>
+        <div class="card no_margin mobile">
+          <div class="device_info">
+            <img src="images/Active_Tablet.svg"/>
+            <div class="name">
+              <input type="text" class="semi_bold" value="Roku - 00:3d:45:3f:63:21"/>
+            </div>
+          </div>
+        </div>
+        <div class="settings_item parental_settings">
+          <div class="header blue_text">
+            <img src="images/Minus_White.svg"/>
+            Device Parental Controls
+          </div>
+          <div class="card">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">Restrict Access by Time of Day</span> <img class="helpQ" src="images/help.png"/>
+                <div class="switch right">
+                  <input id="togglePrntlCtrl_D41" class="toggle toggle-round" type="checkbox">
+                  <label for="togglePrntlCtrl_D41" data-on="On" data-off="Off"></label>
+                </div>
+              </div>
+              <div class="detailed_settings hide">
+                <div>
+                  <div class="semi_bold">
+                    <span>Step 1: Set time of day this device cannot access the network.</span>
+                  </div>
+                  <div class="changeDiv">
+                    <span>Start Time</span> <span><input class="input_time start_hr" type="text" value="6" maxlength="2"/></span> : <span><input class="input_time start_min" type="text" value="00" maxlength="2"/></span>
+                    <select class="start_AM"><option>AM</option><option checked>PM</option></select>
+                  </div>
+                  <div class="changeDiv">
+                    <span>End Time</span> <span><input class="input_time end_hr" type="text" value="8" maxlength="2"/></span> : <span><input class="input_time end_min" type="text" value="00" maxlength="2"/></span>
+                    <select class="end_AM"><option>AM</option><option checked>PM</option></select>
+                  </div>
+
+                  <div class="semi_bold">
+                    <span>Step 2 (optional): Set day of the week the above time restriction is active.</span>
+                  </div>
+                  <div class="">
+                    <input type="checkbox"/> <span>S</span>
+                    <input type="checkbox"/> <span>M</span>
+                    <input type="checkbox"/> <span>T</span>
+                    <input type="checkbox"/> <span>W</span>
+                    <input type="checkbox"/> <span>T</span>
+                    <input type="checkbox"/> <span>F</span>
+                    <input type="checkbox"/> <span>S</span>
+                  </div>
+
+                  <div class="semi_bold">
+                    Summary
+                  </div>
+                  <div class="">
+                    Devices will not be able to access the network between <span class="start_time">6:00pm</span>and <span class="end_time">8:00pm</span><span class="summary_details"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">Restrict Access to Certain Sites</span> <img class="helpQ" src="images/help.png"/>
+                <div class="switch right">
+                  <input id="toggleSiteAccs_D42" class="toggle toggle-round" type="checkbox">
+                  <label for="toggleSiteAccs_D42" data-on="On" data-off="Off"></label>
+                </div>
+              </div>
+              <div class="detailed_settings hide">
+                <div class="form">
+                  <div class="">
+                    <span class="semi_bold">Step 1: Input site you would like to restrict access to for this device.</span>
+                    <span class="delete_icon disabled right">Delete <img src="images/Delete.svg"/></span>
+                  </div>
+                  <div class="changeDiv">
+                    <input type="text" value="www.netflix.com"/>
+                  </div>
+                  <div>
+                    <span class="semi_bold">Step 2: Would you like to always block this site or based on a schedule?</span>
+                  </div>
+                  <div class="changeDiv">
+                    <input type="radio" name="radio_resct_accs1_D43" class="radio_device_option" checked>
+        							<label class="radio_label" checked>Always</label>
+        						<input type="radio" name="radio_resct_accs1_D43" class="radio_device_option">
+        							<label class="radio_label">Per Schedule</label>
+                  </div>
+                  <div class="per_schedule">
+                    <div>
+                      <div class="semi_bold">
+                        <span class="">Step 3: Set time of day this device cannot access this site.</span>
+                      </div>
+                      <div class="changeDiv">
+                        <span>Start Time</span> <span><input class="input_time start_hr" type="text" value="6" maxlength="2"/></span> : <span><input class="input_time start_min" type="text" value="00" maxlength="2"/></span>
+                        <select class="start_AM"><option>AM</option><option checked>PM</option></select>
+                      </div>
+                      <div class="changeDiv">
+                        <span>End Time</span> <span><input class="input_time end_hr" type="text" value="8" maxlength="2"/></span> : <span><input class="input_time end_min" type="text" value="00" maxlength="2"/></span>
+                        <select class="end_AM"><option>AM</option><option checked>PM</option></select>
+                      </div>
+
+                      <div class="semi_bold">
+                        <span>Step 4 (optional): Set day of the week the above time restriction is active.</span>
+                      </div>
+                      <div class="">
+                        <input type="checkbox"/> <span>S</span>
+                        <input type="checkbox"/> <span>M</span>
+                        <input type="checkbox"/> <span>T</span>
+                        <input type="checkbox"/> <span>W</span>
+                        <input type="checkbox"/> <span>T</span>
+                        <input type="checkbox"/> <span>F</span>
+                        <input type="checkbox"/> <span>S</span>
+                      </div>
+
+                      <div class="semi_bold">
+                        Summary
+                      </div>
+                      <div class="">
+                        Devices will not be able to access the network between <span class="start_time">6:00pm</span>and <span class="end_time">8:00PM</span><span class="summary_details"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               <div class="button add right restrictAccessButton">+ Add New</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="settings_item">
+          <div class="header blue_text">
+            <img src="images/Plus_Blue.svg"/>
+            Prioritize Device
+          </div>
+          <div class="card hide">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">Prioritize Device</span> <img class="helpQ" src="images/help.png"/>
+                <div class="switch right">
+                  <input id="togglePrtzDev_4" class="toggle toggle-round prioritize_device" type="checkbox">
+                  <label for="togglePrtzDev_4" data-on="On" data-off="Off"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="settings_item">
+          <div class="card first keep_open">
+            <div class="settings_options">
+              <div class="semi_bold">Block Device</div>
+              <div class="block_dev_text">Block this device from accessing your internet. You will be able to unblock it. It will still remain on your Saved Device List until you remove it.</div>
+              <div class="inline_block">
+                <div class="button blue blockButton">Block Device</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons align_right desktop">
+          <div class="button saveButton disabled">Save</div>
+
+          <div class="button cancelButton">Cancel</div>
+        </div>
+
+        <div class="buttons align_right mobile float_buttons hide">
+          <div class="button saveButton left disabled">Save</div>
+          <div class="button cancelButton">Cancel</div>
+        </div>
+      </div>
+      <div class="card device active">
+      </div>
+
+      <svg class="device_line mobile">
+        <line x1="0" y1="0" x2="0" y2="100%" stroke-width="100%"></line>
+      </svg>
+
+      <!-- INACTIVE DEVICES -->
+      <div class="card first semi_bold inactive">
+        3 Inactive Devices - devices that are not online now.
+      </div>
+      <div class="card device inactive">
+        <div class="device_info">
+          <div class="device_icon">
+            <img src="images/Inactive_Tablet.svg"/>
+          </div>
+          <div class="name">
+            <div>
+              Galaxy Tab - 00:2b:15:3s:63:28
+            </div>
+            <div class="blue_text device_settings">
+              <!-- <span class="mobile"><img src="images/Gear.svg"/></span> --><span class="desktop">Options</span>
+            </div>
+          </div>
+        </div>
+        <div class="device_stats">
+          <div class="stat">
+            <div class="indicator signal">
+              <svg class="indicator ">
+                <circle class="inner_circle" r="30" cx="50%" cy="50%" fill="transparent"></circle>
+                <circle r="30" cx="50%" cy="50%" fill="transparent" stroke-dasharray="190" stroke-dashoffset="190" transform="rotate(90,35,35)"></circle>
+                <path d="m35,70 l0,-10" stroke-width="4" stroke="#FFF"></path>
+                <path d="m35,70 l0,-10" stroke-width="3" stroke="#FFF" transform="rotate(120,35,35)"></path>
+                <path d="m35,70 l0,-10" stroke-width="3" stroke="#FFF" transform="rotate(240,35,35)"></path>
+              </svg>
+              <img src="images/X_Grey.svg"/>
+            </div>
+            <div class="indicator_text">Not Connected</div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="bold blue_text device_return mobile">
+          <img src="images/ReturnArrow.svg" class=""/> Return to Device List
+        </div>
+        <div class="card no_margin mobile">
+          <div class="device_info">
+            <img src="images/Inactive_Tablet.svg"/>
+            <div class="name semi_bold">
+              <!-- <input type="text" class="semi_bold" value="Galaxy Tab - 00:2b:15:3s:63:28"/> -->
+              Galaxy Tab - 00:2b:15:3s:63:28
+            </div>
+          </div>
+        </div>
+        <div class="settings_item">
+          <div class="card">
+            <div class="settings_options">
+              <div class="semi_bold">Block Device</div>
+              <div class="block_dev_text">Block this device from accessing your internet. You will be able to unblock it. It will still remain on your Saved Device List until you remove it.</div>
+              <div class="inline_block">
+                <div class="button blue blockButton">Block Device</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card no_margin mobile">
+          <div class="disabled">IP Address: 162.123.456.789</div>
+          <div class="disabled">MAC Address: 00:2b:15:3s:63:28</div>
+        </div>
+      </div>
+      <div class="card device inactive">
+        <div class="device_info">
+          <div class="device_icon">
+            <img src="images/Inactive_Laptop.svg"/>
+          </div>
+          <div class="name">
+            <div>
+              PC - cc:29:f5:35:92:63
+            </div>
+            <div class="blue_text device_settings">
+              <!-- <span class="mobile"><img src="images/Gear.svg"/></span> --><span class="desktop">Options</span>
+            </div>
+          </div>
+        </div>
+        <div class="device_stats">
+          <div class="stat">
+            <div class="indicator signal">
+              <svg class="indicator ">
+                <circle class="inner_circle" r="30" cx="50%" cy="50%" fill="transparent"></circle>
+                <circle r="30" cx="50%" cy="50%" fill="transparent" stroke-dasharray="190" stroke-dashoffset="190" transform="rotate(90,35,35)"></circle>
+                <path d="m35,70 l0,-10" stroke-width="4" stroke="#FFF"></path>
+                <path d="m35,70 l0,-10" stroke-width="3" stroke="#FFF" transform="rotate(120,35,35)"></path>
+                <path d="m35,70 l0,-10" stroke-width="3" stroke="#FFF" transform="rotate(240,35,35)"></path>
+              </svg>
+              <img src="images/X_Grey.svg"/>
+            </div>
+            <div class="indicator_text">Not Connected</div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="bold blue_text device_return mobile">
+          <img src="images/ReturnArrow.svg" class=""/> Return to Device List
+        </div>
+        <div class="card no_margin mobile">
+          <div class="device_info">
+            <img src="images/Inactive_Tablet.svg"/>
+            <div class="name semi_bold">
+              <!-- <input type="text" class="semi_bold" value="PC - cc:29:f5:35:92:63"/> -->
+              PC - cc:29:f5:35:92:63
+            </div>
+          </div>
+        </div>
+        <div class="settings_item">
+          <div class="card">
+            <div class="settings_options">
+              <div class="semi_bold">Block Device</div>
+              <div class="block_dev_text">Block this device from accessing your internet. You will be able to unblock it. It will still remain on your Saved Device List until you remove it.</div>
+              <div class="inline_block">
+                <div class="button blue blockButton">Block Device</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card no_margin mobile">
+          <div class="disabled">IP Address: 162.123.456.789</div>
+          <div class="disabled">MAC Address: cc:29:f5:35:92:63</div>
+        </div>
+      </div>
+      <div class="card device inactive">
+        <div class="device_info">
+          <div class="device_icon">
+            <img src="images/Inactive_Gaming.svg"/>
+          </div>
+          <div class="name">
+            <div>
+              XBox One - ec:1f:72:95:9d:31
+            </div>
+            <div class="blue_text device_settings">
+              <!-- <span class="mobile"><img src="images/Gear.svg"/></span> --><span class="desktop">Options</span>
+            </div>
+          </div>
+        </div>
+        <div class="device_stats">
+          <div class="stat">
+            <div class="indicator signal">
+              <svg class="indicator ">
+                <circle class="inner_circle" r="30" cx="50%" cy="50%" fill="transparent"></circle>
+                <circle r="30" cx="50%" cy="50%" fill="transparent" stroke-dasharray="190" stroke-dashoffset="190" transform="rotate(90,35,35)"></circle>
+                <path d="m35,70 l0,-10" stroke-width="4" stroke="#FFF"></path>
+                <path d="m35,70 l0,-10" stroke-width="3" stroke="#FFF" transform="rotate(120,35,35)"></path>
+                <path d="m35,70 l0,-10" stroke-width="3" stroke="#FFF" transform="rotate(240,35,35)"></path>
+              </svg>
+              <img src="images/X_Grey.svg"/>
+            </div>
+            <div class="indicator_text">Not Connected</div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="bold blue_text device_return mobile">
+          <img src="images/ReturnArrow.svg" class=""/> Return to Device List
+        </div>
+        <div class="card no_margin mobile">
+          <div class="device_info">
+            <img src="images/Inactive_Tablet.svg"/>
+            <div class="name semi_bold">
+              <!-- <input type="text" class="semi_bold" value="XBox One - ec:1f:72:95:9d:31"/> -->
+              XBox One - ec:1f:72:95:9d:31
+            </div>
+          </div>
+        </div>
+        <div class="settings_item">
+          <div class="card">
+            <div class="settings_options">
+              <div class="semi_bold">Block Device</div>
+              <div class="block_dev_text">Block this device from accessing your internet. You will be able to unblock it. It will still remain on your Saved Device List until you remove it.</div>
+              <div class="inline_block">
+                <div class="button blue blockButton">Block Device</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card no_margin mobile">
+          <div class="disabled">IP Address: 162.123.456.789</div>
+          <div class="disabled">MAC Address: ec:1f:72:95:9d:31</div>
+        </div>
+      </div>
+
+      <div class="card device inactive">
+      </div>
+    </div>
+
+    <div class="acs_menu_item settings_menu hide accordion">
+      <div class="bold blue_text settings_return">
+        <img src="images/ReturnArrow.svg" class=""/> Return to My WiFi
+      </div>
+      <div class="buttons align_right desktop">
+        <div class="button saveButton disabled">Save</div>
+
+        <div class="button cancelButton">Cancel</div>
+      </div>
+      <div class="">
+        <div class="settings_item settings_align">
+          <div class="header blue_text">
+            <img src="images/Minus_White.svg"/>
+            Basic Network Settings
+          </div>
+          <div class="card">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">2.4GHz Wifi Network</span> <img class="helpQ" src="images/help.png"/>
+                <span class="hidden">
+                  <div class="radio_menu">
+                    <input type="radio" name="radio_bsc_net1" class="radio_device_option" checked>
+                      <label class="radio_label">On</label>
+                    <input type="radio" name="radio_bsc_net1" class="radio_device_option">
+                      <label class="radio_label">Off</label>
+                  </div>
+                </span>
+                <div class="switch right">
+                  <input id="toggleBasicNet1" class="toggle toggle-round" type="checkbox" checked>
+                  <label for="toggleBasicNet1" data-on="On" data-off="Off"></label>
+                </div>
+                <div class="settings_info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor ac odio ut imperdiet. Cras pretium massa viverra sem semper, vitae mollis tortor bibendum.
+                </div>
+              </div>
+              <div class="detailed_settings">
+                <div class="semi_bold">
+                  <div>Step 1:</div>
+                  <div>Set network name, security and password.</div>
+                </div>
+                <div>
+                  <div class="align_right changeDiv">
+                    Wireless Network Name (SSID)
+                  </div>
+                  <div class="changeDiv">
+                    <input type="text" value="My 2.4GHz Network"/>
+                  </div>
+                </div>
+                <div>
+                  <div class="align_right changeDiv">
+                    Wireless Security
+                  </div>
+                  <div class="changeDiv">
+                    <select><option checked>WPA/WPA2</option><option>WEP</option></select>
+                  </div>
+                </div>
+                <div>
+                  <div class="align_right changeDiv">
+                    Wireless Password
+                  </div>
+                  <div class="changeDiv">
+                    <input type="password" value=""/>
+                  </div>
+                </div>
+
+                <div class="semi_bold">
+                  <div>Step 2:</div>
+                  <div>Set channel and visibility.</div>
+                </div>
+                <div>
+                  <div class="align_right changeDiv">
+                    Channel
+                  </div>
+                  <div class="changeDiv">
+                    <select><option>10</option><option checked>11</option><option>12</option></select>
+                  </div>
+                </div>
+                <div>
+                  <div class="">
+                    Show This Network
+                  </div>
+                  <div class="switch left">
+                    <input id="toggleShowNet1" class="toggle toggle-round" type="checkbox" checked>
+                    <label for="toggleShowNet1" data-on="On" data-off="Off"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">5GHz Wifi Network</span> <img class="helpQ" src="images/help.png"/>
+                <span class="hidden">
+                  <div class="radio_menu">
+                    <input type="radio" name="radio_bsc_net2" class="radio_device_option" checked>
+                      <label class="radio_label">On</label>
+                    <input type="radio" name="radio_bsc_net2" class="radio_device_option">
+                      <label class="radio_label">Off</label>
+                  </div>
+                </span>
+                <div class="switch right">
+                  <input id="toggleBasicNet2" class="toggle toggle-round" type="checkbox" checked>
+                  <label for="toggleBasicNet2" data-on="On" data-off="Off"></label>
+                </div>
+                <div class="settings_info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor ac odio ut imperdiet. Cras pretium massa viverra sem semper, vitae mollis tortor bibendum.
+                </div>
+              </div>
+              <div class="detailed_settings">
+                <div class="semi_bold">
+                  <div>Step 1:</div>
+                  <div>Set network name, security and password.</div>
+                </div>
+                <div>
+                  <div class="align_right changeDiv">
+                    Wireless Network Name (SSID)
+                  </div>
+                  <div class="changeDiv">
+                    <input type="text" value="My 5GHz Network"/>
+                  </div>
+                </div>
+                <div>
+                  <div class="align_right changeDiv">
+                    Wireless Security
+                  </div>
+                  <div class="changeDiv">
+                    <select><option checked>WPA/WPA2</option><option>WEP</option></select>
+                  </div>
+                </div>
+                <div>
+                  <div class="align_right changeDiv">
+                    Wireless Password
+                  </div>
+                  <div class="changeDiv">
+                    <input type="password" value=""/>
+                  </div>
+                </div>
+
+                <div class="semi_bold">
+                  <div>Step 2:</div>
+                  <div>Set channel and visibility.</div>
+                </div>
+                <div>
+                  <div class="align_right changeDiv">
+                    Channel
+                  </div>
+                  <div class="changeDiv">
+                    <select><option>10</option><option checked>11</option><option>12</option></select>
+                  </div>
+                </div>
+                <div>
+                  <div class="">
+                    Show This Network
+                  </div>
+                  <div class="switch left">
+                    <input id="toggleShowNet2" class="toggle toggle-round" type="checkbox" checked>
+                    <label for="toggleShowNet2" data-on="On" data-off="Off"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card info_only">
+            <div class="changeDiv bold">
+              Modem / Router Details
+            </div>
+            <div class="changeDiv">
+              <div><span class="semi_bold">MAC Address:</span>&lt;Mac Address&gt;</div>
+              <div><span class="semi_bold">IP Address:</span>&lt;162.123.456.789&gt;</div>
+            </div>
+            <div class="changeDiv">
+              <div><span class="semi_bold">Model Number:</span>&lt;ABC12345678&gt;</div>
+              <div><span class="semi_bold">Serial Number:</span>1234567890123</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="net_parental_settings" class="settings_item parental_settings">
+          <div class="header blue_text">
+            <img src="images/Plus_Blue.svg"/>
+            Network Parental Controls
+          </div>
+          <div class="card hide">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">Restrict Access by Time of Day</span> <img class="helpQ" src="images/help.png"/>
+                <span class="hidden">
+                  <div class="radio_menu">
+                    <input type="radio" name="radio_prntl_ctrl_S" class="radio_device_option">
+                      <label class="radio_label">On</label>
+                    <input type="radio" name="radio_prntl_ctrl_S" class="radio_device_option" checked>
+                      <label class="radio_label">Off</label>
+                  </div>
+                </span>
+                <div class="switch right">
+                  <input id="togglePrntlCtrl_S" class="toggle toggle-round" type="checkbox">
+                  <label for="togglePrntlCtrl_S" data-on="On" data-off="Off"></label>
+                </div>
+              </div>
+              <div class="detailed_settings hide">
+                <div>
+                  <div class="semi_bold">
+                    <span>Step 1: Set time of day the network cannot be accessed.</span>
+                  </div>
+                  <div class="changeDiv">
+                    <span>Start Time</span> <span><input class="input_time start_hr" type="text" value="6" maxlength="2"/></span> : <span><input class="input_time start_min" type="text" value="00" maxlength="2"/></span>
+                    <select class="start_AM"><option>AM</option><option checked>PM</option></select>
+                  </div>
+                  <div class="changeDiv">
+                    <span>End Time</span> <span><input class="input_time end_hr" type="text" value="8" maxlength="2"/></span> : <span><input class="input_time end_min" type="text" value="00" maxlength="2"/></span>
+                    <select class="end_AM"><option>AM</option><option checked>PM</option></select>
+                  </div>
+
+                  <div class="semi_bold">
+                    <span>Step 2 (optional): Set day of the week the above time restriction is active.</span>
+                  </div>
+                  <div class="">
+                    <input type="checkbox"/> <span>S</span>
+                    <input type="checkbox"/> <span>M</span>
+                    <input type="checkbox"/> <span>T</span>
+                    <input type="checkbox"/> <span>W</span>
+                    <input type="checkbox"/> <span>T</span>
+                    <input type="checkbox"/> <span>F</span>
+                    <input type="checkbox"/> <span>S</span>
+                  </div>
+
+                  <div class="semi_bold">
+                    Summary
+                  </div>
+                  <div class="">
+                    Devices will not be able to access the network between <span class="start_time">6:00pm</span>and <span class="end_time">8:00pm</span><span class="summary_details"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card hide">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">Restrict Access to Certain Sites</span> <img class="helpQ" src="images/help.png"/>
+                <span class="hidden">
+                  <div class="radio_menu">
+                    <input type="radio" name="radio_site_accs_S" class="radio_device_option">
+                      <label class="radio_label">On</label>
+                    <input type="radio" name="radio_site_accs_S" class="radio_device_option" checked>
+                      <label class="radio_label">Off</label>
+                  </div>
+                </span>
+                <div class="switch right">
+                  <input id="toggleSiteAccs_S" class="toggle toggle-round" type="checkbox">
+                  <label for="toggleSiteAccs_S" data-on="On" data-off="Off"></label>
+                </div>
+              </div>
+              <div class="detailed_settings hide">
+                <div class="form">
+                  <div class="">
+                    <span class="semi_bold">Step 1: Input site you would like to restrict access to.</span>
+                    <span class="delete_icon disabled right">Delete <img src="images/Delete.svg"/></span>
+                  </div>
+                  <div class="changeDiv">
+                    <input type="text" value="www.netflix.com"/>
+                  </div>
+                  <div>
+                    <span class="semi_bold">Step 2: Would you like to always block this site or based on a schedule?</span>
+                  </div>
+                  <div class="changeDiv">
+                    <input type="radio" name="radio_resct_accs3" class="radio_device_option" checked>
+                      <label class="radio_label">Always</label>
+                    <input type="radio" name="radio_resct_accs3" class="radio_device_option">
+                      <label class="radio_label">Per Schedule</label>
+                  </div>
+                  <div class="per_schedule">
+                    <div>
+                      <div class="semi_bold">
+                        <span class="">Step 3: Set time of day the network cannot access this site.</span>
+                      </div>
+                      <div class="changeDiv">
+                        <span>Start Time</span> <span><input class="input_time start_hr" type="text" value="6" maxlength="2"/></span> : <span><input class="input_time start_min" type="text" value="00" maxlength="2"/></span>
+                        <select class="start_AM"><option>AM</option><option checked>PM</option></select>
+                      </div>
+                      <div class="changeDiv">
+                        <span>End Time</span> <span><input class="input_time end_hr" type="text" value="8" maxlength="2"/></span> : <span><input class="input_time end_min" type="text" value="00" maxlength="2"/></span>
+                        <select class="end_AM"><option>AM</option><option checked>PM</option></select>
+                      </div>
+
+                      <div class="semi_bold">
+                        <span>Step 4 (optional): Set day of the week the above time restriction is active.</span>
+                      </div>
+                      <div class="">
+                        <input type="checkbox"/> <span>S</span>
+                        <input type="checkbox"/> <span>M</span>
+                        <input type="checkbox"/> <span>T</span>
+                        <input type="checkbox"/> <span>W</span>
+                        <input type="checkbox"/> <span>T</span>
+                        <input type="checkbox"/> <span>F</span>
+                        <input type="checkbox"/> <span>S</span>
+                      </div>
+
+                      <div class="semi_bold">
+                        Summary
+                      </div>
+                      <div class="">
+                        Devices will not be able to access www.netflix.com between <span class="start_time">6:00pm</span>and <span class="end_time">8:00PM</span><span class="summary_details"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               <div class="button add right restrictAccessButton">+ Add New</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="guest_network" class="settings_item settings_align">
+          <div class="header blue_text">
+            <img src="images/Plus_Blue.svg"/>
+            Guest Network
+          </div>
+          <div class="card hide">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">2.4GHz Guest Wifi Network</span> <img class="helpQ" src="images/help.png"/>
+                <span class="hidden">
+                  <div class="radio_menu">
+                    <input type="radio" name="radio_guest_net1" class="radio_device_option">
+                      <label class="radio_label">On</label>
+                    <input type="radio" name="radio_guest_net1" class="radio_device_option" checked>
+                      <label class="radio_label">Off</label>
+                  </div>
+                </span>
+                <div class="switch right">
+                  <input id="toggleGuestNet1" class="toggle toggle-round" type="checkbox">
+                  <label for="toggleGuestNet1" data-on="On" data-off="Off"></label>
+                </div>
+                <div class="settings_info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor ac odio ut imperdiet. Cras pretium massa viverra sem semper, vitae mollis tortor bibendum.
+                </div>
+              </div>
+              <div class="detailed_settings hide">
+                <div class="semi_bold">
+                  <div>Step 1:</div>
+                  <div>Set network name, security and password.</div>
+                </div>
+                <div>
+                  <div class="align_right changeDiv">
+                    Wireless Network Name (SSID)
+                  </div>
+                  <div class="changeDiv">
+                    <input type="text" value="My 2.4GHz Network"/>
+                  </div>
+                </div>
+                <div>
+                  <div class="align_right changeDiv">
+                    Wireless Security
+                  </div>
+                  <div class="changeDiv">
+                    <select><option checked>WPA/WPA2</option><option>WEP</option></select>
+                  </div>
+                </div>
+                <div>
+                  <div class="align_right changeDiv">
+                    Wireless Password
+                  </div>
+                  <div class="changeDiv">
+                    <input type="password" value=""/>
+                  </div>
+                </div>
+
+                <div class="semi_bold">
+                  <div>Step 2:</div>
+                  <div>Set channel and visibility.</div>
+                </div>
+                <div>
+                  <div class="align_right changeDiv">
+                    Channel
+                  </div>
+                  <div class="changeDiv">
+                    <select><option>10</option><option checked>11</option><option>12</option></select>
+                  </div>
+                </div>
+                <div>
+                  <div class="">
+                    Show This Network
+                  </div>
+                  <div class="switch left">
+                    <input id="toggleShowGuest1" class="toggle toggle-round" type="checkbox" checked>
+                    <label for="toggleShowGuest1" data-on="On" data-off="Off"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card hide">
+            <div>
+              <div class="settings_options">
+                <span class="semi_bold">5GHz Guest Wifi Network</span> <img class="helpQ" src="images/help.png"/>
+                <span class="hidden">
+                  <div class="radio_menu">
+                    <input type="radio" name="radio_guest_net2" class="radio_device_option">
+                      <label class="radio_label">On</label>
+                    <input type="radio" name="radio_guest_net2" class="radio_device_option" checked>
+                      <label class="radio_label">Off</label>
+                  </div>
+                </span>
+                <div class="switch right">
+                  <input id="toggleGuestNet2" class="toggle toggle-round" type="checkbox">
+                  <label for="toggleGuestNet2" data-on="On" data-off="Off"></label>
+                </div>
+                <div class="settings_info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor ac odio ut imperdiet. Cras pretium massa viverra sem semper, vitae mollis tortor bibendum.
+                </div>
+              </div>
+              <div class="detailed_settings hide">
+                <div class="semi_bold">
+                  <div>Step 1:</div>
+                  <div>Set network name, security and password.</div>
+                </div>
+                <div>
+                  <div class="align_right changeDiv">
+                    Wireless Network Name (SSID)
+                  </div>
+                  <div class="changeDiv">
+                    <input type="text" value="My 5GHz Network"/>
+                  </div>
+                </div>
+                <div>
+                  <div class="align_right changeDiv">
+                    Wireless Security
+                  </div>
+                  <div class="changeDiv">
+                    <select><option checked>WPA/WPA2</option><option>WEP</option></select>
+                  </div>
+                </div>
+                <div>
+                  <div class="align_right changeDiv">
+                    Wireless Password
+                  </div>
+                  <div class="changeDiv">
+                    <input type="password" value=""/>
+                  </div>
+                </div>
+
+                <div class="semi_bold">
+                  <div>Step 2:</div>
+                  <div>Set channel and visibility.</div>
+                </div>
+                <div>
+                  <div class="align_right changeDiv">
+                    Channel
+                  </div>
+                  <div class="changeDiv">
+                    <select><option>10</option><option checked>11</option><option>12</option></select>
+                  </div>
+                </div>
+                <div>
+                  <div class="">
+                    Show This Network
+                  </div>
+                  <div class="switch left">
+                    <input id="toggleShowGuest2" class="toggle toggle-round" type="checkbox" checked>
+                    <label for="toggleShowGuest2" data-on="On" data-off="Off"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons align_right desktop">
+        <div class="button saveButton disabled">Save</div>
+
+        <div class="button cancelButton">Cancel</div>
+      </div>
+
+      <div class="buttons align_right mobile float_buttons hide">
+        <div class="button saveButton left disabled">Save</div>
+        <div class="button cancelButton">Cancel</div>
+      </div>
+    </div>
+
+    <div id="deviceOutageAlert" class="outageAlert card">
+      <div class="head">
+        <img src="images/Alert_White.svg"> Alert!
+      </div>
+      <div class="">
+        <div class="semi_bold red_text">
+          Cannot Connect With Cox Device
+        </div>
+        <div class="">
+          <strong>We're sorry!</strong> We've detected an issue while trying to connect to your Cox Home Device. Please use the below links to troubleshoot the issue or contact us to resolve the issue.
+        </div>
+        <div class="blue_text inline_block">
+          Troubleshoot Tips & Tricks
+        </div>
+        <div class="blue_text inline_block">
+          Contact Cox
+        </div>
+      </div>
+    </div>
+
+    <div class="card factory_reset hidden">
+      <div class="settings_options">
+        <div class="semi_bold head">Factory Reset</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor ac odio ut imperdiet. Cras pretium massa viverra sem semper, vitae mollis tortor bibendum.</div>
+        <div class="inline_block">
+          <div class="button">Factory Reset</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card internet_info">
+      <div class="">
+        <div class="header">
+          2.4GHz Network Info
+        </div>
+        <div class="internet_details">
+          <div>
+            Network Name (SSID):
+          </div>
+          <div class="semi_bold">
+            COXNAH12N4Q
+          </div>
+        </div>
+        <div class="internet_details right">
+          <div>
+            Password:
+          </div>
+          <div class="show_this semi_bold hidden">1234567890123</div>
+          <div class="show_password semi_bold dark_blue_text">
+            Show Password
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="header">
+          5GHz Network Info
+        </div>
+        <div class="internet_details">
+          <div>
+            Network Name (SSID):
+          </div>
+          <div class="semi_bold">
+            COXNAH13N5D
+          </div>
+        </div>
+        <div class="internet_details right">
+          <div>
+            Password:
+          </div>
+          <div class="show_this semi_bold hidden">1234567890123</div>
+          <div class="show_password semi_bold dark_blue_text">
+            Show Password
+          </div>
+        </div>
+      </div>
+
+      <div class="guest_network1 hidden">
+        <div class="header">
+          Guest 2.4GHz Network Info
+        </div>
+        <div class="internet_details">
+          <div>
+            Network Name (SSID):
+          </div>
+          <div class="semi_bold">
+            COXNAH12N4Q
+          </div>
+        </div>
+        <div class="internet_details right">
+          <div>
+            Password:
+          </div>
+          <div class="show_this semi_bold hidden">1234567890123</div>
+          <div class="show_password semi_bold dark_blue_text">
+            Show Password
+          </div>
+        </div>
+      </div>
+      <div class="guest_network2 hidden">
+        <div class="header">
+          Guest 5GHz Network Info
+        </div>
+        <div class="internet_details">
+          <div>
+            Network Name (SSID):
+          </div>
+          <div class="semi_bold">
+            COXNAH13N5D
+          </div>
+        </div>
+        <div class="internet_details right">
+          <div>
+            Password:
+          </div>
+          <div class="show_this semi_bold hidden">1234567890123</div>
+          <div class="show_password semi_bold dark_blue_text">
+            Show Password
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool_tip hidden">
+      <div class="med hidden">
+        <div class="semi_bold">Wifi is <span class="green_text">Connected</span></div>
+        <div>Want a stronger connection? Use our step by step guide.
+        <div>
+          <div class="button full_width blue">Step By Step Guide</div>
+        </div>
+      </div>
+      </div>
+      <div class="high hidden">
+        <div class="semi_bold">Wifi is <span class="green_text">Connected</span></div>
+        <div>You are close to the router and have no obstructions.</div>
+      </div>
+      <div class="bandwidth_t hidden">
+        <div class="semi_bold">Current Data Being Used</div>
+        <div>Experiencing slow down of your speed? A device could be using a lot of data.</div>
+      </div>
+    </div>
+    <div class="help_tool_tip hidden">
+      <div class="">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor ac odio ut imperdiet. Cras pretium massa viverra sem semper, vitae mollis tortor bibendum.
+      </div>
+    </div>
+  </article>
+  <div class="confirm_overlay hidden">
+    <div class="background_black"></div>
+    <div class="overlay_header"></div>
+    <div class="">
+      <span class="overlay_msg"></span>
+
+      <div class="align_right">
+        <div class="button confirm_no">Cancel</div>
+        <div class="button confirm_yes blue">Yes</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  function noBack() {
+      window.history.forward();
+  }
+
+  //EXTRACT URL PARAMENTERS
+  var params={};window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(str,key,value){params[key] = value;});
+
+	//  ONLOAD CODE
+	$(document).ready(function() {
+    window.history.forward();
+
+		$.getScript("js/script_mmu.js", function(){
+			console.log("Loaded Megamenu Script.");
+		});
+		$.getScript("js/script_acs.js", function(){
+			console.log("Loaded ACS Script.");
+		});
+	});
+</script>
+</html>

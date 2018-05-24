@@ -1,0 +1,4061 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=360"/> -->
+    <title>Phone Tools</title>
+
+    <link href="css/style_ims.css" rel="stylesheet" type="text/css" />
+	
+    <!-- LOADING OPEN SANS VIA GOOGLE FONTS TO MAINTAIN CONSISTENCY OF FONT CROSS BROWSER -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- <script type="text/javascript" src="js/js.js"></script> -->
+</head>
+
+<body>
+	<header>
+		<div class="navTop desktop">
+			<div class="left">
+				<span><strong>Residential</strong></span>
+				<img src="images/line.png">
+				<span>Cox Business</span>
+			</div>
+			<div class="right">
+				<span>Contact Us</span>
+				<img src="images/line.png">
+				<span><img class="locationImage" src="images/location.png">Macon, GA</span>
+			</div>
+		</div>
+		<nav>
+			<div class="navMain desktop">
+				<div class="left">
+					<span class="coxLogo"><img src="images/cox.png"></span>
+					<div id="shop_mega_menu">Shop</div>
+					<div id="myConnection_mega_menu">My Connection</div>
+					<div id="support_mega_menu">Support</div>
+				</div>
+				<div class="right">
+					<img src="images/search.png">
+					<img src="images/cart.png">
+					<img src="images/profile.png">
+					<div class="signIn">
+						<span class="signInLine">Hi, Christopher!</span>
+						<span class="signInLine">My Account<img src="images/arrow_down_white.png"></span>
+					</div>
+				</div>
+			</div>
+			
+			<div id="navigationBar" class="mobile">
+				<div class="marginDiv2">
+					<div id="menuButton">
+						<img src="images/menuIcon.png" id="menuIcon"></img>
+					</div>
+					<div id="logoMain">
+						<img src="images/coxLogoWhite.png"></img>
+					</div>
+					<div id="profileButton">
+						<img src="images/profileIcon.png" id="profileIcon"></img>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<article>
+		<div id="homePage">
+			<div class="userInfoBox">
+				<div class="left userInfo">
+					<div class="userInfoLine">
+						<img class="desktop" src="images/phone_tools_logo_blue.png"> <span>Phone Tools</span>
+					</div>
+				</div>
+				<div class="right userInfoShortcuts">
+					<div>
+						<img src="images/phone_tools_logo_black.png">
+						<div class="">Phone Tools</div>
+					</div>
+					<div>
+						<img src="images/web_mail_icon.png">
+						<div class="blueText">Web Mail</div>
+					</div>
+					<div class="desktop">
+						<img src="images/address_blue.png">
+						<div class="blueText">Address Book</div>
+					</div>
+					<div class="desktop">
+						<img src="images/support_icon_blue.png">
+						<div class="blueText">Support</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="serviceOutageAlert" class="card">
+				<img class="closeIcon" src="images/close_black.png">
+				<div class="marginT25">
+					<img id="serviceErrorImg" src="images/errorIcon.png">
+					<div class="font20">
+						Temporary Service Outage
+					</div>
+					<div class="">
+						<strong>We're sorry!</strong> We've detected a temporary service outage in your area. We are currently working to fix the problem.
+					</div>
+				</div>
+				<div class="hideOption">
+					<input type="checkbox" id="alertDisable">
+					<label for="alertDisable">Don't show this message again</label>
+				</div>
+			</div>
+			
+			<div class="notificationSummary card">
+				<div class="notification">
+					<span class="bigNumber">3</span><span>&nbsp;Missed &nbsp;Calls &nbsp;</span>
+				</div>
+				<div class="notification">
+					<span class="bigNumber">14</span><span>Text Messages</span>
+				</div>
+				<div class="notification">
+					<span class="bigNumber">16</span><span>&nbsp; Voice Mails &nbsp;</span>
+				</div>
+				<div class="alertNotification">
+					<div><img src="images/warningIcon.png"/></div>
+					<div class="bigNumber">2</div>
+					<div>
+						<span class="clearAlertBar">Voice Mails</span>
+						<span class="clearAlertBar">Pending Deletions</span>
+					</div>
+				</div>
+			</div>
+			<div class="alternateNotificationSummary card hidden">
+				<div class="marginDiv2">
+					<div class="header">
+						3 Missed Calls
+					</div>
+					<div class="alternateNotification">
+						<span class="phNumber left">(201) 842-0142</span><span class="callTime left">4:03 PM</span><span class="callDate right">12/5/14</span>
+					</div>
+					<div class="alternateNotification">
+						<span class="phNumber left">Ashley Rodriguez</span> <span class="callTime left">2:47 PM</span> <span class="callDate right">12/5/14</span>
+					</div>
+					<div class="alternateNotification">
+						<span class="phNumber left">(800) 627-2590</span> <span class="callTime left">11:39 AM</span> <span class="callDate right">12/5/14</span>
+					</div>
+				</div>
+			</div>
+			<div class="menuItems card">
+				<div class="menuItem callHistoryMenu">
+					<span class="accordionOpen">+</span><!-- <img src="images/order.png"/> --> <span class="menuItemText">Call History (10 New Calls)</span> <span class="rightArrow"></span>
+				</div>
+				<div id="callHistoryPage">
+					<div class="callHistory">
+						<div class="callTypeFilter">
+							<span>
+								<input type="radio" name="filterCallType" id="filterAllCalls" checked>
+								<label for="filterAllCalls">All</label>
+								<input type="radio" name="filterCallType" id="filterMissedCalls">
+								<label for="filterMissedCalls">Missed</label>
+								<input type="radio" name="filterCallType" id="filterVoiceMails">
+								<label for="filterVoiceMails">Voice Mail</label>
+							</span>
+						</div>
+						<div class="searchBox">
+							<input type="text" placeholder="Search"/>
+							<img src="images/searchIcon.png"/>
+						</div>
+						<div class="dayFilters">
+							<div class="left">
+								<span class="">
+									<input type="radio" name="radioCall" id="dayFilter7" checked>
+									<label for="dayFilter7">7 Days</label>
+								</span>
+								<span class="">
+									<input type="radio" name="radioCall" id="dayFilter30">
+									<label for="dayFilter30">30 Days</label>
+								</span>
+								<span class="">
+									<input type="radio" name="radioCall" id="dayFilter60">
+									<label for="dayFilter60">60 Days</label>
+								</span>
+							</div>
+							<div id="" class="right mobile editCallList">
+								Edit
+							</div>
+							<div class="quickIcons right desktop">
+								<div class="chPrint">
+									<img src="images/print_icon.png">
+									<div>Print</div>
+								</div>
+								<div class="chDownload">
+									<img src="images/download.png">
+									<div>Download</div>
+								</div>
+								<div class="chEdit">
+									<img src="images/edit_icon_black.png">
+									<div class="">Edit</div>
+								</div>
+								<div class="chNotification">
+									<img src="images/notifications_icon.png">
+									<div>Notifications</div>
+								</div>
+							</div>
+						</div>
+						<div class="chExport hidden desktop">
+							<img src="images/export_call_history.png">
+						</div>
+						<div class="callHistoryHeader desktop">
+							<span class="hidden">Add Contact</span>
+							<span class="">Calls <img src="images/arrow_down_blue.png"/></span>
+							<span class="">Time <img src="images/arrow_down_blue.png"/></span>
+							<span class="">Date <img src="images/arrow_down_blue.png"/></span>
+							<span class="">Duration <img src="images/arrow_down_blue.png"/></span>
+							<span class="vmDurHeader">Voice Mail <img src="images/arrow_down_blue.png"/></span>
+						</div>
+						<div class="missedCallsList">
+							<div class="marginDiv2">
+								<div class="callHistoryLine isMissedCall isNotOpened">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="editCallIcon">&nbsp;</span>
+									<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">Regina Watson</span>
+									<span class="callTime">7:23 PM</span>
+									<span class="callDate">05/13</span>
+									<span class="vmDuration"></span>
+									<div class="editCallInfo isExistingContact">
+										<div class="btnEditContact">Edit Contact</div>
+									</div>
+
+									<div class="callHistoryIcons">
+										<div>
+											<div class="newContactIcon icon">
+												<img src="images/addContact.png">
+												Add Contact
+											</div>
+											<div class="callNotifyIcon icon">
+												<img src="images/call_notify_blue.png">
+												Call Notify
+											</div>
+											<div class="callRejectIcon icon">
+												<img src="images/call_reject_blue.png">
+												Call Reject
+											</div>
+											<div class="voicemailIcon icon showVoiceMailIcon">
+												<img src="images/voicemail_blue.png">
+												Voicemail
+											</div>
+										</div>
+									</div>
+									<div class="addEditContact">
+										<div>
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton closeMenus">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callNotifyCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+											
+											<div class="settingsDiv">
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+														<label for="callNotifyEmail">Notify Via Email</label>
+													</span>
+												</div>
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+														<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+													</span>
+												</div>
+												<div class="searchAddUser">
+													<input class="addNumInput" type="text">
+													<img class="hidden" src="images/address.png"/>
+												</div>
+												<div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callRejectCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsDiv">
+												<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton closeMenus">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="voiceMailLine isVoiceMail isNotOpened">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">(404) 221-4340</span>
+									<span class="callTime">10:35 PM</span>
+									<span class="callDate">05/12</span>
+									<span class="vmDuration"><span class="desktop">2:14</span> <img class="" src="images/vmPendingIcon.png"/></span>
+
+									<div class="callHistoryIcons">
+										<div>
+											<div class="newContactIcon icon">
+												<img src="images/addContact.png">
+												Add Contact
+											</div>
+											<div class="callNotifyIcon icon">
+												<img src="images/call_notify_blue.png">
+												Call Notify
+											</div>
+											<div class="callRejectIcon icon">
+												<img src="images/call_reject_blue.png">
+												Call Reject
+											</div>
+											<div class="voicemailIcon icon showVoiceMailIcon">
+												<img src="images/voicemail_blue.png">
+												Voicemail
+											</div>
+										</div>
+									</div>
+									<div class="addEditContact">
+										<div>
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton closeMenus">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callNotifyCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+											
+											<div class="settingsDiv">
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+														<label for="callNotifyEmail">Notify Via Email</label>
+													</span>
+												</div>
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+														<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+													</span>
+												</div>
+												<div class="searchAddUser">
+													<input class="addNumInput" type="text">
+													<img class="hidden" src="images/address.png"/>
+												</div>
+												<div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callRejectCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsDiv">
+												<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton closeMenus">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="voicemailTranscript">
+										<div>
+											<div class="vmTranscriptText">
+												<p>Not sure if you heard the change of plans. Larry got sick and so we won't be going to dinner tonight.
+												Sorry for the late notice. Let's catch up this weekend. Bye</p>
+												<div class="vmRateTranscript">												
+													<img class="thumbsUp" src="images/thumbsUp.png">
+													<span>Rate this transcript</span>
+													<img class="thumbsDown" src="images/thumbsDown.png">
+												</div>
+											</div>
+											<div class="vmControls">
+												<span class="vmPlayPause"><span class="pauseButton"></span></span> 
+												<span class="vmSeeker"><input type="range" value="20" min="0" max="100"/></span> 
+												<span class="vmProgress">0:13/1:16</span>
+											</div>
+											<div class="vmFlagOverlay">
+												<!-- <img class="closeIcon" src="images/close_white.png"> -->
+												<div>Mark Voice Mail</div>
+												<div class="switch">
+													<input id="vmF1" class="toggle toggle-round" type="checkbox">
+													<label for="vmF1" data-on="Unread" data-off="Read"></label>
+												</div>
+												<div>
+													<div class="button sendButton">Done</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmForwardOverlay">
+												<div>Forward a copy of this voice mail:</div>
+												<div>
+													<div class="searchAddUser">
+														<input type="text">
+														<img src="images/address.png"/>
+													</div>
+													<div class="button addButton">Add</div>
+												</div>
+												
+												<div>
+													<select name="forwardType">
+														<option value="audioNText" selected>Audio & Text</option>
+														<option value="audio">Audio</option>
+														<option value="text">Text</option>
+													</select>
+												</div>
+												<div>
+													<div class="button sendButton">Send</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmDeleteOverlay">
+												<div>Deleted voice mails cannot be retrieved. Are you sure you want to delete?</div>
+												<div>
+													<div class="button deleteButton">Delete</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmOptions">
+												<div class="vmFlag">Mark</div>
+												<div class="vmSave desktop">Save</div>
+												<div class="vmForward">Forward</div>
+												<div class="vmDownload">Download</div>
+												<div class="vmDelete">Delete</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="callHistoryLine">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="editCallIcon">&nbsp;</span>
+									<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">(404) 221-4340</span>
+									<span class="callTime">10:35 PM</span>
+									<span class="callDate">05/13</span>
+									<span class="vmDuration">2:14</span>
+									<div class="editCallInfo">
+										<div class="btnCreateContact">Create New Contact</div>
+										<div class="btnUpdateContact">Update Existing Contact</div>
+									</div>
+									
+									<div class="callHistoryIcons">
+										<div>
+											<div class="newContactIcon icon">
+												<img src="images/addContact.png">
+												Add Contact
+											</div>
+											<div class="callNotifyIcon icon">
+												<img src="images/call_notify_blue.png">
+												Call Notify
+											</div>
+											<div class="callRejectIcon icon">
+												<img src="images/call_reject_blue.png">
+												Call Reject
+											</div>
+											<div class="voicemailIcon icon showVoiceMailIcon">
+												<img src="images/voicemail_blue.png">
+												Voicemail
+											</div>
+										</div>
+									</div>
+									<div class="addEditContact">
+										<div>
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton closeMenus">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callNotifyCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+											
+											<div class="settingsDiv">
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+														<label for="callNotifyEmail">Notify Via Email</label>
+													</span>
+												</div>
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+														<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+													</span>
+												</div>
+												<div class="searchAddUser">
+													<input class="addNumInput" type="text">
+													<img class="hidden" src="images/address.png"/>
+												</div>
+												<div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callRejectCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsDiv">
+												<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton closeMenus">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="voiceMailLine isVoiceMail isNotOpened">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">Regina Watson</span>
+									<span class="callTime">7:23 PM</span>
+									<span class="callDate">05/10</span>
+									<span class="vmDuration"><span class="desktop">3:27</span> <img class="" src="images/vmPendingIcon.png"/></span>
+
+									<div class="callHistoryIcons">
+										<div>
+											<div class="newContactIcon icon">
+												<img src="images/addContact.png">
+												Add Contact
+											</div>
+											<div class="callNotifyIcon icon">
+												<img src="images/call_notify_blue.png">
+												Call Notify
+											</div>
+											<div class="callRejectIcon icon">
+												<img src="images/call_reject_blue.png">
+												Call Reject
+											</div>
+											<div class="voicemailIcon icon showVoiceMailIcon">
+												<img src="images/voicemail_blue.png">
+												Voicemail
+											</div>
+										</div>
+									</div>
+									<div class="addEditContact">
+										<div>
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton closeMenus">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callNotifyCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+											
+											<div class="settingsDiv">
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+														<label for="callNotifyEmail">Notify Via Email</label>
+													</span>
+												</div>
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+														<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+													</span>
+												</div>
+												<div class="searchAddUser">
+													<input class="addNumInput" type="text">
+													<img class="hidden" src="images/address.png"/>
+												</div>
+												<div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callRejectCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsDiv">
+												<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton closeMenus">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="voicemailTranscript">
+										<div>
+											<div class="vmTranscriptText">
+												<p>Hey, this is Regina. I wanted to tale you that I got the chickens. Call we back when you great this message. Ladder.
+												</p>
+												<div class="vmRateTranscript">												
+													<img class="thumbsUp" src="images/thumbsUp.png">
+													<span>Rate this transcript</span>
+													<img class="thumbsDown" src="images/thumbsDown.png">
+												</div>
+											</div>
+											<div class="vmControls">
+												<span class="vmPlayPause"><span class="pauseButton"></span></span> <span class="vmSeeker"><input type="range" value="20" min="0" max="100"/></span> <span class="vmProgress">0:13/1:16</span>
+											</div>
+											<div class="vmFlagOverlay">
+												<div>Mark Voice Mail</div>
+												<div class="switch">
+													<input id="vmF2" class="toggle toggle-round" type="checkbox">
+													<label for="vmF2" data-on="Unread" data-off="Read"></label>
+												</div>
+												<div>
+													<div class="button sendButton">Done</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmForwardOverlay">
+												<div>Forward a copy of this voice mail:</div>
+												<div>
+													<div class="searchAddUser">
+														<input type="text">
+														<img src="images/address.png"/>
+													</div>
+													<div class="button addButton">Add</div>
+												</div>
+												
+												<div>
+													<select name="forwardType">
+														<option value="audioNText" selected>Audio & Text</option>
+														<option value="audio">Audio</option>
+														<option value="text">Text</option>
+													</select>
+												</div>
+												<div>
+													<div class="button sendButton">Send</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmDeleteOverlay">
+												<div>Deleted voice mails cannot be retrieved. Are you sure you want to delete?</div>
+												<div>
+													<div class="button deleteButton">Delete</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmOptions">
+												<div class="vmFlag">Mark</div>
+												<div class="vmSave desktop">Save</div>
+												<div class="vmForward">Forward</div>
+												<div class="vmDownload">Download</div>
+												<div class="vmDelete">Delete</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="callHistoryLine isOutGoingCall">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="editCallIcon">&nbsp;</span>
+									<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+									<span class="phNumber">(201) 842-0142</span>
+									<span class="callTime">2:01 PM</span>
+									<span class="callDate">05/13</span>
+									<span class="vmDuration">00:53</span>
+									<div class="editCallInfo">
+										<div class="btnCreateContact">Create New Contact</div>
+										<div class="btnUpdateContact">Update Existing Contact</div>
+									</div>
+									
+									<div class="callHistoryIcons">
+										<div>
+											<div class="newContactIcon icon">
+												<img src="images/addContact.png">
+												Add Contact
+											</div>
+											<div class="callNotifyIcon icon">
+												<img src="images/call_notify_blue.png">
+												Call Notify
+											</div>
+											<div class="callRejectIcon icon">
+												<img src="images/call_reject_blue.png">
+												Call Reject
+											</div>
+											<div class="voicemailIcon icon showVoiceMailIcon">
+												<img src="images/voicemail_blue.png">
+												Voicemail
+											</div>
+										</div>
+									</div>
+									<div class="addEditContact">
+										<div>
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton closeMenus">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callNotifyCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+											
+											<div class="settingsDiv">
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+														<label for="callNotifyEmail">Notify Via Email</label>
+													</span>
+												</div>
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+														<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+													</span>
+												</div>
+												<div class="searchAddUser">
+													<input class="addNumInput" type="text">
+													<img class="hidden" src="images/address.png"/>
+												</div>
+												<div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callRejectCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsDiv">
+												<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton closeMenus">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="voiceMailLine isVoiceMail">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">(212) 672-6272</span>
+									<span class="callTime">4:42 PM</span>
+									<span class="callDate">05/10</span>
+									<span class="vmDuration"><span class="desktop">6:42</span> <img class="" src="images/vmPendingIcon.png"/></span>
+
+									<div class="callHistoryIcons">
+										<div>
+											<div class="newContactIcon icon">
+												<img src="images/addContact.png">
+												Add Contact
+											</div>
+											<div class="callNotifyIcon icon">
+												<img src="images/call_notify_blue.png">
+												Call Notify
+											</div>
+											<div class="callRejectIcon icon">
+												<img src="images/call_reject_blue.png">
+												Call Reject
+											</div>
+											<div class="voicemailIcon icon showVoiceMailIcon">
+												<img src="images/voicemail_blue.png">
+												Voicemail
+											</div>
+										</div>
+									</div>
+									<div class="addEditContact">
+										<div>
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton closeMenus">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callNotifyCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+											
+											<div class="settingsDiv">
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+														<label for="callNotifyEmail">Notify Via Email</label>
+													</span>
+												</div>
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+														<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+													</span>
+												</div>
+												<div class="searchAddUser">
+													<input class="addNumInput" type="text">
+													<img class="hidden" src="images/address.png"/>
+												</div>
+												<div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callRejectCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsDiv">
+												<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton closeMenus">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="voicemailTranscript">
+										<div>
+											<div class="vmTranscriptText">
+												<p>Not sure if you heard the change of plans. Larry got sick and so we won't be going to dinner tonight.
+												Sorry for the late notice. Let's catch up this weekend. Bye</p>
+												<div class="vmRateTranscript">												
+													<img class="thumbsUp" src="images/thumbsUp.png">
+													<span>Rate this transcript</span>
+													<img class="thumbsDown" src="images/thumbsDown.png">
+												</div>							
+											</div>
+											<div class="vmControls">
+												<span class="vmPlayPause"><span class="pauseButton"></span></span> <span class="vmSeeker"><input type="range" value="20" min="0" max="100"/></span> <span class="vmProgress">0:13/1:16</span>
+											</div>
+											<div class="vmFlagOverlay">
+												<div>Mark Voice Mail</div>
+												<div class="switch">
+													<input id="vmF3" class="toggle toggle-round" type="checkbox">
+													<label for="vmF3" data-on="Unread" data-off="Read"></label>
+												</div>
+												<div>
+													<div class="button sendButton">Done</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmForwardOverlay">
+												<div>Forward a copy of this voice mail:</div>
+												<div>
+													<div class="searchAddUser">
+														<input type="text">
+														<img src="images/address.png"/>
+													</div>
+													<div class="button addButton">Add</div>
+												</div>
+												
+												<div>
+													<select name="forwardType">
+														<option value="audioNText" selected>Audio & Text</option>
+														<option value="audio">Audio</option>
+														<option value="text">Text</option>
+													</select>
+												</div>
+												<div>
+													<div class="button sendButton">Send</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmDeleteOverlay">
+												<div>Deleted voice mails cannot be retrieved. Are you sure you want to delete?</div>
+												<div>
+													<div class="button deleteButton">Delete</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmOptions">
+												<div class="vmFlag">Mark</div>
+												<div class="vmSave desktop">Save</div>
+												<div class="vmForward">Forward</div>
+												<div class="vmDownload">Download</div>
+												<div class="vmDelete">Delete</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="voiceMailLine isVoiceMail isNotOpened">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">(201) 842-0142</span>
+									<span class="callTime">2:01 PM</span>
+									<span class="callDate">05/09</span>
+									<span class="vmDuration"><span class="desktop">00:53</span> <img class="" src="images/vmPendingIcon.png"/></span>
+
+									<div class="callHistoryIcons">
+										<div>
+											<div class="newContactIcon icon">
+												<img src="images/addContact.png">
+												Add Contact
+											</div>
+											<div class="callNotifyIcon icon">
+												<img src="images/call_notify_blue.png">
+												Call Notify
+											</div>
+											<div class="callRejectIcon icon">
+												<img src="images/call_reject_blue.png">
+												Call Reject
+											</div>
+											<div class="voicemailIcon icon showVoiceMailIcon">
+												<img src="images/voicemail_blue.png">
+												Voicemail
+											</div>
+										</div>
+									</div>
+									<div class="addEditContact">
+										<div>
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton closeMenus">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callNotifyCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+											
+											<div class="settingsDiv">
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+														<label for="callNotifyEmail">Notify Via Email</label>
+													</span>
+												</div>
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+														<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+													</span>
+												</div>
+												<div class="searchAddUser">
+													<input class="addNumInput" type="text">
+													<img class="hidden" src="images/address.png"/>
+												</div>
+												<div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callRejectCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsDiv">
+												<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton closeMenus">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="voicemailTranscript">
+										<div>
+											<div class="vmTranscriptText">
+												<p>Not sure if you heard the change of plans. Larry got sick and so we won't be going to dinner tonight.
+												Sorry for the late notice. Let's catch up this weekend. Bye</p>
+												<div class="vmRateTranscript">												
+													<img class="thumbsUp" src="images/thumbsUp.png">
+													<span>Rate this transcript</span>
+													<img class="thumbsDown" src="images/thumbsDown.png">
+												</div>							
+											</div>
+											<div class="vmControls">
+												<span class="vmPlayPause"><span class="pauseButton"></span></span> <span class="vmSeeker"><input type="range" value="20" min="0" max="100"/></span> <span class="vmProgress">0:13/1:16</span>
+											</div>
+											<div class="vmFlagOverlay">
+												<div>Mark Voice Mail</div>
+												<div class="switch">
+													<input id="vmF4" class="toggle toggle-round" type="checkbox">
+													<label for="vmF4" data-on="Unread" data-off="Read"></label>
+												</div>
+												<div>
+													<div class="button sendButton">Done</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmForwardOverlay">
+												<div>Forward a copy of this voice mail:</div>
+												<div>
+													<div class="searchAddUser">
+														<input type="text">
+														<img src="images/address.png"/>
+													</div>
+													<div class="button addButton">Add</div>
+												</div>
+												
+												<div>
+													<select name="forwardType">
+														<option value="audioNText" selected>Audio & Text</option>
+														<option value="audio">Audio</option>
+														<option value="text">Text</option>
+													</select>
+												</div>
+												<div>
+													<div class="button sendButton">Send</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmDeleteOverlay">
+												<div>Deleted voice mails cannot be retrieved. Are you sure you want to delete?</div>
+												<div>
+													<div class="button deleteButton">Delete</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmOptions">
+												<div class="vmFlag">Mark</div>
+												<div class="vmSave desktop">Save</div>
+												<div class="vmForward">Forward</div>
+												<div class="vmDownload">Download</div>
+												<div class="vmDelete">Delete</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="callHistoryLine isMissedCall isNotOpened">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="editCallIcon">&nbsp;</span>
+									<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">(212) 672-6272</span>
+									<span class="callTime">4:42 PM</span>
+									<span class="callDate">05/10</span>
+									<span class="vmDuration"></span>
+									<div class="editCallInfo">
+										<div class="btnCreateContact">Create New Contact</div>
+										<div class="btnUpdateContact">Update Existing Contact</div>
+									</div>
+									
+									<div class="callHistoryIcons">
+										<div>
+											<div class="newContactIcon icon">
+												<img src="images/addContact.png">
+												Add Contact
+											</div>
+											<div class="callNotifyIcon icon">
+												<img src="images/call_notify_blue.png">
+												Call Notify
+											</div>
+											<div class="callRejectIcon icon">
+												<img src="images/call_reject_blue.png">
+												Call Reject
+											</div>
+											<div class="voicemailIcon icon showVoiceMailIcon">
+												<img src="images/voicemail_blue.png">
+												Voicemail
+											</div>
+										</div>
+									</div>
+									<div class="addEditContact">
+										<div>
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton closeMenus">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callNotifyCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+											
+											<div class="settingsDiv">
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+														<label for="callNotifyEmail">Notify Via Email</label>
+													</span>
+												</div>
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+														<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+													</span>
+												</div>
+												<div class="searchAddUser">
+													<input class="addNumInput" type="text">
+													<img class="hidden" src="images/address.png"/>
+												</div>
+												<div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callRejectCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsDiv">
+												<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton closeMenus">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="callHistoryLine isOutGoingCall">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="editCallIcon">&nbsp;</span>
+									<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+									<span class="phNumber">Ashley Wingfield</span>
+									<span class="callTime">9:03 AM</span>
+									<span class="callDate">05/10</span>
+									<span class="vmDuration">0:28</span>
+									<div class="editCallInfo isExistingContact">
+										<div class="btnEditContact">Edit Contact</div>
+									</div>
+									
+									<div class="callHistoryIcons">
+										<div>
+											<div class="newContactIcon icon">
+												<img src="images/addContact.png">
+												Add Contact
+											</div>
+											<div class="callNotifyIcon icon">
+												<img src="images/call_notify_blue.png">
+												Call Notify
+											</div>
+											<div class="callRejectIcon icon">
+												<img src="images/call_reject_blue.png">
+												Call Reject
+											</div>
+											<div class="voicemailIcon icon showVoiceMailIcon">
+												<img src="images/voicemail_blue.png">
+												Voicemail
+											</div>
+										</div>
+									</div>
+									<div class="addEditContact">
+										<div>
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton closeMenus">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callNotifyCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+											
+											<div class="settingsDiv">
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+														<label for="callNotifyEmail">Notify Via Email</label>
+													</span>
+												</div>
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+														<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+													</span>
+												</div>
+												<div class="searchAddUser">
+													<input class="addNumInput" type="text">
+													<img class="hidden" src="images/address.png"/>
+												</div>
+												<div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callRejectCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsDiv">
+												<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton closeMenus">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="voiceMailLine isVoiceMail">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">Ben Johnson</span>
+									<span class="callTime">9:57 AM</span>
+									<span class="callDate">05/08</span>
+									<span class="vmDuration"><span class="desktop">1:37</span> <img class="" src="images/vmPendingIcon.png"/></span>
+
+									<div class="callHistoryIcons">
+										<div>
+											<div class="newContactIcon icon">
+												<img src="images/addContact.png">
+												Add Contact
+											</div>
+											<div class="callNotifyIcon icon">
+												<img src="images/call_notify_blue.png">
+												Call Notify
+											</div>
+											<div class="callRejectIcon icon">
+												<img src="images/call_reject_blue.png">
+												Call Reject
+											</div>
+											<div class="voicemailIcon icon showVoiceMailIcon">
+												<img src="images/voicemail_blue.png">
+												Voicemail
+											</div>
+										</div>
+									</div>
+									<div class="addEditContact">
+										<div>
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton closeMenus">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callNotifyCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+											
+											<div class="settingsDiv">
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+														<label for="callNotifyEmail">Notify Via Email</label>
+													</span>
+												</div>
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+														<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+													</span>
+												</div>
+												<div class="searchAddUser">
+													<input class="addNumInput" type="text">
+													<img class="hidden" src="images/address.png"/>
+												</div>
+												<div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callRejectCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsDiv">
+												<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton closeMenus">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="voicemailTranscript">
+										<div>
+											<div class="vmTranscriptText">
+												<p>Not sure if you heard the change of plans. Larry got sick and so we won't be going to dinner tonight.
+												Sorry for the late notice. Let's catch up this weekend. Bye</p>
+												<div class="vmRateTranscript">												
+													<img class="thumbsUp" src="images/thumbsUp.png">
+													<span>Rate this transcript</span>
+													<img class="thumbsDown" src="images/thumbsDown.png">
+												</div>							
+											</div>
+											<div class="vmControls">
+												<span class="vmPlayPause"><span class="pauseButton"></span></span> <span class="vmSeeker"><input type="range" value="20" min="0" max="100"/></span> <span class="vmProgress">0:13/1:16</span>
+											</div>
+											<div class="vmFlagOverlay">
+												<div>Mark Voice Mail</div>
+												<div class="switch">
+													<input id="vmF5" class="toggle toggle-round" type="checkbox">
+													<label for="vmF5" data-on="Unread" data-off="Read"></label>
+												</div>
+												<div>
+													<div class="button sendButton">Done</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmForwardOverlay">
+												<div>Forward a copy of this voice mail:</div>
+												<div>
+													<div class="searchAddUser">
+														<input type="text">
+														<img src="images/address.png"/>
+													</div>
+													<div class="button addButton">Add</div>
+												</div>
+												
+												<div>
+													<select name="forwardType">
+														<option value="audioNText" selected>Audio & Text</option>
+														<option value="audio">Audio</option>
+														<option value="text">Text</option>
+													</select>
+												</div>
+												<div>
+													<div class="button sendButton">Send</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmDeleteOverlay">
+												<div>Deleted voice mails cannot be retrieved. Are you sure you want to delete?</div>
+												<div>
+													<div class="button deleteButton">Delete</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmOptions">
+												<div class="vmFlag">Mark</div>
+												<div class="vmSave desktop">Save</div>
+												<div class="vmForward">Forward</div>
+												<div class="vmDownload">Download</div>
+												<div class="vmDelete">Delete</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="voiceMailLine isVoiceMail">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="deleteVMIcon"><img src="images/delete_red.png"/></span>
+									<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">Ashley Wingfield</span>
+									<span class="callTime">9:03 AM</span>
+									<span class="callDate">05/08</span>
+									<span class="vmDuration"><span class="desktop">0:28</span> <img class="" src="images/vmPendingIcon.png"/></span>
+
+									<div class="callHistoryIcons">
+										<div>
+											<div class="newContactIcon icon">
+												<img src="images/addContact.png">
+												Add Contact
+											</div>
+											<div class="callNotifyIcon icon">
+												<img src="images/call_notify_blue.png">
+												Call Notify
+											</div>
+											<div class="callRejectIcon icon">
+												<img src="images/call_reject_blue.png">
+												Call Reject
+											</div>
+											<div class="voicemailIcon icon showVoiceMailIcon">
+												<img src="images/voicemail_blue.png">
+												Voicemail
+											</div>
+										</div>
+									</div>
+									<div class="addEditContact">
+										<div>
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton closeMenus">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callNotifyCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+											
+											<div class="settingsDiv">
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+														<label for="callNotifyEmail">Notify Via Email</label>
+													</span>
+												</div>
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+														<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+													</span>
+												</div>
+												<div class="searchAddUser">
+													<input class="addNumInput" type="text">
+													<img class="hidden" src="images/address.png"/>
+												</div>
+												<div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callRejectCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsDiv">
+												<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton closeMenus">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="voicemailTranscript">
+										<div>
+											<div class="vmTranscriptText">
+												<p>Not sure if you heard the change of plans. Larry got sick and so we won't be going to dinner tonight.
+												Sorry for the late notice. Let's catch up this weekend. Bye</p>
+												<div class="vmRateTranscript">												
+													<img class="thumbsUp" src="images/thumbsUp.png">
+													<span>Rate this transcript</span>
+													<img class="thumbsDown" src="images/thumbsDown.png">
+												</div>
+											</div>
+											<div class="vmControls">
+												<span class="vmPlayPause"><span class="pauseButton"></span></span> <span class="vmSeeker"><input type="range" value="20" min="0" max="100"/></span> <span class="vmProgress">0:13/1:16</span>
+											</div>
+											<div class="vmFlagOverlay">
+												<div>Mark Voice Mail</div>
+												<div class="switch">
+													<input id="vmF6" class="toggle toggle-round" type="checkbox">
+													<label for="vmF6" data-on="Unread" data-off="Read"></label>
+												</div>
+												<div>
+													<div class="button sendButton">Done</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmForwardOverlay">
+												<div>Forward a copy of this voice mail:</div>
+												<div>
+													<div class="searchAddUser">
+														<input type="text">
+														<img src="images/address.png"/>
+													</div>
+													<div class="button addButton">Add</div>
+												</div>
+												
+												<div>
+													<select name="forwardType">
+														<option value="audioNText" selected>Audio & Text</option>
+														<option value="audio">Audio</option>
+														<option value="text">Text</option>
+													</select>
+												</div>
+												<div>
+													<div class="button sendButton">Send</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmDeleteOverlay">
+												<div>Deleted voice mails cannot be retrieved. Are you sure you want to delete?</div>
+												<div>
+													<div class="button deleteButton">Delete</div>
+													<div class="button cancelButton cancelVMOverlay">Cancel</div>
+												</div>
+											</div>
+											<div class="vmOptions">
+												<div class="vmFlag">Mark</div>
+												<div class="vmSave desktop">Save</div>
+												<div class="vmForward">Forward</div>
+												<div class="vmDownload">Download</div>
+												<div class="vmDelete">Delete</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="callHistoryLine isMissedCall isNotOpened">
+									<span class="selectItem desktop"><input type="checkbox"></span>
+									<span class="editCallIcon">&nbsp;</span>
+									<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+									<span class="callTypeIcon">&nbsp;</span>
+									<span class="phNumber">Ben Johnson</span>
+									<span class="callTime">9:57 AM</span>
+									<span class="callDate">05/7</span>
+									<span class="vmDuration"></span>
+									<div class="editCallInfo isExistingContact">
+										<div class="btnEditContact">Edit Contact</div>
+									</div>
+									
+									<div class="callHistoryIcons">
+										<div>
+											<div class="newContactIcon icon">
+												<img src="images/addContact.png">
+												Add Contact
+											</div>
+											<div class="callNotifyIcon icon">
+												<img src="images/call_notify_blue.png">
+												Call Notify
+											</div>
+											<div class="callRejectIcon icon">
+												<img src="images/call_reject_blue.png">
+												Call Reject
+											</div>
+											<div class="voicemailIcon icon showVoiceMailIcon">
+												<img src="images/voicemail_blue.png">
+												Voicemail
+											</div>
+										</div>
+									</div>
+									<div class="addEditContact">
+										<div>
+											<div class="contactInfo">
+												<div>
+													Enter the name and number of the new contact you would like to add to your Address Book list.
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="First Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Last Name" type="text">
+												</div>
+												<div class="searchAddUser">
+													<input placeholder="Number" type="text">
+												</div>
+												
+												<div class="linkStyle">
+													Add Another Number
+												</div>								
+											</div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Add</div>
+												<div class="button cancelButton closeMenus">Cancel</div>
+											</div>
+										</div>
+									</div>
+									<div class="callNotifyCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+											
+											<div class="settingsDiv">
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+														<label for="callNotifyEmail">Notify Via Email</label>
+													</span>
+												</div>
+												<div class="settingsText">
+													<span class="">
+														<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+														<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+													</span>
+												</div>
+												<div class="searchAddUser">
+													<input class="addNumInput" type="text">
+													<img class="hidden" src="images/address.png"/>
+												</div>
+												<div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callRejectCallHistory">
+										<div class="marginDiv2">
+											<div class="settingsDiv">
+												<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton closeMenus">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="listCalls30Days hidden">
+									<div class="callHistoryLine isMissedCall isNotOpened">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">Regina Watson</span>
+										<span class="callTime">7:23 PM</span>
+										<span class="callDate">05/7</span>
+										<span class="vmDuration"></span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+										
+										<div class="callHistoryIcons">
+											<div>
+												<div class="newContactIcon icon">
+													<img src="images/addContact.png">
+													Add Contact
+												</div>
+												<div class="callNotifyIcon icon">
+													<img src="images/call_notify_blue.png">
+													Call Notify
+												</div>
+												<div class="callRejectIcon icon">
+													<img src="images/call_reject_blue.png">
+													Call Reject
+												</div>
+												<div class="voicemailIcon icon showVoiceMailIcon">
+													<img src="images/voicemail_blue.png">
+													Voicemail
+												</div>
+											</div>
+										</div>
+										<div class="addEditContact">
+											<div>
+												<div class="contactInfo">
+													<div>
+														Enter the name and number of the new contact you would like to add to your Address Book list.
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="First Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Last Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Number" type="text">
+													</div>
+													
+													<div class="linkStyle">
+														Add Another Number
+													</div>								
+												</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+										<div class="callNotifyCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+												
+												<div class="settingsDiv">
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+															<label for="callNotifyEmail">Notify Via Email</label>
+														</span>
+													</div>
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+															<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+														</span>
+													</div>
+													<div class="searchAddUser">
+														<input class="addNumInput" type="text">
+														<img class="hidden" src="images/address.png"/>
+													</div>
+													<div>
+														<div class="vmSettingButtons">
+															<div class="button saveButton closeMenus">Add</div>
+															<div class="button cancelButton closeMenus">Cancel</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="callRejectCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsDiv">
+													<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callHistoryLine">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">(404) 221-4340</span>
+										<span class="callTime">10:35 PM</span>
+										<span class="callDate">05/7</span>
+										<span class="vmDuration">2:14</span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+																			
+										<div class="callHistoryIcons">
+											<div>
+												<div class="newContactIcon icon">
+													<img src="images/addContact.png">
+													Add Contact
+												</div>
+												<div class="callNotifyIcon icon">
+													<img src="images/call_notify_blue.png">
+													Call Notify
+												</div>
+												<div class="callRejectIcon icon">
+													<img src="images/call_reject_blue.png">
+													Call Reject
+												</div>
+												<div class="voicemailIcon icon showVoiceMailIcon">
+													<img src="images/voicemail_blue.png">
+													Voicemail
+												</div>
+											</div>
+										</div>
+										<div class="addEditContact">
+											<div>
+												<div class="contactInfo">
+													<div>
+														Enter the name and number of the new contact you would like to add to your Address Book list.
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="First Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Last Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Number" type="text">
+													</div>
+													
+													<div class="linkStyle">
+														Add Another Number
+													</div>								
+												</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+										<div class="callNotifyCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+												
+												<div class="settingsDiv">
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+															<label for="callNotifyEmail">Notify Via Email</label>
+														</span>
+													</div>
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+															<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+														</span>
+													</div>
+													<div class="searchAddUser">
+														<input class="addNumInput" type="text">
+														<img class="hidden" src="images/address.png"/>
+													</div>
+													<div>
+														<div class="vmSettingButtons">
+															<div class="button saveButton closeMenus">Add</div>
+															<div class="button cancelButton closeMenus">Cancel</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="callRejectCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsDiv">
+													<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isOutGoingCall">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+										<span class="phNumber">(201) 842-0142</span>
+										<span class="callTime">2:01 PM</span>
+										<span class="callDate">05/3</span>
+										<span class="vmDuration">00:53</span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+																			
+										<div class="callHistoryIcons">
+											<div>
+												<div class="newContactIcon icon">
+													<img src="images/addContact.png">
+													Add Contact
+												</div>
+												<div class="callNotifyIcon icon">
+													<img src="images/call_notify_blue.png">
+													Call Notify
+												</div>
+												<div class="callRejectIcon icon">
+													<img src="images/call_reject_blue.png">
+													Call Reject
+												</div>
+												<div class="voicemailIcon icon showVoiceMailIcon">
+													<img src="images/voicemail_blue.png">
+													Voicemail
+												</div>
+											</div>
+										</div>
+										<div class="addEditContact">
+											<div>
+												<div class="contactInfo">
+													<div>
+														Enter the name and number of the new contact you would like to add to your Address Book list.
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="First Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Last Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Number" type="text">
+													</div>
+													
+													<div class="linkStyle">
+														Add Another Number
+													</div>								
+												</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+										<div class="callNotifyCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+												
+												<div class="settingsDiv">
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+															<label for="callNotifyEmail">Notify Via Email</label>
+														</span>
+													</div>
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+															<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+														</span>
+													</div>
+													<div class="searchAddUser">
+														<input class="addNumInput" type="text">
+														<img class="hidden" src="images/address.png"/>
+													</div>
+													<div>
+														<div class="vmSettingButtons">
+															<div class="button saveButton closeMenus">Add</div>
+															<div class="button cancelButton closeMenus">Cancel</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="callRejectCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsDiv">
+													<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="callHistoryLine isMissedCall isNotOpened">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">(212) 672-6272</span>
+										<span class="callTime">4:42 PM</span>
+										<span class="callDate">05/3</span>
+										<span class="vmDuration"></span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+																			
+										<div class="callHistoryIcons">
+											<div>
+												<div class="newContactIcon icon">
+													<img src="images/addContact.png">
+													Add Contact
+												</div>
+												<div class="callNotifyIcon icon">
+													<img src="images/call_notify_blue.png">
+													Call Notify
+												</div>
+												<div class="callRejectIcon icon">
+													<img src="images/call_reject_blue.png">
+													Call Reject
+												</div>
+												<div class="voicemailIcon icon showVoiceMailIcon">
+													<img src="images/voicemail_blue.png">
+													Voicemail
+												</div>
+											</div>
+										</div>
+										<div class="addEditContact">
+											<div>
+												<div class="contactInfo">
+													<div>
+														Enter the name and number of the new contact you would like to add to your Address Book list.
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="First Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Last Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Number" type="text">
+													</div>
+													
+													<div class="linkStyle">
+														Add Another Number
+													</div>								
+												</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+										<div class="callNotifyCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+												
+												<div class="settingsDiv">
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+															<label for="callNotifyEmail">Notify Via Email</label>
+														</span>
+													</div>
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+															<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+														</span>
+													</div>
+													<div class="searchAddUser">
+														<input class="addNumInput" type="text">
+														<img class="hidden" src="images/address.png"/>
+													</div>
+													<div>
+														<div class="vmSettingButtons">
+															<div class="button saveButton closeMenus">Add</div>
+															<div class="button cancelButton closeMenus">Cancel</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="callRejectCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsDiv">
+													<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="callHistoryLine isOutGoingCall">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+										<span class="phNumber">Ashley Wingfield</span>
+										<span class="callTime">9:03 AM</span>
+										<span class="callDate">05/3</span>
+										<span class="vmDuration">0:28</span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+										
+										<div class="callHistoryIcons">
+											<div>
+												<div class="newContactIcon icon">
+													<img src="images/addContact.png">
+													Add Contact
+												</div>
+												<div class="callNotifyIcon icon">
+													<img src="images/call_notify_blue.png">
+													Call Notify
+												</div>
+												<div class="callRejectIcon icon">
+													<img src="images/call_reject_blue.png">
+													Call Reject
+												</div>
+												<div class="voicemailIcon icon showVoiceMailIcon">
+													<img src="images/voicemail_blue.png">
+													Voicemail
+												</div>
+											</div>
+										</div>
+										<div class="addEditContact">
+											<div>
+												<div class="contactInfo">
+													<div>
+														Enter the name and number of the new contact you would like to add to your Address Book list.
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="First Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Last Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Number" type="text">
+													</div>
+													
+													<div class="linkStyle">
+														Add Another Number
+													</div>								
+												</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+										<div class="callNotifyCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+												
+												<div class="settingsDiv">
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+															<label for="callNotifyEmail">Notify Via Email</label>
+														</span>
+													</div>
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+															<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+														</span>
+													</div>
+													<div class="searchAddUser">
+														<input class="addNumInput" type="text">
+														<img class="hidden" src="images/address.png"/>
+													</div>
+													<div>
+														<div class="vmSettingButtons">
+															<div class="button saveButton closeMenus">Add</div>
+															<div class="button cancelButton closeMenus">Cancel</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="callRejectCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsDiv">
+													<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="callHistoryLine isMissedCall isNotOpened">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">Ben Johnson</span>
+										<span class="callTime">9:57 AM</span>
+										<span class="callDate">05/3</span>
+										<span class="vmDuration"></span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+										
+										<div class="callHistoryIcons">
+											<div>
+												<div class="newContactIcon icon">
+													<img src="images/addContact.png">
+													Add Contact
+												</div>
+												<div class="callNotifyIcon icon">
+													<img src="images/call_notify_blue.png">
+													Call Notify
+												</div>
+												<div class="callRejectIcon icon">
+													<img src="images/call_reject_blue.png">
+													Call Reject
+												</div>
+												<div class="voicemailIcon icon showVoiceMailIcon">
+													<img src="images/voicemail_blue.png">
+													Voicemail
+												</div>
+											</div>
+										</div>
+										<div class="addEditContact">
+											<div>
+												<div class="contactInfo">
+													<div>
+														Enter the name and number of the new contact you would like to add to your Address Book list.
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="First Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Last Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Number" type="text">
+													</div>
+													
+													<div class="linkStyle">
+														Add Another Number
+													</div>								
+												</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+										<div class="callNotifyCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+												
+												<div class="settingsDiv">
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+															<label for="callNotifyEmail">Notify Via Email</label>
+														</span>
+													</div>
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+															<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+														</span>
+													</div>
+													<div class="searchAddUser">
+														<input class="addNumInput" type="text">
+														<img class="hidden" src="images/address.png"/>
+													</div>
+													<div>
+														<div class="vmSettingButtons">
+															<div class="button saveButton closeMenus">Add</div>
+															<div class="button cancelButton closeMenus">Cancel</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="callRejectCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsDiv">
+													<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								
+								<div class="listCalls60Days hidden">
+									<div class="callHistoryLine isMissedCall isNotOpened">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">Regina Watson</span>
+										<span class="callTime">7:23 PM</span>
+										<span class="callDate">03/27</span>
+										<span class="vmDuration"></span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+										
+										<div class="callHistoryIcons">
+											<div>
+												<div class="newContactIcon icon">
+													<img src="images/addContact.png">
+													Add Contact
+												</div>
+												<div class="callNotifyIcon icon">
+													<img src="images/call_notify_blue.png">
+													Call Notify
+												</div>
+												<div class="callRejectIcon icon">
+													<img src="images/call_reject_blue.png">
+													Call Reject
+												</div>
+												<div class="voicemailIcon icon showVoiceMailIcon">
+													<img src="images/voicemail_blue.png">
+													Voicemail
+												</div>
+											</div>
+										</div>
+										<div class="addEditContact">
+											<div>
+												<div class="contactInfo">
+													<div>
+														Enter the name and number of the new contact you would like to add to your Address Book list.
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="First Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Last Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Number" type="text">
+													</div>
+													
+													<div class="linkStyle">
+														Add Another Number
+													</div>								
+												</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+										<div class="callNotifyCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+												
+												<div class="settingsDiv">
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+															<label for="callNotifyEmail">Notify Via Email</label>
+														</span>
+													</div>
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+															<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+														</span>
+													</div>
+													<div class="searchAddUser">
+														<input class="addNumInput" type="text">
+														<img class="hidden" src="images/address.png"/>
+													</div>
+													<div>
+														<div class="vmSettingButtons">
+															<div class="button saveButton closeMenus">Add</div>
+															<div class="button cancelButton closeMenus">Cancel</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="callRejectCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsDiv">
+													<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="callHistoryLine">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">(404) 221-4340</span>
+										<span class="callTime">10:35 PM</span>
+										<span class="callDate">03/27</span>
+										<span class="vmDuration">2:14</span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+										
+										<div class="callHistoryIcons">
+											<div>
+												<div class="newContactIcon icon">
+													<img src="images/addContact.png">
+													Add Contact
+												</div>
+												<div class="callNotifyIcon icon">
+													<img src="images/call_notify_blue.png">
+													Call Notify
+												</div>
+												<div class="callRejectIcon icon">
+													<img src="images/call_reject_blue.png">
+													Call Reject
+												</div>
+												<div class="voicemailIcon icon showVoiceMailIcon">
+													<img src="images/voicemail_blue.png">
+													Voicemail
+												</div>
+											</div>
+										</div>
+										<div class="addEditContact">
+											<div>
+												<div class="contactInfo">
+													<div>
+														Enter the name and number of the new contact you would like to add to your Address Book list.
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="First Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Last Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Number" type="text">
+													</div>
+													
+													<div class="linkStyle">
+														Add Another Number
+													</div>								
+												</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+										<div class="callNotifyCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+												
+												<div class="settingsDiv">
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+															<label for="callNotifyEmail">Notify Via Email</label>
+														</span>
+													</div>
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+															<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+														</span>
+													</div>
+													<div class="searchAddUser">
+														<input class="addNumInput" type="text">
+														<img class="hidden" src="images/address.png"/>
+													</div>
+													<div>
+														<div class="vmSettingButtons">
+															<div class="button saveButton closeMenus">Add</div>
+															<div class="button cancelButton closeMenus">Cancel</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="callRejectCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsDiv">
+													<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isOutGoingCall">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+										<span class="phNumber">(201) 842-0142</span>
+										<span class="callTime">2:01 PM</span>
+										<span class="callDate">03/27</span>
+										<span class="vmDuration">00:53</span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+										
+										<div class="callHistoryIcons">
+											<div>
+												<div class="newContactIcon icon">
+													<img src="images/addContact.png">
+													Add Contact
+												</div>
+												<div class="callNotifyIcon icon">
+													<img src="images/call_notify_blue.png">
+													Call Notify
+												</div>
+												<div class="callRejectIcon icon">
+													<img src="images/call_reject_blue.png">
+													Call Reject
+												</div>
+												<div class="voicemailIcon icon showVoiceMailIcon">
+													<img src="images/voicemail_blue.png">
+													Voicemail
+												</div>
+											</div>
+										</div>
+										<div class="addEditContact">
+											<div>
+												<div class="contactInfo">
+													<div>
+														Enter the name and number of the new contact you would like to add to your Address Book list.
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="First Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Last Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Number" type="text">
+													</div>
+													
+													<div class="linkStyle">
+														Add Another Number
+													</div>								
+												</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+										<div class="callNotifyCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+												
+												<div class="settingsDiv">
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+															<label for="callNotifyEmail">Notify Via Email</label>
+														</span>
+													</div>
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+															<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+														</span>
+													</div>
+													<div class="searchAddUser">
+														<input class="addNumInput" type="text">
+														<img class="hidden" src="images/address.png"/>
+													</div>
+													<div>
+														<div class="vmSettingButtons">
+															<div class="button saveButton closeMenus">Add</div>
+															<div class="button cancelButton closeMenus">Cancel</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="callRejectCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsDiv">
+													<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isMissedCall isNotOpened">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">(212) 672-6272</span>
+										<span class="callTime">4:42 PM</span>
+										<span class="callDate">03/25</span>
+										<span class="vmDuration"></span>
+										<div class="editCallInfo">
+											<div class="btnCreateContact">Create New Contact</div>
+											<div class="btnUpdateContact">Update Existing Contact</div>
+										</div>
+																			
+										<div class="callHistoryIcons">
+											<div>
+												<div class="newContactIcon icon">
+													<img src="images/addContact.png">
+													Add Contact
+												</div>
+												<div class="callNotifyIcon icon">
+													<img src="images/call_notify_blue.png">
+													Call Notify
+												</div>
+												<div class="callRejectIcon icon">
+													<img src="images/call_reject_blue.png">
+													Call Reject
+												</div>
+												<div class="voicemailIcon icon showVoiceMailIcon">
+													<img src="images/voicemail_blue.png">
+													Voicemail
+												</div>
+											</div>
+										</div>
+										<div class="addEditContact">
+											<div>
+												<div class="contactInfo">
+													<div>
+														Enter the name and number of the new contact you would like to add to your Address Book list.
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="First Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Last Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Number" type="text">
+													</div>
+													
+													<div class="linkStyle">
+														Add Another Number
+													</div>								
+												</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+										<div class="callNotifyCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+												
+												<div class="settingsDiv">
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+															<label for="callNotifyEmail">Notify Via Email</label>
+														</span>
+													</div>
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+															<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+														</span>
+													</div>
+													<div class="searchAddUser">
+														<input class="addNumInput" type="text">
+														<img class="hidden" src="images/address.png"/>
+													</div>
+													<div>
+														<div class="vmSettingButtons">
+															<div class="button saveButton closeMenus">Add</div>
+															<div class="button cancelButton closeMenus">Cancel</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="callRejectCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsDiv">
+													<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isOutGoingCall">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon"><img src="images/outgoingCallIcon.png"/></span>
+										<span class="phNumber">Ashley Wingfield</span>
+										<span class="callTime">9:03 AM</span>
+										<span class="callDate">03/25</span>
+										<span class="vmDuration">0:28</span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+																			
+										<div class="callHistoryIcons">
+											<div>
+												<div class="newContactIcon icon">
+													<img src="images/addContact.png">
+													Add Contact
+												</div>
+												<div class="callNotifyIcon icon">
+													<img src="images/call_notify_blue.png">
+													Call Notify
+												</div>
+												<div class="callRejectIcon icon">
+													<img src="images/call_reject_blue.png">
+													Call Reject
+												</div>
+												<div class="voicemailIcon icon showVoiceMailIcon">
+													<img src="images/voicemail_blue.png">
+													Voicemail
+												</div>
+											</div>
+										</div>
+										<div class="addEditContact">
+											<div>
+												<div class="contactInfo">
+													<div>
+														Enter the name and number of the new contact you would like to add to your Address Book list.
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="First Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Last Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Number" type="text">
+													</div>
+													
+													<div class="linkStyle">
+														Add Another Number
+													</div>								
+												</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+										<div class="callNotifyCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+												
+												<div class="settingsDiv">
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+															<label for="callNotifyEmail">Notify Via Email</label>
+														</span>
+													</div>
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+															<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+														</span>
+													</div>
+													<div class="searchAddUser">
+														<input class="addNumInput" type="text">
+														<img class="hidden" src="images/address.png"/>
+													</div>
+													<div>
+														<div class="vmSettingButtons">
+															<div class="button saveButton closeMenus">Add</div>
+															<div class="button cancelButton closeMenus">Cancel</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="callRejectCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsDiv">
+													<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="callHistoryLine isMissedCall isNotOpened">
+										<span class="selectItem desktop"><input type="checkbox"></span>
+										<span class="editCallIcon">&nbsp;</span>
+										<span class="addContact desktop hidden"><img src="images/addContact.png"/></span>
+										<span class="callTypeIcon">&nbsp;</span>
+										<span class="phNumber">Ben Johnson</span>
+										<span class="callTime">9:57 AM</span>
+										<span class="callDate">03/25</span>
+										<span class="vmDuration"></span>
+										<div class="editCallInfo isExistingContact">
+											<div class="btnEditContact">Edit Contact</div>
+										</div>
+																			
+										<div class="callHistoryIcons">
+											<div>
+												<div class="newContactIcon icon">
+													<img src="images/addContact.png">
+													Add Contact
+												</div>
+												<div class="callNotifyIcon icon">
+													<img src="images/call_notify_blue.png">
+													Call Notify
+												</div>
+												<div class="callRejectIcon icon">
+													<img src="images/call_reject_blue.png">
+													Call Reject
+												</div>
+												<div class="voicemailIcon icon showVoiceMailIcon">
+													<img src="images/voicemail_blue.png">
+													Voicemail
+												</div>
+											</div>
+										</div>
+										<div class="addEditContact">
+											<div>
+												<div class="contactInfo">
+													<div>
+														Enter the name and number of the new contact you would like to add to your Address Book list.
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="First Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Last Name" type="text">
+													</div>
+													<div class="searchAddUser">
+														<input placeholder="Number" type="text">
+													</div>
+													
+													<div class="linkStyle">
+														Add Another Number
+													</div>								
+												</div>
+												<div class="vmSettingButtons">
+													<div class="button saveButton">Add</div>
+													<div class="button cancelButton closeMenus">Cancel</div>
+												</div>
+											</div>
+										</div>
+										<div class="callNotifyCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsText">Do you want to add <span class="callerName"></span> to call notify list.</div>
+												
+												<div class="settingsDiv">
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+															<label for="callNotifyEmail">Notify Via Email</label>
+														</span>
+													</div>
+													<div class="settingsText">
+														<span class="">
+															<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+															<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+														</span>
+													</div>
+													<div class="searchAddUser">
+														<input class="addNumInput" type="text">
+														<img class="hidden" src="images/address.png"/>
+													</div>
+													<div>
+														<div class="vmSettingButtons">
+															<div class="button saveButton closeMenus">Add</div>
+															<div class="button cancelButton closeMenus">Cancel</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="callRejectCallHistory">
+											<div class="marginDiv2">
+												<div class="settingsDiv">
+													<div class="settingsText">Do you want to add <span class="callerName"> </span> to call reject list?</div>
+													<div class="vmSettingButtons">
+														<div class="button saveButton closeMenus">Add</div>
+														<div class="button cancelButton closeMenus">Cancel</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="menuItem textMessageMenu">
+					<span class="accordionOpen">+</span> <!-- <img src="images/message.png"/> --> <span class="menuItemText">Text Messages</span> <span class="rightArrow"></span>
+				</div>
+				<div id="textMessagePage">
+					<div class="textMessages">
+						<div class="textMessage">
+							<div class="textMessageLine1">
+								<div class="textMessageSenderName half left">Karen Mattison
+								</div>
+								<div class="textMessageReceivedTime half right">3:16 PM
+								</div>
+							</div>
+							<div class="textMessageLine2">
+								<div class="textMessageExcerpt">We'll be there in 5 minutes
+								</div>
+								<div class="textMessageAttachmentsIcon">
+									<img src="images/attachment.png"/>
+								</div>
+							</div>
+						</div>
+						
+						<div class="textMessage">
+							<div class="textMessageLine1">
+								<div class="textMessageSenderName half left">Dale Allen
+								</div>
+								<div class="textMessageReceivedTime half right">11:19 PM
+								</div>
+							</div>
+							<div class="textMessageLine2">
+								<div class="textMessageExcerpt">I didn't get the package. Can you resend?
+								</div>
+								<div class="textMessageAttachmentsIcon">
+								</div>
+							</div>
+						</div>
+						
+						<div class="textMessage">
+							<div class="textMessageLine1">
+								<div class="textMessageSenderName half left">Lawrence Welk
+								</div>
+								<div class="textMessageReceivedTime half right">11:31 PM
+								</div>
+							</div>
+							<div class="textMessageLine2">
+								<div class="textMessageExcerpt">Oh, I love that song...
+								</div>
+								<div class="textMessageAttachmentsIcon">
+								</div>
+							</div>
+						</div>
+						
+						<div class="textMessage">
+							<div class="textMessageLine1">
+								<div class="textMessageSenderName half left">Larry Hagman
+								</div>
+								<div class="textMessageReceivedTime half right">11:45 PM
+								</div>
+							</div>
+							<div class="textMessageLine2">
+								<div class="textMessageExcerpt">There is something you need to know
+								</div>
+								<div class="textMessageAttachmentsIcon">
+									<img src="images/attachment.png"/>
+								</div>
+							</div>
+						</div>
+						
+						<div class="textMessage">
+							<div class="textMessageLine1">
+								<div class="textMessageSenderName half left">Allen Dulles
+								</div>
+								<div class="textMessageReceivedTime half right">Yesterday
+								</div>
+							</div>
+							<div class="textMessageLine2">
+								<div class="textMessageExcerpt">I'm not sure. Let me get back to you.
+								</div>
+								<div class="textMessageAttachmentsIcon">
+								</div>
+							</div>
+						</div>
+						
+						<div class="textMessage">
+							<div class="textMessageLine1">
+								<div class="textMessageSenderName half left">Andrew Davis
+								</div>
+								<div class="textMessageReceivedTime half right">Yesterday
+								</div>
+							</div>
+							<div class="textMessageLine2">
+								<div class="textMessageExcerpt">Can you bring me a new set of designs to review?
+								</div>
+								<div class="textMessageAttachmentsIcon">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="menuItem addressBookMenu">
+					<span class="accordionOpen">+</span> <!-- <img src="images/address.png"/> --> <span class="menuItemText">Address Book </span> <span class="rightArrow"></span>
+				</div>
+				<div id="addressBookPage">
+				</div>
+				
+				<div class="menuItem settingsMenu">
+					<span class="accordionOpen">+</span> <!-- <img src="images/settings.png"/> --> <span class="menuItemText">Settings </span> <span class="rightArrow"></span>
+				</div>
+				<div id="settingsPage">
+					<div class="settingsMenuItem">
+						<div id="voicemailSettings" class="left changeSettings">
+							Voice Mail
+						</div>
+						<div class="left settingsHelp">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							Voice Mail allows you to manage messages from missed calls. You can keep, delete, download or forward a message with this feature.
+						</div>
+						<div class="switch right">
+							<input id="toggleVM" class="toggle toggle-round" type="checkbox" checked>
+							<label for="toggleVM" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="voicemailSettings">
+						<div class="marginDiv2">
+							<div class="settingsText settingsInfoText"></div>
+							
+							<div class="settingsDiv">
+								<div class="vmPinOptions settingsText"><span class="blueText">Change Voice Mail PIN</span>
+									<div class="right">
+										<span class="">
+											<input type="radio" name="" class="radioChangeSelection" id="radioUpdateVMPin">
+											<label for="radioUpdateVMPin">Update</label>
+										</span>
+									</div>
+								</div>
+								
+								<div class="changeVoicemailPin desktop">
+									<div class="full">
+										<input type="password" placeholder="Enter new PIN" maxlength="8">
+										<input type="password" placeholder="Confirm new PIN" maxlength="8">
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Save</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="vmPinOptions settingsText blueText">Voice Mail Notifications 
+									<div class="switch right">
+										<input id="toggleVMPin" class="toggle toggle-round" type="checkbox">
+										<label for="toggleVMPin" data-on="On" data-off="Off"></label>
+									</div>
+								</div>
+					
+								<!-- <div class="addNumsListParent hidden">
+									<div class="settingsText">Notify me at the following <span class="radioSelectedOption">email address</span></div>
+									<div class="searchAddUser">
+										<input class="addNumInput" type="text">
+										<img class="hidden" src="images/address.png"/>
+									</div>
+									<div class="button addButton desktop">Add</div>
+									<div class="vmSettingButtons mobile">
+										<div class="button saveButton btnAddToList">Add</div>
+									</div>
+									
+									<div class="addNumsList hidden">
+										<div class="numsList"></div>
+										<div class="editNumsList linkStyle">Edit</div>
+										<div></div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Save</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div> -->
+								
+								<div class="settingsText toggleVMPin hidden">
+									<div class="settingsText">Choose Notification Method</span></div>
+									<select name="forwardType">
+										<option selected>Email</option>
+										<option>SMS</option>
+										<option>MMS</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="changeVoicemailPin mobile">
+						<div class="marginDiv2">
+							<div class="settingsText blueText">Change Voice Mail PIN</div>
+							<div>
+								<div class="settingsText">Enter new PIN <img id="pinHelpInstr" class="helpQuestion" src="images/help.png"/></div>
+								<input type="password" maxlength="8">
+								<div class="settingsText">Confirm new PIN</div>
+								<input type="password" maxlength="8">
+							</div>
+							<div class="vmSettingButtons">
+								<div class="button saveButton">Save</div>
+								<div class="button cancelButton">Cancel</div>
+							</div>
+						</div>
+					</div>
+					<div class="pinHelpInstr helpOverlay hidden">
+						<img class="closeIcon1" src="images/close_white.png">
+						<div class="topArrowDiv"></div>
+						<div class="helpHeader">
+							PIN Help
+						</div>
+						<div class="">
+							<ul>This is a pin associated with your voice mail and is different from any other pin that you were provided or created.</ul>
+						</div>
+						<div class="helpHeader">
+							PIN Creation Help
+						</div>
+						<div class="">
+							<ul>
+								<li>PIN must be 4-8 digits</li>
+								<li>PIN cannot be a forward or reverse number sequence (1234 or 8765)</li>
+								<li>PIN cannot be repeating numbers</li>
+								<li>PIN must not match the last 4 or 7 digits of the Mailbox's primary or secondary phone number or be a digit followed by zeroes</li>
+							</ul>
+						</div>
+					</div>
+					<div id="voicemailSettingsConflict">
+						<div>
+							<div class="vmConflictInstr">
+								Activating voice mail requires that you to disable call forwarding.
+							</div>
+							<div class="">
+								<div id="btnDeacvtivateCf" class="button sendButton">Activate Voice Mail</div>
+								<div id="btnKeepCfOn" class="button cancelButton">Keep Call Forwarding On</div>
+							</div>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div id="callForwardSettings" class="left changeSettings">
+							Call Forwarding
+						</div>
+						<div class="left settingsHelp forCallForwardingHelp">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							With this feature you can forward all of your calls or selected calls to one or multiple numbers preventing you from missing important calls.
+						</div>
+						<div class="switch right">
+							<input id="toggleCallFrwd" class="toggle toggle-round" type="checkbox">
+							<label for="toggleCallFrwd" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div id="callForwardingSettingsConflict">
+						<div>
+							<div class="callForwardingInstr">
+								Activating call forwarding requires that you turn off voice mail. Please choose one option below.
+							</div>
+							<div class="">
+								<div id="btnDeacvtivateVm" class="button sendButton">Activate Call Forwarding</div>
+								<div id="btnKeepVmOn" class="button cancelButton">Keep Voice Mail On</div>
+							</div>
+						</div>
+					</div>
+					<div class="callForwardSettings">
+						<div class="marginDiv2">
+							<div class="settingsText settingsInfoText mobile">Enter the numbers you would like to use below.</div>
+							
+							<div class="settingsDiv">
+								<div class="changeDiv">
+									<div class="settingsText">
+										<span class="">
+											<input type="radio" name="radioCallForward" class="radioChangeSelection" id="callForwardAll" checked>
+											<label for="callForwardAll">Forward All Calls</label>
+										</span>
+									</div>
+									<div class="settingsText">
+										<span class="">
+											<input type="radio" name="radioCallForward" class="radioChangeSelection" id="callForwardSelected">
+											<label for="callForwardSelected">Forward Selected Numbers</label>
+										</span>
+									</div>
+									
+									<div class="addNumsListParent hidden">
+										<div class="searchAddUser">
+											<input class="addNumInput" type="text">
+											<img src="images/address.png"/>
+										</div>
+										<div class="button addButton desktop">Add</div>
+										<div class="vmSettingButtons mobile">
+											<div class="button saveButton btnAddToList">Add</div>
+										</div>								
+										<div class="addNumsList hidden">
+											<div class="numsList"></div>
+											<div class="editNumsList linkStyle">Edit</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="hDivider mobile"><span>&nbsp;</span>to<span>&nbsp;</span></div>
+								<div class="vDivider desktop"><span>&nbsp;</span>to<span>&nbsp;</span></div>
+								
+								<div class="changeDiv">
+									<div class="settingsText">
+										<select name="forwardType">
+											<option selected>One of My Numbers</option>
+											<option>Enter a Single Number</option>
+											<option>Enter Multiple Numbers</option>
+										</select>
+										<img class="helpQ" src="images/help.png"/>
+									</div>
+									
+									
+									<div class="settingsText">Forward to following number</div>
+									<div class="addNumsListParent">
+										<div class="searchAddUser">
+											<input class="addNumInput" type="text">
+											<img src="images/address.png"/>
+										</div>
+										<div class="button addButton desktop">Add</div>
+										<div class="vmSettingButtons mobile">
+											<div class="button saveButton btnAddToList">Add</div>
+										</div>								
+										<div class="addNumsList hidden">
+											<div class="numsList"></div>
+											<div class="editNumsList linkStyle">Edit</div>
+											<div></div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Save</div>
+												<div class="button cancelButton">Cancel</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div id="callNotifySettings" class="left changeSettings">
+							Call Notify
+						</div>
+						<div id="callNotifyHelp" class="left settingsHelp helpQuestion">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							If you never want to miss a call or voice mail, this feature allows you to set up notifications via email or mobile phone.
+						</div>
+						<div class="switch right">
+							<input id="toggleCallNtfy" class="toggle toggle-round" type="checkbox">
+							<label for="toggleCallNtfy" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="callNotifyHelp helpOverlay hidden">
+						<img class="closeIcon1" src="images/close_white.png">
+						<div class="topArrowDiv"></div>
+						<div class="helpHeader">
+							Call Notify Help
+						</div>
+						<div class="">
+							<ul>Call notifications can be set up for up to 10 numbers including numbers from your address book and contact list.</ul>
+							<ul>Call notifications can be sent via email or text message where both will have to be authenticated.</ul>
+						</div>
+					</div>
+					<div class="callNotifySettings">
+						<div class="marginDiv2">
+							<div class="settingsText settingsInfoText mobile">Enter the numbers you would like to use below.</div>
+							
+							<div class="settingsDiv">
+								<div class="changeDiv">
+									<div class="settingsText">
+										<select name="forwardType">
+											<option selected>Set All Numbers</option>
+											<option>Set Specific Numbers</option>
+										</select>
+										<img class="helpQ" src="images/help.png"/>
+									</div>
+									
+									<div class="addNumsListParent">
+										<div class="searchAddUser">
+											<input class="addNumInput" type="text">
+											<img src="images/address.png"/>
+										</div>
+										<div class="button addButton desktop">Add</div>
+										<div class="vmSettingButtons mobile">
+											<div class="button saveButton btnAddToList">Add</div>
+										</div>
+										<div class="addNumsList hidden">
+											<div class="numsList"></div>
+											<div class="editNumsList linkStyle">Edit</div>
+										</div>
+									</div>								
+								</div>
+								
+								<div class="hDivider mobile"><span>&nbsp;</span>to<span>&nbsp;</span></div>
+								<div class="vDivider desktop"><span>&nbsp;</span>to<span>&nbsp;</span></div>
+								
+								<div class="changeDiv">
+									<div class="settingsText">
+										<span class="">
+											<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyEmail" checked>
+											<label for="callNotifyEmail">Notify Via Email</label>
+										</span>
+									</div>
+									<div class="settingsText">
+										<span class="">
+											<input type="radio" name="radioCallNotify" class="radioChangeSelection" id="callNotifyText">
+											<label for="callNotifyText">Notify Via Text Message (Standard Messaging Rates Apply)</label>
+										</span>
+									</div>
+									
+									<div class="addNumsListParent">
+										<div class="settingsText">Notify me at the following <span class="radioSelectedOption">email address</span></div>
+										<div class="searchAddUser">
+											<input class="addNumInput" type="text">
+											<img class="hidden" src="images/address.png"/>
+										</div>
+										<div class="button addButton desktop">Add</div>
+										<div class="vmSettingButtons mobile">
+											<div class="button saveButton btnAddToList">Add</div>
+										</div>
+										
+										<div class="addNumsList hidden">
+											<div class="numsList"></div>
+											<div class="editNumsList linkStyle">Edit</div>
+											<div></div>
+											<div class="vmSettingButtons">
+												<div class="button saveButton">Save</div>
+												<div class="button cancelButton">Cancel</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div id="simlutaneousRingSettings" class="left changeSettings">
+							Simultaneous Ringing
+						</div>
+						<div id="simlutaneousRingHelp" class="left settingsHelp helpQuestion">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							Simultaneous Ringing allows you to answers incoming calls from any capable device including your mobile phone or computer.
+						</div>
+						<div class="switch right">
+							<input id="toggleSimulRing" class="toggle toggle-round" type="checkbox">
+							<label for="toggleSimulRing" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="simlutaneousRingHelp helpOverlay hidden">
+						<img class="closeIcon1" src="images/close_white.png">
+						<div class="topArrowDiv"></div>
+						<div class="helpHeader">
+							Simultaneous Ringing Help
+						</div>
+						<div class="">
+						<ul>Simultaneous Ringing enables multiple devices to ring when a call comes in. This feature cannot be activated at the same time as the Sequential Ringing feature.</ul>
+						</div>
+					</div>
+					<div class="simlutaneousRingSettings">
+						<div class="marginDiv2">
+							<div class="settingsText settingsInfoText">Enter the numbers you would like to use below.</div>
+							
+							<div class="settingsDiv">
+								<div class="addNumsListParent">
+									<div class="settingsText mobile">Enter a Telephone Number</div>
+									<div class="searchAddUser">
+										<input class="addNumInput" placeholder="Enter a Telephone Number" type="text">
+										<img src="images/address.png"/>
+									</div>
+									<div class="button addButton desktop">Add</div>
+									<div class="vmSettingButtons mobile">
+										<div class="button saveButton btnAddToList">Add</div>
+									</div>
+									<div class="addNumsList hidden">
+										<div class="numsList"></div>
+										<div class="editNumsList linkStyle">Edit</div>
+										<div></div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Save</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div id="sequentialRingingSettings" class="left changeSettings">
+							Sequential Ringing
+						</div>
+						<div id="sequentialRingingHelp" class="left settingsHelp helpQuestion">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							With Sequential Ringing, you set up calls to ring different numbers in a specific order. The number of rings before the call goes to the next number must be configured.
+						</div>
+						<div class="switch right">
+							<input id="toggleSeqRing" class="toggle toggle-round" type="checkbox">
+							<label for="toggleSeqRing" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="sequentialRingingHelp helpOverlay hidden">
+						<img class="closeIcon1" src="images/close_white.png">
+						<div class="topArrowDiv"></div>
+						<div class="helpHeader">
+							Sequential Ringing Help
+						</div>
+						<div class="">
+						<ul>Sequential Ringing cannot be activated at the same time as Simultaneous Ringing and up to 10 numbers can be used.</ul>
+						</div>
+					</div>
+					<div class="sequentialRingingSettings">
+						<div class="marginDiv2">
+							<div class="settingsText settingsInfoText">Enter the numbers you would like to use below.</div>
+							<div class="settingsDiv">
+								<div class="addNumsListParent">
+									<div class="settingsText">Enter a Number</div>
+									<div class="searchAddUser">
+										<input class="addNumInput" type="text">
+										<img src="images/address.png"/>
+									</div>
+									<div class="button addButton desktop">Add</div>
+									<div class="vmSettingButtons mobile">
+										<div class="button saveButton btnAddToList">Add</div>
+									</div>
+									<div class="addNumsList hidden">
+										<div class="numsList"></div>
+										<div class="editNumsList linkStyle">Edit</div>
+										<div></div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Save</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="settingsText">
+									<input type="checkbox" id="SeqRingCheck1">
+									<label for="SeqRingCheck1">Set Day and Time</label>
+								</div>
+								<div class="settingsText">
+									<input type="checkbox" id="SeqRingCheck2">
+									<label for="SeqRingCheck2">Specify Ring Profile</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div class="left">
+							Priority Ringing
+						</div>
+						<div id="priorityRingingHelp" class="left settingsHelp helpQuestion">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							Priority Ringing allows you to differentiate the ring tone of Important callers.
+						</div>
+						<div class="switch right">
+							<input id="togglePriorRing" class="toggle toggle-round" type="checkbox">
+							<label for="togglePriorRing" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="priorityRingingHelp helpOverlay hidden">
+						<img class="closeIcon1" src="images/close_white.png">
+						<div class="topArrowDiv"></div>
+						<div class="helpHeader">
+							Priority Ringing Help
+						</div>
+						<div class="">
+							<ul>With Priority Ringing, you can create a special list of priority callers that will have a special ring when their call comes through.</ul>
+							<ul>If you have Call Waiting, you will hear a special Call Waiting tone for those priority callers, when Priority Ringing is activated.</ul>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div class="left">
+							Call Waiting
+						</div>
+						<div class="left settingsHelp">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							Call Waiting allows you to receive calls while on the phone.
+						</div>
+						<div class="switch right">
+							<input id="toggleCallWait" class="toggle toggle-round" type="checkbox">
+							<label for="toggleCallWait" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div id="doNotDisturbSettings" class="left changeSettings">
+							Do Not Disturb
+						</div>
+						<div id="doNotDisturbtHelp" class="left settingsHelp helpQuestion">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							The Do Not Disturb is the best option to use when you have a busy schedule to send your calls directly to voice mail.
+						</div>
+						<div class="switch right">
+							<input id="toggleDntDstrb" class="toggle toggle-round" type="checkbox">
+							<label for="toggleDntDstrb" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="doNotDisturbtHelp helpOverlay hidden">
+						<img class="closeIcon1" src="images/close_white.png">
+						<div class="topArrowDiv"></div>
+						<div class="helpHeader">
+							Do Not Disturb Help
+						</div>
+						<div class="">
+							<ul>Do Not Disturb allows you to send incoming calls directly to your voice mail without ringing your phone. Your Voice Mail must be turned on to properly use this feature.</ul>
+							<ul>The Do Not Disturb feature cannot be used at the same time as Call Forwarding; activating one will automatically turn the other off. </ul>
+						</div>
+					</div>
+					<div class="doNotDisturbSettings">
+						<div class="marginDiv2">
+							<div class="settingsText">Do Not Disturb allows you to send incoming calls directly to your voice mail without ringing your phone. Your Voice Mail must be turned on to properly use this feature.</div>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div class="left">
+							Caller ID
+						</div>
+						<div class="left settingsHelp">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							If you would like know who’s calling, Caller ID  will display the information of the caller.
+						</div>
+						<div class="switch right">
+							<input id="toggleCallID" class="toggle toggle-round" type="checkbox">
+							<label for="toggleCallID" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div id="callBlockingSettings" class="left changeSettings">
+							Call Blocking
+						</div>
+						<div id="callBlockingHelp" class="left settingsHelp helpQuestion">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							This is the perfect feature to use if you want to prevent outgoing calls to specific number and number groups.
+						</div>
+						<div class="switch right">
+							<input id="toggleCallBlk" class="toggle toggle-round" type="checkbox">
+							<label for="toggleCallBlk" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="callBlockingHelp helpOverlay hidden">
+						<img class="closeIcon1" src="images/close_white.png">
+						<div class="topArrowDiv"></div>
+						<div class="helpHeader">
+							Call Blocking Help
+						</div>
+						<div class="">
+							<ul>Call Blocking allows you to restrict outgoing calls to specific numbers</ul>
+						</div>
+					</div>
+					<div class="callBlockingSettings">
+						<div class="marginDiv2">
+							<div class="settingsText settingsInfoText">Enter the numbers that you would like to block.</div>
+							
+							<div class="settingsDiv">
+								<div class="settingsText">
+									<select name="forwardType" id="callBlockingSelect1">
+										<option value="all" selected>Block Calls All Day, Everyday</option>
+										<option value="specific">Block Outgoing Calls for Specific Date</option>
+									</select>
+									<img class="helpQ" src="images/help.png"/>
+								</div>
+								
+								<div class="timePeriodSelector hidden">
+									<div class="half">
+										<div class="settingsText">Begin Date</div>
+										<div class="searchAddUser">
+											<input class="" type="text">
+											<img src="images/date_picker.png"/>
+										</div>
+									</div>
+									<div class="half">
+										<div class="settingsText">End Date</div>
+										<div class="searchAddUser">
+											<input class="" type="text">
+											<img src="images/date_picker.png"/>
+										</div>
+									</div>
+									
+									<div class="half">
+										<div class="settingsText">Start Time</div>
+										<select name="forwardType">
+											<option selected>12:00 PM</option>
+											<option>1:00 PM</option>
+											<option>2:00 PM</option>
+											<option>3:00 PM</option>
+											<option>4:00 PM</option>
+											<option>5:00 PM</option>
+											<option>6:00 PM</option>
+											<option>7:00 PM</option>
+											<option>8:00 PM</option>
+											<option>9:00 PM</option>
+											<option>10:00 PM</option>
+											<option>11:00 PM</option>
+											<option>12:00 AM</option>
+											<option>1:00 AM</option>
+											<option>2:00 AM</option>
+											<option>3:00 AM</option>
+											<option>4:00 AM</option>
+											<option>5:00 AM</option>
+											<option>6:00 AM</option>
+											<option>7:00 AM</option>
+											<option>8:00 AM</option>
+											<option>9:00 AM</option>
+											<option>10:00 AM</option>
+											<option>11:00 AM</option>
+										</select>
+									</div>
+									<div class="half">
+										<div class="settingsText">End Time</div>
+										<select name="forwardType">
+											<option selected>12:00 PM</option>
+											<option>1:00 PM</option>
+											<option>2:00 PM</option>
+											<option>3:00 PM</option>
+											<option>4:00 PM</option>
+											<option>5:00 PM</option>
+											<option>6:00 PM</option>
+											<option>7:00 PM</option>
+											<option>8:00 PM</option>
+											<option>9:00 PM</option>
+											<option>10:00 PM</option>
+											<option>11:00 PM</option>
+											<option>12:00 AM</option>
+											<option>1:00 AM</option>
+											<option>2:00 AM</option>
+											<option>3:00 AM</option>
+											<option>4:00 AM</option>
+											<option>5:00 AM</option>
+											<option>6:00 AM</option>
+											<option>7:00 AM</option>
+											<option>8:00 AM</option>
+											<option>9:00 AM</option>
+											<option>10:00 AM</option>
+											<option>11:00 AM</option>
+										</select>
+									</div>
+								</div>
+								
+								<div class="settingsText">
+									<input type="checkbox" id="callBlockingCheck1">
+									<label for="callBlockingCheck1">Block Outgoing Calls to 411 Numbers</label>
+								</div>
+								<div class="settingsText">
+									<input type="checkbox" id="callBlockingCheck2">
+									<label for="callBlockingCheck2">Block Outgoing Calls to 900 and 976 Numbers</label>
+								</div>
+								<div class="settingsText">
+									<input type="checkbox" id="callBlockingCheck3">
+									<label for="callBlockingCheck3">Block Calls to Toll Restricted Numbers</label>
+								</div>
+								<div class="settingsText">
+									<input type="checkbox" id="callBlockingCheck4">
+									<label for="callBlockingCheck4">Block Calls to International Numbers</label>
+								</div>
+								
+								<div class="addNumsListParent hidden">
+									<div class="settingsText">Enter a Telephone Number</div>
+									<div class="searchAddUser">
+										<input class="addNumInput" type="text">
+										<img src="images/address.png"/>
+									</div>
+									<div class="button addButton desktop">Add</div>
+									<div class="vmSettingButtons mobile">
+										<div class="button saveButton btnAddToList">Add</div>
+									</div>
+									<div class="addNumsList hidden">
+										<div class="numsList"></div>
+										<div class="editNumsList linkStyle">Edit</div>
+										<div></div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Save</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div id="selectiveAcceptSettings" class="left changeSettings">
+							Selective Call Accept
+						</div>
+						<div id="selectiveCallAccptHelp" class="left settingsHelp helpQuestion">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							With this feature, you can choose to accept calls from a selective Call Accept list numbers created from your contact list and address book.
+						</div>
+						<div class="switch right">
+							<input id="toggleSelAccpt" class="toggle toggle-round" type="checkbox">
+							<label for="toggleSelAccpt" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="selectiveCallAccptHelp helpOverlay hidden">
+						<img class="closeIcon1" src="images/close_white.png">
+						<div class="topArrowDiv"></div>
+						<div class="helpHeader">
+							Selective Call Accept Help
+						</div>
+						<div class="">
+							<ul>When Selective Call Accept is activated, you will only receive calls from your Selective Call Accept list created from your contact list and address book.</ul>
+						</div>
+					</div>
+					<div class="selectiveAcceptSettings">
+						<div class="marginDiv2">
+							<div class="settingsText settingsInfoText">Enter the numbers you would like to add to your Selective Call Accept list.</div>
+							
+							<div class="settingsDiv">
+								<div class="addNumsListParent">
+									<div class="settingsText">Enter a Telephone Number</div>
+									<div class="searchAddUser">
+										<input class="addNumInput" type="text">
+										<img src="images/address.png"/>
+									</div>
+									<div class="button addButton desktop">Add</div>
+									<div class="vmSettingButtons mobile">
+										<div class="button saveButton btnAddToList">Add</div>
+									</div>
+									<div class="addNumsList hidden">
+										<div class="numsList"></div>
+										<div class="editNumsList linkStyle">Edit</div>
+										<div></div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Save</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div id="selectiveRejectSettings" class="left changeSettings">
+							Selective Call Reject
+						</div>
+						<div id="selectiveCallRejtHelp" class="left settingsHelp helpQuestion">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							With this feature, you can choose to reject calls from a selective Call Reject list numbers created from your contact list and address book.
+						</div>
+						<div class="switch right">
+							<input id="toggleSelRejt" class="toggle toggle-round" type="checkbox">
+							<label for="toggleSelRejt" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="selectiveCallRejtHelp helpOverlay hidden">
+						<img class="closeIcon1" src="images/close_white.png">
+						<div class="topArrowDiv"></div>
+						<div class="helpHeader">
+							Selective Call Reject Help
+						</div>
+						<div class="">
+							<ul>When Selective Call Reject is activated, you will not receive calls from your Selective Call Reject list.</ul>
+						</div>
+					</div>
+					<div class="selectiveRejectSettings">
+						<div class="marginDiv2">
+							<div class="settingsText settingsInfoText">Enter the numbers you would like to add to your Selective Call Reject list.</div>
+							
+							<div class="settingsDiv">
+								<div class="addNumsListParent">
+									<div class="settingsText">Enter a Telephone Number</div>
+									<div class="searchAddUser">
+										<input class="addNumInput" type="text">
+										<img src="images/address.png"/>
+									</div>
+									<div class="button addButton desktop">Add</div>
+									<div class="vmSettingButtons mobile">
+										<div class="button saveButton btnAddToList">Add</div>
+									</div>
+									<div class="addNumsList hidden">
+										<div class="numsList"></div>
+										<div class="editNumsList linkStyle">Edit</div>
+										<div></div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Save</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div id="anonRejectSettings" class="left changeSettings">
+							Anonymous Call Rejection
+						</div>
+						<div class="left settingsHelp">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							This is the perfect feature to use if you would like to automatically reject anonymous calls.
+						</div>
+						<div class="switch right">
+							<input id="toggleAnonRejt" class="toggle toggle-round" type="checkbox">
+							<label for="toggleAnonRejt" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="anonRejectSettings">
+						<div class="marginDiv2">
+							<div class="settingsText">Once activated, Anonymous Call Rejection prohibit calls from unpublished numbers.</div>
+						</div>
+					</div>
+					<div class="settingsMenuItem">
+						<div id="speedDialSettings" class="left changeSettings">
+							Speed Dial
+						</div>
+						<div id="speedDialHelp" class="left settingsHelp helpQuestion">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							This feature allows you to add frequently called numbers to a directory for easier access.
+						</div>
+						<div class="switch right">
+							<input id="toggleSpeedDial" class="toggle toggle-round" type="checkbox">
+							<label for="toggleSpeedDial" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="speedDialHelp helpOverlay hidden">
+						<img class="closeIcon1" src="images/close_white.png">
+						<div class="topArrowDiv"></div>
+						<div class="helpHeader">
+							Speed Dial Help
+						</div>
+						<div class="">
+						<ul>With Speed Dial
+							<li>You can add up to 100 numbers.</li>
+							<li>Must enter a two-digit code for each number.</li>
+							<li>You can manually enter a number or add a number from your Address Book.</li>
+						</ul>
+						</div>
+					</div>
+					<div class="speedDialSettings">
+						<div class="marginDiv2">
+							<div class="settingsDiv">
+								<div class="addNumsListParent">
+									<div class="settingsText">My Speed Dial Numbers</div>
+									<div class="addNumsList hidden">
+										<div class="numsList"></div>
+										<div class="editNumsList linkStyle">Edit</div>
+										<div></div>
+										<div class="vmSettingButtons">
+											<div class="button saveButton">Save</div>
+											<div class="button cancelButton">Cancel</div>
+										</div>
+									</div>
+									<div class="settingsText">Add a new speed dial</div>
+									<div class="half">
+										<div class="settingsText">Enter a Number:</div>
+										<div class="searchAddUser">
+											<input class="addNameInput" type="text" placeholder="Enter Phone Number">
+											<img src="images/address.png"/>
+										</div>
+									</div>
+									<div class="quarter right">
+										<div class="settingsText">Speed Dial <!-- <img class="helpQ" src="images/help.png"/> --></div>
+										<div class="searchAddUser">
+											<input class="addNumInput speedDialInput" type="text" placeholder="Speed Dial">
+										</div>
+									</div>
+									<div class="settingsText">Nickname:</div>
+									<div class="searchAddUser">
+										<input class="addNameInput" type="text" placeholder="Name">
+									</div>
+									<div class="button addButton desktop">Add</div>
+									<div class="vmSettingButtons mobile">
+										<div class="button saveButton btnAddContact">Add</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="settingsMenuItem">
+						<div id="addressBookSettings" class="left changeSettings">
+							Address Book
+						</div>
+						<div class="left settingsHelp">
+							<span>?</span>
+						</div>
+						<div class="left settingsInfo desktop">
+							Lorem ipsum dolor sit.
+						</div>
+						<div class="switch right">
+							<input id="toggleAddrBook" class="toggle toggle-round" type="checkbox">
+							<label for="toggleAddrBook" data-on="On" data-off="Off"></label>
+						</div>
+					</div>
+					<div class="addressBookSettings">
+						<div class="marginDiv2">
+							<div class="settingsText">Lorem ipsum dolor sit.</div>
+						</div>
+					</div> -->
+				</div>
+				
+				<div class="menuItem helpMenu mobile">
+					<span class="accordionOpen">+</span> <!-- <img src="images/help.png"/> --> <span class="menuItemText">Help </span> <span class="rightArrow"></span>
+				</div>
+				<div id="helpPage">
+				</div>
+			</div>
+			<div class="bottomBanner card mobile">
+				<img src="images/bottomBanner.png">
+			</div>
+		</div>
+	</article>
+	<footer>
+		<img class="desktop" src="images/pageFooter.png">
+	</footer>
+</body>
+
+<script>
+	//  ONLOAD CODE
+	$(document).ready(function() {
+		// LOADING MOBILE JS SCRIPT
+		$.getScript("js/script.js", function(){
+			console.log( "Load was performed." );
+		});
+	});
+	
+</script>
+<!-- END MOBILE -->
+
+</html>

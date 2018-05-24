@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Stroke 1 + Stroke 2 Copy 21 + Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="V14" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-68" sketch:type="MSArtboardGroup" transform="translate(-946.000000, -558.000000)">
+            <g id="Stroke-1-+-Stroke-2-Copy-21-+-Shape" sketch:type="MSLayerGroup" transform="translate(946.000000, 558.000000)">
+                <path d="M15,0 C6.71613058,0 0,6.71492741 0,15 C0,23.2838694 6.71613058,30 15,30 C23.2850726,30 30,23.2838694 30,15 C30,6.71492741 23.2850726,0 15,0 L15,0 Z" id="Stroke-1" fill="#90D963" sketch:type="MSShapeGroup"></path>
+                <path d="M23.3509499,8.52444616 C22.5359499,7.77944616 21.2709499,7.83444616 20.5249499,8.64944616 L12.6739499,17.2234462 L9.45094994,13.8244462 C8.69194994,13.0224462 7.42594994,12.9894462 6.62394994,13.7494462 C5.82194994,14.5084462 5.78894994,15.7744462 6.54894994,16.5764462 L11.2469499,21.5334462 C12.0459499,22.3754462 13.3899499,22.3634462 14.1739499,21.5084462 L23.4749499,11.3504462 C24.2209499,10.5364462 24.1649499,9.27144616 23.3509499,8.52444616" id="Imported-Layers" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
