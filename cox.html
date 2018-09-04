@@ -50,18 +50,519 @@
 		<article class="container box style3">
 			<h1 class="boldText">Cox Commmunications</h1>
 			<br/>
-			<h3 class="boldText">Work</h3>
+			<!-- <h3 class="boldText">Work</h3> -->
 			<!-- <p>The following projects reflect my prototyping skills.</p> -->
-			<p>The following are two sample projects from my time at Cox Communications.</p>
-			<p>
-				<a href="projects/cox/acs/index.html" target="_blank">ACS</a>
-			</p>
-			<p>
-				<a href="projects/cox/ims/index.html" target="_blank">IMS</a>
-			</p>
+			<!-- <p>The following are two sample projects from my time at Cox Communications.</p> -->
+
+			<h3 class="boldText"><a href="projects/cox/acs/index.html" target="_blank">My WiFi (Auto Configuration System)</a></h3>
+			<br/>
+			<div class="row">
+				<div class="6u">
+					<p>We started this project with an initial goal to allow customers to troubleshoot basic issues. During the research  we realized multiple constraints. Some of them were:</p>
+					<ul style="list-style: disc; padding-left: 24px; font-size: 18px; ">
+						<li>The customers might not be online</li>
+						<li>Most customers didn't know how internet works</li>
+						<li>Customers want to be empowered</li>
+						<li>Customers do not want to call</li>
+					</ul>
+				</div>
+				<div class="6u photo">
+					<a href="projects/cox/acs/index.html" target="_blank" class="image full">
+						<img src="images/thumbs/thumb_Cox_ACS.png" alt="Cox: WiFi" title="" />
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="12u">
+					<p>The <a href="projects/cox/acs/index.html" target="_blank">prototype</a> uses mobile first approach and is adaptive + responsive. I leveraged motion to initiate customers once they login. The prototype was configurable which allowed research to test different scenarios (modem issues, power outage, etc).</p>
+					<p>The components I created (WiFi signal indicator, drop down accordion) were up-to-date with latest CSS and SVG standards and were used by the developer team with minor tweaks.</p>
+				</div>
+			</div>
+
+			<br/>
 			<hr />
-			<h3 class="boldText">Side Projects</h3>
-			<p>I was also involved in building a UX Innovation Lab focused on Home Automation.</p>
+			<br/>
+
+			<h3 class="boldText"><a href="projects/cox/ims/index.html" target="_blank">Phone Tools</a></h3>
+			<br/>
+			<div class="row">
+				<div class="6u">
+					<p>A part of network upgrade (hardware + software) for Cox included updating the UI that allowed customers to access phone-specific information (call list, messages, voice mails) from any device. While the underlying technology was being upgraded, we pulled forward the UI update project to ease the migration from customers' point of view.</p>
+				</div>
+				<div class="6u photo">
+					<a href="projects/cox/ims/index.html" target="_blank" class="image full">
+						<img src="images/thumbs/thumb_Cox_IMS.png" alt="Cox: Phone Tools" title="" />
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="12u">
+					<p>This project was a cornerstone for me and forced me to move from need-based to iterative prototyping. It also laid groundwork for me to build a prototyping system (at DocuSign) which can scale or pivot without compromising on quality.</p>
+					<p>The design went through about 5 major and numerous minor tweaks that needed testing. The <a href="projects/cox/ims/index.html" target="_blank">prototype</a> itself is fully responsive but has significant interaction issues such as delayed responses and overshooting animations.</p>
+				</div>
+			</div>
+
+			<br/>
+			<hr />
+			<br/>
+
+			<h3 class="boldText">Home Automation: IoT</h3>
+			<br/>
+
+			<p>During my tenure at Cox I played a pivotal role in starting a UX Innovation Lab. The focus was improving Home Automation services provided by Cox. I worked with two designers in building a demo space from the ground up. The scene below was available in the web app that allowed us to control the space.</p>
+			<br/>
+
+			<div class="row">
+				<div class="12u">
+					<svg id="svg" width="100%" height="550"  xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<defs>
+							<filter id="blur" x="-200%" y="-200%" width="400%" height="400%">
+								<feGaussianBlur in="SourceGraphic" stdDeviation="7" />
+							</filter>
+							<filter id="glow" x="-200%" y="-200%"  width = "400%" height = "400%">
+								<feOffset result = "offOut" in = "SourceGraphic" dx = "0" dy = "0"/>
+								<feGaussianBlur result = "blurOut" in="offOut" stdDeviation="3" />
+								<feBlend in = "SourceGraphic" in2 = "blurOut" mode = "normal"/>
+							</filter>
+
+							<filter id="dropShadow" x="-50%" y="0"  width = "200%" height = "200%">
+								<feGaussianBlur in="SourceAlpha" stdDeviation="5" />
+								<feOffset dx="0" dy="8" />
+								<feMerge>
+									<feMergeNode />
+									<feMergeNode in="SourceGraphic" />
+								</feMerge>
+							</filter>
+						</defs>
+
+						<g transform="translate(-150,0)">
+							<text id="changeScene" x="600" y="100" style="opacity:1"
+								font-size="42" fill="#888" >
+								Living Room
+							</text>
+
+							<g id="platform">
+								<path
+									d="M200,450
+									  l1000,0
+									  l-200,-200
+									  l-600,0
+									  l-200,200
+
+									  l0,20
+									  l1000,0
+									  l0,-20
+									  l-1000,0"
+								style="stroke:#888;stroke-width:2;fill:#FCFCFC;">
+								</path>
+							</g>
+
+							<g>
+								<path id="userPath1"
+									d="M320,280
+										q50,-20 100,0"
+									style="stroke:#888;stroke-width:0;fill:none;">
+								</path>
+								<path id="userPath2"
+									d="M420,280
+										q30,40 80,50"
+									style="stroke:#888;stroke-width:0;fill:none;">
+								</path>
+								<path id="userPath3"
+									d="M500,330
+										c100,-30 200,70 300,30"
+									style="stroke:#888;stroke-width:0;fill:none;">
+								</path>
+								<path id="userPath4"
+									d="M800,360
+										q200,50 1000,20"
+									style="stroke:#888;stroke-width:0;fill:none;">
+								</path>
+								<path id="userPath5"
+									d="M1800,380
+										q-300,60 -950,-70"
+									style="stroke:#888;stroke-width:0;fill:none;">
+								</path>
+								<!-- <path id="userPath"
+									d="M1800,380
+										q50,-20 100,0
+										q30,40 80,50
+
+										c100,-30 200,70 300,30
+										q200,50 1000,20
+										q-300,60 -950,-70"
+									style="stroke:#888;stroke-width:0;fill:none;">
+								</path> -->
+							</g>
+
+							<g transform="scale(1)" style="cursor:pointer;">
+								<circle id="light1Glow" class="glow" r="18" cx="550" cy="250"
+								style="stroke:#0FF;stroke-width:0;fill:none;opacity:0.8;filter:url(#blur);">
+
+								</circle>
+								<path id="Light1"
+									d="M548,258
+										c0,-3 -6,-6 -6,-10
+										a1,1 0 0,1 16,0
+										c0,4 -6,7 -6,10
+
+										m0,2
+										l-4,0
+
+										m1,2
+										l2.5,0"
+								style="stroke:#888;stroke-width:1;fill:#DDD;">
+								</path>
+							</g>
+
+							<g style="cursor:pointer;" transform="translate(85,-30)">
+								<path id="Light2"
+									d="M820,280
+										c1,0 -10,24 10,30
+										q20,5 50,0
+										c80,-15 40,20 70,40"
+									style="stroke:#DDD;stroke-width:2;fill:none;filter:url(#glow);">
+								</path>
+							</g>
+
+							<g style="cursor:pointer;">
+								<circle id="light3Glow" class="glow" r="22" cx="700" cy="430"
+								style="stroke:#F00;stroke-width:0;fill:none;opacity:0.8;cursor:pointer;filter:url(#blur);">
+
+								</circle>
+								<path id="Light3"
+									d="M698,438
+										c0,-3 -6,-6 -6,-10
+										a1,1 0 0,1 16,0
+										c0,4 -6,7 -6,10
+
+										m0,2
+										l-4,0
+
+										m1,2
+										l2.5,0"
+								style="stroke:#888;stroke-width:1;fill:#DDD;">
+								</path>
+							</g>
+
+							<g style="cursor:pointer;">
+								<circle id="light4Glow" class="glow" r="20" cx="270" cy="380"
+								style="stroke:#FF0;stroke-width:0;fill:none;opacity:0.8;cursor:pointer;filter:url(#blur);">
+
+								</circle>
+								<path id="Light4"
+									d="M268,388
+										c0,-3 -6,-6 -6,-10
+										a1,1 0 0,1 16,0
+										c0,4 -6,7 -6,10
+
+										m0,2
+										l-4,0
+
+										m1,2
+										l2.5,0"
+								style="stroke:#888;stroke-width:1;fill:#DDD;">
+								</path>
+							</g>
+
+							<g id="speaker" style="cursor:pointer;opacity:0.4;" transform="translate(0,10),scale(1)">
+								<path
+									d="M613,248
+										q-6,16 9,18
+										q-8,-6 -9,-18"
+									style="stroke:#000;stroke-width:0;fill:#888;filter:url(#dropShadow);">
+								</path>
+
+								<ellipse rx="14" ry="20" cx="630" cy="250"
+								style="stroke:#888;stroke-width:0;fill:#888;opacity:1;cursor:pointer;filter:url(#dropShadow);"
+								transform="rotate(-20,630,250)">
+								</ellipse>
+
+								<ellipse rx="10" ry="15" cx="631" cy="249"
+								style="stroke:#888;stroke-width:0;fill:#FFF;opacity:1;cursor:pointer;"
+								transform="rotate(-20,631,249)">
+								</ellipse>
+
+								<ellipse rx="5" ry="8" cx="628" cy="251"
+								style="stroke:#888;stroke-width:0;fill:#888;opacity:1;cursor:pointer;"
+								transform="rotate(-20,628,251)">
+								</ellipse>
+
+								<path
+									d="M632,240
+										q7,3 6,12
+										q0,-7 -6,-12"
+									style="stroke:#000;stroke-width:0;fill:#888;">
+								</path>
+
+								<path id="speakerOff"
+									d="M615,225
+										l30,50"
+									style="stroke:#888;stroke-width:3;fill:#888; opacity:1">
+								</path>
+							</g>
+
+							<g id="tv" style="cursor:pointer;" transform="translate(20,-30),scale(1)">
+								<path
+									d="M920,252
+										l50,-5
+										l0,45
+										m2,-46
+										l0,47
+										m-2,-1
+										l-50,-5
+										l0,-35"
+									style="stroke:#888;stroke-width:2;fill:#FFF;">
+								</path>
+								<path id="tvPlay"
+									d="M934,259
+										l22,10
+										l-21,10
+										l0,-20"
+									style="stroke:#888;stroke-width:2;fill:#888;opacity: 0;">
+								</path>
+								<path
+									d="M925,293
+										l40,5"
+									style="stroke:#888;stroke-width:2;fill:none;">
+								</path>
+							</g>
+
+							<g id="user" style="cursor:pointer;opacity:0.9;" transform="translate(0,0),scale(1)">
+								<ellipse rx="25" ry="12" cx="" cy=""
+									style="stroke:#888;stroke-width:0;fill:#F00;opacity:1;cursor:pointer;filter:url(#blur);">
+								</ellipse>
+								<ellipse rx="20" ry="9" cx="" cy="" transform="translate(0,-1)"
+									style="stroke:#888;stroke-width:0;fill:#EEE;opacity:1;cursor:pointer;">
+								</ellipse>
+								<ellipse id="userTracker" rx="8" ry="3.5" cx="" cy="" transform="translate(0,-1.5)"
+									style="stroke:#888;stroke-width:0;fill:#888;opacity:1;cursor:pointer;">
+								</ellipse>
+
+								<animateMotion id="aniUserPath1" dur="2s" begin="0s" fill="freeze">
+								   <mpath xlink:href="#userPath1"/>
+								</animateMotion>
+								<animateMotion id="aniUserPath2" dur="1.5s" begin="aniUserPath1.end" fill="freeze">
+								   <mpath xlink:href="#userPath2"/>
+								</animateMotion>
+								<animateMotion id="aniUserPath3" dur="2.5s" begin="aniUserPath2.end" fill="freeze">
+								   <mpath xlink:href="#userPath3"/>
+								</animateMotion>
+								<animateMotion id="aniUserPath4" dur="5s" begin="click" fill="freeze">
+								   <mpath xlink:href="#userPath4"/>
+								</animateMotion>
+								<animateMotion id="aniUserPath5" dur="5s" begin="aniUserPath4.end" fill="freeze">
+								   <mpath xlink:href="#userPath5"/>
+								</animateMotion>
+							</g>
+						</g>
+					</svg>
+				</div>
+			</div>
+
+			<div class="boldText">Setup</div>
+			<p>We started with building a Node server on Raspberry Pi. I then hooked up Hue Lights, Sonos Speaker and Chromecast directly to the server. Next, we created a service that tracked basic events like entry/exit and gestures like sitting/standing using a Kinect tracker. Later, I added Bluetooth beacons and added a java service that allowed us to trangulate user location within the space (using their phone). I used ajax to update device states through the Node server, it then relayed updates to the respective devices.</p>
+			<br/>
+			<div class="boldText">Issues and Resolutions</div>
+			<p>While Kinect tracking was quite accurate, beacons were terribly inaccurate in tracking location. To mitigate the issue we divided the space into four sections.</p>
+
+			<br/>
+			<div class="boldText">Usage Tracking and Automation</div>
+			<br/>
+			<div class="row">
+				<div class="6u">
+					<p>Once the setup was complete, I started logging the events into a local database. As part of upgrade I provided a dashboard to track energy consumption. The long term goal was to automate user preferences (wake up time, songs, etc) based on their liking.</p>
+				</div>
+				<div class="6u photo">
+					<div class="image full">
+						<img src="images/Cox/iot_viz.png" alt="Cox: Home Automation" title="" />
+					</div>
+				</div>
+			</div>
 		</article>
 	</body>
+	<script type="text/javascript">
+		$("#Light1").on("click",function() {
+			if($(this).css('fill') == "rgb(221, 221, 221)")
+			{
+				light1ON();
+			}
+			else
+			{
+				light1OFF();
+			}
+		});
+		$("#Light3").on("click",function() {
+			if($(this).css('fill') == "rgb(221, 221, 221)")
+			{
+				light3ON();
+			}
+			else
+			{
+				light3OFF();
+			}
+		});
+		$("#Light4").on("click",function() {
+			if($(this).css('fill') == "rgb(221, 221, 221)")
+			{
+				light4ON();
+			}
+			else
+			{
+				light4OFF();
+			}
+		});
+		$("#Light2").on("click",function() {
+			if($(this).css('stroke') == "rgb(221, 221, 221)")
+			{
+				light2ON();
+			}
+			else
+			{
+				light2OFF();
+			}
+		});
+
+		$("#speaker").on("click",function(){
+			//console.log($(this).css('stroke'));
+
+			if($("#speaker").css('opacity') == 1)
+			{
+				$("#speakerOff").css('opacity', 1);
+				$("#speaker").css('opacity', 0.5);
+			}
+			else
+			{
+				$("#speakerOff").css('opacity', 0);
+				$("#speaker").css('opacity', 1);
+			}
+		});
+
+		$("#tv").on("click",function(){
+			if($("#tvPlay").css('opacity') == 1)
+			{
+				$("#tvPlay").css('opacity', 0);
+			}
+			else {
+				$("#tvPlay").css('opacity', 1);
+			}
+		});
+		function turnDevicesON() {
+			light1ON();
+
+			light2ON();
+
+			light3ON();
+
+			light4ON();
+
+			speakerON();
+
+			tvON();
+		}
+		function light1ON() {
+			$("#Light1").css({fill:"#F70"});
+			$("#Light1").parent().find(".glow").css({fill:"#F70"});
+
+			// setState('Light1', "ON");
+		}
+		function light2ON() {
+			$("#Light2").css({stroke:"#F0F"});
+
+			// setState('Light2', "ON");
+		}
+		function light3ON() {
+			$("#Light3").css({fill:"#FF0"});
+			$("#Light3").parent().find(".glow").css({fill:"#FF0"});
+
+			// setState('Light3', "ON");
+		}
+		function light4ON() {
+			$("#Light4").css({fill:"#0F5"});
+			$("#Light4").parent().find(".glow").css({fill:"#0F5"});
+
+			// setState('Light4', "ON");
+		}
+		function speakerON() {
+			$("#speakerOff").css('opacity', 0);
+			$("#speaker").css('opacity', 1);
+
+			//setState('PlayLivingRoom', 'ON');
+			//sendCommand('SonosPlay', '[DI] Underground Techno');
+		}
+		function tvON() {
+			$("#tvPlay").css('opacity', 1);
+		}
+		function light1OFF() {
+			$("#Light1").css({fill:"#DDD"});
+			$("#Light1").parent().find(".glow").css({fill:"none"});
+
+			// setState('Light1', "OFF");
+
+		}
+		function light2OFF() {
+			$("#Light2").css({stroke:"#DDD"});
+			// setState('Light2', "OFF");
+
+		}
+		function light3OFF() {
+			$("#Light3").css({fill:"#DDD"});
+			$("#Light3").parent().find(".glow").css({fill:"none"});
+			// setState('Light3', "OFF");
+		}
+		function light4OFF() {
+			$("#Light4").css({fill:"#DDD"});
+			$("#Light4").parent().find(".glow").css({fill:"none"});
+			// setState('Light4', "OFF");
+		}
+		function speakerOFF() {
+			$("#speakerOff").css('opacity', 1);
+			$("#speaker").css('opacity', 0.5);
+
+			//setState('PlayLivingRoom', 'OFF');
+		}
+		function tvOFF() {
+			$("#tvPlay").css('opacity', 0);
+		}
+		function turnDevicesOFF() {
+			light1OFF();
+
+			light2OFF();
+
+			light3OFF();
+
+			light4OFF();
+
+			speakerOFF();
+
+			tvOFF();
+		}
+
+
+			setTimeout(function() {
+				// console.log($("#userTracker").position().left);
+
+				if($("#userTracker").position().left > 300 && $("#userTracker").position().left < 320)
+				{
+					light1ON();
+					light2ON();
+					light3ON();
+					light4ON();
+					speakerON();
+					console.log("in in");
+				}
+				else if($("#userTracker").position().left > 900 && $("#userTracker").position().left < 1020)
+				{
+					turnDevicesOFF();
+					speakerON();
+				}
+				else if(($("#userTracker").position().left > 749 && $("#userTracker").position().left < 751) &&
+						($("#userTracker").position().top > 384 && $("#userTracker").position().top < 385))
+				{
+					turnDevicesOFF();
+					light2ON();
+					tvON();
+				}
+			}, 10);
+	</script>
 </html>
