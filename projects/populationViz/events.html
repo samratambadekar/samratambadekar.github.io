@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Yesterday</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<!--
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.10.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.10.0/mapbox-gl.css' rel='stylesheet' />
+-->
+  <script src="js/jquery-2.2.0.min.js"></script>
+  <script src="js/csv2geojson.js"></script>
+    <script src='js/mapbox-gl.js'></script>
+    <link href='css/mapbox-gl.css' rel='stylesheet' />
+    <style>
+      body {background: rgba(255,255,255,1);}
+      #map {position:absolute;top:0;left:0;right:0px;bottom:0;}
+      #layerList {display: none;position:absolute;top:5px;right:0;bottom:50%;width:190px;overflow:auto;}
+      #layerList div {color:#ccc;}
+      #layerList div div {width:15px;height:15px;display:inline-block;}
+      #propertyList {display: none;position:absolute;top:50%;bottom:0;right:0;width:190px;overflow:auto;color:#fff;}
+
+      .map-attribution {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        color: #888;
+        font-size: 12px;
+        padding: 2px 4px;
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.7);
+        z-index: 10;
+      }
+      .map-attribution a {
+        color: #888;
+        text-decoration: none;
+        margin-right: 5px;
+      }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+<div id="layerList"></div>
+<pre id="propertyList"></pre>
+<div class="map-attribution"><a href="https://openmaptiles.org/" target="_blank"> © OpenMapTiles</a> <a href="https://www.openstreetmap.org/copyright" target="_blank"> © OpenStreetMap Contributors</a> </div>
+<script>
+// mapboxgl.accessToken = 'pk.your-own-code-here-for-online-maps';
+mapboxgl.accessToken = 'NOT-REQUIRED-WITH-YOUR-VECTOR-TILES-DATA';
+
+
+var map = new mapboxgl.Map({
+  container: 'map',
+  center: [0, 0],
+  zoom: 1
+});
+
+// map.addControl(new mapboxgl.Navigation());
+
+var setCenterFromLayer = true;
+// var tileJsonUrl = 'http://osm2vectortiles.tileserver.com/v1.json';
+var tileJsonUrl = 'http://10.13.59.181/dataviz/maps/tileserver/tileserver.php?//data/tiles_planet/planet_2016-06-20_3d4cb571d3d0d828d230aac185281e97_z0-z14.json';
+// var tileJsonUrl = 'http://10.13.59.181/dataviz/maps/tileserver/planet.json';
+
+// function parseHash() {
+//   var hash = window.location.hash.substr(1);
+//   if (hash) {
+//     hash = hash.replace(/%7C/g, '|');
+//     parts = hash.split('|');
+//     if (parts.length > 0 && parts[0].length > 0) {
+//       tileJsonUrl = parts[0] || tileJsonUrl;
+//     }
+//     if (parts.length > 3) {
+//       map.setCenter([parseFloat(parts[2]), parseFloat(parts[1])]);
+//       map.setZoom(parseInt(parts[3]));
+//       setCenterFromLayer = false;
+//     }
+//   }
+// }
+// parseHash();
+
+// map.on('moveend', function(e) {
+//   var lonLat = map.getCenter();
+//   window.location.hash = tileJsonUrl + '|' + lonLat.lat + '|' + lonLat.lng + '|' + map.getZoom();
+// });
+
+function generateColor(str) {
+  var rgb = [255, 255, 255];
+  for (var i = 0; i < str.length; i++) {
+    var v = str.charCodeAt(i);
+    console.log(str);
+
+    if(str.trim() == "water") {
+      return [231,233,233,1];
+    }
+    else if(str.trim() == "boundary") {
+      return [221,221,221,1];
+    }
+    else if(str.trim() == "admin") {
+      return [221,221,221,1];
+    }
+    else if(str.trim() == "highway") {
+      return [238,238,238,1];
+    }
+    else if(str.trim() == "road") {
+      return [246,246,246,1];
+    }
+    else if(str.trim() == "place") {
+      return [158,158,158,1];
+    }
+    else if(str.trim() == "building") {
+      return [250,250,250,0];
+    }
+    else if(str.trim() == "waterway") {
+      return [250,250,250,0];
+    }
+    else if(str.trim() == "landcover") {
+      return [250,250,250,0];
+    }
+    else if(str.trim() == "landuse") {
+      return [255,255,255,1];
+    }
+    else if(str.trim() == "landuse_overlay") {
+      return [240,240,240,1];
+    }
+    else if(str.trim() == "country_label") {
+      return [155,155,155,1];
+    }
+    else if(str.trim() == "state_label") {
+      return [155,155,155,1];
+    }
+    else if(str.trim() == "place_label") {
+      return [220,220,220,1];
+    }
+    else if(str.trim() == "marine_label") {
+      return [220,220,220,1];
+    }
+    else if(str.trim() == "water_label") {
+      return [220,220,220,1];
+    }
+    else if(str.trim() == "poi_label") {
+      return [220,220,220,1];
+    }
+    else if(str.trim() == "road_label") {
+      return [220,220,220,1];
+    }
+    else if(str.trim() == "waterway_label") {
+      return [220,220,220,1];
+    }
+    else if(str.trim() == "housenum_label") {
+      return [220,220,220,1];
+    }
+    else if(str.trim() == "airport_label") {
+      return [220,220,220,1];
+    }
+    else if(str.trim() == "rail_station_label") {
+      return [220,220,220,1];
+    }
+    else if(str.trim() == "mountain_peak_label") {
+      return [220,220,220,1];
+    }
+    else if(str.trim() == "aeroway") {
+      return [235,235,235,1];
+    }
+    else if(str.trim() == "barrier_line") {
+      return [235,235,235,1];
+    }
+    else if(str.trim() == "tunnel") {
+      return [235,235,235,1];
+    }
+    else if(str.trim() == "bridge") {
+      return [238,238,238,1];
+    }
+    else if(str.trim() == "motorway_junction") {
+      return [245,245,245,1];
+    }
+    rgb[v % 3] = (rgb[i % 3] + (13*(v%13))) % 12;
+  }
+  var r = 4 + rgb[0];
+  var g = 4 + rgb[1];
+  var b = 4 + rgb[2];
+  r = (r * 16) + r;
+  g = (g * 16) + g;
+  b = (b * 16) + b;
+
+  // r = (r * 16) + r;
+  // g = (g * 16) + g;
+  // b = (b * 16) + b;
+  return [r,g,b,1];
+};
+
+function initLayer(data) {
+  var layer;
+  var layerList = document.getElementById('layerList');
+  var layers_ = [];
+  data['vector_layers'].forEach(function(el) {
+    var color = generateColor(el['id']);
+    var colorText = 'rgba(' + color[0] + ',' + color[1] + ',' + color[2] + ',' + color[3] + ')';
+    var labelStops = [[3,10],[4,11],[5,10],[6,8]];
+    var labelColor = "#6B6B6B";
+    var labelOpacity = 1;
+
+    if(el['id'].trim() == "water" || el['id'].trim() == "landcover" || el['id'].trim() == "landuse") {
+      layers_.push({
+        id: el['id'] + Math.random(),
+        source: 'vector_layer_',
+        'source-layer': el['id'],
+        interactive: true,
+        type: 'fill',
+        paint: {'fill-color': colorText}
+      });
+    }
+    else if(el['id'].trim() == "country_label" || el['id'].trim() == "state_label" || el['id'].trim() == "place_label" ||
+            el['id'].trim() == "marine_label" || el['id'].trim() == "water_label" || el['id'].trim() == "poi_label" ||
+            el['id'].trim() == "road_label" || el['id'].trim() == "waterway_label" || el['id'].trim() == "housenum_label" ||
+            el['id'].trim() == "airport_label" || el['id'].trim() == "rail_station_label" || el['id'].trim() == "mountain_peak_label") {
+
+      labelOpacity = 1;
+
+      if(el['id'].trim() == "country_label") {
+        labelStops = [[1,10],[6, 24]];
+        labelColor = "#6B6B6B";
+      } else if(el['id'].trim() == "state_label") {
+        labelStops = [[4,14],[7, 18]];
+        labelColor = "#A8A8A8";
+      } else if(el['id'].trim() == "place_label") {
+        labelStops = [[4,12], [13,15]];
+        labelColor = "#AAA";
+      } else if(el['id'].trim() == "marine_label") {
+        labelStops = [[2,14], [5,20]];
+        labelColor = "#78888A";
+      } else if(el['id'].trim() == "water_label") {
+        labelStops = [[13,13], [18,18]];
+        labelColor = "#78888A";
+      } else if(el['id'].trim() == "poi_label") {
+        labelStops = [[10,9], [18,11]];
+        labelColor = "#CCC";
+      } else if(el['id'].trim() == "road_label") {
+        labelStops = [[11,10], [20,12]];
+        labelColor = "#A8A8A8";
+        labelOpacity = 0;
+      } else if(el['id'].trim() == "waterway_label") {
+        labelStops = [[13,12], [18,16]];
+        labelColor = "#78888A";
+      } else if(el['id'].trim() == "housenum_label") {
+        labelStops = [[15,10], [20,13]];
+        labelColor = "#6B6B6B";
+      } else if(el['id'].trim() == "airport_label") {
+        labelStops = [[10,12], [18,18]];
+        labelColor = "#CCC";
+      } else if(el['id'].trim() == "rail_station_label") {
+        labelStops = [[10,11], [18,12]];
+        labelColor = "#6B6B6B";
+      } else if(el['id'].trim() == "mountain_peak_label") {
+        labelStops = [[8,12], [15,18]];
+        labelColor = "#A8A8A8";
+      }
+
+      layers_.push({
+        id: el['id'] + Math.random(),
+        source: 'vector_layer_',
+        "source-layer": el['id'],
+        // interactive: true,
+        type: 'symbol',
+        "minzoom":3,
+        "layout": {
+          "text-field": "{name_en}",
+          // "text-font": ["Open Sans Semibold"],
+          "text-font": ["Metropolis Medium"],
+          // "text-transform": "uppercase",
+          // "text-max-width": 20,
+          "text-size": {
+            "stops": labelStops
+          },
+          "visibility": "visible",
+        },
+        "paint": {
+          "text-opacity": labelOpacity,
+          "text-color": labelColor,
+          "text-halo-color": "#fff",
+          "text-halo-width": 1
+        }
+      });
+    }
+    else if(el['id'].trim() == "highway" || el['id'].trim() == "bridge") {
+      layers_.push({
+        id: el['id'] + Math.random(),
+        source: 'vector_layer_',
+        'source-layer': el['id'],
+        interactive: true,
+        type: 'line',
+        paint: {
+          'line-color': colorText,
+          'line-width': {
+            "base": 1.5,
+            "stops": [[5,0.5],[9,1.4],[18,32]]
+          }
+        }
+      });
+    }
+    else if(el['id'].trim() == "road") {
+      layers_.push({
+        id: el['id'] + Math.random(),
+        source: 'vector_layer_',
+        'source-layer': el['id'],
+        interactive: true,
+        type: 'line',
+        paint: {
+          'line-color': colorText,
+          'line-width': {
+            "base": 1.5,
+            "stops": [[12.5,0.5],[14,2],[18,18]]
+          }
+        }
+      });
+    }
+    else {
+      layers_.push({
+        id: el['id'] + Math.random(),
+        source: 'vector_layer_',
+        'source-layer': el['id'],
+        interactive: true,
+        type: 'line',
+        paint: {'line-color': colorText}
+      });
+    }
+
+  });
+
+  map.setStyle({
+    version: 8,
+    sources: {
+      'vector_layer_': {
+        type: 'vector',
+        tiles: data['tiles'],
+        minzoom: data['minzoom'],
+        maxzoom: data['maxzoom']
+      }
+    },
+    "glyphs": "http://10.13.59.181/dataviz/maps/tileserver/font/{fontstack}/{range}.pbf",
+    // "glyphs": "https://api.mapbox.com/fonts/v1/samratambadekar/{fontstack}/{range}.pbf?access_token=pk.eyJ1IjoiZmFyYWRheTIiLCJhIjoiTUVHbDl5OCJ9.buFaqIdaIM3iXr1BOYKpsQ",
+    layers: layers_
+  });
+
+  return layer;
+}
+
+
+function loadJson(callback) {
+  //var script = document.createElement('script');
+  //script.src = tileJsonUrl + '?callback=initLayer'
+  //document.getElementsByTagName('head')[0].appendChild(script);
+
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      callback(xhttp.response, initLayer(xhttp.response));
+    }
+  };
+  xhttp.responseType = 'json';
+  xhttp.open("GET", tileJsonUrl, true);
+  xhttp.send();
+}
+
+loadJson(function(data, layer) {});
+
+var propertyList = document.getElementById('propertyList');
+map.on('mousemove', function(e) {
+  propertyList.innerHTML = '';
+  map.featuresAt(e.point, {radius: 3}, function(err, features) {
+    if (err) throw err;
+    if (features[0]) {
+      propertyList.innerHTML = JSON.stringify(features[0].properties, null, 2);
+    }
+  });
+});
+
+
+var style = {
+  "version": 8,
+  "sources": {
+    "countries": {
+      "type": "vector",
+      // "url": "mapbox://map-id"
+      // "url": "http://tileserver.com/layer.json",
+      // "tiles": ["http://osm2vectortiles-0.tileserver.com/v1/{z}/{x}/{y}.pbf"],
+      "tiles": [location.origin+location.pathname+"countries/{z}/{x}/{y}.pbf"],
+      "maxzoom": 20
+    }
+  },
+  "glyphs": "http://10.13.59.181/dataviz/maps/tileserver/font/{fontstack}/{range}.pbf",
+  // "glyphs": "https://api.mapbox.com/fonts/v1/samratambadekar/{fontstack}/{range}.pbf?access_token=pk.eyJ1IjoiZmFyYWRheTIiLCJhIjoiTUVHbDl5OCJ9.buFaqIdaIM3iXr1BOYKpsQ",
+}
+var map = new mapboxgl.Map({
+    container: 'map',
+    // style: 'https://raw.githubusercontent.com/openmaptiles/positron-gl-style/master/style.json',
+    // style: 'mapbox://styles/samratambadekar/cj5e5afll12ut2rphl90s37ei',
+    // style: style,
+    minZoom: 1,
+    maxZoom: 19,
+    zoom: 4,
+    center: [-122.447303, 37.753574],
+    maxBounds: [[-180, -85], [180, 85] ],
+    // maxBounds: [[-74.04728500751165, 40.68392799015035], [-73.91058699000139, 40.87764500765852] ],
+    renderWorldCopies: false,
+    // pitch: 60, // pitch in degrees
+    // bearing: -60, // bearing in degrees
+});
+var cities = {
+  'World': {
+      center: [0, 0],
+      bearing: 0,
+      zoom: 1,
+      pitch: 0,
+      speed: 0.75,
+      curve: 1,
+  },
+  'Seattle': {
+      center: [-122.3321, 47.6062],
+      bearing: 190,
+      zoom: 10,
+      pitch: 80,
+      // speed: 0.025,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Seattle 0': {
+      center: [-122.3321, 47.6062],
+      bearing: 10,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Portland': {
+      center: [-122.6765, 45.5231],
+      bearing: 180,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'San Francisco': {
+      center: [-122.4194, 37.7749],
+      bearing: 170,
+      zoom: 10,
+      pitch: 80,
+      // speed: 0.025,
+      speed: 0.18,
+      curve: 1,
+  },
+  'San Francisco 0': {
+      center: [-122.4194, 37.7749],
+      bearing: 350,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Los Angeles': {
+      center: [-118.2437, 34.0522],
+      bearing: 100,
+      zoom: 10,
+      pitch: 80,
+      // speed: 0.025,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Los Angeles 0': {
+      center: [-118.2437, 34.0522],
+      bearing: 280,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Pheonix': {
+      center: [-112.0740, 33.4484],
+      bearing: 120,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Austin': {
+      center: [-97.7431, 30.2672],
+      bearing: 90,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Houston': {
+      center: [-95.3698, 29.7604],
+      bearing: 80,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Dallas': {
+      center: [-96.7970, 32.7767],
+      bearing: 35,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Omaha': {
+      center: [-95.998, 41.2524],
+      bearing: 90,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'St. Louis': {
+      center: [-90.1994, 38.6270],
+      bearing: 135,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Nashville': {
+      center: [-86.7816, 36.1627],
+      bearing: 165,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Atlanta': {
+      center: [-84.38801, 33.7490],
+      bearing: 175,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Miami': {
+      center: [-80.191, 25.7617],
+      bearing: 170,
+      zoom: 10,
+      pitch: 80,
+      // speed: 0.025,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Miami 0': {
+      center: [-80.191, 25.7617],
+      bearing: 350,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Jacksonville': {
+      center: [-81.6557, 30.332],
+      bearing: 345,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Washington D.C.': {
+      center: [-77.0369, 38.9072],
+      bearing: 280,
+      zoom: 10,
+      pitch: 80,
+      // speed: 0.025,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Washington D.C. 0': {
+      center: [-77.0369, 38.9072],
+      bearing: 100,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Philadelphia': {
+      center: [-75.1652, 39.9526],
+      bearing: 40,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'New York': {
+      center: [-74.0059, 40.7128],
+      bearing: 210,
+      zoom: 10,
+      pitch: 80,
+      // speed: 0.025,
+      speed: 0.18,
+      curve: 1,
+  },
+  'New York 0': {
+      center: [-74.0059, 40.7128],
+      bearing: 10,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Boston': {
+      center: [-71.0589, 42.3601],
+      bearing: 230,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Pittsburg': {
+      center: [-79.9959, 40.4406],
+      bearing: 340,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Detroit': {
+      center: [-83.0458, 42.3314],
+      bearing: 270,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Chicago': {
+      center: [-87.6298, 41.8781],
+      bearing: 230,
+      zoom: 10,
+      pitch: 80,
+      // speed: 0.025,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Chicago 0': {
+      center: [-87.6298, 41.8781],
+      bearing: 50,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Minneapolis': {
+      center: [-93.2650, 44.9778],
+      bearing: 225,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Denver': {
+      center: [-104.9903, 39.739],
+      bearing: 285,
+      zoom: 10,
+      pitch: 80,
+      // speed: 0.025,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Denver 0': {
+      center: [-104.9903, 39.739],
+      bearing: 105,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Salt Lake City': {
+      center: [-111.8910, 40.7608],
+      bearing: 315,
+      zoom: 11,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Sao Paulo': {
+      center: [-46.62918450000001, -23.5431786],
+      bearing: 135,
+      zoom: 10,
+      pitch: 80,
+      // speed: 0.025,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Sao Paulo 0': {
+      center: [-46.62918450000001, -23.5431786],
+      bearing: 270,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Johannesburg': {
+      center: [28.047305100000017, -26.2041028],
+      bearing: 45,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Mumbai': {
+      center: [72.87765590000004, 19.0759837],
+      bearing: 100,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Bangkok': {
+      center: [100.50176510000006, 13.7563309],
+      bearing: 180,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Kuala Lumpur': {
+      center: [101.68685499999992, 3.139003],
+      bearing: 120,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Singapore': {
+      center: [103.81983600000001, 1.352083],
+      bearing: 135,
+      zoom: 10,
+      pitch: 80,
+      // speed: 0.025,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Singapore 0': {
+      center: [103.81983600000001, 1.352083],
+      bearing: 270,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Melbourne': {
+      center: [144.96305600000005, -37.81361100000001],
+      bearing: 20,
+      zoom: 10,
+      pitch: 80,
+      // speed: 0.025,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Melbourne 0': {
+      center: [144.96305600000005, -37.81361100000001],
+      bearing: 200,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Sydney': {
+      center: [151.2093, -33.8688],
+      bearing: 20,
+      zoom: 10,
+      pitch: 80,
+      // speed: 0.025,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Sydney 0': {
+      center: [151.2093, -33.8688],
+      bearing: 200,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Brisbane': {
+      center: [153.02512350000006, -27.4697707],
+      bearing: 320,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Manila': {
+      center: [120.9842195, 14.5995124],
+      bearing: 40,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Tokyo': {
+      center: [139.69170639999993, 35.6894875],
+      bearing: 270,
+      zoom: 10,
+      pitch: 80,
+      // speed: 0.025,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Tokyo 0': {
+      center: [139.69170639999993, 35.6894875],
+      bearing: 90,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Seoul': {
+      center: [126.977969199999968, 37.566535],
+      bearing: 210,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Taipei': {
+      center: [121.56541770000001, 25.0329694],
+      bearing: 230,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Hong Kong': {
+      center: [114.10949700000003, 22.396428],
+      bearing: 280,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'New Delhi': {
+      center: [77.20902120000005, 28.6139391],
+      bearing: 310,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Islamabad': {
+      center: [73.09314610000001, 33.7293882],
+      bearing: 270,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Tel Aviv-Yafo': {
+      center: [34.78176759999997, 32.0852999],
+      bearing: 325,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Florence': {
+      center: [11.25237919999995, 43.7679178],
+      bearing: 320,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Milan': {
+      center: [9.189981999999986, 45.4642035],
+      bearing: 0,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Frankfurt': {
+      center: [8.682126700000026, 50.11092209999999],
+      bearing: 220,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Paris': {
+      center: [2.3522219000000177, 48.85661400000001],
+      bearing: 330,
+      zoom: 10,
+      pitch: 80,
+      // speed: 0.025,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Paris 0': {
+      center: [2.3522219000000177, 48.85661400000001],
+      bearing: 150,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'London': {
+      center: [-0.12775829999998223, 51.5073509],
+      bearing: 320,
+      zoom: 10,
+      pitch: 80,
+      // speed: 0.025,
+      speed: 0.18,
+      curve: 1,
+  },
+  'London 0': {
+      center: [-0.12775829999998223, 51.5073509],
+      bearing: 140,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Manchester': {
+      center: [-2.2426305000000184, 53.4807593],
+      bearing: 200,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Madrid': {
+      center: [-3.7037901999999576, 40.4167754],
+      bearing: 270,
+      zoom: 10,
+      pitch: 80,
+      // speed: 0.025,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Madrid 0': {
+      center: [-3.7037901999999576, 40.4167754],
+      bearing: 90,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.18,
+      curve: 1,
+  },
+  'Toronto': {
+      center: [-79.383184, 43.653226],
+      bearing: 165,
+      zoom: 10,
+      pitch: 80,
+      // speed: 0.025,
+      speed: 0.22,
+      curve: 1,
+  },
+  'Toronto 0': {
+      center: [-79.383184, 43.653226],
+      bearing: 345,
+      zoom: 10.5,
+      pitch: 80,
+      speed: 0.22,
+      curve: 1,
+  },
+};
+
+map.on('load', function () {
+  // map.addLayer({
+  //       'id': '3d-buildings',
+  //       'source': 'composite',
+  //       'source-layer': 'building',
+  //       'filter': ['==', 'extrude', 'true'],
+  //       'type': 'fill-extrusion',
+  //       'minzoom': 5,
+  //       'paint': {
+  //           'fill-extrusion-color': '#aaa',
+  //           'fill-extrusion-height': {
+  //               'type': 'identity',
+  //               'property': 'height'
+  //           },
+  //           'fill-extrusion-base': {
+  //               'type': 'identity',
+  //               'property': 'min_height'
+  //           },
+  //           'fill-extrusion-opacity': .5
+  //       }
+  //   });
+
+    $.ajax({
+        type: "GET",
+        url: 'EventsYesterday.csv',
+        dataType: "text",
+        success: function(csvData) {
+          console.log("data loaded");
+          makeGeoJSON(csvData);
+
+          FlyAround();
+        }
+     });
+    //  setTimeout(function() {
+    //    $.ajax({
+    //        type: "GET",
+    //        url: './EventsYesterday.csv',
+    //        dataType: "text",
+    //        success: function(csvData) {
+    //          map.removeLayer('hexGridsAll-3d');
+    //          map.removeSource('hexGridsAll-3d');
+    //          map.removeLayer('points2');
+    //          map.removeSource('points2');
+    //          makeGeoJSON(csvData);
+    //        }
+    //     });
+    //  }, 5000);
+});
+
+// var citiesList = ["World", "Seattle", "Portland", "San Francisco", "Los Angeles", "Pheonix", "Austin", "Dallas", "Houston", "Omaha", "St. Louis", "Nashville", "Atlanta", "Miami", "Jacksonville", "Washington D.C.", "Philadelphia", "New York", "Boston", "Pittsburg", "Detroit", "Chicago", "Minneapolis", "Denver", "Salt Lake City"];
+// var citiesList = ["World", "Seattle", "Sydney", "San Francisco", "Chicago", "Los Angeles", "Atlanta", "Pheonix", "Miami", "New York", "Minneapolis", "Washington D.C.", "Boston"];
+// var citiesList = ["World", "San Francisco", "Los Angeles", "Houston", "Miami", "Sao Paulo", "Johannesburg", "Mumbai", "Bangkok", "Kuala Lumpur", "Singapore", "Melbourne", "Sydney", "Brisbane", "Manila", "Tokyo", "Seoul", "Taipei", "Hong Kong", "New Delhi", "Islamabad", "Tel Aviv-Yafo", "Florence", "Milan", "Frankfurt", "Paris", "London", "Manchester", "Madrid", "New York", "Washington D.C.", "Chicago", "Denver", "Seattle"];
+var citiesList = ["World", "San Francisco", "Los Angeles", "Miami", "Sao Paulo", "Singapore", "Melbourne", "Sydney", "Tokyo", "Paris", "London", "Madrid", "Toronto", "New York", "Washington D.C.", "Chicago", "Denver", "Seattle"];
+// var citiesList = ["World", "San Francisco 0", "San Francisco", "Los Angeles 0", "Los Angeles", "Miami 0", "Miami", "Sao Paulo 0", "Sao Paulo", "Singapore 0", "Singapore", "Melbourne 0", "Melbourne", "Sydney 0", "Sydney", "Tokyo 0", "Tokyo", "Paris 0", "Paris", "London 0", "London", "Madrid 0", "Madrid", "Toronto 0", "Toronto", "New York 0", "New York", "Washington D.C. 0", "Washington D.C.", "Chicago 0", "Chicago", "Denver 0", "Denver", "Seattle 0", "Seattle"];
+// var cityFlyingInterval;
+var cityFlyingIntervalPause = false;
+var currentCityIndex = 1;
+
+function FlyAround() {
+  map.flyTo(cities[citiesList[currentCityIndex]]);
+  currentCityIndex++;
+  setInterval(function() {
+    if(!cityFlyingIntervalPause) {
+      map.flyTo(cities[citiesList[currentCityIndex]]);
+      currentCityIndex++;
+      if(currentCityIndex >= citiesList.length) {
+        currentCityIndex = 1;
+      }
+    }
+  }, 40000);
+
+  // setTimeout(function() {
+  //   map.flyTo(cities['Seattle']);
+  // }, 25000);
+  // setTimeout(function() {
+  //   map.flyTo(cities['San Francisco']);
+  // }, 2000);
+  // setTimeout(function() {
+  //   map.flyTo(cities['New York']);
+  // }, 25000);
+}
+
+var geoJsonData;
+var polygonData = [];
+
+function makeGeoJSON(csvData) {
+    csv2geojson.csv2geojsonHexagon(csvData, {
+      latfield: 'Latitude',
+      lonfield: 'Longitude',
+      delimiter: ','
+    }, function(err, data) {
+        geoJsonData = data;
+
+        var colorStops = ["#0a5573", "#096489", "#0b79a5", "#0d93c9"];
+
+        map.addLayer({
+          'id': 'hexGridsAll-3d',
+          'type': 'fill-extrusion',
+          'source': {
+              'type': 'geojson',
+              'data': geoJsonData
+          },
+          'layout': {},
+          'paint': {
+            "fill-extrusion-color": {
+              'property': 'countHeight',
+              stops: [
+                [20, colorStops[0]],
+                [80, colorStops[1]],
+                [160, colorStops[2]],
+                [220, colorStops[3]]
+              ]
+            },
+            "fill-extrusion-opacity": .8,
+            "fill-extrusion-height": {
+              'property': 'countHeight',
+              'type': 'identity'
+            },
+            "fill-extrusion-height-transition": {
+                duration: 2000
+            },
+            "fill-extrusion-color-transition": {
+                duration: 2000
+            }
+          }
+        });
+    });
+
+    csv2geojson.csv2geojson(csvData, {
+      latfield: 'Latitude',
+      lonfield: 'Longitude',
+      delimiter: ','
+    }, function(err, data) {
+        geoJsonData = data;
+        // map.on('load', function () {
+            map.addLayer({
+                'id': 'points2',
+                'type': 'circle',
+                'source': {
+                    'type': 'geojson',
+                    'data': data,
+                    // 'cluster': true,
+                    // 'clusterRadius': 20
+                },
+                'paint': {
+                  // make circles larger as the user zooms from z12 to z22
+                  'circle-radius': {
+                      'base': 8,
+                      'stops': [
+                        [4, 2],
+                        [8, 3],
+                        [10, 0],
+                        // [16, 10],
+                        // [22, 30]
+                      ],
+                  },
+                  // color circles by zoom, using data-driven styles
+                  'circle-color': {
+                    stops: [
+                      [5, '#0198BD'],
+                      // [5, 'orangered'],
+                      [10, '#0b79a5'],
+                      [15, '#0d93c9']
+                    ]
+                  },
+                  'circle-opacity': {
+                    stops: [
+                      [4, 0.5],
+                      // [8, 0.30],
+                      [9, 0.75]
+                    ]
+                  }
+                }
+            });
+        // });
+    });
+}
+
+</script>
+
+</body>
+
+<script>
+  $(document).ready(function() {
+    var resetFlyTimer;
+    map.on('mousedown', function(evt) {
+      if(!cityFlyingIntervalPause) {
+        cityFlyingIntervalPause = true;
+        map.flyTo(cities["World"]);
+      }
+      clearTimeout(resetFlyTimer);
+      resetFlyTimer = setTimeout(function() {
+        cityFlyingIntervalPause = false;
+      }, 60000);
+    });
+  });
+
+  map.addControl(new mapboxgl.NavigationControl(), "bottom-right");
+</script>
+</html>
