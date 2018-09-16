@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <title ng-bind="title" class="ng-binding">DocuSign</title>
+    <link rel="icon" type="image/x-icon" href="https://docucdn-a.akamaihd.net/olive/17.4.0/img/new_favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="css/olive/olive.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://docucdn-a.akamaihd.net/olive/17.4.0/css/olive.min.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/style_ndse_tagger.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_ndse_home.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_modal.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_topNav_menu.css" />
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+  </head>
+  <body>
+    <nav class="site-header">
+      <div class="site-container">
+        <a href="index.html" class="logo logo-docusign"></a>
+        <div class="main-nav">
+          <ul class="horizontal-list no-list">
+            <li>
+              <a href="index.html" class="item ng-scope ng-binding on">Home</a>
+            </li>
+            <li>
+              <a href="#" class="item ng-scope ng-binding">Manage</a>
+            </li>
+            <li class="ng-scope">
+              <a href="templates.html" class="item ng-scope ng-binding">Templates</a>
+            </li>
+            <li class="ng-scope">
+              <a href="#" class="item ng-scope ng-binding">Reports</a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-header-links ng-scope">
+          <div class="actions">
+            <div class="btn btn-main">Upgrade</div>
+            <div><span class="icon icon-search"></span></div>
+            <div class="user_help" data-menu-id="user_help"><img src="images/svg/help_icon.svg"/></div>
+            <div><img src="images/svg/notification_icon.svg"/></div>
+            <div class="profile_status user_profile" data-menu-id="user_profile">
+              <div class="user_initial">SJ</div>
+              <svg class="">
+                <circle cx="50%" cy="50%" r="45%" class="status"></circle>
+                <circle cx="50%" cy="50%" r="45%" class="completion"></circle>
+              </svg>
+            </div>
+          </div>
+
+          <div id="menuAccountNav" class="menu below right invisible" data-qa="menuAccountNav" style="top: 56px; left: auto; right: 30px; min-width: 120px;width: 300px;">
+            <div class="menu-section">
+              <div class="grid ng-scope">
+                <table class="id-card">
+                  <tbody>
+                    <tr>
+                      <td class="block-lg">
+                        <div class="block_picture block_picture-avatar">
+                          <img alt="User Avatar" src="images/alex_edwards_pic.png" class="avatar-landscape" style="visibility: visible;"/>
+                        </div>
+                      </td>
+                      <td class="id-card-info ng-binding">
+                        <strong data-qa="header-account-name" class="line-1 ng-binding">DocuSign</strong><br><span data-qa="header-account-email" class="ng-binding">corey.kimel@acme.com</span><br>1234567</br>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <ul class="menu-grouping" role="menu">
+              <li role="menuitem">
+                <a class="item ng-binding" href="#">Go to Admin</a>
+              </li>
+              <li role="menuitem">
+                <a class="item ng-binding">My Preferences</a>
+              </li>
+              <li role="menuitem"></li>
+              <li class="ng-scope" role="menuitem">
+                <a class="item ng-binding">Switch to Classic</a>
+              </li>
+              <li role="menuitem">
+                <a class="item ng-binding">Feedback</a>
+              </li>
+              <li role="menuitem">
+                <a class="item ng-binding">Log Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="btn-nav btn-side-nav">
+          <span class="icon icon-search"></span> <span class="sr-text ng-binding">Filter</span>
+        </button>
+      </div>
+    </nav>
+
+    <article class="site-content">
+      <div class="hero_background">
+        <img src="images/hero_background.png"/>
+      </div>
+      <div class="ndse_home invisible">
+        <div class="cards">
+          <div class="card user_profile">
+            <div class="profile_status_text">Your ID is 15% complete</div>
+            <div class="profile_edit link">Edit</div>
+            <div class="profile_status">
+              <div class="user_initial">SJ</div>
+              <svg class="">
+                <circle cx="50%" cy="50%" r="45%" class="status"></circle>
+                <circle cx="50%" cy="50%" r="45%" class="completion"></circle>
+              </svg>
+            </div>
+
+            <div class="user_details">
+              <div class="user_name">Sam Pratt Johnson</div>
+              <div class="user_account_num text-muted">Account #0092927-009</div>
+              <div class="user_email text-muted">sam.johnson@gmail.com</div>
+              <div class="signature">
+                <img src="images/signature_placeholder.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="card news_card">
+            <div class="slider_images"><img src="images/news_card_image.png"/></div>
+            <div class="slide_info">
+              <div class="strong">Have questions?</div>
+              <div class="">New to DocuSign? Join us every week to chat live with a DocuSign expert.</div>
+              <div class="link">Register Here</div>
+              <img class="slider_buttons" src="images/svg/dummy_news_button.svg"/>
+            </div>
+          </div>
+        </div>
+        <div class="cards full_cards">
+          <div class="card documents_card empty">
+            <div class="select_document add_document empty">
+              <input type="file" class="hide"/>
+              <img src="images/svg/add_document_confused.svg"/>
+              <div class="empty_documents_text">You haven't sent any envelopes. Start Now.</div>
+              <div><button class="btn btn-primary">Upload Document</button></div>
+            </div>
+          </div>
+
+          <div class="card documents_card hide">
+            <div class="select_document add_document">
+              <input type="file" class="hide"/>
+              <img src="images/svg/add_document_happy.svg"/>
+              <div>Drag your documents here or <span class="link">browse</span></div>
+            </div>
+            <div class="documents_activity">
+              <div class="strong activity_type">Recent Activity</div>
+              <div class="documents_list">
+                <div class="doc_list_item">
+                  <div class="doc_icon"><img src="images/svg/doc_list_doc.svg"/></div>
+                  <div class="doc_details">
+                    <div class="doc_name">
+                      Draft: <span class="strong">Sample Document</span>
+                    </div>
+                    <div class="doc_time_stamp text-muted">
+                      2/11/2017 03:00:12 PM
+                    </div>
+                  </div>
+                  <div class="doc_recipients">
+                    To: <img src="images/doc_recipients_icons.png"/>
+                  </div>
+                  <div class="doc_status">Status: None</div>
+                  <div class="doc_actions"><a href="ndse.html" class="btn btn-secondary">Continue</a></div>
+                </div>
+                <div class="doc_list_item">
+                </div>
+                <div class="doc_list_item">
+                </div>
+                <div class="doc_list_item">
+                </div>
+                <div class="doc_list_item">
+                </div>
+                <div class="doc_list_item">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+    <div class="site_footer ng-scope">
+      <div class="site_container">
+        <div class="footer_left"></div>
+        <div class="footer_main">
+          <ul class="footer-links">
+            <li class="ng-scope"><a class="footer-links_item btn-triggeR ng-binding"><span class="icon icon-globe"></span> English (US)</a></li>
+            <li><span class="footer-links_item ng-binding">Powered by DocuSign</span></li>
+            <li><a target="_blank" class="footer-links_item ng-scope ng-binding">Contact Us</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding">Terms of Use</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding">Privacy</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding">Intellectual Property</a></li>
+            <li><span class="footer-links_item ng-binding">Copyright © 2016 DocuSign, Inc. All rights reserved.</span></li>
+          </ul>
+          <div id="menuLanguages" class="menu select-menu invisible">
+            <ul role="menu" aria-labelledby=" English (US)">
+              <li class="item ng-binding ng-scope on" role="menuitem">English (US)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Deutsch</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Español</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Français</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Italiano</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Nederlandse</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Português (Brasil)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Português (Portugal)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Русский</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">中文(台灣)</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">中文(简体)</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">日本語</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">한국어</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">［～Þƨèúδô～］</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_right"></div>
+      </div>
+    </div>
+
+    <div class="ds-modal-background invisible">
+      <div class="modal modal-new modal-xl modal-visible ng-scope modal-ndse-intro hide_modal" role="dialog">
+        <div class="modal_content">
+          <h1 class="modal_title">Welcome Sam</h1>
+          <h1 class="modal_title">Sign or Get Signatures in Minutes</h1>
+
+          <div class="modal_grid">
+            <div class="modal_grid_item">
+              <img src="images/svg/modal_prepare_illustration.svg"/>
+              <span>1. Upload Documents</span>
+            </div>
+            <div class="modal_grid_item">
+              <img src="images/svg/modal_select_illustration.svg"/>
+              <span>2. Get Signatures</span>
+            </div>
+            <div class="modal_grid_item">
+              <img src="images/svg/modal_send_illustration.svg"/>
+              <span>3. Share and Manage</span>
+            </div>
+          </div>
+
+          <div>
+            <a href="ndse.html" type="submit" class="btn btn-primary btn-xl btn-cancel show_sample_doc">Start Now</a>
+            <!-- <a href="ndse.html" type="submit" class="btn btn-minor btn-lg btn-cancel">Use Sample Document</a> -->
+          </div>
+        </div>
+        <button class="modal_close icon icon-times"></button>
+      </div>
+
+      <!-- <div class="modal modal-new modal-xl modal-visible ng-scope tamaras-new-modal hide_modal" role="dialog">
+        <div class="modal_header">
+            <h1 class="modal_title">
+                Select a Template to use as a Guided Form
+            </h1>
+        </div>
+        <div class="modal_content file_explorer">
+          <div class="folders">
+            <div class="section">
+              <h4>Upload</h4>
+              <div class="ellipsis add_document"><input type="file" class="hide"/><i class="icon icon-upload-content"></i> My Computer</div>
+            </div>
+            <div class="section">
+              <h4>Docusign</h4>
+              <div class="ellipsis selected"><i class="icon icon-templates"></i> Templates</div>
+              <div class="ellipsis"><i class="icon icon-home"></i> 123 Room St San Francisco CA</div>
+            </div>
+            <div class="section">
+              <h4>Cloud Storage</h4>
+              <div class="ellipsis"><i class="icon icon-logo-box"></i> Box</div>
+              <div class="ellipsis"><i class="icon icon-logo-dropbox"></i> Dropbox</div>
+              <div class="ellipsis"><i class="icon icon-logo-drive"></i> Google Drive</div>
+            </div>
+          </div>
+          <div class="files">
+            <div class="modal_description">
+              All Files
+            </div>
+              <table class="tbl">
+                <thead></thead>
+                <tbody>
+                  <tr class="row-clickable ng-scope">
+                    <td class="column-check pad-cell rtd">
+                    </td>
+                    <td>
+                      <i class="icon icon-folder"></i> <span class="ng-binding">Shared Templates</span>
+                    </td>
+                  </tr>
+                  <tr class="row-clickable ng-scope">
+                    <td class="column-check pad-cell rtd">
+                    </td>
+                    <td>
+                      <i class="icon icon-folder"></i> <span class="ng-binding">Personal</span>
+                    </td>
+                  </tr>
+                  <tr class="row-clickable ng-scope">
+                    <td class="column-check pad-cell rtd">
+                      <span class="cb cb-noText">
+                        <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="f4657126-de48-5644-a1c2-a31812eef581">
+                        <label class="cb_label" for="f4657126-de48-5644-a1c2-a31812eef581">Select</label>
+                      </span>
+                    </td>
+                    <td>
+                      <i class="icon icon-document"></i> <span class="ng-binding">I-9.pdf</span>
+                    </td>
+                  </tr>
+                  <tr class="row-clickable ng-scope">
+                    <td class="column-check pad-cell rtd">
+                      <span class="cb cb-noText">
+                        <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="968c6220-677a-5ade-ba0d-f9d771be0be6">
+                        <label class="cb_label" for="968c6220-677a-5ade-ba0d-f9d771be0be6">Select</label>
+                      </span>
+                    </td>
+                    <td>
+                      <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.pdf</span>
+                    </td>
+                  </tr>
+                  <tr class="row-clickable ng-scope">
+                  <td class="column-check pad-cell rtd">
+                    <span class="cb cb-noText">
+                      <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="e063273b-f719-52f5-8d57-720708278135">
+                      <label class="cb_label" for="e063273b-f719-52f5-8d57-720708278135">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.pdf</span>
+                  </td>
+                </tr>
+                <tr class="row-clickable ng-scope">
+                  <td class="column-check pad-cell rtd">
+                    <span class="cb cb-noText">
+                      <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="ba9bc18f-457b-5c20-95cd-c77c7baac623">
+                      <label class="cb_label" for="ba9bc18f-457b-5c20-95cd-c77c7baac623">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.pdf</span>
+                  </td>
+                </tr>
+                <tr class="row-clickable ng-scope">
+                  <td class="column-check pad-cell rtd">
+                    <span class="cb cb-noText">
+                      <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="5ea7e7d1-ab4a-5112-8aa3-7aad9bd86f82">
+                      <label class="cb_label" for="5ea7e7d1-ab4a-5112-8aa3-7aad9bd86f82">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.jpg</span>
+                  </td>
+                </tr>
+                <tr class="row-clickable ng-scope">
+                  <td class="column-check pad-cell rtd">
+                    <span class="cb cb-noText">
+                      <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="45f1a084-3117-5fff-8c34-892d1071d9c9">
+                      <label class="cb_label" for="45f1a084-3117-5fff-8c34-892d1071d9c9">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.docx</span>
+                  </td>
+                </tr>
+                <tr class="row-clickable ng-scope">
+                  <td class="column-check pad-cell rtd">
+                    <span class="cb cb-noText">
+                      <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="ac6dbeb1-27a6-583f-a528-2ed7cb5fde91">
+                      <label class="cb_label" for="ac6dbeb1-27a6-583f-a528-2ed7cb5fde91">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.png</span>
+                  </td>
+                </tr>
+                <tr class="row-clickable ng-scope">
+                  <td class="column-check pad-cell rtd">
+                    <span class="cb cb-noText">
+                      <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="9a800bfe-7644-5d4f-aad7-1d71a1837ddb">
+                      <label class="cb_label" for="9a800bfe-7644-5d4f-aad7-1d71a1837ddb">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.pdf</span>
+                  </td>
+                </tr>
+                <tr class="row-clickable ng-scope">
+                  <td class="column-check pad-cell rtd">
+                    <span class="cb cb-noText">
+                      <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="93d43daf-385c-5440-90a6-e8f27155b1bf">
+                      <label class="cb_label" for="93d43daf-385c-5440-90a6-e8f27155b1bf">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.pdf</span>
+                  </td>
+                </tr>
+                <tr class="row-clickable ng-scope">
+                  <td class="column-check pad-cell rtd">
+                    <span class="cb cb-noText">
+                      <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="474c08a9-4b70-5374-9ba8-280f909c5947">
+                      <label class="cb_label" for="474c08a9-4b70-5374-9ba8-280f909c5947">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.pdf</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal_footer">
+          <a href="create_form.html" class="btn btn-lg btn-primary" olive-modal-complete="">Upload Document</a>
+          <button class="btn btn-lg btn-minor btn-cancel" olive-modal-escape="">Cancel</button>
+        </div>
+        <button class="modal_close icon icon-times"></button>
+      </div> -->
+
+    </div>
+
+    <div class="topNav-menu menu tip below right hide">
+      <div class="user_profile hide">
+        <div class="profile_edit link">Edit</div>
+        <div class="profile_status">
+          <div class="user_initial">SJ</div>
+          <svg class="">
+            <circle cx="50%" cy="50%" r="45%" class="status"></circle>
+            <circle cx="50%" cy="50%" r="45%" class="completion"></circle>
+          </svg>
+        </div>
+
+        <div class="user_details">
+          <div class="user_name">Sam Pratt Johnson</div>
+          <div class="user_account_num text-muted">Account #0092927-009</div>
+          <div class="user_email text-muted">sam.johnson@gmail.com</div>
+
+          <div class="profile_status_text">Your ID is 15% complete</div>
+
+          <div class="signature">
+            <img src="images/signature_placeholder.png"/>
+          </div>
+
+          <div class="user_plan">
+            <div><img src="images/svg/user_plan.svg"/></div>
+            <div>
+              <div class="plan_name">DocuSign Standard</div>
+              <div class="plan_start text-muted">Joined since June 1999</div>
+              <div class="link">View Pricing</div>
+            </div>
+          </div>
+          <div class="user_navigate">
+            <button class="btn btn-secondary">Go To Admin</button>
+            <button class="btn btn-minor">Logout</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="user_help menu_list">
+        <div class="menu_listItem"><a class="menu_item"><span class="icon icon-times"></span> Support Home</a></div>
+        <div class="menu_listItem"><a class="menu_item"><span class="icon icon-times"></span> Community</a></div>
+        <div class="menu_listItem"><a class="menu_item"><span class="icon icon-times"></span> Trust Center</a></div>
+        <div class="menu_listItem"><a class="menu_item"><span class="icon icon-times"></span> Feedback</a></div>
+        <div class="menu_listItem"><a class="menu_item"><span class="icon icon-times"></span> How To DocuSign Tutorial</a></div>
+
+        <div class="app_extensions">
+          <div class="strong">Apps & Extensions</div>
+          <img src="images/app_extensions.png"/>
+        </div>
+        <div class="tips_and_tricks">
+          <div class="strong">Tips & Tricks</div>
+          <img src="images/tips_and_tricks.png"/>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+  <script src="js/script_modals.js"></script>
+  <script src="js/script_ndse_home.js"></script>
+  <script src="js/script_topNav_menu.js"></script>
+</html>

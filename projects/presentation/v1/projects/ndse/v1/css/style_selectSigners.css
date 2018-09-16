@@ -1,0 +1,87 @@
+
+.selectSigners.ndse_page .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #F7F7F7;
+}
+.selectSigners.ndse_page .head h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #4A4A4A;
+}
+.selectSigners.ndse_page > div {
+  margin: auto;
+  padding: 24px;
+  max-width: 1024px;
+}
+
+.selectSigners .cards {
+  display: flex;
+  justify-content: space-between;
+}
+.selectSigners .card {
+  width: 48%;
+  /*max-width: 400px;*/
+  max-height: 420px;
+  margin: auto 12px;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  overflow: hidden;
+  cursor: pointer;
+}
+.selectSigners .card > div {
+  min-height: 40px;
+  margin: 0 15px 15px;
+}
+.selectSigners .card h1 {
+  font-size: 30px;
+}
+.selectSigners .card .doc_illustration {
+  position: relative;
+  /*width: 75%;*/
+  margin-top: 15px;
+  filter:  drop-shadow(-5px 5px 0px #DDD);
+}
+.selectSigners .doc_illustration > img {
+  border-radius: 4px;
+  /*box-shadow: -5px 3px 0px #E3E3E3;*/
+
+}
+.selectSigners .doc_illustration > .doc_illustration_tag {
+  position: absolute;
+  top: auto;
+  /*box-shadow: none;*/
+}
+.selectSigners .doc_illustration > .doc_illustration_tag.tag-left {
+  left: -10%;
+  transform: translateX(-10px);
+  /*filter:  drop-shadow(-5px 5px 0px #DDD);*/
+}
+.selectSigners .doc_illustration > .doc_illustration_tag.tag-right {
+  right: -10%;
+  transform: translateX(10px);
+  /*filter:  drop-shadow(5px 5px 0px #DDD);*/
+}
+.selectSigners .card:hover {
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+.selectSigners .card:hover .doc_illustration_tag {
+  transform: translateX(0);
+}
+.selectSigners .doc_illustration > .doc_illustration_tag.for_me {
+  bottom: 5%;
+}
+.selectSigners .doc_illustration > .doc_illustration_tag.for_them1 {
+  top: 5%;
+}
+.selectSigners .doc_illustration > .doc_illustration_tag.for_them2 {
+  top: 35%;
+}

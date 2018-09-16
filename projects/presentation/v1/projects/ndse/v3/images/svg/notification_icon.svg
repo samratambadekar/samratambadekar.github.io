@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M18,17 L18,14.0048815 C18,12.897616 17.1980474,11.5990237 16.214035,11.1070175 L16,11 L16,7.99074554 C16,5.78671764 14.3960948,3.1980474 12.4280701,2.21403503 L12,2 L11.8929825,1.78596497 C11.3998019,0.799603752 10.1122704,0 9,0 L9,0 C7.8954305,0 6.5990237,0.8019526 6.10701752,1.78596497 L6,2 L5.57192993,2.21403503 C3.5992075,3.20039625 2,5.78450753 2,7.99074554 L2,11 L1.78596497,11.1070175 C0.799603752,11.6001981 0,12.8938998 0,14.0048815 L0,17 L18,17 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="18" height="17" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header_Progress" transform="translate(-1485.000000, -16.000000)">
+            <g id="Group-5" transform="translate(1435.000000, 16.000000)">
+                <g id="Group-4" transform="translate(50.000000, 0.000000)">
+                    <path d="M9,19 C10.1045695,19 11,18.1045695 11,17 C11,17 7,17 7,17 C7,18.1045695 7.8954305,19 9,19 Z" id="Oval-3" fill="#FFFFFF"></path>
+                    <use id="Combined-Shape" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
