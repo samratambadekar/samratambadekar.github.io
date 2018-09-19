@@ -31,6 +31,14 @@ img {
 a {
   text-decoration: none;
 }
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 html, body {
   /* font-family: "Helvetica Neue"; */
@@ -203,15 +211,21 @@ body {
 
 #portfolio_presentation .static_comps {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  flex-wrap: wrap;
 }
 #portfolio_presentation .static_comps .static_comp {
   width: 80%;
   margin: auto;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
+  padding-bottom: 24px;
+  text-align: center;
+}
+#portfolio_presentation .static_comps .static_comp + .static_comp {
+  padding-top: 24px;
+  border-top: 1px solid #DDD;
 }
 
 #portfolio_presentation .demo_cards {
@@ -224,7 +238,7 @@ body {
 #portfolio_presentation .demo_card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   width: 30%;
   height: 175px;
@@ -301,7 +315,7 @@ body {
 
 #portfolio_presentation .tab_type_project .demo_card {
   justify-content: flex-start;
-  /* height: 120px; */
+  min-height: 120px;
   height: auto;
 }
 #portfolio_presentation .demo_card_title {
@@ -471,7 +485,8 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  height: 130px;
+  min-height: 130px;
+  height: auto;
   width: 100%;
 }
 
