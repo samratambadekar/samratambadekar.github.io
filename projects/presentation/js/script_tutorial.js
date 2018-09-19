@@ -7,7 +7,7 @@ $(document).ready(function() {
     $(this).attr("data-page-num", (idx+1));
   });
 
-  // goToPage(5);
+  goToPage(6);
 
   // $("#experienceLoader").load("projects/ndse/v5/index.html");
 

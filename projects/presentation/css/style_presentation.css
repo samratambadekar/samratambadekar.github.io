@@ -201,6 +201,19 @@ body {
   text-align: left;
 }
 
+#portfolio_presentation .static_comps {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+}
+#portfolio_presentation .static_comps .static_comp {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 24px;
+}
+
 #portfolio_presentation .demo_cards {
   display: flex;
   justify-content: space-around;
@@ -261,6 +274,31 @@ body {
   background-color: #F1F1F1;
   border-radius: 8px;
 }
+
+#portfolio_presentation .design_process_project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 100%;
+  padding: 0 24px;
+}
+#portfolio_presentation .design_process_project .design_process {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 100%;
+  margin: 24px auto;
+  /* opacity: 0; */
+}
+#portfolio_presentation .design_process_project .process_arrow {
+  width: 100%;
+  height: 100px;
+}
+#portfolio_presentation .design_process_project .design_process.visible {
+  opacity: 1;
+}
+
 #portfolio_presentation .tab_type_project .demo_card {
   justify-content: flex-start;
   /* height: 120px; */
@@ -412,6 +450,7 @@ body {
 #portfolio_presentation .ndse_project .demo_card {
   width: 100%;
   height: 40px;
+  min-height: 40px;
   margin-bottom: 32px;
 }
 
@@ -424,11 +463,11 @@ body {
   width: 100%;
   padding: 0 24px;
 }
-#portfolio_presentation .interactive-content.motion_project .demo_cards {
+#portfolio_presentation .motion_project .demo_cards {
   margin-top: 0 !important;
 
 }
-#portfolio_presentation .interactive-content.motion_project .demo_card {
+#portfolio_presentation .motion_project .demo_card {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
