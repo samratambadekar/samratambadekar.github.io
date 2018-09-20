@@ -468,6 +468,44 @@ body {
   margin-bottom: 32px;
 }
 
+#portfolio_presentation .previous_versions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 12px auto !important;
+}
+#portfolio_presentation .previous_versions .demo_card_title {
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+#portfolio_presentation .previous_versions .link {
+  position: relative;
+  margin: auto;
+}
+#portfolio_presentation .previous_versions .link::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+  text-align: right;
+  border-top: 1px;
+  border-right: 1px;
+  border-left: 0px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: #DDD;
+  /* transition: all 1.75s ease; */
+  transition: all 0.5s ease;
+}
+#portfolio_presentation .previous_versions .link:hover::before {
+  transform: translate(5px, -5px);
+  border-color: #999;
+}
+
 
 #portfolio_presentation .interactive-content.motion_project {
   display: flex;
