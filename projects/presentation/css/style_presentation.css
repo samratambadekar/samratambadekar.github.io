@@ -281,7 +281,7 @@ body {
 }
 #portfolio_presentation .demo_card.large {
   width: 50%;
-  height: 350px;
+  min-height: 350px;
   margin: 32px !important;
 }
 #portfolio_presentation .interactive-content {
