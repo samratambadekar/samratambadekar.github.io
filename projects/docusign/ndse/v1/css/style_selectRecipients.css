@@ -1,0 +1,156 @@
+
+.selectRecipients.ndse_page {
+  overflow: auto;
+}
+.selectRecipients.ndse_page .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #F7F7F7;
+}
+.selectRecipients.ndse_page .head h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #4A4A4A;
+}
+.selectRecipients.ndse_page > div {
+  margin: auto;
+  padding: 24px;
+  max-width: 1024px;
+}
+
+.selectRecipients .recipients .title {
+  font-weight: bold;
+  color: #666;
+  text-transform: uppercase;
+}
+.selectRecipients .recipients .recipient {
+  position: relative;
+  height: 85px;
+  margin: 15px auto;
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 2px;
+  transition: none;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.selectRecipients .recipients .recipient > div {
+  margin-right: 12px;
+}
+.selectRecipients .recipient_number {
+  position: absolute;
+  left: -40px;
+  top: 25px;
+  width: 34px;
+  height: 34px;
+  border-radius: 40px;
+  border: 1px solid #CCC;
+  background-color: #FFF;
+  z-index: 10;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition-duration: 1s;
+}
+.selectRecipients .recipient_color {
+  width: 5px;
+  height: 100%;
+}
+.selectRecipients .recipient_color::after {
+  border: none;
+  border-radius: 0;
+}
+.selectRecipients .recipient_drag.icon {
+  font-size: 24px;
+  padding: 8px 0;
+}
+
+.selectRecipients.ndse_page .recipients_info {
+  position: relative;
+  padding-top: 0px;
+  padding-left: 55px;
+}
+.selectRecipients .recipients_info .connecting_line {
+  position: absolute;
+  top: 73px;
+  left: 0;
+  width: 40px;
+  height: calc(100% - 152px);
+}
+.selectRecipients .recipients_info .connecting_line line {
+  stroke: #C1C1C1;
+  stroke-dasharray: 5px;
+}
+.selectRecipients .recipient_details {
+  width: 55%;
+}
+.selectRecipients .recipient_details > div {
+  width: 50%;
+  margin-right: 15px;
+}
+.selectRecipients .recipient .recipient_actions {
+  position: absolute;
+  right: 0;
+  top: 29px;
+}
+.selectRecipients .recipient .recipient_instructions {
+  height: 45px;
+  margin: 20px 0;
+  padding: 15px;
+}
+.selectRecipients .recipients .recipient.hide_recipient {
+  opacity: 0;
+  /*transform: translateY(-40px) rotateX(90deg) skewX(-90deg);*/
+  pointer-events: none;
+}
+.selectRecipients .hide_recipient .recipient_number {
+  opacity: 0;
+  transform: translateX(40px);
+  z-index: -10;
+}
+
+.selectRecipients .add_recipient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 80px;
+  border: 1px dashed #CCC;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.selectRecipients .add_recipient > div:not(:last-child) {
+  margin-right: 15px;
+}
+
+.selectRecipients .recipients .recipient.uneditable {
+  background-color: transparent;
+  border: none;
+
+  height: auto;
+  margin-top: 0;
+}
+.selectRecipients .recipient.uneditable .recipient_details {
+  flex-direction: column;
+}
+.selectRecipients .recipient.uneditable .recipient_details > div {
+  margin-bottom: 5px;
+}
+.selectRecipients .uneditable .recipient_number {
+  top: 16px;
+}
+
+.sortable-ghost {
+  background: #DDD !important;
+  border: none !important;
+}
+.sortable-ghost > *:not(.recipient_number) {
+  opacity: 0;
+  transition: none;
+}

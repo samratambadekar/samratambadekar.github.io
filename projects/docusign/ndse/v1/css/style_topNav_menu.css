@@ -1,0 +1,85 @@
+.topNav-menu.menu {
+  left: auto;
+  right: 24px;
+  top: 67px;
+  width: 300px;
+  min-width: 300px;
+
+  z-index: 100;
+}
+.topNav-menu > div {
+  max-height: 600px;
+  overflow: auto;
+}
+.topNav-menu .user_profile {
+  position: relative;
+  text-align: center;
+}
+.topNav-menu .user_profile > div {
+  margin: auto;
+}
+.topNav-menu .user_profile .profile_status {
+  transform: scale(1.5);
+  top: 30px;
+}
+.topNav-menu .user_profile .profile_edit {
+  right: auto;
+  left: 0;
+}
+
+.topNav-menu .user_profile .user_details {
+  margin-top: 40px;
+}
+.topNav-menu .user_profile .profile_status_text {
+  margin: 10px auto;
+  padding: 5px;
+  font-size: 11px;
+  background-color: #0D338A;
+}
+.topNav-menu .user_profile .signature {
+  padding: 15px;
+  margin: 15px;
+}
+.topNav-menu .user_profile .user_plan {
+  padding: 15px;
+  margin: 15px;
+  border-top: 1px solid #CCC;
+
+  display: flex;
+  justify-content: flex-start;
+}
+.topNav-menu .user_profile .user_plan > div:not(:first-child) {
+  margin-left: 15px;
+  font-size: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.topNav-menu .user_profile .user_plan .plan_name {
+  font-size: 15px;
+}
+.topNav-menu .user_profile .user_navigate {
+  padding: 15px;
+  margin: 15px 15px 0;
+  border-top: 1px solid #CCC;
+}
+
+
+.topNav-menu .user_help .app_extensions {
+  padding: 15px 0;
+  margin: 15px 15px 0;
+  border-top: 1px solid #CCC;
+}
+.topNav-menu .user_help .app_extensions > *:not(:first-child) {
+  margin-top: 15px;
+}
+.topNav-menu .user_help .tips_and_tricks {
+  padding: 15px 0;
+  margin: 15px 15px 0;
+  border-top: 1px solid #CCC;
+}
+.topNav-menu .user_help .tips_and_tricks > *:not(:first-child) {
+  margin-top: 15px;
+}

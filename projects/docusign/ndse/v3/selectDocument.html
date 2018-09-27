@@ -1,0 +1,60 @@
+<html>
+<body>
+  <div class="head">
+    <h1>Add Documents</h1>
+    <div class="btn-group layouts">
+      <button class="btn btn-secondary btn-icon btn-active" data-view-id="List">
+        <span class="icon icon-menu"></span>
+        <span class="sr-text">List View</span>
+      </button>
+      <button class="btn btn-secondary btn-icon" data-view-id="Grid">
+        <span class="icon icon-waffle"></span>
+        <span class="sr-text">Grid View</span>
+      </button>
+    </div>
+  </div>
+  <div id="sortableDocuments" class="files">
+    <div class="file upload_complete sample_document">
+    	<div class="state uploading">
+        <!-- <div class=""><img src="images/svg/pdf_doc.svg"/></div> -->
+        <!-- <div class="file_info"> -->
+          <!-- <div class="file_name invisible">Sales Order.pdf</div> -->
+          <div class="file_loader"><div class="file_loader_status"></div></div>
+        <!-- </div> -->
+        <div class="file_options icon icon-times"></div>
+    	</div>
+    	<div class="state uploaded">
+        <div class="file_ext pdf"><img src="images/svg/pdf_doc.svg"/></div>
+      	<div class="file_preview">
+          <img src="docs/Sales_Order_page1.png"/>
+        </div>
+        <div class="file_info">
+          <div class="file_name ellipsis">Sample Document.pdf</div>
+          <div class="file_pages">2 Pages</div>
+        </div>
+        <div class="file_options">
+          <button class="btn-minor btn-menu"><span class="icon icon-ellipsis-vert"></span></button>
+          <div style="" class="menu ng-scope menuDocumentActions invisible">
+            <ul aria-labelledby="More" role="menu" class="">
+              <li role="menuitem"><a class="item"><span>Apply Templates</span></a></li>
+              <li role="menuitem" class="setAsSupplement"><a class="item"><span>Set as Supplemental</span></a></li>
+              <li role="menuitem"><a class="item"><span>Replace Document</span></a></li>
+              <li role="menuitem"><a class="item"><span>Rename Document</span></a></li>
+              <li role="menuitem" class="deleteDocument"><a class="item"><span>Delete Document</span></a></li>
+            </ul>
+          </div>
+        </div>
+    	</div>
+    </div>
+    <div class="upload_file ignore-sortable">
+      <input type="file" class="hide"/>
+      <img class="icon_add" src="images/svg/plus_circle.svg"/>
+      <div>Drag & drop your files here, or <span class="link">browse</span></div>
+    </div>
+  </div>
+  <div class="nav-buttons">
+    <div class="btn btn-secondary btn-lg btn-prev invisible">Previous</div>
+    <div class="btn btn-main btn-lg btn-next ">Next</div>
+  </div>
+</body>
+</html>

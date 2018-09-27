@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="191px" height="170px" viewBox="0 0 191 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 31</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M19,151 L19,61.7876535 C19,60.2507272 20.2587537,59 21.8055431,59 L170.194457,59 C171.741246,59 173,60.2507272 173,61.7876535 L173,151 L19,151 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="154" height="92" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <polygon id="path-3" points="32 150 159 150 159 0 32 0"></polygon>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="127" height="150" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Version-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-31">
+            <path d="M7,159 L184,159 L184,50.6780043 C184,48.0957459 181.905181,46 179.319887,46 L11.680113,46 C9.09481856,46 7,48.0957459 7,50.6780043 L7,159 Z" id="Fill-1-Copy" fill="#E8E8E8"></path>
+            <use id="Fill-5-Copy" stroke="#777777" mask="url(#mask-2)" stroke-width="2" fill="#F5F5F5" xlink:href="#path-1"></use>
+            <path d="M188.251664,169.06399 L2.74833594,169.06399 C1.23020752,169.06399 0,167.772628 0,166.179032 L0,161.884958 C0,160.291362 1.23020752,159 2.74833594,159 L188.251664,159 C189.769792,159 191,160.291362 191,161.884958 L191,166.179032 C191,167.772628 189.769792,169.06399 188.251664,169.06399" id="Fill-9-Copy" fill="#F5F5F5"></path>
+            <path d="M107.872642,162 L84.1273585,162 C82.9404481,162 81.8685142,161.220118 81.3962264,160.015023 L81,159 L111,159 L110.603774,160.015023 C110.131486,161.220118 109.059552,162 107.872642,162" id="Fill-13-Copy" fill="#777777"></path>
+            <polygon id="Fill-16-Copy" fill="#E3E3E3" style="mix-blend-mode: multiply;" opacity="0.9" points="26 150 32 150 32 46 26 46"></polygon>
+            <use id="Fill-18-Copy" stroke="#EEEEEE" mask="url(#mask-4)" stroke-width="2" fill="#FEFEFE" xlink:href="#path-3"></use>
+            <polygon id="Fill-21-Copy" fill="#BFBEBD" points="48 136 114 136 114 135 48 135"></polygon>
+            <polygon id="Fill-28-Copy-7" fill="#BFBEBD" points="90 28 143 28 143 22 90 22"></polygon>
+            <polygon id="Fill-28-Copy-8" fill="#BFBEBD" points="48 40 143 40 143 34 48 34"></polygon>
+            <polygon id="Fill-28-Copy-9" fill="#BFBEBD" points="48 52 143 52 143 46 48 46"></polygon>
+            <polygon id="Fill-28-Copy-10" fill="#BFBEBD" points="48 64 143 64 143 58 48 58"></polygon>
+            <polygon id="Fill-28-Copy-11" fill="#BFBEBD" points="48 76 101 76 101 70 48 70"></polygon>
+            <polygon id="Fill-28-Copy-12" fill="#BFBEBD" points="48 88 143 88 143 82 48 82"></polygon>
+            <polygon id="Fill-28-Copy-13" fill="#BFBEBD" points="48 100 143 100 143 94 48 94"></polygon>
+            <polygon id="Fill-29-Copy-2" fill="#BFBEBD" points="48 28 88 28 88 27 48 27"></polygon>
+            <polygon id="Fill-29-Copy-3" fill="#BFBEBD" points="103 76 143 76 143 75 103 75"></polygon>
+        </g>
+    </g>
+</svg>

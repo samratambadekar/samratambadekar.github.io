@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+  <meta charset="utf-8" />
+  <title>DocuSign | Identity Verification</title>
+  <link href="https://www.docusign.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="https://docucdn-a.akamaihd.net/olive/17.22.0/css/olive.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://docucdn-a.akamaihd.net/olive/17.22.0/css/martini.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/style_pre_sign.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/style_toast.css" />
+  <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery.panzoom.min.js"></script> -->
+</head>
+<body>
+  <article class="pre-sign-content">
+    <div class="section">
+      <div class="section-logo"><img src="images/svg/docusign_logo_blue.svg" /></div>
+      <div class="section-title"><h1>Let's Verify Your Identity</h1></div>
+      <div class="section-description text-account-server"><div>Before reviewing your document, we need to confirm<br/> the right person is accessing it. This process only takes<br /> a few minutes and all you'll need is a government<br /> approved ID.</div></div>
+
+      <!-- <div class="form_unit disabled">
+        <label for="signerName" class="label">Name</label>
+        <input id="signerName" type="text" class="input-text" value="Alex Edwards" />
+      </div> -->
+      <!-- <ul class="no-list id-list">
+        <li>
+          <img src="images/svg/icon_check.svg" />
+          <span>Passport, or</span>
+        </li>
+        <li>
+          <img src="images/svg/icon_check.svg" />
+          <span>Photo ID</span>
+        </li>
+      </ul> -->
+      <div class=" text-account-server">
+        We don't store your information. Read about how we<br/> use your information <span class="link">here</span>.
+        <!-- <span class="link">How does this work?</span> -->
+      </div>
+      <!-- <div class="required_ids">
+        <div class="id_type">
+          <img src="images/svg/icon_passport.svg" alt="Passport">
+          <div>Passport</div>
+        </div>
+        <div>or</div>
+        <div class="id_type">
+          <img src="images/svg/icon_photo_id.svg" alt="Photo ID">
+          <div>Photo ID</div>
+        </div>
+      </div> -->
+
+      <div class="buttons">
+        <a href="id_doc_type.html" class="btn btn-main btn-lg btn-continue">Start</a>
+        <!-- <a href="#" class="btn btn-minor btn-lg show_mini_tooltip" data-tooltip-text="Click Cancel to exit this identity verification. You can complete the authentication at a later time and access your document.">Cancel</a> -->
+      </div>
+      <!-- <a href="auth_failed.html">I don't have one of these IDs with me.</a> -->
+      <!-- <div class="text-muted">After verifying, your images won’t be kept in our system.</div> -->
+    </div>
+    <footer class="site_footer ng-scope">
+      <div class="site_container">
+        <div class="footer_left"></div>
+        <div class="footer_main">
+          <ul class="footer-links">
+            <li class="ng-scope"><a class="footer-links_item btn-triggeR ng-binding"><span class="icon icon-globe"></span> English (US)</a></li>
+            <li><span class="footer-links_item ng-binding">Powered by DocuSign</span></li>
+            <li><a target="_blank" class="footer-links_item ng-scope ng-binding">Contact Us</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding">Terms of Use</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding">Privacy</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding">Intellectual Property</a></li>
+            <li><span class="footer-links_item ng-binding">Copyright &copy; 2018 DocuSign, Inc. All rights reserved.</span></li>
+          </ul>
+          <div id="menuLanguages" class="menu select-menu invisible">
+            <ul role="menu" aria-labelledby=" English (US)">
+              <li class="item ng-binding ng-scope on" role="menuitem">English (US)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Deutsch</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Español</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Français</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Italiano</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Nederlandse</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Português (Brasil)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Português (Portugal)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Русский</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">中文(台灣)</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">中文(简体)</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">日本語</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">한국어</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">［～Þƨèúδô～］</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_right"></div>
+      </div>
+    </footer>
+  </article>
+  <div class="tooltip tooltip-mini tip invisible after middle" style="opacity: 0; top: 300px; left: 176px;">Cannot add fields for this recipient.</div>
+
+  <div class="messages-global global-notifications invisible">
+    <div class="message message-error msg_feature_unavailable">
+      <span class="message_icon icon icon-alert-triangle"></span>
+      <div class="message_content">Feature currently not available in prototype</div>
+      <button class="message_close icon icon-times"></button>
+    </div>
+  </div>
+</body>
+<script src="js/script_identity_signing.js"></script>
+<script src="js/script_toast_messages.js"></script>
+</html>

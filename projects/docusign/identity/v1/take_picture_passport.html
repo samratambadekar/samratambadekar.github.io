@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+  <title>DocuSign | Identity Verification</title>
+  <link href="https://www.docusign.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="https://docucdn-a.akamaihd.net/olive/17.22.0/css/olive.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://docucdn-a.akamaihd.net/olive/17.22.0/css/martini.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/style_pre_sign.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/style_toast.css" />
+  <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+  <script type="text/javascript" src="js/tracking.js"></script>
+  <script type="text/javascript" src="js/face-min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery.panzoom.min.js"></script> -->
+</head>
+<body>
+  <article class="pre-sign-content">
+    <div class="section">
+      <div class="section-logo"><img src="images/svg/docusign_logo_blue.svg" /></div>
+      <div class="section-title"><h1>Take Picture of Your Passport</h1></div>
+
+      <!-- <section> -->
+      <section class="camera_container" data-camera-container-step="1">
+        <video class="video_container" playsinline>Video stream not available.</video>
+
+        <div class="container_top">
+          <div class="id_verify_step" data-camera-container-step-visible="1">
+            <!-- <div class="icons_step_indicator">
+              <div class="icon_step icon_step_front"><img src="images/svg/icon_id_front.svg" /><span class="icon icon-circle-check green"></span></div>
+              <div class="step_connector_line"></div>
+              <div class="icon_step icon_step_back"><img src="images/svg/icon_id_back.svg" /><span class="icon icon-circle-check green"></span></div>
+            </div> -->
+            <div class="">Start with your passport picture page</div>
+          </div>
+          <div class="id_verify_step" data-camera-container-step-visible="2">
+            <div class="">Center your passport inside the box</div>
+          </div>
+          <div class="id_verify_step" data-camera-container-step-visible="3">
+            <div class="">Hold still...</div>
+          </div>
+          <div class="id_verify_step" data-camera-container-step-visible="4">
+            <div class="">Great. Click on 'Verify' to begin processing your picture.</div>
+          </div>
+        </div>
+        <div class="container_middle">
+          <canvas class="canvas_container"></canvas>
+          <img class="sample_image sample_image_front" src="images/svg/sample_passport.svg" />
+          <div class="guiding_rectangle"></div>
+        </div>
+        <div class="container_bottom">
+          <div class="id_verify_buttons frontImageMode" data-camera-container-step-visible="1">
+            <a href="choose_upload_method.html" class="btn btn-lg btn-inverse-minor desktop invisible">
+              Cancel
+            </a>
+            <div class="btn btn-lg btn-main btn-next-step">
+              Ok
+            </div>
+            <a href="choose_upload_method.html" class="btn btn-lg btn-inverse-minor desktop invisible">
+              Cancel
+            </a>
+          </div>
+          <div class="id_verify_buttons frontImageMode" data-camera-container-step-visible="2">
+            <a href="choose_upload_method.html" class="btn btn-lg btn-inverse-minor desktop invisible">
+              Cancel
+            </a>
+            <div class="">
+              <div class="btn btn-lg btn-main btn-next-step">
+                Take Photo
+              </div>
+            </div>
+            <a href="choose_upload_method.html" class="btn btn-lg btn-inverse-minor desktop">
+              Cancel
+            </a>
+          </div>
+          <div class="id_verify_buttons hasCountdownTimer frontImageMode" data-camera-container-step-visible="3">
+            <a href="choose_upload_method.html" class="btn btn-lg btn-inverse-minor desktop invisible">
+              Cancel
+            </a>
+            <div class="countdown_timer btn-next-step btn-takepicture">
+              3
+            </div>
+            <a href="choose_upload_method.html" class="btn btn-lg btn-inverse-minor desktop invisible">
+              Cancel
+            </a>
+          </div>
+          <div class="id_verify_buttons frontImageMode" data-camera-container-step-visible="4">
+            <a href="choose_upload_method.html" class="btn btn-lg btn-inverse-minor desktop invisible">
+              Cancel
+            </a>
+            <div class="">
+              <a href="take_picture_passport.html" class="btn btn-lg btn-main">
+                Retake Photo
+              </a>
+              <a href="splash_page_verifying.html" class="btn btn-lg btn-main">
+                Verify
+              </a>
+            </div>
+            <a href="choose_upload_method.html" class="btn btn-lg btn-inverse-minor desktop">
+              Cancel
+            </a>
+          </div>
+        </div>
+        <img src="" class="photo_container" alt="">
+      </section>
+      <!-- </section> -->
+
+      <div class="buttons">
+        <!-- <button class="btn btn-main btn-lg btn-continue">Continue</button> -->
+        <!-- <a href="https://account.docusign.com/#/username" class="btn btn-minor btn-lg link">Cancel</a> -->
+      </div>
+      <a href="choose_upload_method.html" class="mobile">Cancel</a>
+    </div>
+    <footer class="site_footer ng-scope">
+      <div class="site_container">
+        <div class="footer_left"></div>
+        <div class="footer_main">
+          <ul class="footer-links">
+            <li class="ng-scope"><a class="footer-links_item btn-triggeR ng-binding"><span class="icon icon-globe"></span> English (US)</a></li>
+            <li><span class="footer-links_item ng-binding">Powered by DocuSign</span></li>
+            <li><a target="_blank" class="footer-links_item ng-scope ng-binding">Contact Us</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding">Terms of Use</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding">Privacy</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding">Intellectual Property</a></li>
+            <li><span class="footer-links_item ng-binding">Copyright &copy; 2016 DocuSign, Inc. All rights reserved.</span></li>
+          </ul>
+          <div id="menuLanguages" class="menu select-menu invisible">
+            <ul role="menu" aria-labelledby=" English (US)">
+              <li class="item ng-binding ng-scope on" role="menuitem">English (US)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Deutsch</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Español</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Français</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Italiano</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Nederlandse</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Português (Brasil)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Português (Portugal)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Русский</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">中文(台灣)</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">中文(简体)</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">日本語</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">한국어</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">［～Þƨèúδô～］</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_right"></div>
+      </div>
+    </footer>
+  </article>
+
+  <div class="messages-global global-notifications invisible">
+    <div class="message message-error msg_feature_unavailable">
+      <span class="message_icon icon icon-alert-triangle"></span>
+      <div class="message_content">Feature currently not available in prototype</div>
+      <button class="message_close icon icon-times"></button>
+    </div>
+  </div>
+</body>
+<script src="js/script_image_capture.js"></script>
+<script src="js/script_identity_signing.js"></script>
+<script src="js/script_toast_messages.js"></script>
+</html>

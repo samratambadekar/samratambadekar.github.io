@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="192px" height="142px" viewBox="0 0 192 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M19,103 L19,12.8179541 C19,11.2643221 20.2669274,10 21.8237609,10 L171.176239,10 C172.733073,10 174,11.2643221 174,12.8179541 L174,103 L19,103 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="155" height="93" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Version-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="6-options" transform="translate(-316.000000, -634.000000)">
+            <g id="Group-3" transform="translate(316.000000, 634.000000)">
+                <g id="Group-2-Copy" transform="translate(0.000000, 20.000000)">
+                    <path d="M8,113 L185,113 L185,4.67800427 C185,2.09574591 182.905181,0 180.319887,0 L12.680113,0 C10.0948186,0 8,2.09574591 8,4.67800427 L8,113 Z" id="Stroke-3" fill="#E8E8E8"></path>
+                    <use id="Fill-5" stroke="#777777" mask="url(#mask-2)" stroke-width="2" fill="#F5F5F5" xlink:href="#path-1"></use>
+                    <path d="M189.237275,122 L2.76272514,122 C1.23664839,122 0,120.845164 0,119.420047 L0,115.579953 C0,114.154836 1.23664839,113 2.76272514,113 L189.237275,113 C190.763352,113 192,114.154836 192,115.579953 L192,119.420047 C192,120.845164 190.763352,122 189.237275,122 Z" id="Stroke-11" fill="#F5F5F5"></path>
+                    <path d="M107.986354,115.584376 L84.140592,115.584376 C82.9486592,115.584376 81.8721893,114.91254 81.3979031,113.8744 L81,113 L111.126946,113 L110.729043,113.8744 C110.254757,114.91254 109.178287,115.584376 107.986354,115.584376" id="Fill-13" fill="#777777"></path>
+                </g>
+                <path d="M124.48999,61 C124.48999,61 106.083332,84.2801304 68.8146546,85.3505667 C36.465368,86.2797648 31.4899902,113.049925 31.4899902,122" id="Stroke-86" stroke="#9BCB6B" stroke-width="2" opacity="0.4" style="mix-blend-mode: multiply;"></path>
+                <polygon id="Fill-88" fill="#D0D1D2" style="mix-blend-mode: multiply;" points="132 20 113 20 105 22 123 33 123 58 132 49"></polygon>
+                <polygon id="Stroke-90" fill="#9BCB6B" points="109 22 126 33 192 0"></polygon>
+                <polygon id="Stroke-92" fill="#6AA337" points="126 58 126 33 192 0"></polygon>
+                <polygon id="Fill-93" fill="#5B8733" points="126 58 192.109284 0.075 138 39"></polygon>
+                <polygon id="Stroke-95" fill="#9BCB6B" points="163 50 138 39 192 0"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

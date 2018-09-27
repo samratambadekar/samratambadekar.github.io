@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script> -->
+  <script src="js/d3.v4.min.js"></script>
+  <!-- <script src='js/mapbox-gl.js'></script> -->
+  <!-- <script src="https://d3js.org/topojson.v1.min.js"></script> -->
+  <!-- <link href='css/mapbox-gl.css' rel='stylesheet' /> -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.css' rel='stylesheet' />
+
+
+  <style>
+    body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0;font-family: "Helvetica"}
+    #map {
+      position:absolute;
+      width: 100%;
+      height: 100%;
+    }
+    svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    .statusBar {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      width: 160px;
+      height: 60px;
+      padding: 15px;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 30px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #D4D4D4;
+    }
+    .day {
+      /*stroke: steelblue;*/
+      fill: white;
+      fill-opacity: .1;
+    }
+
+    .night {
+      /*stroke: steelblue;*/
+      fill: white;
+      fill-opacity: .1;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+  <div class="statusBar">Date - Time</div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic2FtcmF0YW1iYWRla2FyIiwiYSI6ImNpcnBnZWMyNTBmajJmYW04dnZwajNlbDAifQ.fK2d1ttuKCcDYf5sCzcnxg'
+
+    //Setup mapbox-gl map
+    var map = new mapboxgl.Map({
+      container: 'map', // container id
+      style: 'mapbox://styles/mapbox/dark-v9',
+      // style: 'mapbox://styles/mapbox/light-v9',
+      center: [-10,39],
+      zoom: 1.0,
+      // interactive: false
+    })
+    map.dragPan.disable();
+    map.scrollZoom.disable();
+    // map.dragging.disable();
+    map.addControl(new mapboxgl.NavigationControl());
+
+    // Setup our svg layer that we can manipulate with d3
+    var container = map.getCanvasContainer();
+    var svg = d3.select(container).append("svg");
+    var parseDate = d3.utcParse("%Y-%m-%dT%H:%M:%S.%LZ");
+    var startIndex = 0,
+        endIndex = 100,
+        indexDiff = 100;
+
+    var width = window.innerWidth,
+        height = window.innerHeight;
+
+    var π = Math.PI,
+        radians = π / 180,
+        degrees = 180 / π;
+
+    var projection = d3.geoEquirectangular()
+        .translate([width / 2, height / 2])
+        .scale(203)
+        .precision(.1);
+
+    var circle = d3.geoCircle()
+        .radius(90);
+
+    var path = d3.geoPath()
+        .projection(projection);
+
+    var night = svg.append("path")
+        .attr("class", "night")
+        .attr("d", path);
+
+    function project(d) {
+      return map.project(getLL(d));
+    }
+    function project2(d) {
+      return map.project(getLL2(d));
+    }
+    function getLL(d) {
+      return new mapboxgl.LngLat(+d.SenderLong, +d.SenderLat)
+    }
+    function getLL2(d) {
+      return new mapboxgl.LngLat(+d.SignerLong, +d.SignerLat)
+    }
+
+    window.setTimeout(function() {
+    d3.csv("data/data.csv", function(err, data) {
+
+      data.forEach(function(d) {
+        // d.dateSigned = new Date(d.Signed);
+        d.dateSigned = d.Signed;
+      });
+      data.sort(function(a,b) {
+        var dateA = a.dateSigned, dateB=b.dateSigned
+        return dateA - dateB;
+      });
+
+
+      startDate = data[startIndex].dateSigned;
+      endDate = data[endIndex].dateSigned;
+      dataFiltered = data.filter(function(d) {
+        if(d.dateSigned > startDate && d.dateSigned <= endDate) {
+          return d;
+        }
+      });
+
+      d3.select(".statusBar").text("0:00 AM");
+
+
+      // var startGMT = -10;
+      // var widthGMT = 470;
+      // var day = svg.append("path")
+      //               .attr("class", "day")
+      //               .attr("d", "m" + startGMT + ",0l" + widthGMT + ",0l0," + window.innerHeight + "l-" + widthGMT + ",0zm" + (2*(widthGMT + startGMT)) + ",0l" + widthGMT + ",0l0," + window.innerHeight + "l-" + widthGMT + ",0zm" + (2*(widthGMT + startGMT)) + ",0l" + widthGMT + ",0l0," + window.innerHeight + "l-" + widthGMT + ",0z");
+        // console.log(dots);
+
+        function render() {
+          // dots.attr("cx", function(d) {
+          //   var x = project(d).x;
+          //   return x
+          // });
+          // dots.attr("cy", function(d) {
+          //   var y = project(d).y;
+          //   return y
+          // });
+        }
+
+        // re-render our visualization whenever the view changes
+        map.on("viewreset", function() {
+          render();
+        });
+        map.on("move", function() {
+          render();
+        });
+
+        setInterval(function() {
+          // console.log("dd");
+          updateData();
+          render();
+        }, 2500);
+
+        // render our initial visualization
+        // render()
+
+        function updateData() {
+          if(data[startIndex]) {
+            startDate = data[startIndex].dateSigned;
+            if(data[endIndex]) {
+              endDate = data[endIndex].dateSigned;
+            } else {
+              startIndex = 0;
+              endIndex = 100;
+            }
+            // cutoffDate.setDate(cutoffDate.getDate() - 90);
+            dataFiltered = data.filter(function(d) {
+              if(d.dateSigned > startDate && d.dateSigned <= endDate) {
+                return d;
+              }
+            });
+            // console.log(data[endIndex].Signed);
+            // var time = data[endIndex].Signed.split(" ")[1];
+            var time = data[endIndex].Signed;
+            // d3.select(".statusBar").text((time.split(":")[0]<12?time + " AM":time+" PM"));
+            // d3.select(".statusBar").text((time.split(":")[0]<12?time + " AM GMT":time+" PM GMT"));
+            d3.select(".statusBar").text(time);
+
+
+            // dots = svg.selectAll("circle.dot")
+            //   .filter(function(d,i) {
+            //     // if(i<indexDiff/2) {
+            //       return d;
+            //     // }
+            //     // if(d.dateSigned<startDate) {
+            //     //   return d;
+            //     // }
+            //   })
+            //   // .exit()
+            //   .transition()
+            //     .duration(function(d,i) {
+            //       return i * 2;
+            //     })
+            //     // .delay(100)
+            //   .style("fill-opacity", "0")
+            //   // .attr("r", 0)
+            //   .remove();
+
+            dots = svg.selectAll("circle.dot")
+              .exit()
+              // .remove()
+              .data(dataFiltered)
+              .enter()
+              .append("circle")
+              .classed("dot", true)
+              .attr("cx", function(d) {
+                var x = project(d).x;
+                return x
+              })
+              .attr("cy", function(d) {
+                var y = project(d).y;
+                return y
+              })
+              .attr("r", 2.5)
+              .style("fill", "orangered")
+              .style("fill-opacity", 0)
+              .transition()
+                .duration(function(d,i) {
+                  return i * 40
+                })
+              .style("fill-opacity", 0.3)
+              .transition()
+                .duration(function(d,i) {
+                  // return Math.random * i * 300;
+                  return (i*15<900?i*15:900)
+                })
+                // .duration(300)
+              .attr("cx", function(d) {
+                var x = project2(d).x;
+                return x
+              })
+              .attr("cy", function(d) {
+                var y = project2(d).y;
+                return y
+              })
+              // .attr("r", 2)
+              .style("fill", "#0082a3")
+              .style("fill-opacity", 0.7)
+              // .style("fill", "yellow")
+              .transition()
+                  .duration(function(d,i) {
+                    return i * 2;
+                  })
+                  .delay(300)
+                .style("fill-opacity", 0.1)
+                .attr("r", 5)
+                .remove()
+
+            // night.datum(circle.center(antipode(solarPosition(endDate)))).attr("d", path);
+
+            startIndex += indexDiff;
+            endIndex += indexDiff;
+          }
+
+          // startGMT -= 0.1;
+          // day.attr("d", "m" + startGMT + ",0l" + widthGMT + ",0l0," + window.innerHeight + "l-" + widthGMT + ",0zm" + (2*(widthGMT + startGMT)) + ",0l" + widthGMT + ",0l0," + window.innerHeight + "l-" + widthGMT + ",0zm" + (2*(widthGMT + startGMT)) + ",0l" + widthGMT + ",0l0," + window.innerHeight + "l-" + widthGMT + ",0z");
+        }
+      });
+    }, 2500);
+
+    d3.select(self.frameElement).style("height", height + "px");
+
+    function antipode(position) {
+      return [position[0] + 180, -position[1]];
+    }
+
+    function solarPosition(time) {
+      var centuries = (time - Date.UTC(2000, 0, 1, 12)) / 864e5 / 36525, // since J2000
+          longitude = (d3.utcDay.floor(time) - time) / 864e5 * 360 - 180;
+      return [
+        longitude - equationOfTime(centuries) * degrees,
+        solarDeclination(centuries) * degrees
+      ];
+    }
+
+    // Equations based on NOAA’s Solar Calculator; all angles in radians.
+    // http://www.esrl.noaa.gov/gmd/grad/solcalc/
+
+    function equationOfTime(centuries) {
+      var e = eccentricityEarthOrbit(centuries),
+          m = solarGeometricMeanAnomaly(centuries),
+          l = solarGeometricMeanLongitude(centuries),
+          y = Math.tan(obliquityCorrection(centuries) / 2);
+      y *= y;
+      return y * Math.sin(2 * l)
+          - 2 * e * Math.sin(m)
+          + 4 * e * y * Math.sin(m) * Math.cos(2 * l)
+          - 0.5 * y * y * Math.sin(4 * l)
+          - 1.25 * e * e * Math.sin(2 * m);
+    }
+
+    function solarDeclination(centuries) {
+      return Math.asin(Math.sin(obliquityCorrection(centuries)) * Math.sin(solarApparentLongitude(centuries)));
+    }
+
+    function solarApparentLongitude(centuries) {
+      return solarTrueLongitude(centuries) - (0.00569 + 0.00478 * Math.sin((125.04 - 1934.136 * centuries) * radians)) * radians;
+    }
+
+    function solarTrueLongitude(centuries) {
+      return solarGeometricMeanLongitude(centuries) + solarEquationOfCenter(centuries);
+    }
+
+    function solarGeometricMeanAnomaly(centuries) {
+      return (357.52911 + centuries * (35999.05029 - 0.0001537 * centuries)) * radians;
+    }
+
+    function solarGeometricMeanLongitude(centuries) {
+      var l = (280.46646 + centuries * (36000.76983 + centuries * 0.0003032)) % 360;
+      return (l < 0 ? l + 360 : l) / 180 * π;
+    }
+
+    function solarEquationOfCenter(centuries) {
+      var m = solarGeometricMeanAnomaly(centuries);
+      return (Math.sin(m) * (1.914602 - centuries * (0.004817 + 0.000014 * centuries))
+          + Math.sin(m + m) * (0.019993 - 0.000101 * centuries)
+          + Math.sin(m + m + m) * 0.000289) * radians;
+    }
+
+    function obliquityCorrection(centuries) {
+      return meanObliquityOfEcliptic(centuries) + 0.00256 * Math.cos((125.04 - 1934.136 * centuries) * radians) * radians;
+    }
+
+    function meanObliquityOfEcliptic(centuries) {
+      return (23 + (26 + (21.448 - centuries * (46.8150 + centuries * (0.00059 - centuries * 0.001813))) / 60) / 60) * radians;
+    }
+
+    function eccentricityEarthOrbit(centuries) {
+      return 0.016708634 - centuries * (0.000042037 + 0.0000001267 * centuries);
+    }
+  </script>
+</body>
+
+<!-- //M-0.6636759992383645,437.13335636953764L12.696523272945456,439.3561202328101L27.43211872076955,441.24946074326175L42.50895894089132,442.68649671226126L58.597135591398114,443.74750481030867L75.43992771791744,444.39914888498447L92.68766454870052,444.61900652878563L92.68766454870052,444.61900652878563L109.9354013794823,444.39914888498447L126.77819350600043,443.7475048103088L142.8663701565061,442.6864967122616L157.94321037662706,441.24946074326226L171.85703712183306,439.47606976815734L184.55130052243038,437.4080095871713L196.04247281787337,435.08568679217535L206.3953253220505,432.54617932838164L215.70153856689728,429.82225913382047L224.0638801489278,426.94217050127145L231.58582279169497,423.9298593366466L238.36546954976706,420.8054243548286L244.49248972656338,417.5856431053074L250.04697608786452,414.28448985346984L255.09943167253812,410.9136050606746L259.7113602211099,407.48270163932665L263.9361332067256,403.99990685203727L267.8199418825651,400.4720452380376L271.4027293717546,396.90487041567974L274.719050639441,393.3032539682216L280.6680750965205,386.0126648881618L285.8624205993821,378.6267688676171L290.45074163611673,371.1652254924917L294.54744947560323,363.6428779048583L298.24169259507073,356.07111739378774L301.60380608121136,348.45882194995534L304.689970923065,340.8130122568894L307.5456102691172,333.1393175894736L312.70758841745,317.725760044921L317.3184672145647,302.2460839345761L321.5423592374294,286.7201486586267L325.50330129892177,271.1628603251929L329.300657160116,255.58609874212067L333.01950254831945,240.00000000000063L336.7383479365228,224.41390125788058L340.535703797717,208.83713967480836L344.4966458592094,193.27985134137452L348.720537882074,177.7539160654251L353.3314166791887,162.27423995508022L358.4933948275215,146.86068241052763L361.3490341735736,139.18698774311184L364.4351990154272,131.5411780500459L367.7973125015678,123.9288826062135L371.49155562103516,116.35712209514286L375.5882634605217,108.83477450750954L380.1765844972563,101.37323113238406L385.3709300001178,93.98733511183937L391.3199544571971,86.69674603177961L394.63627572488343,83.09512958432148L398.21906321407283,79.5279547619636L402.1028718899123,76.00009314796387L406.3276448755279,72.51729836067449L410.93957342409954,69.08639493932648L415.99202900877293,65.71551014653122L421.54651537007385,62.41435689469364L427.67353554686997,59.19457564517242L434.4531823049419,56.070140663354294L441.9751249477089,53.05782949872943L450.33746652973906,50.17774086618036L459.6436797745856,47.45382067161924L469.99653227876246,44.91431320782539L481.48770457420517,42.59199041282943L494.1819679748022,40.52393023184325L508.095794720008,38.75053925673825L523.1726349401297,37.31350328773871L539.2608115906364,36.25249518969136L556.1036037171557,35.60085111501556L573.3513405479387,35.38099347121437L590.5990773787189,35.6008511150155L607.4418695052357,36.252495189691075L623.5300461557401,37.31350328773806L638.60688637586,38.7505392567372L652.5207131210665,40.52393023184197L665.2149765216643,42.5919904128279L676.7061488171078,44.91431320782374L687.0590013212853,47.45382067161748L696.3652145661325,50.17774086617854L704.7275561481633,53.05782949872747L712.2494987909308,56.07014066335233L719.0291455490031,59.194575645170346L725.1561657257996,62.41435689469148L730.7106520871009,65.715510146529L735.7631076717747,69.08639493932421L740.3750362203466,72.51729836067213L744.5998092059624,76.00009314796148L748.4836178818022,79.52795476196118L752.0664053709918,83.0951295843191L755.3827266386783,86.6967460317772L761.3317510957578,93.98733511183693L766.5260965986195,101.37323113238162L771.1144176353544,108.83477450750712L775.2111254748411,116.35712209514043L778.9053685943086,123.9288826062111L782.2674820804491,131.5411780500435L785.3536469223029,139.18698774310946L788.2092862683551,146.86068241052527L793.3712644166881,162.27423995507792L797.9821432138028,177.75391606542286L802.2060352366675,193.27985134137234L806.1669772981598,208.83713967480622L809.9643331593542,224.4139012578785L813.6831785475574,239.99999999999864L817.4020239357609,255.58609874211874L821.1993797969553,271.16286032519105L825.1603218584476,286.72014865862496L829.3842138813122,302.2460839345744L833.995092678427,317.72576004491935L839.1570708267597,333.139317589472L842.0127101728118,340.8130122568879L845.0988750146654,348.4588219499538L848.460988500806,356.07111739378627L852.1552316202735,363.6428779048569L856.25193945976,371.16522549249026L860.8402604964945,378.62676886761574L866.034605999356,386.0126648881605L871.9836304564353,393.30325396822036L875.2999517241217,396.9048704156785L878.882739213311,400.47204523803634L882.7665478891504,403.999906852036L886.9913208747661,407.48270163932546L891.6032494233377,410.9136050606735L896.6557050080112,414.2844898534688L902.210191369312,417.58564310530636L908.3372115461083,420.80542435482755L915.1168583041801,423.92985933664573L922.6388009469472,426.94217050127054L931.0011425289775,429.82225913381967L940.3073557738242,432.54617932838084L949.9868009728584,434.9343558804874L960.6636759992384,437.13335636953764L960.6636759992384,480.3318379996192L480,480.3318379996192L-0.6636759992383645,480.3318379996192Z -->

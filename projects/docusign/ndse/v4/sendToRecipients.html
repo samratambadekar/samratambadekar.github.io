@@ -1,0 +1,322 @@
+<html>
+<body>
+  <div class="head">
+    <h1>Send To Recipients</h1>
+  </div>
+
+
+  <div class="recipient_message">
+    <div class="message_receivers">
+      <div>
+        <strong>To:</strong>
+        <span class="">All Recipients</span>
+        <div class="private-message-menu right">
+          <div class="btn btn-large btn-secondary btn-trigger">
+            Add Private Message
+          </div>
+          <div class="menu invisible">
+            <ul>
+              <li><a class="item"><span class="pm-recipient-name">Corey Kimel</span> <span class="icon icon-privatenote invisible"></span></a></li>
+              <li><a class="item"><span class="pm-recipient-name">John Taxton</span> <span class="icon icon-privatenote invisible"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- <div><strong>CC:</strong> <span class="link">Add</span></div> -->
+    </div>
+    <div class="form_unit">
+      <label class="label">Subject line</label>
+      <input type="text" class="input-text input-subject-line" placeholder="Please DocuSign: Untitled Envelope"/>
+    </div>
+    <div class="form_unit">
+      <label class="label">Message</label>
+      <textarea class="input-textarea">Please DocuSign NDA_Edwards_Consulting_Group.docx
+
+Thank You,
+
+Alex Edwards</textarea>
+    </div>
+
+    <!-- <div>
+      <div class="cb">
+        <input id="setCustomEmail" type="checkbox" class="cb_input"/>
+        <label class="cb_label" for="setCustomEmail">Set custom email and languange for each recipient</label>
+      </div>
+    </div> -->
+
+    <div class="nav-buttons">
+      <div class="btn btn-secondary btn-lg btn-preview">Preview</div>
+      <div class="">
+        <div class="btn btn-secondary btn-lg btn-prev ">Previous</div>
+        <div class="btn btn-main btn-lg btn-next ">Next</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="envelope_details">
+    <div class="tabs-wrap">
+      <ul class="tabs" olive-tabset="smallTabs">
+        <li class="tab-wrap">
+          <a class="tab on" olive-tab-id="envelope_summary">Summary</a>
+        </li>
+        <li class="tab-wrap">
+          <a class="tab" olive-tab-id="envelop_options">Advanced Options</a>
+        </li>
+      </ul>
+    </div>
+    <div class="section">
+      <div class="envelope_summary" olive-tabset-parent="smallTabs" olive-tab-id="envelope_summary">
+        <div class="">
+          <div class="accordion ng-scope open">
+            <div class="strong">Envelope Name</div>
+            <i class="icon accordion-icon"></i>
+          </div>
+          <div class="drawer down full open">
+            <div class="drawer-wrapper">
+              <div class="drawer-content showing">
+                <div class="envelope_section_name">
+                  <div data-field-id="Envelope Name" contenteditable="true">Untitled Envelope</div>
+                  <div class="icon icon-editpen"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion ng-scope open">
+            <div class="envelope_section_name">
+              <div class="strong">Documents</div>
+              <div class="link"><a data-step-num="1" class="link">Edit</a></div>
+            </div>
+            <i class="icon accordion-icon"></i>
+          </div>
+          <div class="drawer down full open">
+            <div class="drawer-wrapper">
+              <div class="drawer-content showing">
+                <div>NDA_Edwards_Consulting_Group.pdf</div>
+                <!-- <div>Presale_NDA.docx</div> -->
+              </div>
+            </div>
+          </div>
+          <div class="accordion ng-scope open">
+            <div class="envelope_section_name">
+              <div class="strong">Recipients</div>
+              <div class="link"><a data-step-num="3" class="link">Edit</a></div>
+            </div>
+            <i class="icon accordion-icon"></i>
+          </div>
+          <div class="drawer down full open">
+            <div class="drawer-wrapper">
+              <div class="drawer-content showing">
+                <div class="recipient_info_sync">
+                  <div class="recipients_summary">
+                    <div class="recipient_number color">1</div>
+                    <div class="strong">Corey Kimel</div>
+                    <div class="">corey.kimel@yahoo.com</div>
+                    <!-- <div class="icon-needsmysignature"></div> -->
+                    <div class="">Needs to Sign</div>
+                  </div>
+                  <div class="recipients_summary">
+                    <div class="recipient_number color">2</div>
+                    <div class="strong">John Taxton</div>
+                    <div class="">john.taxton@yahoo.com</div>
+                    <!-- <div class="icon-needsmysignature"></div> -->
+                    <div class="">Needs to Sign</div>
+                  </div>
+                </div>
+                <div class="recipients_summary">
+                  <div class="recipient_number invisible"><span class="icon icon-check"></span></div>
+                  <div>Once the envelope is completed, all recipients will receive a copy of the completed documents.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="envelope_section">
+          <div class="strong">Envelope Name</div>
+          <div class="envelope_section_name">
+            <div data-field-id="Envelope Name" contenteditable="true">Untitled Envelope</div>
+            <div class="icon icon-editpen"></div>
+          </div>
+        </div>
+        <div class="envelope_section">
+          <div class="envelope_section_name">
+            <div class="strong">Documents</div>
+            <div class="link">Edit</div>
+          </div>
+          <div>Sales_Order.pdf</div>
+          <div>Presale_NDA.docx</div>
+        </div> -->
+        <!-- <div class="envelope_section">
+          <div class="envelope_section_name">
+            <div class="strong">Recipients</div>
+            <div class="link">Edit</div>
+          </div>
+          <div class="recipients_summary">
+            <div class="recipient_number color">1</div>
+            <div class="strong">Corey Kimel</div>
+            <div class="">corey.kimel@yahoo.com</div>
+            <div class="">Needs to Sign</div>
+          </div>
+          <div class="recipients_summary">
+            <div class="recipient_number color">2</div>
+            <div class="strong">John Taxton</div>
+            <div class="">john.taxton@yahoo.com</div>
+            <div class="">Needs to Sign</div>
+          </div>
+          <div class="recipients_summary">
+            <div class="recipient_number invisible"><span class="icon icon-check"></span></div>
+            <div>Once the document is completed, all recipients will receive a copy of the completed documents.</div>
+          </div>
+        </div> -->
+      </div>
+
+
+      <div class="envelope_options hide" olive-tabset-parent="smallTabs" olive-tab-id="envelop_options">
+        <div class="">
+          <div class="accordion ng-scope open">
+            <div class="strong">Recipient Privileges</div>
+            <i class="icon accordion-icon"></i>
+          </div>
+          <div class="drawer down full open">
+            <div class="drawer-wrapper">
+              <div class="drawer-content showing">
+                <div class="cb disabled">
+                  <input id="envelope_op_checkbox1" name="checkbox_group1" type="checkbox" class="cb_input" checked />
+                  <label for="envelope_op_checkbox1" class="cb_label">Recipients can sign on paper</label>
+                </div>
+                <div class="cb">
+                  <input id="envelope_op_checkbox2" name="checkbox_group1" type="checkbox" class="cb_input" checked />
+                  <label for="envelope_op_checkbox2" class="cb_label">Recipients can change signing responsibility</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion ng-scope open">
+            <div class="strong">Reminders</div>
+            <i class="icon accordion-icon"></i>
+          </div>
+          <div class="drawer down full open">
+            <div class="drawer-wrapper">
+              <div class="drawer-content showing">
+                <div class="cb disabled">
+                  <input id="envelope_op_checkbox3" name="checkbox_group1" type="checkbox" class="cb_input" checked />
+                  <label for="envelope_op_checkbox3" class="cb_label">Send automatic reminders</label>
+                </div>
+                <div class="">
+                  <label class="label">Number of days before sending first reminder: </label>
+                  <input type="text" class="input-text input-xxs disabled" value="0"/>
+                </div>
+                <div class="">
+                  <label class="label">Number of days between reminders: </label>
+                  <input type="text" class="input-text input-xxs disabled" value="0"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion ng-scope open">
+            <div class="strong">Expiration</div>
+            <i class="icon accordion-icon"></i>
+          </div>
+          <div class="drawer down full open">
+            <div class="drawer-wrapper">
+              <div class="drawer-content showing">
+                <div class="">
+                  <label class="label">Number of days before request expires: </label>
+                  <input type="text" class="input-text input-xxs" value="120"/>
+                </div>
+                <div class="">
+                  If sent today, it will expire on <span class="strong">5/31/2017 | 11:24:24 am</span>
+                </div>
+                <div class="">
+                  <label class="label">Number of days to warn signers before expiration: </label>
+                  <input type="text" class="input-text input-xxs" value="0"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion ng-scope open">
+            <div class="strong">Branding</div>
+            <i class="icon accordion-icon"></i>
+          </div>
+          <div class="drawer down full open">
+            <div class="drawer-wrapper">
+              <div class="drawer-content showing">
+                <div class="form_unit">
+                  <div class="select-wrap">
+                    <select id="envelope_select1">
+                      <option value="Sending" selected>DocuSign</option>
+                      <option value="Signing">DocuSign 2</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="envelope_section">
+          <div class="strong">Recipient Privileges</div>
+          <div class="cb disabled">
+            <input id="envelope_op_checkbox1" name="checkbox_group1" type="checkbox" class="cb_input" checked />
+            <label for="envelope_op_checkbox1" class="cb_label">Recipients can sign on paper</label>
+          </div>
+          <div class="cb">
+            <input id="envelope_op_checkbox2" name="checkbox_group1" type="checkbox" class="cb_input" checked />
+            <label for="envelope_op_checkbox2" class="cb_label">Recipients can change signing responsibility</label>
+          </div>
+        </div> -->
+        <!-- <div class="envelope_section">
+          <div class="strong">Reminders</div>
+          <div class="cb disabled">
+            <input id="envelope_op_checkbox3" name="checkbox_group1" type="checkbox" class="cb_input" checked />
+            <label for="envelope_op_checkbox3" class="cb_label">Send automatic reminders</label>
+          </div>
+          <div class="form_unit">
+            <label class="label">Number of days before sending first reminder: </label>
+            <input type="text" class="input-text input-xxs disabled" value="0"/>
+          </div>
+          <div class="form_unit">
+            <label class="label">Number of days between reminders: </label>
+            <input type="text" class="input-text input-xxs disabled" value="0"/>
+          </div>
+        </div> -->
+        <!-- <div class="envelope_section">
+          <div class="strong">Expiration</div>
+          <div class="form_unit">
+            <label class="label">Number of days before request expires: </label>
+            <input type="text" class="input-text input-xxs" value="120"/>
+          </div>
+          <div class="form_unit">
+            If sent today, it will expire on <span class="strong">5/31/2017 | 11:24:24 am</span>
+          </div>
+          <div class="form_unit">
+            <label class="label">Number of days to warn signers before expiration: </label>
+            <input type="text" class="input-text input-xxs" value="0"/>
+          </div>
+        </div>
+        <div class="envelope_section">
+          <div class="strong">Branding</div>
+          <div class="form_unit">
+            <div class="select-wrap">
+              <select id="envelope_select1">
+                <option value="Sending" selected>DocuSign</option>
+                <option value="Signing">Not DocuSign</option>
+              </select>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="envelope_section">
+          <div class="strong">Language</div>
+          <div class="form_unit">
+            <div class="select-wrap">
+              <select id="language_select1">
+                <option value="Sending" selected>English (US)</option>
+                <option value="Signing">Not English</option>
+              </select>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
