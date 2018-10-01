@@ -1,0 +1,298 @@
+* {
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.sidebar_group {
+  position: relative;
+}
+.menu {
+  left: auto;
+  top: auto;
+  min-width: 150px;
+}
+.menu-use {
+  right: 24px;
+}
+
+.grid {
+  /*overflow-x: scroll;*/
+  position: relative;
+}
+.list-tbl td {
+  position: relative;
+}
+
+.list-tbl thead th {
+  font-size: 12px;
+  letter-spacing: 0;
+}
+.list-tbl .guided_status {
+  width: 22%;
+  font-size: 13px;
+  vertical-align: middle;
+}
+.guided_status.hidden > * {
+  visibility: hidden;
+}
+.guided_status .icon-circle {
+  color: #CCC;
+}
+.guided_status.active .icon-circle {
+  color: #39A364;
+}
+.guided_status .guided_status_text::after {
+  content: "Disabled";
+}
+.guided_status.active .guided_status_text::after {
+  content: "Active";
+}
+
+.list-tbl .power_form_status {
+  width: 22%;
+  font-size: 13px;
+  vertical-align: middle;
+}
+.power_form_status.hidden {
+  visibility: hidden;
+}
+.power_form_status .icon-circle {
+  color: #CCC;
+}
+.power_form_status.active .icon-circle {
+  color: #39A364;
+}
+.power_form_status .power_form_status_text::after {
+  content: "Disabled";
+}
+.power_form_status.active .power_form_status_text::after {
+  content: "Active";
+}
+
+.list-tbl .column-name {
+  max-width: 240px;
+}
+
+.list-tbl .use_button .btn {
+  width: 65px;
+}
+.use_button {
+  display: flex;
+  justify-content: flex-end;
+}
+.use_button .btn {
+  border-radius: 0px;
+}
+.use_button .btn + .btn {
+  margin-left: 1px;
+}
+.use_button .btn:first-of-type {
+  border-radius: 2px 0 0 2px;
+}
+.use_button .btn:last-of-type {
+  border-radius: 0 2px 2px 0;
+}
+.list-tbl .use_button .btn-trigger {
+  width: 25px;
+  padding: 5px;
+}
+.use_button .btn-trigger::after {
+  right: 8px;
+}
+
+.tooltip {
+  -moz-transition: none;
+  -webkit-transition: none;
+  transition: none;
+
+  font-family: "Maven Pro";
+}
+.tooltip.hidden {
+  display: none;
+}
+.tooltip .header {
+  font-size: 14px;
+  font-weight: 700;
+  color: #717171;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.tooltip .icon {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+
+.modal-intro {
+  /*padding: 5px 5px 20px 5px;*/
+  text-align: center;
+}
+.modal-intro .slick-div {
+  /*position: relative;*/
+  width: 100%;
+  height: 400px;
+}
+.modal_close {
+  z-index: 100;
+}
+.nav_arrow {
+  position: absolute;
+  height: 100%;
+  width: 15px;
+}
+.nav_arrow {
+  position: absolute;
+  height: 100%;
+  width: 25px;
+  top: 0;
+  bottom: 0;
+  text-indent: -9999em;
+  z-index: 20;
+  cursor: pointer;
+  border: none;
+}
+.left_arrow {
+  left: 0;
+  background-color: transparent;
+  background-image: url(../images/svg/arrow_left.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.right_arrow {
+  right: 0;
+  background-color: transparent;
+  background-image: url(../images/svg/arrow_right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.nav_arrow:hover {
+  /*background-color: rgba(0, 0, 0, 0.15);*/
+}
+.slick-div .images {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.fadeOut {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slick-div .modal-intro-image {
+  position: absolute;
+  top: 20px;
+  width: 200px;
+  text-align: center;
+  overflow: hidden;
+}
+.modal-intro-image .mini-scanner-line {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /*opacity: 0;*/
+  transform: translateY(-75%);
+}
+.slick-div .modal-intro-image.image-1 {
+  left: 60px;
+  transform: translateX(-200%);
+}
+.slick-div .modal-intro-image.image-2 {
+  right: 5px;
+  transform: translateX(200%);
+}
+.step-1 .modal-intro-image.image-1 {
+  transform: translateX(0%);
+}
+.step-1 .modal-intro-image.image-2 {
+  transform: translateX(0%);
+}
+.step-2 .modal-intro-image.image-1 {
+  transform: translateX(35px);
+}
+.step-2 .modal-intro-image.image-2 {
+  transform: translateX(200%);
+}
+.step-2 .mini-scanner-line {
+  opacity: 1;
+  transform: translateY(150%);
+
+  -moz-transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+.step-3 .modal-intro-image.image-1 {
+  transform: translateX(35px);
+}
+.step-3 .modal-intro-image.image-2 {
+  transform: translateX(200%);
+}
+.step-4 .modal-intro-image.image-1 {
+  transform: translateX(-200%);
+}
+.step-4 .modal-intro-image.image-2 {
+  transform: translateX(-90px);
+}
+
+.modal-intro .get_started {
+  visibility: hidden;
+  opacity: 0;
+}
+.modal-intro .step-4 .get_started {
+  visibility: visible;
+  opacity: 1;
+}
+
+.swipe-dots {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.swipe-dots ul {
+  padding: 0;
+  margin: 20px auto;
+}
+.swipe-dots li {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  padding: 0;
+  cursor: pointer;
+}
+.swipe-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  padding: 0px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+  background: #D8D8D8;
+}
+.swipe-dots li button.selected {
+  background: #4186EC;
+}
+
+.messages-global.hide {
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  top: -60px;
+}

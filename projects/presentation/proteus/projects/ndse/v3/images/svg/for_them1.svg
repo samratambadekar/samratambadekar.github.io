@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="18px" viewBox="0 0 30 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Stroke 32</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M20.5622934,18 L2.53305709,17.9474532 C1.13311842,17.9438293 -0.00364640222,16.9273203 8.79013392e-06,15.6806926 L0.0347331175,2.25407691 C0.0365607136,1.01107308 1.17515313,0 2.57143661,0 L20.6006729,0.0525468089 C21.2586075,0.0543587679 21.8836454,0.280853634 22.3569928,0.686732434 L29.230582,7.38735655 C29.724033,7.80954298 29.9981724,8.38755788 30,9.00724784 C30,9.62693779 29.724033,10.2031407 29.2250992,10.632575 L22.333234,17.3567546 C21.8507487,17.7753171 21.2238832,18 20.5622934,18 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30" height="18" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Assests" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ID-Card" transform="translate(-651.000000, -1742.000000)" stroke="#FCA192" stroke-width="4" fill="#FFDDD7">
+            <g id="Group-12" transform="translate(651.000000, 1730.000000)">
+                <g id="Group-8" transform="translate(0.000000, 12.000000)">
+                    <use id="Stroke-32" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

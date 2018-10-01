@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="153px" height="13px" viewBox="0 0 153 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="thumbnails" transform="translate(-24.000000, -1245.000000)">
+            <g id="Group-3" transform="translate(24.000000, 1243.000000)">
+                <text id="X" font-family="MavenProBold, Maven Pro" font-size="12" font-weight="bold" fill="#D8D8D8">
+                    <tspan x="1" y="10">X</tspan>
+                </text>
+                <path d="M0.5,14.5 L153.581678,14.5" id="Line" stroke="#D8D8D8" stroke-linecap="square" stroke-dasharray="8,8"></path>
+            </g>
+        </g>
+    </g>
+</svg>

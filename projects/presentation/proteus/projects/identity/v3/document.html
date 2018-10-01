@@ -1,0 +1,658 @@
+<html lang="en">
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="-1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DocuSign</title>
+  <meta id="mobileviewport" name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+  <link href="https://www.docusign.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/signing.min.css" type="text/css">
+  <link href="https://docucdn-a.akamaihd.net/olive/18.1.0/css/olive.min.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="https://docucdn-a.akamaihd.net/olive/17.20.0/css/martini.min.css" rel="stylesheet" type="text/css" /> -->
+  <link rel="stylesheet" href="css/style_modal.css" type="text/css">
+  <link rel="stylesheet" href="css/style_callouts.css" type="text/css">
+  <link rel="stylesheet" href="css/style_signing.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/style_toast.css" />
+  <!-- <link rel="stylesheet" href="css/style_disclosures.css" type="text/css"> -->
+  <!-- <script src="Bongo/js/DSSigningSameDomainWeb.js?cs=4dee8a8"></script> -->
+  <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+  <script type="text/javascript" src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery.panzoom.min.js"></script> -->
+
+
+
+</head>
+<body cz-shortcut-listen="true" class="prototype_a prototype_a0">
+<div id="mobileConsent" class="mobile">
+  <div class="">
+    <img src="images/svg/docusign_logo.svg">
+  </div>
+
+  <div class="wrapper">
+    <h1 class="title"><span>Please Review & Act on These Documents</span><a class="help temporarily-hide" href="javascript:void(0)">How It Works</a></h1>
+    <div class="id-card">
+      <div class="image"><img src="images/Profile_Default_New.png" alt=""></div>
+      <div class="information">
+        <strong class="name">Corey Kimel</strong><br>
+        <span class="account-name">Acme Financial Corp</span>
+      </div>
+    </div>
+
+    <div class="welcome-message">
+      Please DocuSign Loan Agreement by next Tuesday. Feel free to give me a call or leave a comment if you have any questions!
+    </div>
+  </div>
+
+  <!-- <div>
+    <input id="disclosureAcceptedMobile" type="checkbox" class="checkbox">
+    <label for="disclosureAcceptedMobile">
+      I consent to electronically receive and sign documents.
+    </label>
+  </div> -->
+  <div class="buttons">
+    <div class="left mobile-menu mobile feature_unavailable">
+      <span class="icon-menu"></span>
+    </div>
+    <div track="continue-button" id="mobile-btn-continue" class="btn btn-main " type="button">Continue</div>
+  </div>
+</div>
+<div class="flex_signing">
+  <header id="welcome-wrapper" class="welcome-wrapper ">
+    <div class="wrapper desktop">
+      <div class="logo"><img src="images/svg/docusign_logo.svg" alt="DocuSign" class="large">
+      <!-- <div class="powered-by">Powered by <img src="images/svg/docusign_logo.svg"></div> -->
+      </div>
+
+      <h1 class="title"><span>Please Review & Act on These Documents</span><a class="help temporarily-hide" href="javascript:void(0)">How It Works</a></h1>
+      <div class="id-card">
+        <div class="image"><img src="images/Profile_Default_New.png" alt=""></div>
+        <div class="information">
+          <strong class="name">Corey Kimel</strong><br>
+          <span class="account-name">Acme Financial Corp</span>
+        </div>
+      </div>
+
+      <section class="body">
+        <div class="welcome-message" style="max-height: 204px;">
+
+          <p class="pre"></p>
+        </div>
+        <div class="more-or-less">
+          <a href="javascript:void(0)" class="more">Your financial advisor has sent you a document for your electronic signature</a>
+          <a href="javascript:void(0)" class="less">View Less</a>
+        </div>
+      </section>
+    </div>
+    <div id="action-bar-wrapper" class="">
+      <div class="other-actions-mobile mobile hidden">
+        <ul class="primary-menu-items">
+          <li class="finish-later feature_unavailable">Finish Later</li>
+          <li class="decline-to-sign feature_unavailable">Print & Sign</li>
+          <li class="decline-to-sign feature_unavailable">Assign to Someone Else</li>
+          <li class="feature_unavailable">Help &amp; Support<span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></li>
+          <li class="feature_unavailable">About DocuSign<span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></li>
+          <li class="feature_unavailable">View History</li>
+          <li class="feature_unavailable">View Certificate (PDF)<span class="screen-reader-text">This link will open a pdf in a new window.</span><span class="icon icon-external"></span></li>
+          <li class="feature_unavailable">Session Information</li>
+        </ul>
+      </div>
+      <div class="left mobile-menu mobile">
+        <span class="icon-menu"></span>
+      </div>
+      <div class="action-bar-helpful-message mobile " data-text="helpfulMessage">Tap Start to begin</div>
+      <div class="action-bar-helpful-message desktop" data-text="helpfulMessage">Please review the documents below.</div>
+
+      <div class="progress-bar-wrap invisible hide hidden">
+        <div class="progress-bar-label">
+          <div class="progress-bar-label-remaining"><span class="num_of_fields_reqd">0</span> Fields Remaining</div>
+          <div class="progress-bar-label-completed hide">All Required Fields Complete</div>
+          <!-- <div class="u-float-right">75%</div> -->
+        </div>
+        <div class="progress-bar">
+          <span class="fill" style="width:0%"></span>
+        </div>
+      </div>
+      <!-- <div class="desktop">
+        <div class="action-bar-consent-message">
+          <div class="pointer"></div>
+          <div class="">
+            <input track="disclosure-accepted-checkbox" id="disclosureAccepted" type="checkbox" class="" data-checked="disclosureAccepted" data-qa="disclosureAccepted">
+            <label for="disclosureAccepted" class="">
+              I consent to electronically receive and sign documents.
+            </label>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div id="toolbar" class="toolbar-wrapper">
+        <span class="toolbar-btn-wrapper"><button class="btn btn-icon btn-inverse-minor" type="button" track="zoom-button" data-action="zoomIn" data-qa="zoomIn" aria-label="Zoom In"><span class="icon icon-zoomin"></span></button><span class="tooltip below hide"><span>Zoom In</span></span></span>
+
+        <span class="toolbar-btn-wrapper"><button class="btn btn-icon btn-inverse-minor" type="button" track="zoom-button" data-action="zoomOut" data-qa="zoomOut" aria-label="Zoom Out"><span class="icon icon-zoomout"></span></button><span class="tooltip below hide"><span>Zoom Out</span></span></span>
+
+        <span class="toolbar-btn-wrapper download-menu">
+          <button class="btn btn-icon btn-inverse-minor" type="button" title="Download" data-action="download-options" data-qa="download-options" aria-label="Download"><span class="icon icon-download"></span></button>
+          <span class="tooltip below hide"><span>Download</span></span>
+        </span>
+
+        <span class="toolbar-btn-wrapper"><button class="btn btn-icon btn-inverse-minor" type="button" data-action="print" data-qa="print" aria-label="Print This link will open in a new window."><span class="icon icon-print"></span></button><span class="tooltip below hide"><span>Print</span></span></span>
+
+        <span class="toolbar-btn-wrapper"><button class="btn btn-icon btn-inverse-minor" type="button" data-action="openTab:https://www.docusign.com/support/signer" data-qa="help-support" aria-label="Help This link will open in a new window."><span class="icon icon-incomplete"></span></button><span class="tooltip below hide"><span>Help</span></span></span>
+
+        <span class="toolbar-btn-wrapper right"><button class="btn btn-icon btn-inverse-minor" type="button" class="thumbnails" data-action="toggle:thumbnail-drawer" data-qa="thumbnail-drawer" aria-label="Thumbnails"><span class="icon icon-documents"></span></button><span class="tooltip below hide"><span>Thumbnails</span></span></span>
+        <div class="clear-float"></div>
+      </div> -->
+
+
+      <div class="action-bar-buttons">
+        <button track="continue-button" id="action-bar-btn-continue" class="btn btn-main btn-start-signing desktop" type="button" callout-trigger="true">Continue</button>
+        <button track="continue-button" id="action-bar-btn-continue-mobile" class="btn btn-main btn-start-signing btn-continue-mobile autonav mobile" type="button">Start</button>
+        <div class="drop-down desktop">
+          <button type="button" class="btn btn-inverse-minor btnOtherActions">Other Actions <span class="icon icon-menu-triangle-down"></span></button>
+          <div class="content">
+            <div id="other-actions">
+              <ul class="primary-menu-items">
+                <li class="finish-later feature_unavailable">Finish Later</li>
+                <li class="decline-to-sign feature_unavailable">Print & Sign</li>
+                <li class="decline-to-sign feature_unavailable">Assign to Someone Else</li>
+              </ul>
+
+              <div class="divider"></div>
+
+              <ul class="secondary-menu-items">
+                <li class="feature_unavailable">Help &amp; Support<span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></li>
+                <li class="feature_unavailable">About DocuSign<span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></li>
+                <li class="feature_unavailable">View History</li>
+                <li class="feature_unavailable">View Certificate (PDF)<span class="screen-reader-text">This link will open a pdf in a new window.</span><span class="icon icon-external"></span></li>
+                <li class="feature_unavailable">Session Information</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="toolbar-wrapper" class="hide desktop">
+    <div id="toolbar" class=""><!-- This file is kinda gross. Need to put in a bunch of comments be cause spaces affect layout if we leave them out -->
+      <div class="wrapper"><span class="toolbar-btn-wrapper left invisible"><button type="button" class="feature_unavailable" track="zoom-button" data-action="zoomIn" data-qa="zoomIn" aria-label="Zoom In"><span class="icon-zoomin"></span></button><span class="tooltip below hide"><span>Zoom In</span></span></span><span class="toolbar-btn-wrapper"><button type="button" class="feature_unavailable" track="zoom-button" data-action="zoomIn" data-qa="zoomIn" aria-label="Zoom In"><span class="icon-zoomin"></span></button><span class="tooltip below hide"><span>Zoom In</span></span></span><div class="separator"></div><span class="toolbar-btn-wrapper"><button type="button" class="feature_unavailable" track="zoom-button" data-action="zoomOut" data-qa="zoomOut" aria-label="Zoom Out"><span class="icon-zoomout"></span></button><span class="tooltip below hide"><span>Zoom Out</span></span></span><div class="separator"></div><span class="toolbar-btn-wrapper download-menu"><button type="button" class="feature_unavailable" title="Download" data-action="download-options" data-qa="download-options" aria-label="Download"><span class="icon-download"></span><!--<span class="icon-down"></span>--></button><span class="tooltip below hide"><span>Download</span></span><div class="download-menu-dropdown"><span class="icon-menu-topper"></span><button type="button" class="feature_unavailable" title="Download Combined PDF" data-action="download" data-qa="download"><span class="button-text">Combined PDF</span><span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></button><br><button type="button" class="feature_unavailable" title="Download Separate PDFs" data-action="download-zip" data-qa="download-zip"><span class="button-text">Separate PDFs</span><span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></button></div></span><div class="separator"></div><span class="toolbar-btn-wrapper"><button type="button" class="feature_unavailable" data-action="print" data-qa="print" aria-label="Print This link will open in a new window."><span class="icon-print"></span></button><span class="tooltip below hide"><span>Print</span></span></span><div class="separator temporarily-hide"></div><div class="separator"></div><span class="toolbar-btn-wrapper"><button type="button" class="feature_unavailable" data-action="openTab:https://www.docusign.com/support/signer" data-qa="help-support" aria-label="Help This link will open in a new window."><span class="icon-incomplete"></span></button><span class="tooltip below hide"><span>Help</span></span></span><div class="separator"></div><span class="toolbar-btn-wrapper"><button type="button" class="feature_unavailable"><span class="icon-comment-add"></span></button><span class="tooltip below hide"><span>Comment</span></span></span><span class="toolbar-btn-wrapper right"><button type="button" class="thumbnails show_page_thumbnails" data-action="toggle:thumbnail-drawer" data-qa="thumbnail-drawer" aria-label="Thumbnails"><span class="icon-documents"></span></button><span class="tooltip below hide"><span>Thumbnails</span></span></span><div class="clear-float"></div></div>
+    </div>
+  </div>
+
+  <div id="top-mask-wrapper">
+    <div id="top-mask" style="display: none;"></div>
+  </div>
+  <div id="envelope-wrapper" class="">
+    <div class="autonav hide desktop" href="#font-size" id="autonav" callout-pos="below left"><p>Start</p></div>
+    <div id="envelope" class="cell">
+      <div id="documentOverlay" class="overlay desktop"></div>
+      <!-- <div class="wrapper"> -->
+        <!-- <div class="container"> -->
+      <div class="documents-wrapper">
+        <section class="documents">
+          <div id="page1" class="document_page">
+            <img class="document_image" src="docs/loan_agreement_alex.png"/>
+
+            <div id="field-signature-1" class="field field-sign autonavHighlight" callout-trigger="true" data-helpful-action="Select the sign field to create and add your signature." data-autonav-text="Sign">
+              <img class="field-image" src="images/field_sign.png">
+              <img class="field-image hide" src="images/alex_edwards_signature.gif">
+              <label for="" class="tab-label">Required - <span class="tab-field-type">Signature</span></label>
+            </div>
+            <div id="field-date-1" class="field field-date">
+            	03/15/2018
+    				</div>
+          </div>
+        </section>
+
+        <section class="thumbnail-drawer thumbnail-drawer-open desktop">
+          <div class="thumbnails-document">
+            <div class="thumbnails-document-btn">
+              <span class="icon icon-menu-triangle-down"></span>
+              <div class="">
+                <strong class="thumbnails-document-name">Loan Agreement.docx</strong>
+                <div class="thumbnails-document-page-count">Pages: 1</div>
+              </div>
+            </div>
+            <div class="thumbnails-document-pages">
+              <div class="thumbnails-page-btn" data-target-page="page1">
+                <img alt="" class="thumbnails-page-img" src="docs/loan_agreement_alex.png">
+                <div class="thumbnails-page-num">1</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <div class="finish_button desktop">
+          <button id="bottom-btn-finish" class="btn btn-main" type="button">Finish</button>
+        </div>
+      </div>
+        <!-- </div> -->
+      <!-- </div> -->
+    </div>
+    <div class="floating_comments_button mobile feature_unavailable">
+      <img src="images/svg/mw-comments.svg"/>
+    </div>
+  </div>
+  <div id="bottom-mask" style="display: none;"></div>
+  <div id="action-bar-bottom-wrapper" class="row">
+    <div id="action-bar-bottom" class="cell" style="display: none;"><div class="wrapper">
+  <div class="right">
+    <button track="finish-signing" id="action-bar-bottom-btn-finish" data-action="action-bar-bottom-finish" data-qa="action-bar-bottom-finish" class="btn btn-main" type="button" data-text="finishButtonText">Finish</button><!--
+ --><div class="drop-down"><!--
+   --><button type="button" class="header" data-action="toggle:other-actions" data-qa="toggle-other-actions">Other Actions <b class="arrow down"></b></button>
+      <div class="content">
+        <div id="other-actions">
+  <ul class="primary-menu-items">
+
+    <li>
+      <button type="button" track="finish-later" class="btn btn-default close" data-action="exit" data-qa="exit">Finish Later</button>
+      <p>Save the document in its current state and finish the signing process at a later time.</p>
+    </li>
+
+
+    <li>
+      <button type="button" class="btn btn-default close" data-action="show:sign-on-paper" data-qa="show-sign-on-paper">Print &amp; Sign</button>
+      <p>Print the document and sign in ink. Then either scan and upload or fax back the document. </p>
+    </li>
+
+
+    <li>
+      <button type="button" class="btn btn-default close" data-action="show:change-signer" data-qa="show-change-signer">Assign to Someone Else</button>
+      <p>Should someone else be signing? Provide the new signer’s email address and send the document to them for signature.</p>
+    </li>
+
+
+
+
+    <li>
+      <button type="button" class="btn btn-default close" data-action="voidEnvelope" data-qa="show-void-envelope">Void</button>
+      <p>Cancel the document. Notifies all recipients and removes access to the document.</p>
+    </li>
+
+
+    <li>
+      <button type="button" class="btn btn-default close" data-action="correct" data-qa="correct">Correct</button>
+      <p>Change recipient information, fields, or the document’s content after sending.</p>
+    </li>
+
+
+
+  </ul>
+
+  <div class="divider"></div>
+
+  <ul class="secondary-menu-items">
+
+    <li><a class="close" target="_blank" href="https://www.docusign.com/support/signer">Help &amp; Support<span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></a></li>
+
+
+    <li><a class="close" target="_blank" href="https://www.docusign.com/company">About DocuSign<span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></a></li>
+
+
+    <li><a class="close" href="javascript:void(0)" data-action="show:history" data-qa="show-history">View History</a></li>
+
+
+    <li><a class="close" href="javascript:void(0)" data-action="show:certificate" data-qa="show-certificate">View Certificate (PDF)<span class="screen-reader-text">This link will open a pdf in a new window.</span><span class="icon icon-external"></span></a></li>
+
+
+
+    <!--Hiding share option for now. May remove permanently eventually...-->
+    <!---->
+
+
+  </ul>
+</div>
+
+      </div>
+    </div>
+  </div>
+  <span class="action-bar-helpful-message" data-text="helpfulMessage">Done! Select Finish to send the completed document.</span>
+  <!-- <div class="clear-float"></div> -->
+</div></div>
+  </div>
+
+  <div id="footer-wrapper" class="row desktop">
+    <div id="footer" class=""><div class="wrapper">
+  <nav class="nav">
+    <div class="logo-wrapper">
+      <span class="powered-by" data-qa="powered-by"></span>
+      <img class="logo" data-qa="powered-by-logo" src="images/logo_docusign_gray.png" alt="DocuSign">
+    </div>
+    <ul class="footer-items">
+
+      <li>
+        <div class="drop-down languages">
+          <a href="#languages-drop-down-content" data-qa="languages-drop-down-content" class="header btn-transparent footer-item">English (US) <b class="arrow-down"></b></a>
+          <div id="languages-drop-down-content" class="content">
+            <ul>
+
+              <li data-qa="setLanguage-en" data-action="setLanguage:en" title="English (US)"><button type="button" class="footer-item">English (US)</button></li>
+
+              <li data-qa="setLanguage-de" data-action="setLanguage:de" title="German"><button type="button" class="footer-item">Deutsch</button></li>
+
+              <li data-qa="setLanguage-es" data-action="setLanguage:es" title="Spanish"><button type="button" class="footer-item">Español</button></li>
+
+              <li data-qa="setLanguage-fr" data-action="setLanguage:fr" title="French (France)"><button type="button" class="footer-item">Français (France)</button></li>
+
+              <li data-qa="setLanguage-it" data-action="setLanguage:it" title="Italian"><button type="button" class="footer-item">Italiano</button></li>
+
+              <li data-qa="setLanguage-nl" data-action="setLanguage:nl" title="Dutch"><button type="button" class="footer-item">Nederlandse</button></li>
+
+              <li data-qa="setLanguage-pt-BR" data-action="setLanguage:pt-BR" title="Portuguese (Brasil)"><button type="button" class="footer-item">Português (Brasil)</button></li>
+
+              <li data-qa="setLanguage-pt" data-action="setLanguage:pt" title="Portuguese (Portugal)"><button type="button" class="footer-item">Português (Portugal)</button></li>
+
+              <li data-qa="setLanguage-ru" data-action="setLanguage:ru" title="Russian"><button type="button" class="footer-item">Русский</button></li>
+
+              <li data-qa="setLanguage-zh-CN" data-action="setLanguage:zh-CN" title="Simplified Chinese"><button type="button" class="footer-item">中文 (简体)</button></li>
+
+              <li data-qa="setLanguage-zh-TW" data-action="setLanguage:zh-TW" title="Traditional Chinese"><button type="button" class="footer-item">中文 (繁體)</button></li>
+
+              <li data-qa="setLanguage-ja" data-action="setLanguage:ja" title="Japanese"><button type="button" class="footer-item">日本語</button></li>
+
+              <li data-qa="setLanguage-ko" data-action="setLanguage:ko" title="Korean"><button type="button" class="footer-item">한국어</button></li>
+
+              <li data-qa="setLanguage-id" data-action="setLanguage:id" title="Bahasa Indonesia"><button type="button" class="footer-item">Bahasa Indonesia</button></li>
+
+              <li data-qa="setLanguage-ms" data-action="setLanguage:ms" title="Bahasa Malay"><button type="button" class="footer-item">Bahasa Melayu</button></li>
+
+              <li data-qa="setLanguage-da" data-action="setLanguage:da" title="Danish"><button type="button" class="footer-item">Dansk</button></li>
+
+              <li data-qa="setLanguage-et" data-action="setLanguage:et" title="Estonian"><button type="button" class="footer-item">Eesti</button></li>
+
+              <li data-qa="setLanguage-en-GB" data-action="setLanguage:en-GB" title="English (UK)"><button type="button" class="footer-item">English (UK)</button></li>
+
+              <li data-qa="setLanguage-es-MX" data-action="setLanguage:es-MX" title="Spanish (Latin America)"><button type="button" class="footer-item">Español (América Latina)</button></li>
+
+              <li data-qa="setLanguage-fr-CA" data-action="setLanguage:fr-CA" title="French (Canada)"><button type="button" class="footer-item">Français (Canada)</button></li>
+
+              <li data-qa="setLanguage-hr" data-action="setLanguage:hr" title="Croatian"><button type="button" class="footer-item">Hrvatski</button></li>
+
+              <li data-qa="setLanguage-lv" data-action="setLanguage:lv" title="Latvian"><button type="button" class="footer-item">Latviešu</button></li>
+
+              <li data-qa="setLanguage-lt" data-action="setLanguage:lt" title="Lithuanian"><button type="button" class="footer-item">Lietuvių</button></li>
+
+              <li data-qa="setLanguage-hu" data-action="setLanguage:hu" title="Hungarian"><button type="button" class="footer-item">Magyar</button></li>
+
+              <li data-qa="setLanguage-no" data-action="setLanguage:no" title="Norwegian"><button type="button" class="footer-item">Norsk</button></li>
+
+              <li data-qa="setLanguage-pl" data-action="setLanguage:pl" title="Polish"><button type="button" class="footer-item">Polski</button></li>
+
+              <li data-qa="setLanguage-ro" data-action="setLanguage:ro" title="Romanian"><button type="button" class="footer-item">Română</button></li>
+
+              <li data-qa="setLanguage-sk" data-action="setLanguage:sk" title="Slovak"><button type="button" class="footer-item">Slovenčina</button></li>
+
+              <li data-qa="setLanguage-sl" data-action="setLanguage:sl" title="Slovenian"><button type="button" class="footer-item">Slovenščina</button></li>
+
+              <li data-qa="setLanguage-fi" data-action="setLanguage:fi" title="Finnish"><button type="button" class="footer-item">Suomi</button></li>
+
+              <li data-qa="setLanguage-sv" data-action="setLanguage:sv" title="Swedish"><button type="button" class="footer-item">Svenska</button></li>
+
+              <li data-qa="setLanguage-tr" data-action="setLanguage:tr" title="Turkish"><button type="button" class="footer-item">Türkçe</button></li>
+
+              <li data-qa="setLanguage-vi" data-action="setLanguage:vi" title="Vietnamese"><button type="button" class="footer-item">Việt</button></li>
+
+              <li data-qa="setLanguage-cs" data-action="setLanguage:cs" title="Czech"><button type="button" class="footer-item">Čeština</button></li>
+
+              <li data-qa="setLanguage-el" data-action="setLanguage:el" title="Greek"><button type="button" class="footer-item">Ελληνικά</button></li>
+
+              <li data-qa="setLanguage-bg" data-action="setLanguage:bg" title="Bulgarian"><button type="button" class="footer-item">Български</button></li>
+
+              <li data-qa="setLanguage-sr" data-action="setLanguage:sr" title="Serbian"><button type="button" class="footer-item">Српски</button></li>
+
+              <li data-qa="setLanguage-uk" data-action="setLanguage:uk" title="Ukrainian"><button type="button" class="footer-item">Українська</button></li>
+
+              <li data-qa="setLanguage-he" data-action="setLanguage:he" title="Hebrew"><button type="button" class="footer-item">עברית‏</button></li>
+
+              <li data-qa="setLanguage-ar" data-action="setLanguage:ar" title="Arabic"><button type="button" class="footer-item">العربية‏</button></li>
+
+              <li data-qa="setLanguage-fa" data-action="setLanguage:fa" title="Farsi"><button type="button" class="footer-item">فارسی</button></li>
+
+              <li data-qa="setLanguage-hi" data-action="setLanguage:hi" title="Hindi"><button type="button" class="footer-item">हिन्दी</button></li>
+
+              <li data-qa="setLanguage-th" data-action="setLanguage:th" title="Thai"><button type="button" class="footer-item">ภาษาไทย</button></li>
+
+            </ul>
+          </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      </li>
+
+
+
+
+
+      <li>
+        <div class="drop-down tos">
+          <a href="#tos-drop-down-content" data-qa="tos-drop-down-content" class="header btn-transparent footer-item">Terms Of Use &amp; Privacy <b class="arrow-down"></b></a>
+          <div id="tos-drop-down-content" class="content">
+            <ul>
+
+              <!-- Legal doc dialog links. -->
+              <li><button type="button" data-action="show:terms-of-use-dialog" data-qa="show-terms-of-use-dialog" class="footer-item">Terms Of Use</button></li>
+              <li><button type="button" data-action="show:privacy-policy-dialog" data-qa="show-privacy-policy-dialog" class="footer-item">Privacy Policy</button></li>
+              <li><button type="button" data-action="show:intellectual-property-dialog" data-qa="show-intellectual-property-dialog" class="footer-item">Intellectual Property</button></li>
+
+            </ul>
+          </div>
+        </div> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+
+      <li>Copyright &copy; 2016 DocuSign Inc.</li>
+    </ul>
+  </nav>
+  <div class="clear-float"></div>
+</div>
+</div>
+  </div>
+</div>
+
+<div id="progress-indicator" class="">
+  <div class="spinner">
+    <!-- <div class="bg"></div> -->
+  </div>
+</div>
+
+<div id="screenReaderAlert" class="screen-reader-alert" aria-live="assertive" style="clip: auto;"><span id="screenReaderMessage" role="alert" style="display: inline;">Please Wait</span></div>
+
+<div class="callout tip below left callout-invisible hide">
+  <div class="callout-use-autonav callout-invisible">
+    <div class="callout_header">Auto Navigate Fields</div>
+    <div class="callout_content">Need help finding fields?  Use the Auto Navigation to make finding unsigned fields easier.  <span class="link">Learn More.</span></div>
+    <!-- <div class="callout_footer">
+        <button type="button" class="btn btn-secondary" olive-popover-close>Got It</button>
+    </div> -->
+  </div>
+</div>
+
+<div class="messages-global global-notifications invisible">
+  <div class="message message-error msg_feature_unavailable">
+    <span class="message_icon icon icon-alert-triangle"></span>
+    <div class="message_content">Feature currently not available in prototype</div>
+    <button class="message_close icon icon-times"></button>
+  </div>
+</div>
+
+<div class="ds-modal-background invisible">
+  <div class="modal modal-new modal-sm modal-visible ng-scope modal-finished-signing hide_modal" role="dialog">
+    <div class="modal_header">
+      <h1 class="modal_title">Finished Signing</h1>
+    </div>
+    <div class="modal_content">
+      <p>You have successfully signed the document and you will receive a copy via email.</p>
+    </div>
+    <!-- <div class="modal_footer">
+      <a href="index.html" class="btn btn-primary btn-md btn-cancel">Save & Close</a>
+      <a class="btn btn-minor btn-md btn-cancel">Cancel</a>
+      <a href="index.html" class="btn btn-minor btn-md btn-cancel">Discard</a>
+    </div> -->
+    <button class="modal_close icon icon-times"></button>
+  </div>
+
+  <div class="modal modal-adopt-signature modal-xl full-on-mobile hide_modal" role="dialog">
+    <div class="modal_header">
+      <h1 class="modal_title item-alt-inline-block" data-group="tagType" data-group-item="signature">Adopt Your Signature</h1>
+      <h1 class="modal_title item-alt-inline-block" data-group="tagType" data-group-item="initials">Adopt Your Initials</h1>
+    </div>
+    <div class="modal_content">
+      <div class="ds-title p hidden-xs">
+        Confirm your name, initials, and signature.
+      </div>
+      <p aria-hidden="true"><span class="text-alert">*</span> Required</p>
+      <div class="signer_details">
+        <div class="form_unit">
+          <label for="full-name" class="label">Full Name<span class="text-alert">*</span></label>
+          <input id="full-name" type="text" class="input-text input-md" value="Alex Edwards" />
+        </div>
+        <div class="form_unit">
+          <label for="initials" class="label">Initials<span class="text-alert">*</span></label>
+          <input id="initials" type="text" class="input-text input-sm" value="AE" />
+        </div>
+      </div>
+
+      <header class="tab-nav tabs-wrap">
+        <ul role="tablist" class="tabs">
+          <li class="tab-wrap"><button role="tab" data-qa="adopt-select-style" type="button" data-target-panel="#select-style" class="tab tab-select-style btn on" aria-label="Select Style">Select Style</button></li>
+          <li class="tab-wrap"><button role="tab" data-qa="adopt-draw" type="button" data-target-panel="#draw" class="tab tab-draw btn" aria-label="Draw">Draw</button></li>
+        </ul>
+      </header>
+      <div role="tabpanel" id="select-style" class="tab-panel panel-select-style on">
+        <div class="signature_preview">
+          <h4>Preview <div class="error"></div></h4>
+          <span class="link">Change Style</span>
+        </div>
+        <div class="signature-preview">
+          <div class="signature">
+            <img src="images/alex_edwards_signature.gif" height="" class="signature-img"/>
+            <img data-qa="adopt-initials-img" alt="Initials style 1 DocuSign AE" src="images/alex_edwards_initial.gif" height="" class="initials-img"/>
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" data-qa="panel-draw" id="draw" class="tab-panel panel-draw hide">
+        <h4>
+          <span class="item-alt-inline" data-group="tagType" data-group-item="signature" data-selected="">Draw your signature</span>
+          <span class="item-alt-inline" data-group="tagType" data-group-item="initials">Draw your initials</span>
+        </h4>
+        <span class="link">Clear</span>
+        <div class="signature-draw signature" style="width: 0px;">
+        <div class="canvas-wrapper"><canvas aria-describedby="canvas-helpfulText" data-qa="adopt-canvas" class="canvas" style="touch-action: none;"></canvas></div></div>
+          <div class="screen-reader-text" id="canvas-helpfulText">Draw your signature in the box. Seek assistance if you need to.</div>
+      </div>
+      <div class="legalese">
+          <p class="item-alt" data-group="tagType" data-group-item="signature" data-selected="">By selecting Adopt and Sign, I agree that the signature and initials will be the electronic representation of my signature and initials for all purposes when I (or my agent) use them on documents, including legally binding contracts - just the same as a pen-and-paper signature or initial.</p>
+          <p class="item-alt" data-group="tagType" data-group-item="initials">By selecting Adopt and Initial, I agree that the signature and initials will be the electronic representation of my signature and initials for all purposes when I (or my agent) use them on documents, including legally binding contracts - just the same as a pen-and-paper signature or initial.</p>
+      </div>
+    </div>
+    <div class="modal_footer">
+      <button data-qa="adopt-submit" class="btn btn-lg btn-main item-alt-inline-block adopt_signature_initial" data-group="tagType" data-group-item="signature" data-selected="" type="button" data-ds="submit" value="signature">Adopt and Sign</button>
+      <button data-qa="adopt-submit" class="btn btn-lg btn-main item-alt-inline-block adopt_signature_initial" data-group="tagType" data-group-item="initials" type="button" data-ds="submit" value="signature">Adopt and Initial</button>
+      <button data-qa="adopt-cancel" class="btn btn-lg btn-minor close" type="button" data-action="cancel-adopt-signature">Cancel</button>
+    </div>
+    <button class="modal_close icon icon-times"></button>
+  </div>
+
+
+  <div class="modal modal-new modal-lg modal-save-copy full-on-mobile hide_modal">
+    <div class="modal_header flex-modal-header">
+      <h1 class="modal_title">Save a Copy of Your Document</h1>
+      <div class="top-right-icons">
+        <span class="download-menu">
+          <button type="button" class="btn btn-icon btn-minor btn-trigger feature_unavailable"><span class="icon icon-download"></span></button>
+          <!-- <div class="menu invisible">
+            <ul>
+              <li><button type="button" class="item button-link btn-block" title="Download Combined PDF" data-action="download"><span class="button-text" aria-hidden="true">Combined PDF</span><span class="screen-reader-text">Combined PDF This link will open in a new window.</span><span class="icon icon-external"></span></button></li>
+              <li><button type="button" class="item button-link btn-block" title="Download Separate PDFs" data-action="download-zip"><span class="button-text" aria-hidden="true">Separate PDFs</span><span class="screen-reader-text">Separate PDFs This link will open in a new window.</span><span class="icon icon-external"></span></button></li>
+            </ul>
+          </div> -->
+        </span>
+        <span class="print-menu">
+          <button type="button" class="btn btn-icon btn-minor btn-trigger feature_unavailable"><span class="icon icon-print"></span></button>
+          <!-- <div id="modal-print-menu" class="menu invisible">
+            <ul>
+              <li><button type="button" class="item button-link btn-block" title="Print" data-action="print"><span class="icon icon-print"></span><span aria-hidden="true">Print</span><span class="screen-reader-text">Print This link will open in a new window.</span><span class="icon icon-external"></span></button></li>
+              <li><button type="button" class="item button-link btn-block" title="Print" data-action="show:print-to-fedex"><span class="icon icon-fedex"></span> Print to FedEx Office</button></li>
+            </ul>
+          </div> -->
+        </span>
+      </div>
+    </div>
+    <div class="save-a-copy modal-wrap">
+      <h3 data-qa="dialog-subtitle" class="dialog-subtitle">Sign up for a FREE DocuSign account today and sign all your documents electronically.</h3>
+      <div class="modal_content">
+        <div class="content">
+          <form>
+            <div class="create-account-features desktop">
+              <ul>
+                <li><span><img src="images/modal-sign.png"></span><span class="blurb">Electronically sign any document.</span></li>
+                <li><span><img src="images/modal-send.png"></span><span class="blurb">Get signatures from others.</span></li>
+                <li><span><img src="images/modal-mobile.png"></span><span class="blurb">Sign on the go with DocuSign Mobile!</span></li>
+              </ul>
+            </div>
+            <div class="create-account-form form">
+              <div class="server-error error-message-text"></div>
+              <div>
+                <label for="email-field">Email</label>
+                <input type="hidden" name="email-field" id="emailField" data-ds="loginEmail" value="alex@edwardsconsulting.com" disabled="disabled">
+                <div class="email-value" data-qa="save-a-copy-email">alex@edwardsconsulting.com</div>
+                <div class="email-empty error-message-text">E-mail address is required</div>
+                <div class="email-invalid error-message-text">Invalid e-mail address</div>
+              </div>
+              <div>
+                <label for="password-field">Password</label>
+                <input type="password" data-qa="save-a-copy-password" name="password-field" id="passwordField" data-ds="loginPassword" />
+                <div class="password-empty error-message-text">Please enter your password</div>
+              </div>
+              <div>
+                <label for="confirm-password-field">Confirm Password</label>
+                <input type="password" data-qa="save-a-copy-confirm-password" name="confirm-password-field" id="confirmPasswordField" data-ds="createConfirmPassword" />
+                <div class="password-match-error error-message-text">Passwords do not match</div>
+              </div>
+              <div class="terms-and-conditions">
+                <div data-qa="terms-and-conditions-link" class="terms-and-conditions-link" dir="ltr">
+                  By selecting <span class="btn-reference">Sign Up</span>, you agree to the <br><a href="#">Terms &amp; Conditions<span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></a> and <a href="#">Privacy Policy<span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="footer">
+          <button data-qa="dialog-submit" type="button" class="btn btn-lg btn-main feature_unavailable" data-ds="createAccount">Sign Up</button>
+          <button data-qa="dialog-cancel" type="button" class="btn btn-lg btn-minor feature_unavailable" track-ds="signingCompleteNoThanks">No Thanks</button>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="save-a-copy account-created modal-wrap">
+      <div class="modal_content">
+        <div class="content">
+          <div class="account-created-message">Your account has been created! You will receive an email shortly.</div>
+          <div class="redirecting-message">We are now redirecting you to <a href="#">postsign.docusign.com<span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></a></div>
+          <span class="progress-bar"><span></span></span>
+        </div>
+      </div>
+    </div> -->
+    <button class="modal_close icon icon-times"></button>
+  </div>
+
+
+  <div class="modal modal-new modal-lg modal-save-identity-data full-on-mobile hide_modal">
+    <div class="modal_header flex-modal-header">
+      <h1 class="modal_title">Faster Signing Experience</h1>
+    </div>
+    <div class="modal_content">
+      <p>For faster signing next time, will you allow DocuSign to keep a record of your Photo ID?</p>
+      <p class="link">Privacy Policy</p>
+    </div>
+    <div class="modal_footer">
+      <button class="btn btn-lg btn-main btn-cancel">Yes</button>
+      <button class="btn btn-lg btn-minor btn-cancel">No</button>
+    </div>
+    <button class="modal_close icon icon-times"></button>
+  </div>
+</div>
+</body>
+<script src="js/script_modals.js"></script>
+<script src="js/script_callouts.js"></script>
+<script src="js/script_signing.js"></script>
+<script src="js/script_toast_messages.js"></script>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="38px" viewBox="0 0 50 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="48" height="35.6571429" rx="8"></rect>
+        <rect id="path-3" x="0" y="0" width="16.1142857" height="16.1142857" rx="1.5"></rect>
+    </defs>
+    <g id="Signing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="50---CC---Instructions---Front" transform="translate(-639.000000, -231.000000)">
+            <g id="Group-3" transform="translate(640.000000, 232.000000)">
+                <g id="Group-2-Copy">
+                    <g id="Rectangle-3">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <rect stroke="#B6D0F4" x="-0.5" y="-0.5" width="49" height="36.6571429" rx="8"></rect>
+                        <rect fill="#B6D0F4" mask="url(#mask-2)" x="0" y="0" width="48.3555556" height="7.488"></rect>
+                    </g>
+                    <g id="Group" transform="translate(5.828571, 12.342857)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Mask" fill="#2E2F4E" xlink:href="#path-3"></use>
+                        <g mask="url(#mask-4)" fill="#FFFFFF">
+                            <g transform="translate(1.074286, 3.939048)">
+                                <ellipse id="Oval" cx="6.98285714" cy="3.63543491" rx="3.74883039" ry="3.63543491"></ellipse>
+                                <path d="M14.3238095,12.7181206 L0,12.7181206 C0,9.64970041 2.56539429,7.16190476 5.72952381,7.16190476 L8.59428571,7.16190476 C11.7584152,7.16190476 14.3238095,9.64970041 14.3238095,12.7181206 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <path d="M41.5071429,15.7714286 L27.4071429,15.7714286 C26.8512,15.7714286 26.4,15.3116571 26.4,14.7428571 C26.4,14.1740571 26.8512,13.7142857 27.4071429,13.7142857 L41.5071429,13.7142857 C42.0630857,13.7142857 42.5142857,14.1740571 42.5142857,14.7428571 C42.5142857,15.3116571 42.0630857,15.7714286 41.5071429,15.7714286 Z" id="Shape" fill="#3F3F3F" fill-rule="nonzero"></path>
+                    <path d="M41.5071429,19.8857143 L27.4071429,19.8857143 C26.8512,19.8857143 26.4,19.4259429 26.4,18.8571429 C26.4,18.2883429 26.8512,17.8285714 27.4071429,17.8285714 L41.5071429,17.8285714 C42.0630857,17.8285714 42.5142857,18.2883429 42.5142857,18.8571429 C42.5142857,19.4259429 42.0630857,19.8857143 41.5071429,19.8857143 Z" id="Shape-Copy" fill="#3F3F3F" fill-rule="nonzero"></path>
+                    <path d="M34.6614104,24 L27.3957324,24 C26.8460881,24 26.4,23.5402286 26.4,22.9714286 C26.4,22.4026286 26.8460881,21.9428571 27.3957324,21.9428571 L34.6614104,21.9428571 C35.2110547,21.9428571 35.6571429,22.4026286 35.6571429,22.9714286 C35.6571429,23.5402286 35.2110547,24 34.6614104,24 Z" id="Shape-Copy-2" fill="#3F3F3F" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,29 @@
+.main-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main-nav a.item {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions .icon {
+  color: #FFF;
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 285px;
+}
+.actions > div {
+  margin: auto 10px;
+  cursor: pointer;
+}
+
+table {
+  font-size: 13px;
+}

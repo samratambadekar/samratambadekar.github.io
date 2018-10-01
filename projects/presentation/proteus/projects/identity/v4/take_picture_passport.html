@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+  <title>DocuSign | Identity Verification</title>
+  <link href="https://www.docusign.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="https://docucdn-a.akamaihd.net/olive/18.13.0/css/olive.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://docucdn-a.akamaihd.net/olive/18.13.0/css/martini.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/style_pre_sign.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/style_toast.css" />
+  <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+  <script type="text/javascript" src="js/tracking.js"></script>
+  <script type="text/javascript" src="js/face-min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery.panzoom.min.js"></script> -->
+</head>
+<body class="need_camera_access take_picture_page">
+  <article class="pre-sign-content" data-camera-container-step="1">
+    <div class="section">
+      <div class="section-logo"><img src="images/svg/docusign_logo_blue.svg" /></div>
+      <div class="section-title request_camera_access_header"><h1>Give Your Camera Access</h1></div>
+      <div class="section-title error_camera_access_header"><h1>Issue Accessing Camera</h1></div>
+
+      <div class="container_top">
+        <div class="id_verify_step" data-camera-container-step-visible="1">
+          <div class="section-title"><h1>Take a Photo of Your Passport ID Page</h1></div>
+        </div>
+        <div class="id_verify_step" data-camera-container-step-visible="2">
+          <div class="section-title"><h1>Check Your Photo</h1></div>
+        </div>
+      </div>
+
+      <section class="camera_container_instructions">
+        <div class="sub_container">
+          <section class="error_camera_access_warning text-account-server">
+            <div class="inlineMessage inlineMessage-warning">
+              Either your device doesn't have a camera or your browser can't access it.
+              <button class="inlineMessage_close icon icon-close"><span class="vh">Close Notification</span></button>
+            </div>
+            <div class="camera_access_resolution_steps">
+              You can continue a few ways:
+              <ul class="">
+                <li>1. Enable camera access and try again</li>
+                <li>2. Try again on a different browser</li>
+                <li>3. Upload an ID</li>
+              </ul>
+              <a href="id_doc_type.html" class="btn btn-main btn-lg">
+                Try Again
+              </a>
+            </div>
+          </section>
+
+          <section class="request_camera_access">
+            <div class="icon icon-camera"></div>
+            <div>Make sure you've enabled your camera</div>
+          </section>
+
+          <h3 class="video_header desktop">Your Camera</h3>
+          <section class="camera_container">
+            <video class="video_container" playsinline>Video stream not available.</video>
+
+            <div class="container_middle">
+              <canvas class="canvas_container"></canvas>
+              <!-- <img class="sample_image sample_image_front" src="images/svg/sample_passport.svg" /> -->
+              <div class="guiding_rectangle"></div>
+            </div>
+
+            <img src="" class="photo_container" alt="">
+          </section>
+
+          <div class="container_bottom">
+            <div class="id_verify_buttons" data-camera-container-step-visible="1">
+              <div class="">
+                <div class="btn btn-lg btn-main btn-next-step btn-takepicture">
+                  Take Photo
+                </div>
+                <a href="id_doc_type.html" class="link">
+                  Cancel
+                </a>
+              </div>
+            </div>
+            <div class="id_verify_buttons" data-camera-container-step-visible="2">
+              <div class="">
+                <a href="splash_page_verifying.html" class="btn btn-lg btn-main">
+                  Submit
+                </a>
+                <a href="#" class="retake_photo link">
+                  Retake Photo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="camera_instructions_toggle closed link">
+          <button class="accordion closed">
+            <span>
+              Instructions
+            </span>
+            <span class="icon accordion-icon">
+            </span>
+          </button>
+        </div>
+        <section class="camera_instructions text-account-server">
+          <h3>Example</h3>
+          <!-- <img class="sample_image sample_image_front" src="images/svg/sample_passport.svg" /> -->
+          <img class="sample_image sample_image_front sample_image_passport" src="images/example_passport.png" />
+          <!-- <video src="videos/desktop-passport.mp4" class="sample_image sample_image_front sample_video_passport" autoplay></video> -->
+          <!-- <ul class="camera_instructions_list">
+            <li>Make sure your information is clear and visible</li>
+            <li>Hold your ID straight in front of the camera</li>
+            <li>Bring your ID close to the camera</li>
+            <li>Place your fingers on the edges of your ID</li>
+            <li>Use a neutral background (e.g. a plain wall)</li>
+          </ul> -->
+          <div class="camera_instructions_list" data-camera-container-step-visible="1">
+            Make sure your passport ID page is inside<br/> the white box and clearly shows your<br/> information.
+          </div>
+          <div class="camera_instructions_list" data-camera-container-step-visible="2">
+            If you're not sure about your photo, check:
+            <ul>
+              <li>Is your ID at an angle?</li>
+              <li>Is any of your ID covered or blurry?</li>
+            </ul>
+            If so, <span class="">retake your photo</span>
+          </div>
+        </section>
+      </section>
+
+      <!-- <div class="buttons"> -->
+        <!-- <button class="btn btn-main btn-lg btn-continue">Continue</button> -->
+        <!-- <a href="https://account.docusign.com/#/username" class="btn btn-minor btn-lg link">Cancel</a> -->
+      <!-- </div> -->
+      <!-- <a href="choose_upload_method.html" class="mobile">Cancel</a> -->
+    </div>
+    <footer class="site_footer ng-scope">
+      <div class="site_container">
+        <div class="footer_left"></div>
+        <div class="footer_main">
+          <ul class="footer-links">
+            <li class="ng-scope"><a class="footer-links_item btn-triggeR ng-binding"><span class="icon icon-globe"></span> English (US)</a></li>
+            <li><span class="footer-links_item ng-binding">Powered by DocuSign</span></li>
+            <li><a target="_blank" class="footer-links_item ng-scope ng-binding">Contact Us</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding">Terms of Use</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding">Privacy</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding">Intellectual Property</a></li>
+            <li><span class="footer-links_item ng-binding">Copyright &copy; 2016 DocuSign, Inc. All rights reserved.</span></li>
+          </ul>
+          <div id="menuLanguages" class="menu select-menu invisible">
+            <ul role="menu" aria-labelledby=" English (US)">
+              <li class="item ng-binding ng-scope on" role="menuitem">English (US)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Deutsch</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Español</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Français</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Italiano</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Nederlandse</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Português (Brasil)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Português (Portugal)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Русский</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">中文(台灣)</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">中文(简体)</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">日本語</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">한국어</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">［～Þƨèúδô～］</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_right"></div>
+      </div>
+    </footer>
+  </article>
+
+  <div class="messages-global global-notifications invisible">
+    <div class="message message-error msg_feature_unavailable">
+      <span class="message_icon icon icon-alert-triangle"></span>
+      <div class="message_content">Feature currently not available in prototype</div>
+      <button class="message_close icon icon-times"></button>
+    </div>
+  </div>
+</body>
+<script src="js/script_identity_signing.js"></script>
+<script src="js/script_toast_messages.js"></script>
+<script src="js/script_image_capture.js"></script>
+</html>

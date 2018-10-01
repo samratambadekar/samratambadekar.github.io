@@ -1,0 +1,255 @@
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.ndse_page {
+  background-color: #F7F7F7;
+}
+.selectDocument.ndse_page .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #F7F7F7;
+}
+.selectDocument.ndse_page .head h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #4A4A4A;
+}
+.selectDocument.ndse_page > div {
+  margin: auto;
+  padding: 20px 24px;
+  max-width: 1264px;
+}
+.selectDocument.ndse_page > .head {
+  padding-top: 30px;
+}
+.selectDocument.ndse_page .layouts button {
+  height: 30px;
+}
+
+.selectDocument.ndse_page {
+  overflow: auto;
+}
+
+
+.selectDocument.ndse_page .files {
+  padding: 0 24px;
+  -webkit-perspective: 2500px;
+  perspective: 2500px;
+  z-index: 10;
+}
+.selectDocument .files > div {
+  margin: 15px auto;
+  height: 75px;
+}
+.selectDocument .upload_file {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #CCC;
+  color: #999999;
+  font-size: 18px;
+  cursor: pointer;
+}
+.selectDocument .upload_file > div {
+  margin-left: 15px;
+}
+.selectDocument .file {
+  -webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+  /*transition-duration: 0.2s;*/
+  /*z-index: 10;*/
+}
+.selectDocument .file_preview {
+  display: none;
+}
+.selectDocument .state {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: relative;
+  height: 100%;
+  width: 98.5%;
+  margin: auto;
+  border: 1px solid #E9E9E9;
+  border-radius: 2px;
+  /*box-shadow: 0 1px 3px transparent;*/
+  background-color: #FFF;
+  backface-visibility: hidden;
+}
+.selectDocument .uploaded {
+  opacity: 0;
+  width: 99.5%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.selectDocument .state > div {
+  padding: 8px;
+}
+.selectDocument .state > div:first-child {
+  padding-left: 18px;
+}
+.selectDocument .state > div:last-child {
+  padding-right: 18px;
+}
+.selectDocument .state .file_ext {
+  background-color: #FFF;
+}
+.selectDocument .state .file_info {
+  width: 90%;
+  background-color: #FFF;
+}
+.selectDocument .state .file_options {
+  position: absolute;
+  right: 0;
+  top: 19px;
+  cursor: pointer;
+  /*z-index: 10;*/
+  /*background: #FFF;*/
+}
+.selectDocument .state .file_name {
+  font-size: 14px;
+  font-weight: bold;
+}
+.selectDocument .state .file_pages {
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+.selectDocument .state .file_loader {
+  position: relative;
+  background-color: #E9E9E9;
+  width: 90%;
+  height: 8px;
+  margin: auto;
+  padding: 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.selectDocument .state .file_loader_status {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #4186EC;
+  width: 0%;
+  height: 100%;
+  border-radius: 4px;
+}
+.selectDocument .state .file_loader_status.half {
+  width: 50%;
+}
+.selectDocument .state .file_loader_status.full {
+  width: 100%;
+}
+
+/* Position the faces */
+.uploading {
+	-webkit-transform: translateZ(50px);
+	transform: translateZ(50px);
+}
+
+.uploaded {
+	-webkit-transform: rotateX(-90deg) translateZ(-50px);
+	transform: rotateX(-90deg) translateZ(-50px);
+}
+
+/* Rotate the cube */
+.file.upload_complete {
+	-webkit-transform: rotateX(90deg);
+	transform: rotateX(90deg); /* Text bleed at 90º */
+  backface-visibility: hidden;
+}
+.file.upload_complete .uploading {
+  opacity: 0;
+}
+.file.upload_complete .uploaded {
+  opacity: 1;
+}
+
+
+.selectDocument.ndse_page .files.grid_view {
+  display: flex;
+  flex-wrap: wrap;
+
+  -webkit-perspective: none;
+  perspective: none;
+}
+.selectDocument .files.grid_view > div {
+  margin: 15px;
+  width: 245px;
+  height: 228px;
+}
+.selectDocument .grid_view .upload_file {
+  flex-direction: column;
+}
+.selectDocument .grid_view .upload_file .icon_add {
+  width: 40px;
+  height: 40px;
+}
+.selectDocument .grid_view .upload_file > div {
+  margin: 15px;
+  text-align: center;
+  line-height: 1.25;
+}
+.selectDocument .grid_view .file_preview {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+.selectDocument .grid_view .file_options {
+  top: auto;
+  bottom: 0;
+  background-color: #F9F9F9;
+}
+.selectDocument .grid_view .uploading .file_options {
+  visibility: hidden;
+}
+.selectDocument .grid_view .file_info {
+  width: 82%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  overflow: hidden;
+  background-color: #F9F9F9;
+  border-top: 1px solid #D9D9D9;
+}
+.selectDocument .grid_view .file_info .file_name {
+  font-size: 13px;
+  margin: 5px auto;
+}
+.selectDocument .grid_view .file_info .file_pages {
+  display: none;
+}
+.selectDocument .grid_view .file_ext {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  overflow: hidden;
+  background-color: #F9F9F9;
+  border-top: 1px solid #D9D9D9;
+}
+.selectDocument .grid_view .file_ext img {
+  width: 14px;
+  margin: 5px;
+}
+
+
+.selectDocument.file-droppable {
+  background-color: rgba(215, 229, 251, 0.75) !important;
+  transition: none;
+}
+.selectDocument.file-droppable * {
+  background-color: transparent !important;
+  transition: none;
+}

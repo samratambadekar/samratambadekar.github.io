@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="42px" viewBox="0 0 32 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>DOC Icon (S)</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,1.99749218 C0,0.894307712 0.895899075,0 1.99905799,0 L26.0267334,0 L32,6.01190186 L32,40.0009538 C32,41.1049965 31.1107383,42 29.9982567,42 L2.00174332,42 C0.89621101,42 0,41.1033397 0,40.0025078 L0,1.99749218 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="32" height="42" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Version-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.4-add-documents-progress" transform="translate(-305.000000, -275.000000)">
+            <g id="Group-Copy" transform="translate(275.000000, 258.000000)">
+                <g id="Sales-Order">
+                    <g id="Group-2" transform="translate(30.000000, 17.000000)">
+                        <g id="DOC-Icon-(S)">
+                            <use id="Rectangle-504-Copy-4" stroke="#C3C3C3" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                            <path d="M25,-1.64395225e-16 L25,4.52784309 C25,5.62767198 25.9006571,6.51925945 26.9962923,6.51925945 L31.477417,6.51925945" id="Path-6896-Copy-4" stroke="#C3C3C3"></path>
+                            <path d="M22.0691687,24.3651147 C22.0176419,24.1634674 21.80386,24 21.6031664,24 L20.875,24 L20.1468336,24 C19.9409944,24 19.7308285,24.1694534 19.6808313,24.3651147 L18.6340483,28.4616391 L17.5872654,24.3651147 C17.5357385,24.1634674 17.3225907,24 17.1169766,24 L16,24 L17.5331772,30 L18.6340483,30 L19.3622147,30 C19.5680539,30 19.7782198,29.8305466 19.8282171,29.6348853 L20.875,25.5383609 L21.9217829,29.6348853 C21.9733098,29.8365326 22.1870916,30 22.3877853,30 L23.1159517,30 L24.2168228,30 L25.75,24 L24.6330234,24 C24.4248169,24 24.2127319,24.1694534 24.1627346,24.3651147 L23.1159517,28.4616391 L22.0691687,24.3651147 L22.0691687,24.3651147 Z" id="Shape" fill="#00AEEF" fill-rule="nonzero"></path>
+                            <path d="M5.5,36.5 L26.5,36.5" id="Line" stroke="#C3C3C3" stroke-linecap="round"></path>
+                            <path d="M5.5,32.5 L26.5,32.5" id="Line-Copy-13" stroke="#C3C3C3" stroke-linecap="round"></path>
+                            <path d="M5.5,28.5 L13.59,28.5" id="Line-Copy-14" stroke="#C3C3C3" stroke-linecap="round"></path>
+                            <path d="M5.5,24.5 L13.59,24.5" id="Line-Copy-15" stroke="#C3C3C3" stroke-linecap="round"></path>
+                            <path d="M5.5,20.5 L26.5,20.5" id="Line-Copy-16" stroke="#C3C3C3" stroke-linecap="round"></path>
+                            <path d="M5.5,16.5 L26.5,16.5" id="Line-Copy-17" stroke="#C3C3C3" stroke-linecap="round"></path>
+                            <path d="M5.5,12.5 L20.5,12.5" id="Line-Copy-18" stroke="#C3C3C3" stroke-linecap="round"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

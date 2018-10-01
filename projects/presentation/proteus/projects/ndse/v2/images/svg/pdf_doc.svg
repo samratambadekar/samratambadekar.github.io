@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="42px" viewBox="0 0 32 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>PDF Icon (S)</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,1.99749218 C0,0.894307712 0.895899075,0 1.99905799,0 L26.0267334,0 L32,6.01190186 L32,40.0009538 C32,41.1049965 31.1107383,42 29.9982567,42 L2.00174332,42 C0.89621101,42 0,41.1033397 0,40.0025078 L0,1.99749218 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="32" height="42" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Version-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.4-add-documents-progress" transform="translate(-305.000000, -188.000000)">
+            <g id="Group" transform="translate(275.000000, 171.000000)">
+                <g id="Sales-Order">
+                    <g id="PDF-Icon-(S)" transform="translate(30.000000, 17.000000)">
+                        <use id="Rectangle-504-Copy-3" stroke="#C3C3C3" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                        <path d="M25,-1.64395225e-16 L25,4.52784309 C25,5.62767198 25.9006571,6.51925945 26.9962923,6.51925945 L31.477417,6.51925945" id="Path-6896-Copy-3" stroke="#C3C3C3"></path>
+                        <path d="M15.0155432,18 C17.4141401,17.9990415 14.7861952,24.1902889 13.5123587,26.5070941 C12.2385221,28.8229408 10.4295404,32.6628753 9.24362052,31.90179 C8.05770066,31.139746 11.3928016,28.1174511 15.1053711,27.3285679 C18.8179405,26.5396847 23.2978699,26.0862925 22.9844277,27.5749142 C22.67003,29.0625773 17.8651911,27.4138785 15.2238675,22.6757865 C15.2238675,22.6757865 12.6169462,18.0009585 15.0155432,18 Z" id="Imported-Layers" stroke="#F47C7C"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

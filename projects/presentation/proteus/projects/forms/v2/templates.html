@@ -1,0 +1,725 @@
+<html ng-app="dsApp" id="ng-app" class="js flexbox">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+
+  <title ng-bind="title" class="ng-binding">Templates | DocuSign</title>
+
+  <link rel="icon" type="image/x-icon" href="https://docucdn-a.akamaihd.net/olive/17.1.0/img/new_favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="https://docucdn-a.akamaihd.net/olive/17.1.0/css/olive.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://docucdn-a.akamaihd.net/olive/17.1.0/css/martini.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://docucdn-a.akamaihd.net/olive/17.1.0/css/tagger.min.css"/>
+  <link href="css/style_templates.css" rel="stylesheet" type="text/css" />
+  <link href="css/style_modal.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-with-addons.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="js/slick.min.js"></script>
+</head>
+<body class="lt-960 lt-1024">
+  <nav id="topNav" class="site-header"></nav>
+  <script type="text/babel" src="js/common/TopNavBig.jsx"></script>
+  <div ui-view="" class="ng-scope">
+    <div class="site-content ng-scope">
+      <div class="site-container loading ng-scope" ui-view="">
+        <div class="site-sidebar ng-isolate-scope">
+          <div class="sidebar_group">
+            <templates-new-actions-button class="ng-isolate-scope">
+              <div class="sidebar_item ng-scope">
+                <button class="btn btn-main btn-block btn-lg ng-binding new_doc" type="button" data-qa="templates-new">New</button>
+                <div id="menuNew" class="menu invisible" style="min-width: 172px;">
+                  <ul role="menu" aria-labelledby="New">
+                    <li role="menuitem"><a class="item ng-binding" data-qa="create-template">Create Template</a></li>
+                    <li role="menuitem">
+                      <label class="item ng-binding" data-qa="upload-template">Upload Template <input type="file" data-qa="upload-file-input" nv-file-select="" uploader="templateUploadCtrl.templateUploader" ng-hide="true" accept=".zip,.json,.xml" onclick="this.value = null" class="ng-hide hide"/>
+                      </label>
+                    </li>
+                    <li role="menuitem"><a class="item ng-binding new_guided_modal" data-qa="create-template">Create Guided Form</a></li>
+                    <li role="menuitem"><a class="item ng-binding" data-qa="create-a-powerform">Create PowerForm</a></li>
+                  </ul>
+                </div>
+              </div>
+            </templates-new-actions-button>
+          </div>
+          <div class="sidebar_group">
+            <templates-folders-tree class="ng-isolate-scope">
+              <div class="sidebar_item">
+                <h4 class="sidebar_title">
+                  <span class="ng-binding">Folders</span>
+                  <a class="sidebarTitle_action" data-qa="menu-new-folder"><span class="icon icon-add"></span></a>
+                </h4>
+                <div class="tree tree-sidebar" data-qa="folderList">
+                  <ul class="tree_list">
+                    <templates-folders-root-item class="ng-isolate-scope">
+                      <li class="ng-scope"><a class="tree_item ui-droppable tree_item-isActive">
+                        <span class="tree_itemText">
+                          <span class="tree_itemIcon icon-folder"></span>
+                          <span class="ng-binding">My Templates</span>
+                        </span>
+                      </a>
+                    </li>
+                  </templates-folders-root-item>
+                  <templates-folders-deleted-item class="ng-isolate-scope">
+                    <li>
+                      <a class="tree_item">
+                        <span class="tree_itemText" data-qa="deleted-folder">
+                          <span class="tree_itemIcon icon-trash"></span>
+                          <span class="ng-binding">Deleted</span>
+                        </span>
+                      </a>
+                    </li>
+                  </templates-folders-deleted-item>
+                </ul>
+              </div>
+            </div>
+          </templates-folders-tree>
+          <templates-shared-folders-tree class="ng-isolate-scope">
+            <div class="sidebar_item">
+              <div class="tree tree-sidebar" data-qa="filter-folder-type-shared">
+                <ul class="tree_list">
+                  <li>
+                    <a class="tree_item">
+                      <span class="tree_itemText">
+                        <span class="tree_itemIcon icon-folder"></span>
+                        <span class="ng-binding">Shared Templates</span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </templates-shared-folders-tree>
+        </div>
+      </div>
+
+        <div class="site-main ng-isolate-scope">
+          <templates-list-view class="ng-isolate-scope">
+            <div ng-switch="$props.empty">
+              <div>
+                <div class="listHeaderWrap cheshireContainer">
+                  <div class="listHeader">
+                    <div>
+                      <templates-header class="ng-scope ng-isolate-scope">
+                        <div class="listHeader_titleRow fgrid">
+                          <div class="fgrid_cell">
+                            <h1 class="listHeader_heading">
+                              <span ng-switch-default="" class="ng-scope"><span data-qa="powerform-name-title" class="ng-binding">My Templates</span></span>
+                            </h1>
+                          </div>
+                          <div class="fgrid_cell fgrid_cell-auto">
+                            <templates-filters-input class="ng-isolate-scope">
+                              <form class="u-inline-block ng-pristine ng-valid">
+                                <span class="cheshire_visibleContent u-inline-block">
+                                  <span class="listHeader_search">
+                                    <div class="form_item-iconLeft form_item-iconRight"><span class="icon icon-search"></span><input class="input-text ng-pristine ng-untouched ng-valid" data-qa="input-search" placeholder="Search All Templates"><button type="button" class="button-icon hide"><span class="icon icon-times"></span></button></div>
+                                  </span>
+                                  <button class="btn btn-minor" type="button" data-qa="filter-menu-button"><span class="icon icon-filter"></span> <span class="ng-binding">Filters</span></button>
+                                </span>
+                                <div id="templatesFilter" class="cheshire cheshire-topRight cheshire-off">
+                                  <div class="cheshire_body">
+                                    <div class="cheshire_placeholder"></div>
+                                    <div>
+                                      <div class="form-group ng-isolate-scope" name="Date">
+                                        <label class="label ng-binding" for="button-date">Date</label><button class="btn btn-select btn-trigger ng-binding" type="button" id="button-date" data-qa="button-filter-date" olive-position="below left" olive-menu-trigger="menu-date">Last 6 Months</button>
+                                        <div class="menu invisible select-menu" id="menu-date">
+                                          <ul role="menu" aria-labelledby="Last 6 Months">
+                                            <li class="ng-scope" role="menuitem"><a class="item ng-binding" data-qa="filter-date-all">All</a></li>
+                                            <li class="ng-scope" role="menuitem"><a class="item ng-binding" data-qa="filter-date-last-12-months">Last 12 Months</a></li>
+                                            <li class="ng-scope" role="menuitem"><a class="item ng-binding on" data-qa="filter-date-last-6-months">Last 6 Months</a></li>
+                                            <li class="ng-scope" role="menuitem"><a class="item ng-binding" data-qa="filter-date-last-30-days">Last 30 Days</a></li>
+                                            <li class="ng-scope" role="menuitem"><a class="item ng-binding" data-qa="filter-date-custom">Custom</a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="cheshire_footer">
+                                    <div class="fgrid">
+                                      <div class="fgrid_cell"><button type="submit" class="btn btn-primary ng-binding" data-qa="filter-menu-apply">Apply</button> <button type="reset" class="btn btn-minor ng-binding" data-qa="filter-reset">Reset</button></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                            </templates-filters-input>
+                          </div>
+                        </div>
+                      </templates-header>
+                      <templates-filters-list class="ng-isolate-scope">
+                        <div class="listHeader_filtersRow ng-scope">
+                          <strong class="ng-binding">Filtered by:</strong>
+                          <span class="ng-scope">
+                            <span class="ng-binding">Date (Last 6 Months)</span>
+                          </span>
+                          <span class="listHeader_filtersRowAction ng-scope"><a data-qa="edit-filter-templates-link" class="ng-binding ng-isolate-scope">Edit</a></span>
+                        </div>
+                      </templates-filters-list>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <!-- <templates-empty-list ng-switch-when="true" class="ng-scope ng-isolate-scope">
+                  <div class="emptyState">
+                    <div ng-switch-when="range" class="ng-scope">
+                      <span class="emptyState_icon icon-documents"></span>
+                      <div class="emptyState_text" data-qa="empty-state-range-no-results" data-callout="templates_use">
+                        <span ng-switch-when="six_months_ago" class="ng-binding ng-scope">No activity in the last 6 months.</span>
+                      </div>
+                      <a class="btn btn-secondary btn-md ng-binding" data-qa="empty-state-load-all">Load all</a>
+                    </div>
+                  </div>
+                </templates-empty-list> -->
+                <div class="grid">
+                  <div ng-show="searchingForTemplates" class="text-center hide">
+                    <br/>
+                    <br/>
+                    <br/>
+                    <div class="spinner-circle spinner-sm"></div>
+                  </div>
+                  <table class="list-tbl rtbl template-table">
+                    <thead>
+                      <th></th>
+                      <th>Template Name</th>
+                      <th>PowerForm</th>
+                      <th>Guided Form</th>
+                      <th>Last Activity</th>
+                      <th></th>
+                    </thead>
+                    <tbody>
+                      <tr class="click-row ng-scope ui-draggable" data-qa="template-list-row">
+                        <td class="column-check pad-cell rtd">
+                          <span class="cb cb-noText">
+                            <input class="cb_input" type="checkbox" data-qa="input-select-document"/>
+                            <label class="cb_label ng-binding" data-qa="label-select-document">Select</label>
+                          </span>
+                        </td>
+                        <td class="column-name ellipsis click-cell rtd" data-qa="link-document-details">
+                          <span class="line-1 ng-binding no-description ellipsis" data-qa="detail-document-email-subject">I-9</span>
+                          <span ng-if="!template.isSender" class="line-2 ng-binding ng-scope" data-qa="detail-document-sender"></span>
+                        </td>
+                        <td class="power_form_status active" data-qa="link-document-details"><i class="icon icon-circle"></i> <span class="power_form_status_text"></span></td>
+                        <td class="guided_status guided_status_i9 hidden" data-qa="link-document-details"><i class="icon icon-circle"></i> <span class="guided_status_text"></span></td>
+                        <td class="column-status click-cell rtd align-middle" data-qa="link-document-details">
+                          <span ng-switch="checkLastUpdate(template)" data-qa="detail-sent-time" class="line-2">
+                            <span ng-switch-default="" class="ng-binding ng-scope">Last used on 6/7/2016</span>
+                          </span>
+                        </td>
+                        <td class="column-action pad-cell rtd align-middle" data-qa="status-based-action-buttons">
+                          <div class="use_button">
+                            <a class="btn btn-primary ng-binding ng-scope" data-qa="status-action-button-sign"><div>Use</div></a>
+                            <a id="i9Button" class="btn btn-primary btn-trigger" callout-pos="above right"></a>
+                          </div>
+                          <div class="menu menu-use invisible">
+                            <ul role="menu">
+                              <li role="menuitem">
+                                <a class="item ng-binding" data-qa="send-a-document">Edit Template</a>
+                              </li>
+                              <li role="menuitem">
+                                <a class="item ng-binding" href="create_form.html" data-qa="create-a-powerform">Create Guided Form</a>
+                              </li>
+                              <li role="menuitem">
+                                <a class="item ng-binding" data-qa="create-a-powerform">Create PowerForm</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="click-row ng-scope ui-draggable" data-qa="template-list-row">
+                        <td class="column-check pad-cell rtd">
+                          <span class="cb cb-noText">
+                            <input class="cb_input" type="checkbox" data-qa="input-select-document"/>
+                            <label class="cb_label ng-binding" data-qa="label-select-document">Select</label>
+                          </span>
+                        </td>
+                        <td class="column-name ellipsis click-cell rtd" data-qa="link-document-details">
+                          <span class="line-1 ng-binding no-description ellipsis" data-qa="detail-document-email-subject">Lease Agreement 34 Alpine Rd.</span>
+                          <span ng-if="!template.isSender" class="line-2 ng-binding ng-scope" data-qa="detail-document-sender"></span>
+                        </td>
+                        <td class="power_form_status active" data-qa="link-document-details"><i class="icon icon-circle"></i> <span class="power_form_status_text"></span></td>
+                        <td class="guided_status hidden" data-qa="link-document-details"><i class="icon icon-circle"></i> <span class="guided_status_text"></span></td>
+                        <td class="column-status click-cell rtd align-middle" data-qa="link-document-details">
+                          <span ng-switch="checkLastUpdate(template)" data-qa="detail-sent-time" class="line-2">
+                            <span ng-switch-default="" class="ng-binding ng-scope">Last used on 6/7/2016</span>
+                          </span>
+                        </td>
+                        <td class="column-action pad-cell rtd align-middle" data-qa="status-based-action-buttons">
+                          <div class="use_button">
+                            <a class="btn btn-primary ng-binding ng-scope" data-qa="status-action-button-sign"><div>Use</div></a>
+                            <a class="btn btn-primary btn-trigger"></a>
+                          </div>
+                          <div class="menu menu-use invisible">
+                            <ul role="menu">
+                              <li role="menuitem">
+                                <a class="item ng-binding" data-qa="send-a-document">Edit Template</a>
+                              </li>
+                              <li role="menuitem">
+                                <a class="item ng-binding" data-qa="create-a-powerform">Create Guided Form</a>
+                              </li>
+                              <li role="menuitem">
+                                <a class="item ng-binding" data-qa="create-a-powerform">Create PowerForm</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="click-row ng-scope ui-draggable" data-qa="template-list-row">
+                        <td class="column-check pad-cell rtd">
+                          <span class="cb cb-noText">
+                            <input class="cb_input" type="checkbox" data-qa="input-select-document"/>
+                            <label class="cb_label ng-binding" data-qa="label-select-document">Select</label>
+                          </span>
+                        </td>
+                        <td class="column-name ellipsis click-cell rtd" data-qa="link-document-details">
+                          <span class="line-1 ng-binding no-description ellipsis" data-qa="detail-document-email-subject">Agreement</span>
+                          <span ng-if="!template.isSender" class="line-2 ng-binding ng-scope" data-qa="detail-document-sender"></span>
+                        </td>
+                        <td class="power_form_status" data-qa="link-document-details"><i class="icon icon-circle"></i> <span class="power_form_status_text"></span></td>
+                        <td class="guided_status hidden" data-qa="link-document-details"><i class="icon icon-circle"></i> <span class="guided_status_text"></span></td>
+                        <td class="column-status click-cell rtd align-middle" data-qa="link-document-details">
+                          <span ng-switch="checkLastUpdate(template)" data-qa="detail-sent-time" class="line-2">
+                            <span ng-switch-default="" class="ng-binding ng-scope">Last used on 6/7/2016</span>
+                          </span>
+                        </td>
+                        <td class="column-action pad-cell rtd align-middle" data-qa="status-based-action-buttons">
+                          <div class="use_button">
+                            <a class="btn btn-primary ng-binding ng-scope" data-qa="status-action-button-sign"><div>Use</div></a>
+                            <a class="btn btn-primary btn-trigger"></a>
+                          </div>
+                          <div class="menu menu-use invisible">
+                            <ul role="menu">
+                              <li role="menuitem">
+                                <a class="item ng-binding" data-qa="send-a-document">Edit Template</a>
+                              </li>
+                              <li role="menuitem">
+                                <a class="item ng-binding" data-qa="create-a-powerform">Create Guided Form</a>
+                              </li>
+                              <li role="menuitem">
+                                <a class="item ng-binding" data-qa="create-a-powerform">Create PowerForm</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </templates-list-view>
+          </div>
+        <!-- <script type="text/ng-template" id="delete-a-template" class="ng-scope">
+        </script> -->
+        <script type="text/ng-template" id="template-dragging-tooltip" class="ng-scope">
+          <span class="text-strong" ng-if="true"
+            ng-pluralize
+            count="getLength(selectedTemplates)"
+            when="{'one': ('Moving 1 template' | dsTranslate),
+                'other': ('Moving {} templates' | dsTranslate)}">
+          </span>
+        </script>
+      </div>
+      <div class="drawer drawer-help left closed" style="width: 0px;">
+        <div class="drawer-wrapper">
+          <div class="drawer-content"></div>
+        </div>
+      </div>
+    </div>
+    <div class="site_footer ng-scope">
+      <div class="site_container">
+        <div class="footer_left"></div>
+        <div class="footer_main">
+          <ul class="footer-links">
+            <li class="ng-scope">
+              <a class="footer-links_item btn-triggeR ng-binding" data-qa="language-switcher"><span class="icon icon-globe"></span> English</a>
+            </li>
+            <li>
+              <span class="footer-links_item ng-binding" data-qa="powered-by">Powered by DocuSign</span>
+            </li>
+            <li>
+              <a target="_blank" class="footer-links_item ng-scope ng-binding" data-qa="footer-contact-us">Contact Us</a>
+            </li>
+            <li>
+              <a target="_blank" class="footer-links_item ng-binding" data-qa="footer-terms-of-use">Terms of Use</a>
+            </li>
+            <li>
+              <a target="_blank" class="footer-links_item ng-binding" data-qa="footer-privacy">Privacy</a>
+            </li>
+            <li>
+              <a target="_blank" class="footer-links_item ng-binding" data-qa="footer-intellectual-property">Intellectual Property</a>
+            </li>
+            <li>
+              <span class="footer-links_item ng-binding" data-qa="footer-copyright">Copyright © 2016 DocuSign, Inc. All rights reserved.</span>
+            </li>
+          </ul>
+          <div id="menuLanguages" class="menu select-menu invisible" data-qa="menuLanguageOptions">
+            <ul role="menu" aria-labelledby=" English">
+              <li class="item ng-binding ng-scope on" data-qa="language-option-en" role="menuitem">English</li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-de" role="menuitem">Deutsch</li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-es" role="menuitem">Español</li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-fr" role="menuitem">Français</li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-it" role="menuitem">Italiano</li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-nl" role="menuitem">Nederlandse</li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-pt_BR" role="menuitem">Português (Brasil)</li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-pt" role="menuitem">Português (Portugal)</li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-ru" role="menuitem">Русский</li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-zh_TW" role="menuitem">中文(台灣)</li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-zh_CN" role="menuitem">中文(简体)</li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-ja" role="menuitem">日本語</li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-ko" role="menuitem">한국어</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_right"></div>
+      </div>
+    </div>
+  </div>
+  <div class="ds-modal-background invisible">
+    <div class="modal modal-new modal-sm modal-visible ng-scope modal-intro hide_modal" role="dialog">
+      <div class="step-4">
+        <div class="images">
+          <div class="modal-intro-image">
+            <img src="images/intro_image.svg"/>
+          </div>
+        </div>
+        <div class="modal_content">
+          <h1 class="modal_title">Add a Guided Form to any Template</h1>
+          <p>Help your signers fill out your templates faster with a step-by-step experience on any device.</p>
+          <button type="submit" class="btn btn-primary btn-lg get_started btn-cancel" callout-trigger="true">Get Started</button>
+        </div>
+      </div>
+      <button class="modal_close icon icon-times"></button>
+    </div>
+    <!-- <div class="modal modal-new modal-sm modal-visible ng-scope modal-intro hide_modal" role="dialog">
+      <div class="slick-div">
+        <div class="nav_arrow left_arrow hide"></div>
+        <div>
+          <div class="images">
+            <div class="modal-intro-image image-1">
+              <img src="images/svg/modal_intro1-1.svg"/>
+              <img class="mini-scanner-line" src="images/svg/mini-scanner-line.svg"/>
+            </div>
+            <div class="modal-intro-image image-2">
+              <img src="images/svg/modal_intro1-2.svg"/>
+            </div>
+          </div>
+          <div class="modal_content">
+            <h1 class="modal_title">Create Guided Form for any Template</h1>
+            <p>Help your signers fill out your templates faster with a step-by-step experience on any device.</p>
+            <button type="submit" class="btn btn-primary btn-lg get_started btn-cancel" callout-trigger="true">Get Started</button>
+          </div>
+          <div class="swipe-dots">
+            <ul>
+              <li><button class="step-1 selected"></button></li>
+              <li><button class="step-2"></button></li>
+              <li><button class="step-3"></button></li>
+              <li><button class="step-4"></button></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav_arrow right_arrow"></div>
+      </div>
+      <button class="modal_close icon icon-times"></button>
+    </div> -->
+
+    <div class="modal modal-new modal-md modal-visible modal-guided-forms hide_modal">
+        <div class="modal_header">
+          <h1 class="modal_title">
+            Select a Template
+          </h1>
+        </div>
+        <div class="modal_toolbar">
+          <div class="toolbar">
+            <div class="">
+              <span class="">
+                <div class="form_item-iconLeft listHeader_search">
+                  <span class="icon icon-search"></span>
+                  <input type="text" class="input-text" placeholder="Search Templates">
+                </div>
+                <button type="button" class="btn btn-minor right">
+                  <span class="icon icon-filter"></span>
+                  <span>Filter</span>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="modal_content modal_content-list">
+          <table class="tbl">
+            <tbody>
+              <tr class="row-clickable ng-scope">
+                <!-- <td class="column-check pad-cell rtd">
+                  <span class="cb cb-noText">
+                    <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="ab52647b-eb16-5608-86d2-6128b807e6e2">
+                    <label class="cb_label" for="ab52647b-eb16-5608-86d2-6128b807e6e2">Select</label>
+                  </span>
+                </td> -->
+                <td class="template_title">
+                  <span class="ng-binding">I-9</span>
+                </td>
+                <td class="last_used">
+                  <span class="ng-binding">Last used on 7/5/2016</span>
+                </td>
+              </tr>
+              <tr class="row-clickable ng-scope">
+                <td class="template_title">
+                  <span class="ng-binding">Lease Agreement 9th Ave.</span>
+                </td>
+                <td class="last_used">
+                  <span class="ng-binding">Last used on 7/5/2016</span>
+                </td>
+              </tr>
+              <tr class="row-clickable ng-scope">
+                <td class="template_title">
+                  <span class="ng-binding">Lease Agreement 123 Street</span>
+                </td>
+                <td class="last_used">
+                  <span class="ng-binding">Last used on 7/5/2016</span>
+                </td>
+              </tr>
+              <tr class="row-clickable ng-scope">
+                <td class="template_title">
+                  <span class="ng-binding">Promotion Transfer</span>
+                </td>
+                <td class="last_used">
+                  <span class="ng-binding">Last used on 7/5/2016</span>
+                </td>
+              </tr>
+              <tr class="row-clickable ng-scope">
+                <td class="template_title">
+                  <span class="ng-binding">Global NDA</span>
+                </td>
+                <td class="last_used">
+                  <span class="ng-binding">Last used on 7/5/2016</span>
+                </td>
+              </tr>
+              <tr class="row-clickable ng-scope">
+                <td class="template_title">
+                  <span class="ng-binding">Partner Referall Agreement</span>
+                </td>
+                <td class="last_used">
+                  <span class="ng-binding">Last used on 7/5/2016</span>
+                </td>
+              </tr>
+              <tr class="row-clickable ng-scope">
+                <td class="template_title">
+                  <span class="ng-binding">Missing Receipt</span>
+                </td>
+                <td class="last_used">
+                  <span class="ng-binding">Last used on 7/5/2016</span>
+                </td>
+              </tr>
+              <tr class="row-clickable ng-scope">
+                <td class="template_title">
+                  <span class="ng-binding">Pension Enrollment</span>
+                </td>
+                <td class="last_used">
+                  <span class="ng-binding">Last used on 7/5/2016</span>
+                </td>
+              </tr>
+              <tr class="row-clickable ng-scope">
+                <td class="template_title">
+                  <span class="ng-binding">Company Travel and Expense Report</span>
+                </td>
+                <td class="last_used">
+                  <span class="ng-binding">Last used on 7/5/2016</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal_footer">
+          <a href="create_form.html" class="btn btn-lg btn-cancel btn-primary">Select</a>
+          <button class="btn btn-lg btn-cancel btn-minor">Cancel</button>
+        </div>
+        <button class="modal_close icon icon-times"></button>
+    </div>
+    <!-- <div class="modal modal-new modal-xl modal-visible ng-scope modal-guided-forms hide_modal" role="dialog">
+      <div class="modal_header">
+          <h1 class="modal_title">
+              Select a Template to use as a Guided Form
+          </h1>
+      </div>
+      <div class="modal_content file_explorer">
+        <div class="folders">
+          <div class="section">
+            <h4>Upload</h4>
+            <div class="ellipsis"><i class="icon icon-upload-content"></i> My Computer</div>
+          </div>
+          <div class="section">
+            <h4>Docusign</h4>
+            <div class="ellipsis selected"><i class="icon icon-templates"></i> Templates</div>
+            <div class="ellipsis"><i class="icon icon-home"></i> 123 Room St San Francisco CA</div>
+          </div>
+          <div class="section">
+            <h4>Cloud Storage</h4>
+            <div class="ellipsis"><i class="icon icon-logo-box"></i> Box</div>
+            <div class="ellipsis"><i class="icon icon-logo-dropbox"></i> Dropbox</div>
+            <div class="ellipsis"><i class="icon icon-logo-drive"></i> Google Drive</div>
+          </div>
+        </div>
+        <div class="files">
+          <div class="modal_description">
+            All Files
+          </div>
+            <table class="tbl">
+              <thead></thead>
+              <tbody>
+                <tr class="row-clickable ng-scope">
+                  <td class="column-check pad-cell rtd">
+                  </td>
+                  <td>
+                    <i class="icon icon-folder"></i> <span class="ng-binding">Shared Templates</span>
+                  </td>
+                </tr>
+                <tr class="row-clickable ng-scope">
+                  <td class="column-check pad-cell rtd">
+                  </td>
+                  <td>
+                    <i class="icon icon-folder"></i> <span class="ng-binding">Personal</span>
+                  </td>
+                </tr>
+                <tr class="row-clickable ng-scope">
+                  <td class="column-check pad-cell rtd">
+                    <span class="cb cb-noText">
+                      <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="f4657126-de48-5644-a1c2-a31812eef581">
+                      <label class="cb_label" for="f4657126-de48-5644-a1c2-a31812eef581">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <i class="icon icon-document"></i> <span class="ng-binding">I-9.pdf</span>
+                  </td>
+                </tr>
+                <tr class="row-clickable ng-scope">
+                  <td class="column-check pad-cell rtd">
+                    <span class="cb cb-noText">
+                      <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="968c6220-677a-5ade-ba0d-f9d771be0be6">
+                      <label class="cb_label" for="968c6220-677a-5ade-ba0d-f9d771be0be6">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.pdf</span>
+                  </td>
+                </tr>
+                <tr class="row-clickable ng-scope">
+                <td class="column-check pad-cell rtd">
+                  <span class="cb cb-noText">
+                    <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="e063273b-f719-52f5-8d57-720708278135">
+                    <label class="cb_label" for="e063273b-f719-52f5-8d57-720708278135">Select</label>
+                  </span>
+                </td>
+                <td>
+                  <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.pdf</span>
+                </td>
+              </tr>
+              <tr class="row-clickable ng-scope">
+                <td class="column-check pad-cell rtd">
+                  <span class="cb cb-noText">
+                    <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="ba9bc18f-457b-5c20-95cd-c77c7baac623">
+                    <label class="cb_label" for="ba9bc18f-457b-5c20-95cd-c77c7baac623">Select</label>
+                  </span>
+                </td>
+                <td>
+                  <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.pdf</span>
+                </td>
+              </tr>
+              <tr class="row-clickable ng-scope">
+                <td class="column-check pad-cell rtd">
+                  <span class="cb cb-noText">
+                    <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="5ea7e7d1-ab4a-5112-8aa3-7aad9bd86f82">
+                    <label class="cb_label" for="5ea7e7d1-ab4a-5112-8aa3-7aad9bd86f82">Select</label>
+                  </span>
+                </td>
+                <td>
+                  <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.jpg</span>
+                </td>
+              </tr>
+              <tr class="row-clickable ng-scope">
+                <td class="column-check pad-cell rtd">
+                  <span class="cb cb-noText">
+                    <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="45f1a084-3117-5fff-8c34-892d1071d9c9">
+                    <label class="cb_label" for="45f1a084-3117-5fff-8c34-892d1071d9c9">Select</label>
+                  </span>
+                </td>
+                <td>
+                  <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.docx</span>
+                </td>
+              </tr>
+              <tr class="row-clickable ng-scope">
+                <td class="column-check pad-cell rtd">
+                  <span class="cb cb-noText">
+                    <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="ac6dbeb1-27a6-583f-a528-2ed7cb5fde91">
+                    <label class="cb_label" for="ac6dbeb1-27a6-583f-a528-2ed7cb5fde91">Select</label>
+                  </span>
+                </td>
+                <td>
+                  <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.png</span>
+                </td>
+              </tr>
+              <tr class="row-clickable ng-scope">
+                <td class="column-check pad-cell rtd">
+                  <span class="cb cb-noText">
+                    <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="9a800bfe-7644-5d4f-aad7-1d71a1837ddb">
+                    <label class="cb_label" for="9a800bfe-7644-5d4f-aad7-1d71a1837ddb">Select</label>
+                  </span>
+                </td>
+                <td>
+                  <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.pdf</span>
+                </td>
+              </tr>
+              <tr class="row-clickable ng-scope">
+                <td class="column-check pad-cell rtd">
+                  <span class="cb cb-noText">
+                    <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="93d43daf-385c-5440-90a6-e8f27155b1bf">
+                    <label class="cb_label" for="93d43daf-385c-5440-90a6-e8f27155b1bf">Select</label>
+                  </span>
+                </td>
+                <td>
+                  <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.pdf</span>
+                </td>
+              </tr>
+              <tr class="row-clickable ng-scope">
+                <td class="column-check pad-cell rtd">
+                  <span class="cb cb-noText">
+                    <input type="checkbox" class="cb_input ng-pristine ng-untouched ng-valid ng-empty" id="474c08a9-4b70-5374-9ba8-280f909c5947">
+                    <label class="cb_label" for="474c08a9-4b70-5374-9ba8-280f909c5947">Select</label>
+                  </span>
+                </td>
+                <td>
+                  <i class="icon icon-document"></i> <span class="ng-binding">Not I-9.pdf</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal_footer">
+        <a href="create_form.html" class="btn btn-lg btn-primary" olive-modal-complete="">Add Document</a>
+        <button class="btn btn-lg btn-minor btn-cancel" olive-modal-escape="">Cancel</button>
+      </div>
+      <button class="modal_close icon icon-times"></button>
+    </div> -->
+  </div>
+
+  <div class="osm-mask"></div>
+  <div class="messages-global global-notifications msg_form_active hide">
+    <div class="message message-success">
+      <span class="message_icon icon icon-check"></span>
+      <div class="message_content">Form Created Successfully</div>
+      <button class="message_close icon icon-times" olive-message-close=""></button>
+    </div>
+  </div>
+  <div class="tooltip callout steps tip above right hidden" style="top: -205px; left: -442px;">
+    <div class="header">Create Guided Form</div>
+    <i class="icon icon-times"></i>
+    <div class="tooltip-content">Select the <strong>USE</strong> button dropdown and pick <strong>Create Guided Form</strong> to start.</div>
+    <div class="buttonRow">
+      <button class="btn btn-primary">Got It</button>
+      <!-- <span class="stepCount"><span class="stepNum">1</span> / 3</span> -->
+    </div>
+  </div>
+</body>
+<script src="js/script_modals.js"></script>
+<script src="js/script_callouts.js"></script>
+<script src="js/script_templates.js"></script>
+</html>
