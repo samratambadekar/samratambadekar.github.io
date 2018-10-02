@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="20px" viewBox="0 0 11 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M168,1.99079514 C168,0.891309342 168.888549,0 169.991509,0 L176.866405,0 C177.966285,0 178.857914,0.898212381 178.857914,1.99079514 L178.857914,18.0092049 C178.857914,19.1086907 177.969365,20 176.866405,20 L169.991509,20 C168.891629,20 168,19.1017876 168,18.0092049 L168,1.99079514 Z M169.357239,2 L177.500674,2 L177.500674,16 L169.357239,16 L169.357239,2 Z M173.428957,19 C173.981242,19 174.428957,18.5522847 174.428957,18 C174.428957,17.4477153 173.981242,17 173.428957,17 C172.876672,17 172.428957,17.4477153 172.428957,18 C172.428957,18.5522847 172.876672,19 173.428957,19 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="10.8579137" height="20" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Builder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Preview-Desktop-Copy" transform="translate(-771.000000, -17.000000)" stroke-width="2" stroke="#777777" fill="#777777">
+            <g id="modal-xlarge" transform="translate(-23.000000, 0.000000)">
+                <g id="header" transform="translate(23.000000, 0.000000)">
+                    <g id="utility-header">
+                        <g id="Group-6" transform="translate(603.000000, 17.000000)">
+                            <use id="Combined-Shape-Copy" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

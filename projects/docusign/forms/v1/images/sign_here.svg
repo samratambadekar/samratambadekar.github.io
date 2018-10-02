@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="335px" height="24px" viewBox="0 0 335 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Guided-Forms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="question-Sign" transform="translate(-19.000000, -346.000000)">
+            <g id="Group-6" transform="translate(20.000000, 169.000000)">
+                <g id="radio-group" transform="translate(0.000000, 175.000000)">
+                    <g id="Group">
+                        <text id="X" font-family="HelveticaNeue-Light, Helvetica Neue" font-size="24" font-weight="300" line-spacing="19.8" fill="#333333">
+                            <tspan x="0" y="23.2000017">X</tspan>
+                        </text>
+                        <polyline id="Line-Copy" stroke="#999999" stroke-linecap="square" stroke-dasharray="6,2" points="0 25.5 91.6204155 25.5 335 25.5"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

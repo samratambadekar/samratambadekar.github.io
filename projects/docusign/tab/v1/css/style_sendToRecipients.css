@@ -1,0 +1,161 @@
+.sendToRecipients.ndse_page {
+  overflow: auto;
+  position: relative;
+}
+.sendToRecipients.ndse_page .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #F7F7F7;
+}
+.sendToRecipients.ndse_page .head h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #4A4A4A;
+}
+.sendToRecipients.ndse_page > div {
+  margin: auto;
+  padding: 24px;
+  max-width: 1264px;
+}
+
+.sendToRecipients.ndse_page .recipient_message {
+  position: relative;
+  overflow: hidden;
+}
+.sendToRecipients.ndse_page .recipient_message > div {
+  width: 60%;
+}
+.sendToRecipients.ndse_page .message_receivers > div:not(:last-child) {
+  margin-bottom: 10px
+}
+.sendToRecipients.ndse_page > .envelope_details {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35%;
+  height: 100%;
+  padding: 24px 0;
+  background-color: #FFF;
+  overflow: auto;
+  border-left: 1px solid #E9E9E9;
+}
+
+.sendToRecipients .envelope_details .section {
+  padding: 0;
+}
+.sendToRecipients .envelope_section {
+  position: relative;
+  padding: 20px 0;
+}
+.sendToRecipients .envelope_section + .envelope_section {
+  border-top: 1px solid #CCC;
+}
+.sendToRecipients .envelope_section > div:not(:first-child) {
+  margin-top: 15px;
+}
+
+.sendToRecipients .envelope_summary .recipients_summary {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: relative;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.sendToRecipients .envelope_summary .recipients_summary > div:not(:last-child) {
+  margin-right: 8px;
+}
+.sendToRecipients .envelope_summary .recipients_summary .recipient_number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 24px;
+  min-height: 24px;
+  width: 24px;
+  height: 24px;
+  color: #C1C1C1;
+  font-weight: bold;
+  border: 2px solid #C1C1C1;
+  border-radius: 30px;
+}
+
+.sendToRecipients .envelope_summary .recipients_summary .recipient_number.color {
+  color: #4186EC;
+  border: 2px solid #4186EC;
+}
+.sendToRecipients .envelope_summary .recipients_summary .recipient_number .icon {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.sendToRecipients .envelope_options .disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+.sendToRecipients .envelope_options .input-xxs {
+  display: inline-block;
+}
+.sendToRecipients .envelope_options .select-wrap {
+  max-width: 250px;
+}
+
+.sendToRecipients .recipient_message .input-textarea {
+  height: 110px;
+}
+.sendToRecipients .recipient_message .private-message-menu {
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+}
+.sendToRecipients .recipient_message .private-message-menu .menu {
+  left: 0;
+  top: 28px;
+  min-width: 150px;
+  width: 100%;
+}
+.sendToRecipients .private-message-menu .menu .item {
+  display: flex;
+  justify-content: space-between;
+}
+.sendToRecipients .private-message-menu .menu .item .icon {
+  margin: 0;
+}
+
+.sendToRecipients .envelope_summary .envelope_section_name > div {
+  display: inline-block;
+}
+.sendToRecipients .envelope_summary .envelope_section_name > div:not(:first-child) {
+  margin-left: 24px;
+}
+
+.sendToRecipients .nav-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sendToRecipients .tabs-wrap {
+  margin-top: 0;
+}
+
+.sendToRecipients .accordion {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+}
+.sendToRecipients .drawer .drawer-content {
+  margin-bottom: 15px;
+}
+.sendToRecipients .envelope_options .drawer .drawer-content > div {
+  margin-top: 10px;
+}
+
+.sendToRecipients .tabs .tab {
+  padding: 10px;
+  padding-bottom: 5px;
+}
+.sendToRecipients .tabs .tab {
+  border-bottom-width: 2px;
+}

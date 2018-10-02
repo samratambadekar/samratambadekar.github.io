@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <nav class="hide">
+      <div class=""><i class="icon icon-ellipsis-horiz invisible"></i></div>
+      <div class="document-title">I-9 Form</div>
+      <!-- <div class="document-comment" data-feature-code="Comment Message"></div> -->
+      <!-- <div class="document-menu" data-feature-code="Menu Button"><i class="icon icon-ellipsis-horiz"></i></div> -->
+      <div class="menu menu_options hidden">
+        <div class="menu-item hidden edit_form">Edit Form</div>
+        <div class="menu-item feature_unavailable" data-feature-code="Nav Menu Item">Finish Later</div>
+        <div class="menu-item feature_unavailable" data-feature-code="Nav Menu Item">View I-9 PDF</div>
+        <div class="menu-item feature_unavailable" data-feature-code="Nav Menu Item">Print & Sign</div>
+        <div class="menu-item post_finish_menu feature_unavailable" data-feature-code="Nav Menu Item">Help & Support</div>
+        <div class="menu-item feature_unavailable" data-feature-code="Nav Menu Item">More Options</div>
+        <div class="menu-item post_finish_menu hidden feature_unavailable" data-feature-code="Nav Menu Item">About DocuSign</div>
+        <div class="menu-item post_finish_menu hidden feature_unavailable" data-feature-code="Nav Menu Item">View History</div>
+        <div class="menu-item post_finish_menu hidden feature_unavailable" data-feature-code="Nav Menu Item">View Certificate (PDF)</div>
+        <div class="menu-item post_finish_menu hidden feature_unavailable" data-feature-code="Nav Menu Item">View Electronic Signature and Signature Disclosure</div>
+      </div>
+    </nav>
+    <article class="">
+      <div class="pages">
+        <div class="page showing" data-page-num="1" data-page-name="page_start">
+          <div class="logo">
+            <img src="images/acme_logo.svg"/>
+          </div>
+          <div class="welcome_description" data-preview-id="Main Description">
+            Hello Alex, <br/>
+            Acme Inc. requires employers must complete Form I-9 to document verification of identity and employment authorization of each new employee.
+          </div>
+          <div class="center">
+            <img class="profile_avatar" src="images/alex_edwards_pic.png"/>
+            <div class="profile_intro">
+              <br/>
+              <div class="strong">
+                <div>Corey Kimel</div>
+                <div class="">corey.kimel@acme.com</div>
+                <div class="muted">Acme Inc. HR</div>
+              </div>
+            </div>
+            <div class="disclosure_info">
+              By selecting START you are agreeing to the
+              <div class="link_blue disclosure_link" data-feature-code="Disclosure Link">Electronic Records and Signature Disclosure.</div>
+            </div>
+          </div>
+        </div>
+        <div class="page" data-page-num="2" data-page-name="">
+          <div class="question">
+            Employee Info
+          </div>
+          <div class="">
+            Employees must complete and sign this no later than the <strong>first day of employment</strong>, but not before accepting a job offer.
+          </div>
+          <div class="">
+            <div class="form_unit">
+              <label for="" class="label" data-preview-id="firstName">First Name (Given Name)</label>
+              <input id="" type="text" class="input-text disabled" tabindex="" data-field-id="firstName" value="Alex"/>
+            </div>
+            <div class="form_unit">
+              <label for="" class="label" data-preview-id="middleInitial">Middle Initial (optional)</label>
+              <input id="" type="text" class="input-text input-xxs optional_field" tabindex="" data-field-id="middleInitial" maxlength="1" max="1"/>
+            </div>
+            <div class="form_unit">
+              <label for="" class="label" data-preview-id="lastName">Last Name (Family Name)</label>
+              <input id="" type="text" class="input-text disabled" tabindex="" data-field-id="lastName" value="Edwards"/>
+            </div>
+            <div class="form_unit">
+              <label for="" class="label" data-preview-id="otherLastName">Other Last Names Used (optional)</label>
+              <input id="" type="text" class="input-text optional_field" placeholder="" tabindex="" data-field-id="otherLastName"/>
+            </div>
+            <div class="form_unit">
+              <label for="" class="label" data-preview-id="dateOfBirth">Date of Birth</label>
+              <input id="" type="date" class="input-text" placeholder="" tabindex="dateOfBirth" data-field-id="dateOfBirth" max="2000-12-31"/>
+            </div>
+            <div class="form_unit">
+              <label for="" class="label" data-preview-id="emailAddress">Email Address (optional)</label>
+              <input id="" type="email" class="input-text optional_field disabled" placeholder="" tabindex="" data-field-id="emailAddress" value="alex.edwards@gmail.com"/>
+            </div>
+            <div class="form_unit">
+              <label for="" class="label" data-preview-id="phoneNumber">Phone Number (optional)</label>
+              <input id="" type="tel" class="input-text optional_field" placeholder="" tabindex="" data-field-id="phoneNumber"/>
+            </div>
+          </div>
+        </div>
+        <div class="page" data-page-num="3" data-page-name="">
+          <div class="question">
+            Employee Address
+          </div>
+          <div class="">
+            Employees must complete and sign this no later than the <strong>first day of employment</strong>, but not before accepting a job offer.
+          </div>
+          <div class="">
+            <div class="form_unit">
+              <label for="" class="label" data-preview-id="physicalAddress">Address (Street Number and Name)</label>
+              <input id="" type="text" class="input-text" tabindex="" data-field-id="physicalAddress"/>
+            </div>
+            <div class="form_unit">
+              <label for="" class="label" data-preview-id="aptNumber">Apt. Number (optional)</label>
+              <input id="" type="text" class="input-text input-xxs optional_field" tabindex="" data-field-id="aptNumber"/>
+            </div>
+            <div class="form_unit">
+              <label for="" class="label" data-preview-id="residentCity">City or Town</label>
+              <input id="" type="text" class="input-text" tabindex="" data-field-id="residentCity"/>
+            </div>
+            <div class="form_unit">
+              <label for="" class="label" data-preview-id="residentState">State</label>
+              <div class="select-wrap">
+                <select id="" class="input-text" tabindex="" data-field-select-id="residentState">
+                  <option value="-1">-- State --</option>
+                  <option value="AL">Alabama</option>
+                	<option value="AK">Alaska</option>
+                	<option value="AZ">Arizona</option>
+                	<option value="AR">Arkansas</option>
+                	<option value="CA">California</option>
+                	<option value="CO">Colorado</option>
+                	<option value="CT">Connecticut</option>
+                	<option value="DE">Delaware</option>
+                	<option value="DC">District Of Columbia</option>
+                	<option value="FL">Florida</option>
+                	<option value="GA">Georgia</option>
+                	<option value="HI">Hawaii</option>
+                	<option value="ID">Idaho</option>
+                	<option value="IL">Illinois</option>
+                	<option value="IN">Indiana</option>
+                	<option value="IA">Iowa</option>
+                	<option value="KS">Kansas</option>
+                	<option value="KY">Kentucky</option>
+                	<option value="LA">Louisiana</option>
+                	<option value="ME">Maine</option>
+                	<option value="MD">Maryland</option>
+                	<option value="MA">Massachusetts</option>
+                	<option value="MI">Michigan</option>
+                	<option value="MN">Minnesota</option>
+                	<option value="MS">Mississippi</option>
+                	<option value="MO">Missouri</option>
+                	<option value="MT">Montana</option>
+                	<option value="NE">Nebraska</option>
+                	<option value="NV">Nevada</option>
+                	<option value="NH">New Hampshire</option>
+                	<option value="NJ">New Jersey</option>
+                	<option value="NM">New Mexico</option>
+                	<option value="NY">New York</option>
+                	<option value="NC">North Carolina</option>
+                	<option value="ND">North Dakota</option>
+                	<option value="OH">Ohio</option>
+                	<option value="OK">Oklahoma</option>
+                	<option value="OR">Oregon</option>
+                	<option value="PA">Pennsylvania</option>
+                	<option value="RI">Rhode Island</option>
+                	<option value="SC">South Carolina</option>
+                	<option value="SD">South Dakota</option>
+                	<option value="TN">Tennessee</option>
+                	<option value="TX">Texas</option>
+                	<option value="UT">Utah</option>
+                	<option value="VT">Vermont</option>
+                	<option value="VA">Virginia</option>
+                	<option value="WA">Washington</option>
+                	<option value="WV">West Virginia</option>
+                	<option value="WI">Wisconsin</option>
+                	<option value="WY">Wyoming</option>
+                </select>
+              </div>
+            </div>
+            <div class="form_unit">
+              <label for="" class="label" data-preview-id="zipCode">Zip Code</label>
+              <input id="" type="number" class="input-text" placeholder="" tabindex="" data-field-id="zipCode"/>
+            </div>
+          </div>
+        </div>
+        <div class="page" data-page-num="4" data-page-name="">
+          <div class="question">
+            Employee U.S. Social Security Number
+          </div>
+          <div class="">
+            Your employer participates in <span class="link_blue feature_unavailable" data-feature-code="E-Verify Link"><u>E-Verify</u></span> and requires a Social Security Number.
+          </div>
+          <div class="">
+            <div class="form_unit">
+              <label for="" class="label" data-preview-id="SSN">Social Security Number</label>
+              <div class="flex-div">
+                <div><input id="" type="text" class="input-text tab_next input-xs" maxlength="9" tabindex="" data-field-multiple-id="SSN"/></div>
+                <!-- <div>-</div>
+                <div><input id="" type="tel" class="input-text tab_next input-xs" maxlength="2" tabindex="" data-field-multiple-id="SSN"/></div>
+                <div>-</div>
+                <div><input id="" type="tel" class="input-text input-xs" maxlength="4" tabindex="" data-field-multiple-id="SSN"/></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page" data-page-num="5" data-page-name="page_citizenship_status">
+          <div class="question">
+            Citizenship or Immigration Status
+          </div>
+          <div class="">
+            Select one box to attest citizenship or immigration status.
+          </div>
+          <div class="">
+            <ul class="select-options" data-field-option-id="citizenshipStatus">
+              <li class=""><div class="option_num">1. </div><div class="option_info">A citizen of the United States</div></li>
+              <li class="feature_unavailable" data-feature-code="Citizenship Status"><div class="option_num">2. </div><div class="option_info">A noncitizen national of the United States</div></li>
+              <li class="feature_unavailable" data-feature-code="Citizenship Status"><div class="option_num">3. </div><div class="option_info">A lawful permanent resident</div></li>
+              <li class="feature_unavailable" data-feature-code="Citizenship Status"><div class="option_num">4. </div><div class="option_info">An alien authorized to work</div></li>
+            </ul>
+          </div>
+        </div>
+        <div class="page" data-page-num="6" data-page-name="page_employment_auth">
+          <div class="question">
+            Select your document
+          </div>
+          <div class="">
+             Please select your document that establishes both identity and employment authorization.
+          </div>
+          <div class="">
+            <ul class="select-options" data-field-option-id="documentType">
+              <li><div class="option_num">1. </div><div class="option_info" data-preview-id="documentListA">List A (i.e Passport)</div></li>
+              <li class="feature_unavailable" data-feature-code="Document Type"><div class="option_num">2. </div><div class="option_info" data-preview-id="documentListBC">List B & C (i.e. Drivers License and SSN)</div></li>
+              <!-- <li class="feature_unavailable" data-feature-code="Document Type"><div class="option_num">3. </div><div class="option_info">Employment Authorization Document that contains a photograph (Form I-766)</div></li>
+              <li class="feature_unavailable" data-feature-code="Document Type"><div class="option_num">4. </div><div class="option_info">I don't have any of these</div></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="page" data-page-num="7" data-page-name="">
+          <div class="question">
+            Passport Information
+          </div>
+          <div class="">
+            Enter the following information from your passport
+          </div>
+          <div class="">
+            <div class="form_unit">
+              <label for="documentTitle" class="label" data-preview-id="documentTitle">Document Title</label>
+              <input id="documentTitle" type="text" class="input-text" tabindex="" data-field-id="documentTitle"/>
+            </div>
+            <div class="form_unit">
+              <label for="issuingAuth" class="label" data-preview-id="issuingAuthority">Issuing Authority</label>
+              <input id="issuingAuth" type="text" class="input-text" tabindex="" data-field-id="issuingAuthority"/>
+            </div>
+            <div class="form_unit">
+              <label for="docNum" class="label" data-preview-id="documentNumber">Document Number</label>
+              <input id="docNum" type="text" class="input-text" tabindex="" data-field-id="documentNumber"/>
+            </div>
+            <div class="form_unit">
+              <label for="expDate" class="label" data-preview-id="documentExpirationDate">Expiration Date</label>
+              <input id="expDate" type="date" class="input-text" placeholder="" tabindex="" data-field-id="documentExpirationDate"/>
+            </div>
+          </div>
+        </div>
+        <div class="page" data-page-num="8" data-page-name="page_upload_image">
+          <div class="question">
+            A Passport of U.S. or Passport Card
+          </div>
+          <div class="">
+            Upload or take a photo of your passport.
+          </div>
+          <div class="upload_file">
+            <div class="">
+              <img class="upload_img_placeholder" src="images/upload_passport.svg"/>
+              <img class="passport_img hidden" src="images/cam_library/photo1.png"/>
+            </div>
+            <div class="btn btn-secondary upload-image">Upload Image</div>
+          </div>
+        </div>
+        <div class="page" data-page-num="9" data-page-name="review_page" data-page-title="Review I-9 Form">
+          <div class="review_information">
+            <div class="review_page">
+              <i class="icon icon-editpen feature_unavailable" data-feature-code="Edit Icon"></i>
+              <div class="field-name" data-preview-id="firstName">First Name (Given Name)</div>
+              <div class="field-value strong" data-field-id="firstName">Name</div>
+              <div class="field-name" data-preview-id="middleInitial">Middle Initial (optional)</div>
+              <div class="field-value strong" data-field-id="middleInitial">Name</div>
+              <div class="field-name" data-preview-id="lastName">Last Name (Family Name)</div>
+              <div class="field-value strong" data-field-id="lastName">Name</div>
+              <div class="field-name" data-preview-id="otherLastName">Other Last Names Used (if any)</div>
+              <div class="field-value strong" data-field-id="otherLastName">Name</div>
+              <div class="field-name" data-preview-id="dateOfBirth">Date of Birth</div>
+              <div class="field-value strong" data-field-id="dateOfBirth">Name</div>
+              <div class="field-name" data-preview-id="emailAddress">Email Address (optional)</div>
+              <div class="field-value strong" data-field-id="emailAddress">Name</div>
+              <div class="field-name" data-preview-id="phoneNumber">Phone Number (optional)</div>
+              <div class="field-value strong" data-field-id="phoneNumber">Name</div>
+            </div>
+            <div class="review_page">
+              <i class="icon icon-editpen feature_unavailable" data-feature-code="Edit Icon"></i>
+              <div class="field-name" data-preview-id="physicalAddress">Address (Street Number and Name)</div>
+              <div class="field-value strong" data-field-id="physicalAddress">Name</div>
+              <div class="field-name" data-preview-id="aptNumber">Apt. Number</div>
+              <div class="field-value strong" data-field-id="aptNumber">Name</div>
+              <div class="field-name" data-preview-id="residentCity">City or Town</div>
+              <div class="field-value strong" data-field-id="residentCity">Name</div>
+              <div class="field-name" data-preview-id="residentState">State</div>
+              <div class="field-value strong" data-field-id="residentState">Name</div>
+              <div class="field-name" data-preview-id="zipCode">Zip Code</div>
+              <div class="field-value strong" data-field-id="zipCode">Name</div>
+            </div>
+            <div class="review_page">
+              <i class="icon icon-editpen feature_unavailable" data-feature-code="Edit Icon"></i>
+              <div class="field-name" data-preview-id="SSN">Social Security Number</div>
+              <div class="field-value strong" data-field-id="SSN">SSN</div>
+            </div>
+            <div class="review_page">
+              <i class="icon icon-editpen feature_unavailable" data-feature-code="Edit Icon"></i>
+              <div class="field-name">Citizenship or Immigration Status</div>
+              <div class="field-value strong" data-field-id="citizenshipStatus">Name</div>
+            </div>
+            <div class="review_page">
+              <i class="icon icon-editpen feature_unavailable" data-feature-code="Edit Icon"></i>
+              <div class="field-name">Document Type</div>
+              <div class="field-value strong" data-field-id="documentType">Name</div>
+            </div>
+            <div class="review_page">
+              <i class="icon icon-editpen feature_unavailable" data-feature-code="Edit Icon"></i>
+              <div class="field-name" data-preview-id="documentTitle">Document Title</div>
+              <div class="field-value strong" data-field-id="documentTitle">Name</div>
+              <div class="field-name" data-preview-id="issuingAuthority">Issuing Authority</div>
+              <div class="field-value strong" data-field-id="issuingAuthority">Name</div>
+              <div class="field-name" data-preview-id="documentNumber">Document Number</div>
+              <div class="field-value strong" data-field-id="documentNumber">Name</div>
+              <div class="field-name" data-preview-id="documentExpirationDate">Expiration Date</div>
+              <div class="field-value strong" data-field-id="documentExpirationDate">Name</div>
+            </div>
+          </div>
+        </div>
+        <div class="page" data-page-num="10" data-page-name="page_pre_sign" data-page-title="Sign I-9 Form">
+          <div class="question">
+            Employee Signature
+          </div>
+          <div class="">
+            By signing the I-9 agree to the <span class="link_blue feature_unavailable" data-feature-code="T&C">Acme Inc. Terms and Conditions.</span>
+          </div>
+          <div class="signature_placeholder">
+            <img class="sign_here" src="images/sign_here.svg"/>
+            <div class="sign_pad_instruction">Tap to apply signature</div>
+            <div class="more_options">Sign Here</div>
+          </div>
+        </div>
+        <div class="page" data-page-num="11" data-page-name="page_signature" data-page-title="Sign I-9 Form">
+          <div class="signature_page">
+            <div class="sign_pad_nav link_blue">
+              <ul class="tabs" olive-tabset="defaultTabs">
+                <li class="tab-wrap tab feature_unavailable" data-feature-code="Signature Page Tab">Choose Style</li>
+                <li class="tab-wrap tab on">Draw</li>
+                <li class="tab-wrap tab feature_unavailable" data-feature-code="Signature Page Tab">Photo</li>
+              </ul>
+            </div>
+            <!-- <i class="icon icon-times"></i> -->
+            <img class="sign_pad" src="images/signature_page2.png"/>
+            <img class="sign_pad_pens" src="images/sign_pad_pens.svg"/>
+            <div class="sign_pad_clear hidden link_blue">Clear</div>
+            <div class="sign_pad_instruction">Tap to apply signature</div>
+            <img class="signature hidden" src="images/signature_alex.png"/>
+          </div>
+        </div>
+        <!-- <div class="page" data-page-num="12" data-page-name="page_post_sign" data-page-title="Sign I-9 Form">
+          <div class="question">
+            Terms and Conditions
+          </div>
+          <div class="">
+            By signing the I-9 agree to the <span class="link_blue">Acme Inc. Terms and Conditions.</span>
+          </div>
+          <div class="">
+            <img class="signature" src="images/signature_alex.png"/>
+            <img class="sign_here" src="images/sign_here.svg"/>
+            <div class="more_options">Sign Here</div>
+          </div>
+        </div> -->
+        <div class="page" data-page-num="12" data-page-name="page_info_filled" data-page-title="Submit I-9 Form">
+          <div class="i9form">
+            <img class="filled" src="docs/I9_page1_blank.png"/>
+            <div class="filled_data" data-field-id="firstName"></div>
+            <div class="filled_data" data-field-id="middleInitial"></div>
+            <div class="filled_data" data-field-id="lastName"></div>
+
+            <div class="filled_data" data-field-id="otherLastName">Name</div>
+            <div class="filled_data" data-field-id="dateOfBirth">Name</div>
+            <div class="filled_data" data-field-id="emailAddress">Name</div>
+            <div class="filled_data" data-field-id="phoneNumber">Name</div>
+
+            <div class="filled_data" data-field-id="physicalAddress">Name</div>
+            <div class="filled_data" data-field-id="aptNumber">Name</div>
+            <div class="filled_data" data-field-id="residentCity">Name</div>
+            <div class="filled_data" data-field-id="residentState">Name</div>
+            <div class="filled_data" data-field-id="zipCode">Name</div>
+
+            <div class="filled_data" data-field-id="SSN">SSN</div>
+
+            <div class="filled_data" data-field-id="citizenshipStatus">Name</div>
+
+            <!-- <div class="filled_data" data-field-id="documentType">Name</div> -->
+            <img class="filled_data signature" src="images/signature_chrome_alex.png"/>
+          </div>
+          <div class="i9form">
+            <img class="filled" src="docs/I9_page2_blank.png"/>
+
+            <div class="filled_data page2" data-field-id="firstName"></div>
+            <div class="filled_data page2" data-field-id="middleInitial"></div>
+            <div class="filled_data page2" data-field-id="lastName"></div>
+            <div class="filled_data citizenshipStatus page2">A citizen of the United States</div>
+            <div class="filled_data" data-field-id="documentTitle">Name</div>
+            <div class="filled_data" data-field-id="issuingAuthority">Name</div>
+            <div class="filled_data" data-field-id="documentNumber">Name</div>
+            <div class="filled_data" data-field-id="documentExpirationDate">Name</div>
+          </div>
+          <div class="i9form">
+            <img class="passport_img" src="images/passport.png"/>
+          </div>
+
+        </div>
+      </div>
+    </article>
+    <div class="end_of_prototype hidden">
+      <div class=""><img src="images/clipboard.svg"/></div>
+      <div class="strong">End of Prototype</div>
+      <div class="">Go back to user testing to see instructions</div>
+    </div>
+    <div class="bottom-bar">
+      <div class="progress-indicator ellipsis hide"><span class="number">0</span>% Completed</div>
+      <div class="btn btn-secondary btn-prev hide" data-feature-code="Previous Button">Previous</div>
+      <div class="btn btn-primary btn-next">Start</div>
+    </div>
+    <div class="overlay_page camera_library">
+      <div class="top">
+        <div class="close_overlay">Cancel</div>
+        <div><strong>All Photos <i class="icon icon-menu-triangle-down"></i></strong></div>
+        <div></div>
+      </div>
+      <div class="pics">
+        <div class="library_pic">
+          <img src="images/cam_library/photo1.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo2.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo3.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo4.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo5.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo6.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo7.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo8.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo9.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo10.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo11.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo12.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo2.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo3.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo4.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo5.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo6.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo7.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo8.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo9.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo10.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo11.png"/>
+        </div>
+        <div class="library_pic">
+          <img src="images/cam_library/photo12.png"/>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="">
+          <div class="btn btn-primary btn-use-photo close_overlay hidden">Use Photo</div>
+        </div>
+        <ul class="tabs" olive-tabset="defaultTabs">
+          <li class="tab-wrap tab on">Library</li>
+          <li class="tab-wrap tab feature_unavailable" data-feature-code="Camera Library Tab">Camera</li>
+          <li class="tab-wrap tab feature_unavailable" data-feature-code="Camera Library Tab">Video</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="overlay_page overlay_comments">
+      <i class="icon icon-times"></i>
+      <div class="commenter">Corey Kimel</div>
+      <div class="comment_date">November 11th 9:00AM</div>
+      <div class="comment_content">Please make sure that the document you provided is also brought in the first day, unless you want to take a photo of your passport or your other form of identification of your choosing. I would suggest you bring the passport as it is the most common and you mentioned that you recently had it renewed. If not we can arrange for other verifications of what you need.</div>
+    </div>
+    <div class="overlay_page overlay_share">
+      <div class="icons">
+        <div class="icon">
+          <img src="images/icons/iMessage.png"/>
+          <div>Message</div>
+        </div>
+        <div class="icon">
+          <img src="images/icons/mail.png"/>
+          <div>Mail</div>
+        </div>
+        <div class="icon">
+          <img src="images/icons/dropbox.png"/>
+          <div>DropBox</div>
+        </div>
+        <div class="icon">
+          <img src="images/icons/more.png"/>
+          <div>More</div>
+        </div>
+      </div>
+      <div class="icons">
+        <div class="icon">
+          <img src="images/icons/copy.png"/>
+          <div>Copy</div>
+        </div>
+        <div class="icon">
+          <img src="images/icons/safari.png"/>
+          <div>Safari</div>
+        </div>
+        <div class="icon">
+          <img src="images/icons/print.png"/>
+          <div>Print</div>
+        </div>
+        <div class="icon">
+          <img src="images/icons/more.png"/>
+          <div>More</div>
+        </div>
+      </div>
+      <div class="button">Cancel</div>
+    </div>
+    <div class="overlay_page document_completed">
+      <div class="modal">
+        <img src="images/success_icon.svg"/>
+        <div class="strong">Document Completed</div>
+      </div>
+    </div>
+    <div class="overlay_page overlay_disclosure">
+      <div class="header">
+        Electronic Disclosure
+      </div>
+      <i class="icon icon-times"></i>
+      <div class="disclosure_content">
+        <div class="title">
+          CONSUMER DISCLOSURE
+        </div>
+        <div class="">
+          From time to time, docusign (we, us or Company) may be required by law to provide to you certain written notices or disclosures. Described below are the terms and conditions for providing to you such notices and disclosures electronically through the DocuSign, Inc. (DocuSign) electronic signing system. Please read the information below carefully and thoroughly, and if you can access this information electronically to your satisfaction and agree to these terms and conditions, please confirm your agreement by clicking the ‘I agree’ button at the bottom of this document.
+        </div>
+        <div class="">
+          Getting paper copies
+        </div>
+        <div class="">
+          At any time, you may request from us a paper copy of any record provided or made available electronically to you by us. You will have the ability to download and print documents we send to you through the DocuSign system during and immediately after signing session and, if you elect to create a DocuSign signer account, you may access them for a limited period of time (usually 30 days) after such documents are first sent to you. After such time, if you wish for us to send you paper copies of any such documents from our office to you, you will be charged a $0.00 per-page fee. You may request delivery of such paper copies from us by following the procedure described below.
+        </div>
+        <div class="">
+          Withdrawing your consent
+        </div>
+        <div class="">
+          If you decide to receive notices and disclosures from us electronically, you may at any time change your mind and tell us that thereafter you want to receive required notices and disclosures only in paper format. How you must inform us of your decision to receive future notices and disclosure in paper format and withdraw your consent to receive notices and disclosures electronically is described below.
+        </div>
+        <div class="">
+          Consequences of changing your mind
+        </div>
+        <div class="">
+          If you elect to receive required notices and disclosures only in paper format, it will slow the speed at which we can complete certain steps in transactions with you and delivering services to you because we will need first to send the required notices or disclosures to you in paper format, and then wait until we receive back from you your acknowledgment of your receipt of such paper notices or disclosures. To indicate to us that you are changing your mind, you must withdraw your consent using the DocuSign ‘Withdraw Consent’ form on the signing page of a DocuSign envelope instead of signing it. This will indicate to us that you have withdrawn your consent to receive required notices and disclosures electronically from us and you will no longer be able to use the DocuSign system to receive required notices and consents electronically from us or to sign electronically documents from us.
+        </div>
+        <div class="">
+          All notices and disclosures will be sent to you electronically
+        </div>
+        <div class="">
+          Unless you tell us otherwise in accordance with the procedures described herein, we will provide electronically to you through the DocuSign system all required notices, disclosures, authorizations, acknowledgements, and other documents that are required to be provided or made available to you during the course of our relationship with you. To reduce the chance of you inadvertently not receiving any notice or disclosure, we prefer to provide all of the required notices and disclosures to you by the same method and to the same address that you have given us. Thus, you can receive all the disclosures and notices electronically or in paper format through the paper mail delivery system. If you do not agree with this process, please let us know as described below. Please also see the paragraph immediately above that describes the consequences of your electing not to receive delivery of the notices and disclosures electronically from us.
+        </div>
+        <div class="">
+          How to contact docusign:
+        </div>
+        <div class="">
+          You may contact us to let us know of your changes as to how we may contact you electronically, to request paper copies of certain information from us, and to withdraw your prior consent to receive notices and disclosures electronically as follows:
+          To contact us by email send messages to: william.carlson@docusign.com
+          To advise docusign of your new e-mail address
+          To let us know of a change in your e-mail address where we should send notices and disclosures electronically to you, you must send an email message to us at william.carlson@docusign.com and in the body of such request you must state: your previous e-mail address, your new e-mail address.  We do not require any other information from you to change your email address..
+          <br/>
+          In addition, you must notify DocuSign, Inc. to arrange for your new email address to be reflected in your DocuSign account by following the process for changing e-mail in the DocuSign system.
+        </div>
+        <div class="">
+          To request paper copies from docusign
+        </div>
+        <div class="">
+          To request delivery from us of paper copies of the notices and disclosures previously provided by us to you electronically, you must send us an e-mail to william.carlson@docusign.com and in the body of such request you must state your e-mail address, full name, US Postal address, and telephone number. We will bill you for any fees at that time, if any.
+          To withdraw your consent with docusign
+          To inform us that you no longer want to receive future notices and disclosures in electronic format you may:
+          <br/>
+          i. decline to sign a document from within your DocuSign session, and on the subsequent page, select the check-box indicating you wish to withdraw your consent, or you may;
+          ii. send us an e-mail to william.carlson@docusign.com and in the body of such request you must state your e-mail, full name, US Postal Address, and telephone number. We do not need any other information from you to withdraw consent..  The consequences of your withdrawing consent for online documents will be that transactions may take a longer time to process..
+        </div>
+        <div class="">
+          Required hardware and software
+        </div>
+        <div class="">
+          Operating Systems:	Windows® 2000, Windows® XP, Windows Vista®; Mac OS® X
+          Browsers:	Final release versions of Internet Explorer® 6.0 or above (Windows only); Mozilla Firefox 2.0 or above (Windows and Mac); Safari™ 3.0 or above (Mac only)
+          PDF Reader:	Acrobat® or similar software may be required to view and print PDF files
+          Screen Resolution:	800 x 600 minimum
+          Enabled Security Settings:	Allow per session cookies
+          ** These minimum requirements are subject to change. If these requirements change, you will be asked to re-accept the disclosure. Pre-release (e.g. beta) versions of operating systems and browsers are not supported.
+          Acknowledging your access and consent to receive materials electronically
+          To confirm to us that you can access this information electronically, which will be similar to other electronic notices and disclosures that we will provide to you, please verify that you were able to read this electronic disclosure and that you also were able to print on paper or electronically save this page for your future reference and access or that you were able to e-mail this disclosure and consent to an address where you will be able to print on paper or save it for your future reference and access. Further, if you consent to receiving notices and disclosures exclusively in electronic format on the terms and conditions described above, please let us know by clicking the ‘I agree’ button below.
+        </div>
+        <div class="">
+          By checking the ‘I agree’ box, I confirm that:
+        </div>
+        <div class="">
+          I can access and read this Electronic CONSENT TO ELECTRONIC RECEIPT OF ELECTRONIC CONSUMER DISCLOSURES document; and
+          I can print on paper the disclosure or save or send the disclosure to a place where I can print it, for future reference and access; and
+          Until or unless I notify docusign as described above, I consent to receive from exclusively through electronic means all notices, disclosures, authorizations, acknowledgements, and other documents that are required to be provided or made available to me by  docusign during the course of my relationship with you.
+        </div>
+      </div>
+    </div>
+    <div class="messages-global global-notifications msg_feature_unavailable hide">
+      <div class="message message-error">
+        <span class="message_icon icon icon-alert-triangle"></span>
+        <div class="message_content">Feature currently not available</div>
+        <button class="message_close icon icon-times"></button>
+      </div>
+    </div>
+  </body>
+</html>
