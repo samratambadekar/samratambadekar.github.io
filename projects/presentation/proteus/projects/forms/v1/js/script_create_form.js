@@ -401,7 +401,7 @@ $(document).ready(function() {
     $("#sortableSections").animate({scrollTop: $("#sortableSections").scrollTop() + targetEl.offset().top - 200});
     parentEl.find(".field-name").focus();
 
-    $(".slider").click();
+    // $(".slider").click();
 
     setTimeout(function() {
       $(".tooltip.callout > div").addClass("hidden");
