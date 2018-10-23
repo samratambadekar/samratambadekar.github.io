@@ -1,0 +1,965 @@
+<html>
+<body class="taggerDocument">
+  <div class="site-editor">
+    <div class="site_toolbar toolbar_tagger">
+      <div class="toolbar_left ng-isolate-scope">
+        <button id="btnRecipients" type="button" data-qa="recipient-selector" class="btn btn-select btn-block btn-trigger btn-recipients u-ellipsis ng-scope">
+          <span class="swatch-recipient swatch-sm swatch swatch-round swatch-ext-0"></span>
+          <span class="ng-binding">Alex Edwards</span>
+        </button>
+        <div id="toolbarRecipientsMenu" class="menu select-menu toolbarRecipientsMenu invisible" style="top: 123px; left: 469.533px;">
+          <ul role="menu">
+            <li data-qa="recipient-1" class="ng-scope" role="menuitem">
+              <button class="item on">
+                <span class="swatch swatch-round swatch-recipient swatch-ext-0" data-qa="recipient-list-name-1"></span>
+                <span class="ng-binding">Alex Edwards</span>
+              </button>
+            </li>
+            <li data-qa="recipient-2" class="ng-scope" role="menuitem">
+              <button class="item">
+                <span class="swatch swatch-round swatch-recipient swatch-ext-1" data-qa="recipient-list-name-2"></span>
+                <span class="ng-binding">Corey Kimel</span>
+              </button>
+            </li>
+          </ul>
+          <ul role="menu" aria-labelledby="">
+            <li role="menuitem">
+              <div class="item btn-prev" data-qa="edit-recipients-swatch">Edit Recipients</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="toolbar_main">
+        <div class="btn-group">
+          <button type="button" class="btn btn-minor btn-icon" disabled="">
+            <span class="icon icon-undo"></span>
+            <span class="sr-text ng-binding">Undo</span>
+          </button>
+          <button type="button" class="btn btn-minor btn-icon" data-qa="redo-button" disabled="">
+            <span class="icon icon-redo"></span>
+            <span class="sr-text ng-binding">Redo</span>
+          </button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-minor btn-icon ng-scope" data-qa="copy-toolbar-button" disabled="">
+            <span class="icon icon-copy"></span>
+            <span class="sr-text ng-binding">Copy</span>
+          </button>
+          <button type="button" class="btn btn-minor btn-icon ng-scope" data-qa="paste-toolbar-button" disabled="">
+            <span class="icon icon-paste"></span>
+            <span class="sr-text ng-binding">Paste</span>
+          </button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-minor btn-utility btn-trigger " data-qa="zoom-button">100%</button>
+          <div class="menu select-menu invisible" id="menuZoomLevels">
+            <ul class="ng-scope" role="menu" aria-labelledby="126%">
+              <li class="ng-scope" role="menuitem"><a class="item" data-qa="zoom-level-25"><span class="">25%</span></a></li>
+              <li class="ng-scope" role="menuitem"><a class="item" data-qa="zoom-level-50"><span class="">50%</span></a></li>
+              <li class="ng-scope" role="menuitem"><a class="item" data-qa="zoom-level-75"><span class="">75%</span></a></li>
+              <li class="ng-scope" role="menuitem"><a class="item" data-qa="zoom-level-100"><span class="">100%</span></a></li>
+              <li class="ng-scope" role="menuitem"><a class="item" data-qa="zoom-level-125"><span class="">125%</span></a></li>
+              <li class="ng-scope" role="menuitem"><a class="item" data-qa="zoom-level-150"><span class="">150%</span></a></li>
+              <li class="ng-scope" role="menuitem"><a class="item" data-qa="zoom-level-200"><span class="">200%</span></a></li>
+              <li class="ng-scope" role="menuitem"><a class="item" data-qa="zoom-level-400"><span class="">400%</span></a></li>
+            </ul>
+            <ul class="ng-scope" role="menu" aria-labelledby="126%">
+              <li class="ng-scope" role="menuitem"><a class="item on" data-qa="zoom-level-auto"><span class="">Fit to width</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ng-isolate-scope"></div>
+      </div>
+      <div class="toolbar_right">
+        <a class="btn btn-sm btn-secondary ng-binding ng-scope btn-keyboard-shortcuts" data-qa="shortcut-button">Shortcuts</a>
+        <!-- <div class="btn btn-secondary btn-preview">Preview</div> -->
+      </div>
+    </div>
+  </div>
+  <!-- <script type="text/babel" src="js/tagger/TaggerTopToolbar.jsx"></script> -->
+
+  <div class="tagger_content site-editor">
+    <div id="sidebarLeft" class="">
+      <div class="content_sidebar content_sidebar-left ng-isolate-scope">
+        <div class="sidebar-sign-return sidebar-flex">
+          <div class="sidebar-fields sidebar-tab-option" data-tab-name="Standard Fields">
+            <div class="sidebar_group">
+              <h5>
+                <span class="ng-binding ng-scope">FIELDS</span>
+              </h5>
+            </div>
+            <div class="text-center hide">
+              <div class="spinner-circle spinner-sm"></div>
+            </div>
+            <div class="sidebar_item ng-scope">
+              <div class="menu-fields">
+                <ul class="menu_list">
+                  <li class="menu_listItem ng-isolate-scope" title="Signature">
+                    <button class="menu_item u-ellipsis" data-qa="SignReturn Signature">
+                      <span class="">
+                        <i class="icon icon-field-sign"></i>
+                      </span>
+                      <span class="ng-binding">Signature</span>
+                    </button>
+                  </li>
+                  <li class="menu_listItem ng-isolate-scope" title="Initial">
+                    <button class="menu_item u-ellipsis" data-qa="SignReturn Initial">
+                      <span class="">
+                        <i class="icon icon-field-initial"></i>
+                      </span>
+                      <span class="ng-binding">Initial</span>
+                    </button>
+                  </li>
+                  <li class="menu_listItem ng-isolate-scope" title="Date Signed">
+                    <button class="menu_item u-ellipsis" data-qa="SignReturn Date Signed">
+                      <span class="">
+                        <i class="icon icon-field-date signed"></i>
+                      </span>
+                      <span class="ng-binding">Date Signed</span>
+                    </button>
+                  </li>
+                  <li class="menu_listItem ng-isolate-scope" title="Name">
+                    <button class="menu_item u-ellipsis" data-qa="SignReturn Name">
+                      <span class="">
+                        <i class="icon icon-field-name"></i>
+                      </span>
+                      <span class="ng-binding">Name</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sidebar_item ng-scope">
+              <div class="menu-fields">
+                <ul class="menu_list">
+                  <li class="menu_listItem ng-isolate-scope" title="First Name">
+                    <button class="menu_item u-ellipsis" data-qa="SignReturn First Name">
+                      <span class="">
+                        <i class="icon icon-user-first"></i>
+                      </span>
+                      <span class="ng-binding">First Name</span>
+                    </button>
+                  </li>
+                  <li class="menu_listItem ng-isolate-scope" title="Last Name">
+                    <button class="menu_item u-ellipsis" data-qa="SignReturn Last Name">
+                      <span class="">
+                        <i class="icon icon-user-last"></i>
+                      </span>
+                      <span class="ng-binding">Last Name</span>
+                    </button>
+                  </li>
+                  <li class="menu_listItem ng-isolate-scope" title="Email">
+                    <button class="menu_item u-ellipsis" data-qa="SignReturn Email">
+                      <span class="">
+                        <i class="icon icon-field-email"></i>
+                      </span>
+                      <span class="ng-binding">Email</span>
+                    </button>
+                  </li>
+                  <li class="menu_listItem ng-isolate-scope" title="Company">
+                    <button class="menu_item u-ellipsis" data-qa="SignReturn Company">
+                      <span class="">
+                        <i class="icon icon-field-company"></i>
+                      </span>
+                      <span class="ng-binding">Company</span>
+                    </button>
+                  </li>
+                  <li class="menu_listItem ng-isolate-scope" title="Title">
+                    <button class="menu_item u-ellipsis" data-qa="SignReturn Title">
+                      <span class="">
+                        <i class="icon icon-field-title"></i>
+                      </span>
+                      <span class="ng-binding">Title</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sidebar_item ng-scope">
+              <div class="menu-fields">
+                <ul class="menu_list">
+                  <li class="menu_listItem ng-isolate-scope" title="Text">
+                    <button class="menu_item u-ellipsis" data-qa="SignReturn Text">
+                      <span class="">
+                        <i class="icon icon-field-text"></i>
+                      </span>
+                      <span class="ng-binding">Text</span>
+                    </button>
+                  </li>
+                  <li class="menu_listItem ng-isolate-scope" title="Checkbox">
+                    <button class="menu_item u-ellipsis" data-qa="SignReturn Checkbox">
+                      <span class="">
+                        <i class="icon icon-field-checkbox"></i>
+                      </span>
+                      <span class="ng-binding">Checkbox</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-regular-tags sidebar-fields sidebar-flex">
+          <div class="sidebar_main">
+            <ul class="sidebarTabs">
+              <li class="ng-scope">
+                <button class="sidebarTabs_tab sidebarTabs_tab-on" data-qa="Standard Fields">
+                  <span class="icon icon-fields-standard">
+                  </span>
+                </button>
+              </li>
+              <li class="ng-scope">
+                <button class="sidebarTabs_tab feature_unavailable" data-qa="Custom Fields">
+                  <span class="icon icon-fields-custom">
+                  </span>
+                </button>
+              </li>
+              <li class="ng-scope">
+                <button class="sidebarTabs_tab feature_unavailable" data-qa="Merge Fields">
+                  <span class="icon icon-fields-merge">
+                  </span>
+                </button>
+              </li>
+              <li class="ng-scope">
+                <button class="sidebarTabs_tab feature_unavailable" data-qa="Search">
+                  <span class="icon icon-search">
+                  </span>
+                </button>
+              </li>
+            </ul>
+
+            <div class="sidebar-fields sidebar-tab-option" data-tab-name="Standard Fields">
+              <div class="sidebar_group">
+                <h5>
+                  <span class="ng-binding ng-scope">Standard Fields</span>
+                </h5>
+              </div>
+              <div class="text-center hide">
+                <div class="spinner-circle spinner-sm"></div>
+              </div>
+              <div class="sidebar_item ng-scope">
+                <div class="menu-fields">
+                  <ul class="menu_list">
+                    <li class="menu_listItem ng-isolate-scope" title="Signature">
+                      <button class="menu_item u-ellipsis" data-qa="Signature">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-palette-field-sign"></i>
+                        </span>
+                        <span class="ng-binding">Signature</span>
+                      </button>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" title="Initial">
+                      <button class="menu_item u-ellipsis" data-qa="Initial">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-palette-field-initial"></i>
+                        </span>
+                        <span class="ng-binding">Initial</span>
+                      </button>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" title="Date Signed">
+                      <button class="menu_item u-ellipsis" data-qa="Date Signed">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-palette-field-date signed"></i>
+                        </span>
+                        <span class="ng-binding">Date Signed</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sidebar_item ng-scope">
+                <div class="menu-fields">
+                  <ul class="menu_list">
+                    <li class="menu_listItem ng-isolate-scope" title="Name">
+                      <button class="menu_item u-ellipsis" data-qa="Name">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-palette-field-name"></i>
+                        </span>
+                        <span class="ng-binding">Name</span>
+                      </button>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" title="Email">
+                      <button class="menu_item u-ellipsis" data-qa="Email">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-palette-field-email"></i>
+                        </span>
+                        <span class="ng-binding">Email</span>
+                      </button>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" title="Company">
+                      <button class="menu_item u-ellipsis" data-qa="Company">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-palette-field-company"></i>
+                        </span>
+                        <span class="ng-binding">Company</span>
+                      </button>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" title="Title">
+                      <button class="menu_item u-ellipsis" data-qa="Title">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-palette-field-title"></i>
+                        </span>
+                        <span class="ng-binding">Title</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sidebar_item ng-scope">
+                <div class="menu-fields">
+                  <ul class="menu_list">
+                    <li class="menu_listItem ng-isolate-scope" title="Text">
+                      <button class="menu_item u-ellipsis" data-qa="Text">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-palette-field-text"></i>
+                        </span>
+                        <span class="ng-binding">Text</span>
+                      </button>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" title="Checkbox">
+                      <button class="menu_item u-ellipsis" data-qa="Checkbox">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-palette-field-checkbox"></i>
+                        </span>
+                        <span class="ng-binding">Checkbox</span>
+                      </button>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" title="Dropdown">
+                      <button class="menu_item u-ellipsis" data-qa="Dropdown">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-palette-field-dropdown"></i>
+                        </span>
+                        <span class="ng-binding">Dropdown</span>
+                      </button>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" title="Radio">
+                      <button class="menu_item u-ellipsis" data-qa="Radio">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-palette-field-radio"></i>
+                        </span>
+                        <span class="ng-binding">Radio</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sidebar_item ng-scope">
+                <div class="menu-fields">
+                  <ul class="menu_list">
+                    <li class="menu_listItem ng-isolate-scope" title="Attachment">
+                      <button class="menu_item u-ellipsis" data-qa="Attachment">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-palette-field-attachment"></i>
+                        </span>
+                        <span class="ng-binding">Attachment</span>
+                      </button>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" title="Note">
+                      <button class="menu_item u-ellipsis" data-qa="Note">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-palette-field-note"></i>
+                        </span>
+                        <span class="ng-binding">Note</span>
+                      </button>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" title="Approve">
+                      <button class="menu_item u-ellipsis" data-qa="Approve">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-palette-field-approve"></i>
+                        </span>
+                        <span class="ng-binding">Approve</span>
+                      </button>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" title="Decline">
+                      <button class="menu_item u-ellipsis" data-qa="Decline">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-palette-field-decline"></i>
+                        </span>
+                        <span class="ng-binding">Decline</span>
+                      </button>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" title="Formula">
+                      <button class="menu_item u-ellipsis" data-qa="Formula">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-palette-field-formula"></i>
+                        </span>
+                        <span class="ng-binding">Formula</span>
+                      </button>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" title="Payment">
+                      <button class="menu_item u-ellipsis" data-qa="Payment">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-payment"></i>
+                        </span>
+                        <span class="ng-binding">Payment</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-fields sidebar-tab-option hide" data-tab-name="Blocks">
+              <div class="sidebar_group">
+                <h5>
+                  <span class="ng-binding ng-scope">Blocks</span>
+                </h5>
+              </div>
+              <div class="text-center hide">
+                <div class="spinner-circle spinner-sm"></div>
+              </div>
+              <div class="sidebar_item ng-scope">
+                <div class="menu-fields">
+                  <ul class="menu_list">
+                    <li class="menu_listItem ng-isolate-scope" title="Image">
+                      <button class="menu_item u-ellipsis" data-qa="Image">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-type-image"></i>
+                        </span>
+                        <span class="ng-binding">Image</span>
+                      </button>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" title="Link">
+                      <button class="menu_item u-ellipsis" data-qa="Link">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <i class="icon icon-globe"></i>
+                        </span>
+                        <span class="ng-binding">Link</span>
+                      </button>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" title="Paragraph">
+                      <button class="menu_item u-ellipsis" data-qa="Paragraph">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <span class="ng-binding"><img class="icon payment_icon" src="images/svg/tag-paragraph.svg"/></span>
+                        </span>
+                        <span class="ng-binding">Text</span>
+                      </button>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" title="Table">
+                      <button class="menu_item u-ellipsis" data-qa="Table">
+                        <span class="swatch swatch-recipient swatch-lg swatch-ext-0">
+                          <span class="ng-binding"><img class="icon payment_icon" src="images/svg/tag-table.svg"/></span>
+                        </span>
+                        <span class="ng-binding">Table</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="resizeHandle-horizontal ng-scope">
+              <span class="icon icon-handle"></span>
+            </div>
+          </div>
+          <!-- <div class="sidebar_footer">
+            <div class="form_item-iconLeft form_item-iconRight">
+              <span class="icon icon-search"></span>
+              <input type="text" class="input-text ng-pristine ng-untouched ng-valid" placeholder="Search"/>
+              <button type="button" class="button-icon">
+                <span class="icon icon-times"></span>
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- <script type="text/babel" src="js/tagger/SideBarTags.jsx"></script> -->
+
+    <div class="content_main">
+      <div class="emptyState hide">
+        <span class="icon icon-documents emptyState_icon"></span>
+        <p class="emptyState_text ng-binding">You have no documents.</p>
+        <button class="btn btn-primary ng-binding">Add Documents</button>
+      </div>
+
+      <div class="DocView">
+        <div class="PageView">
+          <img class="page_image" src="docs/Sales_Order_page1.png"></img>
+          <span>NDA_Edwards_Consulting_Group.pdf</span>
+          <span class="right">1 of 1</span>
+          <!-- <div class="newTagDraggable draggable " data-name="sampleSelectBox" data-tag-for="" style="position: absolute; left: 50px; top: 25px;">
+            <div style="display: flex">
+              <div class="the_tag" style="padding: 3px; background-color: #ffd65b;">
+                <div class="select-wrap">
+                  <select class="input-select">
+                    <option>One</option>
+                    <option>two</option>
+                    <option>three</option>
+                    <option>four</option>
+                    <option>five</option>
+                    <option>six</option>
+                    <option>seven</option>
+                    <option>eight</option>
+                    <option>nine</option>
+                    <option>ten</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- <svg id="documentTags" version="1.1" xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" style="position: absolute; left: 0; top: 0">
+            <g class="sampleSVGTextArea draggable newTagDraggable ">
+              <rect fill="#ffd65b" style="pointer-events: auto; cursor: pointer;" stroke="none" width="120" height="40" x="250" y="30" rx="3" ry="3" fill-opacity="0.75" stroke-opacity="1" stroke-width="3"></rect>
+              <foreignObject class="the_tag" x="251" y="31" width="118" height="40" style="overflow:visible; height: 40px;">
+                 <textarea placeholder="Text"  style="width: 100%; height: 36px; resize: none" class="tableinput1"></textarea>
+              </foreignObject>
+            </g>
+            <g class="sampleSVGTextArea draggable newTagDraggable">
+              <foreignObject class="the_tag" x="52" y="32" width="116" height="38" style="overflow:visible; height: 41px;">
+                <div class="newTagDraggable draggable " data-name="sampleSelectBox" data-tag-for="">
+                  <div style="display: flex">
+                    <div class="the_tag" style="padding: 3px; max-width: none; width: 100%; height: 38px; background-color: #ffd65b;">
+                      <div class="select-wrap">
+                        <select class="input-select">
+                          <option>One</option>
+                          <option>two</option>
+                          <option>three</option>
+                          <option>four</option>
+                          <option>five</option>
+                          <option>six</option>
+                          <option>seven</option>
+                          <option>eight</option>
+                          <option>nine</option>
+                          <option>ten</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </foreignObject>
+            </g>
+          </svg> -->
+        </div>
+        <!-- <div class="PageView">
+          <img class="page_image" src="docs/Sales_Order_page1.png"></img>
+          <span>NDA_Edwards_Consulting_Group.pdf</span>
+          <span class="right">1 of 1</span>
+        </div> -->
+      </div>
+    </div>
+    <!-- <script type="text/babel" src="js/tagger/TaggerDocument.jsx"></script> -->
+
+    <div id="sidebarRight" class="content_sidebar content_sidebar-right">
+      <div class="sidebar-options ">
+        <div class="sidebar_header ng-binding"><span>Documents</span><button type="button" class="btn btn-minor btn-icon ng-scope"><span class="icon icon-gear"></span><!-- <span class="sr-text ng-binding">Advanced Options</span> --></button></div>
+        <div class="docsWrapper" data-qa="test">
+          <div class="singleDocument">
+            <div class="documentDescription accordion open">
+              <i class="icon accordion-icon" data-qa="document-page-icon"></i>
+              <span class="docName ng-binding">NDA_Edwards_Consulting_Group.pdf</span>
+              <!-- <i class="icon icon-right more_options" data-qa="document-options-icon"><img src="images/svg/icon_more.svg"/></i> -->
+              <span class="docPages ng-binding" data-qa="uploaded-file-pages">Pages: 1</span>
+
+              <div id="" class="menu menu_doc_options invisible">
+                <ul role="menu">
+                  <li role="set_as_supplement" class="ng-scope">
+                    <a class="item" data-qa="Standard Fields">Set as Supplement</a>
+                  </li>
+                  <li role="menuitem" class="ng-scope">
+                    <a class="item" data-qa="Custom Fields">Delete Document</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="documentPageSet drawer down full open">
+              <div class="drawer-wrapper"><br/>
+                <div callout-pos="before top" class="documentPage">
+                  <img class="img" src="docs/Sales_Order_page1.png"/>
+                  <div class="bar-action">
+                    <span class="pageNumber ng-binding">1</span>
+                    <button class="btn btn-icon btn-minor btn-action">
+                      <span class="icon icon-trash"></span>
+                      <span class="sr-text ng-binding">Delete</span>
+                    </button>
+                    <button class="btn btn-icon btn-minor btn-action">
+                      <span class="icon icon-rotate-circle-right"></span>
+                      <span class="sr-text ng-binding">Rotate</span>
+                    </button>
+                  </div>
+
+                  <div class="column-indicators">
+                    <div class="indicator-tag ng-scope indicator-recipient-0 hidden"></div>
+                  </div>
+                  <span class="pageNumber ng-binding">1</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drawer left drawer-properties ng-isolate-scope open" style="width: auto;">
+          <div class="drawer-wrapper">
+            <div class="drawer-content full-drawer">
+              <div class="drawer-properties_header ng-scope">
+                <span class="icon icon-palette-field-text"></span>
+                <span data-qa="pannel-header" class="ng-binding">Text</span>
+              </div>
+              <div class="drawer-properties_main ng-scope" style="box-shadow: rgba(0, 0, 0, 0.180392) 0px -7px 7px -7px inset;">
+                <div class="drawer-properties_section">
+                  <!-- <div class="section ng-scope"> -->
+                    <div class="form-group">
+                      <div class="cb inline-input">
+                        <input type="checkbox" id="tagDetailRequired" class="cb_input ng-pristine ng-untouched ng-valid" checked/>
+                        <label for="tagDetailRequired" class="cb_label ng-binding">Required Field</label>
+                      </div>
+                    </div>
+                  <!-- </div> -->
+                  <!-- <div class="section ng-scope ng-hide">
+                    <div class="form-group">
+                      <div class="inline-input">
+                        <div class="select-wrap">
+                          <select id="nameTypeSelector" class="input-select ng-pristine ng-untouched ng-valid">
+                            <option value="empty" class="ng-scope">-- ? --</option>
+                            <option data-qa="Full Name" value="full" class="ng-binding ng-scope">Full Name</option>
+                            <option data-qa="First Name" value="first" class="ng-binding ng-scope">First Name</option>
+                            <option data-qa="Last Name" value="last" class="ng-binding ng-scope">Last Name</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                  <div class="form-group">
+                    <div class="inline-input ng-scope" data-qa="read-only-checkbox">
+                      <input type="checkbox" id="tabIsReadOnly" data-qa="read-only-input" class="cb_input ng-pristine ng-untouched ng-valid">
+                      <label for="tabIsReadOnly" class="cb_label ng-binding">Read Only</label>
+                    </div>
+                  </div>
+                </div>
+                <div data-qa="add-text-accordion" class="ng-scope tag_option">
+                  <div class="accordion open">
+                    <span class="ng-binding">Add Text</span> <i class="icon accordion-icon"></i>
+                  </div>
+                  <div class="drawer drawer-properties_section down full open" style="height: auto;">
+                    <div class="drawer-wrapper">
+                      <div class="drawer-content showing">
+                        <div class="section ng-scope">
+                          <div class="form-group">
+                            <textarea id="addTextTextArea" class="input-textarea ng-pristine ng-untouched ng-valid ng-scope" type="text" placeholder="Add Text" data-qa="add-text" maxlength="4000"></textarea>
+                          </div>
+                          <div class="form-group ng-scope">
+                            <input id="charLimitPropPanel" data-qa="char-limit" class="input-text input-number input-noSpinButtons ng-pristine ng-untouched ng-valid" type="number">
+                            <label for="charLimitPropPanel" class="ng-binding">Character Limit</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="propertiesPanelRecipientsMenu" class="menu select-menu invisible">
+                  <ul>
+                    <li class="ng-scope">
+                      <button type="button" class="item on">
+                        <span class="recipient-swatch ng-binding recipient-swatch-0">Alex Edwards</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div data-qa="pay-provider-properties-accordion" class="ng-scope tag_option">
+                  <div class="accordion open">
+                    <span class="ng-binding">Payment Processor</span> <i class="icon accordion-icon"></i>
+                  </div>
+                  <div class="drawer drawer-properties_section down closed" style="height: auto;">
+                    <div class="drawer-wrapper">
+                      <div class="drawer-content">
+                        <div class="section ng-scope">
+                          <div class="form-group">
+                            <div class="select-wrap">
+                              <select class="input-select ng-pristine ng-untouched ng-valid" autocomplete="off">
+                                <option data-qa="auth-net" value="auth-net" class="ng-binding ng-scope">Auth.Net Finance</option>
+                                <option data-qa="stripe" value="stripe" class="ng-binding ng-scope">Stripe HR</option>
+                                <option data-qa="paypal" value="paypal" class="ng-binding ng-scope">Paypal</option>
+                                <option data-qa="newProvider" value="newProvider" class="ng-binding ng-scope">-- Add Provider --</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-qa="pay-amount-properties-accordion" class="ng-scope tag_option">
+                  <div class="accordion open">
+                    <span class="ng-binding">Amount</span> <i class="icon accordion-icon"></i>
+                  </div>
+                  <div class="drawer drawer-properties_section down closed" style="height: auto;">
+                    <div class="drawer-wrapper">
+                      <div class="drawer-content">
+                        <div class="section ng-scope">
+                          <div class="form-group">
+                            <div class="select-wrap">
+                              <select class="input-select ng-pristine ng-untouched ng-valid">
+                                <option data-qa="usd" value="usd" class="ng-binding ng-scope">$ USD</option>
+                              </select>
+                            </div>
+                            <div class="form_row">
+                              <div class="select-wrap">
+                                <select class="input-select ng-pristine ng-untouched ng-valid" autocomplete="off">
+                                  <option value="fixedamount" data-qa="fixedamount" class="ng-binding ng-scope" selected="selected">Fixed Amount</option>
+                                  <option value="byformula" data-qa="byformula" class="ng-binding ng-scope">Based on Formula</option>
+                                  <option value="bysigner" data-qa="bysigner" class="ng-binding ng-scope">Entered by Signer</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form_row">
+                              <input class="input input-text ng-pristine ng-untouched ng-valid" data-qa="pay-amount-text" placeholder="0.00" value="0.00">
+                              <button class="btn btn-utility btn-block ng-binding hidden">Setup</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-qa="pay-description-properties-accordion" class="ng-scope tag_option">
+                  <div class="accordion open">
+                    <span class="ng-binding">Description</span> <i class="icon accordion-icon"></i>
+                  </div>
+                  <div class="drawer drawer-properties_section down closed" style="height: auto;">
+                    <div class="drawer-wrapper">
+                      <div class="drawer-content">
+                        <div class="section ng-scope">
+                          <div class="form-group">
+                            <div class="form_row">
+                              <input class="input input-text ng-pristine ng-untouched ng-valid" data-qa="item-name-text" placeholder="Item Name">
+                            </div>
+                            <div class="form_row">
+                              <input class="input input-text ng-pristine ng-untouched ng-valid" data-qa="item-code-text" placeholder="Item Code / Sku">
+                            </div>
+                            <!-- <div class="form_row">
+                              <input class="input input-text ng-pristine ng-untouched ng-valid" data-qa="unit-price-text" placeholder="Unit Price">
+                            </div> -->
+                            <div class="form_row">
+                              <input class="input input-text ng-pristine ng-untouched ng-valid" data-qa="item-details-text" placeholder="Item Details">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div data-qa="formatting-properties-accordion" class="ng-scope tag_option">
+                  <div class="accordion closed">
+                    <span class="ng-binding">Formatting</span> <i class="icon accordion-icon"></i>
+                  </div>
+                  <div class="drawer drawer-properties_section down closed" style="height: 0px;">
+                    <div class="drawer-wrapper">
+                      <div class="drawer-content">
+                        <div class="section ng-scope">
+                          <div class="form-group">
+                            <div class="select-wrap">
+                              <select class="input-select ng-pristine ng-untouched ng-valid">
+                                <option data-qa="arial" value="arial" class="ng-binding ng-scope">Arial</option>
+                                <option data-qa="arialnarrow" value="arialnarrow" class="ng-binding ng-scope">Arial Narrow</option>
+                                <option data-qa="calibri" value="calibri" class="ng-binding ng-scope">Calibri</option>
+                                <option data-qa="couriernew" value="couriernew" class="ng-binding ng-scope">Courier New</option>
+                                <option data-qa="garamond" value="garamond" class="ng-binding ng-scope">Garamond</option>
+                                <option data-qa="georgia" value="georgia" class="ng-binding ng-scope">Georgia</option>
+                                <option data-qa="helvetica" value="helvetica" class="ng-binding ng-scope">Helvetica</option>
+                                <option data-qa="lucidaconsole" value="lucidaconsole" class="ng-binding ng-scope" selected="selected">Lucida Console</option>
+                                <option data-qa="msgothic" value="msgothic" class="ng-binding ng-scope">MS Gothic</option>
+                                <option data-qa="msmincho" value="msmincho" class="ng-binding ng-scope">MS Mincho</option>
+                                <option data-qa="tahoma" value="tahoma" class="ng-binding ng-scope">Tahoma</option>
+                                <option data-qa="timesnewroman" value="timesnewroman" class="ng-binding ng-scope">Times New Roman</option>
+                                <option data-qa="trebuchet" value="trebuchet" class="ng-binding ng-scope">Trebuchet</option>
+                                <option data-qa="verdana" value="verdana" class="ng-binding ng-scope">Verdana</option>
+                              </select>
+                            </div>
+                            <div class="form_row">
+                              <div class="select-wrap btn-fontSize">
+                                <select class="input-select ng-pristine ng-untouched ng-valid">
+                                  <option value="7" data-qa="font-7" class="ng-binding ng-scope">7</option>
+                                  <option value="8" data-qa="font-8" class="ng-binding ng-scope">8</option>
+                                  <option value="9" data-qa="font-9" class="ng-binding ng-scope" selected="selected">9</option>
+                                  <option value="10" data-qa="font-10" class="ng-binding ng-scope">10</option>
+                                  <option value="11" data-qa="font-11" class="ng-binding ng-scope">11</option>
+                                  <option value="12" data-qa="font-12" class="ng-binding ng-scope">12</option>
+                                  <option value="14" data-qa="font-14" class="ng-binding ng-scope">14</option>
+                                  <option value="16" data-qa="font-16" class="ng-binding ng-scope">16</option>
+                                  <option value="18" data-qa="font-18" class="ng-binding ng-scope">18</option>
+                                  <option value="20" data-qa="font-20" class="ng-binding ng-scope">20</option>
+                                  <option value="22" data-qa="font-22" class="ng-binding ng-scope">22</option>
+                                  <option value="24" data-qa="font-24" class="ng-binding ng-scope">24</option>
+                                  <option value="26" data-qa="font-26" class="ng-binding ng-scope">26</option>
+                                  <option value="28" data-qa="font-28" class="ng-binding ng-scope">28</option>
+                                  <option value="36" data-qa="font-36" class="ng-binding ng-scope">36</option>
+                                  <option value="48" data-qa="font-48" class="ng-binding ng-scope">48</option>
+                                  <option value="72" data-qa="font-72" class="ng-binding ng-scope">72</option>
+                                </select>
+                              </div>
+                              <div class="group">
+                                <button class="btn btn-md btn-icon btn-utility group-item ng-scope">
+                                  <i class="icon icon-text-bold" data-qa="format-bold" ng-class="'icon-text-' + attribute"></i></button>
+                                <button class="btn btn-md btn-icon btn-utility group-item ng-scope"><i class="icon icon-text-italic" data-qa="format-italic" ng-class="'icon-text-' + attribute"></i></button>
+                                <button class="btn btn-md btn-icon btn-utility group-item ng-scope"><i class="icon icon-text-underline" data-qa="format-underline" ng-class="'icon-text-' + attribute"></i></button>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="select-wrap">
+                                <select class="input-select ng-pristine ng-untouched ng-valid" data-qa="font-color">
+                                  <option data-qa="black" value="black" class="ng-binding ng-scope" selected="selected">Black</option>
+                                  <option data-qa="brightblue" value="brightblue" class="ng-binding ng-scope">Bright Blue</option>
+                                  <option data-qa="brightred" value="brightred" class="ng-binding ng-scope">Bright Red</option>
+                                  <option data-qa="darkgreen" value="darkgreen" class="ng-binding ng-scope">Dark Green</option>
+                                  <option data-qa="darkred" value="darkred" class="ng-binding ng-scope">Dark Red</option>
+                                  <option data-qa="gold" value="gold" class="ng-binding ng-scope">Gold</option>
+                                  <option data-qa="green" value="green" class="ng-binding ng-scope">Green</option>
+                                  <option data-qa="navyblue" value="navyblue" class="ng-binding ng-scope">Navy Blue</option>
+                                  <option data-qa="purple" value="purple" class="ng-binding ng-scope">Purple</option>
+                                  <option data-qa="white" value="white" class="ng-binding ng-scope">White</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group ng-scope">
+                              <input type="checkbox" id="astericksText" data-qa="astericks-text" class="input-cb vh ng-pristine ng-untouched ng-valid">
+                              <label for="astericksText" class="cb-box"></label>
+                              <label for="astericksText" class="cb-label ng-binding">Hide text with asterisks</label>
+                            </div>
+                            <div class="form-group ng-scope">
+                              <input type="checkbox" id="disableAutoSizeCb" data-qa="fixed-width" class="input-cb vh ng-pristine ng-untouched ng-valid">
+                              <label for="disableAutoSizeCb" class="cb-box"></label>
+                              <label for="disableAutoSizeCb" class="cb-label ng-binding">Fixed Width</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-qa="data-label-properties-accordion" class="ng-scope tag_option">
+                  <div class="accordion closed"><span class="ng-binding">Data Label</span> <i class="icon accordion-icon"></i></div>
+                  <div class="drawer drawer-properties_section down closed" style="height: 0px;">
+                    <div class="drawer-wrapper">
+                      <div class="drawer-content">
+                        <div class="section ng-scope">
+                          <div class="form-group">
+                            <input class="input input-text ng-pristine ng-untouched ng-valid" data-qa="data-label-text" placeholder="...">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-qa="tooltip-properties-accordion" class="ng-scope tag_option">
+                  <div class="accordion closed"><span class="ng-binding">Tooltip</span> <i class="icon accordion-icon"></i></div>
+                    <div class="drawer drawer-properties_section down closed" style="height: 0px;"><div class="drawer-wrapper">
+                      <div class="drawer-content">
+                        <div class="section ng-scope">
+                          <div class="form-group">
+                            <input class="input input-text ng-pristine ng-untouched ng-valid ng-valid-maxlength" data-qa="tooltip-text" placeholder="..." maxlength="100">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <div data-qa="data-validation-properties-accordion" class="ng-scope tag_option">
+                <div class="accordion closed"><span class="ng-binding">Validation</span> <i class="icon accordion-icon"></i></div>
+                <div class="drawer drawer-properties_section down closed" style="height: 0px;">
+                  <div class="drawer-wrapper">
+                    <div class="drawer-content">
+                      <div class="section ng-scope">
+                        <div class="form-group">
+                          <div class="select-wrap">
+                            <select class="input-select ng-pristine ng-untouched ng-valid" data-qa="validation" >
+                              <option data-qa="Custom" value="Custom" class="ng-binding ng-scope">Custom</option>
+                              <option data-qa="Date" value="Date" class="ng-binding ng-scope">Date</option>
+                              <option data-qa="Email" value="Email" class="ng-binding ng-scope">Email</option>
+                              <option data-qa="Letters" value="Letters" class="ng-binding ng-scope">Letters</option>
+                              <option data-qa="None" value="None" class="ng-binding ng-scope" selected="selected">None</option>
+                              <option data-qa="Number" value="Number" class="ng-binding ng-scope">Number</option>
+                              <option data-qa="SSN" value="SSN" class="ng-binding ng-scope">SSN</option>
+                              <option data-qa="Zip" value="Zip" class="ng-binding ng-scope">Zip</option>
+                              <option data-qa="Zip-Ext" value="Zip-Ext" class="ng-binding ng-scope">Zip-Ext</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-qa="anchor-tabs-properties-accordion" class="ng-scope tag_option">
+                <div class="accordion closed"><span class="ng-binding">AutoPlace</span> <i class="icon accordion-icon"></i></div>
+                <div class="drawer drawer-properties_section down closed" style="height: 0px;">
+                  <div class="drawer-wrapper">
+                    <div class="drawer-content">
+                      <div class="section ng-scope">
+                        <div class="form-group">
+                          <button class="btn btn-utility btn-block ng-binding ng-scope">Set Up</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-qa="radio-values-properties-accordion" class="ng-hide tag_option">
+                <div class="accordion closed"><span class="ng-binding">Radio Button Values</span> <i class="icon accordion-icon"></i></div>
+                <div class="drawer drawer-properties_section down closed" style="height: 0px;">
+                  <div class="drawer-wrapper">
+                    <div class="drawer-content"><
+                      <div class="section ng-scope" data-qa="checkbox-section">
+                        <style type="text/css">
+                          .highlighted-radio {
+                            border-color: #2c6ee1 !important;
+                          }
+                        </style>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-qa="collab-property-accordion" class="ng-scope tag_option">
+                <div class="accordion closed"><span class="ng-binding">Collaboration</span> <i class="icon accordion-icon"></i></div>
+                <div class="drawer drawer-properties_section down closed" style="height: 0px;">
+                  <div class="drawer-wrapper">
+                    <div class="drawer-content">
+                      <div class="cb inline-input ng-scope" data-qa="shared-tab-checkbox">
+                        <input type="checkbox" id="sharedTabCheckbox" data-qa="input-shared-tab-checkbox" class="cb_input ng-pristine ng-untouched ng-valid">
+                        <label for="sharedTabCheckbox" class="cb_label ng-binding">Recipients Can Collaborate</label>
+                      </div>
+                      <div class="cb inline-input ng-scope ng-hide" data-qa="require-initial-on-shared-change-cb">
+                        <input type="checkbox" id="requireInitialOnSharedChangeCb" class="cb_input ng-pristine ng-untouched ng-valid" data-qa="input-require-initial-on-shared-change-cb">
+                        <label for="requireInitialOnSharedChangeCb" class="cb_label ng-binding">Changes Require Initials</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-qa="conditional-logic-properties-accordion" class="ng-scope tag_option">
+                <div class="accordion closed"><span class="ng-binding">Conditional Logic</span> <i class="icon accordion-icon"></i></div>
+                <div class="drawer drawer-properties_section down closed" style="height: 0px;">
+                  <div class="drawer-wrapper">
+                    <div class="drawer-content">
+                    <style type="text/css" class="ng-scope">
+                      .tab-panel_ellipsis {
+                          width: 100%;
+                          white-space: nowrap;
+                          overflow: hidden;
+                          text-overflow: ellipsis;
+                      }
+                    </style>
+                    <div class="section ng-scope">
+                      <div class="form-group ng-scope" ng-if="tabPanelCtrl.showConditionalEditor()">
+                        <button class="btn btn-utility btn-block ng-scope ng-binding">Create Rule</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="drawer-properties_footer ng-scope" ng-if="tabPanelCtrl.open">
+            <button class="btn btn-block btn-md btn-utility ng-scope" data-qa="properties-panel-save-as-custom">
+              <span class="ng-binding">Save As Custom Field</span></button>
+              <button class="btn btn-block btn-md btn-utility ng-scope" data-qa="properties-panel-delete"><span class="ng-binding">Delete</span></button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script type="text/babel" src="js/tagger/SideBarOptions.jsx"></script> -->
+  </div>
+</body>
+</html>

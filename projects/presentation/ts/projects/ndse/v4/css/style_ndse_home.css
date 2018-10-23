@@ -1,0 +1,223 @@
+* {
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.site-header .logo {
+  width: 18%;
+  min-width: 160px;
+}
+
+.main-nav .item {
+  padding-top: 22px;
+}
+.actions {
+  width: 285px;
+}
+.actions .icon {
+  color: #FFF;
+}
+
+article.site-content {
+  position: relative;
+  height: auto;
+  min-height: calc(100% - 104px);
+  overflow: auto;
+  display: flex;
+}
+article .ndse_home {
+  margin: 60px auto;
+  /*padding: 24px;*/
+  width: 100%;
+  max-width: 1264px;
+  z-index: 10;
+}
+
+.ndse_home .cards {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+.ndse_home .cards.full_cards {
+  min-width: 68%;
+}
+
+.hero_background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+.hero_background img {
+  width: 100%;
+  min-height: 220px;
+}
+
+.card {
+  position: relative;
+  min-width: 30%;
+  min-height: 250px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #FFF;
+  z-index: 1;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+.card.user_profile {
+  /*width: 30%;*/
+  height: auto;
+}
+.card.news_card {
+  /*width: 30%;*/
+  height: 250px;
+}
+
+.card.user_profile .profile_status {
+  transform: scale(2.5) translate(10px,-15px)
+}
+.user_profile .profile_status circle {
+  stroke-width: 3;
+}
+.user_profile .profile_status .user_initial {
+  background: #FFF;
+  width: 94%;
+  height: 94%;
+  z-index: 0;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 32px;
+}
+.card.user_profile .profile_status_text {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+}
+.user_profile .profile_status_text {
+  color: #FFC820;
+  font-weight: bold;
+  margin: 8px;
+}
+.user_profile .profile_edit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px;
+}
+.user_profile > div {
+  max-width: 100%;
+}
+.user_profile .user_name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.user_profile .user_account_num {
+
+}
+.user_profile .user_email {
+
+}
+.user_profile .signature {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #CCC;
+}
+
+.news_card .slider_images {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60%;
+  background-color: #FFF5D7;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+}
+.news_card .slider_buttons {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+}
+.news_card .slide_info {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+}
+.news_card .slide_info > div {
+  margin-top: 7px;
+}
+
+.documents_card .add_document.empty {
+  border: none;
+  min-height: 520px;
+}
+.documents_card > div:not(:first-child) {
+  margin-top: 20px;
+}
+.documents_card .add_document {
+  border: 1px dashed #CCC;
+  cursor: pointer;
+  height: 220px;
+  color: #777;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.documents_card .add_document > div {
+  margin-top: 20px;
+  color: #999;
+  font-size: 20px;
+}
+
+.documents_card .documents_activity .activity_type {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.documents_card .documents_list .doc_list_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 10px;
+  min-height: 50px;
+}
+.documents_card .documents_list .doc_list_item:not(:last-child) {
+  border-bottom: 1px solid #CCC;
+}
+.documents_card .documents_list .doc_list_item > div:not(:last-child) {
+  margin-right: 15px;
+}
+.documents_card .documents_list .doc_list_item .doc_recipients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.documents_card .documents_list .doc_list_item .doc_recipients img {
+  width: 90px;
+  margin-left: 5px;
+}
+
+.documents_card .documents_list .doc_details {
+  /*font-size: 12px;*/
+}
+.documents_card .documents_list .doc_details .doc_time_stamp {
+  font-size: 11px;
+}
+
+.nav-buttons .btn {
+  min-width: 105px;
+}
+
+.add_document.file-droppable {
+  border: 2px dashed #A6C0EE !important;
+  background-color: rgba(237, 250, 255, 0.5) !important;
+  transition: none;
+}

@@ -1,0 +1,463 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+  <title ng-bind="title" class="ng-binding">Send | DocuSign</title>
+  <link rel="icon" type="image/x-icon" href="https://docucdn-a.akamaihd.net/olive/17.4.0/img/new_favicon.png"/>
+  <!-- <link rel="stylesheet" type="text/css" href="css/olive/olive.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/olive/martini.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/olive/tagger.min.css"/> -->
+  <link rel="stylesheet" type="text/css" href="https://docucdn-a.akamaihd.net/olive/17.4.0/css/olive.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://docucdn-a.akamaihd.net/olive/17.4.0/css/martini.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://docucdn-a.akamaihd.net/olive/17.4.0/css/tagger.min.css"/>
+  <!-- <link href="css/style_common.css" rel="stylesheet" type="text/css" />
+  <link href="css/style_topNav.css" rel="stylesheet" type="text/css" /> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/style_disclosers_signing.css" /> -->
+  <!-- <link href="css/prepare/style_addDocuments_Supp.css" rel="stylesheet" type="text/css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/style_selectDocument.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_selectSigners.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_selectRecipients.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_tagger.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_ndse_home.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_ndse_tagger.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_sendToRecipients.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_topNav_menu.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_modal.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_callouts.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_preview_mode.css" />
+
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="js/interact.min.js"></script>
+  <script src="js/Sortable.js"></script>
+</head>
+
+<body>
+  <nav id="topNav" class="site-header">
+    <div class="">
+      <div class="action-header">
+        <div class="action-header_title">
+          <div class="btn-link btn-lg btn-icon btn-close-flow">
+            <span class="icon icon-times"></span>
+            <span class="sr-text">Back</span>
+          </div>
+          <span class="title desktop ellipsis"><span data-field-id="Envelope Name" contenteditable="true">Untitled Envelope</span> <span class="icon icon-editpen"></span></span>
+        </div>
+        <div class="action-flow">
+          <div class="flow-state tip before middle" data-step-name="Select">
+            <div class="tab-background"></div>
+            <div class="flow-selected">
+              <span class="flow-number">1.</span>
+              <span class="check"><img src="images/svg/check_white.svg"/></span>
+            </div>
+            <div class="flow-state-text">
+              Add
+            </div>
+          </div>
+          <div class="flow-state tip before middle" data-step-name="Prepare">
+            <div class="tab-background"></div>
+            <div class="flow-selected">
+              <span class="flow-number">2.</span>
+              <span class="check"><img src="images/svg/check_white.svg"/></span>
+            </div>
+            <div class="flow-state-text">
+              Prepare
+            </div>
+          </div>
+          <!-- <div class="tab-background"></div> -->
+          <div class="flow-line"></div>
+          <div class="flow-line flow-line-progress"></div>
+          <div class="flow-state" data-step-name="Send">
+            <div class="tab-background"></div>
+            <div class="flow-selected">
+              <span class="flow-number">3.</span>
+              <span class="check"><img src="images/svg/check_white.svg"/></span>
+            </div>
+            <div class="flow-state-text">
+              Send
+            </div>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="user_help" data-menu-id="user_help"><img src="images/svg/help_icon.svg"/></div>
+          <div><img src="images/svg/notification_icon.svg"/></div>
+          <div class="profile_status user_profile" data-menu-id="user_profile">
+            <div class="user_initial">SJ</div>
+            <svg class="">
+              <circle cx="50%" cy="50%" r="45%" class="status"></circle>
+              <circle cx="50%" cy="50%" r="45%" class="completion"></circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div id="menuOtherActions" class="menu invisible">
+        <ul class="menu-buttons" role="menu">
+          <li class="ng-scope" role="menuitem"><a class="btn btn-secondary btn-block ng-binding btn-preview">Preview</a></li>
+          <li class="ng-scope" role="menuitem"><a class="btn btn-secondary btn-block ng-binding">Save and Close</a></li>
+          <li class="ng-scope" role="menuitem"><a class="btn btn-secondary btn-block ng-binding">Discard</a></li>
+        </ul>
+        <ul class="ng-scope" role="menu">
+          <li role="menuitem"><a class="item ng-scope ng-binding" data-qa="edit-message">Edit Message</a></li>
+          <li role="menuitem"><a class="item ng-binding" data-qa="edit-recipients">Edit Recipients</a></li>
+          <li role="edit-documents"><a class="item ng-binding" data-qa="edit-documents">Edit Documents</a></li>
+          <li role="menuitem"><a class="item ng-scope ng-binding" data-qa="edit-advanced-options">Advanced Options</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <article class="ndse_steps">
+    <div class="ndse_sub_steps">
+      <div id="selectDocument" class="ndse_page ndse_page_nav selectDocument selected" data-step-name="Select"></div>
+      <div id="selectSigners" class="ndse_page ndse_page_nav selectSigners" data-step-name="Select"></div>
+      <div id="selectRecipients" class="ndse_page ndse_page_nav selectRecipients" data-step-name="Select"></div>
+    </div>
+    <div class="ndse_sub_steps">
+      <div class="ndse_page"></div>
+      <div class="ndse_page"></div>
+      <div id="taggerDocument" class="ndse_page ndse_page_nav taggerDocument" data-step-name="Prepare"></div>
+    </div>
+    <div class="ndse_sub_steps">
+      <div class="ndse_page"></div>
+      <div class="ndse_page"></div>
+      <div id="sendToRecipients" class="ndse_page ndse_page_nav sendToRecipients" data-step-name="Send"></div>
+    </div>
+  </article>
+
+  <nav id="bottomNav" class="hide_bottom_nav">
+    <div class="actions_bar site-container">
+      <!-- <div class="btn btn-minor btn-trigger btn-lg">Other Actions</div> -->
+      <div class="btn btn-minor btn-lg btn-prev invisible">Previous</div>
+      <div class="btn btn-main btn-lg btn-next ">Next</div>
+    </div>
+  </nav>
+  <footer id="" class="site-editor">
+    <div class="site_footer ng-scope">
+      <div class="site_container">
+        <div class="footer_left"></div>
+        <div class="footer_main">
+          <ul class="footer-links">
+            <li class="ng-scope"><a class="footer-links_item btn-triggeR ng-binding"><span class="icon icon-globe"></span> English (US)</a></li>
+            <li><span class="footer-links_item ng-binding">Powered by DocuSign</span></li>
+            <li><a target="_blank" class="footer-links_item ng-scope ng-binding" href="https://support.docusign.com/contactSupport">Contact Us</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding" href="http://www.docusign.com/company/terms-of-use/lang/en">Terms of Use</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding" href="http://www.docusign.com/company/privacy-policy/lang/en">Privacy</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding" href="http://www.docusign.com/IP/lang/en">Intellectual Property</a></li>
+            <li><span class="footer-links_item ng-binding">Copyright © 2016 DocuSign, Inc. All rights reserved.</span></li>
+          </ul>
+          <div id="menuLanguages" class="menu select-menu invisible">
+            <ul role="menu" aria-labelledby=" English (US)">
+              <li class="item ng-binding ng-scope on" role="menuitem">English (US)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Deutsch</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Español</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Français</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Italiano</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Nederlandse</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Português (Brasil)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Português (Portugal)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Русский</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">中文(台灣)</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">中文(简体)</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">日本語</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">한국어</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">［～Þƨèúδô～］</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_right">
+          <!-- <a class="btn btn-sm btn-secondary" data-qa="shortcut-button">Shortcuts</a>
+          <a class="btn btn-sm btn-secondary" target="_blank" data-qa="feedback-button">Feedback</a> -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="ds-modal-background invisible">
+    <div class="modal modal-new modal-sm modal-visible ng-scope modal-save-envolope hide_modal" role="dialog">
+      <div class="modal_header">
+        <h1 class="modal_title">Do you want to save the changes made to envelope?</h1>
+      </div>
+      <div class="modal_content">
+        <p>Your changes will be lost if you don’t save them.</p>
+      </div>
+      <div class="modal_footer">
+        <a href="index.html" class="btn btn-primary btn-xl btn-cancel">Save & Close</a>
+        <a class="btn btn-minor btn-lg btn-cancel">Cancel</a>
+        <a href="index.html" class="btn btn-minor btn-lg btn-cancel">Discard</a>
+      </div>
+      <button class="modal_close icon icon-times"></button>
+    </div>
+  </div>
+
+  <div class="topNav-menu menu tip below right invisible">
+    <div class="user_profile hide">
+      <div class="profile_edit link">Edit</div>
+      <div class="profile_status">
+        <div class="user_initial">SJ</div>
+        <svg class="">
+          <circle cx="50%" cy="50%" r="45%" class="status"></circle>
+          <circle cx="50%" cy="50%" r="45%" class="completion"></circle>
+        </svg>
+      </div>
+
+      <div class="user_details">
+        <div class="user_name">Sam Pratt Johnson</div>
+        <div class="user_account_num text-muted">Account #0092927-009</div>
+        <div class="user_email text-muted">sam.johnson@gmail.com</div>
+
+        <div class="profile_status_text">Your ID is 15% complete</div>
+
+        <div class="signature">
+          <img src="images/signature_placeholder.png"/>
+        </div>
+
+        <div class="user_plan">
+          <div><img src="images/svg/user_plan.svg"/></div>
+          <div>
+            <div class="plan_name">DocuSign Standard</div>
+            <div class="plan_start text-muted">Joined since June 1999</div>
+            <div class="link">View Pricing</div>
+          </div>
+        </div>
+        <div class="user_navigate">
+          <button class="btn btn-secondary">Go To Admin</button>
+          <button class="btn btn-minor">Logout</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="user_help menu_list">
+      <div class="menu_listItem"><a class="menu_item"><span class="icon icon-external"></span> Support Home</a></div>
+      <div class="menu_listItem"><a class="menu_item"><span class="icon icon-chat"></span> Community</a></div>
+      <div class="menu_listItem"><a class="menu_item"><span class="icon icon-trustcenter"></span> Trust Center</a></div>
+      <div class="menu_listItem"><a class="menu_item"><span class="icon icon-palette-field-note"></span> Feedback</a></div>
+      <div class="menu_listItem"><a class="menu_item"><span class="icon icon-incomplete"></span> DocuSign Tutorials</a></div>
+
+      <div class="app_extensions">
+        <div class="strong">Apps & Extensions</div>
+        <img src="images/app_extensions.png"/>
+      </div>
+      <div class="tips_and_tricks">
+        <div class="strong">Tips & Tricks</div>
+        <img src="images/tips_and_tricks.png"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="tooltip callout inverse steps tip above left hidden">
+    <div class="callout-sample-document hidden">
+      <div class="header">Sample Document</div>
+      <!-- <i class="icon icon-times"></i> -->
+      <div class="tooltip-content">This is a sample document that you can use to try our product or upload your own documents.</div>
+      <div class="buttonRow">
+        <!-- <button class="btn btn-primary hidden">Got It</button> -->
+        <button class="btn btn-inverse-secondary">Got It</button>
+        <!-- <span class="stepCount hidden"><span class="stepNum">1</span> / <span class="stepTotal">2</span></span> -->
+      </div>
+    </div>
+    <div class="callout-signing-order hidden">
+      <div class="header">Change your signing order</div>
+      <!-- <i class="icon icon-times"></i> -->
+      <div class="tooltip-content">Renumber your recipients in the order you would like them to sign.</div>
+      <div class="buttonRow">
+        <!-- <button class="btn btn-primary hidden">Got It</button> -->
+        <button class="btn btn-inverse-secondary">Got It</button>
+        <!-- <span class="stepCount hidden"><span class="stepNum">1</span> / <span class="stepTotal">2</span></span> -->
+      </div>
+    </div>
+    <div class="callout-drag-n-drop hidden">
+      <div class="header">Drag & Drop</div>
+      <i class="icon icon-times"></i>
+      <div class="tooltip-content">Drag and drop your needed fields onto your document.</div>
+      <div class="buttonRow">
+        <!-- <button class="btn btn-primary hidden">Got It</button> -->
+        <button class="btn btn-inverse-secondary">Got It</button>
+        <!-- <span class="stepCount"><span class="stepNum">1</span> / 3</span> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="messages-global global-notifications msg_feature_unavailable hide">
+    <div class="message message-error">
+      <span class="message_icon icon icon-alert-triangle"></span>
+      <div class="message_content">Feature currently not available</div>
+      <button class="message_close icon icon-times"></button>
+    </div>
+  </div>
+
+  <div class="preview_mode desktop hide">
+    <div id="previewToolbar" class="site-editor">
+      <div class="site_toolbar">
+        <div class="toolbar_left ng-isolate-scope">
+          <div class="text_preview_as">Previewing as: </div>
+          <button type="button" data-qa="recipient-selector" class="btn btn-select btn-block btn-trigger btn-recipients u-ellipsis ng-scope"><span class="swatch swatch-sm swatch-round swatch-recipient swatch-ext-0"></span><span class="ng-binding">Eric Gonzales</span>
+          </button>
+          <div id="" class="menu toolbarRecipientsMenu select-menu invisible">
+            <ul role="menu">
+              <li data-qa="recipient-1" class="ng-scope" role="menuitem">
+                <button class="item on"><span class="swatch swatch-round swatch-recipient swatch-ext-0" data-qa="recipient-list-name-1"></span><span class="ng-binding">Eric Gonzales</span></button>
+              </li>
+              <li data-qa="recipient-2" class="ng-scope feature_unavailable" role="menuitem">
+                <button class="item"><span class="swatch swatch-round swatch-recipient swatch-ext-1" data-qa="recipient-list-name-2"></span><span class="ng-binding">Donald Salton</span></button>
+              </li>
+            </ul>
+            <!-- <ul role="menu" aria-labelledby="Eric Gonzales">
+              <li role="menuitem">
+                <button class="item ng-binding">Edit Recipients</button>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+        <div class="toolbar_main ng-isolate-scope">
+          <div class="tabs-wrap">
+            <ul class="tabs">
+              <li class="tab-wrap"><a class="tab on" data-preview-tab="Documents">Documents</a></li>
+              <li class="tab-wrap"><a class="tab" data-preview-tab="Email">Email</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="toolbar_right">
+          <button class="modal_close icon icon-times btn-preview"></button>
+        </div>
+      </div>
+    </div>
+    <div class="site-editor" data-preview-tab="Documents">
+      <div class="site_toolbar toolbar_tagger">
+        <div class="toolbar_left ng-isolate-scope">
+        </div>
+        <div class="toolbar_main">
+          <div class="btn-group">
+            <button type="button" class="btn btn-minor btn-icon" disabled="">
+              <span class="icon icon-zoomin"></span>
+            </button>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-minor btn-icon ng-scope" data-qa="copy-toolbar-button" disabled="">
+              <span class="icon icon-zoomout"></span>
+            </button>
+          </div>
+          <div class="btn-group">
+            <div class="btn btn-minor btn-icon ng-scope" data-qa="copy-toolbar-button" disabled="">
+              <span class="strong">1 / 1 Fields</span>
+              <span class="icon icon-caret-left"></span>
+              <span class="icon icon-caret-right"></span>
+            </div>
+          </div>
+          <div class="ng-isolate-scope"></div>
+        </div>
+        <div class="toolbar_right">
+        </div>
+      </div>
+      <div class="responsive_container">
+        <div id="envelope-wrapper" class="">
+          <div class="desktop" href="#font-size" id="autonav"><p>NEXT</p></div>
+          <div id="envelope" class="cell">
+            <!-- <div class="wrapper"> -->
+              <!-- <div class="container"> -->
+            <div class="documents-wrapper">
+              <section class="documents">
+                <div id="page1" class="document_page">
+                  <div id="field-4" class="field field-sign">
+          					<img class="field-image blink_field" src="images/svg/SignHereActive150.svg">
+          					<!-- <img class="field-image hide" src="images/AE_Sign.gif"> -->
+          				</div>
+                  <img class="page_image" src="docs/Sales_Order_page1.png"></img>
+                </div>
+              </section>
+
+              <div class="finish_button hidden">
+                <button id="bottom-btn-finish" class="btn btn-main btn_pay_amount" type="button">Pay Now</button>
+              </div>
+            </div>
+              <!-- </div> -->
+            <!-- </div> -->
+          </div>
+          <div class="modal_background hidden">
+            <div class="modal_header" olive-modal-header="">
+              <span class="icon-times"></span>
+              <h1 class="modal_title">
+                Finished Signing
+              </h1>
+            </div>
+            <p>You have successfully signed the document and you will receive a copy via email.</p>
+          </div>
+        </div>
+        <div class="content_sidebar content_sidebar-right">
+          <div class="sidebar-options ">
+            <div class="sidebar_header ng-binding">Documents</div>
+            <div class="docsWrapper" data-qa="test">
+              <div class="singleDocument">
+                <div class="documentDescription accordion open">
+                  <i class="icon accordion-icon" data-qa="document-page-icon"></i>
+                  <span class="docName ng-binding">Sales_Order.pdf</span>
+                  <i class="icon icon-right more_options" data-qa="document-options-icon"><img src="images/svg/icon_more.svg"></i>
+                  <span class="docPages ng-binding" data-qa="uploaded-file-pages">Pages: 1</span>
+
+                  <div id="" class="menu menu_doc_options invisible">
+                    <ul role="menu">
+                      <li role="set_as_supplement" class="ng-scope">
+                        <a class="item" data-qa="Standard Fields">Set as Supplement</a>
+                      </li>
+                      <li role="menuitem" class="ng-scope">
+                        <a class="item" data-qa="Custom Fields">Delete Document</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="documentPageSet drawer down full open">
+                  <div class="drawer-wrapper"><br>
+                    <div callout-pos="before top" class="documentPage callout-target">
+                      <img class="img" src="docs/Sales_Order_page1.png">
+                      <div class="bar-action">
+                        <span class="pageNumber ng-binding">1</span>
+                        <button class="btn btn-icon btn-minor btn-action">
+                          <span class="icon icon-trash"></span>
+                          <span class="sr-text ng-binding">Delete</span>
+                        </button>
+                        <button class="btn btn-icon btn-minor btn-action">
+                          <span class="icon icon-rotate-circle-right"></span>
+                          <span class="sr-text ng-binding">Rotate</span>
+                        </button>
+                      </div>
+
+                      <div class="column-indicators">
+                        <div class="indicator-tag ng-scope indicator-recipient-0"></div>
+                      </div>
+                      <span class="pageNumber ng-binding">1</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-editor preview_email_tab" data-preview-tab="Email">
+      <img src="images/preview_email_tab.png"/>
+    </div>
+  </div>
+</body>
+<script src="js/script_callouts.js"></script>
+<script src="js/script_ndse.js"></script>
+<script src="js/script_topNav_menu.js"></script>
+<script src="js/script_modals.js"></script>
+<script src="js/script_preview_mode.js"></script>
+
+<!-- <script>
+//   window.setTimeout(function() {
+//   // $(document).ready(function() {
+//     // $.getScript("js/Sortable.min.js", function() {
+//     //   console.log("Tagger script loaded");
+//     // });
+//     $.getScript("js/script_ndse.js", function() {
+//       console.log("NDSE script loaded");
+//     });
+//     // $.getScript("js/prepare/script_addDocuments_Supp.js", function() {
+//     //   console.log("Loaded documents Script.");
+//     // });
+//   // });
+// }, 400);
+
+</script> -->
+
+</html>

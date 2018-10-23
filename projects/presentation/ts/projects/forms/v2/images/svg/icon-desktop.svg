@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>desktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="20" height="16" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20" height="16" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Builder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Preview-Desktop-Copy-2" transform="translate(-627.000000, -17.000000)">
+            <g id="modal-xlarge" transform="translate(-23.000000, 0.000000)">
+                <g id="header" transform="translate(23.000000, 0.000000)">
+                    <g id="utility-header">
+                        <g id="Group-6" transform="translate(627.000000, 17.000000)">
+                            <g id="desktop">
+                                <use id="Rectangle-3" stroke="#606060" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                                <path d="M7.6,16 L12.4,16 L13.6289062,19.0722656 C13.8338557,19.5846392 13.5469637,20 13.0029699,20 L6.99703014,20 C6.4463856,20 6.16520176,19.5869956 6.37109375,19.0722656 L7.6,16 Z" id="Rectangle-8" fill="#606060"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

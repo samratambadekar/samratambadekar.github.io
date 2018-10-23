@@ -1,0 +1,119 @@
+
+.selectSigners.ndse_page .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #F7F7F7;
+}
+.selectSigners.ndse_page .head h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #4A4A4A;
+}
+.selectSigners.ndse_page > div {
+  margin: auto;
+  padding: 20px 24px;
+  max-width: 1264px;
+}
+
+.selectSigners .cards {
+  display: flex;
+  justify-content: space-between;
+}
+.selectSigners .card {
+  position: relative;
+  width: 48%;
+  /*max-width: 400px;*/
+  max-height: 420px;
+  margin: 0;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  overflow: hidden;
+  cursor: pointer;
+}
+.selectSigners .card > div {
+  min-height: 40px;
+  margin: 0 15px 15px;
+}
+.selectSigners .card > div:last-child {
+  min-height: auto;
+}
+.selectSigners .card h1 {
+  font-size: 30px;
+}
+.selectSigners .card .doc_illustration {
+  position: relative;
+  /*width: 75%;*/
+  margin: 15px 0 25px;
+  filter:  drop-shadow(-5px 5px 0px #DDD);
+}
+.selectSigners .doc_illustration > img {
+  border-radius: 4px;
+  /*box-shadow: -5px 3px 0px #E3E3E3;*/
+
+}
+.selectSigners .doc_illustration > .doc_illustration_tag {
+  position: absolute;
+  top: auto;
+  /*box-shadow: none;*/
+}
+.selectSigners .doc_illustration > .doc_illustration_tag.tag-left {
+  left: -8%;
+  transform: translateX(-10px) scale(1.5);
+  /*filter:  drop-shadow(-5px 5px 0px #DDD);*/
+}
+.selectSigners .doc_illustration > .doc_illustration_tag.tag-right {
+  right: -8%;
+  transform: translateX(10px) scale(1.5);
+  /*filter:  drop-shadow(5px 5px 0px #DDD);*/
+}
+.selectSigners .card:hover {
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+.selectSigners .card:hover .doc_illustration_tag {
+  transform: translateX(0) scale(1.5);
+}
+.selectSigners .doc_illustration > .doc_illustration_tag.for_me {
+  bottom: 10%;
+}
+.selectSigners .doc_illustration > .doc_illustration_tag.for_them1 {
+  top: 10%;
+}
+.selectSigners .doc_illustration > .doc_illustration_tag.for_them2 {
+  top: 35%;
+}
+
+.selectSigners .card .selected_overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 10;
+}
+.selectSigners .card:hover {
+  border-color: #4186EC;
+}
+/*.selectSigners .card:hover .selected_overlay {
+  opacity: 0.2;
+}*/
+.selectSigners .card.selected .selected_overlay {
+  opacity: 1
+}
+.selectSigners .card .selected_overlay img {
+  margin-top: 75px;
+}
+.selectSigners .card.selected .doc_illustration {
+  transform: translateY(-500px);
+}

@@ -1,0 +1,60 @@
+<html>
+<body>
+  <div class="head">
+    <h1>Select who needs to sign</h1>
+  </div>
+
+  <div class="cards">
+    <div class="card selected card_for_me">
+      <div class="selected_overlay"><img src="images/svg/check_signer_card.svg"/></div>
+      <div class="doc_background">
+        <div class="doc_illustration">
+          <img src="images/svg/doc_illustration.svg"/>
+          <img class="doc_illustration_tag tag-left for_me" src="images/svg/for_me.svg"/>
+        </div>
+      </div>
+      <div class="doc_signer_check">
+        <div class="cb">
+          <input id="for_me_check" type="checkbox" class="cb_input" checked/>
+          <label for="for_me_check" class="cb_label"><h1>Me</h1></label>
+        </div>
+        <div>“I need to sign this document.”</div>
+      </div>
+    </div>
+    <!-- <div class="card">
+      <div class="selected_overlay"><img src="images/svg/check_signer_card.svg"/></div>
+      <div class="doc_illustration">
+        <img src="images/svg/doc_illustration.svg"/>
+        <img class="doc_illustration_tag tag-left for_me" src="images/svg/for_me.svg"/>
+        <img class="doc_illustration_tag tag-right for_them1" src="images/svg/for_them1.svg"/>
+        <img class="doc_illustration_tag tag-right for_them2" src="images/svg/for_them2.svg"/>
+      </div>
+      <div><h1>For Us</h1></div>
+      <div>“I need to sign this document, and have others sign it too.”</div>
+    </div> -->
+    <div class="card card_for_others">
+      <div class="selected_overlay"><img src="images/svg/check_signer_card.svg"/></div>
+      <div class="doc_background">
+        <div class="doc_illustration">
+          <img src="images/svg/doc_illustration.svg"/>
+          <img class="doc_illustration_tag tag-left for_me" src="images/svg/for_me.svg"/>
+          <img class="doc_illustration_tag tag-right for_them1" src="images/svg/for_them1.svg"/>
+          <img class="doc_illustration_tag tag-right for_them2" src="images/svg/for_them2.svg"/>
+        </div>
+      </div>
+      <div class="doc_signer_check">
+        <div class="cb">
+          <input id="for_others_check" type="checkbox" class="cb_input" />
+          <label for="for_others_check" class="cb_label"><h1>Others</h1></label>
+        </div>
+        <div>“I need others to sign this document.”</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-buttons">
+    <div class="btn btn-secondary btn-lg btn-prev ">Previous</div>
+    <div class="btn btn-main btn-lg btn-next">Next</div>
+  </div>
+</body>
+</html>

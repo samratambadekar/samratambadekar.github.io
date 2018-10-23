@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="400px" height="207px" viewBox="0 0 400 207" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17.8062827,142.117647 L17.8062827,58.1530857 C17.8062827,56.7065668 18.9859524,55.5294118 20.4355613,55.5294118 L159.501611,55.5294118 C160.95122,55.5294118 162.13089,56.7065668 162.13089,58.1530857 L162.13089,142.117647 L17.8062827,142.117647 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="144.324607" height="86.5882353" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="4" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0913439764 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M0,6.00115501 C0,2.68680862 2.69370054,0 5.99356405,0 L11.0064359,0 C14.31659,0 17,2.68396269 17,6.00115501 L17,61.0010159 C17,61.5527396 16.6933855,62.3309885 16.3177287,62.7365078 L8.66276042,71 L0.69426649,62.7212941 C0.310833695,62.3229344 0,61.5539448 0,61.0010159 L0,6.00115501 Z" id="path-4"></path>
+        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="17" height="71" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <path d="M0,12 L7,12 L7,55.2435245 C7,57.173086 5.42906336,58.7373047 3.5,58.7373047 L3.5,58.7373047 C1.56700338,58.7373047 0,57.1689066 0,55.2435245 L0,12 Z" id="path-6"></path>
+        <mask id="mask-7" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="7" height="46.7373047" fill="white">
+            <use xlink:href="#path-6"></use>
+        </mask>
+        <path d="M5,12 L12,12 L12,55.2435245 C12,57.173086 10.4290634,58.7373047 8.5,58.7373047 L8.5,58.7373047 C6.56700338,58.7373047 5,57.1689066 5,55.2435245 L5,12 Z" id="path-8"></path>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="7" height="46.7373047" fill="white">
+            <use xlink:href="#path-8"></use>
+        </mask>
+        <path d="M10,12 L17,12 L17,55.2435245 C17,57.173086 15.4290634,58.7373047 13.5,58.7373047 L13.5,58.7373047 C11.5670034,58.7373047 10,57.1689066 10,55.2435245 L10,12 Z" id="path-10"></path>
+        <mask id="mask-11" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="7" height="46.7373047" fill="white">
+            <use xlink:href="#path-10"></use>
+        </mask>
+    </defs>
+    <g id="Updated-Prototype" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2-Intial-View" transform="translate(-552.000000, -282.000000)">
+            <g id="modal" transform="translate(552.000000, 282.000000)">
+                <g id="Group-10" transform="translate(0.000000, -1.000000)">
+                    <polygon id="Rectangle-8" fill="#76D2EA" points="0 0 400 0.898488121 400 208 0 208"></polygon>
+                    <g id="illustration-2-morph" transform="translate(111.000000, 26.000000)">
+                        <path d="M6.56020942,149.647059 L172.439791,149.647059 L172.439791,47.6969452 C172.439791,45.2665844 170.476584,43.2941176 168.053716,43.2941176 L10.9462839,43.2941176 C8.52341635,43.2941176 6.56020942,45.2665844 6.56020942,47.6969452 L6.56020942,149.647059 Z" id="Fill-1" fill="#E8E8E8"></path>
+                        <use id="Fill-5" stroke="#777777" mask="url(#mask-2)" stroke-width="1.875" fill="#F5F5F5" xlink:href="#path-1"></use>
+                        <path d="M176.424334,159.11905 L2.57566562,159.11905 C1.15291699,159.11905 0,157.90365 0,156.403795 L0,152.362314 C0,150.862459 1.15291699,149.647059 2.57566562,149.647059 L176.424334,149.647059 C177.847083,149.647059 179,150.862459 179,152.362314 L179,156.403795 C179,157.90365 177.847083,159.11905 176.424334,159.11905" id="Fill-9" fill="#F5F5F5"></path>
+                        <path d="M101.095303,152.470588 L78.84187,152.470588 C77.7295299,152.470588 76.7249426,151.736581 76.2823274,150.602374 L75.9109948,149.647059 L104.026178,149.647059 L103.654845,150.602374 C103.21223,151.736581 102.207643,152.470588 101.095303,152.470588" id="Fill-13" fill="#777777"></path>
+                        <polygon id="Fill-16" fill="#E3E3E3" style="mix-blend-mode: multiply;" opacity="0.9" points="24.3664921 141.176471 29.9895288 141.176471 29.9895288 43.2941176 24.3664921 43.2941176"></polygon>
+                        <polygon id="Fill-16" fill="#E3E3E3" style="mix-blend-mode: multiply;" opacity="0.9" transform="translate(89.500000, 57.411765) rotate(-90.000000) translate(-89.500000, -57.411765) " points="86.6884817 117.176471 92.3115183 117.176471 92.3115183 -2.35294118 86.6884817 -2.35294118"></polygon>
+                        <polygon id="Fill-16-Copy" fill="#E3E3E3" style="mix-blend-mode: multiply;" opacity="0.9" transform="translate(89.500000, 116.705882) rotate(-90.000000) translate(-89.500000, -116.705882) " points="86.6884817 176.470588 92.3115183 176.470588 92.3115183 56.9411765 86.6884817 56.9411765"></polygon>
+                        <polygon id="Fill-18" fill="#FEFEFE" points="29.9895288 54.5882353 149.010471 54.5882353 149.010471 0 29.9895288 0"></polygon>
+                        <polygon id="Fill-18-Copy" fill="#FEFEFE" points="29.9895288 113.882353 149.010471 113.882353 149.010471 59.2941176 29.9895288 59.2941176"></polygon>
+                        <polygon id="Fill-18-Copy-2" fill="#FEFEFE" points="29.9895288 141.127044 149.010471 141.127044 149.010471 119.529412 29.9895288 119.529412"></polygon>
+                        <polygon id="Fill-21" fill="#BFBEBD" points="44.9842932 131.764706 134.015707 131.764706 134.015707 126.117647 44.9842932 126.117647"></polygon>
+                        <polygon id="Fill-28" fill="#BFBEBD" points="44.9842932 17.8823529 134.015707 17.8823529 134.015707 12.2352941 44.9842932 12.2352941"></polygon>
+                        <polygon id="Fill-28-Copy" fill="#BFBEBD" points="44.9842932 30.1176471 134.015707 30.1176471 134.015707 24.4705882 44.9842932 24.4705882"></polygon>
+                        <polygon id="Fill-28-Copy-2" fill="#BFBEBD" points="44.9842932 41.4117647 134.015707 41.4117647 134.015707 35.7647059 44.9842932 35.7647059"></polygon>
+                        <polygon id="Fill-28-Copy-3" fill="#BFBEBD" points="44.9842932 71.5294118 134.015707 71.5294118 134.015707 65.8823529 44.9842932 65.8823529"></polygon>
+                        <polygon id="Fill-28-Copy-4" fill="#BFBEBD" points="44.9842932 82.8235294 134.015707 82.8235294 134.015707 77.1764706 44.9842932 77.1764706"></polygon>
+                        <polygon id="Fill-28-Copy-5" fill="#BFBEBD" points="44.9842932 94.1176471 134.015707 94.1176471 134.015707 88.4705882 44.9842932 88.4705882"></polygon>
+                        <polygon id="Fill-28-Copy-6" fill="#BFBEBD" points="44.9842932 105.411765 134.015707 105.411765 134.015707 99.7647059 44.9842932 99.7647059"></polygon>
+                        <polygon id="Fill-29" fill="#BFBEBD" points="44.9842932 26.3529412 82.4712042 26.3529412 82.4712042 25.4117647 44.9842932 25.4117647"></polygon>
+                        <polygon id="Fill-29-Copy" fill="#BFBEBD" points="96.5287958 82.8235294 134.015707 82.8235294 134.015707 81.8823529 96.5287958 81.8823529"></polygon>
+                        <g id="pencil" filter="url(#filter-3)" transform="translate(156.500000, 97.500000) rotate(-330.000000) translate(-156.500000, -97.500000) translate(148.000000, 62.000000)">
+                            <use id="Rectangle-5" stroke="#AECA9E" mask="url(#mask-5)" stroke-width="4" fill="#B9E4A0" xlink:href="#path-4"></use>
+                            <polygon id="Path-3" fill="#AECA9E" points="9 70 5 66 13 66"></polygon>
+                            <path d="M1.35546378,9 L15.5917771,9" id="Line" stroke="#AECA9E" stroke-width="2" stroke-linecap="square"></path>
+                            <path d="M1.35546378,13 L15.5917771,13" id="Line" stroke="#AECA9E" stroke-width="2" stroke-linecap="square"></path>
+                            <use id="Rectangle-6" stroke="#AECA9E" mask="url(#mask-7)" stroke-width="4" xlink:href="#path-6"></use>
+                            <use id="Rectangle-6-Copy" stroke="#AECA9E" mask="url(#mask-9)" stroke-width="4" xlink:href="#path-8"></use>
+                            <use id="Rectangle-6-Copy-2" stroke="#AECA9E" mask="url(#mask-11)" stroke-width="4" xlink:href="#path-10"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

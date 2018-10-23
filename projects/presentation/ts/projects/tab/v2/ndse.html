@@ -1,0 +1,725 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+  <title ng-bind="title" class="ng-binding">Send | DocuSign</title>
+  <link rel="icon" type="image/x-icon" href="https://docucdn-a.akamaihd.net/olive/17.16.1/img/new_favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="https://docucdn-a.akamaihd.net/olive/17.16.1/css/olive.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://docucdn-a.akamaihd.net/olive/17.16.1/css/martini.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://docucdn-a.akamaihd.net/olive/17.16.1/css/tagger.min.css"/>
+
+
+  <!-- <link rel="stylesheet" type="text/css" href="css/style_selectDocument.css" /> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/style_selectSigners.css" /> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/style_selectRecipients.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/style_tagger.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_ndse_home.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_ndse_tagger.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/style_sendToRecipients.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/style_topNav_menu.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_modal.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_callouts.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_preview_mode.css" />
+
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="js/interact.min.js"></script>
+  <!-- <script src="js/Sortable.js"></script> -->
+  <!-- <script type="text/javascript" src="js/mixpanel.js"></script> -->
+</head>
+
+<body>
+  <nav id="topNav" class="site-header">
+    <div class="header-tagger">
+      <div class="action-header">
+        <div class="action-header_title">
+          <div class="btn-link btn-lg btn-icon btn-close-flow">
+            <span class="icon icon-caret-large-left"></span>
+          </div>
+          <span class="text">Back</span>
+        </div>
+        <div class="action-flow">
+
+        </div>
+        <div class="actions">
+          <div class="user_help" data-menu-id="user_help"><img src="images/svg/help_icon.svg"/></div>
+          <div class="feature_unavailable">
+            <button class="btn-lg btn-trigger header_action ng-binding ng-scope">
+               Actions
+            </button>
+          </div>
+          <button class="btn btn-main btn-lg ng-scope">
+              <span class="ng-binding">Send</span>
+          </button>
+        </div>
+      </div>
+      <div id="menuOtherActions" class="menu invisible">
+        <ul class="menu-buttons" role="menu">
+          <li class="ng-scope" role="menuitem"><a class="btn btn-secondary btn-block ng-binding btn-preview">Preview</a></li>
+          <li class="ng-scope" role="menuitem"><a class="btn btn-secondary btn-block ng-binding">Save and Close</a></li>
+          <li class="ng-scope" role="menuitem"><a class="btn btn-secondary btn-block ng-binding">Discard</a></li>
+        </ul>
+        <ul class="ng-scope" role="menu">
+          <li role="menuitem"><a class="item ng-scope ng-binding" data-qa="edit-message">Edit Message</a></li>
+          <li role="menuitem"><a class="item ng-binding" data-qa="edit-recipients">Edit Recipients</a></li>
+          <li role="edit-documents"><a class="item ng-binding" data-qa="edit-documents">Edit Documents</a></li>
+          <li role="menuitem"><a class="item ng-scope ng-binding" data-qa="edit-advanced-options">Advanced Options</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <article class="ndse_steps">
+    <!-- <div class="ndse_sub_steps">
+      <div id="selectDocument" class="ndse_page ndse_page_nav selectDocument selected" data-step-name="Select" data-step-num="1"></div>
+      <div id="selectSigners" class="ndse_page ndse_page_nav selectSigners" data-step-name="Select" data-step-num="2"></div>
+      <div id="selectRecipients" class="ndse_page ndse_page_nav selectRecipients" data-step-name="Select" data-step-num="3"></div>
+    </div> -->
+    <div class="ndse_sub_steps">
+      <!-- <div class="ndse_page"></div>
+      <div class="ndse_page"></div> -->
+      <div id="taggerDocument" class="ndse_page ndse_page_nav taggerDocument selected" data-step-name="Prepare" data-step-num="4"></div>
+    </div>
+    <!-- <div class="ndse_sub_steps">
+      <div class="ndse_page"></div>
+      <div class="ndse_page"></div>
+      <div id="sendToRecipients" class="ndse_page ndse_page_nav sendToRecipients" data-step-name="Send" data-step-num="5"></div>
+    </div> -->
+  </article>
+
+  <nav id="bottomNav" class="hide_bottom_nav hidden">
+    <div class="actions_bar site-container">
+      <!-- <div class="btn btn-minor btn-trigger btn-lg">Other Actions</div> -->
+      <div class="btn btn-minor btn-lg btn-prev invisible">Previous</div>
+      <div class="btn btn-main btn-lg btn-next ">Next</div>
+    </div>
+  </nav>
+  <footer id="" class="site-editor">
+    <div class="site_footer ng-scope">
+      <div class="site_container">
+        <div class="footer_left"></div>
+        <div class="footer_main">
+          <ul class="footer-links">
+            <li class="ng-scope"><a class="footer-links_item btn-triggeR ng-binding"><span class="icon icon-globe"></span> English (US)</a></li>
+            <li><span class="footer-links_item ng-binding">Powered by DocuSign</span></li>
+            <li><a target="_blank" class="footer-links_item ng-binding" href="https://support.docusign.com/contactSupport">Contact Us</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding" href="http://www.docusign.com/company/terms-of-use/lang/en">Terms of Use</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding" href="http://www.docusign.com/company/privacy-policy/lang/en">Privacy</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding" href="http://www.docusign.com/IP/lang/en">Intellectual Property</a></li>
+            <li><span class="footer-links_item ng-binding">Copyright © 2016 DocuSign, Inc. All rights reserved.</span></li>
+          </ul>
+          <div id="menuLanguages" class="menu select-menu invisible">
+            <ul role="menu" aria-labelledby=" English (US)">
+              <li class="item ng-binding ng-scope on" role="menuitem">English (US)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Deutsch</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Español</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Français</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Italiano</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Nederlandse</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Português (Brasil)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Português (Portugal)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Русский</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">中文(台灣)</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">中文(简体)</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">日本語</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">한국어</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">［～Þƨèúδô～］</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_right">
+          <!-- <a class="btn btn-sm btn-secondary" data-qa="shortcut-button">Shortcuts</a>
+          <a class="btn btn-sm btn-secondary" target="_blank" data-qa="feedback-button">Feedback</a> -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="ds-modal-background invisible">
+    <div class="modal modal-new modal-sm modal-visible ng-scope modal-save-envolope hide_modal" role="dialog">
+      <div class="modal_header">
+        <h1 class="modal_title">Do you want to save the changes made to envelope?</h1>
+      </div>
+      <div class="modal_content">
+        <p>Your changes will be lost if you don’t save them.</p>
+      </div>
+      <div class="modal_footer">
+        <a href="#" class="btn btn-primary btn-md btn-cancel">Save & Close</a>
+        <a class="btn btn-minor btn-md btn-cancel">Cancel</a>
+        <a href="#" class="btn btn-minor btn-md btn-cancel">Discard</a>
+      </div>
+      <button class="modal_close icon icon-times"></button>
+    </div>
+
+    <div class="modal modal-new modal-sm modal-visible ng-scope modal-no-fields hide_modal" role="dialog">
+      <div class="modal_header">
+        <h1 class="modal_title">Place Fields For Your Recipients</h1>
+      </div>
+      <div class="modal_content">
+        <p class="strong">No fields have been placed for the following recipients: </p>
+        <ul class="modal_recipients_list">
+          <li><span class="text-alert" data-tag-for="Alex Edwards">Alex Edwards</span></li>
+          <li><span class="text-alert" data-tag-for="Corey Kimel">Corey Kimel</span></li>
+        </ul>
+        <p>Placing fields allows recipients to quickly and easily complete documents. <span class="link">Learn More</span></p>
+      </div>
+      <div class="modal_footer">
+        <a class="btn btn-primary btn-md btn-cancel switch_recipient_callout">Place Fields</a>
+        <a class="btn btn-minor btn-md btn-cancel iWantNoTags">Send Without Fields</a>
+      </div>
+      <button class="modal_close icon icon-times"></button>
+    </div>
+
+    <div class="modal modal-new modal-md modal-visible ng-scope modal-signing-order hide_modal" role="dialog">
+      <div class="modal_header">
+        <span class="modal_title">Edit Signing Order</span>
+        <div class="switch switch-sm">
+          <input type="checkbox" class="switch_input" id="setSigningOrder" checked />
+          <label class="switch_label" for="setSigningOrder"></label>
+        </div>
+      </div>
+      <div class="modal_content">
+        <img class="signing_order_image" data-signing-viz="linear" src="images/svg/signing_order_linear.svg"/>
+        <img class="signing_order_image hidden" data-signing-viz="rectangle" src="images/svg/signing_order_rectangle.svg"/>
+      </div>
+      <div class="modal_footer">
+        <a class="btn btn-primary btn-md btn-cancel">Save</a>
+        <a class="btn btn-minor btn-md btn-cancel">Cancel</a>
+      </div>
+      <button class="modal_close icon icon-times"></button>
+    </div>
+
+    <div class="modal modal-new modal-md modal-visible ng-scope modal-private-message hide_modal" role="dialog">
+      <div class="modal_header">
+        <h1 class="modal_title">Add Private Message</h1>
+      </div>
+      <div class="modal_content">
+        <div class="strong">To: <span class="pm-recipient-name">Corey Kimel</span></div>
+        <div class="form_unit">
+          <label class="label">Private Message</label>
+          <textarea class="input-textarea"></textarea>
+        </div>
+      </div>
+      <div class="modal_footer">
+        <a class="btn btn-primary btn-md btn-cancel btn-done">Done</a>
+        <a class="btn btn-minor btn-md btn-cancel">Cancel</a>
+      </div>
+      <button class="modal_close icon icon-times"></button>
+    </div>
+
+    <div class="modal modal-new modal-xl modal-visible modal-shortcut-keys hide_modal" role="dialog">
+      <div class="ng-scope ng-isolate-scope">
+        <div class="modal_header">
+          <h1 class="modal_title ng-binding">
+            Shortcut Keys
+          </h1>
+        </div>
+        <div class="modal_messages messages-modal"></div>
+        <div class="modal_content">
+          <p class="ng-binding">Use shortcut keys as an alternative to mouse control to perform common actions on recipient fields.</p>
+          <div class="fgrid fgrid-eq fgrid-gutters fgrid-lines fgrid-lg">
+            <div class="fgrid_cell ng-scope">
+              <table class="table">
+                <tbody>
+                  <tr class="ng-scope">
+                    <td>
+                      <span data-qa="shortcut-Change Recipient" class="ng-binding">Change Recipient</span>
+                      <span class="icon icon-incomplete ng-scope"></span>
+                      <div class="callout invisible ng-scope tip" data-qa="shortcut-callout-0" id="shortcut-description-0">
+                        <div class="callout_content ng-binding" data-qa="callout-text">
+                          For a selected ﬁeld, change the assigned recipient; or change which recipient to add ﬁelds for.
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <strong class="text-muted ng-binding" data-qa="0-shortcut" style="float: right">
+                        ⌘+Shift+,, ⌘+Shift+.
+                      </strong>
+                    </td>
+                  </tr>
+                  <tr class="ng-scope">
+                    <td>
+                      <span data-qa="shortcut-Cut" class="ng-binding">Cut</span>
+                    </td>
+                    <td>
+                      <strong class="text-muted ng-binding" data-qa="2-shortcut" style="float: right">
+                        ⌘X
+                      </strong>
+                    </td>
+                  </tr>
+                  <tr class="ng-scope">
+                    <td>
+                      <span data-qa="shortcut-Copy" class="ng-binding">Copy</span>
+                    </td>
+                    <td>
+                      <strong class="text-muted ng-binding" data-qa="4-shortcut" style="float: right">
+                        ⌘C
+                      </strong>
+                    </td>
+                  </tr>
+                  <tr class="ng-scope">
+                    <td>
+                      <span data-qa="shortcut-Paste" class="ng-binding">Paste</span>
+                    </td>
+                    <td>
+                      <strong class="text-muted ng-binding" data-qa="6-shortcut" style="float: right">
+                        ⌘V
+                      </strong>
+                    </td>
+                  </tr>
+                  <tr class="ng-scope">
+                    <td>
+                      <span data-qa="shortcut-Delete" class="ng-binding">Delete</span>
+                    </td>
+                    <td>
+                      <strong class="text-muted ng-binding" data-qa="8-shortcut" style="float: right">
+                        Delete
+                      </strong>
+                    </td>
+                  </tr>
+                  <tr class="ng-scope">
+                    <td>
+                      <span data-qa="shortcut-Duplicate" class="ng-binding">Duplicate</span>
+                    </td>
+                    <td>
+                      <strong class="text-muted ng-binding" data-qa="10-shortcut" style="float: right">
+                        ⌘D
+                      </strong>
+                    </td>
+                  </tr>
+                  <tr class="ng-scope">
+                    <td>
+                      <span data-qa="shortcut-Tab backward through fields" class="ng-binding">Tab backward through fields</span>
+                    </td>
+                    <td>
+                      <strong class="text-muted ng-binding" data-qa="12-shortcut" style="float: right">
+                        Shift+Tab
+                      </strong>
+                    </td>
+                  </tr>
+                  <tr class="ng-scope">
+                    <td>
+                      <span data-qa="shortcut-Undo" class="ng-binding">Undo</span>
+                    </td>
+                    <td>
+                      <strong class="text-muted ng-binding" data-qa="14-shortcut" style="float: right">
+                        ⌘Z
+                      </strong>
+                    </td>
+                  </tr>
+                    <tr class="ng-scope">
+                      <td>
+                        <span data-qa="shortcut-Redo" class="ng-binding">Redo</span>
+                      </td>
+                      <td>
+                        <strong class="text-muted ng-binding" data-qa="1-shortcut" style="float: right">
+                          ⌘Y
+                        </strong>
+                      </td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="fgrid_cell ng-scope">
+              <table class="table">
+                <tbody>
+                  <tr class="ng-scope">
+                    <td>
+                      <span data-qa="shortcut-Select all" class="ng-binding">Select all</span>
+                    </td>
+                    <td>
+                      <strong class="text-muted ng-binding" data-qa="3-shortcut" style="float: right">
+                        ⌘A
+                      </strong>
+                    </td>
+                  </tr>
+                  <tr class="ng-scope">
+                    <td>
+                      <span data-qa="shortcut-Save" class="ng-binding">Save</span>
+                    </td>
+                    <td>
+                      <strong class="text-muted ng-binding" data-qa="5-shortcut" style="float: right">
+                        ⌘S
+                      </strong>
+                    </td>
+                  </tr>
+                  <tr class="ng-scope">
+                    <td>
+                      <span data-qa="shortcut-Cancel" class="ng-binding">Cancel</span>
+                    </td>
+                    <td>
+                      <strong class="text-muted ng-binding" data-qa="7-shortcut" style="float: right">
+                        Esc
+                      </strong>
+                    </td>
+                  </tr>
+                  <tr class="ng-scope">
+                    <td>
+                      <span data-qa="shortcut-Search placed fields" class="ng-binding">Search placed fields</span>
+                    </td>
+                    <td>
+                      <strong class="text-muted ng-binding" data-qa="9-shortcut" style="float: right">
+                        ⌘+Shift+S
+                      </strong>
+                    </td>
+                  </tr>
+                  <tr class="ng-scope">
+                    <td>
+                      <span data-qa="shortcut-Tab forward through fields" class="ng-binding">Tab forward through fields</span>
+                    </td>
+                    <td>
+                      <strong class="text-muted ng-binding" data-qa="11-shortcut" style="float: right">
+                        Tab
+                      </strong>
+                    </td>
+                  </tr>
+                  <tr class="ng-scope">
+                    <td>
+                      <span data-qa="shortcut-Move" class="ng-binding">Move</span>
+                      <span class="icon icon-incomplete ng-scope">
+                      </span>
+                      <div class="callout invisible ng-scope tip" data-qa="shortcut-callout-13" id="shortcut-description-13">
+                        <div class="callout_content ng-binding" data-qa="callout-text">
+                          Use arrow keys to move the selected ﬁeld in any direction.
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <strong class="text-muted ng-binding" data-qa="13-shortcut" style="float: right">
+                        Left, Right, Up, Down
+                      </strong>
+                    </td>
+                  </tr>
+                  <tr class="ng-scope">
+                    <td>
+                      <span data-qa="shortcut-Focus-Properties-Panel" class="ng-binding">Focus Properties Panel</span>
+                    </td>
+                    <td>
+                      <strong class="text-muted ng-binding" data-qa="1-shortcut" style="float: right">
+                        ⌘E
+                      </strong>
+                    </td>
+                  </tr>
+                  <tr class="ng-scope">
+                    <td>
+                      <span data-qa="shortcut-Focus-Tag-Panel" class="ng-binding">Focus Tag Panel</span>
+                    </td>
+                    <td>
+                      <strong class="text-muted ng-binding" data-qa="1-shortcut" style="float: right">
+                        ⌘L
+                      </strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="modal_footer">
+          <button class="btn btn-lg btn-secondary ng-binding" data-qa="support-close">Close</button>
+        </div>
+      </div>
+      <button class="icon icon-close modal_close"></button>
+      <div class="modal_miniShroud"></div>
+    </div>
+  </div>
+
+  <div class="topNav-menu menu tip below right invisible">
+    <div class="user_profile hide">
+      <div class="profile_edit link">Edit</div>
+      <div class="profile_status">
+        <div class="user_initial"><img src="images/svg/profile_icon_no_circle.svg"/></div>
+        <svg class="">
+          <circle cx="50%" cy="50%" r="45%" class="status"></circle>
+          <circle cx="50%" cy="50%" r="45%" class="completion"></circle>
+        </svg>
+      </div>
+
+      <div class="user_details">
+        <div class="user_name">Alex Edwards</div>
+        <div class="user_account_num text-muted">Account #0092927-009</div>
+        <div class="user_email text-muted">alex@edwardsconsulting.com</div>
+
+        <div class="profile_status_text">Your ID is 15% complete</div>
+
+        <div class="signature">
+          <img src="images/signature_placeholder.png"/>
+        </div>
+
+        <div class="user_plan">
+          <div><img src="images/svg/user_plan.svg"/></div>
+          <div>
+            <div class="plan_name">DocuSign Standard</div>
+            <div class="plan_start text-muted">Joined since April 2017</div>
+            <div class="link">View Pricing</div>
+          </div>
+        </div>
+        <div class="user_navigate">
+          <button class="btn btn-secondary">Go To Admin</button>
+          <button class="btn btn-minor">Logout</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="user_help menu_list">
+      <div class="menu_listItem"><a class="menu_item"><span class="icon icon-external"></span> Support Home</a></div>
+      <div class="menu_listItem"><a class="menu_item"><span class="icon icon-chat"></span> Community</a></div>
+      <div class="menu_listItem"><a class="menu_item"><span class="icon icon-trustcenter"></span> Trust Center</a></div>
+      <div class="menu_listItem"><a class="menu_item"><span class="icon icon-palette-field-note"></span> Feedback</a></div>
+      <div class="menu_listItem"><a class="menu_item"><span class="icon icon-incomplete"></span> DocuSign Tutorials</a></div>
+
+      <div class="app_extensions">
+        <div class="strong">Apps & Extensions</div>
+        <img src="images/app_extensions.png"/>
+      </div>
+      <div class="tips_and_tricks">
+        <div class="strong">Tips & Tricks</div>
+        <img src="images/tips_and_tricks.png"/>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="tooltip callout inverse steps tip above left hidden">
+    <div class="callout-sample-document hidden">
+      <div class="header">Name Your Envelope</div>
+      <div class="tooltip-content">Your envelope name will be shown to your signers and will help you easily find it later. Click here to rename it.</div>
+      <div class="buttonRow">
+        <button class="btn btn-inverse-secondary">Got It</button>
+      </div>
+    </div>
+    <div class="callout-signing-order hidden">
+      <div class="header">Change your signing order</div>
+      <div class="tooltip-content">Renumber your recipients in the order you would like them to sign.</div>
+      <div class="buttonRow">
+        <button class="btn btn-inverse-secondary">Got It</button>
+      </div>
+    </div>
+    <div class="callout-drag-n-drop hidden">
+      <div class="header">Drag & Drop</div>
+      <div class="tooltip-content">Drag and drop your needed fields onto your document.</div>
+      <div class="buttonRow">
+        <button class="btn btn-inverse-secondary">Got It</button>
+      </div>
+    </div>
+    <div class="callout-preview-mode hidden">
+      <div class="header">Preview Your Document</div>
+      <div class="tooltip-content">Preview how your documents appears to each recipient.</div>
+      <div class="buttonRow">
+        <button class="btn btn-inverse-secondary">Got It</button>
+      </div>
+    </div>
+    <div class="callout-switch-recipient hidden">
+      <div class="header">Switch Recipients</div>
+      <div class="tooltip-content">Click here to switch your recipients to place fields for them.</div>
+      <div class="buttonRow">
+        <button class="btn btn-inverse-secondary">Got It</button>
+      </div>
+    </div>
+    <div class="callout-first-tag-drop hidden">
+      <div class="header">Select Your Recipients</div>
+      <div class="tooltip-content">Add or choose who this field is for from the dropdown.</div>
+      <div class="buttonRow">
+        <button class="btn btn-inverse-secondary">Got It</button>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="messages-global global-notifications msg_feature_unavailable hide">
+    <div class="message message-error">
+      <span class="message_icon icon icon-alert-triangle"></span>
+      <div class="message_content">Feature currently not available</div>
+      <button class="message_close icon icon-times"></button>
+    </div>
+  </div>
+
+  <div class="preview_mode desktop hide">
+    <div id="previewToolbar" class="site-editor">
+      <div class="site_toolbar">
+        <div class="toolbar_left ng-isolate-scope">
+          <div class="text_preview_as">Previewing as: </div>
+          <button type="button" data-qa="recipient-selector" class="btn btn-select btn-block btn-trigger btn-recipients u-ellipsis ng-scope"><span class="swatch swatch-sm swatch-round swatch-recipient swatch-ext-1"></span><span class="ng-binding">Corey Kimel</span>
+          </button>
+          <div id="" class="menu toolbarRecipientsMenu select-menu invisible">
+            <ul role="menu">
+              <li data-qa="recipient-1" class="ng-scope feature_unavailable" role="menuitem">
+                <button class="item"><span class="swatch swatch-round swatch-recipient swatch-ext-0" data-qa="recipient-list-name-1"></span><span class="ng-binding">Alex Edwards</span></button>
+              </li>
+              <li data-qa="recipient-2" class="ng-scope" role="menuitem">
+                <button class="item on"><span class="swatch swatch-round swatch-recipient swatch-ext-1" data-qa="recipient-list-name-2"></span><span class="ng-binding">Corey Kimel</span></button>
+              </li>
+            </ul>
+            <!-- <ul role="menu" aria-labelledby="Corey Kimel">
+              <li role="menuitem">
+                <button class="item ng-binding">Edit Recipients</button>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+        <div class="toolbar_main ng-isolate-scope">
+          <div class="tabs-wrap">
+            <ul class="tabs">
+              <li class="tab-wrap"><a class="tab on" data-preview-tab="Documents">Documents</a></li>
+              <li class="tab-wrap"><a class="tab" data-preview-tab="Email">Email</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="toolbar_right">
+          <button class="modal_close icon icon-times btn-preview"></button>
+        </div>
+      </div>
+    </div>
+    <div class="site-editor" data-preview-tab="Documents">
+      <div class="site_toolbar toolbar_tagger">
+        <div class="toolbar_left ng-isolate-scope">
+          <div data-field-id="Envelope Name"></div>
+        </div>
+        <div class="toolbar_main">
+          <div class="btn-group">
+            <button type="button" class="btn btn-minor btn-icon" disabled="">
+              <span class="icon icon-zoomin"></span>
+            </button>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-minor btn-icon ng-scope" data-qa="copy-toolbar-button" disabled="">
+              <span class="icon icon-zoomout"></span>
+            </button>
+          </div>
+          <div class="btn-group">
+            <div class="btn btn-minor btn-icon ng-scope" data-qa="copy-toolbar-button" disabled="">
+              <span class="strong">1 / 1 Fields</span>
+              <span class="icon icon-caret-left"></span>
+              <span class="icon icon-caret-right"></span>
+            </div>
+          </div>
+          <div class="ng-isolate-scope"></div>
+        </div>
+        <div class="toolbar_right">
+          <span class="icon icon-documents"></span>
+        </div>
+      </div>
+      <div class="responsive_container">
+        <div id="envelope-wrapper" class="">
+          <div class="desktop" href="#font-size" id="autonav"><p>NEXT</p></div>
+          <div id="envelope" class="cell">
+            <!-- <div class="wrapper"> -->
+              <!-- <div class="container"> -->
+            <div class="documents-wrapper">
+              <section class="documents">
+                <div id="page1" class="document_page">
+                  <div id="field-4" class="field field-sign">
+          					<img class="field-image blink_field" src="images/svg/SignHereActive150.svg">
+          					<!-- <img class="field-image hide" src="images/AE_Sign.gif"> -->
+          				</div>
+                  <div id="field-5" class="field field-date">
+                    04/24/2017
+          				</div>
+                  <img class="page_image" src="docs/Sales_Order_page1.png"></img>
+                </div>
+              </section>
+
+              <div class="finish_button hidden">
+                <button id="bottom-btn-finish" class="btn btn-main btn_pay_amount" type="button">Pay Now</button>
+              </div>
+            </div>
+              <!-- </div> -->
+            <!-- </div> -->
+          </div>
+          <div class="modal_background hidden">
+            <div class="modal_header">
+              <span class="icon-times"></span>
+              <h1 class="modal_title">
+                Finished Signing
+              </h1>
+            </div>
+            <p>You have successfully signed the document and you will receive a copy via email.</p>
+          </div>
+        </div>
+        <div class="content_sidebar content_sidebar-right">
+          <div class="sidebar-options ">
+            <div class="sidebar_header ng-binding">Documents</div>
+            <div class="docsWrapper" data-qa="test">
+              <div class="singleDocument">
+                <div class="documentDescription accordion open">
+                  <i class="icon accordion-icon" data-qa="document-page-icon"></i>
+                  <span class="docName ng-binding">NDA_Edwards_Consulting_Group.pdf</span>
+                  <!-- <i class="icon icon-right more_options" data-qa="document-options-icon"><img src="images/svg/icon_more.svg"></i> -->
+                  <span class="docPages ng-binding" data-qa="uploaded-file-pages">Pages: 1</span>
+
+                  <div id="" class="menu menu_doc_options invisible">
+                    <ul role="menu">
+                      <li role="set_as_supplement" class="ng-scope">
+                        <a class="item" data-qa="Standard Fields">Set as Supplement</a>
+                      </li>
+                      <li role="menuitem" class="ng-scope">
+                        <a class="item" data-qa="Custom Fields">Delete Document</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="documentPageSet drawer down full open">
+                  <div class="drawer-wrapper"><br>
+                    <div callout-pos="before top" class="documentPage">
+                      <img class="img" src="docs/Sales_Order_page1.png">
+                      <div class="bar-action">
+                        <span class="pageNumber ng-binding">1</span>
+                        <button class="btn btn-icon btn-minor btn-action">
+                          <span class="icon icon-trash"></span>
+                          <span class="sr-text ng-binding">Delete</span>
+                        </button>
+                        <button class="btn btn-icon btn-minor btn-action">
+                          <span class="icon icon-rotate-circle-right"></span>
+                          <span class="sr-text ng-binding">Rotate</span>
+                        </button>
+                      </div>
+
+                      <div class="column-indicators">
+                        <div class="indicator-tag ng-scope indicator-recipient-0"></div>
+                      </div>
+                      <span class="pageNumber ng-binding">1</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-editor preview_email_tab" data-preview-tab="Email">
+      <div class="site_toolbar toolbar_tagger">
+        <div class="toolbar_left ng-isolate-scope">
+          <div data-field-id="Envelope Name"></div>
+        </div>
+        <!-- <div class="toolbar_main">
+        </div>
+        <div class="toolbar_right">
+        </div> -->
+      </div>
+      <img src="images/preview_email_tab.png"/>
+    </div>
+  </div>
+</body>
+<!-- <script src="js/script_callouts.js"></script> -->
+<script src="js/script_ndse.js"></script>
+<!-- <script src="js/script_topNav_menu.js"></script> -->
+<script src="js/script_modals.js"></script>
+<!-- <script src="js/script_preview_mode.js"></script> -->
+<!-- <script src="js/script_toast_messages.js"></script> -->
+
+<!-- <script>
+//   window.setTimeout(function() {
+//   // $(document).ready(function() {
+//     // $.getScript("js/Sortable.min.js", function() {
+//     //   console.log("Tagger script loaded");
+//     // });
+//     $.getScript("js/script_ndse.js", function() {
+//       console.log("NDSE script loaded");
+//     });
+//     // $.getScript("js/prepare/script_addDocuments_Supp.js", function() {
+//     //   console.log("Loaded documents Script.");
+//     // });
+//   // });
+// }, 400);
+
+</script> -->
+
+</html>

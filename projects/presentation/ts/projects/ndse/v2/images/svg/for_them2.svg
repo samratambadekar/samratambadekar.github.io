@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="18px" viewBox="0 0 30 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Stroke 118</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M138.665733,65.3566054 L131.775336,58.6329431 C131.276225,58.2021321 131,57.6245819 131,57.0056438 C131.001905,56.3867057 131.276225,55.8072742 131.767716,55.3858696 L138.642873,48.6847826 C139.117219,48.2784281 139.740155,48.0526756 140.399286,48.0526756 L158.422521,48 L158.428236,48 C159.824603,48 160.96189,49.0083612 160.9657,50.2537625 L160.99999,63.6785117 C161.0038,64.9257943 159.866514,65.9435619 158.466336,65.9454431 L140.445006,66 L140.445006,66 L140.439291,66 C139.77635,66 139.149604,65.7742475 138.665733,65.3566054 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30" height="18" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Assests" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ID-Card" transform="translate(-782.000000, -1790.000000)" stroke="#55DCE1" stroke-width="4" fill="#AAF3F5">
+            <g id="Group-12" transform="translate(651.000000, 1730.000000)">
+                <g id="Group-8" transform="translate(0.000000, 12.000000)">
+                    <use id="Stroke-118" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

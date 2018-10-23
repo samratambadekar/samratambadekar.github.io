@@ -1,0 +1,66 @@
+
+.callout {
+  -moz-transition: none;
+  -webkit-transition: none;
+  transition: none;
+
+  font-family: "Maven Pro";
+}
+.callout.hidden {
+  display: none;
+}
+.callout .header {
+  font-size: 14px;
+  font-weight: 700;
+  color: #717171;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.callout .icon {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.callout.inverse {
+  color: #FFF;
+  background-color: #4186EC;
+  border-color: #4186EC;
+}
+.callout.inverse .header {
+  color: #FFF;
+}
+.callout.inverse .icon {
+  color: #FFF;
+}
+
+.callout.inverse.tip.below::before {
+  border-bottom-color: #4186EC;
+}
+.callout.inverse.tip.below::after {
+  border-bottom-color: #4186EC;
+}
+.callout.inverse.tip.above::before {
+  border-top-color: #4186EC;
+}
+.callout.inverse.tip.above::after {
+  border-top-color: #4186EC;
+}
+.callout.inverse.tip.before::before {
+  border-left-color: #4186EC;
+}
+.callout.inverse.tip.before::after {
+  border-left-color: #4186EC;
+}
+.callout.inverse.tip.after::before {
+  border-right-color: #4186EC;
+}
+.callout.inverse.tip.after::after {
+  border-right-color: #4186EC;
+}
+
+.callout-field-image > img {
+  max-height: 130px;
+}

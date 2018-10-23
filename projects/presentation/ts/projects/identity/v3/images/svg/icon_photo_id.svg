@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="48px" viewBox="0 0 64 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Photo ID</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="64" height="47.5428571" rx="8"></rect>
+        <rect id="path-3" x="0" y="0" width="21.4857143" height="21.4857143" rx="6"></rect>
+    </defs>
+    <g id="Signing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2---ID-Checklist" transform="translate(-740.000000, -348.000000)">
+            <g id="Group-4" transform="translate(635.000000, 342.000000)">
+                <g id="Group-2" transform="translate(105.000000, 6.000000)">
+                    <g id="Photo-ID">
+                        <g id="Group-2">
+                            <g id="Rectangle-3">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Mask" fill="#E0EBFA" xlink:href="#path-1"></use>
+                                <rect fill="#B6D0F4" mask="url(#mask-2)" x="0" y="0" width="64.4740741" height="9.984"></rect>
+                            </g>
+                            <g id="Group" transform="translate(7.771429, 16.457143)">
+                                <mask id="mask-4" fill="white">
+                                    <use xlink:href="#path-3"></use>
+                                </mask>
+                                <use id="Mask" fill="#2E2F4E" xlink:href="#path-3"></use>
+                                <g mask="url(#mask-4)" fill="#FFFFFF">
+                                    <g transform="translate(1.432381, 5.252063)">
+                                        <ellipse id="Oval" cx="9.31047619" cy="4.84724655" rx="4.99844052" ry="4.84724655"></ellipse>
+                                        <path d="M19.0984127,16.9574942 L0,16.9574942 C0,12.8662672 3.42052571,9.54920635 7.63936508,9.54920635 L11.4590476,9.54920635 C15.677887,9.54920635 19.0984127,12.8662672 19.0984127,16.9574942 Z" id="Shape"></path>
+                                    </g>
+                                </g>
+                            </g>
+                            <path d="M55.3428571,21.0285714 L36.5428571,21.0285714 C35.8016,21.0285714 35.2,20.4155429 35.2,19.6571429 C35.2,18.8987429 35.8016,18.2857143 36.5428571,18.2857143 L55.3428571,18.2857143 C56.0841143,18.2857143 56.6857143,18.8987429 56.6857143,19.6571429 C56.6857143,20.4155429 56.0841143,21.0285714 55.3428571,21.0285714 Z" id="Shape" fill="#3F3F3F" fill-rule="nonzero"></path>
+                            <path d="M55.3428571,26.5142857 L36.5428571,26.5142857 C35.8016,26.5142857 35.2,25.9012571 35.2,25.1428571 C35.2,24.3844571 35.8016,23.7714286 36.5428571,23.7714286 L55.3428571,23.7714286 C56.0841143,23.7714286 56.6857143,24.3844571 56.6857143,25.1428571 C56.6857143,25.9012571 56.0841143,26.5142857 55.3428571,26.5142857 Z" id="Shape-Copy" fill="#3F3F3F" fill-rule="nonzero"></path>
+                            <path d="M46.2152139,32 L36.5276432,32 C35.7947842,32 35.2,31.3869714 35.2,30.6285714 C35.2,29.8701714 35.7947842,29.2571429 36.5276432,29.2571429 L46.2152139,29.2571429 C46.948073,29.2571429 47.5428571,29.8701714 47.5428571,30.6285714 C47.5428571,31.3869714 46.948073,32 46.2152139,32 Z" id="Shape-Copy-2" fill="#3F3F3F" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

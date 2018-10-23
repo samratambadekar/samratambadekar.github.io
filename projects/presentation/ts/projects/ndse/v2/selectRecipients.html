@@ -1,0 +1,93 @@
+<html>
+<body>
+  <div class="head">
+    <h1>Select Recipients</h1>
+  </div>
+
+  <!-- <div>
+    <div class="cb">
+      <input id="setSigningOrder" type="checkbox" class="cb_input" checked="true"/>
+      <label class="cb_label" for="setSigningOrder">Signing Order</label>
+    </div>
+  </div> -->
+  <div class="recipients_info">
+    <svg class="connecting_line">
+      <line x1="32px" y1="0%" x2="32px" y2="100%"?</line>
+    </svg>
+    <div class="recipients">
+
+      <div class="title">Sender</div>
+      <div class="recipient uneditable">
+        <div class="recipient_number uneditable"><img src="images/svg/sender_icon.svg"/></div>
+        <div class="recipient_picture"><div class="userInitial">SJ</div><img  class="invisible" src="images/svg/profile_icon.svg"/></div>
+        <div class="recipient_details">
+          <div class="recipient_name">Samuel Pratt Johnson (Me)</div>
+          <div class="recipient_email">Account: 67489894211</div>
+        </div>
+      </div>
+    </div>
+    <div id="sortableRecipients" class="recipients">
+      <div class="title ignore-sortable">Recipients</div>
+      <div class="switch switch-sm invisible">
+        <input type="checkbox" class="switch_input" id="setSigningOrder" checked />
+        <label class="switch_label" for="setSigningOrder">Signing Order</label>
+      </div>
+      <div class="recipient">
+        <div class="recipient_number" contenteditable="true">1</div>
+        <div class="recipient_color swatch swatch-ext-0"></div>
+        <div class="recipient_drag icon icon-handle"></div>
+        <div class="recipient_picture"><div class="invisible userInitial">SJ</div><img src="images/svg/profile_icon.svg"/></div>
+        <div class="recipient_details disabled">
+          <div class="form_item-iconRight">
+            <div class="recipient_name"><input type="text" class="input-text" placeholder="Name" value="Sam Pratt Johnson"/></div>
+            <span class="icon icon-contacts"></span>
+          </div>
+          <div class="recipient_email"><input type="text" class="input-text" placeholder="Email" value="sam.johnson@gmail.com"/></div>
+        </div>
+        <div class="recipient_task">
+          <button class="btn btn-minor btn-trigger">
+            <span class="icon icon-needsmysignature"></span>
+            <span class="ng-binding">Needs to Sign</span>
+          </button>
+          <div style="" class="menu ng-scope below left invisible menuRecipientTypes">
+            <ul role="menu" class="">
+              <li role="menuitem"><a class="item"><span class="icon icon-needsmysignature"></span><span>Needs to Sign</span></a></li>
+              <li role="menuitem"><a class="item"><span class="icon icon-user-sign"></span><span>In-person Signer</span></a></li>
+              <li role="menuitem"><a class="item"><span class="icon icon-copied"></span><span>Receives a Copy</span></a></li>
+              <li role="menuitem"><a class="item"><span class="icon icon-eye-open"></span><span>Needs to View</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="recipient_actions">
+          <button class="btn btn-minor"><span class="icon icon-ellipsis-vert"></span></button>
+          <div style="" class="menu ng-scope menuRecipientActions invisible">
+            <ul aria-labelledby="More" role="menu" class="">
+              <li role="menuitem"><a recipient-drawer-state="content" recipient-drawer="drawerCertificate" class="item"><span class="icon icon-trustcenter"></span><span>Add certificate</span></a></li>
+              <li role="menuitem"><a recipient-drawer-state="content" recipient-drawer="drawerAccess" class="item"><span class="icon icon-key"></span><span>Add access authentication</span></a></li>
+              <li role="menuitem"><a recipient-drawer-state="content" recipient-drawer="drawerMessage" class="item"><span class="icon icon-privatenote"></span><span>Add private message</span></a></li>
+              <li role="menuitem"><a recipient-drawer-state="content" recipient-drawer="drawerLanguage" class="item"><span class="icon icon-globe"></span><span>Change language</span></a></li>
+            </ul>
+            <ul aria-labelledby="More" role="menu" class="">
+              <li role="menuitem"><a recipient-drawer-state="content" recipient-drawer="drawerAdvancedSettings" class="item"><span class="icon icon-gear"></span><span>Advanced Settings</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="add_recipient ignore-sortable">
+        <div><img class="icon_add" src="images/svg/plus_circle.svg"/></div>
+        <div>Add Recipients, or <span class="link">Bulk Upload</span></div>
+      </div>
+    </div>
+    <div class="recipient">
+      <div class="recipient_number uneditable"><img src="images/svg/check_grey.svg"/></div>
+      <div class="recipient_instructions">Once an envelope has been routed to all recipients, and documents signed, each recipient will get a completed copy</div>
+    </div>
+  </div>
+
+  <div class="nav-buttons">
+    <div class="btn btn-secondary btn-lg btn-prev ">Previous</div>
+    <div class="btn btn-main btn-lg btn-next disabled">Next</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 35</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.6   0 0 0 0 0.6   0 0 0 0 0.6  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="24" height="24" rx="3"></rect>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="24" height="24" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+    </defs>
+    <g id="Version-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4.1-Prepare-Adding-Tag" transform="translate(-479.000000, -527.000000)">
+            <g id="Tag_Initial_Focus-Copy" filter="url(#filter-1)" transform="translate(413.000000, 526.000000)">
+                <g id="Group-35" transform="translate(76.000000, 5.000000)">
+                    <use id="Rectangle" stroke="#CCCCCC" mask="url(#mask-3)" stroke-width="2" fill="#D9D9D9" xlink:href="#path-2"></use>
+                    <g id="gear" transform="translate(4.000000, 4.000000)" fill="#777777">
+                        <path d="M7.9995,10.999 C6.34298068,10.999 5,9.65601932 5,7.9995 C5,6.34298068 6.34298068,5 7.9995,5 C9.65601932,5 10.999,6.34298068 10.999,7.9995 C10.999,9.65601932 9.65601932,10.999 7.9995,10.999 L7.9995,10.999 Z M15.9995,7.051 L13.7935,6.3305 L13.2735,5.075 L14.2735,2.9595 L12.986,1.672 L10.9165,2.723 L9.661,2.203 L8.872,0 L7.0515,0 L6.331,2.2065 L5.076,2.7265 L2.96,1.727 L1.6725,3.0145 L2.723,5.084 L2.2035,6.339 L0,7.128 L0,8.949 L2.2065,9.6695 L2.7265,10.925 L1.727,13.0405 L3.014,14.328 L5.0835,13.277 L6.339,13.797 L7.128,16 L8.9485,16 L9.669,13.794 L10.9245,13.274 L13.04,14.274 L14.3275,12.986 L14.205,12.7445 L13.2765,10.9165 L13.7965,9.661 L15.9995,8.872 L15.9995,7.051 Z" id="Page-1"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
