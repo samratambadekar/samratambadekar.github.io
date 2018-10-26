@@ -266,12 +266,13 @@ a {
   bottom: auto;
   left: 15px;
 }
-.tile .tile-action-play {
+.tile a.tile-action-play {
   /* position: absolute;
   right: 15px;
   bottom: 5px;
   width: 2em;
   height: 2em; */
+  top: 20px;
   align-self: flex-start;
 }
 .tile .tile-episode-time {
