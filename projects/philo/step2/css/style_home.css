@@ -266,13 +266,14 @@ a {
   bottom: auto;
   left: 15px;
 }
-/* .tile .tile-action-play {
-  position: absolute;
+.tile .tile-action-play {
+  /* position: absolute;
   right: 15px;
   bottom: 5px;
   width: 2em;
-  height: 2em;
-} */
+  height: 2em; */
+  align-self: flex-start;
+}
 .tile .tile-episode-time {
   position: absolute;
   right: 5px;
@@ -331,6 +332,10 @@ a {
   transition: 0.2s transform; */
   /* opacity: 1; */
 /* } */
+
+.tile-set.tile-set-grid .tile-thumbnail {
+  top: 0;
+}
 
 @media screen and (max-width: 910px) {
   .hero .hero-image-group.hero-image-iconic .hero-image {
