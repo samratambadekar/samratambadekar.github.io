@@ -342,7 +342,7 @@ a {
 }
 
 .live_tv_page .tile-set.tile-set-grid .tile-list-item {
-  height: auto;
+  height: 10em;
 }
 
 @media screen and (max-width: 910px) {
