@@ -316,7 +316,7 @@ a {
   font-weight: 600;
 }
 .tile-set.tile-set-slide .tile-list {
-  height: 13em;
+  height: 12em;
 }
 /* .tile .tile-default::before {
   content: '';
@@ -344,6 +344,24 @@ a {
 .live_tv_page .tile-set.tile-set-grid .tile-list-item {
   height: 10em;
 }
+
+/* .tile-set.tile-set-slide .tile {
+  margin: 0em 0.25em;
+}
+.tile-details {
+  position: absolute;
+  left: 9px;
+  width: 93.5%;
+  top: 11px;
+  bottom: 50px;
+  background-color: #FFF;
+  box-shadow: none;
+}
+.tile-details.tile-more .tile-title-group {
+  position: relative;
+}
+.tile-details .tile-description {
+} */
 
 @media screen and (max-width: 910px) {
   .hero .hero-image-group.hero-image-iconic .hero-image {
