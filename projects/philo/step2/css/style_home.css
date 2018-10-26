@@ -337,6 +337,13 @@ a {
 .tile-set.tile-set-grid .tile-thumbnail {
   top: 0;
 }
+.tile-set.tile-set-grid .tile-actions {
+  top: 0;
+}
+
+.live_tv_page .tile-set.tile-set-grid .tile-list-item {
+  height: auto;
+}
 
 @media screen and (max-width: 910px) {
   .hero .hero-image-group.hero-image-iconic .hero-image {
