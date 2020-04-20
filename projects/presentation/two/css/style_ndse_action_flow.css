@@ -154,9 +154,9 @@
 }
 .action-flow-v2 .flow-state .flow-selected {
   position: absolute;
-  left: 0;
+  /* left: 0;
   right: 0;
-  margin: auto;
+  margin: auto; */
   bottom: -14px;
   width: 25px;
   height: 25px;

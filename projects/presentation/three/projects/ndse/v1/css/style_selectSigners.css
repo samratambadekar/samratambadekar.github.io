@@ -13,7 +13,7 @@
 .selectSigners.ndse_page > div {
   margin: auto;
   padding: 24px;
-  max-width: 1024px;
+  max-width: 1360px;
 }
 
 .selectSigners .cards {
@@ -24,7 +24,7 @@
   width: 48%;
   /*max-width: 400px;*/
   max-height: 420px;
-  margin: auto 12px;
+  margin: auto;
   background-color: #FFF;
   border: 1px solid #DDD;
   text-align: center;
@@ -36,6 +36,9 @@
   box-shadow: 0 0 3px rgba(0,0,0,0.2);
   overflow: hidden;
   cursor: pointer;
+}
+.selectSigners .card + .card {
+  margin-left: 24px;
 }
 .selectSigners .card > div {
   min-height: 40px;
