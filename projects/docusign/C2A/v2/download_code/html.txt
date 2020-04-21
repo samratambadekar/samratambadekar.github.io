@@ -1,0 +1,3 @@
+//Copy the highlighted JS into your site below.
+
+<div class="ds_terms_of_service"></div>

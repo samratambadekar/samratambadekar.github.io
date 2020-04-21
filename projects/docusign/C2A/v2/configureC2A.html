@@ -1,0 +1,554 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+  <title ng-bind="title" class="ng-binding">Configure | DocuSign</title>
+  <link rel="icon" type="image/x-icon" href="https://docucdn-a.akamaihd.net/olive/18.6.0/img/new_favicon.png"/>
+
+  <link rel="stylesheet" type="text/css" href="css/prism.css">
+  <link rel="stylesheet" type="text/css" href="https://docucdn-a.akamaihd.net/olive/18.6.0/css/olive.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://docucdn-a.akamaihd.net/olive/18.6.0/css/styleguide.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style_selectDocument.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_configureC2A.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_shareC2A.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_topNav_menu.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_callouts.css" />
+  <link href="css/style_modal.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/style_textFormatter.css" />
+
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <!-- <script src="js/interact.min.js"></script> -->
+  <!-- <script src="js/quill.min.js"></script> -->
+  <script src="js/Sortable.js"></script>
+</head>
+<body>
+  <nav id="topNav" class="site-header">
+    <div class="">
+      <div class="action-header">
+        <div class="action-header_title">
+          <div class="header_actions">
+            <span class="header_back btn-lg btn-icon header_action btn-close-flow">
+              <span class="icon icon-close"></span>
+              <span class="sr-text">Back</span>
+            </span>
+          </div>
+          <span class="title header_title desktop ellipsis">
+            <span data-field-id="Envelope Name" contenteditable="true">Untitled Agreement</span>
+          </span>
+          <span class="icon icon-editpen"></span>
+        </div>
+
+        <div class="actions">
+          <!-- <div class="user_help" data-menu-id="user_help"><img src="images/svg/help_icon.svg"/></div> -->
+          <div class="user_help" data-menu-id="user_help">Help</div>
+          <!-- <div class="feature_unavailable"><img src="images/svg/notification_icon.svg"/></div> -->
+          <div class="profile_placeholder">
+            <img src="images/svg/profile_icon_no_circle.svg">
+          </div>
+        </div>
+      </div>
+      <div id="menuOtherActions" class="menu invisible">
+        <ul class="menu-buttons" role="menu">
+          <li class="ng-scope" role="menuitem"><a class="btn btn-secondary btn-block ng-binding btn-preview">Preview</a></li>
+          <li class="ng-scope" role="menuitem"><a class="btn btn-secondary btn-block ng-binding">Save and Close</a></li>
+          <li class="ng-scope" role="menuitem"><a class="btn btn-secondary btn-block ng-binding">Discard</a></li>
+        </ul>
+        <ul class="ng-scope" role="menu">
+          <li role="menuitem"><a class="item ng-scope ng-binding" data-qa="edit-message">Edit Message</a></li>
+          <li role="menuitem"><a class="item ng-binding" data-qa="edit-recipients">Edit Recipients</a></li>
+          <li role="edit-documents"><a class="item ng-binding" data-qa="edit-documents">Edit Documents</a></li>
+          <li role="menuitem"><a class="item ng-scope ng-binding" data-qa="edit-advanced-options">Advanced Options</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="configureC2A no_doc_added">
+    <div class="split_review_page">
+      <div class="head">
+        <h1 class="invisible">Send To Recipients</h1>
+      </div>
+
+      <div class="selectDocument">
+        <div id="sortableDocuments" class="files">
+          <div class="upload_file ignore-sortable">
+            <input type="file" class="hide"/>
+            <img class="icon_add upload_file_list_view hidden" src="images/svg/plus_circle.svg"/>
+            <div class="upload_file_list_view hidden">Drag & drop your files here, or <span class="btn-group btn-combo ng-scope">
+              <button class="btn ng-binding btn-secondary" data-qa="status-action-button-move">Browse</button>
+              <button class="btn btn-icon ng-scope btn-secondary">
+                <i class="icon icon-menu-triangle-down"></i>
+                <span class="sr-text ng-binding">More Actions</span>
+              </button>
+            </span></div>
+            <div class="upload_file_screen_view">
+              <img src="images/svg/add_document_happy.svg"/>
+              <div>Drag and drop your files here.</div>
+              <!-- <div><button class="btn btn-main">Add Documents</button></div> -->
+              <div>
+                <div class="btn-group btn-combo ng-scope">
+                  <button class="btn ng-binding btn-secondary" data-callout-target="button_browse" callout-pos="below center">Browse</button>
+                  <button class="btn btn-icon ng-scope btn-secondary">
+                    <i class="icon icon-menu-triangle-down"></i>
+                    <span class="sr-text ng-binding">More Actions</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipient_message size_medium">
+        <div class="c2a_main_container">
+          <div class="c2a_head">
+            <div class="titles">
+              <h2 class="title c2a_content_doc_title1 isVisible" contenteditable="true">Terms of Service</h2>
+              <!-- <h2 class="title c2a_content_doc_title2">Other Terms</h2> -->
+              <!-- <h2 class="title c2a_content_doc_title2">Even More Terms</h2> -->
+            </div>
+            <img src="images/svg/powered_by_ds_gray.svg" />
+          </div>
+          <div class="c2a_content">
+            <div class="c2a_content_doc c2a_content_doc1">
+              <span>Last updated: January 10, 2018</span>
+
+              <span>Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the www.acme.com website (the "Service") operated by acme ("us", "we", or "our").</span>
+
+              <span>Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.</span>
+
+              <span>By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service. Terms of Service Template for acme.</span>
+
+              <strong>Accounts</strong>
+              <span>When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.</span>
+
+              <span>You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.</span>
+
+              <span>You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.</span>
+
+              <strong>Links To Other Web Sites</strong>
+              <span>Our Service may contain links to third-party web sites or services that are not owned or controlled by acme.</span>
+
+              <span>acme has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that acme shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.</span>
+
+              <span>We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.</span>
+
+              <strong>Termination</strong>
+              <span>We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</span>
+
+              <span>All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.</span>
+
+              <span>We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</span>
+
+              <span>Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.</span>
+
+              <span>All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.</span>
+
+              <strong>Governing Law</strong>
+              <span>These Terms shall be governed and construed in accordance with the laws of California, United States, without regard to its conflict of law provisions.</span>
+
+              <span>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.</span>
+
+              <strong>Changes</strong>
+              <span>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</span>
+
+              <span>By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.</span>
+
+              <strong>Contact Us</strong>
+              <span>If you have any questions about these Terms, please contact us.</span>
+            </div>
+            <div class="c2a_content_doc c2a_content_doc2">
+              <span>Last updated: January 10, 2018</span>
+
+              <span>Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the www.acme.com website (the "Service") operated by acme ("us", "we", or "our").</span>
+
+              <span>Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.</span>
+
+              <span>By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service. Terms of Service Template for acme.</span>
+
+              <strong>Accounts</strong>
+              <span>When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.</span>
+
+              <span>You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.</span>
+
+              <span>You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.</span>
+
+              <strong>Links To Other Web Sites</strong>
+              <span>Our Service may contain links to third-party web sites or services that are not owned or controlled by acme.</span>
+
+              <span>acme has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that acme shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.</span>
+
+              <span>We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.</span>
+
+              <strong>Termination</strong>
+              <span>We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</span>
+
+              <span>All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.</span>
+
+              <span>We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</span>
+
+              <span>Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.</span>
+
+              <span>All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.</span>
+
+              <strong>Governing Law</strong>
+              <span>These Terms shall be governed and construed in accordance with the laws of California, United States, without regard to its conflict of law provisions.</span>
+
+              <span>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.</span>
+
+              <strong>Changes</strong>
+              <span>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</span>
+
+              <span>By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.</span>
+
+              <strong>Contact Us</strong>
+              <span>If you have any questions about these Terms, please contact us.</span>
+            </div>
+            <!-- <div class="c2a_content_doc c2a_content_doc3">
+              <span>Last updated: January 10, 2018</span>
+
+              <span>Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the www.acme.com website (the "Service") operated by acme ("us", "we", or "our").</span>
+
+              <span>Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.</span>
+
+              <span>By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service. Terms of Service Template for acme.</span>
+
+              <strong>Accounts</strong>
+              <span>When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.</span>
+
+              <span>You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.</span>
+
+              <span>You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.</span>
+
+              <strong>Links To Other Web Sites</strong>
+              <span>Our Service may contain links to third-party web sites or services that are not owned or controlled by acme.</span>
+
+              <span>acme has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that acme shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.</span>
+
+              <span>We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.</span>
+
+              <strong>Termination</strong>
+              <span>We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</span>
+
+              <span>All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.</span>
+
+              <span>We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</span>
+
+              <span>Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.</span>
+
+              <span>All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.</span>
+
+              <strong>Governing Law</strong>
+              <span>These Terms shall be governed and construed in accordance with the laws of California, United States, without regard to its conflict of law provisions.</span>
+
+              <span>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.</span>
+
+              <strong>Changes</strong>
+              <span>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</span>
+
+              <span>By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.</span>
+
+              <strong>Contact Us</strong>
+              <span>If you have any questions about these Terms, please contact us.</span>
+            </div> -->
+          </div>
+          <div class="c2a_footer">
+            <div class="c2a_footer_agreement">
+              <div class="c2a_button_text">
+                By selecting ‘<span data-btn-agree-text>AGREE</span>’ below, you also agree to the <span class="c2a_toc_doc"><span class="link">Terms of Service</span> and</span> <span class="link">ERSD</span>.
+              </div>
+              <div class="c2a_checkbox_text">
+                By checking the box below, you also agree to the <span class="c2a_toc_doc"><span class="link">Terms of Service</span> and</span> <span class="link">ERSD</span>.
+              </div>
+            </div>
+            <div class="buttons">
+              <div class="footer_buttons_grp" id="footer_buttons_grp_left">
+                <div class="btn btn-primary btn-lg " contenteditable="false" data-btn-agree-text data-callout-target="button_c2a_agree" callout-pos="above center">Agree</div>
+                <div class="btn btn-minor btn-lg " contenteditable="false">Decline</div>
+              </div>
+              <div class="footer_buttons_grp" id="footer_buttons_grp_right">
+                <!-- <div class="btn btn-minor btn-lg " contenteditable="false">Decline</div> -->
+              </div>
+            </div>
+            <div class="c2a_checkbox">
+              <input id="cb_c2a_agree_toc" type="checkbox" class="cb_input" />
+              <label for="cb_c2a_agree_toc" class="cb_label strong" contenteditable="true">I agree to the Terms of Service</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="nav-buttons">
+          <div class="btn btn-secondary btn-lg btn-preview invisible">Preview</div>
+          <div class="">
+            <div class="btn btn-secondary btn-lg btn-prev ">Previous</div>
+            <div class="btn btn-main btn-lg btn-next ">Next</div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="envelope_details">
+      <div class="tabs-wrap">
+        <ul class="tabs" olive-tabset="smallTabs">
+          <li class="tab-wrap">
+            <a class="tab on" olive-tab-id="envelope_summary">Settings</a>
+          </li>
+          <li class="tab-wrap history_tab">
+            <a class="tab" olive-tab-id="envelop_options">History</a>
+          </li>
+        </ul>
+      </div>
+      <div class="section tabs-wrap-target">
+        <div class="envelope_summary" olive-tabset-parent="smallTabs" olive-tab-id="envelope_summary">
+          <div class="envelope_section uploaded_docs_section">
+            <div class="envelope_section_name">
+              <div class="strong">Documents</div>
+              <!-- <div class="link"><a class="link">Edit</a></div> -->
+            </div>
+            <div class="envelope_section_content">
+              <div class="uploaded_doc uploaded_doc1">
+                <div><span class="envelope_section_doc_title">Terms of Service</span><span class="doc_version_num hidden"> v2</span>.pdf</div>
+                <div class="doc_actions"><a class="link doc_action_replace">Replace</a><a class="link doc_action_delete">Delete</a></div>
+              </div>
+              <div class="btn-group btn-combo">
+                <button class="btn ng-binding btn-secondary envelope_section_add_document">Add</button>
+                <button class="btn btn-icon ng-scope btn-secondary">
+                  <i class="icon icon-menu-triangle-down"></i>
+                  <span class="sr-text ng-binding">More Actions</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="envelope_section toggle_c2a_type">
+            <div class="envelope_section_name">
+              <div class="strong">Format</div>
+            </div>
+            <div class="envelope_section_content lock_c2a_type">
+              <button class="btn btn-secondary btn-with-lock">
+                <span>Modal</span><span class="icon icon-lock"></span> <span class="icon icon-help"></span>
+              </button>
+              <div class="btn btn-large btn-secondary btn-trigger">
+                Inline
+              </div>
+              <div class="menu select-menu invisible toggle_c2a_control">
+                <ul>
+                  <li><span class="item c2a_type_modal">Modal</span></li>
+                  <li><span class="item on c2a_type_inline">Inline</span></li>
+                </ul>
+              </div>
+              <!-- <div class="tile tile-mini c2a_type_modal">
+                <i class="icon icon-documents tile_image"></i>
+                <div>Modal</div>
+              </div>
+              <div class="tile tile-mini tile-selected c2a_type_inline">
+                <img src="images/svg/icon_link.svg" class="icon icon-documents tile_image" />
+                <div>Inline</div>
+              </div> -->
+            </div>
+          </div>
+          <div class="envelope_section toggle_c2a_layout">
+            <div class="envelope_section_name">
+              <div class="strong">Document Display</div>
+            </div>
+            <div class="envelope_section_content tile-section">
+              <div class="tile tile-mini c2a_layout_document tile-selected">
+                <i class="icon icon-documents tile_image"></i>
+                <div>Document</div>
+              </div>
+              <div class="tile tile-mini c2a_layout_link">
+                <img src="images/svg/icon_link.svg" class="icon icon-documents tile_image" />
+                <div>Link</div>
+              </div>
+            </div>
+          </div>
+          <div class="envelope_section">
+            <div class="envelope_section_name">
+              <div class="strong">Size</div>
+            </div>
+            <div class="envelope_section_content section_custom_c2a_size">
+              <div class="btn btn-large btn-secondary btn-trigger">
+                Medium
+              </div>
+              <div class="menu select-menu toggle_c2a_size invisible">
+                <ul>
+                  <li><span class="item" data-c2a-size="size_small">Small</span></li>
+                  <li><span class="item on" data-c2a-size="size_medium">Medium</span></li>
+                  <li><span class="item" data-c2a-size="size_large">Large</span></li>
+                  <li><span class="item toggle_custom_size_flag"><span class="link">Custom...</span></span></li>
+                </ul>
+              </div>
+              <div class="custom_c2a_size">
+                <div class="form_group form_group-unified">
+                  <input type="text" class="input-text input-xxs" placeholder="" value="100"/><button class="btn btn-select btn-trigger">%</button>
+                </div>
+                <div class="icon icon-close"></div>
+                <div class="form_group form_group-unified">
+                  <input type="text" class="input-text input-xxs" placeholder="" value="1100"/><button class="btn btn-select btn-trigger">px</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="envelope_section">
+            <div class="envelope_section_name">
+              <div class="strong">Control</div>
+            </div>
+            <div class="envelope_section_content">
+              <div class="btn btn-large btn-secondary btn-trigger">
+                Button
+              </div>
+              <div class="menu select-menu invisible toggle_c2a_control">
+                <ul>
+                  <li><span class="item c2a_control_checkbox">Checkbox</span></li>
+                  <li><span class="item on c2a_control_button">Button</span></li>
+                </ul>
+              </div>
+              <div class="cb">
+                <input id="cb_c2a_control_must_view" name="checkbox_group1" type="checkbox" class="cb_input" />
+                <label for="cb_c2a_control_must_view" class="cb_label">Must View</label>
+              </div>
+            </div>
+          </div>
+          <div class="envelope_section">
+            <div class="envelope_section_name">
+              <div class="strong">Retrieval</div>
+            </div>
+            <div class="envelope_section_content">
+              <div class="cb">
+                <input id="cb_c2a_retrieval_downloadable" name="checkbox_group1" type="checkbox" class="cb_input" />
+                <label for="cb_c2a_retrieval_downloadable" class="cb_label">Downloadable</label>
+              </div>
+              <div class="cb">
+                <input id="cb_c2a_retrieval_to_email" name="checkbox_group1" type="checkbox" class="cb_input" />
+                <label for="cb_c2a_retrieval_to_email" class="cb_label">Sent to Email</label>
+              </div>
+            </div>
+          </div>
+          <div class="envelope_section">
+            <div class="envelope_section_name">
+              <div class="strong">Brand</div>
+            </div>
+            <div class="envelope_section_content">
+              <div class="btn btn-large btn-secondary btn-trigger">
+                DocuSign
+              </div>
+              <div class="menu select-menu invisible">
+                <ul>
+                  <li><span class="item">DocuSign</span></li>
+                  <li><span class="item disabled"><span class="link">Custom...</span></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="envelope_options hide" olive-tabset-parent="smallTabs" olive-tab-id="envelop_options">
+          <div class="empty_history_tab">
+            <div><img src="images/svg/history_icon.svg" alt="" /></div>
+            <div class="">No History Available</div>
+          </div>
+          <div class="version_history">
+            <div class="envelope_section agreement_version agreement_version_new">
+              <div class="agreement_title">Terms of Service <span class="badge">v2</span> <span class="badge badge-blue">Current</span></div>
+              <div class="agreement_timestamp">Uploaded on Thursday, Jan 11, 2018 @5:00 PM by Alex Edwards</div>
+              <div class="agreement_actions"><div class="link">Get Submissions</div></div>
+            </div>
+            <div class="envelope_section agreement_version">
+              <div class="agreement_title">Terms of Service <span class="badge">v1</span></div>
+              <div class="agreement_timestamp">Uploaded on Thursday, Jan 09, 2018 @2:23 PM by Alex Edwards</div>
+              <div class="agreement_actions"><div class="link">Get Submissions</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav id="bottomNav" class="bottomNav">
+    <div class="actions_bar site-container">
+      <!-- <div class="btn btn-minor btn-lg btn-prev invisible">Previous</div>
+      <div class="btn btn-main btn-lg btn-next ">Next</div> -->
+      <a href="clickwraps.html" class="btn btn-main btn-lg btn-next ">Save & Close</a>
+    </div>
+  </nav>
+  <div class="text_formatting_menu invisible">
+    <div class="text_formatting_options">
+      <div class="select-wrap format_font_family">
+        <select id="">
+          <option value="Maven Pro">Maven Pro</option>
+          <option value="Helvetica Neue" selected>Helvetica Neue</option>
+        </select>
+      </div>
+      <div class="select-wrap format_font_size">
+        <select id="">
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13" selected>13</option>
+          <option value="14">14</option>
+        </select>
+      </div>
+      <div class="format_font_color">
+        A
+      </div>
+      <div class="select-wrap format_button_style button_only_format">
+        <select id="">
+          <option value="btn-primary">Solid</option>
+          <option value="btn-primary btn-secondary-minor">Border</option>
+          <option value="btn-minor">None</option>
+        </select>
+      </div>
+      <div class="format_background_color button_only_format">
+        C
+      </div>
+    </div>
+  </div>
+
+  <div class="callout steps tip below left start callout-invisible" style="top: -205px; left: -442px;">
+    <div class="callout_content"><div class="callout_content_text">Create & manage your Clickwraps from here.</div> <span class="link">Learn more...</span></div>
+    <div class="callout_footer">
+      <button type="button" class="btn btn-primary">Got It</button>
+    </div>
+  </div>
+
+  <div class="ds-modal-background invisible">
+    <div class="modal modal-new modal-sm modal-visible ng-scope modal-confirm-edit-c2a hide_modal" role="dialog">
+      <div class="modal_header">
+        <h1 class="modal_title">Update Click Wrap?</h1>
+      </div>
+      <div class="modal_content">
+        <p>Updating the existing version will be reflected immediately. You can still retrieve previous versions from the configuration page.</p>
+        <p class="c2a_checkbox">
+          <input id="cb_reaccept_c2a" type="checkbox" class="cb_input" />
+          <label for="cb_reaccept_c2a" class="cb_label">Require all users to accept again</label>
+        </p>
+      </div>
+      <div class="modal_footer">
+        <a href="clickwraps.html" class="btn btn-primary btn-lg btn-cancel">Update</a>
+        <button type="button" class="btn btn-lg btn-minor btn-cancel">Cancel</button>
+      </div>
+      <button class="modal_close modal_close_only icon icon-times"></button>
+    </div>
+
+
+    <div class="modal modal-new modal-sm modal-visible ng-scope modal-close-clickwrap hide_modal" role="dialog">
+      <div class="modal_header">
+        <h1 class="modal_title">Do you want to save the changes?</h1>
+      </div>
+      <div class="modal_content">
+        <p>Your changes will be lost if you don’t save them.</p>
+      </div>
+      <div class="modal_footer">
+        <a href="clickwraps.html" class="btn btn-primary btn-md btn-cancel">Save & Close</a>
+        <a class="btn btn-minor btn-md btn-cancel">Cancel</a>
+        <a href="clickwraps.html" class="btn btn-minor btn-md btn-cancel">Discard</a>
+      </div>
+      <button class="modal_close icon icon-times"></button>
+    </div>
+  </div>
+</body>
+<script src="js/script_common_components.js"></script>
+<script src="js/script_callouts.js"></script>
+<script src="js/script_upload_document.js"></script>
+<script src="js/script_modals.js"></script>
+<!-- <script src="js/script_topNav_menu.js"></script> -->
+<script src="js/script_configureC2A.js"></script>
+</html>

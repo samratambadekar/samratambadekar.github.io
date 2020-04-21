@@ -1,0 +1,63 @@
+<html>
+<body>
+  <div class="head">
+    <h1>Upload Documents</h1>
+    <div class="btn-group layouts">
+      <button class="btn btn-secondary btn-icon btn-active" data-view-id="List">
+        <span class="icon icon-menu"></span>
+        <span class="sr-text">List View</span>
+      </button>
+      <button class="btn btn-secondary btn-icon" data-view-id="Grid">
+        <span class="icon icon-waffle"></span>
+        <span class="sr-text">Grid View</span>
+      </button>
+    </div>
+  </div>
+  <div id="sortableDocuments" class="files">
+    <div class="upload_file ignore-sortable">
+      <input type="file" class="hide"/>
+      <img class="icon_add upload_file_list_view hidden" src="images/svg/plus_circle.svg"/>
+      <div class="upload_file_list_view hidden">Drag & drop your files here, or <span class="btn-group btn-combo ng-scope">
+        <button class="btn ng-binding btn-secondary" data-qa="status-action-button-move">Browse</button>
+        <button class="btn btn-icon ng-scope btn-secondary">
+          <i class="icon icon-menu-triangle-down"></i>
+          <span class="sr-text ng-binding">More Actions</span>
+        </button>
+      </span></div>
+      <div class="upload_file_screen_view">
+        <img src="images/svg/add_document_happy.svg"/>
+        <div>Drag and drop your files here.</div>
+        <!-- <div><button class="btn btn-main">Add Documents</button></div> -->
+        <div>
+          <div class="btn-group btn-combo ng-scope">
+            <button class="btn ng-binding btn-secondary" data-qa="status-action-button-move">Browse</button>
+            <button class="btn btn-icon ng-scope btn-secondary">
+              <i class="icon icon-menu-triangle-down"></i>
+              <span class="sr-text ng-binding">More Actions</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav-buttons upload_file_list_view hidden">
+    <div class="btn btn-secondary btn-lg btn-prev invisible">Previous</div>
+    <div class="btn btn-main btn-lg btn-next ">Next</div>
+  </div>
+
+  <!-- <div class="doc_preview hide_bottom">
+    <div class="overlay"></div>
+    <div class="doc_preview_tools">
+      <div class="close_doc_preview right">
+        <span class="toolbar-btn-wrapper"><span class="icon-times"></span></span>
+      </div>
+      <div class="title">NDA</div>
+    </div>
+    <div class="doc_preview_pages" style="">
+      <div class="doc_preview_page doc_preview_page1">
+        <img src="docs/Sales_Order_page1.png">
+      </div>
+    </div>
+  </div> -->
+</body>
+</html>

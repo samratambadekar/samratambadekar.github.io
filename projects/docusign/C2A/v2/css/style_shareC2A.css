@@ -1,0 +1,125 @@
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.ndse_page {
+  background-color: #F7F7F7;
+}
+.shareC2A.ndse_page .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #F7F7F7;
+}
+.shareC2A.ndse_page .head h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #4A4A4A;
+}
+.shareC2A.ndse_page > div {
+  margin: auto;
+  padding: 20px 24px;
+  max-width: 1264px;
+}
+.shareC2A.ndse_page > .head {
+  padding-top: 30px;
+}
+.shareC2A.ndse_page .head_instructions {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.shareC2A.ndse_page .layouts button {
+  height: 30px;
+}
+.shareC2A.ndse_page .code_blocks {
+  overflow: hidden;
+  padding-bottom: 0px;
+}
+.shareC2A.ndse_page .code_blocks .tabs-wrap {
+  margin: 0;
+  border: none;
+}
+.shareC2A.ndse_page .code_blocks .code {
+  margin-bottom: 12px;
+  border: 1px solid #E9E9E9;
+}
+
+.shareC2A.ndse_page {
+  overflow: auto;
+}
+
+.shareC2A .implementation_information p {
+  margin: 15px 0;
+}
+.shareC2A .test_connection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 24px;
+  background-color: #FFF;
+  border: 1px solid #E9E9E9;
+}
+.shareC2A .test_connection .loading-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.shareC2A .tc_status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+.shareC2A .tc_status .tc_status_indicator {
+  color: #D8D8D8;
+  margin-right: 10px;
+}
+.shareC2A .tc_status .tc_status_indicator .icon {
+  font-size: 20px;
+}
+.shareC2A .tc_status.active .tc_status_indicator {
+  color: #39A364;
+}
+.shareC2A .tc_status.inactive .tc_status_indicator {
+  color: #d13239;
+}
+.shareC2A .tc_status .tc_status_title {
+  font-weight: bold;
+  color: #4A4A4A
+}
+.shareC2A .tc_status .tc_status_description {
+  font-style: italic;
+  color: #A9A9A9;
+}
+
+.shareC2A .tc_status .tc_status_title.active,
+.shareC2A .tc_status .tc_status_title.inactive {
+  display: none;
+}
+.shareC2A .tc_status .tc_status_description.active,
+.shareC2A .tc_status .tc_status_description.inactive {
+  display: none;
+}
+.shareC2A .tc_status.active .tc_status_title,
+.shareC2A .tc_status.inactive .tc_status_title,
+.shareC2A .tc_status.active .tc_status_description,
+.shareC2A .tc_status.inactive .tc_status_description {
+  display: none;
+}
+.shareC2A .tc_status.active .tc_status_title.active,
+.shareC2A .tc_status.active .tc_status_description.active {
+  display: block;
+}
+.shareC2A .tc_status.inactive .tc_status_title.inactive ,
+.shareC2A .tc_status.inactive .tc_status_description.inactive {
+  display: block;
+}

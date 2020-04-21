@@ -1,0 +1,1912 @@
+<html class="">
+
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <!-- <style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style> -->
+  <meta charset="utf-8">
+  <!-- <script type="text/javascript" async="" src="//docucdn-a.akamaihd.net/v/static/mixpanel-2-2-1b.js"></script> -->
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+  <title>Manage | DocuSign</title>
+  <script src="js/jquery-1.12.3.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/prism.css">
+  <link rel="icon" type="image/x-icon" href="https://docucdn-a.akamaihd.net/olive/18.6.0/img/new_favicon.png">
+  <link rel="stylesheet" type="text/css" href="https://docucdn-a.akamaihd.net/olive/18.6.0/css/olive.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://docucdn-a.akamaihd.net/olive/17.22.0/css/martini.min.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="https://docucdn-a.akamaihd.net/olive/17.22.0/css/tagger.min.css"> -->
+
+  <link rel="stylesheet" type="text/css" href="css/style_callouts.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_ndse_tagger.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_ndse_home.css" />
+  <link href="css/style_manage.css" rel="stylesheet" type="text/css" />
+  <link href="css/style_modal.css" rel="stylesheet" type="text/css" />
+  <link href="css/style_toast.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/style_topNav_menu.css" />
+
+</head>
+
+<body class="ndse_home-manage" data-nav-highlight="ndse_home-manage">
+  <nav class="site-header">
+    <div class="site-container">
+      <a href="index.html" class="logo logo-docusign"></a>
+      <div class="main-nav">
+        <ul class="horizontal-list no-list">
+          <li>
+            <a href="index.html" class="item ng-scope ng-binding">Home</a>
+          </li>
+          <li>
+            <a href="manage.html" class="item ng-scope ng-binding on">Manage</a>
+          </li>
+          <li class="ng-scope">
+            <a href="#" class="item ng-scope ng-binding feature_unavailable">Templates</a>
+          </li>
+          <!-- <li class="ng-scope">
+            <a href="#" class="item ng-scope ng-binding">Reports</a>
+          </li> -->
+        </ul>
+      </div>
+      <div class="site-header-links ng-scope">
+        <div class="actions">
+          <!-- <div class="btn btn-main feature_unavailable">Upgrade</div> -->
+          <div class="feature_unavailable"><span class="icon icon-search"></span></div>
+          <div class="user_help" data-menu-id="user_help"><img src="images/svg/help_icon.svg"/></div>
+          <div class="feature_unavailable"><img src="images/svg/notification_icon.svg"/></div>
+          <div class="profile_status user_profile" data-menu-id="user_profile">
+            <div class="user_initial">AE</div>
+            <svg class="">
+              <circle cx="50%" cy="50%" r="45%" class="status"></circle>
+              <circle cx="50%" cy="50%" r="45%" class="completion"></circle>
+            </svg>
+          </div>
+        </div>
+
+        <div id="menuAccountNav" class="menu below right invisible" data-qa="menuAccountNav" style="top: 56px; left: auto; right: 30px; min-width: 120px;width: 300px;">
+          <div class="menu-section">
+            <div class="grid ng-scope">
+              <table class="id-card">
+                <tbody>
+                  <tr>
+                    <td class="block-lg">
+                      <div class="block_picture block_picture-avatar">
+                        <img alt="User Avatar" src="images/alex_edwards_pic.png" class="avatar-landscape" style="visibility: visible;"/>
+                      </div>
+                    </td>
+                    <td class="id-card-info ng-binding">
+                      <strong data-qa="header-account-name" class="line-1 ng-binding">DocuSign</strong><br><span data-qa="header-account-email" class="ng-binding">corey.kimel@acme.com</span><br>1234567</br>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <ul class="menu-grouping" role="menu">
+            <li role="menuitem">
+              <a class="item ng-binding" href="#">Go to Admin</a>
+            </li>
+            <li role="menuitem">
+              <a class="item ng-binding">My Preferences</a>
+            </li>
+            <li role="menuitem"></li>
+            <li class="ng-scope" role="menuitem">
+              <a class="item ng-binding">Switch to Classic</a>
+            </li>
+            <li role="menuitem">
+              <a class="item ng-binding">Feedback</a>
+            </li>
+            <li role="menuitem">
+              <a class="item ng-binding">Log Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button type="button" class="btn-nav btn-side-nav">
+        <span class="icon icon-search"></span> <span class="sr-text ng-binding">Filter</span>
+      </button>
+    </div>
+  </nav>
+  <aside class="site-nav-mobile hide">
+    <div class="overlay"></div>
+    <div id="side-menu-mobile" class="side-menu-mobile osm">
+    </div>
+  </aside>
+
+
+  <div class=" site-classic ng-scope" ng-if="enableApp">
+    <div class="site_content content loading ng-scope">
+      <div class="content_wrap ng-isolate-scope">
+        <div class="content_left resizable ng-isolate-scope">
+          <!-- Resize -->
+          <div class="resize-horizontal resize-right resize-line ng-isolate-scope"></div>
+
+          <!-- Actions / Shared users -->
+          <div class="sidebar_group">
+
+            <!-- Create button -->
+            <envelopes-new-actions-button page-name="docs" class="ng-scope ng-isolate-scope">
+              <div class="ng-scope sidebar_item">
+                <!-- Meerkat button -->
+                <button class="btn btn-main ng-binding ng-scope btn-full btn-lg" type="button" data-callout="homepage_new_button" data-qa="button-new-document">New</button>
+
+                <div id="menuNewDocument" class="menu invisible ng-scope" style="opacity: 0; top: 0px; left: 0px; min-width: 172px;">
+                  <ul role="menu">
+                    <li role="menuitem">
+                      <button class="item ng-scope ng-binding" type="button" data-qa="link-create-new-document">
+                        Send an Envelope
+                      </button>
+                    </li>
+                    <li class="ng-scope" role="menuitem">
+                      <button class="item ng-scope ng-binding" type="button" data-qa="link-sign-new-document" ds-analytics="docs-mutton-sign">
+                        Sign a Document
+                      </button>
+                    </li>
+                    <li class="ng-scope" role="menuitem">
+                      <button class="item ng-scope ng-binding" type="button" data-qa="link-use-template" ds-analytics="docs-mutton-template">
+                        Use a Template
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </envelopes-new-actions-button>
+
+            <c2a-new-actions-button page-name="docs" class="ng-scope ng-isolate-scope">
+              <div class="ng-scope sidebar_item">
+                <button class="btn btn-main ng-binding ng-scope btn-full btn-lg get_started" type="button" data-qa="button-new-c2a">New</button>
+              </div>
+            </c2a-new-actions-button>
+
+            <!-- Shared users -->
+            <shared-users-button class="ng-isolate-scope">
+              <div class="sidebar_item ng-scope">
+                <button type="button" class="btn btn-secondary btn-block btn-viewAs ng-binding" data-qa="button-shared-users" data-callout="manage-shared">
+                  Shared Envelopes
+                </button>
+              </div>
+            </shared-users-button>
+          </div>
+
+          <!-- Folders / PowerForms -->
+          <div class="sidebar_group">
+            <c2a-views class="ng-isolate-scope">
+              <div class="sidebar_item">
+                <!-- <h4 class="sidebar_title ng-binding">Envelopes</h4> -->
+                <div class="menu-nav">
+                  <ul class="menu_list">
+                    <li class="menu_listItem ng-isolate-scope" data-qa="Inbox-folder" key="inbox" name="Inbox" icon="icon-inbox">
+                      <a class="menu_item ng-scope ui-droppable menu_item-isOn">
+                        <!-- Folder name and icon -->
+                        <span class="menu_itemIcon"><img src="images/svg/icon-empty-state-c2a.svg" /></span>
+                        <span class="ng-binding">All</span>
+                      </a>
+                    </li>
+
+                    <li class="menu_listItem ng-isolate-scope" data-qa="Deleted-folder" key="deleted" name="Deleted" icon="icon-trash">
+                      <a class="menu_item ng-scope ui-droppable">
+                        <!-- Folder name and icon -->
+                        <span class="menu_itemIcon icon-trash"></span>
+                        <span class="ng-binding">Deleted</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </c2a-views>
+            <envelopes-views class="ng-isolate-scope">
+              <div class="sidebar_item">
+                <h4 class="sidebar_title ng-binding">Envelopes</h4>
+                <div class="menu-nav">
+                  <ul class="menu_list">
+                    <li class="menu_listItem ng-isolate-scope" data-qa="Inbox-folder" key="inbox" name="Inbox" icon="icon-inbox">
+                      <a class="menu_item ng-scope ui-droppable menu_item-isOn">
+                        <!-- Folder name and icon -->
+                        <span class="menu_itemIcon icon-inbox"></span>
+                        <span class="ng-binding">Inbox</span>
+                      </a>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" data-qa="Sent-folder" key="sent" name="Sent" icon="icon-sent" >
+                      <a class="menu_item ng-scope ui-droppable">
+                        <!-- Folder name and icon -->
+                        <span class="menu_itemIcon icon-sent"></span>
+                        <span class="ng-binding">Sent</span>
+                      </a>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" data-qa="Drafts-folder" key="draft" name="Drafts" icon="icon-draft">
+                      <a ng-if="!component.dropOptions" class="menu_item ng-scope">
+                        <!-- Folder name and icon -->
+                        <span class="menu_itemIcon icon-draft"></span>
+                        <span class="ng-binding">Drafts</span>
+                      </a>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" data-qa="Deleted-folder" key="deleted" name="Deleted" icon="icon-trash">
+                      <a class="menu_item ng-scope ui-droppable">
+                        <!-- Folder name and icon -->
+                        <span class="menu_itemIcon icon-trash"></span>
+                        <span class="ng-binding">Deleted</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </envelopes-views>
+            <folders-smart-list class="ng-isolate-scope">
+              <div class="sidebar_item">
+                <h4 class="sidebar_title ng-binding" data-callout="manage-filters">
+                  Quick Views
+                </h4>
+                <div class="menu-nav">
+                  <ul class="menu_list">
+                    <li class="menu_listItem ng-isolate-scope" key="action-required" name="Action Required" icon="icon-action-required">
+                      <a class="menu_item">
+                        <span data-qa="smart-folder-Action Required">
+                          <span class="menu_itemIcon icon-action-required"></span>
+                          <span class="ng-binding">Action Required</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" key="waiting-for-others" name="Waiting for Others" icon="icon-clock">
+                      <a class="menu_item">
+                        <span data-qa="smart-folder-Waiting for Others">
+                          <span class="menu_itemIcon icon-clock"></span>
+                          <span class="ng-binding">Waiting for Others</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" key="expiring-soon" name="Expiring Soon" icon="icon-alert">
+                      <a class="menu_item">
+                        <span data-qa="smart-folder-Expiring Soon">
+                          <span class="menu_itemIcon icon-alert"></span>
+                          <span class="ng-binding">Expiring Soon</span>
+                        </span>
+                      </a>
+                    </li>
+                    <li class="menu_listItem ng-isolate-scope" key="completed" name="Completed" icon="icon-completed">
+                      <a class="menu_item">
+                        <span data-qa="smart-folder-Completed">
+                          <span class="menu_itemIcon icon-completed"></span>
+                          <span class="ng-binding">Completed</span>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </folders-smart-list>
+            <folders-tree class="ng-isolate-scope">
+              <div class="sidebar_item" data-callout="manage-folders">
+                <div class="tree tree-sidebar" data-qa="folderList">
+                  <ul class="tree_list">
+                    <li>
+                      <!-- Folder info -->
+                      <span class="tree_title">
+                        <!-- Open / Close icon for folder -->
+                        <!-- Folder name and icon -->
+                        <span class="tree_itemText">
+                          <button type="button" class="btn btn-minor btn-icon tree_itemIconRight ng-scope ng-isolate-scope" data-qa="menu-new-folder">
+                            <span class="icon icon-add" olive-tooltip="acae6814-cf2d-4d0a-78a9-5465eb8989b8"></span>
+                          </button>
+                          <h4 class="sidebar_title ng-binding">Folders</h4>
+                        </span>
+                      </span>
+                    </li>
+                  </ul>
+                  <!-- Recursive subfolders -->
+                </div>
+              </div>
+            </folders-tree>
+            <powerforms-tree class="ng-isolate-scope">
+              <div class="sidebar_item ng-scope">
+                <!-- Powerforms tree -->
+                <div class="tree tree-sidebar">
+                  <ul class="tree_list">
+                    <!-- Show powerforms feature wall -->
+                    <!-- Has one root powerform label -->
+                    <li class="ng-scope">
+                      <span class="tree_title">
+                        <!-- Open / Close icon for powerForm -->
+                        <span class="tree_itemTrigger icon-menu-triangle-right" data-qa="tree-powerform"></span>
+                        <!-- Folder name and icon -->
+                        <span class="tree_itemText">
+                          <h4 class="sidebar_title ng-binding" data-qa="powerform-dropdown">
+                            PowerForms
+                          </h4>
+                        </span>
+                      </span>
+                    </li>
+                  </ul>
+                  <!-- List of powerforms -->
+                  <!-- Empty list powerforms -->
+                </div>
+              </div>
+            </powerforms-tree>
+          </div>
+        </div>
+        <div class="content_main ng-isolate-scope">
+          <div class="tabs-wrap">
+            <ul class="tabs" olive-tabset="smallTabs">
+              <li class="tab-wrap">
+                <a class="tab on" olive-tab-id="manage_envelope_list">Envelopes</a>
+              </li>
+              <li class="tab-wrap" id="tab_c2a" callout-pos="below left start">
+                <a class="tab" olive-tab-id="manage_c2a_list">Click Wraps</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs-wrap-target">
+            <envelopes-list-view class="ng-scope ng-isolate-scope" olive-tab-id="manage_envelope_list">
+              <div>
+                <!-- Show the correct header for the view based on props -->
+                <div class="listHeaderWrap cheshireContainer">
+                  <!-- Search box -->
+                  <div class="listHeaderDummy">
+
+                  </div>
+                  <div class="listHeader">
+                    <div>
+                      <!-- Action Buttons -->
+                      <!-- Search bar -->
+                      <envelopes-header class="ng-scope ng-isolate-scope">
+                        <div class="listHeader_titleRow fgrid">
+                          <!-- Title -->
+                          <div class="fgrid_cell">
+                            <!-- Powerform header info -->
+                            <!-- Envelopes info header -->
+                            <div class="ng-scope">
+                              <h1 class="listHeader_heading">
+                                <span class="ng-binding ng-scope">Inbox</span>
+                                <!-- <span class="icon icon-caret-large-down mobile"></span> -->
+                              </h1>
+                            </div>
+                          </div>
+                          <!-- Filter -->
+                          <div class="fgrid_cell fgrid_cell-auto">
+                            <envelopes-filters-input class="ng-isolate-scope">
+                              <form class="u-inline-block ng-pristine ng-valid">
+                                <!-- Visible every time -->
+                                <span class="cheshire_visibleContent u-inline-block">
+                                  <!-- Search -->
+                                  <span class="listHeader_search">
+                                    <div class="form_item-iconLeft form_item-iconRight">
+                                      <span class="icon icon-search"></span>
+                                      <input type="text" class="input-text ng-pristine ng-untouched ng-valid" data-qa="input-search" placeholder="Search Inbox and Folders" aria-label="Search Inbox and Folders">
+                                      <!-- <button type="button" class="button-icon ng-hide">
+                                        <span class="icon icon-close"></span>
+                                      </button> -->
+                                    </div>
+                                  </span>
+                                  <!-- Button to show filters -->
+                                  <button class="btn btn-minor desktop" type="button" data-callout="manage-advanced-filters" data-qa="filter-menu-button">
+                                    <span class="icon icon-filter"></span>
+                                    <span class="ng-binding">Filters</span>
+                                  </button>
+                                </span>
+
+                                <div id="envelopesFilter" class="cheshire cheshire-topRight cheshire-off" style="opacity: 0; top: 0px; left: 0px;">
+                                  <!-- Content -->
+                                  <div class="cheshire_body">
+                                    <div class="cheshire_placeholder"></div>
+                                    <!-- Visible on demand -->
+                                    <div>
+                                      <!-- Custom search -->
+                                      <div class="form-group ng-scope">
+                                        <div class="form_unit">
+                                          <div class="cb">
+                                            <!-- Input -->
+                                            <input class="cb_input ng-pristine ng-untouched ng-valid" type="checkbox" id="checkbox-custom">
+                                            <!-- Label -->
+                                            <label class="cb_label ng-binding" data-qa="custom-field-search-checkbox" for="checkbox-custom">
+                                              Search in envelope custom fields
+                                            </label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- Status -->
+                                      <div class="form_row ng-scope">
+                                        <div class="form_unit" style="flex-basis: 100%;">
+                                          <div name="Status" model="$props.status" options="$props.statusFilters" class="ng-isolate-scope">
+                                            <!-- Label -->
+                                            <label class="label ng-binding" for="button-status">Status</label>
+                                            <!-- Current -->
+                                            <button class="btn btn-select btn-trigger ng-binding" type="button" id="button-status" data-qa="button-filter-status">All</button>
+                                            <!-- Options -->
+                                            <div class="menu invisible select-menu" id="menu-status" style="opacity: 0; top: 0px; left: 0px; min-width: 220px;">
+                                              <ul role="menu">
+                                                <li class="ng-scope" role="menuitem">
+                                                  <button class="item ng-binding on" type="button" data-qa="filter-status-all">All</button>
+                                                </li>
+                                                <li class="ng-scope" role="menuitem">
+                                                  <button class="item ng-binding" type="button" data-qa="filter-status-in-progress">In Progress</button>
+                                                </li>
+                                                <li class="ng-scope" role="menuitem">
+                                                  <button class="item ng-binding" type="button" data-qa="filter-status-completed">Completed</button>
+                                                </li>
+                                                <li class="ng-scope" role="menuitem">
+                                                  <button class="item ng-binding" type="button" data-qa="filter-status-declined">Declined</button>
+                                                </li>
+                                                <li class="ng-scope" role="menuitem">
+                                                  <button class="item ng-binding" type="button" data-qa="filter-status-voided">Voided</button>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- Sent -->
+                                      <div class="form_row ng-scope">
+                                        <div class="form_unit" style="flex-basis: 100%;">
+                                          <div name="Sent" model="$props.sent" options="component.presets.sent" class="ng-isolate-scope">
+                                            <!-- Label -->
+                                            <label class="label ng-binding" for="button-sent">Sent</label>
+                                            <!-- Current -->
+                                            <button class="btn btn-select btn-trigger ng-binding" type="button" id="button-sent">By Anyone</button>
+                                            <!-- Options -->
+                                            <div class="menu invisible select-menu" id="menu-sent" style="opacity: 0; top: 0px; left: 0px; min-width: 220px;">
+                                              <ul role="menu">
+                                                <li class="ng-scope" role="menuitem">
+                                                  <button class="item ng-binding on" type="button" data-qa="filter-sent-by-anyone">By Anyone</button>
+                                                </li>
+                                                <li class="ng-scope" role="menuitem">
+                                                  <button class="item ng-binding" type="button" data-qa="filter-sent-by-me">By Me</button>
+                                                </li>
+                                                <li class="ng-scope" role="menuitem">
+                                                  <button class="item ng-binding" type="button" data-qa="filter-sent-to-me">To Me</button>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- Date -->
+                                      <div class="form_row">
+                                        <div class="form_unit" style="flex-basis: 100%;">
+                                          <div name="Date" model="$props.date" options="component.presets.date" class="ng-isolate-scope">
+                                            <!-- Label -->
+                                            <label class="label ng-binding" for="button-date">Date</label>
+                                            <!-- Current -->
+                                            <button class="btn btn-select btn-trigger ng-binding" type="button" id="button-date">Last 6 Months</button>
+                                            <!-- Options -->
+                                            <div class="menu invisible select-menu" id="menu-date" style="opacity: 0; top: 0px; left: 0px; min-width: 220px;">
+                                              <ul role="menu">
+                                                <li class="ng-scope" role="menuitem">
+                                                  <button class="item ng-binding" type="button" data-qa="filter-date-all">All</button>
+                                                </li>
+                                                <li class="ng-scope" role="menuitem">
+                                                  <button class="item ng-binding" type="button" data-qa="filter-date-last-12-months">Last 12 Months</button>
+                                                </li>
+                                                <li class="ng-scope" role="menuitem">
+                                                  <button class="item ng-binding on" type="button" data-qa="filter-date-last-6-months">Last 6 Months</button>
+                                                </li>
+                                                <li class="ng-scope" role="menuitem">
+                                                  <button class="item ng-binding" type="button" data-qa="filter-date-last-30-days">Last 30 Days</button>
+                                                </li>
+                                                <li class="ng-scope" role="menuitem">
+                                                  <button class="item ng-binding" type="button" data-qa="filter-date-last-week">Last Week</button>
+                                                </li>
+                                                <li class="ng-scope" role="menuitem">
+                                                  <button class="item ng-binding" type="button" data-qa="filter-date-last-24-hours">Last 24 Hours</button>
+                                                </li>
+                                                <li class="ng-scope" role="menuitem">
+                                                  <button class="item ng-binding" type="button" data-qa="filter-date-custom">Custom</button>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- Custom date -->
+                                    </div>
+                                  </div>
+                                  <!-- Filters actions -->
+                                  <div class="cheshire_footer">
+                                    <div class="fgrid">
+                                      <div class="fgrid_cell">
+                                        <button type="submit" class="btn btn-primary ng-binding" data-qa="filter-menu-apply">Apply</button>
+                                        <button type="reset" class="btn btn-minor ng-binding" ng-click="component.reset()" data-qa="filter-reset">Reset</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                            </envelopes-filters-input>
+                          </div>
+                        </div>
+                      </envelopes-header>
+                    </div>
+                    <!-- Current filter list -->
+                    <envelopes-filters-list class="ng-isolate-scope desktop">
+                      <div class="listHeader_filtersRow ng-scope">
+                        <strong class="ng-binding">Filtered by:</strong>
+                        <span class="ng-scope">
+                          <span class="ng-binding">Date (Last 6 Months)</span>
+                        </span>
+                        <span class="listHeader_filtersRowAction ng-scope">
+                          <a data-qa="edit-filter-documents-link" class="ng-binding ng-isolate-scope">Edit</a>
+                        </span>
+                      </div>
+                    </envelopes-filters-list>
+                  </div>
+                </div>
+
+                <!-- Empty List States -->
+                <!-- Envelope list -->
+                <table class="table respTable-noColumns u-no-border ng-scope ng-isolate-scope" data-callout="manage-doc">
+                  <!-- Envelope list header -->
+                  <thead>
+                    <tr>
+                      <th class="table_cell-checkbox ng-scope">&nbsp;</th>
+                      <th class="table_cell-icon">&nbsp;</th>
+                      <th class="ng-binding">Subject</th>
+                      <th class="ng-binding">Status</th>
+                      <th class="ng-binding ng-scope">Last change</th>
+                      <!-- ngSwitchWhen: sent -->
+                      <!-- ngIf: $props.showFolder -->
+                      <th><span class="vh ng-binding">Actions</span></th>
+                    </tr>
+                  </thead>
+                  <!-- Envelope list body -->
+                  <tbody>
+                    <!-- Show envelopes -->
+                    <tr class="table_row-clickable table_row-icon ng-isolate-scope ui-draggable ui-draggable-handle table_row-info">
+                      <!-- Checkbox for select -->
+                      <td class="table_cell-checkbox ng-scope ng-isolate-scope desktop">
+                        <span class="cb cb-noText" data-label="label-select-document" data-qa="label-select-document-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7">
+                          <input class="cb_input ng-pristine ng-untouched ng-valid" type="checkbox" id="envelope-checkbox-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7">
+                          <label class="cb_label ng-binding" for="envelope-checkbox-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7">
+                              Select
+                          </label>
+                        </span>
+                      </td>
+
+                      <!-- Icon -->
+                      <td class="">
+                        <span class="icon ng-scope icon-action-required text-info"></span>
+                      </td>
+                      <!-- Title + recipient row -->
+                      <td>
+                        <!-- Primary title -->
+                        <span class="table_copy-line-1 ng-binding" data-qa="link-document-details">Please DocuSign: Lease Agreement 34 Alpine Rd.</span>
+                        <!-- Recipients -->
+                        <span class="table_copy-line-2" data-qa="document-info" ng-switch="$props.userIsSender">
+                          <span ng-switch-when="true" ng-switch="$props.hasToRec" class="ng-scope">
+                            <span ng-switch-when="true" data-qa="recipient-info" class="ng-scope">
+                              <span class="ng-binding">To: John Doe, +3 more</span>
+                            </span>
+                          </span>
+                        </span>
+                      </td>
+
+                      <!-- Status -->
+                      <td class="table_cell-status desktop">
+                          <!-- Action -->
+                          <span ng-switch="$props.userStatus">
+                              <span data-qa="detail-status-title" class="ng-binding ng-scope">
+                                  Need to Sign
+                              </span>
+                          </span>
+                          <!-- Expiring -->
+                      </td>
+
+                      <!-- Date -->
+                      <td class="table_cell-date desktop" data-qa="detail-status-date">
+                        <span class="table_date ng-binding" data-qa="envelope-modified-date">1/16/2018</span><span class="table_time ng-binding">01:59:19 pm</span>
+                      </td>
+                      <!-- Actions -->
+                      <td class="table_cell-action ng-isolate-scope" stop-propagation="">
+                        <envelopes-list-item-actions-button envelope-id="73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7" class="ng-isolate-scope">
+                          <div class="btn-group btn-combo ng-scope">
+                            <button class="btn ng-binding btn-primary" data-qa="status-action-button-sign">Sign</button>
+                            <button class="btn btn-icon ng-scope btn-primary" olive-menu-position="below right" olive-menu-trigger="menu-button-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7" olive-menu-initialized="true" aria-haspopup="true" aria-expanded="false">
+                              <i class="icon icon-menu-triangle-down"></i>
+                              <span class="sr-text ng-binding">More Actions</span>
+                            </button>
+                            <div id="menu-button-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7" class="menu invisible" style="opacity: 0; top: 0px; left: 0px; min-width: 120px;">
+                              <ul class="menu_list" role="menu" aria-label="More Actions">
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-resend">
+                                    Resend
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-move">
+                                    Move
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-correct">
+                                    Correct
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-clone">
+                                    Create a Copy
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-save_as_template">
+                                    Save as Template
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-void">
+                                    Void
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-history">
+                                    History
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-delete">
+                                    Delete
+                                  </button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </envelopes-list-item-actions-button>
+                      </td>
+                    </tr>
+                    <tr class="table_row-clickable table_row-icon ng-isolate-scope ui-draggable ui-draggable-handle table_row-completed" envelope-id="914dff41-0358-4aeb-a74b-e2959f53e791">
+                      <!-- Checkbox for select -->
+                      <td class="table_cell-checkbox ng-scope ng-isolate-scope desktop">
+                        <span class="cb cb-noText" data-label="label-select-document" data-qa="label-select-document-914dff41-0358-4aeb-a74b-e2959f53e791">
+                          <input class="cb_input ng-pristine ng-untouched ng-valid" type="checkbox" id="envelope-checkbox-914dff41-0358-4aeb-a74b-e2959f53e791">
+                          <label class="cb_label ng-binding" for="envelope-checkbox-914dff41-0358-4aeb-a74b-e2959f53e791">Select</label>
+                        </span>
+                      </td>
+                      <!-- Icon -->
+                      <td class="">
+                        <span class="icon ng-scope icon-completed text-success"></span>
+                      </td>
+                      <!-- Title + recipient row -->
+                      <td>
+                        <!-- Primary title -->
+                        <span class="table_copy-line-1 ng-binding" data-qa="link-document-details">NDA_Edwards_Consulting_Group.pdf</span>
+                        <!-- Recipients -->
+                        <span class="table_copy-line-2" data-qa="document-info" ng-switch="$props.userIsSender">
+                          <span class="ng-scope">
+                            <span data-qa="recipient-info" class="ng-scope">
+                              <span class="ng-binding">From: Alex Edwards</span>
+                            </span>
+                          </span>
+                        </span>
+                      </td>
+                      <!-- Status -->
+                      <td class="table_cell-status desktop">
+                        <!-- Action -->
+                        <span>
+                          <span data-qa="detail-status-title" class="ng-binding ng-scope">Completed</span>
+                        </span>
+                        <!-- Expiring -->
+                      </td>
+                      <!-- Date -->
+                      <td class="table_cell-date desktop" data-qa="detail-status-date">
+                        <span class="table_date ng-binding" data-qa="envelope-modified-date">12/11/2017</span><span class="table_time ng-binding">10:38:19 am</span>
+                      </td>
+                      <!-- Folder -->
+                      <!-- Actions -->
+                      <td class="table_cell-action ng-isolate-scope">
+                        <envelopes-list-item-actions-button envelope-id="914dff41-0358-4aeb-a74b-e2959f53e791" class="ng-isolate-scope">
+                          <!-- Actions -->
+                          <div class="btn-group btn-combo ng-scope">
+                            <button class="btn ng-binding btn-secondary" data-qa="status-action-button-move">Move</button>
+                            <button class="btn btn-icon ng-scope btn-secondary">
+                              <i class="icon icon-menu-triangle-down"></i>
+                              <span class="sr-text ng-binding">More Actions</span>
+                            </button>
+                            <div id="menu-button-914dff41-0358-4aeb-a74b-e2959f53e791" class="menu invisible" style="opacity: 0; top: 0px; left: 0px; min-width: 120px;">
+                              <ul class="menu_list" role="menu">
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-forward">Forward</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-clone">Create a Copy</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-save_as_template">Save as Template</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-history">History</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-delete">Delete</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </envelopes-list-item-actions-button>
+                      </td>
+                    </tr>
+                    <tr class="table_row-clickable table_row-icon ng-isolate-scope ui-draggable ui-draggable-handle table_row-info">
+                      <!-- Checkbox for select -->
+                      <td class="table_cell-checkbox ng-scope ng-isolate-scope desktop">
+                        <span class="cb cb-noText" data-label="label-select-document" data-qa="label-select-document-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7">
+                          <input class="cb_input ng-pristine ng-untouched ng-valid" type="checkbox" id="envelope-checkbox-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7">
+                          <label class="cb_label ng-binding" for="envelope-checkbox-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7">
+                              Select
+                          </label>
+                        </span>
+                      </td>
+
+                      <!-- Icon -->
+                      <td class="">
+                        <span class="icon ng-scope icon-action-required text-info"></span>
+                      </td>
+                      <!-- Title + recipient row -->
+                      <td>
+                        <!-- Primary title -->
+                        <span class="table_copy-line-1 ng-binding" data-qa="link-document-details">Please DocuSign: Lease Agreement 34 Alpine Rd.</span>
+                        <!-- Recipients -->
+                        <span class="table_copy-line-2" data-qa="document-info" ng-switch="$props.userIsSender">
+                          <span ng-switch-when="true" ng-switch="$props.hasToRec" class="ng-scope">
+                            <span ng-switch-when="true" data-qa="recipient-info" class="ng-scope">
+                              <span class="ng-binding">To: John Doe, +3 more</span>
+                            </span>
+                          </span>
+                        </span>
+                      </td>
+
+                      <!-- Status -->
+                      <td class="table_cell-status desktop">
+                          <!-- Action -->
+                          <span ng-switch="$props.userStatus">
+                              <span data-qa="detail-status-title" class="ng-binding ng-scope">
+                                  Need to Sign
+                              </span>
+                          </span>
+                          <!-- Expiring -->
+                      </td>
+
+                      <!-- Date -->
+                      <td class="table_cell-date desktop" data-qa="detail-status-date">
+                        <span class="table_date ng-binding" data-qa="envelope-modified-date">1/16/2018</span><span class="table_time ng-binding">01:59:19 pm</span>
+                      </td>
+                      <!-- Actions -->
+                      <td class="table_cell-action ng-isolate-scope" stop-propagation="">
+                        <envelopes-list-item-actions-button envelope-id="73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7" class="ng-isolate-scope">
+                          <div class="btn-group btn-combo ng-scope">
+                            <button class="btn ng-binding btn-primary" data-qa="status-action-button-sign">Sign</button>
+                            <button class="btn btn-icon ng-scope btn-primary" olive-menu-position="below right" olive-menu-trigger="menu-button-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7" olive-menu-initialized="true" aria-haspopup="true" aria-expanded="false">
+                              <i class="icon icon-menu-triangle-down"></i>
+                              <span class="sr-text ng-binding">More Actions</span>
+                            </button>
+                            <div id="menu-button-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7" class="menu invisible" style="opacity: 0; top: 0px; left: 0px; min-width: 120px;">
+                              <ul class="menu_list" role="menu" aria-label="More Actions">
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-resend">
+                                    Resend
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-move">
+                                    Move
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-correct">
+                                    Correct
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-clone">
+                                    Create a Copy
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-save_as_template">
+                                    Save as Template
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-void">
+                                    Void
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-history">
+                                    History
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-delete">
+                                    Delete
+                                  </button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </envelopes-list-item-actions-button>
+                      </td>
+                    </tr>
+                    <tr class="table_row-clickable table_row-icon ng-isolate-scope ui-draggable ui-draggable-handle table_row-completed" envelope-id="914dff41-0358-4aeb-a74b-e2959f53e791">
+                      <!-- Checkbox for select -->
+                      <td class="table_cell-checkbox ng-scope ng-isolate-scope desktop">
+                        <span class="cb cb-noText" data-label="label-select-document" data-qa="label-select-document-914dff41-0358-4aeb-a74b-e2959f53e791">
+                          <input class="cb_input ng-pristine ng-untouched ng-valid" type="checkbox" id="envelope-checkbox-914dff41-0358-4aeb-a74b-e2959f53e791">
+                          <label class="cb_label ng-binding" for="envelope-checkbox-914dff41-0358-4aeb-a74b-e2959f53e791">Select</label>
+                        </span>
+                      </td>
+                      <!-- Icon -->
+                      <td class="">
+                        <span class="icon ng-scope icon-completed text-success"></span>
+                      </td>
+                      <!-- Title + recipient row -->
+                      <td>
+                        <!-- Primary title -->
+                        <span class="table_copy-line-1 ng-binding" data-qa="link-document-details">NDA_Edwards_Consulting_Group.pdf</span>
+                        <!-- Recipients -->
+                        <span class="table_copy-line-2" data-qa="document-info" ng-switch="$props.userIsSender">
+                          <span class="ng-scope">
+                            <span data-qa="recipient-info" class="ng-scope">
+                              <span class="ng-binding">From: Alex Edwards</span>
+                            </span>
+                          </span>
+                        </span>
+                      </td>
+                      <!-- Status -->
+                      <td class="table_cell-status desktop">
+                        <!-- Action -->
+                        <span>
+                          <span data-qa="detail-status-title" class="ng-binding ng-scope">Completed</span>
+                        </span>
+                        <!-- Expiring -->
+                      </td>
+                      <!-- Date -->
+                      <td class="table_cell-date desktop" data-qa="detail-status-date">
+                        <span class="table_date ng-binding" data-qa="envelope-modified-date">12/11/2017</span><span class="table_time ng-binding">10:38:19 am</span>
+                      </td>
+                      <!-- Folder -->
+                      <!-- Actions -->
+                      <td class="table_cell-action ng-isolate-scope">
+                        <envelopes-list-item-actions-button envelope-id="914dff41-0358-4aeb-a74b-e2959f53e791" class="ng-isolate-scope">
+                          <!-- Actions -->
+                          <div class="btn-group btn-combo ng-scope">
+                            <button class="btn ng-binding btn-secondary" data-qa="status-action-button-move">Move</button>
+                            <button class="btn btn-icon ng-scope btn-secondary">
+                              <i class="icon icon-menu-triangle-down"></i>
+                              <span class="sr-text ng-binding">More Actions</span>
+                            </button>
+                            <div id="menu-button-914dff41-0358-4aeb-a74b-e2959f53e791" class="menu invisible" style="opacity: 0; top: 0px; left: 0px; min-width: 120px;">
+                              <ul class="menu_list" role="menu">
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-forward">Forward</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-clone">Create a Copy</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-save_as_template">Save as Template</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-history">History</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-delete">Delete</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </envelopes-list-item-actions-button>
+                      </td>
+                    </tr>
+                    <tr class="table_row-clickable table_row-icon ng-isolate-scope ui-draggable ui-draggable-handle table_row-info">
+                      <!-- Checkbox for select -->
+                      <td class="table_cell-checkbox ng-scope ng-isolate-scope desktop">
+                        <span class="cb cb-noText" data-label="label-select-document" data-qa="label-select-document-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7">
+                          <input class="cb_input ng-pristine ng-untouched ng-valid" type="checkbox" id="envelope-checkbox-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7">
+                          <label class="cb_label ng-binding" for="envelope-checkbox-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7">
+                              Select
+                          </label>
+                        </span>
+                      </td>
+
+                      <!-- Icon -->
+                      <td class="">
+                        <span class="icon ng-scope icon-action-required text-info"></span>
+                      </td>
+                      <!-- Title + recipient row -->
+                      <td>
+                        <!-- Primary title -->
+                        <span class="table_copy-line-1 ng-binding" data-qa="link-document-details">Please DocuSign: Lease Agreement 34 Alpine Rd.</span>
+                        <!-- Recipients -->
+                        <span class="table_copy-line-2" data-qa="document-info" ng-switch="$props.userIsSender">
+                          <span ng-switch-when="true" ng-switch="$props.hasToRec" class="ng-scope">
+                            <span ng-switch-when="true" data-qa="recipient-info" class="ng-scope">
+                              <span class="ng-binding">To: John Doe, +3 more</span>
+                            </span>
+                          </span>
+                        </span>
+                      </td>
+
+                      <!-- Status -->
+                      <td class="table_cell-status desktop">
+                          <!-- Action -->
+                          <span ng-switch="$props.userStatus">
+                              <span data-qa="detail-status-title" class="ng-binding ng-scope">
+                                  Need to Sign
+                              </span>
+                          </span>
+                          <!-- Expiring -->
+                      </td>
+
+                      <!-- Date -->
+                      <td class="table_cell-date desktop" data-qa="detail-status-date">
+                        <span class="table_date ng-binding" data-qa="envelope-modified-date">1/16/2018</span><span class="table_time ng-binding">01:59:19 pm</span>
+                      </td>
+                      <!-- Actions -->
+                      <td class="table_cell-action ng-isolate-scope" stop-propagation="">
+                        <envelopes-list-item-actions-button envelope-id="73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7" class="ng-isolate-scope">
+                          <div class="btn-group btn-combo ng-scope">
+                            <button class="btn ng-binding btn-primary" data-qa="status-action-button-sign">Sign</button>
+                            <button class="btn btn-icon ng-scope btn-primary" olive-menu-position="below right" olive-menu-trigger="menu-button-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7" olive-menu-initialized="true" aria-haspopup="true" aria-expanded="false">
+                              <i class="icon icon-menu-triangle-down"></i>
+                              <span class="sr-text ng-binding">More Actions</span>
+                            </button>
+                            <div id="menu-button-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7" class="menu invisible" style="opacity: 0; top: 0px; left: 0px; min-width: 120px;">
+                              <ul class="menu_list" role="menu" aria-label="More Actions">
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-resend">
+                                    Resend
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-move">
+                                    Move
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-correct">
+                                    Correct
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-clone">
+                                    Create a Copy
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-save_as_template">
+                                    Save as Template
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-void">
+                                    Void
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-history">
+                                    History
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-delete">
+                                    Delete
+                                  </button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </envelopes-list-item-actions-button>
+                      </td>
+                    </tr>
+                    <tr class="table_row-clickable table_row-icon ng-isolate-scope ui-draggable ui-draggable-handle table_row-completed" envelope-id="914dff41-0358-4aeb-a74b-e2959f53e791">
+                      <!-- Checkbox for select -->
+                      <td class="table_cell-checkbox ng-scope ng-isolate-scope desktop">
+                        <span class="cb cb-noText" data-label="label-select-document" data-qa="label-select-document-914dff41-0358-4aeb-a74b-e2959f53e791">
+                          <input class="cb_input ng-pristine ng-untouched ng-valid" type="checkbox" id="envelope-checkbox-914dff41-0358-4aeb-a74b-e2959f53e791">
+                          <label class="cb_label ng-binding" for="envelope-checkbox-914dff41-0358-4aeb-a74b-e2959f53e791">Select</label>
+                        </span>
+                      </td>
+                      <!-- Icon -->
+                      <td class="">
+                        <span class="icon ng-scope icon-completed text-success"></span>
+                      </td>
+                      <!-- Title + recipient row -->
+                      <td>
+                        <!-- Primary title -->
+                        <span class="table_copy-line-1 ng-binding" data-qa="link-document-details">NDA_Edwards_Consulting_Group.pdf</span>
+                        <!-- Recipients -->
+                        <span class="table_copy-line-2" data-qa="document-info" ng-switch="$props.userIsSender">
+                          <span class="ng-scope">
+                            <span data-qa="recipient-info" class="ng-scope">
+                              <span class="ng-binding">From: Alex Edwards</span>
+                            </span>
+                          </span>
+                        </span>
+                      </td>
+                      <!-- Status -->
+                      <td class="table_cell-status desktop">
+                        <!-- Action -->
+                        <span>
+                          <span data-qa="detail-status-title" class="ng-binding ng-scope">Completed</span>
+                        </span>
+                        <!-- Expiring -->
+                      </td>
+                      <!-- Date -->
+                      <td class="table_cell-date desktop" data-qa="detail-status-date">
+                        <span class="table_date ng-binding" data-qa="envelope-modified-date">12/11/2017</span><span class="table_time ng-binding">10:38:19 am</span>
+                      </td>
+                      <!-- Folder -->
+                      <!-- Actions -->
+                      <td class="table_cell-action ng-isolate-scope">
+                        <envelopes-list-item-actions-button envelope-id="914dff41-0358-4aeb-a74b-e2959f53e791" class="ng-isolate-scope">
+                          <!-- Actions -->
+                          <div class="btn-group btn-combo ng-scope">
+                            <button class="btn ng-binding btn-secondary" data-qa="status-action-button-move">Move</button>
+                            <button class="btn btn-icon ng-scope btn-secondary">
+                              <i class="icon icon-menu-triangle-down"></i>
+                              <span class="sr-text ng-binding">More Actions</span>
+                            </button>
+                            <div id="menu-button-914dff41-0358-4aeb-a74b-e2959f53e791" class="menu invisible" style="opacity: 0; top: 0px; left: 0px; min-width: 120px;">
+                              <ul class="menu_list" role="menu">
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-forward">Forward</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-clone">Create a Copy</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-save_as_template">Save as Template</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-history">History</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-delete">Delete</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </envelopes-list-item-actions-button>
+                      </td>
+                    </tr>
+                    <tr class="table_row-clickable table_row-icon ng-isolate-scope ui-draggable ui-draggable-handle table_row-info">
+                      <!-- Checkbox for select -->
+                      <td class="table_cell-checkbox ng-scope ng-isolate-scope desktop">
+                        <span class="cb cb-noText" data-label="label-select-document" data-qa="label-select-document-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7">
+                          <input class="cb_input ng-pristine ng-untouched ng-valid" type="checkbox" id="envelope-checkbox-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7">
+                          <label class="cb_label ng-binding" for="envelope-checkbox-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7">
+                              Select
+                          </label>
+                        </span>
+                      </td>
+
+                      <!-- Icon -->
+                      <td class="">
+                        <span class="icon ng-scope icon-action-required text-info"></span>
+                      </td>
+                      <!-- Title + recipient row -->
+                      <td>
+                        <!-- Primary title -->
+                        <span class="table_copy-line-1 ng-binding" data-qa="link-document-details">Please DocuSign: Lease Agreement 34 Alpine Rd.</span>
+                        <!-- Recipients -->
+                        <span class="table_copy-line-2" data-qa="document-info" ng-switch="$props.userIsSender">
+                          <span ng-switch-when="true" ng-switch="$props.hasToRec" class="ng-scope">
+                            <span ng-switch-when="true" data-qa="recipient-info" class="ng-scope">
+                              <span class="ng-binding">To: John Doe, +3 more</span>
+                            </span>
+                          </span>
+                        </span>
+                      </td>
+
+                      <!-- Status -->
+                      <td class="table_cell-status desktop">
+                          <!-- Action -->
+                          <span ng-switch="$props.userStatus">
+                              <span data-qa="detail-status-title" class="ng-binding ng-scope">
+                                  Need to Sign
+                              </span>
+                          </span>
+                          <!-- Expiring -->
+                      </td>
+
+                      <!-- Date -->
+                      <td class="table_cell-date desktop" data-qa="detail-status-date">
+                        <span class="table_date ng-binding" data-qa="envelope-modified-date">1/16/2018</span><span class="table_time ng-binding">01:59:19 pm</span>
+                      </td>
+                      <!-- Actions -->
+                      <td class="table_cell-action ng-isolate-scope" stop-propagation="">
+                        <envelopes-list-item-actions-button envelope-id="73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7" class="ng-isolate-scope">
+                          <div class="btn-group btn-combo ng-scope">
+                            <button class="btn ng-binding btn-primary" data-qa="status-action-button-sign">Sign</button>
+                            <button class="btn btn-icon ng-scope btn-primary" olive-menu-position="below right" olive-menu-trigger="menu-button-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7" olive-menu-initialized="true" aria-haspopup="true" aria-expanded="false">
+                              <i class="icon icon-menu-triangle-down"></i>
+                              <span class="sr-text ng-binding">More Actions</span>
+                            </button>
+                            <div id="menu-button-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7" class="menu invisible" style="opacity: 0; top: 0px; left: 0px; min-width: 120px;">
+                              <ul class="menu_list" role="menu" aria-label="More Actions">
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-resend">
+                                    Resend
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-move">
+                                    Move
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-correct">
+                                    Correct
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-clone">
+                                    Create a Copy
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-save_as_template">
+                                    Save as Template
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-void">
+                                    Void
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-history">
+                                    History
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-delete">
+                                    Delete
+                                  </button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </envelopes-list-item-actions-button>
+                      </td>
+                    </tr>
+                    <tr class="table_row-clickable table_row-icon ng-isolate-scope ui-draggable ui-draggable-handle table_row-completed" envelope-id="914dff41-0358-4aeb-a74b-e2959f53e791">
+                      <!-- Checkbox for select -->
+                      <td class="table_cell-checkbox ng-scope ng-isolate-scope desktop">
+                        <span class="cb cb-noText" data-label="label-select-document" data-qa="label-select-document-914dff41-0358-4aeb-a74b-e2959f53e791">
+                          <input class="cb_input ng-pristine ng-untouched ng-valid" type="checkbox" id="envelope-checkbox-914dff41-0358-4aeb-a74b-e2959f53e791">
+                          <label class="cb_label ng-binding" for="envelope-checkbox-914dff41-0358-4aeb-a74b-e2959f53e791">Select</label>
+                        </span>
+                      </td>
+                      <!-- Icon -->
+                      <td class="">
+                        <span class="icon ng-scope icon-completed text-success"></span>
+                      </td>
+                      <!-- Title + recipient row -->
+                      <td>
+                        <!-- Primary title -->
+                        <span class="table_copy-line-1 ng-binding" data-qa="link-document-details">NDA_Edwards_Consulting_Group.pdf</span>
+                        <!-- Recipients -->
+                        <span class="table_copy-line-2" data-qa="document-info" ng-switch="$props.userIsSender">
+                          <span class="ng-scope">
+                            <span data-qa="recipient-info" class="ng-scope">
+                              <span class="ng-binding">From: Alex Edwards</span>
+                            </span>
+                          </span>
+                        </span>
+                      </td>
+                      <!-- Status -->
+                      <td class="table_cell-status desktop">
+                        <!-- Action -->
+                        <span>
+                          <span data-qa="detail-status-title" class="ng-binding ng-scope">Completed</span>
+                        </span>
+                        <!-- Expiring -->
+                      </td>
+                      <!-- Date -->
+                      <td class="table_cell-date desktop" data-qa="detail-status-date">
+                        <span class="table_date ng-binding" data-qa="envelope-modified-date">12/11/2017</span><span class="table_time ng-binding">10:38:19 am</span>
+                      </td>
+                      <!-- Folder -->
+                      <!-- Actions -->
+                      <td class="table_cell-action ng-isolate-scope">
+                        <envelopes-list-item-actions-button envelope-id="914dff41-0358-4aeb-a74b-e2959f53e791" class="ng-isolate-scope">
+                          <!-- Actions -->
+                          <div class="btn-group btn-combo ng-scope">
+                            <button class="btn ng-binding btn-secondary" data-qa="status-action-button-move">Move</button>
+                            <button class="btn btn-icon ng-scope btn-secondary">
+                              <i class="icon icon-menu-triangle-down"></i>
+                              <span class="sr-text ng-binding">More Actions</span>
+                            </button>
+                            <div id="menu-button-914dff41-0358-4aeb-a74b-e2959f53e791" class="menu invisible" style="opacity: 0; top: 0px; left: 0px; min-width: 120px;">
+                              <ul class="menu_list" role="menu">
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-forward">Forward</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-clone">Create a Copy</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-save_as_template">Save as Template</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-history">History</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-delete">Delete</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </envelopes-list-item-actions-button>
+                      </td>
+                    </tr>
+                    <tr class="table_row-clickable table_row-icon ng-isolate-scope ui-draggable ui-draggable-handle table_row-info">
+                      <!-- Checkbox for select -->
+                      <td class="table_cell-checkbox ng-scope ng-isolate-scope desktop">
+                        <span class="cb cb-noText" data-label="label-select-document" data-qa="label-select-document-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7">
+                          <input class="cb_input ng-pristine ng-untouched ng-valid" type="checkbox" id="envelope-checkbox-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7">
+                          <label class="cb_label ng-binding" for="envelope-checkbox-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7">
+                              Select
+                          </label>
+                        </span>
+                      </td>
+
+                      <!-- Icon -->
+                      <td class="">
+                        <span class="icon ng-scope icon-action-required text-info"></span>
+                      </td>
+                      <!-- Title + recipient row -->
+                      <td>
+                        <!-- Primary title -->
+                        <span class="table_copy-line-1 ng-binding" data-qa="link-document-details">Please DocuSign: Lease Agreement 34 Alpine Rd.</span>
+                        <!-- Recipients -->
+                        <span class="table_copy-line-2" data-qa="document-info" ng-switch="$props.userIsSender">
+                          <span ng-switch-when="true" ng-switch="$props.hasToRec" class="ng-scope">
+                            <span ng-switch-when="true" data-qa="recipient-info" class="ng-scope">
+                              <span class="ng-binding">To: John Doe, +3 more</span>
+                            </span>
+                          </span>
+                        </span>
+                      </td>
+
+                      <!-- Status -->
+                      <td class="table_cell-status desktop">
+                          <!-- Action -->
+                          <span ng-switch="$props.userStatus">
+                              <span data-qa="detail-status-title" class="ng-binding ng-scope">
+                                  Need to Sign
+                              </span>
+                          </span>
+                          <!-- Expiring -->
+                      </td>
+
+                      <!-- Date -->
+                      <td class="table_cell-date desktop" data-qa="detail-status-date">
+                        <span class="table_date ng-binding" data-qa="envelope-modified-date">1/16/2018</span><span class="table_time ng-binding">01:59:19 pm</span>
+                      </td>
+                      <!-- Actions -->
+                      <td class="table_cell-action ng-isolate-scope" stop-propagation="">
+                        <envelopes-list-item-actions-button envelope-id="73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7" class="ng-isolate-scope">
+                          <div class="btn-group btn-combo ng-scope">
+                            <button class="btn ng-binding btn-primary" data-qa="status-action-button-sign">Sign</button>
+                            <button class="btn btn-icon ng-scope btn-primary" olive-menu-position="below right" olive-menu-trigger="menu-button-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7" olive-menu-initialized="true" aria-haspopup="true" aria-expanded="false">
+                              <i class="icon icon-menu-triangle-down"></i>
+                              <span class="sr-text ng-binding">More Actions</span>
+                            </button>
+                            <div id="menu-button-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7" class="menu invisible" style="opacity: 0; top: 0px; left: 0px; min-width: 120px;">
+                              <ul class="menu_list" role="menu" aria-label="More Actions">
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-resend">
+                                    Resend
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-move">
+                                    Move
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-correct">
+                                    Correct
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-clone">
+                                    Create a Copy
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-save_as_template">
+                                    Save as Template
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-void">
+                                    Void
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-history">
+                                    History
+                                  </button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-delete">
+                                    Delete
+                                  </button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </envelopes-list-item-actions-button>
+                      </td>
+                    </tr>
+                    <tr class="table_row-clickable table_row-icon ng-isolate-scope ui-draggable ui-draggable-handle table_row-completed" envelope-id="914dff41-0358-4aeb-a74b-e2959f53e791">
+                      <!-- Checkbox for select -->
+                      <td class="table_cell-checkbox ng-scope ng-isolate-scope desktop">
+                        <span class="cb cb-noText" data-label="label-select-document" data-qa="label-select-document-914dff41-0358-4aeb-a74b-e2959f53e791">
+                          <input class="cb_input ng-pristine ng-untouched ng-valid" type="checkbox" id="envelope-checkbox-914dff41-0358-4aeb-a74b-e2959f53e791">
+                          <label class="cb_label ng-binding" for="envelope-checkbox-914dff41-0358-4aeb-a74b-e2959f53e791">Select</label>
+                        </span>
+                      </td>
+                      <!-- Icon -->
+                      <td class="">
+                        <span class="icon ng-scope icon-completed text-success"></span>
+                      </td>
+                      <!-- Title + recipient row -->
+                      <td>
+                        <!-- Primary title -->
+                        <span class="table_copy-line-1 ng-binding" data-qa="link-document-details">NDA_Edwards_Consulting_Group.pdf</span>
+                        <!-- Recipients -->
+                        <span class="table_copy-line-2" data-qa="document-info" ng-switch="$props.userIsSender">
+                          <span class="ng-scope">
+                            <span data-qa="recipient-info" class="ng-scope">
+                              <span class="ng-binding">From: Alex Edwards</span>
+                            </span>
+                          </span>
+                        </span>
+                      </td>
+                      <!-- Status -->
+                      <td class="table_cell-status desktop">
+                        <!-- Action -->
+                        <span>
+                          <span data-qa="detail-status-title" class="ng-binding ng-scope">Completed</span>
+                        </span>
+                        <!-- Expiring -->
+                      </td>
+                      <!-- Date -->
+                      <td class="table_cell-date desktop" data-qa="detail-status-date">
+                        <span class="table_date ng-binding" data-qa="envelope-modified-date">12/11/2017</span><span class="table_time ng-binding">10:38:19 am</span>
+                      </td>
+                      <!-- Folder -->
+                      <!-- Actions -->
+                      <td class="table_cell-action ng-isolate-scope">
+                        <envelopes-list-item-actions-button envelope-id="914dff41-0358-4aeb-a74b-e2959f53e791" class="ng-isolate-scope">
+                          <!-- Actions -->
+                          <div class="btn-group btn-combo ng-scope">
+                            <button class="btn ng-binding btn-secondary" data-qa="status-action-button-move">Move</button>
+                            <button class="btn btn-icon ng-scope btn-secondary">
+                              <i class="icon icon-menu-triangle-down"></i>
+                              <span class="sr-text ng-binding">More Actions</span>
+                            </button>
+                            <div id="menu-button-914dff41-0358-4aeb-a74b-e2959f53e791" class="menu invisible" style="opacity: 0; top: 0px; left: 0px; min-width: 120px;">
+                              <ul class="menu_list" role="menu">
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-forward">Forward</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-clone">Create a Copy</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-save_as_template">Save as Template</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-history">History</button>
+                                </li>
+                                <li class="menu_listItem ng-scope" role="menuitem">
+                                  <button class="menu_item ng-binding" type="button" data-qa="envelope-action-delete">Delete</button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </envelopes-list-item-actions-button>
+                      </td>
+                    </tr>
+                    <!-- List the more option -->
+                    <tr class="ng-isolate-scope">
+                      <td class="text-center ng-scope" colspan="100%">
+                        <span class="ng-binding">Looking for more?</span>
+                        |
+                        <a class="ng-binding ng-isolate-scope">Edit your filters</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- Spinner -->
+                <!-- Catch the error -->
+              </div>
+            </envelopes-list-view>
+            <envelopes-list-view olive-tab-id="manage_c2a_list" class="empty_c2a_list hide">
+              <div class="listHeader">
+                <div>
+                  <!-- Action Buttons -->
+                  <!-- Search bar -->
+                  <envelopes-header class="ng-scope ng-isolate-scope">
+                    <div class="listHeader_titleRow fgrid">
+                      <!-- Title -->
+                      <div class="fgrid_cell">
+                        <!-- Powerform header info -->
+                        <!-- Envelopes info header -->
+                        <div class="ng-scope">
+                          <h1 class="listHeader_heading">
+                            <span class="ng-binding ng-scope">Click Wraps</span>
+                            <!-- <span class="icon icon-caret-large-down mobile"></span> -->
+                          </h1>
+                        </div>
+                      </div>
+                      <!-- Filter -->
+                      <div class="fgrid_cell fgrid_cell-auto">
+                        <envelopes-filters-input class="ng-isolate-scope">
+                          <form class="u-inline-block ng-pristine ng-valid">
+                            <!-- Visible every time -->
+                            <span class="cheshire_visibleContent u-inline-block">
+                              <!-- Search -->
+                              <span class="listHeader_search">
+                                <div class="form_item-iconLeft form_item-iconRight">
+                                  <span class="icon icon-search"></span>
+                                  <input type="text" class="input-text ng-pristine ng-untouched ng-valid" data-qa="input-search" placeholder="Search Inbox and Folders" aria-label="Search Inbox and Folders">
+                                  <!-- <button type="button" class="button-icon ng-hide">
+                                    <span class="icon icon-close"></span>
+                                  </button> -->
+                                </div>
+                              </span>
+                              <!-- Button to show filters -->
+                              <button class="btn btn-minor desktop" type="button" data-callout="manage-advanced-filters" data-qa="filter-menu-button">
+                                <span class="icon icon-filter"></span>
+                                <span class="ng-binding">Filters</span>
+                              </button>
+                            </span>
+
+                            <div id="envelopesFilter" class="cheshire cheshire-topRight cheshire-off" style="opacity: 0; top: 0px; left: 0px;">
+                              <!-- Content -->
+                              <div class="cheshire_body">
+                                <div class="cheshire_placeholder"></div>
+                                <!-- Visible on demand -->
+                                <div>
+                                  <!-- Custom search -->
+                                  <div class="form-group ng-scope">
+                                    <div class="form_unit">
+                                      <div class="cb">
+                                        <!-- Input -->
+                                        <input class="cb_input ng-pristine ng-untouched ng-valid" type="checkbox" id="checkbox-custom">
+                                        <!-- Label -->
+                                        <label class="cb_label ng-binding" data-qa="custom-field-search-checkbox" for="checkbox-custom">
+                                          Search in envelope custom fields
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Status -->
+                                  <div class="form_row ng-scope">
+                                    <div class="form_unit" style="flex-basis: 100%;">
+                                      <div name="Status" model="$props.status" options="$props.statusFilters" class="ng-isolate-scope">
+                                        <!-- Label -->
+                                        <label class="label ng-binding" for="button-status">Status</label>
+                                        <!-- Current -->
+                                        <button class="btn btn-select btn-trigger ng-binding" type="button" id="button-status" data-qa="button-filter-status">All</button>
+                                        <!-- Options -->
+                                        <div class="menu invisible select-menu" id="menu-status" style="opacity: 0; top: 0px; left: 0px; min-width: 220px;">
+                                          <ul role="menu">
+                                            <li class="ng-scope" role="menuitem">
+                                              <button class="item ng-binding on" type="button" data-qa="filter-status-all">All</button>
+                                            </li>
+                                            <li class="ng-scope" role="menuitem">
+                                              <button class="item ng-binding" type="button" data-qa="filter-status-in-progress">In Progress</button>
+                                            </li>
+                                            <li class="ng-scope" role="menuitem">
+                                              <button class="item ng-binding" type="button" data-qa="filter-status-completed">Completed</button>
+                                            </li>
+                                            <li class="ng-scope" role="menuitem">
+                                              <button class="item ng-binding" type="button" data-qa="filter-status-declined">Declined</button>
+                                            </li>
+                                            <li class="ng-scope" role="menuitem">
+                                              <button class="item ng-binding" type="button" data-qa="filter-status-voided">Voided</button>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Sent -->
+                                  <div class="form_row ng-scope">
+                                    <div class="form_unit" style="flex-basis: 100%;">
+                                      <div name="Sent" model="$props.sent" options="component.presets.sent" class="ng-isolate-scope">
+                                        <!-- Label -->
+                                        <label class="label ng-binding" for="button-sent">Sent</label>
+                                        <!-- Current -->
+                                        <button class="btn btn-select btn-trigger ng-binding" type="button" id="button-sent">By Anyone</button>
+                                        <!-- Options -->
+                                        <div class="menu invisible select-menu" id="menu-sent" style="opacity: 0; top: 0px; left: 0px; min-width: 220px;">
+                                          <ul role="menu">
+                                            <li class="ng-scope" role="menuitem">
+                                              <button class="item ng-binding on" type="button" data-qa="filter-sent-by-anyone">By Anyone</button>
+                                            </li>
+                                            <li class="ng-scope" role="menuitem">
+                                              <button class="item ng-binding" type="button" data-qa="filter-sent-by-me">By Me</button>
+                                            </li>
+                                            <li class="ng-scope" role="menuitem">
+                                              <button class="item ng-binding" type="button" data-qa="filter-sent-to-me">To Me</button>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Date -->
+                                  <div class="form_row">
+                                    <div class="form_unit" style="flex-basis: 100%;">
+                                      <div name="Date" model="$props.date" options="component.presets.date" class="ng-isolate-scope">
+                                        <!-- Label -->
+                                        <label class="label ng-binding" for="button-date">Date</label>
+                                        <!-- Current -->
+                                        <button class="btn btn-select btn-trigger ng-binding" type="button" id="button-date">Last 6 Months</button>
+                                        <!-- Options -->
+                                        <div class="menu invisible select-menu" id="menu-date" style="opacity: 0; top: 0px; left: 0px; min-width: 220px;">
+                                          <ul role="menu">
+                                            <li class="ng-scope" role="menuitem">
+                                              <button class="item ng-binding" type="button" data-qa="filter-date-all">All</button>
+                                            </li>
+                                            <li class="ng-scope" role="menuitem">
+                                              <button class="item ng-binding" type="button" data-qa="filter-date-last-12-months">Last 12 Months</button>
+                                            </li>
+                                            <li class="ng-scope" role="menuitem">
+                                              <button class="item ng-binding on" type="button" data-qa="filter-date-last-6-months">Last 6 Months</button>
+                                            </li>
+                                            <li class="ng-scope" role="menuitem">
+                                              <button class="item ng-binding" type="button" data-qa="filter-date-last-30-days">Last 30 Days</button>
+                                            </li>
+                                            <li class="ng-scope" role="menuitem">
+                                              <button class="item ng-binding" type="button" data-qa="filter-date-last-week">Last Week</button>
+                                            </li>
+                                            <li class="ng-scope" role="menuitem">
+                                              <button class="item ng-binding" type="button" data-qa="filter-date-last-24-hours">Last 24 Hours</button>
+                                            </li>
+                                            <li class="ng-scope" role="menuitem">
+                                              <button class="item ng-binding" type="button" data-qa="filter-date-custom">Custom</button>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Custom date -->
+                                </div>
+                              </div>
+                              <!-- Filters actions -->
+                              <div class="cheshire_footer">
+                                <div class="fgrid">
+                                  <div class="fgrid_cell">
+                                    <button type="submit" class="btn btn-primary ng-binding" data-qa="filter-menu-apply">Apply</button>
+                                    <button type="reset" class="btn btn-minor ng-binding" ng-click="component.reset()" data-qa="filter-reset">Reset</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </envelopes-filters-input>
+                      </div>
+                    </div>
+                  </envelopes-header>
+                </div>
+              </div>
+              <table class="table respTable-noColumns u-no-border ng-scope ng-isolate-scope" data-callout="manage-doc">
+                <!-- Envelope list header -->
+                <thead>
+                  <tr>
+                    <th class="table_cell-checkbox ng-scope">&nbsp;</th>
+                    <!-- <th class="table_cell-icon">&nbsp;</th> -->
+                    <th class="ng-binding">Name</th>
+                    <th class="ng-binding">Submissions</th>
+                    <th class="ng-binding">Status</th>
+                    <th class="ng-binding ng-scope">Last change</th>
+                    <th><span class="vh ng-binding">Actions</span></th>
+                  </tr>
+                </thead>
+                <!-- Envelope list body -->
+                <tbody>
+                  <!-- Show envelopes -->
+                  <tr class="table_row-clickable table_row-icon ng-isolate-scope ui-draggable ui-draggable-handle table_row-info">
+                    <!-- Checkbox for select -->
+                    <td class="table_cell-checkbox ng-scope ng-isolate-scope desktop">
+                      <span class="cb cb-noText" data-label="label-select-document" data-qa="label-select-document-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7">
+                        <input class="cb_input ng-pristine ng-untouched ng-valid" type="checkbox" id="envelope-checkbox-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b733">
+                        <label class="cb_label ng-binding" for="envelope-checkbox-73043d9d-4fe4-49cb-8b8d-e284bbe2d5b733">
+                            Select
+                        </label>
+                      </span>
+                    </td>
+
+                    <!-- Title + recipient row -->
+                    <td>
+                      <!-- Primary title -->
+                      <span class="table_copy-line-1 ng-binding" data-qa="link-document-details">Terms of Service <span class="doc_version_num">v1</span></span>
+                      <!-- Recipients -->
+                      <!-- <span class="table_copy-line-2" data-qa="document-info" ng-switch="$props.userIsSender">
+                        <span ng-switch-when="true" ng-switch="$props.hasToRec" class="ng-scope">
+                          <span ng-switch-when="true" data-qa="recipient-info" class="ng-scope">
+                            <span class="ng-binding">To: John Doe, +3 more</span>
+                          </span>
+                        </span>
+                      </span> -->
+                    </td>
+
+                    <!-- Status -->
+                    <td class="table_cell-status desktop">
+                      <span data-qa="detail-status-title" class="link">
+                        0
+                      </span>
+                    </td>
+
+                    <td class="click_wraps_status desktop active" data-qa="detail-status-date">
+                      <i class="icon icon-circle"></i>
+                      <span class=" ng-binding" data-qa="envelope-modified-date">Active</span>
+                    </td>
+
+                    <!-- Date -->
+                    <td class="table_cell-date desktop" data-qa="detail-status-date">
+                      <span class="table_date ng-binding" data-qa="envelope-modified-date">1/16/2018</span><span class="table_time ng-binding">01:59:19 pm</span>
+                    </td>
+                    <!-- Actions -->
+                    <td class="table_cell-action ng-isolate-scope" stop-propagation="">
+                      <envelopes-list-item-actions-button envelope-id="73043d9d-4fe4-49cb-8b8d-e284bbe2d5b7" class="ng-isolate-scope">
+                        <div class="btn-group btn-combo ng-scope">
+                          <button class="btn ng-binding btn-secondary" data-qa="status-action-button-sign">Edit</button>
+                          <button class="btn btn-icon ng-scope btn-secondary" olive-menu-position="below right">
+                            <i class="icon icon-menu-triangle-down"></i>
+                            <span class="sr-text ng-binding">More Actions</span>
+                          </button>
+                          <div class="menu invisible">
+                            <ul class="menu_list" role="menu" aria-label="More Actions">
+                              <li class="menu_listItem ng-scope" role="menuitem">
+                                <button class="menu_item ng-binding c2a-action-download" type="button" data-action="c2a-action-download">
+                                  Download
+                                </button>
+                              </li>
+                              <li class="menu_listItem ng-scope" role="menuitem">
+                                <button class="menu_item ng-binding c2a-action-delete" type="button" data-action="c2a-action-delete">
+                                  Delete
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </envelopes-list-item-actions-button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="empty-state">
+                <div class="empty-state-c2a-content">
+                  <div class="">
+                    <img src="images/svg/icon-empty-state-c2a.svg" />
+                  </div>
+                  <div class="">
+                    You don't have any Click Wraps
+                  </div>
+                  <div>
+                    <button class="btn btn-secondary create_first_c2a">Create Click Wrap</button>
+                  </div>
+                </div>
+              </div>
+            </envelopes-list-view>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site_footer footer ng-scope" ng-controller="SiteFooterController as footer">
+      <div class="footer_wrap">
+        <div class="footer_left">
+        </div>
+        <div class="footer_main">
+          <ul class="footer-links">
+            <li>
+              <a class="footer-links_item btn-triggeR ng-binding" data-qa="language-switcher">
+                <span class="icon icon-language"></span>
+                English
+              </a>
+            </li>
+            <li class="desktop">
+              <span class="footer-links_item ng-binding" data-qa="powered-by">Powered by DocuSign</span>
+            </li>
+            <li>
+              <a target="_blank" class="footer-links_item ng-scope ng-binding" href="https://support.docusign.com/contactSupport" data-qa="footer-contact-us">
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a target="_blank" class="footer-links_item ng-binding" data-qa="footer-terms-of-use" href="http://www.docusign.com/company/terms-of-use/lang/en">
+                Terms of Use
+              </a>
+            </li>
+            <li class="footer_new_row">
+              <a target="_blank" class="footer-links_item ng-binding" data-qa="footer-privacy" href="http://www.docusign.com/company/privacy-policy/lang/en">
+                Privacy
+              </a>
+            </li>
+            <li>
+              <a target="_blank" class="footer-links_item ng-binding" data-qa="footer-intellectual-property" href="http://www.docusign.com/IP/lang/en">
+                Intellectual Property
+              </a>
+            </li>
+            <li>
+              <a target="_blank" class="footer-links_item ng-binding" href="http://www.xdtm.org" data-qa="footer-xdtm">
+                xDTM Compliant
+              </a>
+            </li>
+            <li class="footer_new_row footer_copyright">
+              <span class="footer-links_item ng-binding" data-qa="footer-copyright">
+                Copyright © 2018 DocuSign, Inc. All rights reserved.
+              </span>
+            </li>
+          </ul>
+          <div id="menuLanguages" class="menu select-menu invisible" data-qa="menuLanguageOptions" style="top: auto; bottom: 10px; left: 0px; min-width: 120px;">
+            <ul role="menu" aria-label="English">
+              <li class="item ng-binding ng-scope on" data-qa="language-option-en" role="menuitem">
+                  English
+              </li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-de" role="menuitem">
+                  Deutsch
+              </li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-es" role="menuitem">
+                  Español
+              </li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-fr" role="menuitem">
+                  Français
+              </li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-it" role="menuitem">
+                  Italiano
+              </li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-nl" role="menuitem">
+                  Nederlandse
+              </li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-pt_BR" role="menuitem">
+                  Português (Brasil)
+              </li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-pt" role="menuitem">
+                  Português (Portugal)
+              </li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-ru" role="menuitem">
+                  Русский
+              </li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-zh_TW" role="menuitem">
+                  中文(繁體)
+              </li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-zh_CN" role="menuitem">
+                  中文(简体)
+              </li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-ja" role="menuitem">
+                  日本語
+              </li>
+              <li class="item ng-binding ng-scope" data-qa="language-option-ko" role="menuitem">
+                  한국어
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_right p-right-large">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ds-modal-background invisible">
+    <div class="modal modal-new modal-lg modal-visible ng-scope modal-intro hide_modal" role="dialog">
+      <div class="images">
+        <div class="modal-intro-image">
+          <img src="images/svg/intro_image.svg"/>
+        </div>
+      </div>
+      <div class="modal_content">
+        <h1 class="modal_title">Start Building your Simple Agreements</h1>
+        <p>DocuSign’s click wrap solution allows you to quickly capture acceptance and the legally binding evidence all in one place. Get started below to build your first click wrap below.</p>
+        <button type="submit" class="btn btn-main btn-lg get_started btn-cancel" callout-trigger="true">Start Now</button>
+      </div>
+      <button class="modal_close icon icon-times"></button>
+    </div>
+
+    <div class="modal modal-new modal-lg modal-visible ng-scope modal-c2a-agreement-type hide_modal" role="dialog">
+      <div class="modal_header">
+        <h1 class="modal_title">Choose an agreement type</h1>
+      </div>
+      <div class="modal_content">
+        <div class="c2a_options tile-section">
+          <div class="tile">
+            <div class="c2a_option_img">
+              <img src="images/svg/c2a_agreement_type_modal.svg" />
+            </div>
+            <div class="c2a_option_title">Modal</div>
+            <div class="c2a_option_description">A window on top on your website.</div>
+          </div>
+          <div class="tile">
+            <div class="c2a_option_img">
+              <img src="images/svg/c2a_agreement_type_inline.svg" />
+            </div>
+            <div class="c2a_option_title">Inline</div>
+            <div class="c2a_option_description">Displayed within the content of your website.</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal_footer">
+        <a href="ndse.html" class="btn btn-primary btn-lg choose_c2a_type">Choose</a>
+        <button type="button" class="btn btn-lg btn-minor btn-cancel">Cancel</button>
+      </div>
+      <button class="modal_close modal_close_only icon icon-times"></button>
+    </div>
+
+    <div class="modal modal-new modal-lg modal-visible ng-scope modal-c2a-download hide_modal" role="dialog">
+      <div class="modal_header">
+        <h1 class="modal_title">Get Code</h1>
+      </div>
+      <div class="modal_content">
+        <div class="code_blocks">
+          <div class="tabs-wrap">
+            <ul class="tabs" olive-tabset="default" olive-tabs-initialized="true" role="tablist">
+              <li class="tab-wrap ng-scope">
+                <button type="button" class="tab on" olive-tab-id="html">
+                  HTML
+                </button>
+              </li>
+              <li class="tab-wrap ng-scope">
+                <button type="button" class="tab" olive-tab-id="notes">
+                  Javascript
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs-wrap-target">
+            <div olive-tab-id="html" class="ng-scope">
+              <div class="code">
+                <pre class="code_body language-markup"><code olive-sourcecode-dest="default" class=" language-markup"><span class="token comment">//Copy the highlighted JS into your site below.</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ds_terms_of_service<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></span></code></pre>
+              </div>
+            </div>
+
+            <div class="ng-scope hide" olive-tab-id="notes">
+              <div class="code">
+                <pre class="code_body language-markup"><code olive-sourcecode-dest="default" class=" language-markup"><span class="token comment">//Copy the highlighted JS into your site below.</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">... Docusign Snippet here ...</span>
+<span class="token attr-name">_DS</span><span class="token punctuation">('</span><span class="token attr-value">create</span><span class="token punctuation">’, ’22fhf7j-456fr89j87-adsf23456afd45’);</span>
+<span class="token attr-name">_DS</span><span class="token punctuation">('</span><span class="token attr-value">load</span><span class="token punctuation">’, ’terms of service);</span>
+<span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></code></pre>
+        </div>
+      </div>
+              </div>
+        </div>
+      </div>
+      <div class="modal_footer">
+        <button type="button" class="btn btn-lg btn-primary btn-cancel">Copy</button>
+      </div>
+      <button class="modal_close modal_close_only icon icon-times"></button>
+    </div>
+  </div>
+  <div class="messages-global global-notifications" role="alert" aria-atomic="true">
+    <div class="message message-success invisible">
+      <span class="message_icon icon icon-check"></span>
+      <div class="message_content">Terms of Service completed. Download a copy <u>here</u></div>
+      <button class="message_close icon icon-times"></button>
+    </div>
+  </div>
+  <div class="osm-mask"></div>
+  <div class="callout steps tip below left start callout-invisible" style="top: -205px; left: -442px;">
+    <!-- <div class="callout_header">Click Wraps</div> -->
+    <div class="callout_content">Navigate between your envelopes and click wraps within manage. <div class="link">Learn more...</div></div>
+    <div class="callout_footer">
+      <button type="button" class="btn btn-primary">Got It</button>
+    </div>
+  </div>
+</body>
+<script src="js/script_common_components.js"></script>
+<script src="js/script_callouts.js"></script>
+<!-- <script src="js/script_ndse-responsive.js"></script> -->
+<script src="js/script_modals.js"></script>
+<script src="js/script_manage.js"></script>
+<script src="js/script_toast_messages.js"></script>
+</html>

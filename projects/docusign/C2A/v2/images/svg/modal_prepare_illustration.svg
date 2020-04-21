@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="191px" height="170px" viewBox="0 0 191 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 12</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M19,105 L19,15.7876535 C19,14.2507272 20.2587537,13 21.8055431,13 L170.194457,13 C171.741246,13 173,14.2507272 173,15.7876535 L173,105 L19,105 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="154" height="92" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <polygon id="path-3" points="0 150 127 150 127 0 0 0"></polygon>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="127" height="150" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="New-NDSE_Homepage_V7" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-NDSE_v7_Homepage_1_Intro_VD" transform="translate(-274.000000, -427.000000)">
+            <g id="Group-11" transform="translate(167.000000, 151.000000)">
+                <g id="Group-7" transform="translate(107.000000, 228.000000)">
+                    <g id="Group-12" transform="translate(0.000000, 48.000000)">
+                        <g id="Group-10" transform="translate(0.000000, 46.000000)">
+                            <path d="M7,113 L184,113 L184,4.67800427 C184,2.09574591 181.905181,0 179.319887,0 L11.680113,0 C9.09481856,0 7,2.09574591 7,4.67800427 L7,113 Z" id="Fill-1" fill="#E8E8E8"></path>
+                            <use id="Fill-5" stroke="#777777" mask="url(#mask-2)" stroke-width="2" fill="#F5F5F5" xlink:href="#path-1"></use>
+                            <path d="M188.251664,123.06399 L2.74833594,123.06399 C1.23020752,123.06399 0,121.772628 0,120.179032 L0,115.884958 C0,114.291362 1.23020752,113 2.74833594,113 L188.251664,113 C189.769792,113 191,114.291362 191,115.884958 L191,120.179032 C191,121.772628 189.769792,123.06399 188.251664,123.06399" id="Fill-9" fill="#CCCCCC"></path>
+                            <path d="M107.872642,116 L84.1273585,116 C82.9404481,116 81.8685142,115.220118 81.3962264,114.015023 L81,113 L111,113 L110.603774,114.015023 C110.131486,115.220118 109.059552,116 107.872642,116" id="Fill-13" fill="#777777"></path>
+                            <polygon id="Fill-16" fill="#E3E3E3" style="mix-blend-mode: multiply;" opacity="0.9" points="26 104 32 104 32 0 26 0"></polygon>
+                        </g>
+                        <g id="Group-2" transform="translate(32.000000, 0.000000)">
+                            <use id="Fill-18" stroke="#EEEEEE" mask="url(#mask-4)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-3"></use>
+                            <polygon id="Fill-21" fill="#BFBEBD" points="16 135.661 82 135.661 82 135 16 135"></polygon>
+                            <polygon id="Fill-28" fill="#BFBEBD" points="58 28 111 28 111 22 58 22"></polygon>
+                            <polygon id="Fill-28-Copy" fill="#BFBEBD" points="16 40 111 40 111 34 16 34"></polygon>
+                            <polygon id="Fill-28-Copy-2" fill="#BFBEBD" points="16 52 111 52 111 46 16 46"></polygon>
+                            <polygon id="Fill-28-Copy-3" fill="#BFBEBD" points="16 64 111 64 111 58 16 58"></polygon>
+                            <polygon id="Fill-28-Copy-4" fill="#BFBEBD" points="16 76 69 76 69 70 16 70"></polygon>
+                            <polygon id="Fill-28-Copy-5" fill="#BFBEBD" points="16 88 111 88 111 82 16 82"></polygon>
+                            <polygon id="Fill-28-Copy-6" fill="#BFBEBD" points="16 100 111 100 111 94 16 94"></polygon>
+                            <polygon id="Fill-29" fill="#BFBEBD" points="16 28 56 28 56 27 16 27"></polygon>
+                            <polygon id="Fill-29-Copy" fill="#BFBEBD" points="71 76 111 76 111 75 71 75"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

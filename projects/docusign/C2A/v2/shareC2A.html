@@ -1,0 +1,104 @@
+<html>
+<body>
+  <div class="head">
+    <h1>Share</h1>
+  </div>
+
+  <div class="head_instructions">
+    Copy the HTML and JS code snippet into your site and pass back your unique identifiers.
+  </div>
+
+  <div class="code_blocks">
+    <div class="tabs-wrap">
+      <ul class="tabs" olive-tabset="default" olive-tabs-initialized="true" role="tablist">
+        <li class="tab-wrap ng-scope">
+          <button type="button" class="tab on" olive-tab-id="html">
+            HTML
+          </button>
+        </li>
+        <li class="tab-wrap ng-scope">
+          <button type="button" class="tab" olive-tab-id="notes">
+            Javascript
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="tabs-wrap-target">
+      <div olive-tab-id="html" class="ng-scope">
+        <div class="code">
+            <pre class="code_body language-markup"><code olive-sourcecode-dest="default" class=" language-markup"><span class="token comment">//Copy the highlighted JS into your site below.</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ds_terms_of_service<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+        </div>
+      </div>
+
+      <div class="ng-scope hide" olive-tab-id="notes">
+        <div class="code">
+        <pre class="code_body language-markup"><code olive-sourcecode-dest="default" class=" language-markup"><span class="token comment">//Copy the highlighted JS into your site below.</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">... Docusign Snippet here ...</span>
+<span class="token attr-name">_DS</span><span class="token punctuation">('</span><span class="token attr-value">create</span><span class="token punctuation">’, ’22fhf7j-456fr89j87-adsf23456afd45’);</span>
+<span class="token attr-name">_DS</span><span class="token punctuation">('</span><span class="token attr-value">load</span><span class="token punctuation">’, ’terms of service);</span>
+<span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></code></pre>
+  </div>
+</div>
+
+        </div>
+        <button class="btn btn-primary copy-code right">Copy</button>
+  </div>
+
+  <div class="implementation_information">
+    <h1>Implementation</h1>
+    <div class="">
+      <p>Modals are created by calling the javascript function <span class="link">Olive.modal.open(options)</span>, where options is a configuration object (full details below). A unique identifier must be provided as <span class="link">options.name</span>, and this will be the name of your instance. Provide the content of your modal with <span class="link">options.content</span>, which can be a string of HTML, a DOM object, a jQuery object, or a compiled Angular template. If you have not included the <span class="link">.modal</span> wrapper it will be created automatically. The close X and the modal's message section will also be added automatically.</p>
+
+      <p>Modals can close one of two ways, with <span class="link">instance.complete()</span> or <span class="link">instance.escape()</span>. These are used to represent whether the user completed the process successfully or if the user decided to abort the process. Each modal includes two arrays of functions, the onComplete queue and onEscape queue. When the modal completes or escapes, the appropriate queue of functions will run. Helpers to add new functions to the instance's queues are described in the code reference at the bottom of the page.</p>
+    </div>
+  </div>
+
+  <div class="">
+    <div class="test_connection">
+      <div class="tc_status">
+        <div class="tc_status_indicator"><span class="icon icon-circle"></span></div>
+        <div class="">
+          <div class="tc_status_title active">Connected</div>
+          <div class="tc_status_title inactive">Disconnected</div>
+          <div class="tc_status_title unknown">Not Connected</div>
+          <div class="tc_status_description active">Returning 1 identifier from www.acme.com </div>
+          <div class="tc_status_description inactive">Service disconnected</div>
+          <div class="tc_status_description unknown">Not connected to your site yet. <span class="link">Get started here</span></div>
+        </div>
+      </div>
+      <div class="btn btn-secondary btn-test-connection">Test Connection</div>
+      <div class="loading-overlay hidden">
+        <div class="loading-dots"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-buttons upload_file_list_view">
+    <div class="btn btn-secondary btn-lg btn-prev ">Previous</div>
+    <div class="btn btn-main btn-lg btn-next ">Next</div>
+  </div>
+
+  <div class="doc_preview hide_bottom">
+    <div class="overlay"></div>
+    <div class="doc_preview_tools">
+      <div class="close_doc_preview right">
+        <span class="toolbar-btn-wrapper"><span class="icon-times"></span></span>
+      </div>
+      <div class="title">NDA</div>
+    </div>
+    <div class="doc_preview_pages" style="">
+      <div class="doc_preview_page doc_preview_page1">
+        <img src="docs/Sales_Order_page1.png">
+      </div>
+    </div>
+    <!-- <div class="doc_preview_footer">
+      <div>
+        <div class="doc_preview_accept">I have read, understand and agree to this doc_preview</div>
+        <button class="btn btn-primary btn_agree">Accept</button>
+      </div>
+    </div> -->
+  </div>
+</body>
+</html>

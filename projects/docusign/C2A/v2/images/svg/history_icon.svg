@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/History</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M25.9636936,23.9636936 L22,20 L32,20 L32,30 L28.8054887,26.8054887 C24.6146788,30.2684962 20.423869,32 16.2330591,32 C5.83543557,32 -5.32907052e-14,23.7654101 -2.36658272e-30,16.2330591 C-2.36658272e-30,7.26778812 7.26778812,0 16.2330591,0 C23.8765878,0 31.9486983,5.62127893 31.9486983,15.7669409 L27.9486983,15.7669409 C27.9486983,8.74912682 22.6667702,4 16.2330591,4 C9.47692712,4 4,9.47692712 4,16.2330591 C4,22.5717838 8.9910383,28 16.2330591,28 C19.3294105,28 22.5674772,26.6977252 25.9636936,23.9636936 Z M20,20 L12,20 L12,16 L16,16 L16,8 L20,8 L20,20 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Right-Panel---No-History" transform="translate(-241.000000, -434.000000)">
+            <g id="Group" transform="translate(198.000000, 434.000000)">
+                <g id="Icon/History" transform="translate(43.000000, 0.000000)">
+                    <g id="🎨Icon">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#777777" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="Color/Default" mask="url(#mask-2)" fill="#777777">
+                            <rect id="Fill" x="0" y="0" width="32" height="32"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

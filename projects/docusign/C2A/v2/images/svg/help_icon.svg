@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>Help</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-NDSE_v9_Progress-Bar_VD" transform="translate(-1560.000000, -361.000000)">
+            <g id="Group-43-Copy-12" transform="translate(100.000000, 334.000000)">
+                <g id="Group-6" transform="translate(1460.000000, 16.000000)">
+                    <g id="Help" transform="translate(0.000000, 11.000000)">
+                        <g>
+                            <circle id="Oval-3" stroke="#FFFFFF" stroke-width="2" cx="8" cy="8" r="7"></circle>
+                            <rect id="Rectangle-path" fill="#FFFFFF" x="6.93333333" y="10.8888889" width="1.68888889" height="1.6"></rect>
+                            <path d="M9.42222222,8.04444444 C8.93333333,8.48888889 8.48888889,8.88888889 8.48888889,9.73333333 L8.48888889,9.95555556 L6.93333333,9.95555556 L6.93333333,9.68888889 C6.93333333,8.26666667 7.64444444,7.6 8.17777778,7.11111111 C8.53333333,6.75555556 8.84444444,6.48888889 8.84444444,6.08888889 C8.84444444,5.37777778 8.4,5.02222222 7.51111111,5.02222222 C6.48888889,5.02222222 5.82222222,5.55555556 5.64444444,5.68888889 L5.51111111,5.82222222 L5.51111111,4.17777778 L5.55555556,4.13333333 C6.22222222,3.73333333 6.88888889,3.51111111 7.64444444,3.51111111 C10.2222222,3.51111111 10.4444444,5.51111111 10.4444444,6.13333333 C10.4444444,7.11111111 9.95555556,7.6 9.42222222,8.04444444 Z" id="Shape" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

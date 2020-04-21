@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="16" viewBox="0 0 15 16">
+  <defs>
+    <rect id="icon_link-a" width="8" height="12" rx="4"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="rotate(60 6.5 9.732)">
+    <use fill="#FFF" xlink:href="#icon_link-a"/>
+    <rect width="6" height="10" x="1" y="1" stroke="#777" stroke-width="2" rx="3"/>
+    <rect width="6" height="10" x="4" y="5" stroke="#777" stroke-width="2" rx="3"/>
+  </g>
+</svg>

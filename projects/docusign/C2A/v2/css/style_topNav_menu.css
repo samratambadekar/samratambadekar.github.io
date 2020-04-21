@@ -1,0 +1,247 @@
+.topNav-menu.menu {
+  left: auto;
+  right: 24px;
+  top: 67px;
+  width: 300px;
+  min-width: 300px;
+
+  z-index: 100;
+  transition: none;
+}
+.topNav-menu > div {
+  max-height: 550px;
+  /*max-height: 60%;*/
+  overflow: auto;
+}
+.topNav-menu .user_profile {
+  position: relative;
+  text-align: center;
+}
+.topNav-menu .user_profile > div {
+  margin: auto;
+}
+.topNav-menu .user_profile .profile_status {
+  transform: scale(1.5);
+  top: 30px;
+}
+.topNav-menu .user_profile .profile_edit {
+  right: auto;
+  left: 0;
+}
+
+.topNav-menu .user_profile .user_details {
+  margin-top: 40px;
+}
+.topNav-menu .user_profile .profile_status_text {
+  margin: 10px auto;
+  padding: 5px;
+  font-size: 11px;
+  background-color: #0D338A;
+}
+.topNav-menu .user_profile .signature {
+  padding: 15px;
+  margin: 15px;
+}
+.topNav-menu .user_profile .user_plan {
+  padding: 15px;
+  margin: 15px;
+  /*border-top: 1px solid #CCC;*/
+
+  display: flex;
+  justify-content: flex-start;
+}
+.topNav-menu .user_profile .user_plan > div:not(:first-child) {
+  margin-left: 15px;
+  font-size: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.topNav-menu .user_profile .user_plan .plan_name {
+  font-size: 15px;
+}
+.topNav-menu .user_profile .user_navigate {
+  padding: 15px;
+  margin: 15px 15px 0;
+  border-top: 1px solid #CCC;
+}
+
+
+.topNav-menu .user_help .app_extensions {
+  padding: 15px 0;
+  margin: 15px 15px 0;
+  border-top: 1px solid #CCC;
+}
+.topNav-menu .user_help .app_extensions > *:not(:first-child) {
+  margin-top: 15px;
+}
+.topNav-menu .user_help .tips_and_tricks {
+  padding: 15px 0;
+  margin: 15px 15px 0;
+  border-top: 1px solid #CCC;
+}
+.topNav-menu .user_help .tips_and_tricks > *:not(:first-child) {
+  margin-top: 15px;
+}
+
+
+#topNav {
+  height: 68px;
+  overflow: hidden;
+}
+#topNav > div {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#topNav .action-header {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: auto;
+}
+.actions > div {
+  margin: auto 10px;
+  cursor: pointer;
+}
+
+#bottomNav {
+  border-top: 1px solid #CDCDCD;
+  background-color: #FFF;
+}
+#bottomNav .actions_bar {
+  max-width: 1264px;
+  padding: 8px 24px;
+}
+.actions_bar {
+  padding: 8px 16px;
+  background-color: #FFF;
+
+  display: flex;
+  justify-content: flex-end;
+}
+.actions_bar > div {
+  margin-left: 15px;
+  min-width: 100px;
+  border-color: transparent;
+}
+
+.action-header .btn-prev {
+  background: 0 0;
+  border-color: transparent;
+  color: #c7d1e2;
+  padding-left: 0;
+}
+.action-header .btn-icon .icon {
+  color: inherit;
+  font-size: 22px;
+  line-height: 16px;
+}
+
+.action-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 16px;
+  max-height: 40px;
+}
+.action-header_title {
+  width: 224px;
+  display: flex;
+  align-items: center;
+}
+.action-header_title .icon-editpen {
+  color: #FFF;
+  font-size: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.action-flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*flex-grow: 2;*/
+  /*position: relative;*/
+  font-size: 14px;
+}
+
+.profile_status {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid transparent;
+  border-radius: 100px;
+  box-sizing: padding-box;
+}
+.profile_status .user_initial {
+  z-index: 2;
+}
+.profile_status svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.profile_status circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke: #153A80;
+  stroke-width: 4;
+  stroke-dasharray: 285%;
+  stroke-dashoffset: 0%;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+.user_profile .profile_status circle {
+  stroke: #CCC;
+}
+.profile_status .completion {
+  stroke: #FFC820 !important;
+  stroke-dasharray: 285%;
+  stroke-dashoffset: 285%;
+}
+.profile_status .completion.completion_value {
+  stroke-dashoffset: 215%;
+}
+
+.profile_placeholder {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  overflow: hidden;
+}
+
+#bottomNav {
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  /*transition-duration: 0.2s;*/
+}
+#bottomNav.hide_bottom_nav {
+  /*height: 0;*/
+  /*border: 0;*/
+  /*overflow: hidden;*/
+  pointer-events: none;
+  transform: translateY(100px);
+}

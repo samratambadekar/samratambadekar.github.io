@@ -1,0 +1,46 @@
+.text_formatting_menu {
+  position: absolute;
+  left: 20px;
+  top: 200px;
+  padding: 0px !important;
+  transition-duration: 0s;
+}
+.text_formatting_menu .text_formatting_options {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px;
+  background-color: #F9F9F9;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  transform: translate(0);
+  transition-duration: 0.1s;
+}
+.text_formatting_menu .text_formatting_options > div + div {
+  margin-left: 10px;
+}
+
+.text_formatting_menu .button_only_format {
+  display: none;
+}
+.text_formatting_menu.button_formatter .button_only_format {
+  display: block;
+}
+
+.text_formatting_menu.invisible {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.text_formatting_menu.invisible .text_formatting_options {
+  transform: translateY(5px);
+}
+
+.btn-secondary-minor {
+  color: #333;
+  background-color: transparent;
+}
+.btn-secondary-minor:hover {
+  color: #333;
+  background-color: transparent;
+}
