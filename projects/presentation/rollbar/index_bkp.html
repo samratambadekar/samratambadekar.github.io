@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title>Presentation</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Palanquin:100,300,500,600" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,500" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,500" rel="stylesheet"> -->
+    <link href="css/style_presentation.css" rel="stylesheet" type="text/css" />
+    <link href="css/style_ndse_action_flow.css" rel="stylesheet" type="text/css" />
+    <link href="css/style_motion_demo.css" rel="stylesheet" type="text/css" />
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-with-addons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script> -->
+    <script src="js/jquery-1.12.3.min.js"></script>
+  </head>
+  <body id="portfolio_presentation">
+    <article>
+      <div class="hidden">
+        <div class="document-title">Portfolio</div>
+      </div>
+      <div class="pages">
+        <!-- <div class="page showing" data-page-num="1" data-page-name="page_start">
+          <div class="page-title"></div>
+          <div class="page-content">
+            <div class="page-title">
+              Hi, I'm Samrat!
+            </div>
+            <div class="">
+              I'm a Design Technologist, I approach design through code.
+            </div>
+            <div class="">
+              For me, combining my designer & developer skills brings balance.
+            </div>
+            <div class="">
+              I love cooking & hiking.
+            </div>
+            <div class="">
+              In the past I've done sketching, photoshop painting, svg art, AR & VR.
+            </div>
+          </div>
+        </div> -->
+
+        <div class="page showing" data-page-num="14" data-page-name="">
+          <div class="page-title">Demos</div>
+          <div class="page-content">
+            <div class="medium-text">DocuSign</div>
+            <div class="previous_versions">
+              <!-- sketching, photoshop painting, svg art, AR & VR. -->
+              <a href="https://samratambadekar.com/projects/docusign/identity/v1/id_verify.html" target="_blank" class="link "><div class="demo_card_title">Identity Verification</div></a>
+              <a href="https://samratambadekar.com/projects/docusign/disclosures/" target="_blank" class="link "><div class="demo_card_title">Disclosures</div></a>
+              <a href="https://samratambadekar.com/projects/docusign/checklist/v5/" target="_blank" class="link "><div class="demo_card_title">Checklist Animation</div></a>
+              <a href="https://samratambadekar.com/projects/docusign/tab/v3/ndse.html" target="_blank" class="link "><div class="demo_card_title">Micro Interactions</div></a>
+              <a href="https://samratambadekar.com/projects/docusign/ndse/v5/index.html" target="_blank" class="link "><div class="demo_card_title">Simplified Sending</div></a>
+              <a href="https://samratambadekar.com/projects/docusign/forms/v1/index.html" target="_blank" class="link "><div class="demo_card_title">Forms</div></a>
+            </div>
+
+            <div class="medium-text">DocuSign Visualization</div>
+            <div class="previous_versions">
+              <!-- sketching, photoshop painting, svg art, AR & VR. -->
+              <a href="https://samratambadekar.com/projects/docusign/mapViz/" target="_blank" class="link "><div class="demo_card_title">2D Visualization</div></a>
+              <a href="https://samratambadekar.com/projects/docusign/populationViz/" target="_blank" class="link "><div class="demo_card_title">3D Visualization</div></a>
+            </div>
+
+            <div class="medium-text">Personal Projects</div>
+            <div class="previous_versions">
+              <!-- sketching, photoshop painting, svg art, AR & VR. -->
+              <a href="https://samratambadekar.com/sketch.html" target="_blank" class="link "><div class="demo_card_title">sketching</div></a>
+              <a href="https://samratambadekar-blog.tumblr.com" target="_blank" class="link "><div class="demo_card_title">photoshop painting</div></a>
+              <a href="https://github.com/samratambadekar/svgArt" target="_blank" class="link "><div class="demo_card_title">svg art</div></a>
+              <a href="https://samratambadekar.com/projects/gitcity_vr/" target="_blank" class="link "><div class="demo_card_title">AR & VR</div></a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- <div class="page" data-page-num="3" data-page-name="">
+          <div class="page-title">DocuSign Summary</div>
+          <div class="page-content text-content">
+            <div class="margin_auto_width">
+              <div class="diagram_prototyping stage1">
+                <div class="medium-text diagram_title">Typical Design Process</div>
+                <div class="diagram_group">
+                  <div class="diagram_step">Ideate</div>
+                  <div class="diagram_step">Design</div>
+                  <div class="diagram_step highlight">Prototype</div>
+                  <div class="diagram_step">Research</div>
+                  <div class="diagram_step">Repeat</div>
+                </div>
+              </div>
+              <div class="diagram_prototyping stage2 hidden">
+                <div class="medium-text diagram_title">Prototyping as a Service</div>
+                <div class="diagram_group">
+                  <div class="diagram_step">Ideate</div>
+                  <div class="diagram_step">Design</div>
+                  <div class="diagram_step">Research</div>
+                </div>
+
+                <div class="diagram_service highlight">
+                  Prototyping System
+                </div>
+
+                <div class="diagram_group diagram_new_group">
+                  <div class="diagram_new_group_item">PMs</div>
+                  <div class="diagram_new_group_item">Managers</div>
+                  <div class="diagram_new_group_item">Engineers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <!-- <div class="bottom-bar">
+        <div class="btn btn-prev hide"><</div>
+        <div class="btn btn-next">></div>
+      </div> -->
+    </article>
+    <!-- <div id="experienceLoader" class="experienceLoader"></div> -->
+  </body>
+
+  <script src="js/script_tutorial.js"></script>
+  <!-- <script>
+  	//  ONLOAD CODE
+  	$(document).ready(function() {
+  		$.getScript("js/script_tutorial.js", function() {
+  			console.log("Loaded Script.");
+  		});
+  	});
+  </script> -->
+</html>
