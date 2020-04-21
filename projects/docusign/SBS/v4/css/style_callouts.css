@@ -1,0 +1,27 @@
+
+.tooltip {
+  font-family: "Maven Pro";
+}
+.tooltip .header {
+  font-size: 17px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.tooltip .icon {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.tooltip .stepCount {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.tooltip .stepCount, .tooltip .icon {
+  display: none;
+}
+.tooltip.steps .stepCount, .tooltip.steps .icon {
+  display: inline-block;
+}

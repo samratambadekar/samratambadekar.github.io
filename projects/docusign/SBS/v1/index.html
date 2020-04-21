@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=360"/> -->
+    <title>SBS Sending</title>
+
+    <script src="js/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+    <!-- <link href="css/olive.min.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="css/style.css" rel="stylesheet" type="text/css" /> -->
+    <link href="https://docucdn-a.akamaihd.net/olive/16.17.0/css/olive.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://docucdn-a.akamaihd.net/olive/16.15.0/css/martini.min.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="js/croppie.js"></script> -->
+  </head>
+  <body>
+    <nav class="site-header">
+      <div class="site-container">
+        <button class="btn-nav btn-nav-menu">
+          <span class="icon icon-menu"></span>
+          <span class="sr-text ng-binding">Menu</span>
+        </button>
+        <a href="index.html" class="logo logo-docusign"></a>
+        <div class="main-nav">
+          <ul class="horizontal-list no-list">
+            <li>
+              <a href="index.html" class="item ng-scope ng-binding on"><span class="icon icon-home"></span> Home</a>
+            </li>
+            <li>
+              <a href="documents.html" class="item ng-scope ng-binding"><span class="icon icon-documents"></span> Documents</a>
+            </li>
+            <li class="ng-scope">
+              <a href="#" class="item ng-scope ng-binding"><span class="icon icon-templates"></span> Templates</a>
+            </li>
+            <li class="ng-scope">
+              <a href="#" class="item ng-scope ng-binding"><span class="icon icon-reports"></span> Reports</a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-header-links ng-scope">
+          <a target="_blank" class="link" href="https://support.docusign.com/knowledgeSearch?by=product&amp;product=new_docusign_experience&amp;topic=all">Help</a>
+          <button type="button" class="item btn-avatar">
+            <img class="thumb" src="images/profile60.png"> <span class="icon icon-triangle down"></span>
+          </button>
+          <div id="menuAccountNav" class="menu invisible" style="opacity: 0; top: 0px; left: 0px; min-width: 120px;">
+            <div class="menu-section"><div class="grid ng-scope"><table class="id-card"><tbody><tr><td class="id-card-thumb"><span class="avatar"><img alt="User Avatar" src="/img/profile60.png"></span></td><td class="id-card-info ng-binding"><strong class="line-1 ng-binding">DocuSign, Inc.</strong><br><span>abc.def@docusign.com</span><br>2563<br></td></tr></tbody></table></div></div>
+            <ul class="menu-grouping"><li role="menuitem"><a href="/preferences" class="item ng-binding">My Preferences</a></li><li role="menuitem"></li><li class="ng-scope" role="menuitem"><a class="item ng-binding">Switch to Classic</a></li><li role="menuitem"><a class="item ng-binding">Feedback</a></li><li role="menuitem"><a target="_self" href="/logout" class="item ng-binding">Log Out</a></li></ul>
+          </div>
+        </div>
+        <button type="button"class="btn-nav btn-side-nav">
+          <span class="icon icon-search"></span> <span class="sr-text ng-binding">Filter</span>
+        </button>
+      </div>
+    </nav>
+    <article class="site-content ng-scope">
+      <div class="site-container loading ng-scope">
+        <div class="site-main bg-contrast ng-scope">
+          <div class="hero-wrap ng-scope">
+            <div class="site-container">
+              <div class="hero">
+                <div class="hero-cell">
+                  <h1 class="hero-title ng-binding ng-scope">Sign or Get Signatures</h1>
+                </div>
+                <div class="hero-cell">
+                  <button type="button" class="btn btn-main btn-xl hero-action ng-binding ng-scope new_doc">New</button>
+                </div>
+                <div id="menuNewDocument" class="menu invisible ng-scope" style="opacity: 0; top: 0px; left: 0px; min-width: 148px;">
+                  <ul role="menu">
+                    <li role="menuitem"><a class="item ng-scope ng-binding" href="prepare.html">Send a Document</a></li>
+                    <li class="ng-scope" role="menuitem"><a class="item ng-scope ng-binding">Sign a Document</a></li>
+                    <li class="ng-scope" role="menuitem"><a class="item ng-scope ng-binding">Use a Template</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="site-main-home">
+            <div class="grid bg-white">
+              <div class="site-container site-container-narrow">
+                <div class="fgrid fgrid-lines fgrid-lg fgrid-gutters">
+                  <div class="fgrid_cell fgrid_cell-1-3 fgrid_cell-1--md">
+                    <div class="grid home-panel-title">
+                      <h4 class="u-float-left ng-binding">Overview</h4>
+                      <span class="text-muted u-float-right ng-binding">Last 6 Months</span>
+                    </div>
+                    <ul class="nav-list">
+                      <li class="item-wrap ng-scope"><a class="item ng-scope" href="/documents/action-required"><span class="title-icon icon-alert-circle text-info"></span><h3 class="title ng-binding">Action Required</h3><span class="meta"><span class="semi-muted ng-binding ng-scope">1</span></span> <span class="icon icon-caret-right nav-list-go"></span></a></li>
+                      <li class="item-wrap ng-scope"><a class="item ng-scope" href="/documents/waiting"><span class="title-icon icon-clock text-muted"></span><h3 class="title ng-binding">Waiting for Others</h3><span class="meta"><span class="semi-muted ng-binding ng-scope">1</span></span> <span class="icon icon-caret-right nav-list-go"></span></a></li>
+                      <li class="item-wrap ng-scope"><a class="item ng-scope" href="/documents/completed"><span class="title-icon icon-check text-success"></span><h3 class="title ng-binding">Completed</h3><span class="meta"><span class="semi-muted ng-binding ng-scope">11</span></span> <span class="icon icon-caret-right nav-list-go"></span></a></li>
+                    </ul>
+                  </div>
+                  <div class="fgrid_cell fgrid_cell_2-3 fgrid_cell-1--md">
+                    <div class="fgrid fgrid-lines fgrid-lg">
+                      <div class="fgrid_cell fgrid_cell-1-2">
+                        <div>
+                          <div class="ng-scope">
+                            <div class="ng-scope">
+                              <div ng-if="newsCtrl.newsContent" class="ng-scope"><h4 class="home-panel-title ng-binding ng-scope">What's New</h4>
+                                <p class="ng-binding ng-scope">
+                                  <strong class="ng-binding">Signing Order Diagram:</strong><br> Review the recipient routing for any document or template using the new signing order diagram. For in process documents, the diagram also provides the current status of each recipient's progress.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hide">
+                          <div class="home-panel-title">
+                            <h4 class="ng-binding">DocuSign Transaction Rooms for Real Estate</h4>
+                          </div>
+                          <div class="fgrid">
+                            <div class="fgrid_cell fgrid_cell-1-4">
+                              <img width="100%" src="/img/dtr-app-icon-1024x1024.png">
+                            </div>
+                            <div class="fgrid_cell fgrid_cell-3-4 ng-binding">Organize all the documents needed for each transaction in its own virtual workspace to speed up deals, ensure compliance, and see real-time updates on your business.<p><button type="button" class="btn btn-primary btn-md">Get Started</button></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="hide">
+                          <div class="grid home-panel-title">
+                            <h4 class="u-float-left ng-binding">Trial Account</h4>
+                            <a class="u-float-right ng-scope ng-binding">Buy Now</a>
+                          </div>
+                          <div class="completion-rate-graph">
+                            <div class="ct-chart" data-qa="status-chart"></div>
+                            <div class="complete-total ng-binding"></div>
+                            <div class="complete-total-subtitle ng-binding">Days Left</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="fgrid_cell fgrid_cell-1-2">
+                        <div class="grid home-panel-title">
+                          <h4 class="u-float-left ng-binding">My DocuSign ID</h4>
+                          <a target="_self" class="u-float-right ng-scope ng-binding" href="/preferences">Edit</a>
+                        </div>
+                        <div class="grid">
+                          <table class="id-card">
+                            <tbody>
+                              <tr>
+                                <td class="id-card-thumb text-center"><input id="upload-profile-photo" type="file" style="display:none"><label class="avatar u-cursor-pointer ng-scope"><img alt="User Avatar" src="images/profile60.png"><div class="spinner-circle spinner-sm transparent"></div></label></td>
+                                <td class="id-card-info"><strong class="line-1 ng-binding">Alex Edwards</strong><br><span ng-if="email" class="muted ng-binding ng-scope">alex@alexedwards.com<br></span><div class="muted ng-binding ng-scope">Member since 2015</div></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="horizontal-separator"></div>
+                        <div class="signature-wrap ng-scope">
+                          <div class="sig-chrome"><span class="sig-chrome-title-top ng-binding">DocuSigned by:</span>
+                            <div class="sig-container"><img class="sig" src="/users/6de47728-ba91-4e02-9d16-d4482f76b84c/signatures/526e6d0f-f6dd-4c8a-8a2f-7fb56cedf835/signature_image"></div>
+                            <span class="sig-chrome-title-bottom ng-binding">6DE46328BA914E0...</span>
+                          </div>
+                          <div class="add-sig hide"><span class="add-sig-marker icon-times"></span> <a class="add-sig-link ng-binding" >Create Your Signature</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid bg-contrast">
+              <div class="site-container site-container-narrow">
+                <div class="eq-cols">
+                  <div class="col">
+                    <h4 class="home-panel-title ng-binding">Tips and Tricks</h4>
+                    <div class="home-tips  home-office-hours"><p class="ng-binding"><strong class="ng-binding">Have questions?</strong><br>Join us every week to chat live with a DocuSign expert. <a class="more ng-binding ng-scope" target="_blank" href="https://www.docusign.com/company/events?term_node_tid_depth=486&amp;department=446&amp;tgr=ndse-home">Register Here</a></p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <h4 class="home-panel-title ng-binding">We Want your feedback</h4>
+                    <p class="ng-binding">We appreciate your ideas, suggestions, bugs, and even your compliments. <a class="more ng-scope ng-binding">Give Feedback</a></p>
+                    <p class="ng-binding">Want to be the first to try out new features and give feedback on new ideas? <a class="more ng-scope ng-binding" target="_blank" href="https://docusign.qualtrics.com/SE/?SID=SV_0kScZUDgqh65ie1">Join Our Customer Panel</a></p>
+                  </div>
+                  <div class="col help-support">
+                    <h4 class="home-panel-title ng-binding">Help and Support</h4>
+                    <p><a target="_blank" class="ng-scope ng-binding" href="//support.docusign.com/knowledgeSearch?by=product&amp;product=new_docusign_experience&amp;topic=all"><span class="icon icon-incomplete"></span> Support Home</a></p>
+                    <p><a target="_blank" class="ng-scope ng-binding" href="//support.docusign.com/community"><span class="icon icon-chat"></span> Community</a></p>
+                    <p><a target="_blank" href="https://trust.docusign.com/" class="ng-scope ng-binding"><span class="icon icon-trustcenter"></span> Trust Center</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="drawer drawer-help left closed" style="width: 0px;">
+        <div class="drawer-wrapper">
+          <div class="drawer-content" olive-drawer-content=""></div>
+        </div>
+      </div>
+    </article>
+    <div class="site_footer ng-scope">
+      <div class="site_container">
+        <div class="footer_left"><!-- ngIf: footer.showBeta() --></div>
+        <div class="footer_main">
+          <ul class="footer-links">
+            <li class="ng-scope"><a class="footer-links_item btn-triggeR ng-binding"><span class="icon icon-globe"></span> English (US)</a></li>
+            <li><span class="footer-links_item ng-binding">Powered by DocuSign</span></li>
+            <li><a target="_blank" class="footer-links_item ng-scope ng-binding" href="https://support.docusign.com/contactSupport">Contact Us</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding" href="http://www.docusign.com/company/terms-of-use/lang/en">Terms of Use</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding" href="http://www.docusign.com/company/privacy-policy/lang/en">Privacy</a></li>
+            <li><a target="_blank" class="footer-links_item ng-binding" href="http://www.docusign.com/IP/lang/en">Intellectual Property</a></li>
+            <li><span class="footer-links_item ng-binding">Copyright © 2016 DocuSign, Inc. All rights reserved.</span></li>
+          </ul>
+          <div id="menuLanguages" class="menu select-menu invisible" style="opacity: 0; top: 0px; left: 0px; min-width: 120px;">
+            <ul role="menu" aria-labelledby=" English (US)">
+              <li class="item ng-binding ng-scope on" role="menuitem">English (US)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Deutsch</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Español</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Français</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Italiano</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Nederlandse</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Português (Brasil)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Português (Portugal)</li>
+              <li class="item ng-binding ng-scope" role="menuitem">Русский</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">中文(台灣)</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">中文(简体)</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">日本語</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">한국어</li>
+              <li class="item ng-binding ng-scope"  role="menuitem">［～Þƨèúδô～］</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_right"><!-- ngIf: footer.showFeedback() --></div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+  	//  ONLOAD CODE
+  	$(document).ready(function() {
+  		$.getScript("js/script.js", function() {
+  			console.log("Loaded Script.");
+  		});
+  	});
+  </script>
+</html>
