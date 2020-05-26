@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title>Micro-interactions</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,500" rel="stylesheet">
+    <link href="css/style_presentation.css" rel="stylesheet" type="text/css" />
+    <link href="css/style_ndse_action_flow.css" rel="stylesheet" type="text/css" />
+    <link href="css/style_motion_demo.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+  </head>
+  <body id="portfolio_presentation">
+    <article>
+      <div class="hidden">
+        <div class="document-title">Micro-interactions</div>
+      </div>
+      <div class="pages">
+        <div class="page showing" data-page-num="1" data-page-name="">
+          <div class="page-title">Project: Simplified Sending</div>
+          <div class="page-content text-content">
+            <div class="interactive-content ndse_project">
+              <div class="section_title">Interactive Area: Progress Bars</div>
+              <div class="demo_cards">
+                <div class="demo_card">
+                  <div class="action-flow action-flow-v1">
+                    <div class="flow-state selected" data-step-name="Select">
+                      <div class="status status-complete"><img src="images/svg/check_green.svg"/></div>
+                      <div class="flow-state-text">
+                        <div>Select</div>
+                        <div class="flow-selected"></div>
+                      </div>
+                    </div>
+                    <div class="flow-line"></div>
+                    <div class="flow-state" data-step-name="Prepare">
+                      <div class="status status-complete"><img src="images/svg/check_green.svg"/></div>
+                      <div class="flow-state-text">
+                        <div>Prepare</div>
+                        <div class="flow-selected"></div>
+                      </div>
+                    </div>
+                    <div class="flow-line"></div>
+                    <div class="flow-state" data-step-name="Send">
+                      <div class="status status-complete"><img src="images/svg/check_green.svg"/></div>
+                      <div class="flow-state-text">
+                        <div>Send</div>
+                        <div class="flow-selected"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="demo_card">
+                  <div class="action-flow action-flow-v2">
+                    <div class="flow-state selected" data-step-name="Select">
+                      <div class="flow-state-text">
+                        Select
+                      </div>
+                      <div class="flow-selected">
+                        1
+                        <span class="icon icon-check"><img src="images/svg/check_green.svg"/></span>
+                      </div>
+                    </div>
+                    <div class="flow-state" data-step-name="Prepare">
+                      <div class="flow-state-text">
+                        Prepare
+                      </div>
+                      <div class="flow-selected">
+                        2
+                        <span class="icon icon-check"><img src="images/svg/check_green.svg"/></span>
+                      </div>
+                    </div>
+                    <div class="flow-state" data-step-name="Send">
+                      <div class="flow-state-text">
+                        Send
+                      </div>
+                      <div class="flow-selected">
+                        3
+                        <span class="icon icon-check"><img src="images/svg/check_green.svg"/></span>
+                      </div>
+                    </div>
+                    <div class="flow-line"><div class="flow-line-progress"></div></div>
+                  </div>
+                </div>
+
+                <div class="demo_card">
+                  <div class="action-flow action-flow-v3">
+                    <div class="flow-state tip before middle selected" data-step-name="Select">
+                      <div class="tab-background"></div>
+                      <div class="flow-selected">
+                        <span class="flow-number">1.</span>
+                        <span class="check"><img src="images/svg/check_white.svg"></span>
+                      </div>
+                      <div class="flow-state-text">
+                        Add
+                      </div>
+                    </div>
+                    <div class="flow-state tip before middle" data-step-name="Prepare">
+                      <div class="tab-background"></div>
+                      <div class="flow-selected">
+                        <span class="flow-number">2.</span>
+                        <span class="check"><img src="images/svg/check_white.svg"></span>
+                      </div>
+                      <div class="flow-state-text">
+                        Prepare
+                      </div>
+                    </div>
+                    <div class="flow-line"></div>
+                    <div class="flow-line flow-line-progress"></div>
+                    <div class="flow-state" data-step-name="Send">
+                      <div class="tab-background"></div>
+                      <div class="flow-selected">
+                        <span class="flow-number">3.</span>
+                        <span class="check"><img src="images/svg/check_white.svg"></span>
+                      </div>
+                      <div class="flow-state-text">
+                        Send
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="demo_card">
+                  <div class="action-flow action-flow-v4">
+                    <div class="flow-state selected" data-step-name="Select">
+                      <div class="flow-selected">
+                        <div class="flow-number"></div>
+                      </div>
+                      <div class="flow-state-text">
+                        Add
+                      </div>
+                    </div>
+                    <div class="flow-line"><div class="full_line"></div></div>
+                    <div class="flow-state" data-step-name="Prepare">
+                      <div class="flow-selected">
+                        <div class="flow-number"></div>
+                      </div>
+                      <div class="flow-state-text">
+                        Prepare
+                      </div>
+                    </div>
+                    <div class="flow-line"><div class="full_line"></div></div>
+                    <div class="flow-state" data-step-name="Send">
+                      <div class="flow-selected">
+                        <div class="flow-number"></div>
+                      </div>
+                      <div class="flow-state-text">
+                        Send
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="demo_card">
+                  <div class="action-flow action-flow-v5">
+                    <div class="flow-state selected" data-step-name="Add">
+                      <div class="flow-selected">
+                        <div class="flow-number"></div>
+                      </div>
+                      <div class="flow-state-text">
+                        Add
+                      </div>
+                    </div>
+                    <div class="flow-line"><div class="full_line"></div></div>
+                    <div class="flow-state" data-step-name="Select">
+                      <div class="flow-selected">
+                        <div class="flow-number"></div>
+                      </div>
+                      <div class="flow-state-text">
+                        Select
+                      </div>
+                    </div>
+                    <div class="flow-line"><div class="full_line"></div></div>
+                    <div class="flow-state" data-step-name="Prepare">
+                      <div class="flow-selected">
+                        <div class="flow-number"></div>
+                      </div>
+                      <div class="flow-state-text">
+                        Prepare
+                      </div>
+                    </div>
+                    <div class="flow-line"><div class="full_line"></div></div>
+                    <div class="flow-state" data-step-name="Review">
+                      <div class="flow-selected">
+                        <div class="flow-number"></div>
+                      </div>
+                      <div class="flow-state-text">
+                        Review
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page" data-page-num="2" data-page-name="">
+          <div class="page-title">Project: Tab + Type</div>
+          <div class="page-content text-content">
+            <div class="">
+              <span class="medium-text">Design Challenges:</span> Drag vs Edit mode, Overriding 'delete' key
+            </div>
+            <div class="interactive-content tab_type_project">
+              <div class="section_title">Interactive Area: Evolving Affordances</div>
+              <div class="demo_cards">
+                <div class="demo_card">
+                  <div class="newTagDraggable DataTabView noSelect version1"><div style="display: flex"><div class="the_tag" style="background-color: #ffe084"><textarea class="input-textarea" rows="1" placeholder="Text"></textarea></div></div></div>
+                  <div class="demo_card_title">Always editable</div>
+                </div>
+                <div class="demo_card">
+                  <div class="newTagDraggable DataTabView noSelect version2"><div style="display: flex"><div class="the_tag" style="background-color: #ffe084"><textarea class="input-textarea" rows="1" placeholder="Text"></textarea></div></div></div>
+                  <div class="demo_card_title">
+                    <div>Editable on click,</div>
+                    <div>'enter' for new line</div>
+                  </div>
+                </div>
+                <div class="demo_card">
+                  <div class="newTagDraggable DataTabView noSelect version3"><div style="display: flex"><div class="the_tag" style="background-color: #ffe084"><textarea class="input-textarea" rows="1" placeholder="Text"></textarea></div></div></div>
+                  <div class="demo_card_title">
+                    <div>Editable on double click,</div>
+                    <div>'enter' to commit</div>
+                    <div>'alt + enter' for new line</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page" data-page-num="3" data-page-name="">
+          <div class="page-title">Project: Motion Design</div>
+          <div class="page-content text-content">
+            <div class="interactive-content motion_project">
+              <div class="section_title">Interactive Area: Motion Explorations</div>
+              <div class="demo_cards">
+                <div class="demo_card radio_input_animations">
+                  <div class="element_block sample1">
+                    <div class="rb">
+                      <input id="radio1" name="radio_group1" type="radio" class="rb_input" />
+                      <label for="radio1" class="rb_label">Radio</label>
+                    </div>
+                  </div>
+                  <div class="element_block sample2">
+                    <div class="rb">
+                      <input id="radio2" name="radio_group1" type="radio" class="rb_input" />
+                      <label for="radio2" class="rb_label">Radio</label>
+                    </div>
+                  </div>
+                  <div class="element_block sample3">
+                    <div class="rb">
+                      <input id="radio3" name="radio_group1" type="radio" class="rb_input" />
+                      <label for="radio3" class="rb_label">Radio</label>
+                    </div>
+                  </div>
+                  <div class="element_block sample4">
+                    <div class="rb">
+                      <input id="radio4" name="radio_group1" type="radio" class="rb_input" />
+                      <label for="radio4" class="rb_label">Radio</label>
+                    </div>
+                  </div>
+                  <div class="element_block sample5">
+                    <div class="rb">
+                      <input id="radio5" name="radio_group1" type="radio" class="rb_input" />
+                      <label for="radio5" class="rb_label">Radio</label>
+                    </div>
+                  </div>
+                  <div class="element_block sample6">
+                    <div class="rb">
+                      <input id="radio6" name="radio_group1" type="radio" class="rb_input" />
+                      <label for="radio6" class="rb_label">Radio</label>
+                    </div>
+                  </div>
+                  <div class="element_block sample7">
+                    <div class="rb">
+                      <input id="radio7" name="radio_group1" type="radio" class="rb_input" />
+                      <label for="radio7" class="rb_label">Radio</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <div class="btn btn-prev hide"><</div>
+        <div class="btn btn-next">></div>
+      </div>
+    </article>
+  </body>
+
+  <script src="js/script_tutorial.js"></script>
+</html>
