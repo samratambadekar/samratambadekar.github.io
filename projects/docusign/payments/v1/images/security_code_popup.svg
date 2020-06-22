@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="254" height="135" viewBox="0 0 254 135" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <path id="a" d="M236.675252,123 L248.005893,123 C249.094754,123 250,122.10144 250,120.993011 L250,2.00698939 C250,0.902048518 249.107208,0 248.005893,0 L1.99410733,0 C0.905245543,0 0,0.898559755 0,2.00698939 L0,120.993011 C0,122.097951 0.892792264,123 1.99410733,123 L215.394638,123 L226.034945,130.629442 L236.675252,123 Z"/>
+    <filter id="c" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0" in="shadowBlurOuter1"/>
+    </filter>
+    <mask id="d" width="250" height="130.629" x="0" y="0" fill="white">
+      <use xlink:href="#a"/>
+    </mask>
+    <rect id="b" width="107" height="74" rx="1.5"/>
+    <mask id="e" width="107" height="74" x="0" y="0" fill="white">
+      <use xlink:href="#b"/>
+    </mask>
+    <rect id="f" width="107" height="74" rx="1.5"/>
+    <rect id="h" width="107" height="74" rx="1.5"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(2)">
+    <use fill="black" filter="url(#c)" xlink:href="#a"/>
+    <use fill="#FFFFFF" stroke="#D2D2D2" stroke-width="2" mask="url(#d)" xlink:href="#a"/>
+    <text fill="#666666" font-family="MavenProBold, Maven Pro" font-size="13" font-weight="bold">
+      <tspan x="12" y="22">Where to find your Security code</tspan>
+    </text>
+    <g transform="translate(131 37)">
+      <use fill="#249754" stroke="#56C785" stroke-width="10" mask="url(#e)" xlink:href="#b"/>
+      <mask id="g" fill="white">
+        <use xlink:href="#f"/>
+      </mask>
+      <ellipse cx="53.625" cy="37" fill="#56C785" mask="url(#g)" rx="17.625" ry="20.136"/>
+      <text fill="#FFFFFF" mask="url(#g)" font-family="OCRAStd, OCR A Std" font-size="7">
+        <tspan x="6" y="58.612">1234</tspan>
+      </text>
+      <text fill="#FFFFFF" mask="url(#g)" font-family="OCRAStd, OCR A Std" font-size="7">
+        <tspan x="30.75" y="58.612">5678</tspan>
+      </text>
+      <text fill="#FFFFFF" mask="url(#g)" font-family="OCRAStd, OCR A Std" font-size="7">
+        <tspan x="55.5" y="58.612">9012</tspan>
+      </text>
+      <text fill="#FFFFFF" mask="url(#g)" font-family="OCRAStd, OCR A Std" font-size="7">
+        <tspan x="80.75" y="58.612">3456</tspan>
+      </text>
+      <text fill="#FFFFFF" mask="url(#g)" font-family="OCRAStd, OCR A Std" font-size="7">
+        <tspan x="80.75" y="44.517">1234</tspan>
+      </text>
+      <ellipse cx="90.75" cy="42.412" stroke="#FF001F" mask="url(#g)" rx="14.25" ry="8.18"/>
+      <path fill="#000000" fill-opacity=".1" d="M0,-0.12670615 L0,72.5025399 C0,73.3295643 0.669615265,74 1.4927626,74 L107.043219,74 L0,-0.12670615 Z" mask="url(#g)"/>
+    </g>
+    <g transform="translate(12 37)">
+      <rect width="107" height="74" fill="#5FA2F1" rx="1.5"/>
+      <rect width="107" height="12.542" y="13.546" fill="#595959"/>
+      <rect width="95.75" height="12.542" x="7.5" y="34.366" fill="#FFFFFF" rx=".5"/>
+      <text fill="#333333" font-family="OCRAStd, OCR A Std" font-size="7">
+        <tspan x="84" y="42.627">123</tspan>
+      </text>
+      <ellipse cx="91.75" cy="40.637" stroke="#FF001F" rx="12" ry="7.275"/>
+      <mask id="i" fill="white">
+        <use xlink:href="#h"/>
+      </mask>
+      <path fill="#000000" fill-opacity=".1" d="M0,0.885715543 L0,72.2440213 C0,73.0752823 0.669615265,73.7491525 1.4927626,73.7491525 L107.043219,73.7491525 L0,0.885715543 Z" mask="url(#i)"/>
+    </g>
+  </g>
+</svg>

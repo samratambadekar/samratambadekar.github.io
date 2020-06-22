@@ -1,0 +1,1251 @@
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DocuSign</title>
+  <meta id="mobileviewport" name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5.0">
+          <script type="text/javascript">
+      (function (global) { global.DS_PAGE_LOADED_TIME = +(new Date()); })(this);
+  </script>
+  <link href="https://www.docusign.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <!--[if gte IE 9]><!-->
+  <!-- <link id="styWebFonts" rel="stylesheet" href="SigningApp/1.14.0/css/font-faces.css?cs=4dee8a8" type="text/css"> -->
+
+  <!-- <![endif]-->
+  <!--[if lte IE 8]>
+  <link id="ie8" rel="stylesheet" href="SigningApp/1.14.0/css/ie8.css?cs=4dee8a8" type="text/css" />
+  <![endif]-->
+  <style>
+    #error-page {
+        display: none;
+    }
+  </style>
+  <!-- <link rel="stylesheet" href="SigningApp/1.14.0/css/error-page.css?cs=4dee8a8" type="text/css"> -->
+  <link rel="stylesheet" href="css/signing.min.css" type="text/css">
+  <link href="https://docucdn-a.akamaihd.net/olive/16.28.1/css/olive.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://docucdn-a.akamaihd.net/olive/16.28.1/css/martini.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/style_disclosers_signing.css" type="text/css">
+  <!-- <script src="Bongo/js/DSSigningSameDomainWeb.js?cs=4dee8a8"></script> -->
+  <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery.panzoom.min.js"></script>
+  <!-- <script type="text/javascript" src="js/pdfobject.js"></script> -->
+</head>
+<body cz-shortcut-listen="true">
+<div id="mobileConsent" class="mobile">
+  <div class="logo"><img src="images/logo_docusign.png"></div>
+  <div class="header">Request for Signature</div>
+  <div class="">Your financial advisor has sent you a document for your electronic signature.</div>
+  <div class="bold">Read Electronic Record and Signature Disclosure</div>
+  <div>
+    <input id="disclosureAcceptedMobile" type="checkbox" class="checkbox">
+    <label for="disclosureAcceptedMobile">
+      I consent to use the Electronic Signature System to electronically receive and sign documents.
+    </label>
+  </div>
+  <div class="buttons">
+    <button track="continue-button" id="mobile-btn-continue" class="btn btn-main disabled" type="button">Review Document</button>
+  </div>
+  <div class="otherOptions">
+    <div class="bold">How It Works</div>
+    <div class="bold">Decline</div>
+    <div class="bold">Change Signer</div>
+  </div>
+</div>
+<div id="container">
+  <header id="welcome-wrapper" class="desktop">
+    <div id="welcome" class="cell">
+      <div class="wrapper">
+        <div class="logo"><img src="images/logo_docusign.png" alt="DocuSign" class="large">
+        <!-- <div class="powered-by">Powered by <img src="images/logo_docusign.png"></div> -->
+        </div>
+
+        <h1 class="title"><span>Consent to Receive and Sign Documents Electronically</span><a class="help temporarily-hide" href="javascript:void(0)">How It Works</a></h1>
+
+
+        <section class="body">
+          <div class="welcome-message" style="max-height: 204px;">
+
+            <p class="pre"></p>
+          </div>
+          <div class="more-or-less">
+            <a href="javascript:void(0)" class="more">Your financial advisor has sent you a document for your electronic signature</a>
+            <a href="javascript:void(0)" class="less">View Less</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </header>
+  <!-- <header id="welcome-wrapper" class="desktop">
+    <div id="welcome" class="">
+      <div class="wrapper">
+        <div class="logo">
+          <img src="images/logo_docusign.png" alt="DocuSign" class="large">
+        </div>
+
+        <h1 class="title"><span>Please Review &amp; Act on These Documents</span><a class="help temporarily-hide" href="javascript:void(0)">How It Works</a></h1>
+        <div class="id-card">
+          <div class="image"><img src="Images/Profile_Default_New.png"></div>
+          <div class="information">
+            <strong class="name">Bob Jones</strong><br>
+            <address class="email">DocuSign</address>
+          </div>
+        </div>
+        <section class="body">
+          <div class="welcome-message" style="max-height: 175px;">
+            <p class="pre"></p>
+          </div>
+          <div class="more-or-less">
+            <a href="javascript:void(0)" class="more">View More</a>
+            <a href="javascript:void(0)" class="less">View Less</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </header> -->
+  <div id="action-bar-wrapper" class="">
+    <!-- <div id="action-bar" class=""> -->
+      <div class="wrapper">
+        <div class="other-actions-mobile mobile hidden">
+          <ul class="primary-menu-items">
+            <li class="finish-later">Finish Later</li>
+            <li class="decline-to-sign">Decline to Sign</li>
+            <!-- <li>Edward Jones Privacy Policy</span></li> -->
+            <li>View History</li>
+            <li>View Certificate (PDF)<span class="screen-reader-text">This link will open a pdf in a new window.</span></span></li>
+          </ul>
+        </div>
+        <div class="left mobile-menu mobile">
+          <span class="icon-menu"></span>
+        </div>
+        <div class="action-bar-helpful-message mobile" data-text="helpfulMessage">Tap Start to begin</div>
+        <div class="action-bar-helpful-message desktop hide" data-text="helpfulMessage">Please review the documents below.</div>
+        <div class="right">
+          <span class="continue-button-wrapper">
+            <button track="continue-button" id="action-bar-btn-continue" class="btn btn-main disabled" type="button"><span class="desktop">Continue</span><span class="mobile">Start</span>
+            </button>
+            <!-- <span id="needsConsentContinueTooltip" class="tooltip multiline" data-qa="needsConsentContinueTooltip"><span>To continue you must consent to use Electronic Records and Signatures.</span></span>
+            <span id="beginSigningContinueTooltip" class="tooltip multiline" data-qa="beginSigningContinueTooltip"><span>Select Continue to begin the signing process</span></span> -->
+          </span>
+
+          <div class="drop-down desktop">
+            <button type="button" class="header btnOtherActions">Other Actions <b class="arrow down"></b></button>
+            <div class="content">
+              <div id="other-actions">
+                <ul class="primary-menu-items">
+                  <li class="finish-later">Finish Later</li>
+                  <li class="decline-to-sign">Decline to Sign</li>
+                  <!-- <li>
+                    <button type="button" track="finish-later" class="btn btn-default close" data-action="exit" data-qa="exit">Finish Later</button>
+                    <p>Save the document in its current state and finish the signing process at a later time.</p>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-default close" data-action="voidEnvelope" data-qa="show-void-envelope">Decline</button>
+                    <p>When you click Decline, you are declining to electronically sign this document and it will no longer be aailable to you to access online</p>
+                  </li> -->
+                  <!-- <li>
+                    <button type="button" class="btn btn-default close" data-action="show:sign-on-paper" data-qa="show-sign-on-paper">Print &amp; Sign</button>
+                    <p>Print the document and sign in ink. Then either scan and upload or fax back the document. </p>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-default close" data-action="show:change-signer" data-qa="show-change-signer">Assign to Someone Else</button>
+                    <p>Should someone else be signing? Provide the new signer’s email address and send the document to them for signature.</p>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-default close" data-action="voidEnvelope" data-qa="show-void-envelope">Void</button>
+                    <p>Cancel the document. Notifies all recipients and removes access to the document.</p>
+                  </li>
+                  <li>
+                    <button type="button" class="btn btn-default close" data-action="correct" data-qa="correct">Correct</button>
+                    <p>Change recipient information, fields, or the document’s content after sending.</p>
+                  </li> -->
+                </ul>
+
+                <div class="divider"></div>
+
+                <ul class="secondary-menu-items">
+                  <!-- <li><a class="close" target="_blank" href="https://www.docusign.com/support/signer">Help &amp; Support<span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></a></li>
+                  <li><a class="close" target="_blank" href="https://www.docusign.com/company">About DocuSign<span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></a></li> -->
+                  <!-- <li>Edward Jones Privacy Policy <span class="icon icon-external"></span></li> -->
+                  <li>View History</li>
+                  <li>View Certificate (PDF)<span class="screen-reader-text">This link will open a pdf in a new window.</span><span class="icon icon-external"></span></li>
+                  <!--Hiding share option for now. May remove permanently eventually...-->
+                  <!---->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="action-bar-consent-control" class="desktop">
+          <div class="row">
+            <span class="cell">
+              <span class="pointer"></span>
+            </span>
+            <div class="cell action-bar-consent-message">
+              <!-- <div class="disclosure-link">
+                Please read the <a id="disclosureLink" href="#">Electronic Records and Signature Disclosure.</a>
+              </div> -->
+              <div>
+                <label class="">
+                  Please read the <u>Electronic Records and Signature Disclosure</u>.
+                </label>
+                <span class="input-checkbox cell">
+                  <input track="disclosure-accepted-checkbox" id="disclosureAccepted" type="checkbox" class="checkbox" data-checked="disclosureAccepted" data-qa="disclosureAccepted">
+                </span>
+                <label for="disclosureAccepted" class="cell">
+                  I agree to the electronic records and signature.
+                  <span class="screen-reader-text">Required</span>
+                </label>
+                <!-- <label for="disclosureAccepted" class="cell">
+                  I consent to use the Electronic Signature System to electronically receive and sign documents.
+                  <span class="screen-reader-text">Required</span>
+                </label> -->
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- </div> -->
+  </div>
+  <div id="toolbar-wrapper" class="hide desktop">
+    <div id="toolbar" class=""><!-- This file is kinda gross. Need to put in a bunch of comments be cause spaces affect layout if we leave them out -->
+      <div class="wrapper"><!--
+      --><span class="toolbar-btn-wrapper"><button type="button" track="zoom-button" data-action="zoomIn" data-qa="zoomIn" aria-label="Zoom In"><span class="icon-zoomin"></span></button><span class="tooltip below hide"><span>Zoom In</span></span></span><!--
+
+        --><div class="separator"></div><!--
+
+        --><span class="toolbar-btn-wrapper"><button type="button" track="zoom-button" data-action="zoomOut" data-qa="zoomOut" aria-label="Zoom Out"><span class="icon-zoomout"></span></button><span class="tooltip below hide"><span>Zoom Out</span></span></span><!--
+        --><div class="separator"></div><!--
+        --><!--
+
+        --><!--
+
+        --><span class="toolbar-btn-wrapper download-menu"><button type="button" title="Download" data-action="download-options" data-qa="download-options" aria-label="Download"><span class="icon-download"></span><span class="icon-down"></span></button><span class="tooltip below hide"><span>Download</span></span><!--
+          --><div class="download-menu-dropdown"><span class="icon-menu-topper"></span><!--
+
+          --><!--
+            --><button type="button" title="Download Combined PDF" data-action="download" data-qa="download"><span class="button-text">Combined PDF</span><span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></button><br><!--
+          --><!--
+          --><button type="button" title="Download Separate PDFs" data-action="download-zip" data-qa="download-zip"><span class="button-text">Separate PDFs</span><span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></button></div></span><!--
+
+        --><!--
+
+        --><!--
+          --><div class="separator"></div><!--
+          --><span class="toolbar-btn-wrapper"><button type="button" data-action="print" data-qa="print" aria-label="Print This link will open in a new window."><span class="icon-print"></span></button><span class="tooltip below hide"><span>Print</span></span></span><div class="separator temporarily-hide"></div><!--
+        --><!--
+
+        --><!--
+
+        --><!--
+          --><div class="separator"></div><!--
+          --><span class="toolbar-btn-wrapper"><button type="button" data-action="openTab:https://www.docusign.com/support/signer" data-qa="help-support" aria-label="Help This link will open in a new window."><span class="icon-incomplete"></span></button><span class="tooltip below hide"><span>Help</span></span></span><!--
+        -->
+          <span class="toolbar-btn-wrapper right"><button type="button" class="thumbnails" data-action="toggle:thumbnail-drawer" data-qa="thumbnail-drawer" aria-label="Thumbnails"><span class="icon-documents"></span></button><span class="tooltip below hide"><span>Thumbnails</span></span></span>
+          <div class="clear-float"></div>
+      </div>
+    </div>
+  </div>
+  <div id="top-mask-wrapper">
+    <div id="top-mask" style="display: none;"></div>
+  </div>
+  <div id="envelope-wrapper" class="">
+    <div class="hide desktop" href="#font-size" id="autonav"><p>NEXT</p></div>
+    <div id="envelope" class="cell">
+      <div id="documentOverlay" class="overlay" style="top: 0px; height: 100%; width: 100%; display: block; z-index: 10; background-color: rgb(0, 0, 0);pointer-events: none;"></div>
+      <!-- <div class="wrapper"> -->
+        <!-- <div class="container"> -->
+      <div class="documents-wrapper">
+        <section class="documents">
+          <div id="page1" class="document_page">
+            <!-- <div id="field-1" class="field field-rb">
+							<input type="radio">
+    				</div>
+            <div id="field-2" class="field field-sign hide">
+    					<img class="field-image" src="images/field_sign.png">
+    					<img class="field-image hide" src="images/AE_Sign.gif">
+    				</div>
+            <div id="field-5" class="field field-date">
+            	7/22/2016
+    				</div> -->
+            <!-- <div id="field-7" class="field field-email">
+            	bob.jones@bobjones.com
+    				</div> -->
+            <img class="document_image" src="docs/TermsandDefinitions.gif"/>
+          </div>
+
+          <!-- <iframe style="" sandbox="allow-same-origin allow-scripts allow-forms allow-top-navigation allow-popups" id="signingIframe" src="https://demo.docusign.net/Signing/DocuSign.aspx?ti=c3abc5032fee478983b4843c1dbf4d11"></iframe> -->
+        </section>
+
+        <section class="documents">
+          <div id="page2" class="document_page">
+            <!-- <div id="field-3" class="field field-rb">
+              <input type="radio">
+    				</div> -->
+            <div id="field-4" class="field field-sign">
+    					<img class="field-image" src="images/field_sign.png">
+    					<img class="field-image hide" src="images/AE_Sign.gif">
+    				</div>
+            <!-- <div id="field-6" class="field field-date">
+            	7/22/2016
+    				</div> -->
+            <!-- <div id="field-8" class="field field-email">
+            	bob.jones@bobjones.com
+    				</div> -->
+            <div id="field-9" class="field field-amount">
+            	<img src="images/tag-payment.svg"/> &nbsp;$1000.00 USD
+    				</div>
+            <img class="document_image" src="docs/TermsandDefinitions2.gif"/>
+          </div>
+        </section>
+
+        <div class="finish_button hidden">
+          <button id="bottom-btn-finish" class="btn btn-main btn_pay_amount" type="button">Pay Now</button>
+        </div>
+      </div>
+        <!-- </div> -->
+      <!-- </div> -->
+    </div>
+    <div class="modal_background hidden">
+      <div class="modal_header" olive-modal-header>
+        <span class="icon-times"></span>
+        <h1 class="modal_title">
+          Finished Signing
+        </h1>
+      </div>
+      <p>You have successfully signed the document and you will receive a copy via email.</p>
+    </div>
+  </div>
+  <div id="bottom-mask" style="display: none;"></div>
+  <div id="action-bar-bottom-wrapper" class="row">
+    <div id="action-bar-bottom" class="cell" style="display: none;"><div class="wrapper">
+  <div class="right">
+    <button track="finish-signing" id="action-bar-bottom-btn-finish" data-action="action-bar-bottom-finish" data-qa="action-bar-bottom-finish" class="btn btn-main" type="button" data-text="finishButtonText">Finish</button><!--
+ --><div class="drop-down"><!--
+   --><button type="button" class="header" data-action="toggle:other-actions" data-qa="toggle-other-actions">Other Actions <b class="arrow down"></b></button>
+      <div class="content">
+        <div id="other-actions">
+  <ul class="primary-menu-items">
+
+    <li>
+      <button type="button" track="finish-later" class="btn btn-default close" data-action="exit" data-qa="exit">Finish Later</button>
+      <p>Save the document in its current state and finish the signing process at a later time.</p>
+    </li>
+
+
+    <li>
+      <button type="button" class="btn btn-default close" data-action="show:sign-on-paper" data-qa="show-sign-on-paper">Print &amp; Sign</button>
+      <p>Print the document and sign in ink. Then either scan and upload or fax back the document. </p>
+    </li>
+
+
+    <li>
+      <button type="button" class="btn btn-default close" data-action="show:change-signer" data-qa="show-change-signer">Assign to Someone Else</button>
+      <p>Should someone else be signing? Provide the new signer’s email address and send the document to them for signature.</p>
+    </li>
+
+
+
+
+    <li>
+      <button type="button" class="btn btn-default close" data-action="voidEnvelope" data-qa="show-void-envelope">Void</button>
+      <p>Cancel the document. Notifies all recipients and removes access to the document.</p>
+    </li>
+
+
+    <li>
+      <button type="button" class="btn btn-default close" data-action="correct" data-qa="correct">Correct</button>
+      <p>Change recipient information, fields, or the document’s content after sending.</p>
+    </li>
+
+
+
+  </ul>
+
+  <div class="divider"></div>
+
+  <ul class="secondary-menu-items">
+
+    <li><a class="close" target="_blank" href="https://www.docusign.com/support/signer">Help &amp; Support<span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></a></li>
+
+
+    <li><a class="close" target="_blank" href="https://www.docusign.com/company">About DocuSign<span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></a></li>
+
+
+    <li><a class="close" href="javascript:void(0)" data-action="show:history" data-qa="show-history">View History</a></li>
+
+
+    <li><a class="close" href="javascript:void(0)" data-action="show:certificate" data-qa="show-certificate">View Certificate (PDF)<span class="screen-reader-text">This link will open a pdf in a new window.</span><span class="icon icon-external"></span></a></li>
+
+
+
+    <!--Hiding share option for now. May remove permanently eventually...-->
+    <!---->
+
+
+  </ul>
+</div>
+
+      </div>
+    </div>
+  </div>
+  <span class="action-bar-helpful-message" data-text="helpfulMessage">Done! Select Finish to send the completed document.</span>
+  <div class="clear-float"></div>
+</div></div>
+  </div>
+
+  <div id="footer-wrapper" class="row">
+    <div id="footer" class=""><div class="wrapper">
+  <nav class="nav">
+    <div class="logo-wrapper">
+      <span class="powered-by" data-qa="powered-by">Powered by</span>
+      <img class="logo" data-qa="powered-by-logo" src="images/logo_docusign_gray.png" alt="DocuSign">
+    </div>
+    <ul class="footer-items">
+
+      <li>
+        <div class="drop-down languages">
+          <a href="#languages-drop-down-content" data-qa="languages-drop-down-content" class="header btn-transparent footer-item">English (US) <b class="arrow-down"></b></a>
+          <div id="languages-drop-down-content" class="content">
+            <ul>
+
+              <li data-qa="setLanguage-en" data-action="setLanguage:en" title="English (US)"><button type="button" class="footer-item">English (US)</button></li>
+
+              <li data-qa="setLanguage-de" data-action="setLanguage:de" title="German"><button type="button" class="footer-item">Deutsch</button></li>
+
+              <li data-qa="setLanguage-es" data-action="setLanguage:es" title="Spanish"><button type="button" class="footer-item">Español</button></li>
+
+              <li data-qa="setLanguage-fr" data-action="setLanguage:fr" title="French (France)"><button type="button" class="footer-item">Français (France)</button></li>
+
+              <li data-qa="setLanguage-it" data-action="setLanguage:it" title="Italian"><button type="button" class="footer-item">Italiano</button></li>
+
+              <li data-qa="setLanguage-nl" data-action="setLanguage:nl" title="Dutch"><button type="button" class="footer-item">Nederlandse</button></li>
+
+              <li data-qa="setLanguage-pt-BR" data-action="setLanguage:pt-BR" title="Portuguese (Brasil)"><button type="button" class="footer-item">Português (Brasil)</button></li>
+
+              <li data-qa="setLanguage-pt" data-action="setLanguage:pt" title="Portuguese (Portugal)"><button type="button" class="footer-item">Português (Portugal)</button></li>
+
+              <li data-qa="setLanguage-ru" data-action="setLanguage:ru" title="Russian"><button type="button" class="footer-item">Русский</button></li>
+
+              <li data-qa="setLanguage-zh-CN" data-action="setLanguage:zh-CN" title="Simplified Chinese"><button type="button" class="footer-item">中文 (简体)</button></li>
+
+              <li data-qa="setLanguage-zh-TW" data-action="setLanguage:zh-TW" title="Traditional Chinese"><button type="button" class="footer-item">中文 (繁體)</button></li>
+
+              <li data-qa="setLanguage-ja" data-action="setLanguage:ja" title="Japanese"><button type="button" class="footer-item">日本語</button></li>
+
+              <li data-qa="setLanguage-ko" data-action="setLanguage:ko" title="Korean"><button type="button" class="footer-item">한국어</button></li>
+
+              <li data-qa="setLanguage-id" data-action="setLanguage:id" title="Bahasa Indonesia"><button type="button" class="footer-item">Bahasa Indonesia</button></li>
+
+              <li data-qa="setLanguage-ms" data-action="setLanguage:ms" title="Bahasa Malay"><button type="button" class="footer-item">Bahasa Melayu</button></li>
+
+              <li data-qa="setLanguage-da" data-action="setLanguage:da" title="Danish"><button type="button" class="footer-item">Dansk</button></li>
+
+              <li data-qa="setLanguage-et" data-action="setLanguage:et" title="Estonian"><button type="button" class="footer-item">Eesti</button></li>
+
+              <li data-qa="setLanguage-en-GB" data-action="setLanguage:en-GB" title="English (UK)"><button type="button" class="footer-item">English (UK)</button></li>
+
+              <li data-qa="setLanguage-es-MX" data-action="setLanguage:es-MX" title="Spanish (Latin America)"><button type="button" class="footer-item">Español (América Latina)</button></li>
+
+              <li data-qa="setLanguage-fr-CA" data-action="setLanguage:fr-CA" title="French (Canada)"><button type="button" class="footer-item">Français (Canada)</button></li>
+
+              <li data-qa="setLanguage-hr" data-action="setLanguage:hr" title="Croatian"><button type="button" class="footer-item">Hrvatski</button></li>
+
+              <li data-qa="setLanguage-lv" data-action="setLanguage:lv" title="Latvian"><button type="button" class="footer-item">Latviešu</button></li>
+
+              <li data-qa="setLanguage-lt" data-action="setLanguage:lt" title="Lithuanian"><button type="button" class="footer-item">Lietuvių</button></li>
+
+              <li data-qa="setLanguage-hu" data-action="setLanguage:hu" title="Hungarian"><button type="button" class="footer-item">Magyar</button></li>
+
+              <li data-qa="setLanguage-no" data-action="setLanguage:no" title="Norwegian"><button type="button" class="footer-item">Norsk</button></li>
+
+              <li data-qa="setLanguage-pl" data-action="setLanguage:pl" title="Polish"><button type="button" class="footer-item">Polski</button></li>
+
+              <li data-qa="setLanguage-ro" data-action="setLanguage:ro" title="Romanian"><button type="button" class="footer-item">Română</button></li>
+
+              <li data-qa="setLanguage-sk" data-action="setLanguage:sk" title="Slovak"><button type="button" class="footer-item">Slovenčina</button></li>
+
+              <li data-qa="setLanguage-sl" data-action="setLanguage:sl" title="Slovenian"><button type="button" class="footer-item">Slovenščina</button></li>
+
+              <li data-qa="setLanguage-fi" data-action="setLanguage:fi" title="Finnish"><button type="button" class="footer-item">Suomi</button></li>
+
+              <li data-qa="setLanguage-sv" data-action="setLanguage:sv" title="Swedish"><button type="button" class="footer-item">Svenska</button></li>
+
+              <li data-qa="setLanguage-tr" data-action="setLanguage:tr" title="Turkish"><button type="button" class="footer-item">Türkçe</button></li>
+
+              <li data-qa="setLanguage-vi" data-action="setLanguage:vi" title="Vietnamese"><button type="button" class="footer-item">Việt</button></li>
+
+              <li data-qa="setLanguage-cs" data-action="setLanguage:cs" title="Czech"><button type="button" class="footer-item">Čeština</button></li>
+
+              <li data-qa="setLanguage-el" data-action="setLanguage:el" title="Greek"><button type="button" class="footer-item">Ελληνικά</button></li>
+
+              <li data-qa="setLanguage-bg" data-action="setLanguage:bg" title="Bulgarian"><button type="button" class="footer-item">Български</button></li>
+
+              <li data-qa="setLanguage-sr" data-action="setLanguage:sr" title="Serbian"><button type="button" class="footer-item">Српски</button></li>
+
+              <li data-qa="setLanguage-uk" data-action="setLanguage:uk" title="Ukrainian"><button type="button" class="footer-item">Українська</button></li>
+
+              <li data-qa="setLanguage-he" data-action="setLanguage:he" title="Hebrew"><button type="button" class="footer-item">עברית‏</button></li>
+
+              <li data-qa="setLanguage-ar" data-action="setLanguage:ar" title="Arabic"><button type="button" class="footer-item">العربية‏</button></li>
+
+              <li data-qa="setLanguage-fa" data-action="setLanguage:fa" title="Farsi"><button type="button" class="footer-item">فارسی</button></li>
+
+              <li data-qa="setLanguage-hi" data-action="setLanguage:hi" title="Hindi"><button type="button" class="footer-item">हिन्दी</button></li>
+
+              <li data-qa="setLanguage-th" data-action="setLanguage:th" title="Thai"><button type="button" class="footer-item">ภาษาไทย</button></li>
+
+            </ul>
+          </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      </li>
+
+
+
+
+
+      <li>
+        <div class="drop-down tos">
+          <a href="#tos-drop-down-content" data-qa="tos-drop-down-content" class="header btn-transparent footer-item">Terms Of Use &amp; Privacy <b class="arrow-down"></b></a>
+          <div id="tos-drop-down-content" class="content">
+            <ul>
+
+              <!-- Legal doc dialog links. -->
+              <li><button type="button" data-action="show:terms-of-use-dialog" data-qa="show-terms-of-use-dialog" class="footer-item">Terms Of Use</button></li>
+              <li><button type="button" data-action="show:privacy-policy-dialog" data-qa="show-privacy-policy-dialog" class="footer-item">Privacy Policy</button></li>
+              <li><button type="button" data-action="show:intellectual-property-dialog" data-qa="show-intellectual-property-dialog" class="footer-item">Intellectual Property</button></li>
+
+            </ul>
+          </div>
+        </div> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+
+      <li>Copyright &copy; 2016 DocuSign Inc.</li>
+    </ul>
+  </nav>
+  <div class="clear-float"></div>
+</div>
+</div>
+  </div>
+</div>
+
+<div id="progress-indicator" class="" tabindex="0">
+  <div class="spinner">
+    <!-- <div class="bg"></div> -->
+  </div>
+</div>
+
+    <div id="screenReaderAlert" class="screen-reader-alert" aria-live="assertive" style="clip: auto;"><span id="screenReaderMessage" role="alert" style="display: inline;">Please Wait</span></div>
+
+    <div id="changeSignatureModal" class="modal modal-new modal-xl modal-visible" role="dialog" style="display: none; top: 36px; left: 24px;">
+      <div class="ng-scope">
+        <div class="modal_header">
+          <h1 class="modal_title ng-binding" data-qa="modal-title">Create Your Signature</h1>
+        </div>
+        <div class="modal_utilityHeader">
+          <div class="grid sig-input-row">
+            <div class="sig-input-wrap">
+              <label class="label ng-binding" for="signature-name-input">Full Name</label>
+              <input class="input-text ng-valid ng-touched ng-dirty ng-valid-parse" data-qa="signature-name-input" id="signature-name-input" value="Alex Edwards"/>
+            </div>
+            <div class="sig-input-wrap">
+              <label class="label ng-binding" for="signature-initials-input">Initials</label>
+              <input class="input-text ng-pristine ng-untouched ng-valid" data-qa="signature-initials-input" id="signature-initials-input" value="AE"/>
+            </div>
+            <a href="" class="ng-binding ng-hide">Add the REALTOR® logo to my signature</a>
+          </div>
+          <div class="grid tabs-wrap">
+            <ul class="tabs">
+              <li class="tab-wrap ng-scope">
+                <a class="tab ng-binding on" data-qa="choose-tab">Choose</a>
+              </li>
+              <li class="tab-wrap ng-scope">
+                <a class="tab ng-binding" data-qa="draw-tab">Draw</a>
+              </li>
+              <li class="tab-wrap ng-scope">
+                <a class="tab ng-binding" data-qa="upload-tab">Upload</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal_messageContainer" role="alert"></div>
+        <div class="modal_content modal_content-list bg-contrast sig-content" style="max-height: 329px; box-shadow: rgba(0, 0, 0, 0.180392) 0px -7px 7px -7px inset;">
+          <div class="ng-scope">
+            <table class="tbl sig-select-table">
+              <tbody>
+                <tr class="row-selectable ng-scope" data-qa="signature-row">
+                  <td class="column-check pad">
+                    <span class="rb rb-noText">
+                      <input class="rb_input" type="radio" name="radio" id="1_Docusign_rb">
+                      <label class="rb_label ng-binding" for="1_Docusign_rb">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DocuSigned by:</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-1_Docusign" data-qa="signature-text">Alex Edwards</span>
+                      </div>
+                      <div class="sig-chrome-title-bottom ng-binding">B4241A406751459...</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DS</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-1_Docusign" data-qa="initials-text">AE</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="row-selectable ng-scope" data-qa="signature-row">
+                  <td class="column-check pad">
+                    <span class="rb rb-noText">
+                      <input class="rb_input" type="radio" name="radio" id="2_Docusign_rb">
+                      <label class="rb_label ng-binding" for="2_Docusign_rb">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DocuSigned by:</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-2_Docusign" data-qa="signature-text">Alex Edwards</span>
+                      </div>
+                      <div class="sig-chrome-title-bottom ng-binding">B4241A406751459...</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DS</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-2_Docusign" data-qa="initials-text">AE</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="row-selectable ng-scope row-selected" data-qa="signature-row">
+                  <td class="column-check pad">
+                    <span class="rb rb-noText">
+                      <input class="rb_input" type="radio" name="radio" id="3_Docusign_rb" checked="checked">
+                      <label class="rb_label ng-binding" for="3_Docusign_rb">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DocuSigned by:</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-3_Docusign" data-qa="signature-text">Alex Edwards</span>
+                      </div>
+                      <div class="sig-chrome-title-bottom ng-binding">B4241A406751459...</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DS</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-3_Docusign" data-qa="initials-text">AE</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="row-selectable ng-scope" data-qa="signature-row">
+                  <td class="column-check pad">
+                    <span class="rb rb-noText">
+                      <input class="rb_input" type="radio" name="radio" id="4_Docusign_rb">
+                      <label class="rb_label ng-binding" for="4_Docusign_rb">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DocuSigned by:</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-4_Docusign" data-qa="signature-text">Alex Edwards</span>
+                      </div>
+                      <div class="sig-chrome-title-bottom ng-binding">B4241A406751459...</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DS</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-4_Docusign" data-qa="initials-text">AE</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="row-selectable ng-scope" data-qa="signature-row">
+                  <td class="column-check pad">
+                    <span class="rb rb-noText">
+                      <input class="rb_input" type="radio" name="radio" id="5_Docusign_rb">
+                        <label class="rb_label ng-binding" for="5_Docusign_rb">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DocuSigned by:</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-5_Docusign" data-qa="signature-text">Alex Edwards</span>
+                      </div>
+                      <div class="sig-chrome-title-bottom ng-binding">B4241A406751459...</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DS</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-5_Docusign" data-qa="initials-text">AE</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="row-selectable ng-scope" data-qa="signature-row">
+                  <td class="column-check pad">
+                    <span class="rb rb-noText">
+                      <input class="rb_input" type="radio" name="radio" id="6_Docusign_rb">
+                      <label class="rb_label ng-binding" for="6_Docusign_rb">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DocuSigned by:</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-6_Docusign" data-qa="signature-text">Alex Edwards</span>
+                      </div>
+                      <div class="sig-chrome-title-bottom ng-binding">B4241A406751459...</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DS</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-6_Docusign" data-qa="initials-text">AE</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="row-selectable ng-scope" data-qa="signature-row">
+                  <td class="column-check pad">
+                    <span class="rb rb-noText">
+                      <input class="rb_input" type="radio" name="radio" id="7_Docusign_rb">
+                      <label class="rb_label ng-binding" for="7_Docusign_rb">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DocuSigned by:</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-7_Docusign" data-qa="signature-text">Alex Edwards</span>
+                      </div>
+                      <div class="sig-chrome-title-bottom ng-binding">B4241A406751459...</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DS</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-7_Docusign" data-qa="initials-text">AE</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="row-selectable ng-scope" data-qa="signature-row">
+                  <td class="column-check pad">
+                    <span class="rb rb-noText">
+                      <input class="rb_input" type="radio" name="radio" id="8_Docusign_rb">
+                      <label class="rb_label ng-binding" for="8_Docusign_rb">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DocuSigned by:</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-8_Docusign" data-qa="signature-text">Alex Edwards</span>
+                      </div>
+                      <div class="sig-chrome-title-bottom ng-binding">B4241A406751459...</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DS</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-8_Docusign" data-qa="initials-text">AE</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="row-selectable ng-scope" data-qa="signature-row">
+                  <td class="column-check pad">
+                    <span class="rb rb-noText">
+                      <input class="rb_input" type="radio" name="radio" id="Mistral_rb">
+                      <label class="rb_label ng-binding" for="Mistral_rb">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DocuSigned by:</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-Mistral" data-qa="signature-text">Alex Edwards</span>
+                      </div>
+                      <div class="sig-chrome-title-bottom ng-binding">B4241A406751459...</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DS</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-Mistral" data-qa="initials-text">AE</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="row-selectable ng-scope" data-qa="signature-row">
+                  <td class="column-check pad">
+                    <span class="rb rb-noText">
+                      <input class="rb_input" type="radio" name="radio" id="Rage_rb">
+                      <label class="rb_label ng-binding" for="Rage_rb">Select</label>
+                    </span>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                      <div class="sig-chrome-title-top ng-binding">DocuSigned by:</div>
+                      <div class="sig-container">
+                        <span class="sig sig-text signature-font-Rage" data-qa="signature-text">Alex Edwards</span>
+                      </div>
+                      <div class="sig-chrome-title-bottom ng-binding">B4241A406751459...</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="sig-chrome">
+                    <div class="sig-chrome-title-top ng-binding">DS</div>
+                    <div class="sig-container">
+                      <span class="sig sig-text signature-font-Rage" data-qa="initials-text">AE</span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal_footer">
+        <p class="text-small text-semi-muted sig-footer-text ng-binding">By clicking Create, I agree that the signature and initials will be the electronic representation of my signature and initials for all purposes when I (or my agent) use them on documents, including legally binding contracts - just the same as a pen-and-paper signature or initial.</p>
+        <button type="submit" class="btn btn-lg btn-primary ng-isolate-scope" loading-text="Creating..." default-text="Create" data-qa="modal-confirm-btn">Create</button>
+        <button type="button" class="btn btn-lg btn-minor ng-binding" data-qa="modal-cancel-btn">Cancel</button>
+      </div>
+    </div>
+    <button class="icon icon-times modal_close">
+    </button>
+    <div class="modal_miniShroud">
+    </div>
+  </div>
+
+  <div id="adoptSignatureModal" class="dialog-holder hidden" tabindex="0">
+    <div class="olive modal-open">
+      <div class="modal">
+        <div id="adopt-dialog" class="modal-wrap dialog is-signature-mode" tabindex="0">
+          <div class="modal-content xl" role="dialog" aria-labelledby="adopt-dialog-title" aria-describedby="adopt-dialog-content" tabindex="0">
+            <button data-qa="adopt-close" type="button" class="icon icon-times x-close close" data-action="cancelAdoptSignature"><span class="btn-label">Close</span></button>
+            <div class="header hidden-xs">
+              <h1 class="dialog-title" id="adopt-dialog-title">
+                <span class="item-alt" data-group-item="signature" data-qa="adopt-title" data-selected="">Adopt Your Signature</span>
+                <span class="item-alt" data-group-item="initials" data-qa="adopt-title">Adopt Your Initials</span>
+              </h1>
+            </div>
+            <div class="content" id="adopt-dialog-content">
+              <article id="adopt">
+
+                <div class="ds-title p hidden-xs">
+                  Confirm your name, initials, and signature.
+                </div>
+                <div class="full-name">
+                  <div class="wrapper">
+                    <label for="full-name">Full Name</label> <span data-qa="adopt-full-name-error" class="error inline-block hidden">Name required</span>
+                    <br>
+                    <div class="text-input-wrapper">
+                      <input data-qa="adopt-full-name" id="full-name" value="Alex Edwards" name="fullname" type="text" class="text-input" maxlength="100">
+                    </div>
+                  </div>
+                </div>
+                <div class="initials">
+                  <div class="wrapper">
+                    <label for="initials">Initials</label> <span data-qa="adopt-initials-error" class="error inline-block hidden">Initials required</span>
+                    <br>
+                    <div class="text-input-wrapper">
+                      <input data-qa="adopt-initials" id="initials" value="AE" name="initials" type="text" class="text-input" maxlength="100">
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-float"></div>
+              </article>
+              <header class="tab-nav">
+                <ul>
+                  <li><button data-qa="adopt-select-style" type="button" data-target-panel="#select-style" class="tab tab-select-style button-link selected" aria-label="Select Style">Select Style</button></li>
+                  <li><button data-qa="adopt-draw" type="button" data-target-panel="#draw" class="tab tab-draw button-link" aria-label="Draw">Draw</button></li>
+                </ul>
+              </header>
+
+              <article id="select-style" class="tab-panel panel-select-style selected">
+                <h4 class="normal">Preview <div class="error"></div></h4>
+
+                <div class="signature-preview">
+                  <div class="signature">
+                    <img data-qa="adopt-signature-img" src="images/AE_Sign.gif" class="signature-img"/>
+                    <img data-qa="adopt-initials-img" src="images/AE_Initial.gif" class="initials-img"/>
+                  </div>
+                  <div class="clear-float"></div>
+                </div>
+
+                <button data-qa="adopt-change-style" type="button" class="clear change-style button-link">Change Style</button>
+              </article>
+
+              <article data-qa="panel-draw" id="draw" class="tab-panel panel-draw">
+                <h4 class="normal">
+                  <span class="item-alt-inline" data-group-item="signature" data-selected="">Draw your signature</span>
+                  <span class="item-alt-inline" data-group-item="initials">Draw your initials</span>
+                  <div class="error"></div>
+                </h4>
+                <button type="button" class="clear button-link" data-ds="clear">Clear</button>
+                <div class="signature-draw signature">
+                  <div class="canvas-wrapper">
+                    <canvas data-qa="adopt-canvas" class="canvas" tabindex="0" width="0" height="0" style="touch-action: none;"></canvas>
+                  </div>
+                </div>
+              </article>
+
+              <div class="legalese">
+                <p class="item-alt" data-group-item="signature" data-selected="">By selecting Adopt and Sign, I agree that the signature and initials will be the electronic representation of my signature and initials for all purposes when I (or my agent) use them on documents, including legally binding contracts - just the same as a pen-and-paper signature or initial.</p>
+                <p class="item-alt" data-group-item="initials">By selecting Adopt and Initial, I agree that the signature and initials will be the electronic representation of my signature and initials for all purposes when I (or my agent) use them on documents, including legally binding contracts - just the same as a pen-and-paper signature or initial.</p>
+              </div>
+              <div class="styles" style="display: none;">
+                <ul class="signature-styles">
+                  <li>
+   	                <button type="button" data-qa="adopt-style-7_DocuSign" data-format="7_DocuSign" class="signature-style">
+                      <span class="btn-label">Select Style 7 DocuSign</span>
+                      <img data-qa="adopt-signature-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=asig150&amp;s=Alex+Edwards&amp;f=7_DocuSign&amp;nochrome=0" class="signature-img">
+                      <img data-qa="adopt-initials-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=ainit150&amp;s=AE&amp;n=Alex+Edwards&amp;f=7_DocuSign&amp;nochrome=0" class="initials-img">
+                    </button>
+                  </li>
+
+                  <li>
+                 	  <button type="button" data-qa="adopt-style-1_DocuSign" data-format="1_DocuSign" class="signature-style">
+                      <span class="btn-label">Select Style 1 DocuSign</span>
+                      <img data-qa="adopt-signature-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=asig150&amp;s=Alex+Edwards&amp;f=1_DocuSign&amp;nochrome=0" class="signature-img">
+                      <img data-qa="adopt-initials-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=ainit150&amp;s=AE&amp;n=Alex+Edwards&amp;f=1_DocuSign&amp;nochrome=0" class="initials-img">
+                    </button>
+                  </li>
+
+                  <li>
+                 	  <button type="button" data-qa="adopt-style-6_DocuSign" data-format="6_DocuSign" class="signature-style">
+                      <span class="btn-label">Select Style 6 DocuSign</span>
+                      <img data-qa="adopt-signature-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=asig150&amp;s=Alex+Edwards&amp;f=6_DocuSign&amp;nochrome=0" class="signature-img">
+                      <img data-qa="adopt-initials-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=ainit150&amp;s=AE&amp;n=Alex+Edwards&amp;f=6_DocuSign&amp;nochrome=0" class="initials-img">
+                    </button>
+                  </li>
+
+                  <li>
+                 	  <button type="button" data-qa="adopt-style-8_DocuSign" data-format="8_DocuSign" class="signature-style">
+                      <span class="btn-label">Select Style 8 DocuSign</span>
+                      <img data-qa="adopt-signature-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=asig150&amp;s=Alex+Edwards&amp;f=8_DocuSign&amp;nochrome=0" class="signature-img">
+                      <img data-qa="adopt-initials-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=ainit150&amp;s=AE&amp;n=Alex+Edwards&amp;f=8_DocuSign&amp;nochrome=0" class="initials-img">
+                    </button>
+                  </li>
+
+                  <li>
+                 	  <button type="button" data-qa="adopt-style-3_DocuSign" data-format="3_DocuSign" class="signature-style">
+                      <span class="btn-label">Select Style 3 DocuSign</span>
+                      <img data-qa="adopt-signature-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=asig150&amp;s=Alex+Edwards&amp;f=3_DocuSign&amp;nochrome=0" class="signature-img">
+                      <img data-qa="adopt-initials-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=ainit150&amp;s=AE&amp;n=Alex+Edwards&amp;f=3_DocuSign&amp;nochrome=0" class="initials-img">
+                    </button>
+                  </li>
+
+                  <li>
+                 	  <button type="button" data-qa="adopt-style-Mistral" data-format="Mistral" class="signature-style">
+                      <span class="btn-label">Select Style Mistral</span>
+                      <img data-qa="adopt-signature-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=asig150&amp;s=Alex+Edwards&amp;f=Mistral&amp;nochrome=0" class="signature-img">
+                      <img data-qa="adopt-initials-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=ainit150&amp;s=AE&amp;n=Alex+Edwards&amp;f=Mistral&amp;nochrome=0" class="initials-img">
+                    </button>
+                  </li>
+
+                  <li>
+                 	  <button type="button" data-qa="adopt-style-4_DocuSign" data-format="4_DocuSign" class="signature-style">
+                      <span class="btn-label">Select Style 4 DocuSign</span>
+                      <img data-qa="adopt-signature-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=asig150&amp;s=Alex+Edwards&amp;f=4_DocuSign&amp;nochrome=0" class="signature-img">
+                      <img data-qa="adopt-initials-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=ainit150&amp;s=AE&amp;n=Alex+Edwards&amp;f=4_DocuSign&amp;nochrome=0" class="initials-img">
+                    </button>
+                  </li>
+
+                  <li>
+                 	  <button type="button" data-qa="adopt-style-2_DocuSign" data-format="2_DocuSign" class="signature-style">
+                      <span class="btn-label">Select Style 2 DocuSign</span>
+                      <img data-qa="adopt-signature-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=asig150&amp;s=Alex+Edwards&amp;f=2_DocuSign&amp;nochrome=0" class="signature-img">
+                      <img data-qa="adopt-initials-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=ainit150&amp;s=AE&amp;n=Alex+Edwards&amp;f=2_DocuSign&amp;nochrome=0" class="initials-img">
+                    </button>
+                  </li>
+
+                  <li>
+                 	  <button type="button" data-qa="adopt-style-5_DocuSign" data-format="5_DocuSign" class="signature-style">
+                      <span class="btn-label">Select Style 5 DocuSign</span>
+                      <img data-qa="adopt-signature-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=asig150&amp;s=Alex+Edwards&amp;f=5_DocuSign&amp;nochrome=0" class="signature-img">
+                      <img data-qa="adopt-initials-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=ainit150&amp;s=AE&amp;n=Alex+Edwards&amp;f=5_DocuSign&amp;nochrome=0" class="initials-img">
+                    </button>
+                  </li>
+
+                  <li>
+                 	  <button type="button" data-qa="adopt-style-Rage Italic" data-format="Rage Italic" class="signature-style">
+                      <span class="btn-label">Select Style Rage Italic</span>
+                      <img data-qa="adopt-signature-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=asig150&amp;s=Alex+Edwards&amp;f=Rage+Italic&amp;nochrome=0" class="signature-img">
+                      <img data-qa="adopt-initials-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=ainit150&amp;s=AE&amp;n=Alex+Edwards&amp;f=Rage+Italic&amp;nochrome=0" class="initials-img">
+                    </button>
+                  </li>
+
+                  <li>
+                 	  <button type="button" data-qa="adopt-style-Arial Unicode" data-format="Arial Unicode" class="signature-style">
+                      <span class="btn-label">Select Style Arial Unicode</span>
+                      <img data-qa="adopt-signature-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=asig150&amp;s=Alex+Edwards&amp;f=Arial+Unicode&amp;nochrome=0" class="signature-img">
+                      <img data-qa="adopt-initials-img" src="https://demo.docusign.net/Signing/image.aspx?ti=ff51f3d51b4c4571a2fa23652a64e27b&amp;i=ainit150&amp;s=AE&amp;n=Alex+Edwards&amp;f=Arial+Unicode&amp;nochrome=0" class="initials-img">
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="modal_footer">
+              <button data-qa="adopt-submit" class="btn btn-lg btn-main item-alt-inline-block" data-group-item="signature" data-selected="" type="button" data-ds="submit" value="signature">Adopt and Sign</button>
+              <button data-qa="adopt-submit" class="btn btn-lg btn-main item-alt-inline-block" data-group-item="initials" type="button" data-ds="submit" value="signature">Adopt and Initial</button>
+              <button data-qa="adopt-cancel" class="btn btn-lg btn-minor close" type="button" data-action="cancelAdoptSignature">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="payAmountModal" class="dialog-holder hidden" tabindex="0">
+    <div class="olive modal-open">
+      <div class="modal">
+        <div class="modal-wrap dialog is-signature-mode" tabindex="0">
+          <div class="modal-content xs" role="dialog" aria-labelledby="adopt-dialog-title" aria-describedby="adopt-dialog-content" tabindex="0">
+            <button data-qa="adopt-close" type="button" class="icon icon-times x-close close" data-action="cancelAdoptSignature"><span class="btn-label">Close</span></button>
+            <div class="header hidden-xs">
+              <h1 class="dialog-title">
+                <span class="item-alt" data-group-item="signature" data-qa="adopt-title" data-selected="">Payment</span>
+              </h1>
+            </div>
+
+            <div class="items items1 payment_step_1">
+              <div class="">
+                <div><strong>Service Fee</strong></div>
+                <div>Terms and Definitions Service Fee</div>
+              </div>
+              <div class="">
+                <div>$1000.00</div>
+              </div>
+            </div>
+            <div class="items items2 payment_step_1">
+              <div><strong>Total</strong></div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <div><strong>$1000.00 USD</strong></div>
+            </div>
+
+            <div class="content payment_step_1">
+              <div class="form-group">
+                <label class="label">Debit/Credit Card</label>
+                <input type="text" class="input-text" placeholder="XXXX XXXX XXXX XXXX"/>
+              </div>
+              <!-- <div class="col-1-2">
+                <div class="form-group">
+                  <label class="label">Expiration Date</label><br/>
+                  <input type="text" class="input-text input-xxs" placeholder="MM" maxlength="2"/>
+                  <input type="text" class="input-text input-xxs" placeholder="YYYY" maxlength="4"/>
+                </div>
+              </div>
+              <div class="col-1-2">
+                <div class="form-group">
+                  <label class="label">Security Code</label><br/>
+                  <input type="text" class="input-text input-xs" placeholder="CVV"/>
+                </div>
+              </div> -->
+
+              <div class="card_details">
+                <div class="form_unit">
+                  <label class="label">Expiration Date</label><br/>
+                  <input type="text" class="input-text input-xxs" placeholder="MM" maxlength="2"/>
+                  <input type="text" class="input-text input-xxs" placeholder="YYYY" maxlength="4"/>
+                </div>
+                <div class="form_unit">
+                  <label class="label">Security Code</label><br/>
+
+                  <div class="form_item-iconRight">
+                    <input type="text" class="input-text input-xs" placeholder="CVV"/>
+                    <button type="button" class="button-icon">
+                      <span class="icon icon-incomplete"></span>
+                    </button>
+                  </div>
+
+                  <div class="cvv_hover hide">
+                    <img src="images/security_code_popup.svg"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="payment_step_2 hide">
+              <div class="spinner-circle spinner-lg"></div>
+              <div class="spinner-text"><strong>Please wait - transaction being processed</strong></div>
+            </div>
+
+            <div class="payment_ready payment_step_3 hide">
+              <div><img src="images/ready_to_send_icon.svg"/></div>
+              <div><h2>Almost There</h2></div>
+              <div>Please click finish below to send your document and payment</div>
+              <!-- <div><button class="btn btn-secondary">Edit Payment</button></div> -->
+            </div>
+            <div class="items items2 payment_step_3 hide">
+              <div><strong>Total</strong></div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <div><strong>$1000.00 USD</strong></div>
+            </div>
+            <div class="payment_details payment_step_3 hide">
+              <div class="form_unit">
+                <div>Payment To</div>
+                <div><strong>Corey Kimmel</strong></div>
+              </div>
+              <div class="form_unit">
+                <div>Payment Method</div>
+                <div><strong>Visa Credit Card **** 1234</strong></div>
+              </div>
+            </div>
+            <div class="payment_ready questions payment_step_3 hide">
+              <div><strong>Questions?</strong></div>
+              <div>Contact Kimel and Associates Insurance Company about any further payment questions/details.</div>
+              <!-- <div><button class="btn btn-secondary">Edit Payment</button></div> -->
+            </div>
+
+            <div class="modal_footer">
+              <button data-qa="payment-submit" class="btn btn-lg btn-main item-alt-inline-block" data-selected="" type="button">Pay Now</button>
+              <!-- <button data-qa="payment-cancel" class="btn btn-lg btn-minor close" type="button" data-action="cancelAdoptSignature">Cancel</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="signUpModal" class="dialog-holder hide" tabindex="0">
+    <div id="olive-dialog-wrapper" class="olive modal-open">
+      <div class="modal" id="save-a-copy-create-account" modal-ready="">
+        <div class="save-a-copy modal-wrap">
+          <div class="modal-content lg" tabindex="0">
+            <div class="top-right-icons">
+              <span class="download-menu">
+                <button type="button" class="btn btn-icon btn-minor btn-trigger btn-no-border" data-qa="save-a-copy-download-options" title="Download">
+                  <span class="tooltip hidden"><span>Download</span></span>
+                  <span class="icon icon-download"></span>
+                </button>
+
+                <div id="modal-download-menu" class="menu invisible">
+                  <ul>
+                    <li>
+                      <button type="button" class="item button-link btn-block" data-qa="save-a-copy-download-combined" title="Download Combined PDF" data-action="download">
+                        <span class="button-text" aria-hidden="true">Combined PDF</span>
+                        <span class="screen-reader-text">Combined PDF This link will open in a new window.</span>
+                        <span class="icon icon-external"></span>
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="item button-link btn-block" title="Download Separate PDFs" data-action="download-zip">
+                        <span class="button-text" aria-hidden="true">Separate PDFs</span>
+                        <span class="screen-reader-text">Separate PDFs This link will open in a new window.</span>
+                        <span class="icon icon-external"></span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </span>
+              <span class="print-menu">
+                <button type="button" class="btn btn-icon btn-minor btn-trigger btn-no-border" title="Print" aria-label="Print" olive-menu="modal-print-menu"><span class="icon icon-print"></span></button>
+                <div id="modal-print-menu" class="menu invisible">
+                  <ul>
+                    <li>
+                      <button type="button" class="item button-link btn-block" title="Print" data-action="print">
+                        <span class="icon icon-print">
+                        </span><span aria-hidden="true">Print</span>
+                        <span class="screen-reader-text">Print This link will open in a new window.</span>
+                        <span class="icon icon-external"></span>
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="item button-link btn-block" title="Print" data-action="show:print-to-fedex"><span class="icon icon-fedex"></span> Print to FedEx Office</button>
+                    </li>
+                  </ul>
+                </div>
+              </span>
+
+              <button data-qa="dialog-close" type="button" class="btn btn-minor btn-icon x-close close">
+                <span class="icon icon-times"></span>
+                <span class="screen-reader-text">Close</span>
+              </button>
+            </div>
+
+            <div class="header">
+              <!-- Use h1 for all dialog sizes except small, use h2 there -->
+              <h1 class="dialog-title under-icons" data-qa="dialog-title" id="save-a-copy-create-account-title">Save a Copy of Your Document</h1>
+            </div>
+
+            <div class="content" id="save-a-copy-create-account-content">
+              <form id="create-account-form">
+                <h3 class="dialog-subtitle">Sign up for a FREE DocuSign account today and sign all your documents electronically.</h3>
+                <div class="create-account-features">
+                  <ul>
+                    <li><span><img src="images/modal_sign.png"></span><span class="blurb">Electronically sign any document.</span></li>
+                    <li><span><img src="images/modal_send.png"></span><span class="blurb">Get signatures from others.</span></li>
+                    <li><span><img src="images/modal_mobile.png"></span><span class="blurb">Sign on the go with DocuSign Mobile!</span></li>
+                  </ul>
+                </div>
+                <div class="create-account-form form">
+                  <div class="server-error error-message-text"></div>
+                  <div>
+                    <label for="email-field">Email</label>
+                    <input type="hidden" name="email-field" id="emailField" data-ds="loginEmail" value="simply.samrat@gmail.com" disabled="disabled">
+                    <div class="email-value" data-qa="save-a-copy-email">alex.edwards@edwardsconsulting.com</div>
+                    <div class="email-empty error-message-text">E-mail address is required</div>
+                    <div class="email-invalid error-message-text">Invalid e-mail address</div>
+                  </div>
+                  <div>
+                    <label for="password-field">Password</label>
+                    <input type="password" data-qa="save-a-copy-password" name="password-field" id="passwordField" data-ds="loginPassword">
+                    <div class="password-empty error-message-text">Please enter your password</div>
+                  </div>
+                  <div>
+                    <label for="confirm-password-field">Confirm Password</label>
+                    <input type="password" data-qa="save-a-copy-confirm-password" name="confirm-password-field" id="confirmPasswordField" data-ds="createConfirmPassword">
+                    <div class="password-match-error error-message-text">Passwords do not match</div>
+                  </div>
+                  <div class="terms-and-conditions">
+                    <div class="terms-and-conditions-link">By selecting SIGN UP, you agree to DocuSign
+                    <a href="https://www.docusign.com/company/terms-and-conditions/free" target="_blank">Terms and Conditions<span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="modal_footer">
+              <button data-qa="dialog-submit" type="button" class="btn btn-lg btn-main" data-ds="createAccount">Sign Up</button>
+              <button data-qa="dialog-cancel" type="button" class="btn btn-lg btn-minor" track-ds="signingCompleteNoThanks">No Thanks</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="save-a-copy account-created modal-wrap">
+          <div class="modal-content" tabindex="0">
+            <div class="content">
+              <div class="account-created-message">Your account has been created! You will receive an email shortly.</div>
+              <div class="redirecting-message">We are now redirecting you to <a href="https://www.docusign.com/p/membernet/finish_signing_demo.php">www.docusign.com<span class="screen-reader-text">This link will open in a new window.</span><span class="icon icon-external"></span></a></div>
+              <span class="progress-bar"><span></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/script_disclosers_signing.js"></script>
+</html>
