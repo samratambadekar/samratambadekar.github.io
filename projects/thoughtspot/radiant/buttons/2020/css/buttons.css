@@ -1,0 +1,377 @@
+.bold {
+  font-weight: 600;
+}
+
+.rd-button + .rd-button {
+  margin-left: 16px;
+}
+
+.rd-icon,
+.svg-icon-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rd-icon-l .svg-icon,
+.svg-icon-block-l .svg-icon {
+  width: 18px;
+  height: 18px;
+}
+.rd-icon-m .svg-icon,
+.svg-icon-block-m .svg-icon {
+  width: 14px;
+  height: 14px;
+}
+.rd-icon-s .svg-icon,
+.svg-icon-block-s .svg-icon {
+  width: 12px;
+  height: 12px;
+}
+
+/* BUTTON BASE STYLES */
+.rd-button {
+  position: relative;
+  height: 32px;
+  line-height: 20px;
+  padding: 0 24px;
+  min-width: 80px;
+  /* max-width: 200px; */
+  border: 2px solid transparent;
+  border-radius: 16px;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: var(--color-button-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color .25s ease,
+              border-color .2s ease,
+              color .2s ease;
+  /* box-sizing: padding-box; */
+}
+
+.rd-button .rd-button-text {
+  /* white-space: nowrap; */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+.rd-button.multiline {
+  height: 52px;
+  border-radius: 50px;
+}
+.rd-button.multiline .rd-button-text {
+  -webkit-line-clamp: 2;
+}
+.rd-button.disabled {
+  opacity: 0.4;
+}
+.rd-button:focus {
+  outline: 0;
+  border-color: var(--color-button-focus-border);
+}
+.rd-button.rd-button-compact:not(.rd-button-icon) {
+  height: 24px;
+  font-size: 12px;
+}
+.rd-button.rd-button-compact.rd-button-primary,
+.rd-button.rd-button-compact.rd-button-secondary {
+  padding: 0 16px;
+}
+/* .rd-button.highlighted {
+  font-weight: 600;
+} */
+
+/* PRIMARY BUTTON STYLES */
+.rd-button-primary {
+  color: var(--color-white);
+  background-color: var(--color-button-primary);
+}
+.rd-button-primary:hover {
+  background-color: var(--color-button-primary-hover);
+}
+.rd-button-primary:focus {
+  background-color: var(--color-button-primary-hover);
+}
+/* ACTIVE STATE NEEDS TO BE AFTER FOCUS */
+.rd-button-primary:active {
+  background-color: var(--color-button-primary-active);
+}
+.rd-button-primary.highlighted {
+  background-color: var(--color-button-primary-highlighted);
+}
+
+/* SECONDARY BUTTON STYLES */
+.rd-button-secondary {
+  color: var(--color-black-toned);
+  background-color: var(--color-button-secondary);
+}
+.rd-button-secondary:hover {
+  background-color: var(--color-button-secondary-hover);
+}
+.rd-button-secondary:focus {
+  background-color: var(--color-button-secondary-hover);
+}
+/* ACTIVE STATE NEEDS TO BE AFTER FOCUS */
+.rd-button-secondary:active {
+  background-color: var(--color-button-secondary-active);
+}
+.rd-button-secondary.highlighted {
+  color: var(--color-blue-accent);
+  background-color: var(--color-button-secondary-highlighted);
+}
+
+/* BUTTON WITH TEXT AND ICON STYLES */
+.rd-button.rd-button-icon-left:not(.rd-button-tertiary) {
+  padding-left: 16px;
+}
+.rd-button.rd-button-icon-left .svg-icon-block {
+  margin-right: 8px;
+}
+.rd-button.rd-button-icon-right:not(.rd-button-tertiary) {
+  padding-right: 16px;
+}
+.rd-button.rd-button-icon-right .svg-icon-block {
+  margin-left: 8px;
+}
+.rd-button .svg-icon-block {
+  fill: currentColor;
+}
+
+/* TERTIARY BUTTON BASE & TERTIARY STYLES */
+.rd-button.rd-button-tertiary {
+  color: var(--color-button-tertiary);
+  /* font-weight: 600; */
+  background-color: transparent;
+  padding: 4px;
+  min-width: 40px;
+  border-radius: 4px;
+}
+/* .rd-button.rd-button-tertiary.rd-button-compact {
+  min-width: 0;
+} */
+.rd-button.rd-button-tertiary:hover {
+  color: var(--color-button-tertiary-hover);
+  /* color: var(--color-black-toned); */
+  background-color: var(--color-button-secondary);
+}
+.rd-button.rd-button-tertiary:focus {
+  color: var(--color-button-tertiary-hover);
+}
+/* ACTIVE STATE NEEDS TO BE AFTER FOCUS */
+.rd-button.rd-button-tertiary:active {
+  color: var(--color-button-tertiary-active);
+}
+.rd-button.rd-button-tertiary.highlighted {
+  color: var(--color-button-tertiary-highlighted);
+}
+
+
+
+/* ICON BUTTONS (small,med,large) STYLES */
+.rd-button.rd-button-icon {
+  min-width: 0;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+.rd-button.rd-button-icon-s {
+  width: 20px;
+  height: 20px;
+}
+.rd-button.rd-button-icon-m {
+  width: 24px;
+  height: 24px;
+}
+.rd-button.rd-button-icon-l {
+  width: 32px;
+  height: 32px;
+}
+
+.rd-button-icon {
+  color: var(--color-black-toned);
+  background-color: var(--color-button-icon);
+}
+.rd-button-icon:hover {
+  background-color: var(--color-button-icon-hover);
+}
+.rd-button-icon:focus {
+  background-color: var(--color-button-icon-hover);
+}
+/* ACTIVE STATE NEEDS TO BE AFTER FOCUS */
+.rd-button-icon:active {
+  background-color: var(--color-button-icon-active);
+}
+.rd-button-icon.highlighted {
+  color: var(--color-blue-accent);
+  background-color: var(--color-button-icon-highlighted);
+}
+.rd-button-icon .svg-icon-block {
+  width: 100%;
+  height: 100%;
+}
+
+.rd-button-icon.rd-button-icon-ghost {
+  background-color: transparent;
+}
+.rd-button-icon.rd-button-icon-ghost:hover {
+  background-color: var(--color-button-icon-ghost-hover);
+}
+.rd-button-icon.rd-button-icon-ghost:focus {
+  background-color: var(--color-button-icon-ghost-hover);
+}
+/* ACTIVE STATE NEEDS TO BE AFTER FOCUS */
+.rd-button-icon.rd-button-icon-ghost:active {
+  background-color: var(--color-button-icon-ghost-active);
+}
+.rd-button-icon.rd-button-icon-ghost.highlighted {
+  color: var(--color-blue-accent);
+  background-color: var(--color-button-icon-ghost-highlighted);
+}
+
+
+
+
+/* DARK SECONDARY BUTTON STYLES */
+.rd-button.rd-button-secondary.rd-button-dark {
+  background-color: var(--color-button-secondary-dark);
+}
+.rd-button.rd-button-secondary.rd-button-dark:hover {
+  background-color: var(--color-button-secondary-dark-hover);
+}
+.rd-button.rd-button-secondary.rd-button-dark:focus {
+  background-color: var(--color-button-secondary-dark-hover);
+}
+/* ACTIVE STATE NEEDS TO BE AFTER FOCUS */
+.rd-button.rd-button-secondary.rd-button-dark:active {
+  background-color: var(--color-button-secondary-dark-active);
+}
+.rd-button.rd-button-secondary.rd-button-dark.highlighted {
+  background-color: var(--color-button-secondary-dark-highlighted);
+}
+
+/* DARK TERTIARY BUTTON STYLES */
+.rd-button.rd-button-tertiary.rd-button-dark {
+  color: var(--color-button-tertiary-dark);
+}
+.rd-button.rd-button-tertiary.rd-button-dark:hover {
+  background-color: var(--color-button-tertiary-dark-hover);
+}
+.rd-button.rd-button-tertiary.rd-button-dark:focus {
+  background-color: var(--color-button-tertiary-dark-hover);
+}
+/* ACTIVE STATE NEEDS TO BE AFTER FOCUS */
+.rd-button.rd-button-tertiary.rd-button-dark:active {
+  background-color: var(--color-button-tertiary-dark-active);
+}
+.rd-button.rd-button-tertiary.rd-button-dark.highlighted {
+  background-color: var(--color-button-tertiary-dark-highlighted);
+}
+
+/* DARK BUTTON ICON STYLES */
+.rd-button-icon.rd-button-dark {
+  color: var(--color-white);
+  background-color: transparent;
+}
+.rd-button-icon.rd-button-dark:hover {
+  background-color: var(--color-button-icon-dark-hover);
+}
+.rd-button-icon.rd-button-dark:focus {
+  background-color: var(--color-button-icon-dark-hover);
+}
+/* ACTIVE STATE NEEDS TO BE AFTER FOCUS */
+.rd-button-icon.rd-button-dark:active {
+  background-color: var(--color-button-icon-dark-active);
+}
+.rd-button-icon.rd-button-dark.highlighted {
+  background-color: var(--color-button-icon-dark-highlighted);
+}
+
+
+
+
+
+/* BUTTON STYLES FOR LOADING STATE */
+.rd-button.rd-button-is-loading {
+  color: rgba(0, 0, 0, 0) !important;
+  pointer-events: none;
+}
+.rd-button .loader {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 16px;
+  border-color: transparent var(--color-white) transparent transparent;
+  opacity: 0;
+  transition: all 0.2s ease;
+  animation: loader-spinner 0.8s linear infinite;
+  pointer-events: none;
+}
+.rd-button.rd-button-secondary .loader {
+  border-color: transparent var(--color-black-toned) transparent transparent;
+}
+.rd-button.rd-button-tertiary .loader {
+  border-color: transparent var(--color-button-primary) transparent transparent;
+}
+.rd-button-is-loading .loader {
+  opacity: 1;
+  width: 20px;
+  border-width: 2px;
+}
+.rd-button-is-loading .svg-icon-block {
+  opacity: 0;
+}
+
+.rd-button-primary.rd-button-is-loading .loader,
+.rd-button-secondary.rd-button-is-loading .loader {
+  width: 20px;
+}
+
+
+/* ANIMATION STYLES GO BELOW. THESE MIGHT EXIST IN CODE, PLEASE REUSE THEM */
+@keyframes loader-spinner {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animation-hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.rd-button.shake-animation {
+  animation: shake 0.2s linear 2;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-2px);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

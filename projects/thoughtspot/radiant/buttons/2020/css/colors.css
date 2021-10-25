@@ -1,0 +1,50 @@
+:root {
+  --color-white: #FFF;
+  --color-black-toned: #1D232F;
+  --color-blue-accent: #2770EF;
+
+
+
+  --color-button-focus-border: #71A1F4;
+
+  --color-button-primary: #2770EF;
+  --color-button-primary-hover: #2359B6;
+  --color-button-primary-active: #163772;
+  --color-button-primary-highlighted: #163772;
+
+  --color-button-secondary: #EAEDF2;
+  --color-button-secondary-hover: #DBDFE7;
+  --color-button-secondary-active: #DBDFE7;
+  --color-button-secondary-highlighted: #E6EDFA;
+
+  --color-button-tertiary: #2770EF;
+  --color-button-tertiary-hover: #2359B6;
+  --color-button-tertiary-active: #163772;
+  --color-button-tertiary-highlighted: #2359B6;
+
+  --color-button-icon: #EAEDF2;
+  --color-button-icon-hover: #DBDFE7;
+  --color-button-icon-active: #C0C6CF;
+  --color-button-icon-highlighted: #E6EDFA;
+
+  --color-button-icon-ghost: transparent;
+  --color-button-icon-ghost-hover: rgba(0, 0, 0, 0.06);
+  --color-button-icon-ghost-active: rgba(0, 0, 0, 0.12);
+  --color-button-icon-ghost-highlighted: rgba(39, 112, 239, 0.12);
+
+  --color-button-secondary-dark: #FFF;
+  --color-button-secondary-dark-hover: rgba(255, 255, 255, 0.8);
+  --color-button-secondary-dark-active: rgba(255, 255, 255, 0.6);
+  --color-button-secondary-dark-highlighted: #FFF;
+
+  --color-button-tertiary-dark: #FFF;
+  --color-button-tertiary-dark-hover: rgba(0, 0, 0, 0.24);
+  --color-button-tertiary-dark-active: rgba(0, 0, 0, 0.36);
+  --color-button-tertiary-dark-highlighted: rgba(0, 0, 0, 0.48);
+
+  --color-button-icon-dark: transparent;
+  --color-button-icon-dark-hover: rgba(0, 0, 0, 0.24);
+  --color-button-icon-dark-active: rgba(0, 0, 0, 0.36);
+  --color-button-icon-dark-highlighted: rgba(0, 0, 0, 0.48);
+
+}

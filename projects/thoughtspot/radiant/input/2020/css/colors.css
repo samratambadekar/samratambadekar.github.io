@@ -1,0 +1,18 @@
+:root {
+  --color-white: #FFF;
+  --color-background-gray: #F6F8FA;
+
+  --color-text-toned: #1D232F;
+  --color-text-info: #777E8B;
+
+  --color-blue-accent: #2770EF;
+  --color-failure: #E22B3D;
+  --color-failure-background: #FCD4D7;
+  --color-warning: #FCC838;
+  --color-warning-background: #FCF1D1;
+  --color-success: #06BF7F;
+  --color-success-background: #C7F2E3;
+
+
+  --color-gray-60: #777E8B;
+}

@@ -1,0 +1,85 @@
+.radiant_lists {
+  width: 100%;
+  height: 100%;
+  max-width: 1024px;
+  margin: auto;
+  padding: 40px;
+  background-color: #FFF;
+  overflow: auto;
+}
+
+.rd_list_container {
+  margin: 40px auto;
+}
+
+.rd_list_item {
+  min-height: 32px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+  /* padding: 0 20px; */
+  border-bottom: 1px solid #EAEDF2;
+  background-color: #FFF;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.rd_list_item:first-child {
+  border-top: 1px solid #EAEDF2;
+}
+/* .rd_list_item:focus-within, */
+.rd_list_item:hover {
+  outline: none;
+  background-color: #F6F8FA;
+}
+.rd_list_item.selected,
+.rd_list_item:focus,
+.rd_list_item:active {
+  outline: none;
+  background-color: #F2F7FF;
+}
+
+.table_header_cell:focus {
+  outline: none;
+  background-color: #F6F8FA;
+}
+
+
+.bk-checkbox-container .bk-checkbox:focus+.bk-checkbox-label::before {
+  outline: none;
+}
+
+.rd_list_template .rd_list_item {
+  height: 72px;
+}
+
+.link.blue_on_hover {
+  color: initial;
+}
+.link.blue_on_hover:focus,
+.link.blue_on_hover:hover .rd-icon,
+.link.blue_on_hover:hover {
+  color: #2E75F0;
+  fill: #2E75F0;
+  text-decoration: none;
+}
+
+.filter_controls {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  animation: fade-in-down 0.2s ease;
+}
+.filter_controls > * {
+  margin-right: 16px;
+}
+.filter_controls > .filter_search {
+  padding-left: 16px;
+  border-left: 1px solid #DBDFE7;
+}
+
+
+.rd_list_bulk_actions {
+  margin-bottom: 16px;
+  animation: fade-in-top 0.2s ease;
+}

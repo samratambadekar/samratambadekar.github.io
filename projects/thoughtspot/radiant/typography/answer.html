@@ -1,0 +1,1249 @@
+<bk-app-canvas class="bk-app-canvas ng-isolate-scope" bk-ctrl="appCanvas"><main class="main-content" id="mainContent">
+    <div class="bk-page bk-page-app-canvas bk-canvas-state-saved-answer">
+
+        <div class="bk-vertical-flex-container-sized" ng-switch="$ctrl.canvasState">
+            <!-- ngSwitchWhen: insights -->
+            <!-- ngSwitchWhen: insight -->
+            <!-- ngSwitchWhen: blinkV2-answer -->
+            <!-- ngSwitchWhen: answer -->
+            <!-- ngSwitchWhen: saved-answer --><bk-saved-answer ng-switch-when="saved-answer" bk-ctrl="$ctrl.innerCtrl" class="bk-vertical-flex-container-sized ng-scope ng-isolate-scope"><!-- ngIf: !!$ctrl.alertComponent -->
+<!-- ngIf: !!$ctrl.requestAccessComponent -->
+<!-- ngIf: !!$ctrl.answerDocumentComponent --><bk-answer-document ng-if="!!$ctrl.answerDocumentComponent" bk-ctrl="$ctrl.answerDocumentComponent" class="bk-vertical-flex-container-sized ng-scope ng-isolate-scope"><div class="answer-document">
+    <!-- ngRepeat: table in $ctrl.answerDocumentModel.getContextTables() track by $index --><div class="answer-view ng-scope" ng-repeat="table in $ctrl.answerDocumentModel.getContextTables() track by $index">
+        <!-- ngIf: !$ctrl.isCurrentIndex($index) -->
+        <!-- ngIf: $ctrl.isCurrentIndex($index) && !!$ctrl.sageClient --><div ng-if="$ctrl.isCurrentIndex($index) &amp;&amp; !!$ctrl.sageClient" ng-switch="$ctrl.isSearchIQMode" class="bk-answer-page-current-index ng-scope">
+            <!-- ngSwitchWhen: false --><!-- ngIf: !!$ctrl.pageComponent --><bk-answer-page class="bk-answer-page-container ng-scope ng-isolate-scope" ng-switch-when="false" ng-if="!!$ctrl.pageComponent" bk-ctrl="$ctrl.pageComponent"><div class="bk-answer-page" ng-class="{'no-scroll': $ctrl.curtainActive}">
+    <div class="bk-answer-container spotIQ-insights" ng-class="{
+             'ask-expert': $ctrl.isAskExpertFormOpen(),
+             'spotIQ-insights': $ctrl.isSpotIQEnabled(),
+             'answer-page-embedded': $ctrl.isAnswerPageEmbedded()
+            }">
+        <!-- ngLazyShow: !$ctrl.showDataSourcePreview --><div class="bk-data-panel ng-scope ng-isolate-scope resizable" ng-lazy-show="!$ctrl.showDataSourcePreview" resizable="" r-directions="['right']" r-flex="true" r-end="$ctrl.onDataPanelResizeCallback()">
+            <div class="bk-sage-data ng-isolate-scope bk-read-only" ng-class="[panel.getTopLevelCssClass(), panel.getExpansionClass()]" blink-on-animation-end="onPanelAnimationDone()" config="$ctrl.dataPanelConfig" column-panel-component-config="$ctrl.columnPanelComponentConfig" on-header-click-callback="$ctrl.panelHeaderClickCallback">
+    <div class="bk-header-container" ng-click="onHeaderClick()">
+        <div class="header-text ng-binding"><h4 class="typography typography-h4">Data</h4></div>
+        <rd-button bk-ctrl="dataPanelArrowButtonCtrl" class="header-arrow ng-isolate-scope"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="" data-tooltip-position="top" data-tooltip-align="center">
+    <button class="rd-button             rd-button-secondary             rd-button-size-m             rd-button-background-light rd-button-with-icon rd-button-icon-chevron-left" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-chevron-left': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="collapse">
+        <!-- ngIf: $ctrl.iconCtrl --><rd-icon class="rd-button-icon ng-scope ng-isolate-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}" ng-if="$ctrl.iconCtrl" bk-ctrl="$ctrl.iconCtrl" aria-hidden="true"><svg focusable="false" class="rd-icon rd-icon-size-l rd-icon-color-current">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-chevron-left"></use>
+</svg>
+</rd-icon><!-- end ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button>
+    </div>
+    <!-- ngRepeat: panelComponent in panel.getComponents() --><div ng-repeat="panelComponent in panel.getComponents()" class="bk-sage-data-component bk-sources-container">
+        <!-- ngIf: panelComponent.isOutOfFlow() --><!-- ngInclude: panelComponent.getTemplateUrl() --><div ng-if="panelComponent.isOutOfFlow()" class="bk-out-of-flow-panel-component ng-scope" ng-include="panelComponent.getTemplateUrl()"><div class="bk-manage-sources ng-scope">
+    <rd-button bk-ctrl="chooseSourcesButtonCtrl" class="bk-choose-sources-btn ng-isolate-scope"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="" data-tooltip-position="top" data-tooltip-align="center">
+    <button class="rd-button             rd-button-secondary             rd-button-size-m             rd-button-background-light rd-button-with-text" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="Choose sources">
+        <!-- ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text --><span ng-if="$ctrl.text" class="rd-button-text ng-binding ng-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}">Choose sources</span><!-- end ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button>
+</div></div><!-- end ngIf: panelComponent.isOutOfFlow() -->
+        <!-- ngIf: !panelComponent.isOutOfFlow() -->
+    </div><!-- end ngRepeat: panelComponent in panel.getComponents() --><div ng-repeat="panelComponent in panel.getComponents()" class="bk-sage-data-component bk-columns-container">
+        <!-- ngIf: panelComponent.isOutOfFlow() -->
+        <!-- ngIf: !panelComponent.isOutOfFlow() --><!-- ngInclude: panelComponent.getTemplateUrl() --><div ng-if="!panelComponent.isOutOfFlow()" class="bk-in-flow-panel-component ng-scope" ng-include="panelComponent.getTemplateUrl()"><sage-data-columns class="bk-vertical-flex-container-sized ng-scope ng-isolate-scope" component="panelComponent" column-panel-component-config="columnPanelComponentConfig"><div class="bk-sage-data-columns bk-bulk-data-columns bk-highlight-area bk-read-only" ng-class="{'bk-read-only': colPanel.isPanelReadOnly()}" ng-click="colPanel.deselectAll()" blink-overlay="colPanel.deselectAll()">
+    <div class="bk-search-wrapper" ng-click="$event.stopPropagation()">
+        <input class="bk-search-input ng-pristine ng-untouched ng-valid ng-empty" type="text" ng-model="colPanel.searchText" ng-change="onColumnPanelSearchTextChange()" spellcheck="false" placeholder="Search Columns" aria-label="Search Columns">
+    </div>
+    <div class="bk-columns-body-section" ng-class="{ 'bk-loading': colPanel.isLoading() }">
+        <!-- ngIf: colPanel.dataSources.length > 0 && !colPanel.isLoading() --><div ng-if="colPanel.dataSources.length > 0 &amp;&amp; !colPanel.isLoading()" class="bk-source-list-wrapper ng-scope">
+            <ul class="bk-source-list">
+                <!-- ngRepeat: source in colPanel.dataSources track by source.getId() --><li class="bk-source-item ng-scope" ng-repeat="source in colPanel.dataSources track by source.getId()" post-repeat="" id="86573419-eaac-4847-92e3-c1c824edcc4d" ng-click="::$event.stopPropagation()" ng-class="{'bk-disabled': !source.isAccessible()}" ng-show="source.hasAnyFilteredColumns()">
+                    <div class="bk-source-header-container">
+                        <div class="bk-source-header bk-clickable" tabindex="0" ng-enter="::source.toggleExpansion()" data-tooltip-content="NAME: PM - Customer Warehouse
+CREATED: 2 years ago
+UPDATED: 1 week ago
+AUTHOR: Siva Singaram" ng-click="::source.toggleExpansion()">
+                             <!-- ngIf: source.isExpanded() -->
+                             <!-- ngIf: !source.isExpanded() --><div class="svg-icon-block svg-icon-info-block svg-icon-block-m rd-icon-caret-right-m" ng-bind-html="getSvgIconHTML()" ng-if="!source.isExpanded()" size="m" icon="rd-icon-caret-right-m" type="info"><svg class="svg-icon svg-icon-info"><use xlink:href="node_modules/@thoughtspot/radiant/widgets/resources/img/svg-icons-sprite/svg-icons.svg#rd-icon-caret-right-m"></use></svg></div><!-- end ngIf: !source.isExpanded() -->
+                            <span class="bk-source-name bk-label bk-overflow-ellipsis ng-binding">
+                                <h6 class="typography typography-h6">PM - Customer Warehouse</h6>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- ngIf: source.isExpanded() -->
+                </li><!-- end ngRepeat: source in colPanel.dataSources track by source.getId() -->
+                <!-- ngIf: showFormulas --><answer-formula-list ng-if="showFormulas" formula-handler="columnPanelComponentConfig.formulaHandler" on-success="addColumnSuccessHandler" sage-client="panelComponent.getSageClient()" class="ng-scope ng-isolate-scope"><!-- ngIf: shouldShowFormulaList() --><li class="bk-source-item bk-clickable ng-scope" ng-if="shouldShowFormulaList()">
+
+    <div class="bk-source-header" ng-click="isExpanded = !isExpanded">
+        <!-- ngIf: isExpanded -->
+        <!-- ngIf: !isExpanded --><div class="svg-icon-block svg-icon-info-block svg-icon-block-m rd-icon-caret-right-m" ng-bind-html="getSvgIconHTML()" ng-if="!isExpanded" size="m" icon="rd-icon-caret-right-m" type="info"><svg class="svg-icon svg-icon-info"><use xlink:href="node_modules/@thoughtspot/radiant/widgets/resources/img/svg-icons-sprite/svg-icons.svg#rd-icon-caret-right-m"></use></svg></div><!-- end ngIf: !isExpanded -->
+        <span class="bk-source-name bk-label bk-overflow-ellipsis ng-binding">
+          <h6 class="typography typography-h6">Formulas</h6>
+        </span>
+    </div>
+
+    <!-- ngIf: isExpanded -->
+</li><!-- end ngIf: shouldShowFormulaList() --></answer-formula-list><!-- end ngIf: showFormulas -->
+            </ul>
+        </div><!-- end ngIf: colPanel.dataSources.length > 0 && !colPanel.isLoading() -->
+        <!-- ngIf: colPanel.showNoSourcePlaceholder() -->
+    </div>
+    <div class="bk-columns-footer-section">
+        <rd-button bk-ctrl="addColumnsBtnCtrl" class="bk-add-columns-btn ng-isolate-scope" data-tooltip-content="Please select a column from the sources list to add to your search."><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="" data-tooltip-position="top" data-tooltip-align="center">
+    <button class="rd-button             rd-button-secondary             rd-button-size-m             rd-button-background-light rd-button-with-icon rd-button-icon-plus rd-button-with-text" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-plus': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="Add columns" disabled="disabled">
+        <!-- ngIf: $ctrl.iconCtrl --><rd-icon class="rd-button-icon ng-scope ng-isolate-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}" ng-if="$ctrl.iconCtrl" bk-ctrl="$ctrl.iconCtrl" aria-hidden="true"><svg focusable="false" class="rd-icon rd-icon-size-s rd-icon-color-current">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-plus"></use>
+</svg>
+</rd-icon><!-- end ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text --><span ng-if="$ctrl.text" class="rd-button-text ng-binding ng-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}">Add columns</span><!-- end ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button>
+        <a ng-class="{'bk-disabled': !colPanel.canShowAddColumns()}" ng-click="colPanel.deselectAll()" ng-enter="colPanel.deselectAll()" tabindex="0" class="bk-clear-all-columns ng-binding bk-disabled">Clear</a>
+    </div>
+</div>
+
+<script type="text/ng-template" id="columnList">
+        <div
+            id="{{ ::column.getId() }}"
+            class="bk-clickable bk-list-item-wrapper"
+            tabIndex="0"
+            ng-enter="colPanel.onColumnClick(column, source)"
+            ng-class="column.getCssList()"
+            data-tooltip-content= "{{ ::colPanel.getColumnTooltip(column) || '' }}"
+            ng-click="$event.stopPropagation(); colPanel.onColumnClick(column, source)"
+            ng-dblclick="colPanel.onColumnDblClick(column)">
+            <div class="bk-column-left-actions" ng-if="::columnPanelComponentConfig.showCheckMarks">
+                <div class="bk-style-icon-checkmark"
+                     ng-show="(column.isInUse() || column.isInSage()) && !column.isUpdating()"></div>
+                <div class="bk-style-icon-x bk-actionable-icon" ng-show="column.showRemoveButton()"
+                     data-tooltip-content="Remove column"
+                     ng-click="$event.stopPropagation(); colPanel.removeColumn(column)"
+                     ng-dblclick="$event.stopPropagation()"></div>
+                <div class="bk-working" ng-show="column.isUpdating()"></div>
+            </div>
+            <div class="bk-label bk-overflow-ellipsis bk-column-name">{{ column.getName() }}</div>
+            <bk-svg-icon
+                ng-if="::!columnPanelComponentConfig.disallowFiltering"
+                ng-show="!colPanel.isFilterUpdating()"
+                data-tooltip-content="Add filter"
+                tabIndex="0"
+                ng-enter="column.addFilter()"
+                ng-click="$event.stopPropagation(); column.addFilter()"
+                ng-dblclick="$event.stopPropagation()"
+                size="m"
+                class="bk-actionable-icon"
+                icon="rd-icon-filter-m"
+                type="action"
+                ></bk-svg-icon>
+            <div class="bk-filter-working"
+                 ng-if="::!columnPanelComponentConfig.disallowFiltering"
+                 ng-show="column.isFilterUpdating()"
+                 ng-click="$event.stopPropagation()"
+                 ng-dblclick="$event.stopPropagation()"></div>
+        </div>
+</script></sage-data-columns></div><!-- end ngIf: !panelComponent.isOutOfFlow() -->
+    </div><!-- end ngRepeat: panelComponent in panel.getComponents() -->
+</div>
+        <div class="rg-right"><span></span></div></div><!-- end ngLazyShow: !$ctrl.showDataSourcePreview -->
+        <div class="page-content should-collapse" ng-class="{'should-collapse': !($ctrl.showDataSourcePreview)}">
+            <!-- ngIf: $ctrl.curtainActive -->
+            <div class="bk-search-panel">
+                <!-- ngIf: !!$ctrl.dataSourcePreviewComponent --><bk-data-source-preview class="bk-answer-data-source-preview ng-scope ng-isolate-scope" ng-if="!!$ctrl.dataSourcePreviewComponent" bk-ctrl="$ctrl.dataSourcePreviewComponent"><div class="bk-data-source-preview ng-hide" ng-hide="$ctrl.hide" data-tooltip-content="Pm - customer warehouse" ng-click="$ctrl.onPreviewClickCallback()" ng-space-or-enter="$ctrl.onPreviewClickCallback()" role="button" tabindex="0">
+    <div class="bk-data-source-preview-inner">
+        <rd-icon bk-ctrl="$ctrl.dataSourceIcon" class="ng-isolate-scope"><svg focusable="false" class="rd-icon rd-icon-size-m rd-icon-color-gray">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-database"></use>
+</svg>
+</rd-icon>
+        <span class="bk-text-blue ng-binding"> PM - Customer Warehouse</span>
+    </div>
+</div></bk-data-source-preview><!-- end ngIf: !!$ctrl.dataSourcePreviewComponent -->
+                <!-- ngIf: !!$ctrl.sageBarComponent --><bk-sage-bar class="bk-answer-sage-bar ng-scope ng-isolate-scope" ng-if="!!$ctrl.sageBarComponent" bk-ctrl="$ctrl.sageBarComponent"><div class="bk-sage-bar-container" ng-switch="$ctrl.canEdit">
+    <!-- ngSwitchWhen: true --><bk-sage ng-switch-when="true" bk-ctrl="$ctrl.sageComponent" class="bk-sage-bar ng-scope ng-isolate-scope"><div class="bk-sage" tabindex="0" data-tooltip-content="" ng-class="{
+         'bk-active': $ctrl.sageBarHasFocus,
+         'bk-disable-hover-effects': $ctrl.disableHoverEffects,
+         'bk-delayed-search': $ctrl.config.isDelayedSearch
+     }">
+
+    <bk-sage-bubble-v2 class="bk-sage-bubble-v2-container ng-isolate-scope" bk-ctrl="$ctrl.sageBubble"><div class="bk-sage-bubble-v2">
+    <div class="bk-sage-bubble-inner bk-suggestion">
+        <div ng-show="$ctrl.visible" class="bk-sage-bubble-content ng-hide">
+            <!-- ngIf: !$ctrl.showingBubble --><div ng-if="!$ctrl.showingBubble" class="ng-binding ng-scope">
+
+            </div><!-- end ngIf: !$ctrl.showingBubble -->
+            <!-- ngIf: $ctrl.showingBubble -->
+        </div>
+    </div>
+</div></bk-sage-bubble-v2>
+
+    <!-- ngIf: !$ctrl.config.hideSearchIcon && !$ctrl.config.isDelayedSearch --><div ng-if="!$ctrl.config.hideSearchIcon &amp;&amp; !$ctrl.config.isDelayedSearch" class="bk-sage-search-icon ng-scope">
+        <rd-icon bk-ctrl="$ctrl.searchIconCtrl" class="ng-isolate-scope"><svg focusable="false" class="rd-icon rd-icon-size-m rd-icon-color-gray">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-magnifying-glass"></use>
+</svg>
+</rd-icon>
+    </div><!-- end ngIf: !$ctrl.config.hideSearchIcon && !$ctrl.config.isDelayedSearch -->
+    <!-- ngIf: $ctrl.getShouldShowSearchAssistStartEndScreen() -->
+
+    <bk-sage-suggestions class="bk-dropdown-wrapper sage-dropdown-width ng-isolate-scope ng-hide" ng-show="$ctrl.shouldShowCompletions()" bk-ctrl="$ctrl.sageDropdown"><div class="bk-suggestion-dropdown ng-hide" ng-blur="$ctrl.onBlur()" ng-hide="!$ctrl.list &amp;&amp; !$ctrl.actionLinkComponent" tabindex="0">
+
+    <!-- ngIf: $ctrl.actionLinkComponent -->
+    <!-- ngIf: $ctrl.list -->
+    <!-- ngIf: $ctrl.isPartialIndexLookup -->
+</div>
+<!-- ngIf: $ctrl.shouldShowSeachAssistPanel() --></bk-sage-suggestions>
+    <div class="bk-sage-text-content">
+        <!-- ngIf: $ctrl.isPlaceholderVisible() -->
+        <div class="bk-sage-inner tokenizer collapsible" ng-class="{
+             'collapsible': !$ctrl.config.disableCollapse,
+             'collapsed': $ctrl.isCollapsed,
+             'disabled-sage-bar': $ctrl.isSageBarDisabled()
+         }" id="input" spellcheck="false" contenteditable="true"><div data-token-index="0" class="token bk-qf-group-by-column-phrase  ">engaged users date weekly</div><div class="separator"></div><div data-token-index="1" class="token bk-qf-filter-phrase  ">engaged users date &gt;= 08/06/2018</div><div class="separator"></div><div data-token-index="2" class="token bk-qf-aggregated-column-phrase  ">unique count user guid</div><div class="separator"></div><div data-token-index="3" class="token bk-qf-group-by-column-phrase  ">engaged users type</div><div class="separator"></div></div>
+    </div>
+
+    <!-- ngIf: !$ctrl.config.disableCollapse --><div ng-if="!$ctrl.config.disableCollapse" ng-show="$ctrl.showCollapse &amp;&amp; $ctrl.isCollapsed" class="bk-fade-area ng-scope ng-hide toggler" ng-class="{'toggler': !!$ctrl.searchToggler}">
+    </div><!-- end ngIf: !$ctrl.config.disableCollapse -->
+
+    <!-- ngIf: !$ctrl.config.disableCollapse --><rd-button ng-if="!$ctrl.config.disableCollapse" bk-ctrl="$ctrl.sageCollapseButtonCtrl" class="bk-sage-collapse ng-scope ng-isolate-scope minimize invisible" ng-class="{
+                   'maximize': $ctrl.isCollapsed,
+                   'minimize': !$ctrl.isCollapsed,
+                   'invisible': !$ctrl.showCollapse
+               }"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="" data-tooltip-position="top" data-tooltip-align="center">
+    <button class="rd-button             rd-button-secondary             rd-button-size-s             rd-button-background-light rd-button-with-icon rd-button-icon-chevron-down" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-chevron-down': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="collapse">
+        <!-- ngIf: $ctrl.iconCtrl --><rd-icon class="rd-button-icon ng-scope ng-isolate-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}" ng-if="$ctrl.iconCtrl" bk-ctrl="$ctrl.iconCtrl" aria-hidden="true"><svg focusable="false" class="rd-icon rd-icon-size-s rd-icon-color-current">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-chevron-down"></use>
+</svg>
+</rd-icon><!-- end ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button><!-- end ngIf: !$ctrl.config.disableCollapse -->
+
+    <!-- ngIf: !$ctrl.shouldHideClearBtn() --><rd-button ng-if="!$ctrl.shouldHideClearBtn()" bk-ctrl="$ctrl.sageClearButtonCtrl" class="bk-sage-clear ng-scope ng-isolate-scope"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="" data-tooltip-position="top" data-tooltip-align="center">
+    <button class="rd-button             rd-button-secondary             rd-button-size-s             rd-button-background-light rd-button-with-icon rd-button-icon-cross" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-cross': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="Clear All">
+        <!-- ngIf: $ctrl.iconCtrl --><rd-icon class="rd-button-icon ng-scope ng-isolate-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}" ng-if="$ctrl.iconCtrl" bk-ctrl="$ctrl.iconCtrl" aria-hidden="true"><svg focusable="false" class="rd-icon rd-icon-size-s rd-icon-color-current">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-cross"></use>
+</svg>
+</rd-icon><!-- end ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button><!-- end ngIf: !$ctrl.shouldHideClearBtn() -->
+
+    <!-- ngIf: !!$ctrl.searchToggler --><bk-enlite-toggler class="bk-sage-enlite-toggler ng-scope ng-isolate-scope" ng-if="!!$ctrl.searchToggler" bk-ctrl="$ctrl.searchToggler"><div class="bk-enlite-toggler">
+    <bk-toggle-switch class="toggle-switch-container ng-isolate-scope" bk-ctrl="$ctrl.toggleSwitch" uib-popover-template="'enlite-explainer.html'" popover-class="enlite-input-popover" popover-is-open="$ctrl.showTip" popover-placement="auto bottom-right" popover-trigger="'none'"><div class="bk-toggle-switch" ng-class="{'active': $ctrl.isActive,
+                'disable': $ctrl.isDisabled}" ng-click="$ctrl.toggle()" ng-keydown="$ctrl.toggleOnEnterOrSpace($event)" aria-label="SearchIQ">
+    <!-- ngIf: ::$ctrl.title --><span ng-if="::$ctrl.title" class="bk-toggle-switch-title ng-binding ng-scope"> SearchIQ
+    </span><!-- end ngIf: ::$ctrl.title -->
+
+    <!-- This checkbox has to be before 'bk-toggle-switch-background' -->
+    <input type="checkbox" class="bk-toggle-checkbox" aria-label="SearchIQ" role="switch" aria-checked="false">
+    <div class="bk-toggle-switch-background">
+        <div class="bk-toggle-switch-marker"></div>
+    </div>
+</div></bk-toggle-switch>
+    <span class="bk-beta-tag ng-binding">
+            BETA
+    </span>
+</div>
+
+<script type="text/ng-template" id="enlite-explainer.html">
+    <div class="enlite-input-tooltip">
+        <div class="enlite-tooltip-title">
+            {{ ::strings.callouts.toggleToSearchIq.title }}
+        </div>
+        <div class="bk-horizontal-flex-content-sized">
+            <rd-button class="bk-confirm-button bk-ctrl="$ctrl.tryEnliteBtnCtrl"></rd-button>
+            <bk-button button-class="bk-confirm-button bk-blue-button"
+                       button-text="{{ ::strings.callouts.toggleToSearchIq.negativeButton }}"
+                       ng-click="$ctrl.hideTip()">
+            </bk-button>
+        </div>
+        <div class="enlite-input-tooltip-subtext"
+             ng-bind-html="::$ctrl.tipHtml">
+        </div>
+    </div>
+</script></bk-enlite-toggler><!-- end ngIf: !!$ctrl.searchToggler -->
+    <!-- ngIf: $ctrl.config.isDelayedSearch -->
+</div></bk-sage><!-- end ngSwitchWhen: -->
+    <!-- ngSwitchWhen: false -->
+</div></bk-sage-bar><!-- end ngIf: !!$ctrl.sageBarComponent -->
+                <!-- ngIf: $ctrl.getIsSearchTipVisible() -->
+            </div>
+            <!-- ngIf: $ctrl.showSageAssistant() --><bk-sage-assistant ng-if="$ctrl.showSageAssistant()" class="bk-search-dr-helper ng-scope ng-isolate-scope" bk-ctrl="$ctrl.sageAssistantComponent"><div class="bk-search-assistant empty" ng-class="{'empty': $ctrl.assistantItems.length < 1}">
+    <!-- ngIf: $ctrl.assistantItems.length > 0 -->
+    <!-- ngIf: $ctrl.assistantItems.length > 1 -->
+     <!-- ngIf: $ctrl.assistantItems.length > 1 -->
+</div></bk-sage-assistant><!-- end ngIf: $ctrl.showSageAssistant() -->
+            <div class="bk-answer" ng-switch="$ctrl.viewerState">
+                <!-- ngSwitchWhen: 0 -->
+                <!-- ngSwitchWhen: 2 --><bk-answer-content ng-switch-when="2" class="bk-answer-content-container ng-scope ng-isolate-scope" bk-ctrl="$ctrl.answerContentComponent"><div class="bk-answer-content">
+
+    <!-- ngIf: !!$ctrl.answerEditPanel --><bk-answer-edit-panel ng-if="!!$ctrl.answerEditPanel" class="bk-answer-edit-panel-container ng-scope ng-isolate-scope" bk-ctrl="$ctrl.answerEditPanel"><div class="bk-answer-edit-panel" ng-class="{focus: $ctrl.refinements.hasAmbiguities}">
+    <!-- ngIf: $ctrl.answerModel --><div class="bk-answer-edit-panel-body ng-scope" ng-if="$ctrl.answerModel" ng-show="$ctrl.openPanel !== $ctrl.AnswerEditPanel.NONE">
+
+        <!-- ngIf: $ctrl.isCustomREnabled && $ctrl.openPanel === $ctrl.AnswerEditPanel.CUSTOM_R_EDITOR -->
+        <!-- ngLazyShow: $ctrl.showChartVizEditor() -->
+        <bk-table-editor class="bk-table-editor-container ng-isolate-scope ng-hide" ng-show="$ctrl.showTableVizEditor()" bk-ctrl="$ctrl.tableEditor"><div class="bk-table-editor-container-inner">
+    <bk-answer-edit-panel-header bk-ctrl="$ctrl.headerCtrl" class="ng-isolate-scope"><div class="bk-answer-edit-panel-title" ng-class="{'bk-answer-edit-panel-title-border-hidden': $ctrl.config.hideBottomBorder}">
+    <!-- ngIf: $ctrl.backBtnCtrl -->
+    <div class="text-container">
+        <div class="title-text ng-binding"></div>
+        <!-- ngIf: $ctrl.config.description -->
+    </div>
+    <rd-button bk-ctrl="$ctrl.closeBtnCtrl" class="bk-close-selector ng-isolate-scope"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="" data-tooltip-position="" data-tooltip-align="">
+    <button class="rd-button
+            rd-button-
+            rd-button-size-
+            rd-button-background-" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}">
+        <!-- ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button>
+</div></bk-answer-edit-panel-header>
+    <!-- ngIf: $ctrl.showTabControl() -->
+    <!-- ngIf: !!$ctrl.columnIdToEdit -->
+</div></bk-table-editor>
+        <bk-chart-type-selector-panel class="bk-answer-viz-type-selector ng-isolate-scope" ng-show="$ctrl.openPanel === $ctrl.AnswerEditPanel.CHART_SELECTOR" bk-ctrl="$ctrl.chartTypeSelectorPanelComponent"><div class="bk-viz-selector-container">
+    <bk-answer-edit-panel-header class="bk-viz-selector-header ng-isolate-scope" bk-ctrl="$ctrl.headerCtrl"><div class="bk-answer-edit-panel-title" ng-class="{'bk-answer-edit-panel-title-border-hidden': $ctrl.config.hideBottomBorder}">
+    <!-- ngIf: $ctrl.backBtnCtrl -->
+    <div class="text-container">
+        <div class="title-text ng-binding"><h4 class="typography typography-h4">Chart</h4></div>
+        <!-- ngIf: $ctrl.config.description -->
+    </div>
+    <rd-button bk-ctrl="$ctrl.closeBtnCtrl" class="bk-close-selector ng-isolate-scope"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="" data-tooltip-position="top" data-tooltip-align="center">
+    <button class="rd-button             rd-button-secondary             rd-button-size-s             rd-button-background-light rd-button-with-icon rd-button-icon-cross" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-cross': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="Close">
+        <!-- ngIf: $ctrl.iconCtrl --><rd-icon class="rd-button-icon ng-scope ng-isolate-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}" ng-if="$ctrl.iconCtrl" bk-ctrl="$ctrl.iconCtrl" aria-hidden="true"><svg focusable="false" class="rd-icon rd-icon-size-s rd-icon-color-current">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-cross"></use>
+</svg>
+</rd-icon><!-- end ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button>
+</div></bk-answer-edit-panel-header>
+    <div class="bk-viz-selector os-host os-theme-dark os-host-resize-disabled os-host-scrollbar-horizontal-hidden os-host-overflow os-host-overflow-y os-host-transition"><div class="os-resize-observer-host"><div class="os-resize-observer observed" style="left: 0px; right: auto;"></div></div><div class="os-size-auto-observer" style="height: calc(100% + 1px); float: left;"><div class="os-resize-observer observed"></div></div><div class="os-content-glue" style="width: 263px; margin: 0px; height: 456px;"></div><div class="os-padding"><div class="os-viewport os-viewport-native-scrollbars-invisible" style="overflow-y: scroll; right: 0px;"><div class="os-content" style="padding: 0px; height: 100%; width: 100%;">
+        <bk-chart-type-selector-v2 class="bk-viz-selector-inner ng-isolate-scope" bk-ctrl="$ctrl.chartTypeSelectorComponent"><div class="bk-chart-type-selector">
+    <!-- ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="COLUMN" class="bk-viz-type-selector ng-scope" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 1 attribute and 1 measure." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-column.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-column.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Column</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="STACKED_COLUMN" class="bk-viz-type-selector ng-scope" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 2 attributes and 1 measure." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-stacked-column.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-stacked-column.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Stacked Column</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="BAR" class="bk-viz-type-selector ng-scope" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 1 attribute and 1 measure." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-bar.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-bar.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Bar</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="STACKED_BAR" class="bk-viz-type-selector ng-scope" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 2 attributes and 1 measure." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-stacked-bar.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-stacked-bar.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Stacked Bar</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="LINE" class="bk-viz-type-selector ng-scope bk-viz-type-selected" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 1 attribute and 1 measure." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-line.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-line.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Line</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="PIE" class="bk-viz-type-selector ng-scope" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 1 attribute and 1 measure." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-pie.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-pie.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Pie</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="AREA" class="bk-viz-type-selector ng-scope" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 1 attribute and 1 measure." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-area.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-area.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Area</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="STACKED_AREA" class="bk-viz-type-selector ng-scope" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 2 attributes and 1 measure." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-stacked-area.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-stacked-area.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Stacked Area</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="SCATTER" class="bk-viz-type-selector ng-scope" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 1 attribute and 1 measure." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-scatter.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-scatter.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Scatter</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="BUBBLE" class="bk-viz-type-selector ng-scope bk-disabled-chart-type-option" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 1 attribute and 2 measures." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-bubble.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-bubble.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Bubble</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="PARETO" class="bk-viz-type-selector ng-scope" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 1 attribute and 1 measure." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-pareto.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-pareto.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Pareto</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="WATERFALL" class="bk-viz-type-selector ng-scope" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 1 attribute and 1 measure." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-waterfall.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-waterfall.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Waterfall</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="TREEMAP" class="bk-viz-type-selector ng-scope bk-disabled-chart-type-option" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 1 attribute and 2 measures " ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-treemap.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-treemap.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Treemap</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="HEATMAP" class="bk-viz-type-selector ng-scope" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 2 attributes and 1 measure" ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-heatmap.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-heatmap.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Heatmap</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="LINE_COLUMN" class="bk-viz-type-selector ng-scope bk-disabled-chart-type-option" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 1 attribute and 2 measures." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-line-column.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-line-column.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Line Column</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="LINE_STACKED_COLUMN" class="bk-viz-type-selector ng-scope bk-disabled-chart-type-option" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 1 attributes and 2 measures." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-line-stacked-column.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-line-stacked-column.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Line Stacked Column</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="FUNNEL" class="bk-viz-type-selector ng-scope" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 1 attribute and 1 measure." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-funnel.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-funnel.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Funnel</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="GEO_AREA" class="bk-viz-type-selector ng-scope bk-disabled-chart-type-option" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs 1 Geographical column of granularity higher than Zip Code." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-geo-area.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-geo-area.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Geo Area</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="GEO_BUBBLE" class="bk-viz-type-selector ng-scope bk-disabled-chart-type-option" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs 1 Geographical column or a pair of latitude and longitude columns." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-geo-bubble.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-geo-bubble.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Geo Bubble</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="GEO_HEATMAP" class="bk-viz-type-selector ng-scope bk-disabled-chart-type-option" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs 1 Geographical column or a pair of latitude and longitude columns." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-geo-heatmap.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-geo-heatmap.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Geo Heatmap</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="PIVOT_TABLE" class="bk-viz-type-selector ng-scope" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 1 attribute and 1 measure, variance and standard deviation are not allowed." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-pivot-table.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-pivot-table.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Pivot Table</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="SANKEY" class="bk-viz-type-selector ng-scope bk-disabled-chart-type-option" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 2 attributes and 1 measure" ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-sankey.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-sankey.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Sankey</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="SPIDER_WEB" class="bk-viz-type-selector ng-scope" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 1 attribute and 1 measure." ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-spider-web.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-spider-web.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Radar</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() --><div ng-repeat="chartType in $ctrl.getChartTypes()" chart-type="CANDLESTICK" class="bk-viz-type-selector ng-scope bk-disabled-chart-type-option" ng-class="{'bk-viz-type-selected': $ctrl.isCurrentType(chartType),
+         'bk-disabled-chart-type-option': !$ctrl.isVizTypeSupported(chartType)}" data-tooltip-content="Your search needs at least 1 attribute and 4 measures" ng-click="$ctrl.onVizTypeSelection(chartType)">
+        <div class="bk-viz-selector-icon">
+            <img alt="" aria-labelledby="viz-selector-title" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-candlestick.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-candlestick.svg">
+        </div>
+        <span id="viz-selector-title" class="bk-viz-selector-title ng-binding">
+                <div class="typography typography-footnote">Candlestick</div>
+        </span>
+    </div><!-- end ngRepeat: chartType in $ctrl.getChartTypes() -->
+</div></bk-chart-type-selector-v2>
+    </div></div></div><div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden"><div class="os-scrollbar-track os-scrollbar-track-off"><div class="os-scrollbar-handle" style="transform: translate(0px, 0px); width: 100%;"></div></div></div><div class="os-scrollbar os-scrollbar-vertical os-scrollbar-auto-hidden"><div class="os-scrollbar-track os-scrollbar-track-off"><div class="os-scrollbar-handle" style="transform: translate(0px, 0px); height: 61.4247%;"></div></div></div><div class="os-scrollbar-corner"></div></div>
+    <!-- ngIf: $ctrl.chartLockToggler --><bk-toggle-switch class="bk-chart-lock-container ng-scope ng-isolate-scope" ng-if="$ctrl.chartLockToggler" bk-ctrl="$ctrl.chartLockToggler"><div class="bk-toggle-switch" ng-class="{'active': $ctrl.isActive,
+                'disable': $ctrl.isDisabled}" ng-click="$ctrl.toggle()" ng-keydown="$ctrl.toggleOnEnterOrSpace($event)" aria-label="Automatically select my chart">
+    <!-- ngIf: ::$ctrl.title --><span ng-if="::$ctrl.title" class="bk-toggle-switch-title ng-binding ng-scope"> Automatically select my chart
+    </span><!-- end ngIf: ::$ctrl.title -->
+
+    <!-- This checkbox has to be before 'bk-toggle-switch-background' -->
+    <input type="checkbox" class="bk-toggle-checkbox" aria-label="Automatically select my chart" role="switch" aria-checked="false">
+    <div class="bk-toggle-switch-background">
+        <div class="bk-toggle-switch-marker"></div>
+    </div>
+</div></bk-toggle-switch><!-- end ngIf: $ctrl.chartLockToggler -->
+</div></bk-chart-type-selector-panel>
+        <bk-answer-info-card class="bk-info-card-container ng-isolate-scope ng-hide" ng-show="$ctrl.openPanel === $ctrl.AnswerEditPanel.INFO_CARD" bk-ctrl="$ctrl.answerInfoCardComponent"><bk-answer-edit-panel-header bk-ctrl="$ctrl.headerCtrl" class="ng-isolate-scope"><div class="bk-answer-edit-panel-title" ng-class="{'bk-answer-edit-panel-title-border-hidden': $ctrl.config.hideBottomBorder}">
+    <!-- ngIf: $ctrl.backBtnCtrl -->
+    <div class="text-container">
+        <div class="title-text ng-binding">Query details</div>
+        <!-- ngIf: $ctrl.config.description -->
+    </div>
+    <rd-button bk-ctrl="$ctrl.closeBtnCtrl" class="bk-close-selector ng-isolate-scope"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="" data-tooltip-position="top" data-tooltip-align="center">
+    <button class="rd-button             rd-button-secondary             rd-button-size-s             rd-button-background-light rd-button-with-icon rd-button-icon-cross" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-cross': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="Close">
+        <!-- ngIf: $ctrl.iconCtrl --><rd-icon class="rd-button-icon ng-scope ng-isolate-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}" ng-if="$ctrl.iconCtrl" bk-ctrl="$ctrl.iconCtrl" aria-hidden="true"><svg focusable="false" class="rd-icon rd-icon-size-s rd-icon-color-current">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-cross"></use>
+</svg>
+</rd-icon><!-- end ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button>
+</div></bk-answer-edit-panel-header>
+<div class="bk-info-card scrollable-editor-panel">
+    <div class="bk-info-card-body">
+        <blink-natural-query answer-model="$ctrl.answerModel" class="ng-isolate-scope"><div class="bk-natural-query-container" ng-switch="pendingNaturalQueryCall">
+    <!-- ngSwitchWhen: false --><div class="bk-natural-query ng-scope" ng-switch-when="false">
+        <!-- ngRepeat: entity in queryTemplate --><div ng-repeat="entity in queryTemplate" class="ng-scope">
+            <div ng-switch="" on="entity">
+                <!-- ngSwitchWhen: MEASURE_GROUP --><div ng-switch-when="MEASURE_GROUP" class="ng-scope">
+                    <div ng-switch="" on="queryType">
+                        <!-- ngSwitchWhen: aggregated --><div ng-switch-when="aggregated" class="ng-scope">
+                            <div class="bk-natural-query-item ng-binding">
+Computed<!-- ngInclude: template('aggregate-clause') --><span ng-include="template('aggregate-clause')" class="ng-scope"><div class="bk-clause-template ng-scope">
+    <!-- ngRepeat: (aggregation, columns) in outputColumnValues --><span ng-repeat="(aggregation, columns) in outputColumnValues" class="ng-scope">
+        <!-- ngRepeat: column in columns --><span ng-repeat="column in columns" class="ng-scope">
+            <div class="bk-clause-template-content-container">
+                <span class="bk-clause-icon">
+                    <div class="svg-icon-block svg-icon-info-block svg-icon-block-s rd-icon-measure-s" ng-bind-html="getSvgIconHTML()" size="s" icon="rd-icon-measure-s" type="info"><svg class="svg-icon svg-icon-info"><use xlink:href="node_modules/@thoughtspot/radiant/widgets/resources/img/svg-icons-sprite/svg-icons.svg#rd-icon-measure-s"></use></svg></div>
+                </span>
+                <div class="bk-clause-content">
+                    <div class="bk-clause-labels">
+                        <span class="bk-output-column-name ng-binding">user guid</span>
+                    </div>
+                    <div class="bk-output-column-lineage ng-binding">PM - Customer Warehouse</div>
+                </div>
+            </div>
+        </span><!-- end ngRepeat: column in columns -->
+    </span><!-- end ngRepeat: (aggregation, columns) in outputColumnValues -->
+</div></span>
+                            </div>
+                            <div class="bk-natural-query-item" ng-switch="" on="query.groupingColumns.length > 0">
+                                <!-- ngSwitchWhen: true --><div ng-switch-when="true" class="ng-scope">
+                                    <span class="ng-binding">for each</span>
+                                <span ng-switch="" on="query.groupingColumns.length > 1">
+                                    <!-- ngSwitchWhen: true --><span ng-switch-when="true" class="ng-binding ng-scope"> combination of</span><!-- end ngSwitchWhen: -->
+                                </span>
+                                    <!-- ngInclude: template('grouping-clause') --><span ng-include="template('grouping-clause')" class="ng-scope"><div class="bk-clause-template ng-scope">
+    <!-- ngRepeat: groupingColumn in query.groupingColumns --><span ng-repeat="groupingColumn in query.groupingColumns" class="ng-scope">
+        <div class="bk-clause-template-content-container">
+            <div ng-switch="groupingColumn.effectiveDataType">
+                <!-- ngSwitchWhen: DATE --><span ng-switch-when="DATE" class="bk-clause-icon ng-scope">
+                    <div class="svg-icon-block svg-icon-info-block svg-icon-block-s rd-icon-date-column-s" ng-bind-html="getSvgIconHTML()" size="s" icon="rd-icon-date-column-s" type="info"><svg class="svg-icon svg-icon-info"><use xlink:href="node_modules/@thoughtspot/radiant/widgets/resources/img/svg-icons-sprite/svg-icons.svg#rd-icon-date-column-s"></use></svg></div>
+                </span><!-- end ngSwitchWhen: -->
+                <!-- ngSwitchDefault: -->
+            </div>
+            <div class="bk-clause-content">
+                <div class="bk-clause-labels">
+                    <span class="bk-output-column-name ng-binding">week(engaged users date,fiscal)</span>
+                </div>
+                <div class="bk-output-column-lineage ng-binding">PM - Customer Warehouse</div>
+            </div>
+        </div>
+    </span><!-- end ngRepeat: groupingColumn in query.groupingColumns --><span ng-repeat="groupingColumn in query.groupingColumns" class="ng-scope">
+        <div class="bk-clause-template-content-container">
+            <div ng-switch="groupingColumn.effectiveDataType">
+                <!-- ngSwitchWhen: DATE -->
+                <!-- ngSwitchDefault: --><span ng-switch-default="" class="bk-clause-icon ng-scope">
+                    <div class="svg-icon-block svg-icon-info-block svg-icon-block-s rd-icon-attribute-s" ng-bind-html="getSvgIconHTML()" size="s" icon="rd-icon-attribute-s" type="info"><svg class="svg-icon svg-icon-info"><use xlink:href="node_modules/@thoughtspot/radiant/widgets/resources/img/svg-icons-sprite/svg-icons.svg#rd-icon-attribute-s"></use></svg></div>
+                </span><!-- end ngSwitchWhen: -->
+            </div>
+            <div class="bk-clause-content">
+                <div class="bk-clause-labels">
+                    <span class="bk-output-column-name ng-binding">engaged users type</span>
+                </div>
+                <div class="bk-output-column-lineage ng-binding">PM - Customer Warehouse</div>
+            </div>
+        </div>
+    </span><!-- end ngRepeat: groupingColumn in query.groupingColumns -->
+</div></span>
+                                </div><!-- end ngSwitchWhen: -->
+                            </div>
+                        </div><!-- end ngSwitchWhen: -->
+                        <!-- ngSwitchWhen: list -->
+                        <!-- ngSwitchWhen: worksheetList -->
+                    </div>
+                </div><!-- end ngSwitchWhen: -->
+                <!-- ngSwitchWhen: FILTER -->
+                <!-- ngSwitchWhen: SORT -->
+                <!-- ngSwitchWhen: TOP -->
+                <!-- ngSwitchWhen: GROWTH -->
+                <!-- ngSwitchWhen: JOIN -->
+            </div>
+        </div><!-- end ngRepeat: entity in queryTemplate --><div ng-repeat="entity in queryTemplate" class="ng-scope">
+            <div ng-switch="" on="entity">
+                <!-- ngSwitchWhen: MEASURE_GROUP -->
+                <!-- ngSwitchWhen: FILTER --><div ng-switch-when="FILTER" class="ng-scope">
+                    <div class="bk-natural-query-item" ng-switch="" on="query.userFilters.length > 0">
+                        <!-- ngSwitchWhen: true --><div ng-switch-when="true" class="ng-binding ng-scope">
+                            filtered on
+                            <!-- ngInclude: template('filter-clause') --><span ng-include="template('filter-clause')" class="ng-scope"><div class="bk-clause-template ng-scope">
+    <!-- ngRepeat: (type, userFilters) in userFiltersValues --><span ng-repeat="(type, userFilters) in userFiltersValues" class="ng-scope">
+
+
+	    <!-- ngRepeat: (columnId, colData) in userFilters --><span ng-repeat="(columnId, colData) in userFilters" class="ng-scope">
+            <div class="bk-clause-template-content-container">
+                <span class="bk-clause-icon">
+                    <div class="svg-icon-block svg-icon-info-block svg-icon-block-s rd-icon-filter-s" ng-bind-html="getSvgIconHTML()" size="s" icon="rd-icon-filter-s" type="info"><svg class="svg-icon svg-icon-info"><use xlink:href="node_modules/@thoughtspot/radiant/widgets/resources/img/svg-icons-sprite/svg-icons.svg#rd-icon-filter-s"></use></svg></div>
+                </span>
+                <div class="bk-clause-content">
+                    <div class="bk-clause-labels">
+                        <span class="bk-aggr-label ng-binding"></span>
+                        <span class="bk-output-column-name">
+                            <span class="ng-binding">
+                                Engaged Users Date
+                            </span>
+                            <!-- ngRepeat: (i, operatorAndValues) in colData.opAndVal --><span ng-repeat="(i, operatorAndValues) in colData.opAndVal" class="ng-scope">
+                                <span class="ng-binding"></span>
+                                <span class="ng-binding">
+                                    not before
+                                    <!-- ngRepeat: (j, value) in operatorAndValues.effectiveValues --><span ng-repeat="(j, value) in operatorAndValues.effectiveValues" class="ng-binding ng-scope">
+
+                                        <span class="ng-binding">
+                                            08/06/FY 2019
+                                        </span>
+                                    </span><!-- end ngRepeat: (j, value) in operatorAndValues.effectiveValues -->
+                                </span>
+                            </span><!-- end ngRepeat: (i, operatorAndValues) in colData.opAndVal -->
+                        </span>
+                    </div>
+                    <div class="bk-output-column-lineage ng-binding">PM - Customer Warehouse</div>
+                </div>
+            </div>
+        </span><!-- end ngRepeat: (columnId, colData) in userFilters -->
+    </span><!-- end ngRepeat: (type, userFilters) in userFiltersValues -->
+</div></span>
+                        </div><!-- end ngSwitchWhen: -->
+                    </div>
+                </div><!-- end ngSwitchWhen: -->
+                <!-- ngSwitchWhen: SORT -->
+                <!-- ngSwitchWhen: TOP -->
+                <!-- ngSwitchWhen: GROWTH -->
+                <!-- ngSwitchWhen: JOIN -->
+            </div>
+        </div><!-- end ngRepeat: entity in queryTemplate --><div ng-repeat="entity in queryTemplate" class="ng-scope">
+            <div ng-switch="" on="entity">
+                <!-- ngSwitchWhen: MEASURE_GROUP -->
+                <!-- ngSwitchWhen: FILTER -->
+                <!-- ngSwitchWhen: SORT --><div ng-switch-when="SORT" class="ng-scope">
+                    <div class="bk-natural-query-item" ng-switch="" on="query.sortColumns.length > 0">
+                        <!-- ngSwitchWhen: true -->
+                    </div>
+                </div><!-- end ngSwitchWhen: -->
+                <!-- ngSwitchWhen: TOP -->
+                <!-- ngSwitchWhen: GROWTH -->
+                <!-- ngSwitchWhen: JOIN -->
+            </div>
+        </div><!-- end ngRepeat: entity in queryTemplate --><div ng-repeat="entity in queryTemplate" class="ng-scope">
+            <div ng-switch="" on="entity">
+                <!-- ngSwitchWhen: MEASURE_GROUP -->
+                <!-- ngSwitchWhen: FILTER -->
+                <!-- ngSwitchWhen: SORT -->
+                <!-- ngSwitchWhen: TOP -->
+                <!-- ngSwitchWhen: GROWTH -->
+                <!-- ngSwitchWhen: JOIN --><div ng-switch-when="JOIN" class="ng-scope">
+                    <div class="bk-natural-query-item" ng-switch="" on="query.joinRepresentations.length > 0">
+                        <!-- ngSwitchWhen: true -->
+                    </div>
+                </div><!-- end ngSwitchWhen: -->
+            </div>
+        </div><!-- end ngRepeat: entity in queryTemplate --><div ng-repeat="entity in queryTemplate" class="ng-scope">
+            <div ng-switch="" on="entity">
+                <!-- ngSwitchWhen: MEASURE_GROUP -->
+                <!-- ngSwitchWhen: FILTER -->
+                <!-- ngSwitchWhen: SORT -->
+                <!-- ngSwitchWhen: TOP --><div ng-switch-when="TOP" class="ng-scope">
+                    <!-- ngIf: query.topRepresentation.topCount > 0 -->
+                </div><!-- end ngSwitchWhen: -->
+                <!-- ngSwitchWhen: GROWTH -->
+                <!-- ngSwitchWhen: JOIN -->
+            </div>
+        </div><!-- end ngRepeat: entity in queryTemplate --><div ng-repeat="entity in queryTemplate" class="ng-scope">
+            <div ng-switch="" on="entity">
+                <!-- ngSwitchWhen: MEASURE_GROUP -->
+                <!-- ngSwitchWhen: FILTER -->
+                <!-- ngSwitchWhen: SORT -->
+                <!-- ngSwitchWhen: TOP -->
+                <!-- ngSwitchWhen: GROWTH --><div ng-switch-when="GROWTH" class="ng-scope">
+                    <!-- ngIf: !!query.growthRepresentation -->
+                </div><!-- end ngSwitchWhen: -->
+                <!-- ngSwitchWhen: JOIN -->
+            </div>
+        </div><!-- end ngRepeat: entity in queryTemplate --><div ng-repeat="entity in queryTemplate" class="ng-scope">
+            <div ng-switch="" on="entity">
+                <!-- ngSwitchWhen: MEASURE_GROUP -->
+                <!-- ngSwitchWhen: FILTER -->
+                <!-- ngSwitchWhen: SORT -->
+                <!-- ngSwitchWhen: TOP -->
+                <!-- ngSwitchWhen: GROWTH -->
+                <!-- ngSwitchWhen: JOIN -->
+            </div>
+        </div><!-- end ngRepeat: entity in queryTemplate -->
+    </div><!-- end ngSwitchWhen: -->
+    <div class="bk-natural-query-cta-button">
+        <rd-button bk-ctrl="showQueryViewerBtnCtrl" class="bk-query-viewer-button ng-isolate-scope"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="" data-tooltip-position="top" data-tooltip-align="center">
+    <button class="rd-button             rd-button-secondary             rd-button-size-m             rd-button-background-light rd-button-with-text" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="Query visualizer">
+        <!-- ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text --><span ng-if="$ctrl.text" class="rd-button-text ng-binding ng-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}">Query visualizer</span><!-- end ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button>
+    </div>
+    <div class="bk-natural-query-cta-button">
+        <rd-button bk-ctrl="showQuerySQLBtnCtrl" class="bk-query-sql-button ng-isolate-scope"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="" data-tooltip-position="top" data-tooltip-align="center">
+    <button class="rd-button             rd-button-secondary             rd-button-size-m             rd-button-background-light rd-button-with-text" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="Query SQL">
+        <!-- ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text --><span ng-if="$ctrl.text" class="rd-button-text ng-binding ng-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}">Query SQL</span><!-- end ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button>
+    </div>
+</div></blink-natural-query>
+    </div>
+</div></bk-answer-info-card>
+    </div><!-- end ngIf: $ctrl.answerModel -->
+    <div class="bk-answer-edit-buttons vertical">
+        <rd-button bk-ctrl="$ctrl.chartSelectorButtonCtrl" class="bk-toggle-chart-selector-display ng-isolate-scope"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="Change visualization" data-tooltip-position="top" data-tooltip-align="right">
+    <button class="rd-button             rd-button-secondary             rd-button-size-m             rd-button-background-light rd-button-with-icon rd-button-icon-chart rd-button-selected" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-chart': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="Change visualization">
+        <!-- ngIf: $ctrl.iconCtrl --><rd-icon class="rd-button-icon ng-scope ng-isolate-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}" ng-if="$ctrl.iconCtrl" bk-ctrl="$ctrl.iconCtrl" aria-hidden="true"><svg focusable="false" class="rd-icon rd-icon-size-l rd-icon-color-current">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-chart"></use>
+</svg>
+</rd-icon><!-- end ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button>
+        <rd-button bk-ctrl="$ctrl.vizEditorButtonCtrl" class="bk-toggle-viz-editor-display ng-isolate-scope"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="Edit chart configuration" data-tooltip-position="top" data-tooltip-align="right">
+    <button class="rd-button             rd-button-secondary             rd-button-size-m             rd-button-background-light rd-button-with-icon rd-button-icon-cog" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-cog': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="Edit chart configuration">
+        <!-- ngIf: $ctrl.iconCtrl --><rd-icon class="rd-button-icon ng-scope ng-isolate-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}" ng-if="$ctrl.iconCtrl" bk-ctrl="$ctrl.iconCtrl" aria-hidden="true"><svg focusable="false" class="rd-icon rd-icon-size-l rd-icon-color-current">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-cog"></use>
+</svg>
+</rd-icon><!-- end ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button>
+        <rd-button bk-ctrl="$ctrl.chartInfoCardButtonCtrl" class="bk-toggle-info-card-display ng-isolate-scope"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="Query details" data-tooltip-position="top" data-tooltip-align="right">
+    <button class="rd-button             rd-button-secondary             rd-button-size-m             rd-button-background-light rd-button-with-icon rd-button-icon-information" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-information': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="Query details">
+        <!-- ngIf: $ctrl.iconCtrl --><rd-icon class="rd-button-icon ng-scope ng-isolate-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}" ng-if="$ctrl.iconCtrl" bk-ctrl="$ctrl.iconCtrl" aria-hidden="true"><svg focusable="false" class="rd-icon rd-icon-size-l rd-icon-color-current">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-information"></use>
+</svg>
+</rd-icon><!-- end ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button>
+        <!-- ngIf: $ctrl.isCustomREnabled --><rd-button bk-ctrl="$ctrl.chartCustomRButtonCtrl" ng-if="$ctrl.isCustomREnabled" class="bk-custom-r-selector-container bk-toggle-custom-r-selector-display ng-scope ng-isolate-scope"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="View R analysis" data-tooltip-position="top" data-tooltip-align="right">
+    <button class="rd-button             rd-button-secondary             rd-button-size-m             rd-button-background-light rd-button-with-icon rd-button-icon-r-analysis" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-r-analysis': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="View R analysis">
+        <!-- ngIf: $ctrl.iconCtrl --><rd-icon class="rd-button-icon ng-scope ng-isolate-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}" ng-if="$ctrl.iconCtrl" bk-ctrl="$ctrl.iconCtrl" aria-hidden="true"><svg focusable="false" class="rd-icon rd-icon-size-l rd-icon-color-current">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-r-analysis"></use>
+</svg>
+</rd-icon><!-- end ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button><!-- end ngIf: $ctrl.isCustomREnabled -->
+    </div>
+</div></bk-answer-edit-panel><!-- end ngIf: !!$ctrl.answerEditPanel -->
+    <div class="bk-answer-content-viewer-outer">
+        <div class="bk-answer-content-viewer" ng-class="{ defocus: $ctrl.answerEditPanel.hasAmbiguities()}">
+            <div class="bk-title-panel">
+                <!-- ngIf: $ctrl.showRequestAccessBtn() --><rd-button class="request-access-button ng-scope ng-isolate-scope" ng-if="$ctrl.showRequestAccessBtn()" bk-ctrl="$ctrl.requestAccessBtnComponent"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="Share" data-tooltip-position="top" data-tooltip-align="center" aria-describedby="rd-tooltip-container">
+    <button class="rd-button             rd-button-secondary             rd-button-size-m             rd-button-background-light rd-button-with-icon rd-button-icon-lock" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-lock': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="Share">
+        <!-- ngIf: $ctrl.iconCtrl --><rd-icon class="rd-button-icon ng-scope ng-isolate-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}" ng-if="$ctrl.iconCtrl" bk-ctrl="$ctrl.iconCtrl" aria-hidden="true"><svg focusable="false" class="rd-icon rd-icon-size-l rd-icon-color-current">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-lock"></use>
+</svg>
+</rd-icon><!-- end ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button><!-- end ngIf: $ctrl.showRequestAccessBtn() -->
+                <!-- ngIf: $ctrl.answerPageTitle --><div ng-if="$ctrl.answerPageTitle" class="bk-answer-title ng-scope">
+                    <div class="bk-editable ng-isolate-scope ng-not-empty ng-valid bk-readonly bk-full-width" ng-class="{'bk-in-edit-mode': isBeingEdited,
+                'bk-empty-content': !text || !text.trim(),
+                'bk-readonly': isNotEditable(),
+                'bk-external': isExternal(),
+                'bk-full-width': fullSpan,
+                'bk-show-editable': autoShowEditable,
+                'bk-error-input': !!error,
+                'bk-editable-radiant': useRadiantStyle}" ng-mouseenter="mouseEntered()" ng-mouseleave="mouseLeft()" not-editable="!$ctrl.answerPageTitle.isTitleEditingAllowed" fullspan="" placeholder="$ctrl.answerPageTitle.placeholder" ng-model="$ctrl.answerPageTitle.name" description="$ctrl.answerPageTitle.desc" on-change="$ctrl.onAnswerNameDescChange(tableName, tableDescription)">
+    <!-- ngIf: showDescriptionOnDefault && useRadiantStyle -->
+    <div class="bk-description-edit-dropdown" ng-show="!showDescriptionOnDefault || isBeingEdited" ng-class="{'bk-visible': isDescEnabled &amp;&amp; isBeingEdited}">
+        <div role="alert" class="bk-visible bk-error-popup bk-opens-right fr ng-hide" ng-show="!!error">
+            <div class="bk-container ng-binding">
+
+            </div>
+        </div>
+        <input type="text" class="bk-visible bk-editable-input ng-pristine ng-untouched ng-valid ng-not-empty bk-readonly typography typography-h4" ng-show="!showDescriptionOnDefault || isBeingEdited" ng-class="[{'bk-readonly' : isReadOnly || isNotEditable(), 'bk-input-editing': isBeingEdited}]" tabindex="-1" ng-click="contentClicked($event)" spellcheck="false" placeholder="Untitled" aria-label="Engaged, returning, and new users each week" size="46" name="Engaged, returning, and new users each week" blink-on-escape="reset();" blink-on-enter="submit();" ng-change="onTextChange()" ng-model="text" ng-readonly="isReadOnly || isNotEditable()" data-tooltip-content="Engaged, returning, and new users each week" data-tooltip-align="left" aria-invalid="false" readonly="readOnly" value="Engaged, new, and active users each week" />
+        <div class="bk-description-container ng-hide" ng-show="isDescEnabled &amp;&amp; (isBeingEdited)">
+            <textarea class="bk-description-editarea ng-pristine ng-untouched ng-valid ng-empty bk-readonly" ng-class="{'bk-readonly' : isReadOnly || isNotEditable()}" ng-readonly="isReadOnly || isNotEditable()" placeholder="Description" ng-change="onTextChange()" ng-model="description" aria-label="Description" readonly="readOnly">            </textarea>
+            <rd-button bk-ctrl="doneButtonCtrl" class="bk-content-editable-done-button ng-isolate-scope"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="" data-tooltip-position="top" data-tooltip-align="center">
+    <button class="rd-button             rd-button-             rd-button-size-             rd-button-with-text rd-button-primary rd-button-size-m rd-button-background-light" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="Done">
+        <!-- ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text --><span ng-if="$ctrl.text" class="rd-button-text ng-binding ng-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}">Done</span><!-- end ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button>
+        </div>
+    </div>
+</div>
+                </div><!-- end ngIf: $ctrl.answerPageTitle -->
+                <bk-chart-table-switcher class="bk-chart-table-switcher-container ng-isolate-scope" bk-ctrl="$ctrl.chartTableSwitcher"><div class="bk-chart-table-switcher" tabindex="0" ng-click="$ctrl.toggleDisplayMode()" ng-space-or-enter="$ctrl.toggleDisplayMode()" ng-class="{disabled: !$ctrl.canShowChart}">
+    <div class="bk-chart-table-selected-marker chart-mode" ng-class="{
+        'table-mode': $ctrl.isTableMode(),
+        'chart-mode': $ctrl.isChartMode()
+    }"></div>
+    <div class="bk-viz-selector bk-table-type-selector" data-tooltip-content="View table" ng-class="{ 'bk-active': $ctrl.isTableMode() }">
+        <img alt="View table" class="bk-table-type-icon" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-data-table-colored.svg">
+    </div>
+    <div class="bk-viz-selector bk-select-chart-type bk-active" data-tooltip-content="View chart" ng-class="{
+            'disabled': !$ctrl.canShowChart,
+            'bk-active': $ctrl.isChartMode()
+        }">
+        <img alt="View chart" ng-src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-line.svg" src="https://d2if2nytu6z4ml.cloudfront.net/resources/img/svg-icons/charts/rd-icon-line.svg">
+    </div>
+</div></bk-chart-table-switcher>
+                <!-- ngIf: $ctrl.visualizationSnapshotEnabled()
+                                                    && !!$ctrl.vizSubscribeLauncherComponent -->
+                <!-- ngIf: ::$ctrl.shoulShowVisualizationPinner() --><bk-visualization-pinner-launcher class="bk-pin-launcher ng-scope ng-isolate-scope" ng-if="::$ctrl.shoulShowVisualizationPinner()" bk-ctrl="$ctrl.visualizationPinnerComponent"><rd-button bk-ctrl="$ctrl.addToPinboardButtonCtrl" class="bk-add-to-pinboard ng-isolate-scope"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="Pin" data-tooltip-position="top" data-tooltip-align="center">
+    <button class="rd-button             rd-button-secondary             rd-button-size-m             rd-button-background-light rd-button-with-icon rd-button-icon-pin" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-pin': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="Pin">
+        <!-- ngIf: $ctrl.iconCtrl --><rd-icon class="rd-button-icon ng-scope ng-isolate-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}" ng-if="$ctrl.iconCtrl" bk-ctrl="$ctrl.iconCtrl" aria-hidden="true"><svg focusable="false" class="rd-icon rd-icon-size-l rd-icon-color-current">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-pin"></use>
+</svg>
+</rd-icon><!-- end ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button></bk-visualization-pinner-launcher><!-- end ngIf: ::$ctrl.shoulShowVisualizationPinner() -->
+                <!-- ngIf: ::$ctrl.shouldShowA3LauncherIcon() --><bk-a3-launcher-icon class="bk-spotiq-launcher ng-scope ng-isolate-scope" ng-if="::$ctrl.shouldShowA3LauncherIcon()" bk-ctrl="$ctrl.a3LauncherIcon"><rd-button bk-ctrl="$ctrl.a3LauncherButtonCtrl" class="bk-a3-launcher-icon ng-isolate-scope"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="SpotIQ Analysis" data-tooltip-position="top" data-tooltip-align="center">
+    <button class="rd-button             rd-button-secondary             rd-button-size-m             rd-button-background-light rd-button-with-icon rd-button-icon-bulb" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-bulb': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="SpotIQ Analysis">
+        <!-- ngIf: $ctrl.iconCtrl --><rd-icon class="rd-button-icon ng-scope ng-isolate-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}" ng-if="$ctrl.iconCtrl" bk-ctrl="$ctrl.iconCtrl" aria-hidden="true"><svg focusable="false" class="rd-icon rd-icon-size-l rd-icon-color-current">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-bulb"></use>
+</svg>
+</rd-icon><!-- end ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button></bk-a3-launcher-icon><!-- end ngIf: ::$ctrl.shouldShowA3LauncherIcon() -->
+                <!-- ngIf: !!$ctrl.universalSharingButton --><rd-button class="bk-universal-share-button ng-scope ng-isolate-scope" ng-if="!!$ctrl.universalSharingButton" bk-ctrl="$ctrl.universalSharingButton"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="Share" data-tooltip-position="top" data-tooltip-align="center">
+    <button class="rd-button             rd-button-secondary             rd-button-size-m             rd-button-background-light rd-button-with-icon rd-button-icon-share" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-share': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="Share">
+        <!-- ngIf: $ctrl.iconCtrl --><rd-icon class="rd-button-icon ng-scope ng-isolate-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}" ng-if="$ctrl.iconCtrl" bk-ctrl="$ctrl.iconCtrl" aria-hidden="true"><svg focusable="false" class="rd-icon rd-icon-size-l rd-icon-color-current">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-share"></use>
+</svg>
+</rd-icon><!-- end ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button><!-- end ngIf: !!$ctrl.universalSharingButton -->
+                <!-- ngIf: ::$ctrl.shouldShowActionMenu() --><div class="bk-answer-action-menu bk-dropdown-button-wrapper bk-button-wrapper ng-isolate-scope" ng-class="{'show-tip': showTipFn()}" blink-on-escape="closeDropdown()" ng-if="::$ctrl.shouldShowActionMenu()" only-icon="true" menu="$ctrl.actionMenu">
+    <div ng-switch="state.showActionDropdownMenu" class="bk-button-switch">
+        <!-- ngSwitchWhen: true --><div ng-switch-when="true" ng-class="{ active: state.showMenu }" class="bk-action-button-container ng-scope" uib-popover-template="'action-dropdown'" popover-class="bk-action-dropdown" popover-placement="auto bottom-right" popover-trigger="'none'" popover-is-open="state.showMenu" ng-click="toggleDropdown()" popover-append-to-body="true">
+             <!-- ngIf: !doTransclusion --><rd-button ng-if="!doTransclusion" class="bk-action-button-dropdown bk-icons-button" bk-ctrl="actionDropdownButtonCtrl"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="More" data-tooltip-position="top" data-tooltip-align="center">
+    <button class="rd-button             rd-button-secondary             rd-button-size-m             rd-button-background-light rd-button-with-icon rd-button-icon-more" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-more': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="More">
+        <!-- ngIf: $ctrl.iconCtrl --><rd-icon class="rd-button-icon ng-scope ng-isolate-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}" ng-if="$ctrl.iconCtrl" bk-ctrl="$ctrl.iconCtrl" aria-hidden="true"><svg focusable="false" class="rd-icon rd-icon-size-l rd-icon-color-current">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-more"></use>
+</svg>
+</rd-icon><!-- end ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button><!-- end ngIf: !doTransclusion -->
+            <!-- ngIf: !!doTransclusion -->
+        </div><!-- end ngSwitchWhen: -->
+        <!-- ngSwitchWhen: false -->
+    </div>
+
+    <script type="text/ng-template" id="action-dropdown">
+        <div blink-overlay="closeDropdown()"
+             ng-click="closeDropdown()"
+             ignore-click-selector="['.bk-dropdown-button-wrapper .active']">
+            <bk-action-menu bk-ctrl="actionMenu"></bk-action-menu>
+        </div>
+    </script>
+</div><!-- end ngIf: ::$ctrl.shouldShowActionMenu() -->
+            </div>
+            <!-- ngIf: !!$ctrl.answerPageFilterPanel.filterPanel --><bk-filter-panel class="bk-answer-page-filter-panel ng-scope ng-isolate-scope" ng-if="!!$ctrl.answerPageFilterPanel.filterPanel" ng-show="$ctrl.answerPageFilterPanel.filterPanel.showPanel()" bk-ctrl="$ctrl.answerPageFilterPanel.filterPanel"><div class="bk-filter-panel" ng-class="{'bk-read-only': $ctrl.isReadOnly,
+                'is-empty': $ctrl.filterList.length <= 0}">
+    <rd-icon class="bk-filter-icon ng-isolate-scope" bk-ctrl="$ctrl.filterIconCtrl"><svg focusable="false" class="rd-icon rd-icon-size-m rd-icon-color-gray">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-funnel"></use>
+</svg>
+</rd-icon>
+    <ul class="bk-filter-list-items">
+        <!-- ngRepeat: filterChipComponent in $ctrl.filterChipComponents --><li ng-repeat="filterChipComponent in $ctrl.filterChipComponents" class="bk-filter-list-item ng-scope">
+            <rd-chip bk-ctrl="::filterChipComponent" class="bk-filter-list-item-chip ng-isolate-scope"><div class="rd-chip-wrapper" ng-class="{'rd-chip-maxwidth': $ctrl.config.hasMaxWidth}">
+    <div class="rd-chip rd-chip-style-filter rd-chip-caret-style-down" ng-class="{
+            'rd-chip-maxwidth': $ctrl.config.hasMaxWidth,
+            'rd-chip-caret-onhover': $ctrl.config.showCaretOnhover
+         }" ng-click="$ctrl.config.onClick()" ng-switch="$ctrl.config.caretType">
+        <!-- ngRepeat: content in $ctrl.config.content --><span ng-repeat="content in $ctrl.config.content" data-tooltip-content="Engaged Users Date" class="rd-chip-text rd-chip-text-style-regular">
+            Engaged Users Date
+        </span><!-- end ngRepeat: content in $ctrl.config.content --><span ng-repeat="content in $ctrl.config.content" data-tooltip-content=">= 08/06/2018" class="rd-chip-text rd-chip-text-style-bold">
+            <span class="typography-highlight">&gt;= 08/06/2018</span>
+        </span><!-- end ngRepeat: content in $ctrl.config.content -->
+        <!-- ngSwitchWhen: down --><rd-icon ng-switch-when="down" class="rd-chip-caret ng-scope ng-isolate-scope" bk-ctrl="$ctrl.caretDownIcon"><svg focusable="false" class="rd-icon rd-icon-size-s rd-icon-color-gray">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-caret-down"></use>
+</svg>
+</rd-icon><!-- end ngSwitchWhen: -->
+        <!-- ngSwitchWhen: right -->
+    </div>
+    <!-- ngIf: $ctrl.config.showCloseButton --><rd-button ng-if="$ctrl.config.showCloseButton" bk-ctrl="::$ctrl.closeButtonComponent" class="rd-chip-close-button ng-scope ng-isolate-scope"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="" data-tooltip-position="top" data-tooltip-align="center">
+    <button class="rd-button             rd-button-secondary             rd-button-size-xs             rd-button-background-dark rd-button-with-icon rd-button-icon-cross" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-cross': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="Close">
+        <!-- ngIf: $ctrl.iconCtrl --><rd-icon class="rd-button-icon ng-scope ng-isolate-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}" ng-if="$ctrl.iconCtrl" bk-ctrl="$ctrl.iconCtrl" aria-hidden="true"><svg focusable="false" class="rd-icon rd-icon-size-xs rd-icon-color-current">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-cross"></use>
+</svg>
+</rd-icon><!-- end ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button><!-- end ngIf: $ctrl.config.showCloseButton -->
+</div>
+</rd-chip>
+        </li><!-- end ngRepeat: filterChipComponent in $ctrl.filterChipComponents -->
+    </ul>
+</div></bk-filter-panel><!-- end ngIf: !!$ctrl.answerPageFilterPanel.filterPanel -->
+            <div class="bk-answer-body bk-answer-body-with-filter-panel" ng-class="{'bk-answer-body-with-filter-panel':
+                                                !!$ctrl.answerPageFilterPanel.filterPanel
+                                                &amp;&amp; $ctrl.answerPageFilterPanel.filterPanel.showPanel()}">
+                <!-- ngIf: !!$ctrl.answerVisualizationViewerComponent --><bk-answer-visualization-viewer class="bk-answer-viz-container ng-scope ng-isolate-scope" ng-if="!!$ctrl.answerVisualizationViewerComponent" bk-ctrl="$ctrl.answerVisualizationViewerComponent" ng-class="{'should-collapse': !!($ctrl.showChartSelector
+                                                || $ctrl.showChartEditor)}"><div class="bk-answer-visualization-viewer">
+    <!-- ngIf: !!$ctrl.alertComponent -->
+    <!-- ngIf: !$ctrl.alertComponent --><div ng-if="!$ctrl.alertComponent" class="bk-answer-visualizations ng-scope bk-all-rendered" ng-class="{'bk-all-rendered': $ctrl.areAllRendered()}">
+
+        <!-- ngIf: $ctrl.highlightVizComponent -->
+        <!-- ngLazyShow: $ctrl.isTableMode() && !$ctrl.isSingleRow -->
+        <!-- ngLazyShow: $ctrl.isChartMode() --><div class="bk-answer-chart-mode-vizs ng-scope" ng-lazy-show="$ctrl.isChartMode()">
+            <!-- ngIf: $ctrl.chartVizComponent --><bk-data-viz class="bk-answer-chart-viz-container ng-scope ng-isolate-scope" ng-if="$ctrl.chartVizComponent" bk-ctrl="$ctrl.chartVizComponent"><div class="bk-data-viz bk-data-viz-state-render" ng-switch="$ctrl.state">
+    <!-- ngIf: !!$ctrl.alertComponent -->
+    <!-- ngSwitchWhen: render --><div ng-switch-when="render" ng-show="!$ctrl.alertComponent" class="bk-data-viz-content ng-scope" tabindex="0">
+        <!-- ngInclude: $ctrl.contentTemplateUrl --><div class="bk-data-viz-content-inner bk-data-viz-chart-container" ng-include="$ctrl.contentTemplateUrl"><div class="bk-viz-chart ng-scope" ng-init="$ctrl.onChartLinking()">
+    <div class="chart-container bk-chart-line bk-vertical-layout" ng-class="$ctrl.getChartTypeCSSClass()">
+        <div class="bk-chart" ng-hide="$ctrl.isChartHidden()" ng-mousedown="$ctrl.chartMouseDown = true" ng-mouseup="$ctrl.chartMouseDown = false" ng-class="{'bk-zoom-mode' : !$ctrl.isInPanMode(),
+                        'bk-pan-mode': $ctrl.isInPanMode() &amp;&amp; $ctrl.isZoomedIn(),
+                        'bk-mouse-down': $ctrl.chartMouseDown }" tabindex="0" chart-type="LINE" data-highcharts-chart="0" role="region" aria-label="Interactive chart. Showing all 318 data points. Use up and down arrows to navigate with most screen readers."><div id="highcharts-information-region-0" role="region" aria-label="Chart screen reader information." style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;"><div>Use regions/landmarks to skip ahead to chart and navigate between data series</div><h3>Showing all 318 data points</h3><h4>Long description.</h4><div>No description available.</div><h4>Structure.</h4><div>Line chart with 3 lines.</div><div>The chart has 1 X axis displaying <div id="d7a70c48-7212-4ac5-855d-903e0a8de2b7" class="bk-axis-label-container">
+                <div class="bk-axis-label bk-cursor bk-horizontal-axis">
+                    <div class="bk-axis-label-control" data-tooltip-content="Name: Weekly Engaged Users Date - Fiscal
+Calendar: fiscal
+Data source: PM - Customer Warehouse
+Updated: 21 hours ago">
+                        <div class="bk-axis-label-title">
+                            <div class="typography typography-footnote">Weekly Engaged Users Date - Fiscal</div>
+                        </div>
+                        <div class="bk-icon-arrow-down"></div>
+                    </div>
+                    <div class="bk-axis-sort-icon">
+            <div id="3c63ab6b-4201-4b1d-99d7-00b19ca52846" class="bk-sort-indicator
+            up" data-tooltip-content="Weekly Engaged Users Date - Fiscal"></div></div>
+                </div>
+            </div>.</div><div>The chart has 1 Y axis displaying <div id="c10eeea6-f52b-46fb-9fca-107e412fa9da" class="bk-axis-label-container">
+                <div class="bk-axis-label bk-cursor bk-vertical-axis">
+                    <div class="bk-axis-label-control" data-tooltip-content="Name: Unique Count User GUID
+Aggregation: Unique Count
+Data source: PM - Customer Warehouse
+Updated: 6 hours ago">
+                        <div class="bk-axis-label-title">
+                            <div class="typography typography-footnote">Unique Count User GUID</div>
+                        </div>
+                        <div class="bk-icon-arrow-down"></div>
+                    </div>
+
+                </div>
+            </div>.</div></div><h4 style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;">Chart graphic.</h4><div id="highcharts-hbdp1xy-0" dir="ltr" class="highcharts-container " style="position: relative; overflow: hidden; width: 693px; height: 374px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);" tabindex="0"><svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="693" height="374" viewBox="0 0 693 374"><title id="highcharts-title-0">Showing all 318 data points</title><desc>Created with Highstock 6.1.1</desc><defs><clipPath id="highcharts-hbdp1xy-1"><rect x="0" y="0" width="619" height="298" fill="none"></rect></clipPath><clipPath id="highcharts-hbdp1xy-2"><rect x="0" y="0" width="604" height="693" fill="none"></rect></clipPath><clipPath id="highcharts-hbdp1xy-3"><rect x="604" y="0" width="12" height="693" fill="none"></rect></clipPath><clipPath id="highcharts-hbdp1xy-4"><rect x="0" y="0" width="619" height="298" fill="none"></rect></clipPath><clipPath id="highcharts-hbdp1xy-5"><rect x="0" y="0" width="604" height="693" fill="none"></rect></clipPath><clipPath id="highcharts-hbdp1xy-6"><rect x="604" y="0" width="12" height="693" fill="none"></rect></clipPath><clipPath id="highcharts-hbdp1xy-7"><rect x="0" y="0" width="604" height="693" fill="none"></rect></clipPath><clipPath id="highcharts-hbdp1xy-8"><rect x="604" y="0" width="12" height="693" fill="none"></rect></clipPath><clipPath id="highcharts-hbdp1xy-9"><rect x="0" y="0" width="604" height="693" fill="none"></rect></clipPath><clipPath id="highcharts-hbdp1xy-10"><rect x="604" y="0" width="12" height="693" fill="none"></rect></clipPath><clipPath id="highcharts-hbdp1xy-11"><rect x="0" y="0" width="604" height="693" fill="none"></rect></clipPath><clipPath id="highcharts-hbdp1xy-12"><rect x="604" y="0" width="12" height="693" fill="none"></rect></clipPath><clipPath id="highcharts-hbdp1xy-13"><rect x="0" y="0" width="604" height="693" fill="none"></rect></clipPath><clipPath id="highcharts-hbdp1xy-14"><rect x="604" y="0" width="12" height="693" fill="none"></rect></clipPath></defs><rect fill="none" class="highcharts-background" x="0" y="0" width="693" height="374" rx="0" ry="0"></rect><rect fill="none" class="highcharts-plot-background" x="71" y="15" width="619" height="299"></rect><g class="highcharts-pane-group" data-z-index="0"></g><g class="highcharts-grid highcharts-xaxis-grid " data-z-index="1"><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 79.5 15 L 79.5 314" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 159.5 15 L 159.5 314" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 239.5 15 L 239.5 314" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 319.5 15 L 319.5 314" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 400.5 15 L 400.5 314" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 480.5 15 L 480.5 314" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 560.5 15 L 560.5 314" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 640.5 15 L 640.5 314" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid " data-z-index="1"><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 71 314.5 L 690 314.5" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 71 239.5 L 690 239.5" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 71 165.5 L 690 165.5" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 71 90.5 L 690 90.5" opacity="1"></path><path fill="none" stroke-dasharray="none" data-z-index="1" class="highcharts-grid-line" d="M 71 15.5 L 690 15.5" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" data-z-index="1" x="71" y="15" width="619" height="299"></rect><g class="highcharts-axis highcharts-xaxis " data-z-index="2"><path fill="none" class="highcharts-axis-line" stroke="#e0e0e0" stroke-width="2" data-z-index="7" d="M 71 314 L 690 314"></path></g><g class="highcharts-axis highcharts-yaxis " data-z-index="2"><path fill="none" class="highcharts-axis-line" data-z-index="7" d="M 71 15 L 71 314"></path></g><g class="highcharts-series-group" data-z-index="3"><g data-z-index="0.1" class="highcharts-series highcharts-series-0 highcharts-line-series " transform="translate(71,15) scale(1 1)" clip-path="url(#highcharts-hbdp1xy-4)"><path fill="none" d="M 8.8755781683626 284.349 L 14.601757631822 286.14300000000003 L 20.327937095282 287.0998 L 26.054116558742 288.5051 L 31.780296022202 288.9835 L 37.506475485661 286.7111 L 43.232654949121 286.2028 L 48.958834412581 282.854 L 54.685013876041 281.6879 L 60.4111933395 283.1829 L 66.13737280296 283.452 L 71.86355226642 283.8706 L 77.58973172988 279.6547 L 83.349995594908 279.9836 L 89.076175058367 284.9171 L 94.802354521827 288.5649 L 100.52853398529 281.6879 L 106.25471344875 284.7676 L 111.98089291221 283.3623 L 117.70707237567 285.7543 L 123.43325183913 296.0698 L 129.15943130259 293.2592 L 134.88561076605 284.1696 L 140.61179022951 282.9736 L 146.33796969297 282.9138 L 152.06414915642 280.7012 L 157.79032861988 280.6713 L 163.51650808334 280.5218 L 169.2426875468 280.4022 L 174.96886701026 272.5983 L 180.69504647372 252.2364 L 186.38714153562 258.6649 L 192.11332099907 263.8675 L 197.83950046253 258.5154 L 203.56567992599 256.8709 L 209.29185938945 260.429 L 215.01803885291 265.5419 L 220.74421831637 256.9905 L 226.47039777983 255.8543 L 232.19657724329 264.6449 L 237.92275670675 260.1898 L 243.64893617021 261.027 L 249.37511563367 263.9572 L 255.10129509713 256.2131 L 260.82747456059 252.02710000000002 L 266.55365402405 253.5819 L 272.27983348751 247.36270000000002 L 278.00601295097 255.8842 L 283.73219241443 251.9972 L 289.45837187789 254.2995 L 295.18455134135 247.6617 L 300.91073080481 251.2198 L 306.63691026827 250.6816 L 312.36308973173 252.8045 L 318.08926919519 251.69819999999999 L 323.81544865865 244.9408 L 329.54162812211 239.2299 L 335.26780758557 220.87130000000002 L 340.99398704903 214.981 L 346.72016651249 211.7817 L 352.44634597595 227.12040000000002 L 358.17252543941 220.6919 L 363.89870490287 226.5523 L 369.62488436633 228.37619999999998 L 375.35106382979 239.8279 L 381.11132769482 232.0539 L 386.83750715827 242.8478 L 392.56368662173 242.5787 L 398.28986608519 262.76120000000003 L 404.01604554865 248.61849999999998 L 409.74222501211 249.8444 L 415.46840447557 246.4956 L 421.19458393903 287.638 L 426.92076340249 272.8973 L 432.64694286595 242.5189 L 438.37312232941 245.03050000000002 L 444.09930179287 238.4226 L 449.82548125633 237.28640000000001 L 455.55166071979 247.3328 L 461.27784018325 247.3029 L 467.00401964671 254.2696 L 472.73019911017 241.3229 L 478.45637857363 237.7947 L 484.14847363552 217.79160000000002 L 489.87465309898 251.2198 L 495.60083256244 253.0736 L 501.3270120259 241.3528 L 507.05319148936 250.4125 L 512.77937095282 256.0337 L 518.50555041628 245.778 L 524.23172987974 237.6452 L 529.9579093432 239.798 L 535.68408880666 246.8843 L 541.41026827012 237.25650000000002 L 547.13644773358 247.871 L 552.86262719704 235.67180000000002 L 558.5888066605 250.5919 L 564.31498612396 248.91750000000002 L 570.04116558742 258.8742 L 575.76734505088 254.1201 L 581.49352451434 253.552 L 587.2197039778 251.6683 L 592.94588344126 253.0736 L 598.67206290472 260.8177 L 604.39824236818 254.1799 L 610.12442183164 271.2229" class="highcharts-graph" data-z-index="1" stroke="#fcc838" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" visibility="hidden" role="region" tabindex="-1" aria-label="1) new, line 1 of 3 with 106 data points."></path><path fill="none" d="M 8.8755781683626 284.349 L 14.601757631822 286.14300000000003 L 20.327937095282 287.0998 L 26.054116558742 288.5051 L 31.780296022202 288.9835 L 37.506475485661 286.7111 L 43.232654949121 286.2028 L 48.958834412581 282.854 L 54.685013876041 281.6879 L 60.4111933395 283.1829 L 66.13737280296 283.452 L 71.86355226642 283.8706 L 77.58973172988 279.6547 L 83.349995594908 279.9836 L 89.076175058367 284.9171 L 94.802354521827 288.5649 L 100.52853398529 281.6879 L 106.25471344875 284.7676 L 111.98089291221 283.3623 L 117.70707237567 285.7543 L 123.43325183913 296.0698 L 129.15943130259 293.2592 L 134.88561076605 284.1696 L 140.61179022951 282.9736 L 146.33796969297 282.9138 L 152.06414915642 280.7012 L 157.79032861988 280.6713 L 163.51650808334 280.5218 L 169.2426875468 280.4022 L 174.96886701026 272.5983 L 180.69504647372 252.2364 L 186.38714153562 258.6649 L 192.11332099907 263.8675 L 197.83950046253 258.5154 L 203.56567992599 256.8709 L 209.29185938945 260.429 L 215.01803885291 265.5419 L 220.74421831637 256.9905 L 226.47039777983 255.8543 L 232.19657724329 264.6449 L 237.92275670675 260.1898 L 243.64893617021 261.027 L 249.37511563367 263.9572 L 255.10129509713 256.2131 L 260.82747456059 252.02710000000002 L 266.55365402405 253.5819 L 272.27983348751 247.36270000000002 L 278.00601295097 255.8842 L 283.73219241443 251.9972 L 289.45837187789 254.2995 L 295.18455134135 247.6617 L 300.91073080481 251.2198 L 306.63691026827 250.6816 L 312.36308973173 252.8045 L 318.08926919519 251.69819999999999 L 323.81544865865 244.9408 L 329.54162812211 239.2299 L 335.26780758557 220.87130000000002 L 340.99398704903 214.981 L 346.72016651249 211.7817 L 352.44634597595 227.12040000000002 L 358.17252543941 220.6919 L 363.89870490287 226.5523 L 369.62488436633 228.37619999999998 L 375.35106382979 239.8279 L 381.11132769482 232.0539 L 386.83750715827 242.8478 L 392.56368662173 242.5787 L 398.28986608519 262.76120000000003 L 404.01604554865 248.61849999999998 L 409.74222501211 249.8444 L 415.46840447557 246.4956 L 421.19458393903 287.638 L 426.92076340249 272.8973 L 432.64694286595 242.5189 L 438.37312232941 245.03050000000002 L 444.09930179287 238.4226 L 449.82548125633 237.28640000000001 L 455.55166071979 247.3328 L 461.27784018325 247.3029 L 467.00401964671 254.2696 L 472.73019911017 241.3229 L 478.45637857363 237.7947 L 484.14847363552 217.79160000000002 L 489.87465309898 251.2198 L 495.60083256244 253.0736 L 501.3270120259 241.3528 L 507.05319148936 250.4125 L 512.77937095282 256.0337 L 518.50555041628 245.778 L 524.23172987974 237.6452 L 529.9579093432 239.798 L 535.68408880666 246.8843 L 541.41026827012 237.25650000000002 L 547.13644773358 247.871 L 552.86262719704 235.67180000000002 L 558.5888066605 250.5919 L 564.31498612396 248.91750000000002 L 570.04116558742 258.8742 L 575.76734505088 254.1201 L 581.49352451434 253.552 L 587.2197039778 251.6683 L 592.94588344126 253.0736 L 598.67206290472 260.8177 L 604.39824236818 254.1799 L 610.12442183164 271.2229" class="highcharts-graph highcharts-zone-graph-0 " data-z-index="1" stroke="#fcc838" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" clip-path="url(#highcharts-hbdp1xy-9)"></path><path fill="none" d="M 8.8755781683626 284.349 L 14.601757631822 286.14300000000003 L 20.327937095282 287.0998 L 26.054116558742 288.5051 L 31.780296022202 288.9835 L 37.506475485661 286.7111 L 43.232654949121 286.2028 L 48.958834412581 282.854 L 54.685013876041 281.6879 L 60.4111933395 283.1829 L 66.13737280296 283.452 L 71.86355226642 283.8706 L 77.58973172988 279.6547 L 83.349995594908 279.9836 L 89.076175058367 284.9171 L 94.802354521827 288.5649 L 100.52853398529 281.6879 L 106.25471344875 284.7676 L 111.98089291221 283.3623 L 117.70707237567 285.7543 L 123.43325183913 296.0698 L 129.15943130259 293.2592 L 134.88561076605 284.1696 L 140.61179022951 282.9736 L 146.33796969297 282.9138 L 152.06414915642 280.7012 L 157.79032861988 280.6713 L 163.51650808334 280.5218 L 169.2426875468 280.4022 L 174.96886701026 272.5983 L 180.69504647372 252.2364 L 186.38714153562 258.6649 L 192.11332099907 263.8675 L 197.83950046253 258.5154 L 203.56567992599 256.8709 L 209.29185938945 260.429 L 215.01803885291 265.5419 L 220.74421831637 256.9905 L 226.47039777983 255.8543 L 232.19657724329 264.6449 L 237.92275670675 260.1898 L 243.64893617021 261.027 L 249.37511563367 263.9572 L 255.10129509713 256.2131 L 260.82747456059 252.02710000000002 L 266.55365402405 253.5819 L 272.27983348751 247.36270000000002 L 278.00601295097 255.8842 L 283.73219241443 251.9972 L 289.45837187789 254.2995 L 295.18455134135 247.6617 L 300.91073080481 251.2198 L 306.63691026827 250.6816 L 312.36308973173 252.8045 L 318.08926919519 251.69819999999999 L 323.81544865865 244.9408 L 329.54162812211 239.2299 L 335.26780758557 220.87130000000002 L 340.99398704903 214.981 L 346.72016651249 211.7817 L 352.44634597595 227.12040000000002 L 358.17252543941 220.6919 L 363.89870490287 226.5523 L 369.62488436633 228.37619999999998 L 375.35106382979 239.8279 L 381.11132769482 232.0539 L 386.83750715827 242.8478 L 392.56368662173 242.5787 L 398.28986608519 262.76120000000003 L 404.01604554865 248.61849999999998 L 409.74222501211 249.8444 L 415.46840447557 246.4956 L 421.19458393903 287.638 L 426.92076340249 272.8973 L 432.64694286595 242.5189 L 438.37312232941 245.03050000000002 L 444.09930179287 238.4226 L 449.82548125633 237.28640000000001 L 455.55166071979 247.3328 L 461.27784018325 247.3029 L 467.00401964671 254.2696 L 472.73019911017 241.3229 L 478.45637857363 237.7947 L 484.14847363552 217.79160000000002 L 489.87465309898 251.2198 L 495.60083256244 253.0736 L 501.3270120259 241.3528 L 507.05319148936 250.4125 L 512.77937095282 256.0337 L 518.50555041628 245.778 L 524.23172987974 237.6452 L 529.9579093432 239.798 L 535.68408880666 246.8843 L 541.41026827012 237.25650000000002 L 547.13644773358 247.871 L 552.86262719704 235.67180000000002 L 558.5888066605 250.5919 L 564.31498612396 248.91750000000002 L 570.04116558742 258.8742 L 575.76734505088 254.1201 L 581.49352451434 253.552 L 587.2197039778 251.6683 L 592.94588344126 253.0736 L 598.67206290472 260.8177 L 604.39824236818 254.1799 L 610.12442183164 271.2229" class="highcharts-graph highcharts-zone-graph-1 " data-z-index="1" stroke="#fcc838" stroke-width="1" stroke-dasharray="1,1" clip-path="url(#highcharts-hbdp1xy-10)"></path><path fill="none" d="M -1.1244218316374006 284.349 L 8.8755781683626 284.349 L 14.601757631822 286.14300000000003 L 20.327937095282 287.0998 L 26.054116558742 288.5051 L 31.780296022202 288.9835 L 37.506475485661 286.7111 L 43.232654949121 286.2028 L 48.958834412581 282.854 L 54.685013876041 281.6879 L 60.4111933395 283.1829 L 66.13737280296 283.452 L 71.86355226642 283.8706 L 77.58973172988 279.6547 L 83.349995594908 279.9836 L 89.076175058367 284.9171 L 94.802354521827 288.5649 L 100.52853398529 281.6879 L 106.25471344875 284.7676 L 111.98089291221 283.3623 L 117.70707237567 285.7543 L 123.43325183913 296.0698 L 129.15943130259 293.2592 L 134.88561076605 284.1696 L 140.61179022951 282.9736 L 146.33796969297 282.9138 L 152.06414915642 280.7012 L 157.79032861988 280.6713 L 163.51650808334 280.5218 L 169.2426875468 280.4022 L 174.96886701026 272.5983 L 180.69504647372 252.2364 L 186.38714153562 258.6649 L 192.11332099907 263.8675 L 197.83950046253 258.5154 L 203.56567992599 256.8709 L 209.29185938945 260.429 L 215.01803885291 265.5419 L 220.74421831637 256.9905 L 226.47039777983 255.8543 L 232.19657724329 264.6449 L 237.92275670675 260.1898 L 243.64893617021 261.027 L 249.37511563367 263.9572 L 255.10129509713 256.2131 L 260.82747456059 252.02710000000002 L 266.55365402405 253.5819 L 272.27983348751 247.36270000000002 L 278.00601295097 255.8842 L 283.73219241443 251.9972 L 289.45837187789 254.2995 L 295.18455134135 247.6617 L 300.91073080481 251.2198 L 306.63691026827 250.6816 L 312.36308973173 252.8045 L 318.08926919519 251.69819999999999 L 323.81544865865 244.9408 L 329.54162812211 239.2299 L 335.26780758557 220.87130000000002 L 340.99398704903 214.981 L 346.72016651249 211.7817 L 352.44634597595 227.12040000000002 L 358.17252543941 220.6919 L 363.89870490287 226.5523 L 369.62488436633 228.37619999999998 L 375.35106382979 239.8279 L 381.11132769482 232.0539 L 386.83750715827 242.8478 L 392.56368662173 242.5787 L 398.28986608519 262.76120000000003 L 404.01604554865 248.61849999999998 L 409.74222501211 249.8444 L 415.46840447557 246.4956 L 421.19458393903 287.638 L 426.92076340249 272.8973 L 432.64694286595 242.5189 L 438.37312232941 245.03050000000002 L 444.09930179287 238.4226 L 449.82548125633 237.28640000000001 L 455.55166071979 247.3328 L 461.27784018325 247.3029 L 467.00401964671 254.2696 L 472.73019911017 241.3229 L 478.45637857363 237.7947 L 484.14847363552 217.79160000000002 L 489.87465309898 251.2198 L 495.60083256244 253.0736 L 501.3270120259 241.3528 L 507.05319148936 250.4125 L 512.77937095282 256.0337 L 518.50555041628 245.778 L 524.23172987974 237.6452 L 529.9579093432 239.798 L 535.68408880666 246.8843 L 541.41026827012 237.25650000000002 L 547.13644773358 247.871 L 552.86262719704 235.67180000000002 L 558.5888066605 250.5919 L 564.31498612396 248.91750000000002 L 570.04116558742 258.8742 L 575.76734505088 254.1201 L 581.49352451434 253.552 L 587.2197039778 251.6683 L 592.94588344126 253.0736 L 598.67206290472 260.8177 L 604.39824236818 254.1799 L 610.12442183164 271.2229 L 620.12442183164 271.2229" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="21" data-z-index="2" class="highcharts-tracker" style="cursor:pointer;"></path></g><g data-z-index="0.1" class="highcharts-markers highcharts-series-0 highcharts-line-series  highcharts-tracker" transform="translate(71,15) scale(1 1)" style="cursor:pointer;" clip-path="none"></g><g data-z-index="0.1" class="highcharts-series highcharts-series-1 highcharts-line-series " transform="translate(71,15) scale(1 1)" clip-path="url(#highcharts-hbdp1xy-4)"><path fill="none" d="M 8.8755781683626 270.0867 L 14.601757631822 268.9206 L 20.327937095282 269.4588 L 26.054116558742 269.7279 L 31.780296022202 273.1365 L 37.506475485661 268.2329 L 43.232654949121 267.5153 L 48.958834412581 266.1399 L 54.685013876041 265.0336 L 60.4111933395 265.4522 L 66.13737280296 267.0668 L 71.86355226642 263.6881 L 77.58973172988 259.532 L 83.349995594908 262.4024 L 89.076175058367 263.6283 L 94.802354521827 270.6847 L 100.52853398529 259.1433 L 106.25471344875 261.5951 L 111.98089291221 258.6649 L 117.70707237567 267.9339 L 123.43325183913 286.7111 L 129.15943130259 270.8043 L 134.88561076605 247.36270000000002 L 140.61179022951 248.2896 L 146.33796969297 252.7447 L 152.06414915642 254.2098 L 157.79032861988 256.54200000000003 L 163.51650808334 254.6284 L 169.2426875468 258.1865 L 174.96886701026 250.7414 L 180.69504647372 249.1866 L 186.38714153562 249.5454 L 192.11332099907 261.2662 L 197.83950046253 249.6351 L 203.56567992599 248.7381 L 209.29185938945 247.871 L 215.01803885291 256.3028 L 220.74421831637 250.5919 L 226.47039777983 249.1866 L 232.19657724329 250.5919 L 237.92275670675 247.6916 L 243.64893617021 249.3361 L 249.37511563367 251.459 L 255.10129509713 245.5388 L 260.82747456059 241.1136 L 266.55365402405 239.1701 L 272.27983348751 237.6751 L 278.00601295097 249.0072 L 283.73219241443 230.7682 L 289.45837187789 230.9476 L 295.18455134135 234.86450000000002 L 300.91073080481 223.4427 L 306.63691026827 230.23000000000002 L 312.36308973173 227.62869999999998 L 318.08926919519 228.3164 L 323.81544865865 226.1038 L 329.54162812211 218.6288 L 335.26780758557 195.3367 L 340.99398704903 193.60250000000002 L 346.72016651249 186.0378 L 352.44634597595 191.30020000000002 L 358.17252543941 186.5162 L 363.89870490287 185.7089 L 369.62488436633 189.5361 L 375.35106382979 186.875 L 381.11132769482 174.2273 L 386.83750715827 187.6524 L 392.56368662173 179.1309 L 398.28986608519 225.0274 L 404.01604554865 185.2604 L 409.74222501211 175.42329999999998 L 415.46840447557 184.6325 L 421.19458393903 270.5053 L 426.92076340249 230.4991 L 432.64694286595 134.49020000000002 L 438.37312232941 138.2576 L 444.09930179287 144.8655 L 449.82548125633 146.95850000000002 L 455.55166071979 158.7092 L 461.27784018325 162.955 L 467.00401964671 193.1241 L 472.73019911017 161.3404 L 478.45637857363 156.5863 L 484.14847363552 115.86250000000001 L 489.87465309898 195.12740000000002 L 495.60083256244 193.8417 L 501.3270120259 194.5892 L 507.05319148936 198.5659 L 512.77937095282 185.9182 L 518.50555041628 177.8452 L 524.23172987974 175.0346 L 529.9579093432 174.2572 L 535.68408880666 170.43 L 541.41026827012 177.8751 L 547.13644773358 190.22379999999998 L 552.86262719704 182.0312 L 558.5888066605 169.2639 L 564.31498612396 171.08780000000002 L 570.04116558742 177.1575 L 575.76734505088 186.66570000000002 L 581.49352451434 161.6693 L 587.2197039778 155.3903 L 592.94588344126 160.563 L 598.67206290472 172.0446 L 604.39824236818 165.25730000000001 L 610.12442183164 207.65550000000002" class="highcharts-graph" data-z-index="1" stroke="#48D1E0" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" visibility="hidden" role="region" tabindex="-1" aria-label="2) returning, line 2 of 3 with 106 data points."></path><path fill="none" d="M 8.8755781683626 270.0867 L 14.601757631822 268.9206 L 20.327937095282 269.4588 L 26.054116558742 269.7279 L 31.780296022202 273.1365 L 37.506475485661 268.2329 L 43.232654949121 267.5153 L 48.958834412581 266.1399 L 54.685013876041 265.0336 L 60.4111933395 265.4522 L 66.13737280296 267.0668 L 71.86355226642 263.6881 L 77.58973172988 259.532 L 83.349995594908 262.4024 L 89.076175058367 263.6283 L 94.802354521827 270.6847 L 100.52853398529 259.1433 L 106.25471344875 261.5951 L 111.98089291221 258.6649 L 117.70707237567 267.9339 L 123.43325183913 286.7111 L 129.15943130259 270.8043 L 134.88561076605 247.36270000000002 L 140.61179022951 248.2896 L 146.33796969297 252.7447 L 152.06414915642 254.2098 L 157.79032861988 256.54200000000003 L 163.51650808334 254.6284 L 169.2426875468 258.1865 L 174.96886701026 250.7414 L 180.69504647372 249.1866 L 186.38714153562 249.5454 L 192.11332099907 261.2662 L 197.83950046253 249.6351 L 203.56567992599 248.7381 L 209.29185938945 247.871 L 215.01803885291 256.3028 L 220.74421831637 250.5919 L 226.47039777983 249.1866 L 232.19657724329 250.5919 L 237.92275670675 247.6916 L 243.64893617021 249.3361 L 249.37511563367 251.459 L 255.10129509713 245.5388 L 260.82747456059 241.1136 L 266.55365402405 239.1701 L 272.27983348751 237.6751 L 278.00601295097 249.0072 L 283.73219241443 230.7682 L 289.45837187789 230.9476 L 295.18455134135 234.86450000000002 L 300.91073080481 223.4427 L 306.63691026827 230.23000000000002 L 312.36308973173 227.62869999999998 L 318.08926919519 228.3164 L 323.81544865865 226.1038 L 329.54162812211 218.6288 L 335.26780758557 195.3367 L 340.99398704903 193.60250000000002 L 346.72016651249 186.0378 L 352.44634597595 191.30020000000002 L 358.17252543941 186.5162 L 363.89870490287 185.7089 L 369.62488436633 189.5361 L 375.35106382979 186.875 L 381.11132769482 174.2273 L 386.83750715827 187.6524 L 392.56368662173 179.1309 L 398.28986608519 225.0274 L 404.01604554865 185.2604 L 409.74222501211 175.42329999999998 L 415.46840447557 184.6325 L 421.19458393903 270.5053 L 426.92076340249 230.4991 L 432.64694286595 134.49020000000002 L 438.37312232941 138.2576 L 444.09930179287 144.8655 L 449.82548125633 146.95850000000002 L 455.55166071979 158.7092 L 461.27784018325 162.955 L 467.00401964671 193.1241 L 472.73019911017 161.3404 L 478.45637857363 156.5863 L 484.14847363552 115.86250000000001 L 489.87465309898 195.12740000000002 L 495.60083256244 193.8417 L 501.3270120259 194.5892 L 507.05319148936 198.5659 L 512.77937095282 185.9182 L 518.50555041628 177.8452 L 524.23172987974 175.0346 L 529.9579093432 174.2572 L 535.68408880666 170.43 L 541.41026827012 177.8751 L 547.13644773358 190.22379999999998 L 552.86262719704 182.0312 L 558.5888066605 169.2639 L 564.31498612396 171.08780000000002 L 570.04116558742 177.1575 L 575.76734505088 186.66570000000002 L 581.49352451434 161.6693 L 587.2197039778 155.3903 L 592.94588344126 160.563 L 598.67206290472 172.0446 L 604.39824236818 165.25730000000001 L 610.12442183164 207.65550000000002" class="highcharts-graph highcharts-zone-graph-0 " data-z-index="1" stroke="#48D1E0" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" clip-path="url(#highcharts-hbdp1xy-11)"></path><path fill="none" d="M 8.8755781683626 270.0867 L 14.601757631822 268.9206 L 20.327937095282 269.4588 L 26.054116558742 269.7279 L 31.780296022202 273.1365 L 37.506475485661 268.2329 L 43.232654949121 267.5153 L 48.958834412581 266.1399 L 54.685013876041 265.0336 L 60.4111933395 265.4522 L 66.13737280296 267.0668 L 71.86355226642 263.6881 L 77.58973172988 259.532 L 83.349995594908 262.4024 L 89.076175058367 263.6283 L 94.802354521827 270.6847 L 100.52853398529 259.1433 L 106.25471344875 261.5951 L 111.98089291221 258.6649 L 117.70707237567 267.9339 L 123.43325183913 286.7111 L 129.15943130259 270.8043 L 134.88561076605 247.36270000000002 L 140.61179022951 248.2896 L 146.33796969297 252.7447 L 152.06414915642 254.2098 L 157.79032861988 256.54200000000003 L 163.51650808334 254.6284 L 169.2426875468 258.1865 L 174.96886701026 250.7414 L 180.69504647372 249.1866 L 186.38714153562 249.5454 L 192.11332099907 261.2662 L 197.83950046253 249.6351 L 203.56567992599 248.7381 L 209.29185938945 247.871 L 215.01803885291 256.3028 L 220.74421831637 250.5919 L 226.47039777983 249.1866 L 232.19657724329 250.5919 L 237.92275670675 247.6916 L 243.64893617021 249.3361 L 249.37511563367 251.459 L 255.10129509713 245.5388 L 260.82747456059 241.1136 L 266.55365402405 239.1701 L 272.27983348751 237.6751 L 278.00601295097 249.0072 L 283.73219241443 230.7682 L 289.45837187789 230.9476 L 295.18455134135 234.86450000000002 L 300.91073080481 223.4427 L 306.63691026827 230.23000000000002 L 312.36308973173 227.62869999999998 L 318.08926919519 228.3164 L 323.81544865865 226.1038 L 329.54162812211 218.6288 L 335.26780758557 195.3367 L 340.99398704903 193.60250000000002 L 346.72016651249 186.0378 L 352.44634597595 191.30020000000002 L 358.17252543941 186.5162 L 363.89870490287 185.7089 L 369.62488436633 189.5361 L 375.35106382979 186.875 L 381.11132769482 174.2273 L 386.83750715827 187.6524 L 392.56368662173 179.1309 L 398.28986608519 225.0274 L 404.01604554865 185.2604 L 409.74222501211 175.42329999999998 L 415.46840447557 184.6325 L 421.19458393903 270.5053 L 426.92076340249 230.4991 L 432.64694286595 134.49020000000002 L 438.37312232941 138.2576 L 444.09930179287 144.8655 L 449.82548125633 146.95850000000002 L 455.55166071979 158.7092 L 461.27784018325 162.955 L 467.00401964671 193.1241 L 472.73019911017 161.3404 L 478.45637857363 156.5863 L 484.14847363552 115.86250000000001 L 489.87465309898 195.12740000000002 L 495.60083256244 193.8417 L 501.3270120259 194.5892 L 507.05319148936 198.5659 L 512.77937095282 185.9182 L 518.50555041628 177.8452 L 524.23172987974 175.0346 L 529.9579093432 174.2572 L 535.68408880666 170.43 L 541.41026827012 177.8751 L 547.13644773358 190.22379999999998 L 552.86262719704 182.0312 L 558.5888066605 169.2639 L 564.31498612396 171.08780000000002 L 570.04116558742 177.1575 L 575.76734505088 186.66570000000002 L 581.49352451434 161.6693 L 587.2197039778 155.3903 L 592.94588344126 160.563 L 598.67206290472 172.0446 L 604.39824236818 165.25730000000001 L 610.12442183164 207.65550000000002" class="highcharts-graph highcharts-zone-graph-1 " data-z-index="1" stroke="#48D1E0" stroke-width="1" stroke-dasharray="1,1" clip-path="url(#highcharts-hbdp1xy-12)"></path><path fill="none" d="M -1.1244218316374006 270.0867 L 8.8755781683626 270.0867 L 14.601757631822 268.9206 L 20.327937095282 269.4588 L 26.054116558742 269.7279 L 31.780296022202 273.1365 L 37.506475485661 268.2329 L 43.232654949121 267.5153 L 48.958834412581 266.1399 L 54.685013876041 265.0336 L 60.4111933395 265.4522 L 66.13737280296 267.0668 L 71.86355226642 263.6881 L 77.58973172988 259.532 L 83.349995594908 262.4024 L 89.076175058367 263.6283 L 94.802354521827 270.6847 L 100.52853398529 259.1433 L 106.25471344875 261.5951 L 111.98089291221 258.6649 L 117.70707237567 267.9339 L 123.43325183913 286.7111 L 129.15943130259 270.8043 L 134.88561076605 247.36270000000002 L 140.61179022951 248.2896 L 146.33796969297 252.7447 L 152.06414915642 254.2098 L 157.79032861988 256.54200000000003 L 163.51650808334 254.6284 L 169.2426875468 258.1865 L 174.96886701026 250.7414 L 180.69504647372 249.1866 L 186.38714153562 249.5454 L 192.11332099907 261.2662 L 197.83950046253 249.6351 L 203.56567992599 248.7381 L 209.29185938945 247.871 L 215.01803885291 256.3028 L 220.74421831637 250.5919 L 226.47039777983 249.1866 L 232.19657724329 250.5919 L 237.92275670675 247.6916 L 243.64893617021 249.3361 L 249.37511563367 251.459 L 255.10129509713 245.5388 L 260.82747456059 241.1136 L 266.55365402405 239.1701 L 272.27983348751 237.6751 L 278.00601295097 249.0072 L 283.73219241443 230.7682 L 289.45837187789 230.9476 L 295.18455134135 234.86450000000002 L 300.91073080481 223.4427 L 306.63691026827 230.23000000000002 L 312.36308973173 227.62869999999998 L 318.08926919519 228.3164 L 323.81544865865 226.1038 L 329.54162812211 218.6288 L 335.26780758557 195.3367 L 340.99398704903 193.60250000000002 L 346.72016651249 186.0378 L 352.44634597595 191.30020000000002 L 358.17252543941 186.5162 L 363.89870490287 185.7089 L 369.62488436633 189.5361 L 375.35106382979 186.875 L 381.11132769482 174.2273 L 386.83750715827 187.6524 L 392.56368662173 179.1309 L 398.28986608519 225.0274 L 404.01604554865 185.2604 L 409.74222501211 175.42329999999998 L 415.46840447557 184.6325 L 421.19458393903 270.5053 L 426.92076340249 230.4991 L 432.64694286595 134.49020000000002 L 438.37312232941 138.2576 L 444.09930179287 144.8655 L 449.82548125633 146.95850000000002 L 455.55166071979 158.7092 L 461.27784018325 162.955 L 467.00401964671 193.1241 L 472.73019911017 161.3404 L 478.45637857363 156.5863 L 484.14847363552 115.86250000000001 L 489.87465309898 195.12740000000002 L 495.60083256244 193.8417 L 501.3270120259 194.5892 L 507.05319148936 198.5659 L 512.77937095282 185.9182 L 518.50555041628 177.8452 L 524.23172987974 175.0346 L 529.9579093432 174.2572 L 535.68408880666 170.43 L 541.41026827012 177.8751 L 547.13644773358 190.22379999999998 L 552.86262719704 182.0312 L 558.5888066605 169.2639 L 564.31498612396 171.08780000000002 L 570.04116558742 177.1575 L 575.76734505088 186.66570000000002 L 581.49352451434 161.6693 L 587.2197039778 155.3903 L 592.94588344126 160.563 L 598.67206290472 172.0446 L 604.39824236818 165.25730000000001 L 610.12442183164 207.65550000000002 L 620.12442183164 207.65550000000002" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="21" data-z-index="2" class="highcharts-tracker" style="cursor:pointer;"></path></g><g data-z-index="0.1" class="highcharts-markers highcharts-series-1 highcharts-line-series  highcharts-tracker" transform="translate(71,15) scale(1 1)" style="cursor:pointer;" clip-path="none"></g><g data-z-index="0.1" class="highcharts-series highcharts-series-2 highcharts-line-series " transform="translate(71,15) scale(1 1)" clip-path="url(#highcharts-hbdp1xy-4)"><path fill="none" d="M 8.8755781683626 227.4194 L 14.601757631822 224.1304 L 20.327937095282 224.0706 L 26.054116558742 223.2932 L 31.780296022202 224.3995 L 37.506475485661 222.15699999999998 L 43.232654949121 220.5424 L 48.958834412581 218.6288 L 54.685013876041 216.68529999999998 L 60.4111933395 217.6122 L 66.13737280296 216.0574 L 71.86355226642 215.579 L 77.58973172988 214.9511 L 83.349995594908 211.48270000000002 L 89.076175058367 208.46280000000002 L 94.802354521827 215.2202 L 100.52853398529 209.8382 L 106.25471344875 208.43290000000002 L 111.98089291221 208.6422 L 117.70707237567 209.92790000000002 L 123.43325183913 248.0504 L 129.15943130259 231.78480000000002 L 134.88561076605 215.16039999999998 L 140.61179022951 213.57569999999998 L 146.33796969297 207.1173 L 152.06414915642 199.82170000000002 L 157.79032861988 198.6257 L 163.51650808334 195.2769 L 169.2426875468 195.546 L 174.96886701026 193.7819 L 180.69504647372 191.1507 L 186.38714153562 190.1341 L 192.11332099907 195.0078 L 197.83950046253 188.63909999999998 L 203.56567992599 187.2637 L 209.29185938945 187.7421 L 215.01803885291 190.6723 L 220.74421831637 188.3999 L 226.47039777983 193.2437 L 232.19657724329 201.0177 L 237.92275670675 197.54930000000002 L 243.64893617021 197.8782 L 249.37511563367 201.46620000000001 L 255.10129509713 197.639 L 260.82747456059 195.7852 L 266.55365402405 193.154 L 272.27983348751 189.865 L 278.00601295097 196.6224 L 283.73219241443 186.4265 L 289.45837187789 184.6325 L 295.18455134135 186.33679999999998 L 300.91073080481 179.7289 L 306.63691026827 176.9183 L 312.36308973173 173.6293 L 318.08926919519 172.224 L 323.81544865865 172.0446 L 329.54162812211 171.83530000000002 L 335.26780758557 156.7059 L 340.99398704903 148.3638 L 346.72016651249 143.6695 L 352.44634597595 137.4802 L 358.17252543941 131.6796 L 363.89870490287 134.0417 L 369.62488436633 132.5766 L 375.35106382979 133.055 L 381.11132769482 128.9886 L 386.83750715827 128.9288 L 392.56368662173 125.7893 L 398.28986608519 146.56980000000001 L 404.01604554865 129.3175 L 409.74222501211 130.0052 L 415.46840447557 135.0583 L 421.19458393903 215.28 L 426.92076340249 191.30020000000002 L 432.64694286595 146.1213 L 438.37312232941 152.4601 L 444.09930179287 127.52350000000001 L 449.82548125633 106.38419999999999 L 455.55166071979 100.67330000000001 L 461.27784018325 103.00550000000001 L 467.00401964671 121.30430000000001 L 472.73019911017 107.4905 L 478.45637857363 100.4939 L 484.14847363552 72.68690000000001 L 489.87465309898 78.45760000000001 L 495.60083256244 72.4178 L 501.3270120259 66.5873 L 507.05319148936 70.0258 L 512.77937095282 62.3116 L 518.50555041628 56.18209999999999 L 524.23172987974 50.38150000000002 L 529.9579093432 44.64070000000001 L 535.68408880666 36.6275 L 541.41026827012 37.97300000000001 L 547.13644773358 51.12899999999999 L 552.86262719704 40.78359999999998 L 558.5888066605 41.80020000000002 L 564.31498612396 41.2919 L 570.04116558742 42.72710000000001 L 575.76734505088 53.07249999999999 L 581.49352451434 43.05600000000001 L 587.2197039778 36.6275 L 592.94588344126 36.74709999999999 L 598.67206290472 39.52780000000001 L 604.39824236818 46.7038 L 610.12442183164 78.1885" class="highcharts-graph" data-z-index="1" stroke="#2e75f0" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" visibility="hidden" role="region" tabindex="-1" aria-label="3) engaged, line 3 of 3 with 106 data points."></path><path fill="none" d="M 8.8755781683626 227.4194 L 14.601757631822 224.1304 L 20.327937095282 224.0706 L 26.054116558742 223.2932 L 31.780296022202 224.3995 L 37.506475485661 222.15699999999998 L 43.232654949121 220.5424 L 48.958834412581 218.6288 L 54.685013876041 216.68529999999998 L 60.4111933395 217.6122 L 66.13737280296 216.0574 L 71.86355226642 215.579 L 77.58973172988 214.9511 L 83.349995594908 211.48270000000002 L 89.076175058367 208.46280000000002 L 94.802354521827 215.2202 L 100.52853398529 209.8382 L 106.25471344875 208.43290000000002 L 111.98089291221 208.6422 L 117.70707237567 209.92790000000002 L 123.43325183913 248.0504 L 129.15943130259 231.78480000000002 L 134.88561076605 215.16039999999998 L 140.61179022951 213.57569999999998 L 146.33796969297 207.1173 L 152.06414915642 199.82170000000002 L 157.79032861988 198.6257 L 163.51650808334 195.2769 L 169.2426875468 195.546 L 174.96886701026 193.7819 L 180.69504647372 191.1507 L 186.38714153562 190.1341 L 192.11332099907 195.0078 L 197.83950046253 188.63909999999998 L 203.56567992599 187.2637 L 209.29185938945 187.7421 L 215.01803885291 190.6723 L 220.74421831637 188.3999 L 226.47039777983 193.2437 L 232.19657724329 201.0177 L 237.92275670675 197.54930000000002 L 243.64893617021 197.8782 L 249.37511563367 201.46620000000001 L 255.10129509713 197.639 L 260.82747456059 195.7852 L 266.55365402405 193.154 L 272.27983348751 189.865 L 278.00601295097 196.6224 L 283.73219241443 186.4265 L 289.45837187789 184.6325 L 295.18455134135 186.33679999999998 L 300.91073080481 179.7289 L 306.63691026827 176.9183 L 312.36308973173 173.6293 L 318.08926919519 172.224 L 323.81544865865 172.0446 L 329.54162812211 171.83530000000002 L 335.26780758557 156.7059 L 340.99398704903 148.3638 L 346.72016651249 143.6695 L 352.44634597595 137.4802 L 358.17252543941 131.6796 L 363.89870490287 134.0417 L 369.62488436633 132.5766 L 375.35106382979 133.055 L 381.11132769482 128.9886 L 386.83750715827 128.9288 L 392.56368662173 125.7893 L 398.28986608519 146.56980000000001 L 404.01604554865 129.3175 L 409.74222501211 130.0052 L 415.46840447557 135.0583 L 421.19458393903 215.28 L 426.92076340249 191.30020000000002 L 432.64694286595 146.1213 L 438.37312232941 152.4601 L 444.09930179287 127.52350000000001 L 449.82548125633 106.38419999999999 L 455.55166071979 100.67330000000001 L 461.27784018325 103.00550000000001 L 467.00401964671 121.30430000000001 L 472.73019911017 107.4905 L 478.45637857363 100.4939 L 484.14847363552 72.68690000000001 L 489.87465309898 78.45760000000001 L 495.60083256244 72.4178 L 501.3270120259 66.5873 L 507.05319148936 70.0258 L 512.77937095282 62.3116 L 518.50555041628 56.18209999999999 L 524.23172987974 50.38150000000002 L 529.9579093432 44.64070000000001 L 535.68408880666 36.6275 L 541.41026827012 37.97300000000001 L 547.13644773358 51.12899999999999 L 552.86262719704 40.78359999999998 L 558.5888066605 41.80020000000002 L 564.31498612396 41.2919 L 570.04116558742 42.72710000000001 L 575.76734505088 53.07249999999999 L 581.49352451434 43.05600000000001 L 587.2197039778 36.6275 L 592.94588344126 36.74709999999999 L 598.67206290472 39.52780000000001 L 604.39824236818 46.7038 L 610.12442183164 78.1885" class="highcharts-graph highcharts-zone-graph-0 " data-z-index="1" stroke="#2e75f0" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" clip-path="url(#highcharts-hbdp1xy-13)"></path><path fill="none" d="M 8.8755781683626 227.4194 L 14.601757631822 224.1304 L 20.327937095282 224.0706 L 26.054116558742 223.2932 L 31.780296022202 224.3995 L 37.506475485661 222.15699999999998 L 43.232654949121 220.5424 L 48.958834412581 218.6288 L 54.685013876041 216.68529999999998 L 60.4111933395 217.6122 L 66.13737280296 216.0574 L 71.86355226642 215.579 L 77.58973172988 214.9511 L 83.349995594908 211.48270000000002 L 89.076175058367 208.46280000000002 L 94.802354521827 215.2202 L 100.52853398529 209.8382 L 106.25471344875 208.43290000000002 L 111.98089291221 208.6422 L 117.70707237567 209.92790000000002 L 123.43325183913 248.0504 L 129.15943130259 231.78480000000002 L 134.88561076605 215.16039999999998 L 140.61179022951 213.57569999999998 L 146.33796969297 207.1173 L 152.06414915642 199.82170000000002 L 157.79032861988 198.6257 L 163.51650808334 195.2769 L 169.2426875468 195.546 L 174.96886701026 193.7819 L 180.69504647372 191.1507 L 186.38714153562 190.1341 L 192.11332099907 195.0078 L 197.83950046253 188.63909999999998 L 203.56567992599 187.2637 L 209.29185938945 187.7421 L 215.01803885291 190.6723 L 220.74421831637 188.3999 L 226.47039777983 193.2437 L 232.19657724329 201.0177 L 237.92275670675 197.54930000000002 L 243.64893617021 197.8782 L 249.37511563367 201.46620000000001 L 255.10129509713 197.639 L 260.82747456059 195.7852 L 266.55365402405 193.154 L 272.27983348751 189.865 L 278.00601295097 196.6224 L 283.73219241443 186.4265 L 289.45837187789 184.6325 L 295.18455134135 186.33679999999998 L 300.91073080481 179.7289 L 306.63691026827 176.9183 L 312.36308973173 173.6293 L 318.08926919519 172.224 L 323.81544865865 172.0446 L 329.54162812211 171.83530000000002 L 335.26780758557 156.7059 L 340.99398704903 148.3638 L 346.72016651249 143.6695 L 352.44634597595 137.4802 L 358.17252543941 131.6796 L 363.89870490287 134.0417 L 369.62488436633 132.5766 L 375.35106382979 133.055 L 381.11132769482 128.9886 L 386.83750715827 128.9288 L 392.56368662173 125.7893 L 398.28986608519 146.56980000000001 L 404.01604554865 129.3175 L 409.74222501211 130.0052 L 415.46840447557 135.0583 L 421.19458393903 215.28 L 426.92076340249 191.30020000000002 L 432.64694286595 146.1213 L 438.37312232941 152.4601 L 444.09930179287 127.52350000000001 L 449.82548125633 106.38419999999999 L 455.55166071979 100.67330000000001 L 461.27784018325 103.00550000000001 L 467.00401964671 121.30430000000001 L 472.73019911017 107.4905 L 478.45637857363 100.4939 L 484.14847363552 72.68690000000001 L 489.87465309898 78.45760000000001 L 495.60083256244 72.4178 L 501.3270120259 66.5873 L 507.05319148936 70.0258 L 512.77937095282 62.3116 L 518.50555041628 56.18209999999999 L 524.23172987974 50.38150000000002 L 529.9579093432 44.64070000000001 L 535.68408880666 36.6275 L 541.41026827012 37.97300000000001 L 547.13644773358 51.12899999999999 L 552.86262719704 40.78359999999998 L 558.5888066605 41.80020000000002 L 564.31498612396 41.2919 L 570.04116558742 42.72710000000001 L 575.76734505088 53.07249999999999 L 581.49352451434 43.05600000000001 L 587.2197039778 36.6275 L 592.94588344126 36.74709999999999 L 598.67206290472 39.52780000000001 L 604.39824236818 46.7038 L 610.12442183164 78.1885" class="highcharts-graph highcharts-zone-graph-1 " data-z-index="1" stroke="#2e75f0" stroke-width="1" stroke-dasharray="1,1" clip-path="url(#highcharts-hbdp1xy-14)"></path><path fill="none" d="M -1.1244218316374006 227.4194 L 8.8755781683626 227.4194 L 14.601757631822 224.1304 L 20.327937095282 224.0706 L 26.054116558742 223.2932 L 31.780296022202 224.3995 L 37.506475485661 222.15699999999998 L 43.232654949121 220.5424 L 48.958834412581 218.6288 L 54.685013876041 216.68529999999998 L 60.4111933395 217.6122 L 66.13737280296 216.0574 L 71.86355226642 215.579 L 77.58973172988 214.9511 L 83.349995594908 211.48270000000002 L 89.076175058367 208.46280000000002 L 94.802354521827 215.2202 L 100.52853398529 209.8382 L 106.25471344875 208.43290000000002 L 111.98089291221 208.6422 L 117.70707237567 209.92790000000002 L 123.43325183913 248.0504 L 129.15943130259 231.78480000000002 L 134.88561076605 215.16039999999998 L 140.61179022951 213.57569999999998 L 146.33796969297 207.1173 L 152.06414915642 199.82170000000002 L 157.79032861988 198.6257 L 163.51650808334 195.2769 L 169.2426875468 195.546 L 174.96886701026 193.7819 L 180.69504647372 191.1507 L 186.38714153562 190.1341 L 192.11332099907 195.0078 L 197.83950046253 188.63909999999998 L 203.56567992599 187.2637 L 209.29185938945 187.7421 L 215.01803885291 190.6723 L 220.74421831637 188.3999 L 226.47039777983 193.2437 L 232.19657724329 201.0177 L 237.92275670675 197.54930000000002 L 243.64893617021 197.8782 L 249.37511563367 201.46620000000001 L 255.10129509713 197.639 L 260.82747456059 195.7852 L 266.55365402405 193.154 L 272.27983348751 189.865 L 278.00601295097 196.6224 L 283.73219241443 186.4265 L 289.45837187789 184.6325 L 295.18455134135 186.33679999999998 L 300.91073080481 179.7289 L 306.63691026827 176.9183 L 312.36308973173 173.6293 L 318.08926919519 172.224 L 323.81544865865 172.0446 L 329.54162812211 171.83530000000002 L 335.26780758557 156.7059 L 340.99398704903 148.3638 L 346.72016651249 143.6695 L 352.44634597595 137.4802 L 358.17252543941 131.6796 L 363.89870490287 134.0417 L 369.62488436633 132.5766 L 375.35106382979 133.055 L 381.11132769482 128.9886 L 386.83750715827 128.9288 L 392.56368662173 125.7893 L 398.28986608519 146.56980000000001 L 404.01604554865 129.3175 L 409.74222501211 130.0052 L 415.46840447557 135.0583 L 421.19458393903 215.28 L 426.92076340249 191.30020000000002 L 432.64694286595 146.1213 L 438.37312232941 152.4601 L 444.09930179287 127.52350000000001 L 449.82548125633 106.38419999999999 L 455.55166071979 100.67330000000001 L 461.27784018325 103.00550000000001 L 467.00401964671 121.30430000000001 L 472.73019911017 107.4905 L 478.45637857363 100.4939 L 484.14847363552 72.68690000000001 L 489.87465309898 78.45760000000001 L 495.60083256244 72.4178 L 501.3270120259 66.5873 L 507.05319148936 70.0258 L 512.77937095282 62.3116 L 518.50555041628 56.18209999999999 L 524.23172987974 50.38150000000002 L 529.9579093432 44.64070000000001 L 535.68408880666 36.6275 L 541.41026827012 37.97300000000001 L 547.13644773358 51.12899999999999 L 552.86262719704 40.78359999999998 L 558.5888066605 41.80020000000002 L 564.31498612396 41.2919 L 570.04116558742 42.72710000000001 L 575.76734505088 53.07249999999999 L 581.49352451434 43.05600000000001 L 587.2197039778 36.6275 L 592.94588344126 36.74709999999999 L 598.67206290472 39.52780000000001 L 604.39824236818 46.7038 L 610.12442183164 78.1885 L 620.12442183164 78.1885" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="21" data-z-index="2" class="highcharts-tracker" style="cursor:pointer;"></path></g><g data-z-index="0.1" class="highcharts-markers highcharts-series-2 highcharts-line-series  highcharts-tracker" transform="translate(71,15) scale(1 1)" style="cursor:pointer;" clip-path="none"></g></g>
+              <text x="13" text-anchor="start" class="highcharts-title" data-z-index="4" style="" y="368" aria-hidden="true">
+                <tspan class="typography typography-footnote">Showing all 318 data points</tspan>
+              </text><text x="347" text-anchor="middle" class="highcharts-subtitle" data-z-index="4" style="color:#666666;fill:#666666;" y="29" aria-hidden="true"></text><g class="highcharts-axis-labels highcharts-xaxis-labels " data-z-index="7"><text x="79.875578168363" style="color:#5e5e5e;cursor:default;font-size:12px;font-family:'Optimo-Plain','Helvetica Neue','Helvetica','Arial','sans-serif';font-weight:inherit;font-style:inherit;text-shadow:none;-webkit-font-smoothing:antialiased;fill:#5e5e5e;" text-anchor="middle" transform="translate(0,0)" y="334" opacity="1" aria-hidden="true"><tspan class="typography typography-footnote">08/06/2018</tspan></text><text x="560.87465309898" style="color:#5e5e5e;cursor:default;font-size:12px;font-family:'Optimo-Plain','Helvetica Neue','Helvetica','Arial','sans-serif';font-weight:inherit;font-style:inherit;text-shadow:none;-webkit-font-smoothing:antialiased;fill:#5e5e5e;" text-anchor="middle" transform="translate(0,0)" y="334" opacity="1" aria-hidden="true"><tspan class="typography typography-footnote">03/16/2020</tspan></text><text x="160.07617505837" style="color:#5e5e5e;cursor:default;font-size:12px;font-family:'Optimo-Plain','Helvetica Neue','Helvetica','Arial','sans-serif';font-weight:inherit;font-style:inherit;text-shadow:none;-webkit-font-smoothing:antialiased;fill:#5e5e5e;" text-anchor="middle" transform="translate(0,0)" y="334" opacity="1" aria-hidden="true"><tspan class="typography typography-footnote">11/12/2018</tspan></text><text x="240.2426875468" style="color:#5e5e5e;cursor:default;font-size:12px;font-family:'Optimo-Plain','Helvetica Neue','Helvetica','Arial','sans-serif';font-weight:inherit;font-style:inherit;text-shadow:none;-webkit-font-smoothing:antialiased;fill:#5e5e5e;" text-anchor="middle" transform="translate(0,0)" y="334" opacity="1" aria-hidden="true"><tspan class="typography typography-footnote">02/18/2019</tspan></text><text x="320.37511563367" style="color:#5e5e5e;cursor:default;font-size:12px;font-family:'Optimo-Plain','Helvetica Neue','Helvetica','Arial','sans-serif';font-weight:inherit;font-style:inherit;text-shadow:none;-webkit-font-smoothing:antialiased;fill:#5e5e5e;" text-anchor="middle" transform="translate(0,0)" y="334" opacity="1" aria-hidden="true"><tspan class="typography typography-footnote">05/27/2019</tspan></text><text x="400.54162812211" style="color:#5e5e5e;cursor:default;font-size:12px;font-family:'Optimo-Plain','Helvetica Neue','Helvetica','Arial','sans-serif';font-weight:inherit;font-style:inherit;text-shadow:none;-webkit-font-smoothing:antialiased;fill:#5e5e5e;" text-anchor="middle" transform="translate(0,0)" y="334" opacity="1" aria-hidden="true"><tspan class="typography typography-footnote">09/02/2019</tspan></text><text x="480.74222501211" style="color:#5e5e5e;cursor:default;font-size:12px;font-family:'Optimo-Plain','Helvetica Neue','Helvetica','Arial','sans-serif';font-weight:inherit;font-style:inherit;text-shadow:none;-webkit-font-smoothing:antialiased;fill:#5e5e5e;" text-anchor="middle" transform="translate(0,0)" y="334" opacity="1" aria-hidden="true"><tspan class="typography typography-footnote">12/09/2019</tspan></text><text x="641.04116558742" style="color:#5e5e5e;cursor:default;font-size:12px;font-family:'Optimo-Plain','Helvetica Neue','Helvetica','Arial','sans-serif';font-weight:inherit;font-style:inherit;text-shadow:none;-webkit-font-smoothing:antialiased;fill:#5e5e5e;" text-anchor="middle" transform="translate(0,0)" y="334" opacity="1" aria-hidden="true"><tspan class="typography typography-footnote">06/22/2020</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels " data-z-index="7"><text x="56" style="color:#5e5e5e;cursor:default;font-size:12px;font-family:'Optimo-Plain','Helvetica Neue','Helvetica','Arial','sans-serif';font-weight:inherit;font-style:inherit;text-shadow:none;fill:#5e5e5e;" text-anchor="end" transform="translate(0,0)" y="320" opacity="1" aria-hidden="true"><tspan onclick="location.href=&quot;[object Object]&quot;" class="highcharts-anchor" style="cursor: pointer;">0</tspan></text><text x="56" style="color:#5e5e5e;cursor:default;font-size:12px;font-family:'Optimo-Plain','Helvetica Neue','Helvetica','Arial','sans-serif';font-weight:inherit;font-style:inherit;text-shadow:none;fill:#5e5e5e;" text-anchor="end" transform="translate(0,0)" y="245" opacity="1" aria-hidden="true"><tspan onclick="location.href=&quot;[object Object]&quot;" class="highcharts-anchor" style="cursor: pointer;">2.5K</tspan></text><text x="56" style="color:#5e5e5e;cursor:default;font-size:12px;font-family:'Optimo-Plain','Helvetica Neue','Helvetica','Arial','sans-serif';font-weight:inherit;font-style:inherit;text-shadow:none;fill:#5e5e5e;" text-anchor="end" transform="translate(0,0)" y="171" opacity="1" aria-hidden="true"><tspan onclick="location.href=&quot;[object Object]&quot;" class="highcharts-anchor" style="cursor: pointer;">5K</tspan></text><text x="56" style="color:#5e5e5e;cursor:default;font-size:12px;font-family:'Optimo-Plain','Helvetica Neue','Helvetica','Arial','sans-serif';font-weight:inherit;font-style:inherit;text-shadow:none;fill:#5e5e5e;" text-anchor="end" transform="translate(0,0)" y="96" opacity="1" aria-hidden="true"><tspan onclick="location.href=&quot;[object Object]&quot;" class="highcharts-anchor" style="cursor: pointer;">7.5K</tspan></text><text x="56" style="color:#5e5e5e;cursor:default;font-size:12px;font-family:'Optimo-Plain','Helvetica Neue','Helvetica','Arial','sans-serif';font-weight:inherit;font-style:inherit;text-shadow:none;fill:#5e5e5e;" text-anchor="end" transform="translate(0,0)" y="21" opacity="1" aria-hidden="true"><tspan onclick="location.href=&quot;[object Object]&quot;" class="highcharts-anchor" style="cursor: pointer;">10K</tspan></text></g></svg><div class="highcharts-axis highcharts-xaxis " style="position: absolute; left: 0px; top: 0px; opacity: 1;"><span data-z-index="7" class="highcharts-axis-title" style="font-family: Optimo-Plain, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(94, 94, 94); font-weight: inherit; font-style: inherit; text-shadow: none; margin-left: 0px; margin-top: 0px; left: 249.5px; top: 354px; visibility: inherit;"><div id="d7a70c48-7212-4ac5-855d-903e0a8de2b7" class="bk-axis-label-container">
+                <div class="bk-axis-label bk-cursor bk-horizontal-axis">
+                    <div class="bk-axis-label-control" data-tooltip-content="Name: Weekly Engaged Users Date - Fiscal
+Calendar: fiscal
+Data source: PM - Customer Warehouse
+Updated: 21 hours ago">
+                        <div class="bk-axis-label-title">
+                            <div class="typography typography-footnote">Weekly Engaged Users Date - Fiscal</div>
+                        </div>
+                        <div class="bk-icon-arrow-down"></div>
+                    </div>
+                    <div class="bk-axis-sort-icon">
+            <div id="3c63ab6b-4201-4b1d-99d7-00b19ca52846" class="bk-sort-indicator
+            up" data-tooltip-content="Weekly Engaged Users Date - Fiscal"></div></div>
+                </div>
+            </div></span></div><div class="highcharts-axis highcharts-yaxis " style="position: absolute; left: 0px; top: 0px; opacity: 1;"><span data-z-index="7" class="highcharts-axis-title" style="font-family: Optimo-Plain, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 12px; position: absolute; white-space: nowrap; color: rgb(94, 94, 94); font-weight: inherit; font-style: inherit; text-shadow: none; text-overflow: ellipsis; overflow: hidden; margin-left: 0px; margin-top: 0px; transform: rotate(270deg); transform-origin: 50% 12px; left: -69.4531px; top: 152.5px; visibility: inherit;"><div id="c10eeea6-f52b-46fb-9fca-107e412fa9da" class="bk-axis-label-container">
+                <div class="bk-axis-label bk-cursor bk-vertical-axis">
+                    <div class="bk-axis-label-control" data-tooltip-content="Name: Unique Count User GUID
+Aggregation: Unique Count
+Data source: PM - Customer Warehouse
+Updated: 6 hours ago">
+                        <div class="bk-axis-label-title">
+                            <div class="typography typography-footnote">Unique Count User GUID</div>
+                        </div>
+                        <div class="bk-icon-arrow-down"></div>
+                    </div>
+
+                </div>
+            </div></span></div></div><div tabindex="0" style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;"></div></div>
+        <div class="bk-chart-legend-container" style="width:102.86793518066406px">
+            <bk-chart-legend class="bk-chart-legend ng-isolate-scope" bk-ctrl="$ctrl.legendController"><!-- ngIf: $ctrl.isLegendVertical() --><div ng-if="$ctrl.isLegendVertical()" class="bk-legend ng-scope">
+    <div vs-repeat="24" class="ng-scope"><bk-chart-legend-item class="vs-repeat-before-content" style="width: 100%; min-height: 0px;"></bk-chart-legend-item><!-- ngRepeat: legendController in $vs_collection track by legendController.id --><bk-chart-legend-item class="bk-legend-item-container vs-repeat-repeated-element ng-scope ng-isolate-scope" bk-ctrl="legendController" ng-repeat="legendController in $vs_collection track by legendController.id"><div class="bk-legend-item" ng-class="{'bk-disabled': !$ctrl.enabled }">
+    <div class="bk-legend-marker-container">
+        <div class="bk-legend-marker" ng-style="$ctrl.getStyle()" ng-click="$ctrl.onColorClicked()" style="background-color: rgb(252, 200, 56);">
+        </div>
+    </div>
+    <div class="bk-legend-label ng-binding" data-tooltip-content="1) new" ng-sglclick="$ctrl.onLegendClicked()" ng-sglclick-time="300" ng-sgldblclick="$ctrl.onLegendDblClicked()">
+      <div class="typography typography-footnote">1) new</div>
+    </div>
+</div></bk-chart-legend-item><!-- end ngRepeat: legendController in $vs_collection track by legendController.id --><bk-chart-legend-item class="bk-legend-item-container vs-repeat-repeated-element ng-scope ng-isolate-scope" bk-ctrl="legendController" ng-repeat="legendController in $vs_collection track by legendController.id"><div class="bk-legend-item" ng-class="{'bk-disabled': !$ctrl.enabled }">
+    <div class="bk-legend-marker-container">
+        <div class="bk-legend-marker" ng-style="$ctrl.getStyle()" ng-click="$ctrl.onColorClicked()" style="background-color: rgb(72, 209, 224);">
+        </div>
+    </div>
+    <div class="bk-legend-label ng-binding" data-tooltip-content="2) returning" ng-sglclick="$ctrl.onLegendClicked()" ng-sglclick-time="300" ng-sgldblclick="$ctrl.onLegendDblClicked()">
+      <div class="typography typography-footnote">2) returning</div>
+    </div>
+</div></bk-chart-legend-item><!-- end ngRepeat: legendController in $vs_collection track by legendController.id --><bk-chart-legend-item class="bk-legend-item-container vs-repeat-repeated-element ng-scope ng-isolate-scope" bk-ctrl="legendController" ng-repeat="legendController in $vs_collection track by legendController.id"><div class="bk-legend-item" ng-class="{'bk-disabled': !$ctrl.enabled }">
+    <div class="bk-legend-marker-container">
+        <div class="bk-legend-marker" ng-style="$ctrl.getStyle()" ng-click="$ctrl.onColorClicked()" style="background-color: rgb(46, 117, 240);">
+        </div>
+    </div>
+    <div class="bk-legend-label ng-binding" data-tooltip-content="3) engaged" ng-sglclick="$ctrl.onLegendClicked()" ng-sglclick-time="300" ng-sgldblclick="$ctrl.onLegendDblClicked()">
+      <div class="typography typography-footnote">3) engaged</div>
+    </div>
+</div></bk-chart-legend-item><!-- end ngRepeat: legendController in $vs_collection track by legendController.id --><bk-chart-legend-item class="vs-repeat-after-content" style="width: 100%; min-height: 0px;"></bk-chart-legend-item></div>
+</div><!-- end ngIf: $ctrl.isLegendVertical() -->
+<!-- ngIf: !$ctrl.isLegendVertical() --></bk-chart-legend>
+        </div>
+    </div>
+
+    <!-- ngIf: $ctrl.colorPicker && $ctrl.showLegendColorPicker --><bk-single-color-picker bk-ctrl="$ctrl.colorPicker" ng-if="$ctrl.colorPicker &amp;&amp; $ctrl.showLegendColorPicker" class="ng-scope ng-isolate-scope"></bk-single-color-picker><!-- end ngIf: $ctrl.colorPicker && $ctrl.showLegendColorPicker -->
+    <!-- ngIf: $ctrl.currentColumnController && $ctrl.useColumnControlMenuV2 --><bk-chart-axis-control-menu bk-ctrl="$ctrl.currentColumnController" ng-if="$ctrl.currentColumnController &amp;&amp; $ctrl.useColumnControlMenuV2" class="ng-scope ng-isolate-scope"></bk-chart-axis-control-menu><!-- end ngIf: $ctrl.currentColumnController && $ctrl.useColumnControlMenuV2 -->
+    <!-- ngIf: $ctrl.currentColumnController && !$ctrl.useColumnControlMenuV2 -->
+    <!-- ngIf: $ctrl.contextMenuCtrl --><bk-context-menu ng-if="$ctrl.contextMenuCtrl" bk-ctrl="$ctrl.contextMenuCtrl" class="ng-scope ng-isolate-scope"></bk-context-menu><!-- end ngIf: $ctrl.contextMenuCtrl -->
+</div></div>
+        <!-- ngIf: $ctrl.dataVizComponentConfig.allowPinning -->
+    </div><!-- end ngSwitchWhen: -->
+</div></bk-data-viz><!-- end ngIf: $ctrl.chartVizComponent -->
+        </div><!-- end ngLazyShow: $ctrl.isChartMode() -->
+        <!-- ngLazyShow: $ctrl.isCustomRMode() -->
+    </div><!-- end ngIf: !$ctrl.alertComponent -->
+</div></bk-answer-visualization-viewer><!-- end ngIf: !!$ctrl.answerVisualizationViewerComponent -->
+            </div>
+        </div>
+        <!-- ngIf: $ctrl.isAskExpertVisible() || $ctrl.isConnectionStatusVisible() --><div ng-if="$ctrl.isAskExpertVisible() || $ctrl.isConnectionStatusVisible()" class="bk-answer-footer ng-scope ask-expert" ng-class="{'ask-expert': !$ctrl.isAskExpertFormOpen()}">
+            <!-- ngIf: $ctrl.isAskExpertVisible() --><bk-answer-ask-expert class="bk-answer-footer-item ng-scope ng-isolate-scope" ng-if="$ctrl.isAskExpertVisible()" bk-ctrl="$ctrl.answerAskExpert"><div class="bk-answer-ask-expert" ng-switch="$ctrl.isReadOnly">
+    <!-- ngSwitchWhen: false --><div class="bk-ask-expert-edit ng-scope" ng-switch-when="false">
+        <!-- ngIf: !$ctrl.askExpertForm --><div class="bk-answer-ask-expert-prompt ng-scope" ng-if="!$ctrl.askExpertForm">
+            <!-- ngIf: $ctrl.showAcceptAnswer() -->
+            <span class="ng-binding">Not what you expected?</span>
+            <a class="bk-answer-ask-expert-link ng-binding" ng-click="$ctrl.openForm()" tabindex="0" ng-space-or-enter="$ctrl.openForm()">
+                Ask an expert
+            </a>
+        </div><!-- end ngIf: !$ctrl.askExpertForm -->
+        <!-- ngIf: !!$ctrl.askExpertForm -->
+    </div><!-- end ngSwitchWhen: -->
+    <!-- ngSwitchWhen: true -->
+</div></bk-answer-ask-expert><!-- end ngIf: $ctrl.isAskExpertVisible() -->
+            <!-- ngIf: $ctrl.isConnectionStatusVisible() -->
+        </div><!-- end ngIf: $ctrl.isAskExpertVisible() || $ctrl.isConnectionStatusVisible() -->
+    </div>
+</div></bk-answer-content><!-- end ngSwitchWhen: -->
+            </div>
+            <!-- ngIf: $ctrl.relatedTableInsightComponent.insightInfos.length > 0 && $ctrl.viewerState == 0 -->
+        </div>
+    </div>
+    <!-- ngIf: $ctrl.relatedObjects -->
+    <!-- ngIf: $ctrl.hasSpotIQ() -->
+</div></bk-answer-page><!-- end ngIf: !!$ctrl.pageComponent --><!-- end ngSwitchWhen: -->
+            <!-- ngSwitchWhen: true -->
+        </div><!-- end ngIf: $ctrl.isCurrentIndex($index) && !!$ctrl.sageClient -->
+    </div><!-- end ngRepeat: table in $ctrl.answerDocumentModel.getContextTables() track by $index -->
+</div></bk-answer-document><!-- end ngIf: !!$ctrl.answerDocumentComponent --></bk-saved-answer><!-- end ngSwitchWhen: -->
+
+            <!-- ngSwitchWhen: adminV2-admin -->
+            <!-- ngSwitchWhen: expert-requests -->
+            <!-- ngSwitchWhen: view -->
+            <!-- ngSwitchWhen: answer-replay -->
+            <!-- ngSwitchWhen: worksheet -->
+            <!-- ngSwitchWhen: home -->
+            <!-- ngSwitchWhen: feed -->
+            <!-- ngSwitchWhen: learn -->
+            <!-- ngSwitchWhen: schedules -->
+            <!-- ngSwitchWhen: schedule -->
+            <!-- ngSwitchWhen: slack-register -->
+            <!-- ngSwitchWhen: related-link -->
+            <!-- ngSwitchWhen: user-preference -->
+            <!-- ngSwitchWhen: data -->
+            <!-- ngSwitchWhen: table-detail -->
+            <!-- ngSwitchWhen: embrace-table-detail -->
+            <!-- ngSwitchWhen: embrace-remapping -->
+             <!-- ngSwitchWhen: embrace-connection-confirmation -->
+            <!-- ngSwitchWhen: embrace-connection-page -->
+            <!-- ngSwitchWhen: visualization-snapshot -->
+            <!-- ngSwitchWhen: schema-viewer -->
+            <!-- ngSwitchWhen: onboarding -->
+            <!-- ngSwitchWhen: upload-license -->
+            <!-- ngSwitchWhen: worksheet-upload -->
+            <!-- ngSwitchWhen: import-tsl -->
+            <!-- ngSwitchDefault: -->
+        </div>
+        <div ng-show="$ctrl.showDebugModeBanner &amp;&amp; !$ctrl.forceHideDebugBanner" class="bk-debug-banner ng-hide">
+            <div class="bk-text-red ng-binding">Version info:</div>
+            <div class="bk-text-white ng-binding"><span class="ng-binding">git-commit:</span>86c1551281152bbcc856b0e27c90ed31b9236db8</div>
+            <div class="bk-text-white ng-binding"><span class="ng-binding"></span>(HEAD detached at 86c15512811)</div>
+            <div class="bk-text-white ng-binding"><span class="ng-binding">built on:</span>Tue Aug 04 2020 11:38:17</div>
+            <div class="bk-close ng-binding" ng-click="$ctrl.forceHideDebugBanner = true" ng-space-or-enter="$ctrl.forceHideDebugBanner = true" role="button" tabindex="0">
+                    Close
+            </div>
+        </div>
+        <!-- ngIf: $ctrl.showResourceCenter() --><div id="resource-center-div" class="bk-resource-center ng-hide" ng-if="$ctrl.showResourceCenter()">
+            <rd-button bk-ctrl="$ctrl.resourceCenterBtn" class="ng-isolate-scope"><div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)" data-tooltip-content="" data-tooltip-position="top" data-tooltip-align="center">
+    <button class="rd-button             rd-button-secondary             rd-button-size-m             rd-button-background-light rd-button-with-icon rd-button-icon-information" ng-class="{'rd-button-with-icon': !!$ctrl.icon,
+            'rd-button-icon-information': $ctrl.icon,
+            'rd-button-with-text': !!$ctrl.text,
+            'rd-button-selected': $ctrl.isButtonSelected()}" ng-disabled="$ctrl.isDisabled()" ng-click="$ctrl.buttonOnClick($event);" ng-dblclick="$ctrl.buttonOnDoubleClick($event)" reverse-text-icon="reverseTextIcon" ng-attr-aria-label="{{$ctrl.ariaLabel}}" aria-label="Show information center">
+        <!-- ngIf: $ctrl.iconCtrl --><rd-icon class="rd-button-icon ng-scope ng-isolate-scope" ng-class="{'rd-button-hidden': $ctrl.isSaveInProgress()}" ng-if="$ctrl.iconCtrl" bk-ctrl="$ctrl.iconCtrl" aria-hidden="true"><svg focusable="false" class="rd-icon rd-icon-size-l rd-icon-color-current">
+    <use xlink:href="icons/rd-icons.svg#rd-icon-information"></use>
+</svg>
+</rd-icon><!-- end ngIf: $ctrl.iconCtrl -->
+        <!-- ngIf: $ctrl.text -->
+        <!-- ngIf: $ctrl.isSaveButton -->
+    </button>
+</div>
+</rd-button>
+        </div><!-- end ngIf: $ctrl.showResourceCenter() -->
+    </div>
+</main></bk-app-canvas>

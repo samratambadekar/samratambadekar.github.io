@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Segmented Control</title>
+    <link rel="stylesheet" href="css/style_segmented_control.css">
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+    <style>
+    * {
+box-sizing: border-box;
+}
+
+.container {
+position: relative;
+display: inline-flex;
+justify-content: flex-start;
+align-items: center;
+height: 32px;
+background-color: #EAEDF2;
+border-radius: 16px;
+margin: 20px;
+overflow: hidden;
+}
+.container .element {
+padding: 5px 12px;
+cursor: pointer;
+border-radius: 16px;
+z-index: 1;
+}
+.container .slider {
+position: absolute;
+left: 1px;
+top: 1px;
+bottom: 1px;
+z-index: 0;
+transition: -webkit-transform 0.25s ease;
+transition: transform 0.25s ease;
+transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+}
+.container .slider .middle {
+width: 1px;
+min-width: 1px;
+transition: -webkit-transform 0.25s ease;
+transition: transform 0.25s ease;
+transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+height: 100%;
+-webkit-transform-origin: left;
+        transform-origin: left;
+background-color: #FFF;
+}
+.container .slider .before {
+content: '';
+position: absolute;
+left: -12px;
+width: 12px;
+top: 1px;
+bottom: 1px;
+background-color: #FFF;
+border-radius: 16px 0 0 16px;
+transition: -webkit-transform 0.25s ease;
+transition: transform 0.25s ease;
+transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+}
+.container .slider .after {
+content: '';
+position: absolute;
+right: -12px;
+width: 12px;
+top: 1px;
+bottom: 1px;
+background-color: #FFF;
+border-radius: 0 16px 16px 0;
+transition: -webkit-transform 0.25s ease;
+transition: transform 0.25s ease;
+transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+}
+
+.blurb {
+margin: 20px;
+}
+
+    </style>
+  </head>
+  <body>
+
+<div class="container">
+  <div class="element">a</div>
+  <div class="element">short</div>
+  <div class="element">a long string</div>
+  <div class="slider">
+    <div class="before"></div>
+    <div class="middle"></div>
+    <div class="after"></div>
+  </div>
+</div>
+<div class="container">
+  <div class="element">a</div>
+  <div class="element">short</div>
+  <div class="element">a long string</div>
+  <div class="slider">
+    <div class="before"></div>
+    <div class="middle"></div>
+    <div class="after"></div>
+  </div>
+</div>
+<div class="container">
+  <div class="element">a</div>
+  <div class="element">short</div>
+  <div class="element">a long string</div>
+  <div class="slider">
+    <div class="before"></div>
+    <div class="middle"></div>
+    <div class="after"></div>
+  </div>
+</div>
+<div class="container">
+  <div class="element">a</div>
+  <div class="element">short</div>
+  <div class="element">a long string</div>
+  <div class="slider">
+    <div class="before"></div>
+    <div class="middle"></div>
+    <div class="after"></div>
+  </div>
+</div>
+<div class="container">
+  <div class="element">a</div>
+  <div class="element">short</div>
+  <div class="element">a long string</div>
+  <div class="slider">
+    <div class="before"></div>
+    <div class="middle"></div>
+    <div class="after"></div>
+  </div>
+</div>
+<div class="container">
+  <div class="element">a</div>
+  <div class="element">short</div>
+  <div class="element">a long string</div>
+  <div class="slider">
+    <div class="before"></div>
+    <div class="middle"></div>
+    <div class="after"></div>
+  </div>
+</div>
+  </body>
+
+  <script type="text/javascript">
+  $("body").on("click", ".element", function(evt) {
+let sliderEl = $(this).closest(".container").find(".slider");
+
+let newLeft = $(evt.target).position().left+ 12;
+sliderEl.css({
+  // width: $(evt.target).width(),
+  transform: `translateX(${newLeft}px)`
+});
+
+let newWidth = $(evt.target).width();
+sliderEl.find(".middle").css({
+  transform: `scaleX(${newWidth})`
+});
+
+sliderEl.find(".after").css({
+  transform: `translateX(${newWidth-3}px)`
+});
+});
+  </script>
+</html>
+
+$("head").append(`
+  <style>
+    .focus-element::before {
+      outline: none !important;
+      border: none !important;
+      left: 0 !important;
+      top: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+    }
+    .focus-element:focus::before {
+      border: 1px solid #C0C6CF !important;
+      border-radius: 32px !important;
+    }
+    .focus-element:focus {
+      outline-color: #C0C6CF !important;
+    }
+    .focus-element:focus ~ label::before {
+      outline-color: #C0C6CF !important;
+    }
+  </style>
+`);
+$("button, [type='checkbox'], [type='radio'], a, [tabindex]").addClass("focus-element");
+
+// Select the node that will be observed for mutations
+const targetNode = $('html')[0];
+
+// Options for the observer (which mutations to observe)
+const config = { attributes: true, childList: true, subtree: true };
+
+// Callback function to execute when mutations are observed
+const callback = function(mutationsList, observer) {
+    // Use traditional 'for loops' for IE 11
+    for(let mutation of mutationsList) {
+        if (mutation.type === 'childList') {
+            // console.log('A child node has been added or removed.');
+            $("button, [type='checkbox'], [type='radio'], a, [tabindex]").addClass("focus-element");
+        }
+        else if (mutation.type === 'attributes') {
+            // console.log('The ' + mutation.attributeName + ' attribute was modified.');
+        }
+    }
+};
+
+// Create an observer instance linked to the callback function
+const observer = new MutationObserver(callback);
+
+// Start observing the target node for configured mutations
+observer.observe(targetNode, config);
+
+// Later, you can stop observing
+// observer.disconnect();

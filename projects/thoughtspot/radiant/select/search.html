@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+  <link type="image/x-icon" rel="shortcut icon" href="resources/img/logo/favicon_3.ico?r=4950">
+  <title>Select Dropdown</title>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/colors.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/select.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+  <section class="prototype-description">
+    <header class="typography-headline-large">Radiant Dropdown</header>
+  </section>
+
+  <section class="section-main">
+    <div class="select-container">
+      <label class="select-label typography-overline">Searchable select option 1</label>
+      <div class="select-container-inner">
+        <input type="text" class="rd-select typography-body-regular" placeholder="Search" value="">
+        <svg class="svg-icon gray select-icon select-icon-right"><use xlink:href="icons/rd-icons.svg#rd-icon-chevron-down"></use></svg>
+
+        <div class="select-dropdown">
+          <ul class="menu-dropdown list">
+            <li class="menu-dropdown-item list-item" tabindex="0">Apple</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Banana</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Tomato</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Chocolate</li>
+            <div class="no-results text-gray">No results found</div>
+          </ul>
+        </div>
+      </div>
+      <div class="select-info-text select-error-message typography-caption text-error">
+        <svg class="svg-icon current-color error-icon"><use xlink:href="icons/rd-icons.svg#rd-icon-exclamation-point-circle"></use></svg>
+        <span>Error message</span>
+      </div>
+      <div class="select-info-text typography-caption text-info">Info text</div>
+    </div>
+
+    <div class="select-container">
+      <label class="select-label typography-overline">Searchable select option 2</label>
+      <div class="select-container-inner">
+        <input type="text" class="rd-select typography-body-regular" placeholder="Select" readonly>
+        <svg class="svg-icon gray select-icon select-icon-right"><use xlink:href="icons/rd-icons.svg#rd-icon-chevron-down"></use></svg>
+
+        <div class="select-dropdown">
+          <ul class="menu-dropdown list">
+            <div class="select-search-container icon-right">
+              <input type="text" class="rd-select-search typography-body-regular is-empty" placeholder="Type name" >
+              <svg class="svg-icon gray select-search-icon select-search-icon-right hide"><use xlink:href="icons/rd-icons.svg#rd-icon-cross"></use></svg>
+              <div class="placeholder-label">Search...</div>
+            </div>
+            <li class="menu-dropdown-item list-item" tabindex="0">Apple</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Banana</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Tomato</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Chocolate</li>
+            <div class="no-results text-gray">No results found</div>
+          </ul>
+        </div>
+      </div>
+      <div class="select-info-text select-error-message typography-caption text-error">
+        <svg class="svg-icon current-color error-icon"><use xlink:href="icons/rd-icons.svg#rd-icon-exclamation-point-circle"></use></svg>
+        <span>Error message</span>
+      </div>
+      <div class="select-info-text typography-caption text-info">Info text</div>
+    </div>
+  </section>
+
+
+  <section class="section-main">
+    <div class="select-container">
+      <label class="select-label typography-overline">Select label</label>
+      <div class="select-container-inner">
+        <input type="text" class="rd-select typography-body-regular" placeholder="Select" value="" readonly>
+        <svg class="svg-icon gray select-icon select-icon-right"><use xlink:href="icons/rd-icons.svg#rd-icon-chevron-down"></use></svg>
+
+        <div class="select-dropdown">
+          <ul class="menu-dropdown list">
+            <li class="menu-dropdown-item list-item" tabindex="0">Option 1</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Option 2</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Option 3</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Option 4</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="select-container">
+      <label class="select-label typography-overline">Select with info text</label>
+      <div class="select-container-inner">
+        <input type="text" class="rd-select typography-body-regular" placeholder="Select" value="" readonly>
+        <svg class="svg-icon gray select-icon select-icon-right"><use xlink:href="icons/rd-icons.svg#rd-icon-chevron-down"></use></svg>
+
+        <div class="select-dropdown">
+          <ul class="menu-dropdown list">
+            <li class="menu-dropdown-item list-item" tabindex="0">Option 1</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Option 2</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Option 3</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Option 4</li>
+          </ul>
+        </div>
+      </div>
+      <div class="select-info-text typography-caption text-info">Info text</div>
+    </div>
+
+    <div class="select-container has-error">
+      <label class="select-label typography-overline">Select with error</label>
+      <div class="select-container-inner">
+        <input type="text" class="rd-select typography-body-regular" placeholder="Select" value="" readonly>
+        <svg class="svg-icon gray select-icon select-icon-right"><use xlink:href="icons/rd-icons.svg#rd-icon-chevron-down"></use></svg>
+
+        <div class="select-dropdown">
+          <ul class="menu-dropdown list">
+            <li class="menu-dropdown-item list-item" tabindex="0">Option 1</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Option 2</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Option 3</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Option 4</li>
+          </ul>
+        </div>
+      </div>
+      <div class="select-info-text select-error-message typography-caption text-error">
+        <svg class="svg-icon current-color error-icon"><use xlink:href="icons/rd-icons.svg#rd-icon-exclamation-point-circle"></use></svg>
+        <span>Error message</span>
+      </div>
+      <div class="select-info-text typography-caption text-info">Info text</div>
+    </div>
+
+    <div class="select-container disabled">
+      <label class="select-label typography-overline">Select disabled</label>
+      <div class="select-container-inner">
+        <input type="text" class="rd-select typography-body-regular" placeholder="Select" value="" readonly disabled>
+        <svg class="svg-icon gray select-icon select-icon-right"><use xlink:href="icons/rd-icons.svg#rd-icon-chevron-down"></use></svg>
+
+        <div class="select-dropdown">
+          <ul class="menu-dropdown list">
+            <li class="menu-dropdown-item list-item" tabindex="0">Option 1</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Option 2</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Option 3</li>
+            <li class="menu-dropdown-item list-item" tabindex="0">Option 4</li>
+          </ul>
+        </div>
+      </div>
+      <div class="select-info-text select-error-message typography-caption text-error">
+        <svg class="svg-icon current-color error-icon"><use xlink:href="icons/rd-icons.svg#rd-icon-exclamation-point-circle"></use></svg>
+        <span>Error message</span>
+      </div>
+      <div class="select-info-text typography-caption text-info">Info text</div>
+    </div>
+
+  </section>
+
+</body>
+
+<script type="text/javascript" src="js/select.js"></script>
+</html>

@@ -1,0 +1,130 @@
+.svg-icon.current-color {
+  fill: currentColor;
+}
+.svg-icon.gray {
+  fill: var(--color-text-info);
+}
+
+.textarea-container + .textarea-container,
+.input-container + .input-container {
+  margin-top: 40px;
+}
+
+.textarea-container,
+.input-container {
+  width: 320px;
+}
+.input-container.small {
+  width: 120px;
+}
+.input-container.x-small {
+  display: inline-block;
+  width: 60px;
+}
+.input-container.x-small + .input-container.x-small {
+  margin-left: 24px;
+}
+.textarea-container .textarea-label,
+.input-container .input-label {
+  display: block;
+  margin-bottom: 4px;
+  transition: color 0.2s ease;
+}
+.textarea-container .textarea-info-text,
+.input-container .input-info-text {
+  margin-top: 4px;
+}
+.textarea-container-inner,
+.input-container-inner {
+  position: relative;
+}
+.textarea-container-inner .rd-textarea,
+.input-container-inner .rd-input {
+  width: 100%;
+  height: 32px;
+  padding: 6px 16px;
+  border: 1px solid #C0C6CF;
+  border-radius: 6px;
+  background-color: #FFF;
+  transition: border-color 0.2s ease;
+}
+.textarea-container-inner .rd-textarea {
+  min-height: 64px;
+  max-width: 100%;
+}
+.textarea-container-inner .rd-textarea.no-resize {
+  resize: none;
+}
+.rd-input[type='number'] {
+  padding-right: 4px;
+}
+.textarea-container:hover .rd-textarea,
+.input-container:hover .rd-input {
+  border-color: var(--color-gray-60);
+}
+.textarea-container.is-editing .rd-textarea,
+.textarea-container .rd-textarea:focus,
+.input-container.is-editing .rd-input,
+.input-container .rd-input:focus {
+  outline: none;
+  border-color: var(--color-blue-accent);
+}
+.textarea-container.is-editing .textarea-label,
+.input-container.is-editing .input-label {
+  color: var(--color-blue-accent);
+}
+.textarea-container.has-error .textarea-label,
+.input-container.has-error .input-label {
+  color: var(--color-failure);
+}
+.textarea-container.has-error .rd-textarea,
+.input-container.has-error .rd-input {
+  border-color: var(--color-failure);
+}
+.textarea-container.disabled,
+.input-container.disabled {
+  opacity: 0.4;
+  /* pointer-events: none; */
+}
+
+.input-container-inner .input-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 16px;
+  max-width: 16px;
+}
+.input-container-inner.icon-left .rd-input {
+  padding-left: 32px;
+}
+.input-container-inner.icon-right .rd-input {
+  padding-right: 32px;
+}
+.input-container-inner.icon-left .input-icon-left {
+  left: 12px;
+}
+.input-container-inner.icon-right .input-icon-right {
+  right: 12px;
+}
+
+.textarea-error-message,
+.input-error-message {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.textarea-container:not(.has-error) .textarea-error-message,
+.input-container:not(.has-error) .input-error-message {
+  display: none;
+}
+.textarea-container.has-error .textarea-error-message ~ .textarea-info-text,
+.input-container.has-error .input-error-message ~ .input-info-text {
+  display: none;
+}
+.textarea-error-message .svg-icon,
+.input-error-message .svg-icon {
+  height: 12px;
+  max-width: 12px;
+  margin: 4px 8px 4px 0;
+}

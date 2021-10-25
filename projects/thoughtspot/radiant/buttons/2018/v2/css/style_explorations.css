@@ -1,0 +1,106 @@
+
+.section-radiant {
+  border-bottom: 1px solid #DCE0E6;
+}
+.section-radiant:nth-child(even) {
+  border-left: 1px solid #DCE0E6;
+  background-color: #f6f8fa;
+}
+
+
+.button-experiments .rd-button:focus::before {
+  opacity: 0;
+}
+
+.button-experiments .exploration1 .rd-button {
+  /* filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0.25)); */
+  transition: all 0.3s ease;
+}
+.button-experiments .exploration1 .rd-button:not(.rd-button-ghost):hover {
+  box-shadow: 0 16px 16px -12px rgba(18,28,37,.15);
+}
+.button-experiments .exploration1 .rd-button:not(.rd-button-ghost):active {
+  box-shadow: 0 16px 8px -12px rgba(18,28,37,.15);
+}
+
+
+.button-experiments .exploration2 .rd-button {
+  border-width: 0;
+}
+.button-experiments .exploration2 .rd-button-sync .sync-loader  {
+  display: none;
+}
+.button-experiments .exploration2 .rd-button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 108px;
+  height: 108px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(0);
+  border-radius: 100px;
+}
+.button-experiments .exploration2 .rd-button-primary::after,
+.button-experiments .exploration2 .rd-button-secondary::after {
+  left: -8px;
+}
+.button-experiments .exploration2 .rd-button-ghost::after {
+  /* background-color: #E9EDF2; */
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  /* z-index: -1; */
+}
+.button-experiments .exploration2 .rd-button.ripple::after {
+  transition: transform 0.8s ease;
+  transform: scale(1.2);
+}
+.button-experiments .exploration2 .rd-button-ghost::after {
+  width: 48px;
+  height: 48px;
+}
+.button-experiments .exploration2 .rd-button-icon-l::after {
+  width: 32px;
+  height: 32px;
+}
+.button-experiments .exploration2 .rd-button-icon-m::after {
+  width: 24px;
+  height: 24px;
+}
+.button-experiments .exploration2 .rd-button-icon-s::after {
+  width: 20px;
+  height: 20px;
+}
+
+.button-experiments .rd-button {
+  overflow: hidden;
+}
+
+.button-experiments .exploration3 .rd-button:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s ease;
+}
+
+.button-experiments .exploration4 .rd-button.shake-animation {
+  animation: shake 0.3s linear 2;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-4px);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

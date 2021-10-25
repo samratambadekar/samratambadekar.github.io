@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <meta name="description" content="">
+
+
+
+  <link type="image/x-icon" rel="shortcut icon" href="https://d2if2nytu6z4ml.cloudfront.net/resources/img/logo/favicon_3.ico?r=9482">
+  <title>ThoughtSpot</title>
+
+  <link type="text/css" rel="stylesheet" href="https://d2if2nytu6z4ml.cloudfront.net/resources/css/all.min.3e2e5bcb06db9d50.css">
+  <link rel="stylesheet" href="css/style_radiant_grids.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-resizable.min.js"></script>
+  <script src="js/sortable.min.js"></script>
+  <!-- <script src="js/jquery-sortable.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery-sortablejs@latest/jquery-sortable.js"></script> -->
+</head>
+<body data-width="Browser width: 0px">
+  <nav class="nav_main">
+    <div class="">
+      <img src="img/ts_logo.svg" class="logo" />
+    </div>
+    <div class="primary-nav-items invisible">
+        <div class="primary-nav-item">Search</div>
+        <div class="primary-nav-item">Answers</div>
+        <div class="primary-nav-item">Pinboards</div>
+        <div class="primary-nav-item">Data</div>
+        <div class="primary-nav-item selected">Admin</div>
+    </div>
+    <div class="invisible">
+      <img src="img/icon_help.svg" class="menu_icon">
+      <img src="img/icon_avatar.png" class="menu_icon">
+    </div>
+    <!-- <rd-button ng-if="!doTransclusion" class="false" bk-ctrl="actionDropdownButtonCtrl">
+      <div class="rd-button-wrapper" ng-click="$ctrl.checkButtonDisabled($event)">
+        <button class="rd-button rd-button-secondary rd-button-size-m rd-button-background-dark rd-button-with-icon rd-button-icon-question-mark">
+          <rd-icon class="rd-button-icon ng-isolate-scope">
+            <svg viewBox="0 0 18 18" id="rd-icon-question-mark"><path d="m5.10613 3.70328c-.20434.5636-.30608 1.18983-.30608 1.87868h2.11546c0-.85184.18314-1.53125.54773-2.03738.36459-.50699.93097-.76091 1.6983-.76091.19064.00594.37895.04421.55706.11323.21832.08002.4197.2011.5935.35687.1993.18135.3603.40167.4731.64767.1298.26851.195.59106.195.96679 0 .31312-.0407.58162-.1212.8081-.0797.22475-.1916.42806-.3332.60907-.1425.18186-.3036.34742-.4833.49755-.17891.15098-.36799.31311-.56554.48897-.24758.21275-.46125.42807-.64015.64767-.17975.21876-.33152.47268-.45531.76006-.1238.28823-.21282.62279-.26878 1.00539-.05596.38086-.08394 1.76426-.08394 2.31496h2.00442c0-.4504.0407-1.7496.1212-2.06189.0806-.31312.1942-.58591.3434-.81753.1471-.23011.3214-.44126.5189-.6288.1984-.18701.4146-.38174.6503-.58162.1976-.175.3951-.35429.5935-.5353.1985-.18186.374-.38774.5291-.61936.1543-.23162.2781-.50699.3705-.82611.0933-.31998.1399-.69829.1399-1.13665 0-.60049-.1051-1.13922-.3154-1.61446-.2111-.47611-.4985-.87329-.864-1.19241-.3645-.31912-.791-.56361-1.2803-.7326-.5113-.1725-1.04735-.258017-1.58634-.25307-.68 0-1.29556.10981-1.84668.32856-.52996.20521-1.01084.52187-1.41087.92905-.39619.41132-.69988.90439-.89028 1.44547z"></path><path d="m10 14h-1.99995v3h1.99995z"></path></svg>
+          </rd-icon>
+        </button>
+      </div>
+    </rd-button> -->
+  </nav>
+  <section class="main_page">
+    <div class="grid_elements">
+      <div class="toggle_element grid_element">
+        <div class="bk-toggle-switch grid_max_width">
+          <span class="bk-toggle-switch-title">Grid max width 1280px</span>
+
+          <input type="checkbox" class="bk-toggle-checkbox" />
+          <div class="bk-toggle-switch-background">
+            <div class="bk-toggle-switch-marker"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="toggle_element grid_element">
+        <div class="bk-toggle-switch grid_card_toggle">
+          <span class="bk-toggle-switch-title">Show grid cards</span>
+
+          <input type="checkbox" class="bk-toggle-checkbox" />
+          <div class="bk-toggle-switch-background">
+            <div class="bk-toggle-switch-marker"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="side_panel left_panel" data-width="260px">
+      <button class="icon_button open_close">
+        <img src="img/ic_arrow_l.svg" />
+      </button>
+
+      <div class="splitter splitter1"></div>
+    </div>
+
+    <div class="grid_stripes">
+      <div class="grid_stripe"></div>
+      <div class="grid_stripe"></div>
+      <div class="grid_stripe"></div>
+      <div class="grid_stripe"></div>
+      <div class="grid_stripe"></div>
+      <div class="grid_stripe"></div>
+      <div class="grid_stripe"></div>
+      <div class="grid_stripe"></div>
+      <div class="grid_stripe"></div>
+      <div class="grid_stripe"></div>
+      <div class="grid_stripe"></div>
+      <div class="grid_stripe"></div>
+
+      <div class="grid_cards hide">
+        <div class="grid_row">
+          <div class="grid_card col_12">
+            col-12
+          </div>
+        </div>
+
+        <div class="grid_row">
+          <div class="grid_card col_6">
+            col-6
+          </div>
+          <div class="grid_card col_6">
+            col-6
+          </div>
+        </div>
+
+        <div class="grid_row">
+          <div class="grid_card col_4">
+            col-4
+          </div>
+          <div class="grid_card col_4">
+            col-4
+          </div>
+          <div class="grid_card col_4">
+            col-4
+          </div>
+        </div>
+
+        <div class="grid_row">
+          <div class="grid_card col_3">
+            col-3
+          </div>
+          <div class="grid_card col_3">
+            col-3
+          </div>
+          <div class="grid_card col_3">
+            col-3
+          </div>
+          <div class="grid_card col_3">
+            col-3
+          </div>
+        </div>
+
+
+        <div class="grid_row">
+          <div class="grid_card col_6">
+            col-6
+          </div>
+          <div class="grid_card col_3">
+            col-3
+          </div>
+          <div class="grid_card col_3">
+            col-3
+          </div>
+        </div>
+
+        <div class="grid_row"></div>
+
+      </div>
+    </div>
+
+    <div class="side_panel right_panel" data-width="300px">
+      <button class="icon_button open_close">
+        <img src="img/ic_arrow_r.svg" />
+      </button>
+
+      <div class="panel_elements">
+        <div class="panel_element toggle_element">
+          <div class="bk-toggle-switch fixed_left_panel">
+            <span class="bk-toggle-switch-title">Floating left panel</span>
+
+            <input type="checkbox" class="bk-toggle-checkbox" />
+            <div class="bk-toggle-switch-background">
+              <div class="bk-toggle-switch-marker"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel_element toggle_element">
+          <div class="bk-toggle-switch fixed_right_panel ">
+            <span class="bk-toggle-switch-title">Floating right panel</span>
+
+            <input type="checkbox" class="bk-toggle-checkbox" />
+            <div class="bk-toggle-switch-background">
+              <div class="bk-toggle-switch-marker"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel_element ">
+          <button class="rd-button rd-button-secondary show_modal">
+            Show modal
+          </button>
+        </div>
+
+        <div class="panel_element ">
+          <button class="rd-button rd-button-secondary show_stepper">
+            Show stepper
+          </button>
+        </div>
+      </div>
+
+      <div class="splitter splitter2"></div>
+    </div>
+  </section>
+
+  <div class="modal_v2_background fade_in hide">
+    <div class="modal_v2 medium">
+      <h3 class="modal_v2_header">
+        Modal header
+
+        <button class="icon_button close_modal">
+          <img src="img/icon_close.svg" />
+        </button>
+      </h3>
+      <div class="modal_v2_content" data-placeholder="Scrollable modal content">
+        <div class="modal_v2_content_inner">
+          <div class="rd-segmented-control modal_size_control">
+            <a class="rd-segmented-control-item modal_size small">
+              <span class="inner-text">Small</span>
+            </a>
+            <a class="rd-segmented-control-item modal_size medium">
+              <span class="inner-text">Medium</span>
+            </a>
+            <a class="rd-segmented-control-item modal_size large">
+              <span class="inner-text">Large</span>
+            </a>
+            <a class="rd-segmented-control-item modal_size xlarge">
+              <span class="inner-text">X-Large</span>
+            </a>
+            <div class="selected-highlight"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal_v2_footer">
+        <div class="">
+          <button class="rd-button rd-button-ghost">
+            Utility
+          </button>
+        </div>
+        <div class="">
+          <button class="rd-button rd-button-secondary">
+            Secondary
+          </button>
+          <button class="rd-button rd-button-primary">
+            Primary
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stepper_background top hide">
+    <div class="rd-segmented-control stepper_orientation_control">
+      <a class="rd-segmented-control-item stepper_orientation top">
+        <span class="inner-text">Orientation top</span>
+      </a>
+      <a class="rd-segmented-control-item stepper_orientation left">
+        <span class="inner-text">Orientation left</span>
+      </a>
+      <div class="selected-highlight"></div>
+    </div>
+
+    <div class="stepper_side_nav">
+      <div class="stepper_side_header">
+        <div class="stepper_current_step">
+          <div data-step-num="1">1</div>
+          <div data-step-num="2">2</div>
+          <div data-step-num="3">3</div>
+          <div data-step-num="4">4</div>
+          <div data-step-num="5">5</div>
+        </div> of 4 steps
+      </div>
+
+      <div class="stepper_side_steps">
+        <div class="stepper_side_step" data-step-num="1">
+          <div class="stepper_side_indicator"></div>
+
+          <div class="stepper_side_step_details">
+            <div class="stepper_side_step_title">
+              Step wizard title
+            </div>
+            <div class="stepper_side_step_description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+          </div>
+        </div>
+
+        <div class="stepper_side_step" data-step-num="2">
+          <div class="stepper_side_indicator"></div>
+
+          <div class="stepper_side_step_details">
+            <div class="stepper_side_step_title">
+              Step wizard title
+            </div>
+            <div class="stepper_side_step_description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+          </div>
+        </div>
+
+        <div class="stepper_side_step" data-step-num="3">
+          <div class="stepper_side_indicator"></div>
+
+          <div class="stepper_side_step_details">
+            <div class="stepper_side_step_title">
+              Step wizard title
+            </div>
+            <div class="stepper_side_step_description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+          </div>
+        </div>
+
+        <div class="stepper_side_step" data-step-num="4">
+          <div class="stepper_side_indicator"></div>
+
+          <div class="stepper_side_step_details">
+            <div class="stepper_side_step_title">
+              Step wizard title
+            </div>
+            <div class="stepper_side_step_description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="stepper_page medium">
+      <div class="stepper_header">
+        <div class="stepper_header_item">
+          <button class="icon_button stepper_back">
+            <img src="img/icon_back.svg"/>
+          </button>
+          <h3 class="stepper_title">Step wizard title</h3>
+        </div>
+        <div class="stepper_header_item">
+          <div class="stepper_steps">
+            Step <div class="stepper_current_step">
+              <div data-step-num="1">1</div>
+              <div data-step-num="2">2</div>
+              <div data-step-num="3">3</div>
+              <div data-step-num="4">4</div>
+              <div data-step-num="5">5</div>
+            </div> of <span class="stepper_total_steps">4</span>
+          </div>
+
+          <button class="icon_button stepper_close">
+            <img src="img/icon_close.svg"/>
+          </button>
+        </div>
+      </div>
+
+      <div class="stepper_content">
+        <div class="rd-segmented-control stepper_size_control">
+          <!-- <a class="rd-segmented-control-item stepper_size small">
+            <span class="inner-text">Small</span>
+          </a> -->
+          <a class="rd-segmented-control-item stepper_size medium">
+            <span class="inner-text">Medium</span>
+          </a>
+          <a class="rd-segmented-control-item stepper_size large">
+            <span class="inner-text">Large</span>
+          </a>
+          <a class="rd-segmented-control-item stepper_size xlarge">
+            <span class="inner-text">X-Large</span>
+          </a>
+          <div class="selected-highlight"></div>
+        </div>
+
+        <div class="stepper_content_inner">
+          Stepper wizard<br/>
+          Variable width w/ sticky<br/>
+          header
+        </div>
+
+        <div class="stepper_buttons">
+          <button class="rd-button rd-button-primary half next_step">
+            Primary action
+          </button>
+          <button class="rd-button rd-button-secondary half">
+            Secondary action
+          </button>
+        </div>
+
+        <div class="stepper_buttons stepper_buttons_alternate hide">
+          <button class="rd-button rd-button-ghost stepper_back">
+            < Previous
+          </button>
+          <div class="next_step_info">
+            Next: step wizard title (one line)
+          </div>
+          <button class="rd-button rd-button-primary next_step">
+            Continue
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="stepper_right_close">
+      <button class="icon_button stepper_close">
+        <img src="img/icon_close.svg"/>
+      </button>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="js/script_radiant_grids.js"></script>
+</html>

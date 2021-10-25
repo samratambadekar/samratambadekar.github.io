@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, article {
+  margin: 0;
+  padding: 0;
+  /* height: 100%; */
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+article {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+h2 {
+  padding: 0 40px;
+}
+
+.section {
+  padding: 40px;
+  width: 33%;
+  height: 200px;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.segmented_control {
+  position: relative;
+  margin: auto;
+  height: 32px;
+  width: auto;
+  padding: 2px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #F3F5F8;
+}
+
+.segmented_control .segmented_control_item {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  padding: 6px 10px;
+  vertical-align: middle;
+  height: 100%;
+  line-height: 17px;
+  border-radius: 16px;
+  z-index: 1;
+  transition: color 0.25s ease;
+}
+.segmented_control .segmented_control_item.selected {
+  color: #2E75F0;
+  /* box-shadow: 0 2px 4px rgba(25, 35, 49, 0.04); */
+  /* background-color: #FFF; */
+}
+
+
+.section1 .segmented_control_item {
+  transition: all 0.25s ease;
+}
+.section1 .segmented_control_item.selected {
+  box-shadow: 0 2px 4px rgba(25, 35, 49, 0.04);
+  background-color: #FFF;
+}
+
+.section2 .segmented_control_item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #FFF;
+  border-radius: 16px;
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  z-index: -1;
+}
+.section2 .segmented_control_item.selected::before {
+  box-shadow: 0 2px 4px rgba(25, 35, 49, 0.04);
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.section3 .segmented_control_item {
+  transition: color 0.25s ease;
+}
+.section3 .segmented_control_item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #FFF;
+  border-radius: 16px;
+  opacity: 0;
+  transform: scaleX(1.4);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  z-index: -1;
+}
+.section3 .segmented_control_item.selected::before {
+  box-shadow: 0 2px 4px rgba(25, 35, 49, 0.04);
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.section4 .segmented_control .selected_highlight {
+  display: none;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  height: 28px;
+  /* width: 40px; */
+  background-color: #FFF;
+  border-radius: 16px;
+  z-index: 0;
+  /* opacity: 0; */
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.section4 .segmented_control_item.selected ~ .selected_highlight {
+  display: block;
+}

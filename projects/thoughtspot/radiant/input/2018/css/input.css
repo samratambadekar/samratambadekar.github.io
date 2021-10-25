@@ -1,0 +1,97 @@
+input {
+  outline: none;
+}
+
+.form-element {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100%;
+  line-height: 20px;
+  position: relative;
+}
+
+.form-element + .form-element {
+  margin-left: 12px;
+}
+
+.form-element.form-element-inverse {
+  color: #FFF;
+}
+
+.form-element .input-help-text {
+  display: none;
+  font-size: 12px;
+  color: #777E8B;
+}
+
+.form-element .input-text {
+  padding: 6px 8px;
+  width: 100%;
+  height: 32px;
+  font-size: inherit;
+  background-color: #F6F8FA;
+  border: 0 solid #DBDFE7;
+  border-bottom-width: 2px;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+}
+
+.form-element .input-container {
+  position: relative;
+  margin: 4px 0;
+  width: 100%;
+  max-width: 480px;
+  text-align: left;
+}
+.form-element .input-highlight {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0D74FF;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+.form-element .input-highlight.origin-left {
+  transform-origin: left;
+}
+.form-element .input-text:focus ~ .input-highlight {
+  transform: scaleX(1);
+}
+/* .form-element .input-text:focus ~ .input-icon {
+  opacity: 1;
+  visibility: visible;
+} */
+
+.form-element .input-icon {
+  position: absolute;
+  right: 8px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 16px;
+  height: 16px;
+  transition: opacity 0.2s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.form-element.hasError .input-label {
+  color: #F04152;
+}
+.form-element.hasError .input-help-text {
+  color: #F04152;
+  display: block;
+}
+.form-element.hasError .input-icon {
+  opacity: 1;
+  visibility: visible;
+}
+.form-element.hasError .input-highlight {
+  background-color: #F04152;
+  transform: scaleX(1);
+}

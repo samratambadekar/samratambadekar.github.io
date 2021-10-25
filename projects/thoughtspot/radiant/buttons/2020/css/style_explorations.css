@@ -1,0 +1,285 @@
+
+.section-radiant {
+  border-bottom: 1px solid #DCE0E6;
+}
+.section-radiant:nth-child(even) {
+  border-left: 1px solid #DCE0E6;
+  background-color: #f6f8fa;
+}
+
+
+.button-experiments .rd-button {
+  text-transform: capitalize;
+}
+
+.button-experiments .exploration1 .rd-button {
+  transition: all 0.3s ease;
+}
+.button-experiments .exploration1 .rd-button:not(.rd-button-ghost):hover {
+  box-shadow: 0 16px 16px -12px rgba(18,28,37,.15);
+}
+.button-experiments .exploration1 .rd-button:not(.rd-button-ghost):focus,
+.button-experiments .exploration1 .rd-button:not(.rd-button-ghost):active {
+  box-shadow: 0 16px 8px -12px rgba(18,28,37,.15);
+}
+
+
+.button-experiments .exploration2 .rd-button {
+  border-width: 0;
+}
+.button-experiments .exploration2 .rd-button-sync .sync-loader  {
+  display: none;
+}
+.button-experiments .exploration2 .rd-button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 108px;
+  height: 108px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(0);
+  border-radius: 100px;
+}
+.button-experiments .exploration2 .rd-button-primary::after,
+.button-experiments .exploration2 .rd-button-secondary::after {
+  left: -8px;
+}
+.button-experiments .exploration2 .rd-button.ripple::after {
+  transition: transform 0.8s ease;
+  transform: scale(1.2);
+}
+.button-experiments .exploration2 .rd-button-ghost::after {
+  width: 48px;
+  height: 48px;
+}
+.button-experiments .exploration2 .rd-button-icon-l::after {
+  width: 32px;
+  height: 32px;
+}
+.button-experiments .exploration2 .rd-button-icon-m::after {
+  width: 24px;
+  height: 24px;
+}
+.button-experiments .exploration2 .rd-button-icon-s::after {
+  width: 20px;
+  height: 20px;
+}
+
+.button-experiments .rd-button {
+  overflow: hidden;
+}
+
+.button-experiments .exploration3 .rd-button:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s ease;
+}
+
+.button-experiments .exploration4 .rd-button.shake-animation {
+  animation: shake 0.3s linear 2;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-2px);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.button-experiments .exploration5 .sync-loader {
+  width: 20px;
+  height: 20px;
+  border-color: transparent #FFF transparent transparent;
+}
+.button-experiments .exploration5 .rd-button-primary.rd-button-sync {
+  background-color: #2E75F0;
+}
+.button-experiments .exploration5 .rd-button-secondary.rd-button-sync {
+  background-color: #E9EDF2;
+}
+.button-experiments .exploration5 .rd-button-primary .sync-loader,
+.button-experiments .exploration5 .rd-button-secondary .sync-loader {
+  width: 20px;
+}
+
+.button-experiments .exploration5 .checkmark {
+  position: absolute;
+  left: 4px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 10px auto auto;
+  height: 20px;
+  transition: all 0.3s ease;
+}
+
+
+.button-experiments .exploration6 .rd-button-primary .sync-loader,
+.button-experiments .exploration6 .rd-button-secondary .sync-loader {
+  width: 94px;
+}
+
+.button-experiments .exploration6 .rd-button-ghost .sync-loader {
+  width: 48px;
+}
+.button-experiments .exploration6 .bk-loading-spinner {
+  animation: loading-spinner-rotate 2.5s linear infinite;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+  opacity: 0;
+}
+.button-experiments .exploration6 .rd-button-sync .bk-loading-spinner {
+  visibility: visible;
+  opacity: 1;
+  transition-duration: 0.2s;
+  transition-delay: 0.5s;
+}
+/* .button-experiments .exploration6 .rd-button {
+  transition: background-color 0.5s ease;
+} */
+.button-experiments .exploration6 .bk-loading-spinner .bk-loading-spinner-path.blue {
+  stroke: #2E75F0;
+}
+.button-experiments .exploration6 .bk-loading-spinner .bk-loading-spinner-path {
+  stroke-linecap: round;
+  animation: loading-spinner-dash 2s ease-in-out infinite;
+  stroke-width: 3;
+}
+.button-experiments .exploration6 .sync-loader {
+  animation: none;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+}
+.button-experiments .exploration6 .rd-button-sync .sync-loader {
+  /* opacity: 0; */
+  width: 28px;
+  height: 28px;
+  border-color: #2F3947 #2F3947 #2F3947 #2F3947;
+  border-color: #2E75F0 #2E75F0 #2E75F0 #2E75F0;
+  animation: animation-hide 2s ease alternate;
+}
+
+.button-experiments .exploration6 .checkmark {
+  position: absolute;
+  left: 4px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 10px auto auto;
+  height: 20px;
+  transition: all 0.3s ease;
+}
+
+.button-experiments .exploration7 .sync-loader {
+  width: 20px;
+  height: 20px;
+  border-color: transparent #FFF transparent transparent;
+}
+.button-experiments .exploration7 .rd-button-primary.rd-button-sync {
+  background-color: #2E75F0;
+}
+.button-experiments .exploration7 .rd-button-secondary.rd-button-sync {
+  background-color: #E9EDF2;
+}
+.button-experiments .exploration7 .bk-loading-spinner {
+  animation: loading-spinner-rotate 2s linear infinite;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.button-experiments .exploration7 .rd-button-sync .bk-loading-spinner {
+  visibility: visible;
+  opacity: 1;
+}
+/* .button-experiments .exploration7 .rd-button {
+  transition: background-color 0.5s ease;
+} */
+.button-experiments .exploration7 .bk-loading-spinner .bk-loading-spinner-path {
+  stroke: #FFF;
+}
+.button-experiments .exploration7 .bk-loading-spinner .bk-loading-spinner-path {
+  stroke-linecap: round;
+  animation: loading-spinner-dash 2s ease-in-out infinite;
+  stroke-width: 4;
+}
+
+.button-experiments .exploration7 .checkmark {
+  position: absolute;
+  left: 4px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 10px auto auto;
+  height: 20px;
+  transition: all 0.3s ease;
+}
+
+.button-experiments .hide-checkmark {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transform: translateY(4px);
+  /* transform: scale(1.5); */
+}
+.button-experiments .hide-text {
+  color: rgba(0, 0, 0, 0) !important;
+}
+
+
+@keyframes loading-spinner-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-spinner-dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+
+@keyframes animation-hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

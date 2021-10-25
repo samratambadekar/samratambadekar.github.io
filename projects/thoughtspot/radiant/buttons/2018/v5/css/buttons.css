@@ -1,0 +1,540 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-family: "Optimo-Plain";
+  margin: 0;
+  padding: 0;
+  color: #2F3947;
+}
+.prototype-description {
+  padding: 0 20px 40px;
+  border-bottom: 1px solid #DCE0E6;
+}
+.header {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 28px;
+}
+.sections-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-radiant {
+  overflow: hidden;
+  width: 50%;
+  padding: 20px;
+  min-width: 480px;
+}
+.section-radiant-off-white {
+  background-color: #F6F8FA;
+}
+.section-radiant-inverse {
+  background-color: #2F3947;
+}
+.section-radiant-tooltip {
+  background-color: #2E75F0;
+}
+.section-radiant-inverse .header {
+  color: #FFF;
+}
+.display-grid {
+  margin: 40px 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.display-grid button + button {
+  margin-left: 16px;
+}
+
+
+/* BUTTON BASE STYLES */
+.rd-button ::before,
+.rd-button ::after {
+  transition: all 0.2s ease;
+}
+.rd-button {
+  position: relative;
+  height: 32px;
+  line-height: 1;
+  vertical-align: middle;
+  padding: 0 24px;
+  border-width: 0px;
+  border-style: solid;
+  border-radius: 16px;
+  border-color: transparent;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: inherit;
+  color: #2F3947;
+  background-color: #E9EDF2;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: lowercase;
+  transition: background-color .5s ease,border .2s ease,box-shadow .2s ease,color .2s ease;
+}
+
+/* CAPITALIZE DOES NOT WORK FOR OUR CASE. */
+.rd-button .rd-button-text {
+  display: inline-block;
+  margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* BUG: FIREFOX  ADDS EXTRA SPACE AROUND FIRST-LETTER SPAN ELEMENT WHEN USING 'UPPERCASE'. KEEP IT 'CAPITALIZE' */
+.rd-button .rd-button-text::first-letter {
+  text-transform: capitalize;
+}
+.rd-button.disabled {
+  opacity: 0.4;
+}
+.rd-button:focus {
+  outline: 0;
+}
+.rd-button::-moz-focus-inner {
+  border-style: none;
+}
+
+/* PRIMARY BUTTON STYLES */
+.rd-button-primary {
+  min-width: 64px;
+  max-width: 200px;
+  color: #FFF;
+  background-color: #2E75F0;
+}
+.rd-button-primary:hover {
+  background-color: #2259B6;
+}
+.rd-button-primary:focus::before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  border: 1px solid #FFF;
+  border-radius: 16px;
+}
+/* ACTIVE STATE NEEDS TO BE AFTER FOCUS */
+.rd-button-primary:active {
+  background-color: #163772;
+}
+
+/* SECONDARY BUTTON STYLES */
+.rd-button-secondary {
+  min-width: 64px;
+  max-width: 200px;
+  color: #2F3947;
+  background-color: #E9EDF2;
+}
+.rd-button-secondary:hover {
+  background-color: #DCE0E6;
+}
+.rd-button-secondary:focus::before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  border: 1px solid #2F3947;
+  border-radius: 16px;
+}
+/* ACTIVE STATE NEEDS TO BE AFTER FOCUS */
+.rd-button-secondary:active {
+  color: #FFF;
+  background-color: #2F3947;
+}
+
+/* Secondary button with icon (16px - Icon 24px - 4px - Text -24px) */
+.rd-button.rd-button-icon-text {
+  padding-left: 16px;
+}
+.rd-button.rd-button-icon-text .svg-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+  margin-top: -2px;
+  fill: #2F3947;
+  transition-delay: 0.05s; /* HACK: TO MAKE SURE ICON AND TEXT CHANGE TOGETHER */
+}
+.rd-button.rd-button-icon-text:active .svg-icon {
+  fill: #FFF;
+}
+
+/* GHOST BUTTON BASE & GHOST SECONDARY STYLES */
+.rd-button.rd-button-ghost {
+  min-width: 48px;
+  max-width: 200px;
+  height: 24px;
+  color: #2E75F0;
+  background-color: transparent;
+  padding: 0;
+  border-width: 0px;
+  border-radius: 0px;
+}
+.rd-button.rd-button-ghost:hover {
+  color: #2259B6;
+  background-color: transparent;
+}
+.rd-button.rd-button-ghost:focus::before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  margin: auto;
+  border: 1px solid #2E75F0;
+  border-radius: 0px;
+  transition: all 0.2s ease;
+}
+/* ACTIVE STATE NEEDS TO BE AFTER FOCUS */
+.rd-button.rd-button-ghost:active {
+  color: #163772;
+  background-color: transparent;
+}
+
+/* GHOST BUTTON PRIMARY STYLES */
+.rd-button.rd-button-ghost-primary {
+  font-weight: 700;
+}
+
+/* ICON BUTTONS (small,med,large) STYLES */
+.rd-button.rd-button-icon {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+.rd-button.rd-button-icon-s {
+  width: 20px;
+  height: 20px;
+}
+.rd-button.rd-button-icon-m {
+  width: 24px;
+  height: 24px;
+}
+.rd-button.rd-button-icon-l {
+  width: 32px;
+  height: 32px;
+}
+
+.rd-button-icon {
+  color: #2F3947;
+  background-color: #E9EDF2;
+  border-width: 0px;
+}
+.rd-button-icon:hover {
+  background-color: #DCE0E6;
+}
+.rd-button-icon:focus {
+  /* background-color: #FFF; */
+}
+.rd-button-icon:focus::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #2F3947;
+  border-radius: 16px;
+}
+/* ACTIVE STATE NEEDS TO BE AFTER FOCUS */
+.rd-button-icon:active {
+  color: #FFF;
+  background-color: #2F3947;
+}
+.rd-button-icon:active .svg-icon {
+  fill: #FFF;
+}
+
+/* INVERSE BUTTON PRIMARY STYLES */
+.rd-button-primary.rd-button-inverse:focus::before {
+  border-color: #2F3947;
+}
+
+/* INVERSE BUTTON SECONDARY STYLES */
+.rd-button-secondary.rd-button-inverse {
+  color: #FFF;
+  background-color: #47515F;
+}
+.rd-button-secondary.rd-button-inverse:hover {
+  background-color: #5A6678;
+}
+
+.rd-button-secondary.rd-button-inverse:focus {
+  background-color: #5A6678;
+}
+.rd-button-secondary.rd-button-inverse:focus::before {
+  border-color: #2F3947;
+}
+/* ACTIVE STATE NEEDS TO BE AFTER FOCUS */
+.rd-button-secondary.rd-button-inverse:active {
+  color: #2F3947;
+  background-color: #FFF;
+}
+
+.rd-button.rd-button-inverse.rd-button-icon-text .svg-icon {
+  fill: #FFF;
+}
+.rd-button.rd-button-inverse.rd-button-icon-text:active .svg-icon {
+  fill: #2F3947;
+}
+
+/* INVERSE BUTTON ICON STYLES */
+.rd-button-icon.rd-button-inverse {
+  color: #FFF;
+  background-color: #47515F;
+}
+.rd-button-icon.rd-button-inverse .svg-icon {
+  fill: #FFF;
+}
+.rd-button-icon.rd-button-inverse:hover {
+  background-color: #5A6678;
+}
+.rd-button-icon.rd-button-inverse:focus {
+  /* background-color: transparent; */
+}
+.rd-button-icon.rd-button-inverse:focus::before {
+  border-color: #FFF;
+}
+/* ACTIVE STATE NEEDS TO BE AFTER FOCUS */
+.rd-button-icon.rd-button-inverse:active {
+  color: #2F3947;
+  background-color: #FFF;
+}
+.rd-button-icon.rd-button-inverse:active .svg-icon {
+  fill: #323946;
+}
+
+/* BUTTON STYLES FOR SYNC STATE */
+.rd-button.rd-button-sync {
+  color: rgba(0, 0, 0, 0) !important;
+  pointer-events: none;
+}
+.rd-button .sync-loader {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 16px;
+  border-color: transparent #FFF transparent transparent;
+  opacity: 0;
+  transition: all 0.2s ease;
+  animation: loader-spinner 0.8s linear infinite;
+  pointer-events: none;
+}
+.rd-button-sync .sync-loader {
+  opacity: 1;
+  width: 20px;
+  border-width: 2px;
+}
+.rd-button-sync .svg-icon {
+  opacity: 0;
+}
+
+.rd-button-primary.rd-button-sync .sync-loader,
+.rd-button-secondary.rd-button-sync .sync-loader {
+  width: 20px;
+}
+
+
+/* SYNC STATES ARE *NOT* NEEDED FOR GHOST AND ICON BUTTONS */
+
+
+
+
+/* INVERSE BUTTON BASE STYLES */
+.rd-button.rd-button-inverse.rd-button-sync .sync-loader {
+  border-color: transparent #FFF transparent transparent;
+}
+
+/* WE REMOVED INVERSE STYLES FOR GHOST BUTTONS, KEEPING THIS FOR REFERENCE. */
+.rd-button-secondary.rd-button-inverse.rd-button-sync {
+  /* background-color: transparent; */
+}
+.rd-button-secondary.rd-button-inverse.rd-button-sync:hover {
+  /* background-color: transparent; */
+}
+.rd-button-secondary.rd-button-inverse.rd-button-sync:focus {
+  /* background-color: transparent; */
+}
+
+.rd-button-icon.rd-button-sync {
+  /* background-color: transparent; */
+}
+.rd-button-icon.rd-button-sync:hover {
+  /* background-color: transparent; */
+}
+
+
+
+/* TOOLTIP BUTTON STYLES */
+/* NOTE: THE FONT COLOR IS NOT REGULAR DARK GRAY */
+.section-radiant-tooltip .header {
+  color: #253E6A;
+}
+
+/* PRIMARY BUTTON STYLES */
+.section-radiant-tooltip .rd-button-primary {
+  min-width: 64px;
+  max-width: 200px;
+  color: #253E6A;
+  background-color: #FFF;
+}
+.section-radiant-tooltip .rd-button-primary:hover {
+  background-color: #D6E1F5;
+}
+.section-radiant-tooltip .rd-button-primary:focus::before {
+  border: 1px solid #2E75F0;
+}
+/* ACTIVE STATE NEEDS TO BE AFTER FOCUS */
+.section-radiant-tooltip .rd-button-primary:active {
+  color: #FFF;
+  background-color: #2D60B9;
+}
+.section-radiant-tooltip .rd-button-sync .sync-loader {
+  border-color: transparent #253E6A transparent transparent;
+}
+
+/* SECONDARY BUTTON STYLES */
+.section-radiant-tooltip .rd-button-secondary {
+  color: #FFF;
+  background-color: #2D60B9;
+}
+.section-radiant-tooltip .rd-button-secondary:hover {
+  background-color: #2753A0;
+}
+.section-radiant-tooltip .rd-button-secondary:focus::before {
+  border: 1px solid #2E75F0;
+}
+/* ACTIVE STATE NEEDS TO BE AFTER FOCUS */
+.section-radiant-tooltip .rd-button-secondary:active {
+  color: #2F3947;
+  background-color: #FFF;
+}
+
+/* Secondary button with icon (16px - Icon 24px - 4px - Text -24px) */
+.section-radiant-tooltip .rd-button.rd-button-icon-text .svg-icon {
+  fill: #FFF;
+}
+.section-radiant-tooltip .rd-button.rd-button-icon-text:active .svg-icon {
+  fill: #2F3947;
+}
+
+
+/* TOOLTIP GHOST BUTTON STYLES */
+.section-radiant-tooltip .rd-button.rd-button-ghost {
+  color: #FFF;
+}
+.section-radiant-tooltip .rd-button.rd-button-ghost:hover {
+  color: #BEC6D0;
+}
+.section-radiant-tooltip .rd-button.rd-button-ghost:focus::before {
+  border: 1px solid #FFF;
+}
+.section-radiant-tooltip .rd-button.rd-button-ghost:active {
+  color: #747E8C;
+}
+
+
+/* TOOLTIP BUTTON ICON STYLES */
+.section-radiant-tooltip .rd-button-icon {
+  color: #FFF;
+  background-color: #2D60B9;
+}
+.section-radiant-tooltip .rd-button-icon .svg-icon {
+  fill: #FFF;
+}
+.section-radiant-tooltip .rd-button-icon:hover {
+  background-color: #2753A0;
+}
+.section-radiant-tooltip .rd-button-icon:focus {
+  /* background-color: transparent; */
+}
+.section-radiant-tooltip .rd-button-icon:focus::before {
+  border-color: #FFF;
+}
+/* ACTIVE STATE NEEDS TO BE AFTER FOCUS */
+.section-radiant-tooltip .rd-button-icon:active {
+  color: #253E6A;
+  background-color: #FFF;
+}
+.section-radiant-tooltip .rd-button-icon:active .svg-icon {
+  fill: #253E6A;
+}
+
+/* NOTE: FOR SYNC CHECKMARK I'M JUST USING A DIFFERENT CHECKMARK IMAGE. WE NEED TO THINK THIS THROUGH */
+
+
+
+
+/* ANIMATION STYLES GO BELOW. THESE MIGHT EXIST IN CODE, PLEASE REUSE THEM */
+@keyframes loader-spinner {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* SAVE-ANIMATION AND CHECKMARK ARE DUMMY CLASSES I CREATED TO SIMULATE THE ANIMATION */
+.save-animation .checkmark {
+  position: absolute;
+  left: 4px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 10px auto auto;
+  height: 20px;
+  transition: all 0.3s ease;
+}
+.save-animation .hide-checkmark {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transform: translateY(4px);
+}
+.save-animation .hide-text {
+  color: rgba(0, 0, 0, 0) !important;
+}
+
+@keyframes animation-hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.rd-button.shake-animation {
+  animation: shake 0.2s linear 2;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-2px);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

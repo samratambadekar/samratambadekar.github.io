@@ -1,0 +1,255 @@
+.pulsate {
+  position: relative;
+  /* letter-spacing: -0.4px; */
+}
+.pulsate::before,
+.pulsate::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #06BF7F;
+  transform: scale(0);
+}
+.pulsate::before {
+  opacity: 0;
+  animation: pulse 1s ease forwards;
+}
+.pulsate::after {
+  animation: scale-in 0.5s ease forwards;
+}
+/* .typography:nth-of-type(1) {
+  animation-delay: .25s;
+}
+.typography:nth-of-type(2) {
+  animation-delay: .5s;
+}
+.typography:nth-of-type(3) {
+  animation-delay: .75s;
+}
+.typography:nth-of-type(4) {
+  animation-delay: 1s;
+} */
+@keyframes scale-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  margin-bottom: 0;
+}
+
+.typography-h1 {
+  font-family: Optimo-Plain;
+  /* font-size: 36px !important; */
+  font-size: 36px;
+  /* font-weight: 600 !important; */
+  font-weight: 600;
+  /* line-height: 44px !important; */
+  line-height: 44px;
+}
+.typography-h2 {
+  font-family: Optimo-Plain;
+  /* font-size: 24px !important; */
+  font-size: 24px;
+  /* font-weight: 600 !important; */
+  font-weight: 600;
+  /* line-height: 32px !important; */
+  line-height: 32px;
+}
+.typography-h3 {
+  font-family: Optimo-Plain;
+  /* font-size: 20px !important; */
+  font-size: 20px;
+  /* font-weight: 600 !important; */
+  font-weight: 600;
+  /* line-height: 28px !important; */
+  line-height: 28px;
+}
+.typography-h4 {
+  font-family: Optimo-Plain;
+  /* font-size: 18px !important; */
+  font-size: 18px;
+  /* font-weight: 600 !important; */
+  font-weight: 600;
+  /* line-height: 24px !important; */
+  line-height: 24px;
+}
+.typography-h5 {
+  font-family: Optimo-Plain;
+  /* font-size: 16px !important; */
+  font-size: 16px;
+  /* font-weight: 600 !important; */
+  font-weight: 600;
+  /* line-height: 24px !important; */
+  line-height: 24px;
+}
+.typography-h6 {
+  font-family: Optimo-Plain;
+  /* font-size: 14px !important; */
+  font-size: 14px;
+  /* font-weight: 600 !important; */
+  font-weight: 600;
+  /* line-height: 20px !important; */
+  line-height: 20px;
+  /* text-transform: none !important; */
+  text-transform: none;
+  /* letter-spacing: 0 !important; */
+  letter-spacing: 0;
+}
+
+.typography-large {
+  font-family: Optimo-Plain;
+  /* font-size: 16px !important; */
+  font-size: 16px;
+  /* font-weight: 400 !important; */
+  font-weight: 400;
+  /* line-height: 24px !important; */
+  line-height: 24px;
+}
+.typography-regular {
+  font-family: Optimo-Plain;
+  /* font-size: 14px !important; */
+  font-size: 14px;
+  /* font-weight: 400 !important; */
+  font-weight: 400;
+  /* line-height: 20px !important; */
+  line-height: 20px;
+}
+.typography-footnote,
+.typography-caption {
+  font-family: Optimo-Plain;
+  /* font-size: 12px !important; */
+  font-size: 12px;
+  /* font-weight: 400 !important; */
+  font-weight: 400;
+  /* line-height: 18px !important; */
+  line-height: 18px;
+  /* color: #777E8B !important; */
+  /* color: #777E8B;
+  fill: #777E8B; */
+  color: #1C2330;
+  fill: #1C2330;
+}
+.inverse .typography-footnote,
+.inverse .typography-caption {
+  color: #FFF;
+  fill: #FFF;
+}
+/* .closed .inverse .typography-footnote,
+.closed .inverse .typography-caption {
+  color: #FFF;
+  fill: #FFF;
+} */
+.typography-highlight {
+  /* font-weight: 700 !important; */
+  font-weight: 700;
+}
+
+
+.typography-bold-regular .typography-h1 {
+  /* font-weight: 700 !important; */
+  font-weight: 700;
+}
+.typography-bold-regular .typography-h2 {
+  /* font-weight: 700 !important; */
+  font-weight: 700;
+}
+.typography-bold-regular .typography-h3 {
+  /* font-weight: 700 !important; */
+  font-weight: 700;
+}
+.typography-bold-regular .typography-h4 {
+  /* font-weight: 700 !important; */
+  font-weight: 700;
+}
+.typography-bold-regular .typography-h5 {
+  /* font-weight: 700 !important; */
+  font-weight: 700;
+}
+.typography-bold-regular .typography-h6 {
+  /* font-weight: 700 !important; */
+  font-weight: 700;
+  /* text-transform: none !important; */
+  text-transform: none;
+  /* letter-spacing: 0 !important; */
+  letter-spacing: 0;
+}
+.typography-bold-regular .typography-large {
+  /* font-weight: 400 !important; */
+  font-weight: 400;
+}
+.typography-bold-regular .typography-regular {
+  /* font-weight: 400 !important; */
+  font-weight: 400;
+}
+.typography-bold-regular .typography-footnote,
+.typography-bold-regular .typography-caption {
+  /* font-weight: 400 !important; */
+  font-weight: 400;
+}
+
+.typography-medium-regular .typography-h1 {
+  /* font-weight: 600 !important; */
+  font-weight: 600;
+}
+.typography-medium-regular .typography-h2 {
+  /* font-weight: 600 !important; */
+  font-weight: 600;
+}
+.typography-medium-regular .typography-h3 {
+  /* font-weight: 600 !important; */
+  font-weight: 600;
+}
+.typography-medium-regular .typography-h4 {
+  /* font-weight: 600 !important; */
+  font-weight: 600;
+}
+.typography-medium-regular .typography-h5 {
+  /* font-weight: 600 !important; */
+  font-weight: 600;
+}
+.typography-medium-regular .typography-h6 {
+  /* font-weight: 600 !important; */
+  font-weight: 600;
+  /* text-transform: none !important; */
+  text-transform: none;
+  /* letter-spacing: 0 !important; */
+  letter-spacing: 0;
+}
+.typography-medium-regular .typography-large {
+  /* font-weight: 400 !important; */
+  font-weight: 400;
+}
+.typography-medium-regular .typography-regular {
+  /* font-weight: 400 !important; */
+  font-weight: 400;
+}
+.typography-medium-regular .typography-footnote,
+.typography-medium-regular .typography-caption {
+  /* font-weight: 400 !important; */
+  font-weight: 400;
+}
+.typography-medium-regular .typography-highlight {
+  /* font-weight: 600 !important; */
+  font-weight: 600;
+}

@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+  <link type="image/x-icon" rel="shortcut icon" href="resources/img/logo/favicon_3.ico?r=4950">
+  <title>Input - ThoughtSpot</title>
+  <link rel="stylesheet" href="css/body.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/input.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+  <section class="prototype-description">
+    <h1 class="header">Radiant Inputs</h1>
+  </section>
+  <div class="sections-flex base-buttons">
+    <section class="section-radiant">
+      <h1 class="header">White</h1>
+      <div class="display-grid">
+        <div class="form-element">
+          <label for="" class="input-label">Email</label>
+          <div class="input-container">
+            <input id="" class="input-text" type="text" name="" value="" />
+            <span class="input-highlight origin-left"></span>
+            <img src="img/icon_error.svg" class="input-icon" alt="">
+          </div>
+          <span class="input-help-text">Invalid email</span>
+        </div>
+      </div>
+      <div class="display-grid">
+        <div class="form-element">
+          <label for="" class="input-label">Email</label>
+          <div class="input-container">
+            <input id="" class="input-text" type="text" name="" value="" />
+            <span class="input-highlight"></span>
+            <img src="img/icon_error.svg" class="input-icon" alt="">
+          </div>
+          <span class="input-help-text">Invalid email</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-radiant section-radiant-inverse">
+      <h1 class="header">Inverse</h1>
+      <div class="display-grid">
+        <div class="form-element form-element-inverse">
+          <label for="" class="input-label">Email</label>
+          <div class="input-container">
+            <input id="" class="input-text" type="text" name="" value="" />
+            <span class="input-highlight origin-left"></span>
+            <img src="img/icon_error.svg" class="input-icon" alt="">
+          </div>
+          <span class="input-help-text">Invalid email</span>
+        </div>
+      </div>
+      <div class="display-grid">
+        <div class="form-element form-element-inverse">
+          <label for="" class="input-label">Email</label>
+          <div class="input-container">
+            <input id="" class="input-text" type="text" name="" value="" />
+            <span class="input-highlight"></span>
+            <img src="img/icon_error.svg" class="input-icon" alt="">
+          </div>
+          <span class="input-help-text">Invalid email</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-radiant section-radiant-off-white">
+      <h1 class="header">Off White</h1>
+      <div class="display-grid">
+        <div class="form-element">
+          <label for="" class="input-label">Email</label>
+          <div class="input-container">
+            <input id="" class="input-text" type="text" name="" value="" />
+            <span class="input-highlight origin-left"></span>
+            <img src="img/icon_error.svg" class="input-icon" alt="">
+          </div>
+          <span class="input-help-text">Invalid email</span>
+        </div>
+      </div>
+      <div class="display-grid">
+        <div class="form-element">
+          <label for="" class="input-label">Email</label>
+          <div class="input-container">
+            <input id="" class="input-text" type="text" name="" value="" />
+            <span class="input-highlight"></span>
+            <img src="img/icon_error.svg" class="input-icon" alt="">
+          </div>
+          <span class="input-help-text">Invalid email</span>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+<script type="text/javascript">
+  $("body .form-element").each(function(idx, elem) {
+    let randomId = `input-${Math.round(Math.random() * 1000)}-${Math.round(Math.random() * 1000)}-${Math.round(Math.random() * 1000)}`;
+    $(elem).find(".input-label").attr("for", randomId);
+    $(elem).find(".input-text").attr("id", randomId);
+  });
+
+  $("body").on("input", ".input-text", function(evt) {
+    console.log("focus");
+    $(this).closest(".form-element").removeClass("hasError");
+  });
+  $("body").on("blur", ".input-text", function(evt) {
+    console.log("blur");
+    if($(this).val().trim().length > 0 && $(this).val().trim().indexOf(".com") <= 0) {
+      $(this).closest(".form-element").addClass("hasError");
+    }
+  });
+</script>
+</html>

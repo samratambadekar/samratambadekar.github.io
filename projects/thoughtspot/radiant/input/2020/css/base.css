@@ -1,0 +1,30 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-family: "Optimo-Plain";
+  margin: 0;
+  padding: 0;
+  color: var(--color-black-toned);
+}
+.prototype-description {
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid #DCE0E6;
+}
+.header {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.section-main {
+  /* margin-bottom: 40px; */
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #DCE0E6;
+}

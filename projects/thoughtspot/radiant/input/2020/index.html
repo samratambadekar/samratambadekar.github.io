@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+  <link type="image/x-icon" rel="shortcut icon" href="resources/img/logo/favicon_3.ico?r=4950">
+  <title>Inputs and Textarea - ThoughtSpot</title>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/colors.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/input.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+  <section class="prototype-description">
+    <header class="typography-headline-large">Radiant Inputs</header>
+  </section>
+  <section class="section-main">
+    <div class="input-container">
+      <label class="input-label typography-overline">Input label</label>
+      <div class="input-container-inner">
+        <input type="text" class="rd-input typography-body-regular" value="">
+      </div>
+    </div>
+
+    <div class="input-container">
+      <label class="input-label typography-overline">Input with icon</label>
+      <div class="input-container-inner icon-left">
+        <svg class="svg-icon gray input-icon input-icon-left"><use xlink:href="icons/rd-icons.svg#rd-icon-magnifying-glass"></use></svg>
+        <input type="text" class="rd-input typography-body-regular" value="">
+        <!-- <svg class="svg-icon gray input-icon input-icon-right"><use xlink:href="icons/rd-icons.svg#rd-icon-cross"></use></svg> -->
+      </div>
+      <div class="input-info-text input-error-message typography-caption text-error">
+        <svg class="svg-icon current-color error-icon"><use xlink:href="icons/rd-icons.svg#rd-icon-exclamation-point-circle"></use></svg>
+        <span>Error message</span>
+      </div>
+      <div class="input-info-text typography-caption text-info">Info text</div>
+    </div>
+
+    <div class="input-container">
+      <label class="input-label typography-overline">Input with info text</label>
+      <div class="input-container-inner">
+        <input type="text" class="rd-input typography-body-regular" value="">
+      </div>
+      <div class="input-info-text input-error-message typography-caption text-error">
+        <svg class="svg-icon current-color error-icon"><use xlink:href="icons/rd-icons.svg#rd-icon-exclamation-point-circle"></use></svg>
+        <span>Error message</span>
+      </div>
+      <div class="input-info-text typography-caption text-info">Info text</div>
+    </div>
+
+    <div class="input-container">
+      <label class="input-label typography-overline">Input with icon and info text</label>
+      <div class="input-container-inner icon-left">
+        <svg class="svg-icon gray input-icon input-icon-left"><use xlink:href="icons/rd-icons.svg#rd-icon-magnifying-glass"></use></svg>
+        <input type="text" class="rd-input typography-body-regular" value="">
+        <!-- <svg class="svg-icon gray input-icon input-icon-right"><use xlink:href="icons/rd-icons.svg#rd-icon-cross"></use></svg> -->
+      </div>
+      <div class="input-info-text input-error-message typography-caption text-error">
+        <svg class="svg-icon current-color error-icon"><use xlink:href="icons/rd-icons.svg#rd-icon-exclamation-point-circle"></use></svg>
+        <span>Error message</span>
+      </div>
+      <div class="input-info-text typography-caption text-info">Info text</div>
+    </div>
+
+    <div class="input-container has-error">
+      <label class="input-label typography-overline">Input with error</label>
+      <div class="input-container-inner icon-left">
+        <svg class="svg-icon gray input-icon input-icon-left"><use xlink:href="icons/rd-icons.svg#rd-icon-magnifying-glass"></use></svg>
+        <input type="text" class="rd-input typography-body-regular" value="">
+        <!-- <svg class="svg-icon gray input-icon input-icon-right"><use xlink:href="icons/rd-icons.svg#rd-icon-cross"></use></svg> -->
+      </div>
+      <div class="input-info-text input-error-message typography-caption text-error">
+        <svg class="svg-icon current-color error-icon"><use xlink:href="icons/rd-icons.svg#rd-icon-exclamation-point-circle"></use></svg>
+        <span>Error message</span>
+      </div>
+      <div class="input-info-text typography-caption text-info">Info text</div>
+    </div>
+
+    <div class="input-container disabled">
+      <label class="input-label typography-overline">Input disabled</label>
+      <div class="input-container-inner">
+        <input type="text" class="rd-input typography-body-regular" disabled>
+      </div>
+    </div>
+
+    <div class="input-container">
+      <label class="input-label typography-overline">Number input</label>
+      <div class="input-container-inner">
+        <input type="number" class="rd-input typography-body-regular" >
+      </div>
+    </div>
+
+    <div class="">
+      <div class="input-container x-small">
+        <label class="input-label typography-overline">X-small</label>
+        <div class="input-container-inner">
+          <input type="text" class="rd-input typography-body-regular" >
+        </div>
+      </div>
+
+      <div class="input-container x-small">
+        <label class="input-label typography-overline">X-small</label>
+        <div class="input-container-inner">
+          <input type="number" class="rd-input typography-body-regular" >
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="prototype-description">
+    <header class="typography-headline-large">Radiant Textareas</header>
+  </section>
+  <section class="section-main">
+    <div class="textarea-container">
+      <label class="textarea-label typography-overline">Textarea</label>
+      <div class="textarea-container-inner">
+        <textarea class="rd-textarea typography-body-regular" value=""></textarea>
+      </div>
+    </div>
+
+    <div class="textarea-container">
+      <label class="textarea-label typography-overline">Textarea with info text</label>
+      <div class="textarea-container-inner">
+        <textarea class="rd-textarea typography-body-regular" value=""></textarea>
+      </div>
+      <div class="textarea-info-text textarea-error-message typography-caption text-error">
+        <svg class="svg-icon current-color error-icon"><use xlink:href="icons/rd-icons.svg#rd-icon-exclamation-point-circle"></use></svg>
+        <span>Error message</span>
+      </div>
+      <div class="textarea-info-text typography-caption text-info">Info text</div>
+    </div>
+
+    <div class="textarea-container has-error">
+      <label class="textarea-label typography-overline">Textarea with error</label>
+      <div class="textarea-container-inner">
+        <textarea class="rd-textarea typography-body-regular" value=""></textarea>
+      </div>
+      <div class="textarea-info-text textarea-error-message typography-caption text-error">
+        <svg class="svg-icon current-color error-icon"><use xlink:href="icons/rd-icons.svg#rd-icon-exclamation-point-circle"></use></svg>
+        <span>Error message</span>
+      </div>
+      <div class="textarea-info-text typography-caption text-info">Info text</div>
+    </div>
+
+    <div class="textarea-container disabled">
+      <label class="textarea-label typography-overline">Textarea disabled</label>
+      <div class="textarea-container-inner">
+        <textarea class="rd-textarea typography-body-regular" disabled></textarea>
+      </div>
+      <div class="textarea-info-text textarea-error-message typography-caption text-error">
+        <svg class="svg-icon current-color error-icon"><use xlink:href="icons/rd-icons.svg#rd-icon-exclamation-point-circle"></use></svg>
+        <span>Error message</span>
+      </div>
+      <div class="textarea-info-text typography-caption text-info">Info text</div>
+    </div>
+
+    <div class="textarea-container">
+      <label class="textarea-label typography-overline">Textarea without resize</label>
+      <div class="textarea-container-inner">
+        <textarea class="rd-textarea no-resize typography-body-regular"></textarea>
+      </div>
+      <div class="textarea-info-text textarea-error-message typography-caption text-error">
+        <svg class="svg-icon current-color error-icon"><use xlink:href="icons/rd-icons.svg#rd-icon-exclamation-point-circle"></use></svg>
+        <span>Error message</span>
+      </div>
+      <div class="textarea-info-text typography-caption text-info">Info text</div>
+    </div>
+
+  </section>
+</body>
+
+<script type="text/javascript" src="js/input.js"></script>
+</html>

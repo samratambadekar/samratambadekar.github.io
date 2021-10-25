@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="8" cy="8" r="8"></circle>
+        <path d="M2,8 C2.55228475,8 3,8.44771525 3,9 C3,9.55228475 2.55228475,10 2,10 C1.44771525,10 1,9.55228475 1,9 C1,8.44771525 1.44771525,8 2,8 Z M0.501342773,0.481689453 L3.58825684,0.481689453 L3,7 L1,7 L0.501342773,0.481689453 Z" id="path-3"></path>
+    </defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Semantic/20/Failure" transform="translate(-2.000000, -2.000000)">
+            <g id="Group" transform="translate(2.000000, 2.000000)">
+                <g id="Background-2">
+                    <g id="Background">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#F5CB4E" xlink:href="#path-1"></use>
+                        <g id="Colors/Semantic/Failure" mask="url(#mask-2)">
+                            <g transform="translate(-2.000000, -2.000000)" id="Colors/Basic/Red">
+                                <g>
+                                    <rect id="Color" fill="#F04152" x="0" y="0" width="20" height="20"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="!" transform="translate(6.000000, 3.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" xlink:href="#path-3"></use>
+                    <g id="Colors/Basic/White" mask="url(#mask-4)" fill="#FFFFFF">
+                        <g transform="translate(-8.000000, -5.000000)" id="Color">
+                            <rect x="0" y="0" width="20" height="20"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

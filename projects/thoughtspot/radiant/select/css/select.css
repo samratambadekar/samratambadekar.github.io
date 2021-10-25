@@ -1,0 +1,213 @@
+.svg-icon.current-color {
+  fill: currentColor;
+}
+.svg-icon.gray {
+  fill: var(--color-text-info);
+}
+
+
+.select-container + .select-container {
+  margin-top: 40px;
+}
+
+
+.select-container {
+  /* position: relative; */
+  width: 220px;
+}
+.select-container.small {
+  width: 120px;
+}
+.select-container.x-small {
+  display: inline-block;
+  width: 60px;
+}
+.select-container.x-small + .select-container.x-small {
+  margin-left: 24px;
+}
+
+.select-container .select-label {
+  display: block;
+  margin-bottom: 4px;
+  transition: color 0.2s ease;
+}
+
+.select-container .select-info-text {
+  margin-top: 4px;
+}
+
+.select-container-inner {
+  position: relative;
+}
+
+.select-container-inner .rd-select {
+  width: 100%;
+  height: 32px;
+  padding: 6px 16px;
+  border: 1px solid #C0C6CF;
+  border-radius: 6px;
+  background-color: #FFF;
+  transition: border-color 0.2s ease;
+}
+.select-container-inner .rd-select-search {
+  width: 100%;
+  height: 32px;
+  padding: 6px 16px;
+  border: 0 solid transparent;
+  border-radius: 6px 6px 0 0;
+  background-color: #FFF;
+  transition: border-color 0.2s ease;
+}
+.select-container .rd-select-search:focus {
+  outline: none;
+  /* border-bottom-color: #C0C6CF; */
+}
+.select-dropdown .placeholder-label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 32px;
+  padding: 6px 16px;
+  z-index: 5;
+  background-color: #FFF;
+  /* pointer-events: none; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.select-dropdown .placeholder-label:hover {
+  background-color: #F6F8FA;
+}
+
+.select-search-container {
+  position: relative;
+}
+.rd-select-search:focus ~ .placeholder-label,
+.rd-select-search:not(.is-empty) ~ .placeholder-label {
+/* .select-search-container.has-focus ~ .placeholder-label,
+.select-search-container:not(.is-empty) ~ .placeholder-label { */
+  display: none;
+}
+.select-search-container .select-search-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 16px;
+  max-width: 16px;
+  z-index: 1;
+  cursor: pointer;
+}
+.select-search-container.icon-right .rd-select-search {
+  padding-right: 32px;
+}
+.select-search-container .select-search-icon-right {
+  right: 12px;
+}
+
+
+.rd-select[type='number'] {
+  padding-right: 4px;
+}
+.rd-select[readonly] {
+  cursor: pointer;
+}
+.rd-select[disabled]::placeholder {
+  color: #777E8B;
+  opacity: 1;
+}
+
+.select-container:hover .rd-select {
+  border-color: var(--color-gray-60);
+}
+
+
+.select-container.is-open .rd-select,
+.select-container .rd-select:focus {
+  outline: none;
+  border-color: var(--color-blue-accent);
+}
+
+/* .select-container:focus-within .select-label, */
+.select-container.is-open .select-label {
+  color: var(--color-blue-accent);
+}
+
+.select-container.has-error .select-label {
+  color: var(--color-failure);
+}
+
+.select-container.has-error .rd-select {
+  border-color: var(--color-failure);
+}
+
+.select-dropdown .rd-select-search {
+  border-radius: 6px 6px 0 0;
+}
+.select-dropdown .rd-select-search + .menu-dropdown {
+  border-radius: 0 0 6px 6px;
+}
+
+.select-container.disabled {
+  opacity: 0.4;
+  /* pointer-events: none; */
+}
+
+.select-container-inner .select-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 16px;
+  max-width: 16px;
+  pointer-events: none;
+}
+.select-container-inner.icon-right .rd-select {
+  padding-right: 32px;
+}
+.select-container-inner .select-icon-right {
+  right: 12px;
+}
+
+
+.select-error-message {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.select-container:not(.has-error) .select-error-message {
+  display: none;
+}
+
+.select-container.has-error .select-error-message ~ .select-info-text {
+  display: none;
+}
+
+.select-error-message .svg-icon {
+  height: 12px;
+  max-width: 12px;
+  margin: 4px 8px 4px 0;
+}
+
+
+
+.select-container .select-dropdown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 4px);
+  z-index: 1;
+}
+.select-container:not(.is-open) .select-dropdown {
+  display: none;
+}
+
+.select-dropdown .no-results {
+  color: var(--color-gray-60);
+  padding: 4px 16px;
+}
+.select-dropdown .list-item:not(.hide) ~ .no-results {
+  display: none;
+}

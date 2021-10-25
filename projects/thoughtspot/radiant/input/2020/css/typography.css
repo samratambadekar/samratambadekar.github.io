@@ -1,0 +1,66 @@
+:root {
+  --border-radius: 6px;
+}
+
+.typography-headline-large {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+}
+.typography-page-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+.typography-modal-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.typography-section-label {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.typography-content-label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.typography-content-label-subhead {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.typography-body-large {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.typography-body-regular {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.typography-footnote,
+.typography-caption,
+.typography-overline {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #1C2330;
+  /* fill: #1C2330; */
+}
+
+.text-accent {
+  color: var(--color-blue-accent);
+}
+.text-error {
+  color: var(--color-failure);
+}
+.text-info {
+  color: var(--color-text-info);
+}
