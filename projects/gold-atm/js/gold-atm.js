@@ -70,9 +70,9 @@ $(document).ready(function() {
   $("body").on("click", ".gold-symbol", function(evt) {
     evt.stopPropagation();
     $(".start-screen-au").css({
-      position: "absolute",
-      top: $(".start-screen-au-placeholder").position().top,
-      left: $(".start-screen-au-placeholder").position().left,
+      position: "fixed",
+      top: $(".start-screen-au-placeholder").offset().top,
+      left: $(".start-screen-au-placeholder").offset().left,
       transform: 'scale(1)',
       opacity: 1
     });
