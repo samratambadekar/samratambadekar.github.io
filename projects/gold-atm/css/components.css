@@ -1,0 +1,115 @@
+.button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: .75rem;
+  line-height: inherit;
+  color: #FFF;
+  min-width: 32px;
+  max-width: 300px;
+  height: 32px;
+  padding: 0 16px;
+  border-radius: 24px;
+  border: none;
+  background-color: #2C2C2D;
+  cursor: pointer;
+  overflow: hidden;
+
+  transition: max-width 0.2s ease, padding 0.2s ease;
+  will-change: max-width, padding;
+}
+.button.icon-button {
+  max-width: 32px;
+  padding: 6px;
+}
+.button .button-text {
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: max-width 0.2s 0.2s ease;
+  will-change: max-width;
+}
+.button.icon-button .button-text {
+  visibility: hidden;
+  max-width: 0;
+}
+.button.large {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 700;
+  height: 48px;
+  padding: 0 24px;
+}
+.button.primary {
+  color: #000;
+  background-color: #FFF1C4;
+}
+.button.secondary {
+  color: #FFF;
+  background-color: #2C2C2D;
+}
+.button.tertiary {
+  height: auto;
+  color: #FFF1C4;
+  background-color: transparent;
+}
+.button .icon {
+  height: 20px;
+}
+.button.icon-left:not(.icon-button) {
+  padding-left: 8px;
+}
+.button.icon-left:not(.icon-button) .icon {
+  margin-right: 6px;
+}
+.button.icon-right:not(.icon-button) {
+  padding-right: 8px;
+}
+.button.icon-right:not(.icon-button) .icon {
+  margin-left: 6px;
+}
+
+
+.chips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.chips .chip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .75rem;
+  height: 24px;
+  margin: 4px;
+  padding: 0 8px 2px 8px;
+  border-radius: 16px;
+  border: 1px solid #FFF1C4;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  /* height: 148px; */
+  border-radius: 24px;
+  padding: 32px 36px 20px;
+  border: 1px solid #FFF1C4;
+}
+.card + .card {
+  margin-left: 24px;
+}
+.card .title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 12px;
+}

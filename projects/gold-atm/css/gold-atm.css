@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  /* font-family: "SF Pro Display", "Open Sans"; */
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+  /* font-size: 14px; */
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000;
+}
+
+.hide {
+  display: none !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+.screensaver {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: 100;
+  animation: fade-in 0.35s ease;
+}
+.screensaver-column {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 50px;
+  height: 100%;
+  margin: 0 20px;
+  animation: marquee 30s linear infinite alternate;
+}
+.screensaver-column.reverse {
+  animation-direction: alternate-reverse;
+}
+.no-sc-animation .screensaver-column,
+.screensaver-column:hover {
+  animation-play-state: paused;
+}
+.gold-symbol {
+  position: relative;
+  width: 50px;
+  margin: 20px 0;
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+.gold-symbol:hover {
+  opacity: 1;
+}
+.gold-symbol.dimmed {
+  opacity: 0.25;
+}
+.gold-symbol-img {
+  width: 100%;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-25%);
+  }
+}
+
+
+
+.start-screen {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #FFF1C4;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  max-height: 800px;
+  /* max-width: 350px; */
+  margin: 0 auto;
+  
+  padding-top: 100px;
+  transition: padding 0.25s ease;
+}
+.start-screen .start-screen-au-placeholder {
+  /* position: absolute; */
+  width: 100px;
+  height: 100px;
+}
+.start-screen .start-screen-au {
+  /* position: absolute; */
+  width: 100px;
+  transform-origin: left top;
+  opacity: 0;
+  transition: transform 0.35s ease,
+              top 0.35s ease,
+              left 0.35s ease;
+  pointer-events: none;
+}
+.start-screen.buy-screen .start-screen-au {
+  transform-origin: center;
+}
+.start-screen .start-screen-au-placeholder ~ * {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.35s ease,
+              transform 0.35s ease;
+  opacity: 0;
+  animation: fade-in-up 0.35s ease forwards;
+}
+.start-screen .start-screen-au-placeholder ~ *:nth-child(1) {
+  transition-delay: 0.05s;
+  animation-delay: 0.05s;
+}
+.start-screen .start-screen-au-placeholder ~ *:nth-child(2) {
+  transition-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.start-screen .start-screen-au-placeholder ~ *:nth-child(3) {
+  transition-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+.start-screen .start-screen-au-placeholder ~ *:nth-child(4) {
+  transition-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.start-screen .start-screen-au-placeholder ~ *:nth-child(5) {
+  transition-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+.start-screen .start-screen-au-placeholder ~ *:nth-child(6) {
+  transition-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.start-screen .start-screen-au-placeholder ~ *:nth-child(7) {
+  transition-delay: 0.35s;
+  animation-delay: 0.35s;
+}
+.start-screen .start-screen-au-placeholder ~ *:nth-child(8) {
+  transition-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.start-screen .start-screen-au-placeholder ~ *:nth-child(9) {
+  transition-delay: 0.45s;
+  animation-delay: 0.45s;
+}
+.start-screen .start-screen-au-placeholder ~ *:nth-child(10) {
+  transition-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.start-screen .start-screen-au-placeholder:not(.show-all) ~ * {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(8px);
+}
+.start-screen .start-screen-row {
+  margin-top: 24px;
+  text-align: center;
+}
+.start-screen .atm-logo {
+  width: 100%;
+  max-width: 350px;
+  transition: width 0.35s ease;
+  /* transform-origin: center; */
+  will-change: width;
+}
+.start-screen .real-time-info {
+  display: flex;
+  align-items: center;
+  /* font-size: 12px; */
+  font-size: .75rem;
+  line-height: .75rem;
+}
+.start-screen .real-time-info .icon {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.start-screen .btn-select-language {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+}
+.start-screen .btn-get-help {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+}
+
+
+
+/* .buy-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFF1C4;
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+} */
+.start-screen.buy-screen .hide-when-buy,
+.start-screen:not(.buy-screen) .show-when-buy {
+  display: none;
+}
+.start-screen.buy-screen .start-screen-au-placeholder {
+  /* width: 50px; */
+  height: 50px;
+}
+.start-screen.buy-screen {
+  padding-top: 32px;
+}
+.buy-screen .buy-screen-row {
+  margin-top: 12px;
+}
+.buy-screen .buy-screen-au {
+  width: 40px;
+}
+.buy-screen .atm-logo {
+  width: 150px;
+}
+
+.prices-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 12px;
+  line-height: 16px; */
+  font-size: .75rem;
+  line-height: .75rem;
+}
+.prices-row .prices-row-item {
+  margin: 0 12px;
+}
+.prices-timestamp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 10px;
+  line-height: 12px; */
+  font-size: .625rem;
+  line-height: .75rem;
+  margin-top: 8px;
+}
+
+.qr-code-section {
+  text-align: center;
+}
+.qr-code-section .title {
+  /* margin-top: 12px; */
+}
+.qr-code-section .qr-info {
+  font-size: .75rem;
+  line-height: 1.25rem;
+  margin-top: 12px;
+  /* max-width: 300px; */
+}
+.qr-code-section .qr-code {
+  margin-top: 16px;
+  width: 84px;
+}
+
+.start-screen-row.cards {
+  margin: 40px 0;
+}
+
+.purchase-types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.purchase-types .purchase-type {
+  margin: 4px;
+  height: 44px;
+}
