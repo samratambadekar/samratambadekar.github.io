@@ -1,0 +1,137 @@
+
+@font-face {
+  font-family:'Maven Pro';
+  src: url(../fonts/maven_pro_regular.eot?#iefix) format("embedded-opentype"), url(../fonts/maven_pro_regular.ttf) format("truetype"), url(../fonts/maven_pro_regular.woff) format("woff"), url(../fonts/maven_pro_regular.svg#maven_pro_regular) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family:'Maven Pro';
+  src: url(../fonts/maven_pro_bold.eot?#iefix) format("embedded-opentype"),url(../fonts/maven_pro_bold.ttf) format("truetype"),url(../fonts/mavenpro-bold-webfont.woff) format("woff"),url(../fonts/maven_pro_bold.svg#maven_pro_bold) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family:'Maven Pro';
+  src: url(../fonts/maven_pro_bold.eot?#iefix) format("embedded-opentype"),url(../fonts/maven_pro_bold.ttf) format("truetype"),url(../fonts/mavenpro-bold-webfont.woff) format("woff"),url(../fonts/maven_pro_bold.svg#maven_pro_bold) format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family:'Maven Pro';
+  src: url(../fonts/maven_pro_light.eot?#iefix) format("embedded-opentype"),url(../fonts/maven_pro_light.ttf) format("truetype"),url(../fonts/mavenprolight300_regular-webfont.woff) format("woff"),url(../fonts/maven_pro_light.svg#maven_pro_light) format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  -webkit-transition: all 0.5s ease-in-out;
+     -moz-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+
+  box-sizing: border-box;
+  position: relative;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Maven Pro",  "Helvetica Neue";
+  /*background-color: #F4C84F;*/
+  /*background-color: #FFDA3E;*/
+  color: #333;
+}
+h3 {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+  padding: 20px;
+}
+.doc-e-widget {
+  width: 309px;
+  height: 375px;
+  background-color: #FFDA3E;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.doc-e-widget .doc-e {
+  width: 150px;
+  margin: auto;
+}
+
+.widget_progress {
+  width: 100%;
+  height: 105px;
+  font-size: 12px;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.widget_progress > div {
+  padding: 15px;
+}
+.widget_progress .overall_progress {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.widget_progress .learn_more {
+  font-size: 14px;
+  font-weight: 700;
+}
+.widget_progress .progress_bar {
+  width: calc(100% - 30px);
+  padding: 0;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.widget_progress .progress_indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  padding: 0;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #FFF;
+}
+
+.doc-e-block {
+  width: 100%;
+  text-align: center;
+}
+.speech-bubble {
+  position: absolute;
+  right: 40px;
+  bottom: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  color: #555;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 12px;
+  border-width: 0 0 10px 10px;
+  border-style: solid;
+  border-color: transparent #FFF;
+  display: block;
+  width: 0;
+}

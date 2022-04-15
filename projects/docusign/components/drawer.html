@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title>Olive Animations</title>
+    <link href="https://docucdn-a.akamaihd.net/olive/17.17.0/css/olive.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://docucdn-a.akamaihd.net/olive/17.17.0/css/martini.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style_tutorial.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/new_animations.css"/>
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+  </head>
+  <body>
+    <article class="drawer_animation">
+      <div class="sample1 container-drawer container-drawer-simple-drawer">
+        <div class="ng-scope">
+          <div class="exampleButtonRow ng-scope">
+            <div class="cb inline-input u-float-left">
+              <input class="cb_input" type="checkbox" id="basicOption1" />
+              <label class="cb_label" for="basicOption1">Enable an option</label>
+            </div>
+            <div class="u-float-right">
+              <button class="btn btn-secondary toggleDrawer">Advanced</button>
+            </div>
+          </div>
+          <div class="drawer ng-scope down full open">
+            <div class="drawer-wrapper">
+              <div class="drawer-content showing">
+                <h4>Advanced Options</h4>
+                <div class="cb inline-input">
+                  <input type="checkbox" id="drawerOption1" class="cb_input" />
+                  <label for="drawerOption1" class="cb_label">Enable advanced option 1</label>
+                </div>
+                <div class="cb inline-input">
+                  <input type="checkbox" id="drawerOption2" class="cb_input" />
+                  <label for="drawerOption2" class="cb_label">Enable advanced option 2</label>
+                </div>
+                <div class="cb inline-input">
+                  <input type="checkbox" id="drawerOption3" class="cb_input" />
+                  <label for="drawerOption3" class="cb_label">Enable advanced option 3</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sample2 container-drawer container-drawer-drawer-with-summary">
+        <div class="ng-scope">
+          <div class="exampleButtonRow ng-scope">
+            <div class="cb inline-input u-float-left">
+              <input class="cb_input" type="checkbox" id="basicOption2">
+              <label class="cb_label" for="basicOption2">Enable an option</label>
+            </div>
+            <div class="u-float-right">
+              <button class="btn btn-secondary toggleDrawer" data-toggle="full">Full</button>
+              <button class="btn btn-secondary toggleDrawer" data-toggle="content">Content</button>
+              <button class="btn btn-secondary toggleDrawer" data-toggle="summary">Summary</button>
+              <button class="btn btn-secondary toggleDrawer" data-toggle="hide">Hide</button>
+            </div>
+          </div>
+          <div class="drawer ng-scope down open full">
+            <div class="drawer-wrapper">
+              <div class="drawer-summary showing">Options selected: none</div>
+              <div class="drawer-content showing">
+                <h4>Advanced Options</h4>
+                <div class="cb inline-input">
+                  <input type="checkbox" id="drawer2Option1" class="cb_input">
+                  <label for="drawer2Option1" class="cb_label">Enable advanced option 1</label>
+                </div>
+                <div class="cb inline-input">
+                  <input type="checkbox" id="drawer2Option2" class="cb_input">
+                  <label for="drawer2Option2" class="cb_label">Enable advanced option 2</label>
+                </div>
+                <div class="cb inline-input">
+                  <input type="checkbox" id="drawer2Option3" class="cb_input">
+                  <label for="drawer2Option3" class="cb_label">Enable advanced option 3</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </body>
+  <script src="js/new_animations.js"></script>
+</html>

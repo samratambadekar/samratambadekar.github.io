@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title>Animations</title>
+    <link href="https://docucdn-a.akamaihd.net/olive/17.17.0/css/olive.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://docucdn-a.akamaihd.net/olive/17.17.0/css/martini.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style_tutorial.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/new_animations.css"/>
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+  </head>
+  <body>
+    <nav class="hide">
+      <div class="document-title">Animations</div>
+    </nav>
+    <article class="">
+      <div class="pages">
+        <div class="page showing" data-page-num="1" data-page-name="page_start">
+          <div class="page-title">Component Micro-interactions</div>
+          <div class="page-content">
+            <!-- <div class="page-title"></div> -->
+            <br>
+            <br>
+            <p>Press Next to continue</p>
+          </div>
+        </div>
+        <div class="page showing" data-page-num="2" data-page-name="">
+          <div class="page-title"></div>
+          <div class="page-content">
+            <div class="screens">
+              <div class="screen phone_div"></div>
+              <div class="screen tablet_div "></div>
+              <div class="screen desktop_div"></div>
+            </div>
+          </div>
+        </div>
+        <div class="page showing" data-page-num="3" data-page-name="">
+          <div class="page-title"></div>
+          <div class="page-content">
+            <div class="screens">
+              <div class="screen phone_div small"></div>
+              <div class="screen phone_div"></div>
+              <div class="screen phone_div large"></div>
+
+              <div class="screen tablet_div small"></div>
+              <div class="screen tablet_div"></div>
+              <div class="screen tablet_div large"></div>
+
+              <div class="screen desktop_div small"></div>
+              <div class="screen desktop_div"></div>
+              <div class="screen desktop_div large"></div>
+            </div>
+          </div>
+        </div>
+        <div class="page showing" data-page-num="4" data-page-name="">
+          <div class="page-title"></div>
+          <div class="page-content">
+            <div>Smallest device we want to support?</div>
+            <div>min-width: 320px & max-width: 1506px</div>
+            <!-- <div><a href="http://olive.docusignhq.com/styleguide/components/responsive-utilities" target="_blank">Olive</a></div> -->
+          </div>
+        </div>
+        <div class="page showing" data-page-num="5" data-page-name="">
+          <div class="page-title"></div>
+          <div class="page-content">
+            <div>Show DocuSign</div>
+          </div>
+        </div>
+        <div class="page showing" data-page-num="6" data-page-name="">
+          <div class="page-title"></div>
+          <div class="page-content">
+            <div>Yes</div>
+          </div>
+        </div>
+        <div class="page showing" data-page-num="7" data-page-name="">
+          <div class="page-title"></div>
+          <div class="page-content">
+            <div>Yes</div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div class="bottom-bar">
+      <!-- <div class="progress-indicator ellipsis hide"><span class="number">0</span>% Completed</div> -->
+      <div class="btn btn-secondary btn-prev hide" data-feature-code="Previous Button">Previous</div>
+      <div class="btn btn-primary btn-next">Next</div>
+    </div>
+
+  </body>
+
+
+  <script>
+  	//  ONLOAD CODE
+  	$(document).ready(function() {
+      $(".page[data-page-num='2'] .page-title").text("Text Input");
+      $(".page[data-page-num='2'] .page-content").load("text_input.html", function() {
+        $(this).trigger("pagecreate");
+      });
+      $(".page[data-page-num='3'] .page-title").text("Buttons");
+      $(".page[data-page-num='3'] .page-content").load("buttons.html", function() {
+        $(this).trigger("pagecreate");
+      });
+      $(".page[data-page-num='4'] .page-title").text("Checkbox");
+      $(".page[data-page-num='4'] .page-content").load("checkbox.html", function() {
+        $(this).trigger("pagecreate");
+      });
+      $(".page[data-page-num='5'] .page-title").text("Radio");
+      $(".page[data-page-num='5'] .page-content").load("radio.html", function() {
+        $(this).trigger("pagecreate");
+      });
+      $(".page[data-page-num='6'] .page-title").text("Drawer");
+      $(".page[data-page-num='6'] .page-content").load("drawer.html", function() {
+        $(this).trigger("pagecreate");
+      }).css({"width": "800px"});
+      $(".page[data-page-num='7'] .page-title").text("Tabs");
+      $(".page[data-page-num='7'] .page-content").load("tabs.html", function() {
+        $(this).trigger("pagecreate");
+      });
+
+
+      $.getScript("js/new_animations.js", function() {
+  			console.log("Loaded Script.");
+  		});
+
+      goToPage(7);
+  	});
+  </script>
+  
+  <script src="js/script_tutorial.js"></script>
+
+  <!-- <script src="js/new_animations.js"></script> -->
+</html>

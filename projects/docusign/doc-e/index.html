@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title>Successful Transactions</title>
+    <link href="css/successful_transactions.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/flipclock.css">
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/flipclock.min.js"></script>
+    <script src="js/xlsx.full.min.js"></script>
+
+  </head>
+  <body>
+    <nav class="">
+    </nav>
+    <article class="">
+      <div class="main_section">
+        <h2>Successful Transactions</h2>
+        <div class="filters">
+          <div class="year">
+            <span>2017</span>
+            <img src="images/arrow_down.svg" class="arrow" />
+            <div class="menu years hide">
+              <div class="year_option" data-year="y2017">2017</div>
+              <div class="year_option" data-year="y2016">2016</div>
+            </div>
+          </div>
+          <div class="completion">
+            <div class="percentage">
+              0%
+            </div>
+            <div class="period">
+              Annual Completion
+            </div>
+          </div>
+          <div class="toggle_view">
+            <div class="race_view selected">Race View</div>
+            <div class="toggle_button">
+              <input class="tgl tgl-ios" id="toggle_button" type="checkbox"/>
+              <label class="tgl-btn" for="toggle_button"></label>
+            </div>
+            <div class="chart_view">Chart View</div>
+          </div>
+        </div>
+
+        <div class="infographic race_view">
+          <div class="xAxis">
+            <div class="month_block unavailable">
+              <div class="completed">99%</div>
+              <div class="dot"></div>
+              <div class="month" data-month-name="Feb">Feb</div>
+              <div class="bar_chart"><div class="bar_chart_filled"></div><div class="bar_chart_top"></div></div>
+            </div>
+            <div class="month_block unavailable">
+              <div class="completed">100%</div>
+              <div class="dot"></div>
+              <div class="month" data-month-name="Mar">Mar</div>
+              <div class="bar_chart"><div class="bar_chart_filled"></div><div class="bar_chart_top"></div></div>
+            </div>
+            <div class="month_block unavailable">
+              <div class="completed">102%</div>
+              <div class="dot"></div>
+              <div class="month" data-month-name="Apr">Apr</div>
+              <div class="bar_chart"><div class="bar_chart_filled"></div><div class="bar_chart_top"></div></div>
+            </div>
+            <div class="month_block unavailable">
+              <div class="completed">60%</div>
+              <div class="dot"></div>
+              <div class="month" data-month-name="May">May</div>
+              <div class="bar_chart"><div class="bar_chart_filled"></div><div class="bar_chart_top"></div></div>
+            </div>
+            <div class="month_block unavailable">
+              <div class="completed">0%</div>
+              <div class="dot"></div>
+              <div class="month" data-month-name="Jun">Jun</div>
+              <div class="bar_chart"><div class="bar_chart_filled"></div><div class="bar_chart_top"></div></div>
+            </div>
+            <div class="month_block unavailable">
+              <div class="completed">0%</div>
+              <div class="dot"></div>
+              <div class="month" data-month-name="Jul">Jul</div>
+              <div class="bar_chart"><div class="bar_chart_filled"></div><div class="bar_chart_top"></div></div>
+            </div>
+            <div class="month_block unavailable">
+              <div class="completed">0%</div>
+              <div class="dot"></div>
+              <div class="month" data-month-name="Aug">Aug</div>
+              <div class="bar_chart"><div class="bar_chart_filled"></div><div class="bar_chart_top"></div></div>
+            </div>
+            <div class="month_block unavailable">
+              <div class="completed">0%</div>
+              <div class="dot"></div>
+              <div class="month" data-month-name="Sep">Sep</div>
+              <div class="bar_chart"><div class="bar_chart_filled"></div><div class="bar_chart_top"></div></div>
+            </div>
+            <div class="month_block unavailable">
+              <div class="completed">0%</div>
+              <div class="dot"></div>
+              <div class="month" data-month-name="Oct">Oct</div>
+              <div class="bar_chart"><div class="bar_chart_filled"></div><div class="bar_chart_top"></div></div>
+            </div>
+            <div class="month_block unavailable">
+              <div class="completed">0%</div>
+              <div class="dot"></div>
+              <div class="month" data-month-name="Nov">Nov</div>
+              <div class="bar_chart"><div class="bar_chart_filled"></div><div class="bar_chart_top"></div></div>
+            </div>
+            <div class="month_block unavailable">
+              <div class="completed">0%</div>
+              <div class="dot"></div>
+              <div class="month" data-month-name="Dec">Dec</div>
+              <div class="bar_chart"><div class="bar_chart_filled"></div><div class="bar_chart_top"></div></div>
+            </div>
+            <div class="month_block unavailable">
+              <div class="completed">100%</div>
+              <div class="dot"></div>
+              <div class="month" data-month-name="Jan">Jan</div>
+              <div class="bar_chart"><div class="bar_chart_filled"></div><div class="bar_chart_top"></div></div>
+            </div>
+            <div class="xAxis_filled"></div>
+            <div class="doc-e-block scaleDown">
+              <div class="city_background_city"></div>
+              <!-- <img style="width: 50px; height: 25px; position: absolute; left: 50%; top: 20%;" src="images/sanfrancisco.svg" /> -->
+              <!-- <div class="city_foreground_clouds"></div> -->
+              <img class="city_foreground_clouds" src="images/foreground_clouds.svg" />
+              <!-- <div class="city_background_deep"></div> -->
+              <img class="city_background_deep" src="images/background_clouds.svg" />
+              <img class="doc-e" src="images/doc-e.gif" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="button support_doc-e"><img src="images/icon_announcement.svg" /> <div>Submit Ideas</div></div>
+        <div class="button show_modal_raffle"><img src="images/icon_gift.svg" /> <div>Enter Raffle</div></div>
+      </div>
+      <div class="volume_mute on"></div>
+    </article>
+
+    <div class="modal_background hide">
+      <div class="modal modal_support_doc-e hideDown">
+        <div class="modal_header">
+          Tell us your ideas
+        </div>
+        <div class="modal_content">
+          <div class="form_unit">
+            <label for="textareaUserThoughts" class="label">What are you thinking?</label>
+            <textarea id="textareaUserThoughts" class="input-textarea" placeholder="How might we increase the number of successful transactions?"></textarea>
+          </div>
+          <div class="form_unit">
+            <label for="textInputEmail1" class="label">Your email (optional)</label>
+            <input id="textInputEmail1" type="text" class="input-text user_email" placeholder="We may reach out if we need more information"/>
+          </div>
+        </div>
+        <div class="modal_footer">
+          <button class="btn btn-lg btn-main send_feedback">Submit</button>
+          <button class="btn btn-lg btn-minor modal_close">Cancel</button>
+        </div>
+      </div>
+      <div class="modal center thankYou hideDown">
+        <img src="images/icon_close.svg" class="modal_close icon_close" />
+        <div class="modal_header">
+          Thank you for your ideas!
+        </div>
+        <div class="modal_content">
+          <img class="doc-e-pose" src="images/doc-e-thanks.svg" />
+        </div>
+        <div class="form_unit">
+          We read every submission, <br/>but will only contact you if we have questions.
+        </div>
+      </div>
+      <div class="modal center modal_raffle hideDown">
+        <img src="images/icon_close.svg" class="modal_close icon_close" />
+        <img src="images/ticket_end.svg" class="modal_ticket_end top" />
+        <img src="images/ticket_end.svg" class="modal_ticket_end bottom" />
+        <div class="modal_header pre_raffle_submit">
+          Enter Raffle For August
+        </div>
+        <div class="modal_header post_raffle_submit hidden">
+          Good Luck!
+        </div>
+        <div class="form_unit pre_raffle_submit">
+          If we achieve our monthly goal,<br/>you’ll get the chance to win a $50 Amazon gift card
+        </div>
+        <div class="form_unit post_raffle_submit hidden">
+          You’ve successfully<br/>entered this month’s raffle
+        </div>
+        <div class="modal_content pre_raffle_submit gift_image">
+          <img class="doc-e-pose" src="images/gift_yellow.svg" />
+        </div>
+        <div class="modal_content post_raffle_submit hidden">
+          <img class="doc-e-pose" src="images/doc-e-goodluck.svg" />
+        </div>
+        <div class="form_unit pre_raffle_submit">
+          <input id="textInputEmail2" type="text" class="input-text user_email" placeholder="Your DocuSign Email"/>
+        </div>
+        <div class="modal_footer pre_raffle_submit">
+          <button class="btn btn-lg btn-main submit_raffle">Enter</button>
+        </div>
+        <div class=" post_raffle_submit flip-countdown hidden">
+        </div>
+        <div class="form_unit post_raffle_submit winner_text hidden">
+          Until we draw a winner.
+        </div>
+        <div class="form_unit post_raffle_submit raffle_email_info hidden">
+          You will receive an email notification<br/>if you win this month’s raffle
+        </div>
+      </div>
+    </div>
+    <audio id="gabe_song" autoplay loop src="doc_e_bike_ride.mp3" type="audio/mp3">
+      Your browser does not support the audio tag.
+    </audio>
+  </body>
+
+  <script src="js/successful_transactions.js"></script>
+</html>
