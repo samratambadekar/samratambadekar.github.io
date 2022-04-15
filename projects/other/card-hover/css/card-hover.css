@@ -1,0 +1,277 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 28.8px;
+}
+h4 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+ul {
+    padding-left: 12px;
+}
+
+.align-right {
+    text-align: right;
+    justify-content: flex-end;
+}
+.center {
+    text-align: center;
+}
+
+.page {
+    color: #212121;
+    background-color: #E5E5E5;
+}
+
+.card {
+    position: relative;
+    padding: 16px 32px 32px;
+    border-radius: 6px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 4px rgba(125, 156, 184, 0.25);
+}
+.card.card-full {
+    width: 100%;
+}
+.card.card-section {
+    width: auto;
+    height: auto;
+}
+
+.ftu_card {
+    position: relative;
+    width: 80%;
+    max-width: 780px;
+    min-height: 300px;
+    margin: 64px auto;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.ftu_card .progress-bar {
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+    /* border: 1px solid #38861B; */
+}
+.progress-bar .progress-bar-inner {
+    width: 0%;
+    /* min-width: 10px; */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #38861B;
+    transition: width 0.25s ease;
+    will-change: width;
+}
+
+.ftu_card .progress-indicator {
+    margin: 40px auto 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-indicator .progress-dot {
+    width: 8px;
+    height: 8px;
+    margin: 0 10px;
+    /* background-color: #D8DBE2; */
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #616161;
+}
+.progress-indicator .progress-dot.current_step {
+    background-color: #2666B4;
+    border-color: transparent;
+}
+
+.ftu_step .card_options {
+    margin: 32px auto;
+    padding-top: 32px;
+    border-top: 1px solid #EAEBED;
+}
+.card_options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    padding: 24px;
+    margin: 32px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-shadow: 0px 2px 5px rgba(216, 216, 216, 0.75);
+    border-radius: 6px;
+    transition: background-color 0.2s ease,
+                border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+.card_option:not(.no_select) {
+    cursor: pointer;
+}
+.card_option:focus {
+    outline: none;
+    border-color: #80BA6C;
+}
+.card_option:not(.hide) ~ .card_option {
+    margin-left: 32px;
+}
+.card_option.selected {
+    background-color: #F3FCF4;
+    border-color: #80BA6C;
+    box-shadow: 0px 2px 5px rgba(216, 216, 216, 0.75);
+}
+.card_option .card_option_text {
+    color: #666666;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 32px;
+    text-align: center;
+}
+.card_option .card_option_image {
+    max-height: 70px;
+}
+.card_option.small {
+    width: 140px;
+    height: 140px;
+    padding: 20px 12px;
+}
+.card_option.small .card_option_text {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 12px;
+}
+
+
+
+.hover-group {
+    position: relative;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 40px;
+}
+.hover-group.no_overflow {
+    overflow: hidden;
+}
+.hover-group.small {
+    width: 72px;
+}
+.hover-group.large {
+    width: 142px;
+}
+.hover-group .background-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.hover-group .hover-group-item {
+    z-index: 1;
+    position: relative;
+    margin-top: 16px;
+    min-height: 64px;
+}
+.hover-group .hover-group-item {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.card_option .hover-right {
+    opacity: 0.5;
+    transform: translateX(-8px);
+}
+.card_option .hover-middle {
+    /* transform: translateY(8px); */
+    /* transform: scale(0.9) translateY(4px); */
+    transform: scale(0.85);
+    opacity: 0.75;
+}
+.card_option .hover-left {
+    opacity: 0.5;
+    transform: translateX(8px);
+}
+.card_option .hover-effect {
+    /* opacity: 0.9; */
+    transition: transform 0.35s ease, opacity 0.35s ease;
+}
+.card_option.selected .hover-effect,
+.card_option:focus .hover-effect,
+/* .card_option:active .hover-effect, */
+.card_option:hover .hover-effect {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+.card_option .hover-scale {
+  transform: scale(0.85);
+  opacity: 0.75;
+}
+
+
+
+
+
+.card_option .checkbox-container {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+.card_option .input-checkbox,
+.card_option .cb-label {
+    pointer-events: none;
+}
+
+
+.hover-group .money-send {
+    z-index: 1;
+    position: absolute;
+    top: 21px;
+    left: 28px;
+    height: 24px;
+    opacity: 0.25;
+}
+
+.hover-group .money-receive {
+    z-index: 1;
+    position: absolute;
+    top: 16px;
+    left: -11px;
+    height: 16px;
+    opacity: 0.25;
+}
+.hover-group .money-receive2 {
+    z-index: 1;
+    position: absolute;
+    top: 4px;
+    left: -6px;
+    height: 40px;
+    opacity: 0;
+}
+.hover-group .foreground-image {
+    z-index: 2;
+    position: absolute;
+    top: 22px;
+    left: 19px;
+    height: 12px;
+    /* opacity: 0; */
+}

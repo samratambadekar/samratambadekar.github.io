@@ -1,0 +1,110 @@
+
+/* Tokens */
+:root {
+    /* BASE TOKENS */
+    /* TIMING TOKENS */
+    --base-time-0: 0ms;
+    --base-time-50: 50ms;
+    --base-time-100: 100ms;
+    --base-time-150: 150ms; 
+    --base-time-200: 200ms;
+    --base-time-250: 250ms;
+    --base-time-300: 300ms;
+    --base-time-350: 350ms;
+    --base-time-400: 400ms;
+    --base-time-450: 450ms;
+    --base-time-500: 500ms;
+    --base-time-550: 550ms;
+    --base-time-600: 600ms;
+    --base-time-650: 650ms;
+    --base-time-700: 700ms;
+    --base-time-750: 750ms;
+    --base-time-800: 800ms; 
+    --base-time-850: 850ms;
+    --base-time-900: 900ms;
+    --base-time-950: 950ms;
+    --base-time-1000: 1000ms;
+
+
+    /* EASING TOKENS */
+    --base-time-transition-linear: cubic-bezier(0, 0, 1, 1);
+    --base-time-transition-ease-in: cubic-bezier(.42, 0, 1, 1);
+    --base-time-transition-ease-out: cubic-bezier(0, 0, .58, 1);
+    --base-time-transition-ease-in-out: cubic-bezier(.42, 0, .58, 1);
+    --base-time-transition-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+
+
+    
+    /* ALIAS TOKENS */
+
+    /* SEMANTIC SPEED TOKENS */
+    --tri-time-duration-0: var(--base-time-0);
+    --tri-time-duration-50: var(--base-time-50);
+    --tri-time-duration-100: var(--base-time-100);
+    --tri-time-duration-150: var(--base-time-150);
+    --tri-time-duration-200: var(--base-time-200);
+    --tri-time-duration-250: var(--base-time-250);
+    --tri-time-duration-300: var(--base-time-300);
+    --tri-time-duration-350: var(--base-time-350);
+    --tri-time-duration-400: var(--base-time-400); 
+    --tri-time-duration-450: var(--base-time-450);
+    --tri-time-duration-500: var(--base-time-500);
+
+
+    /* SEMANTIC DELAY TOKENS */
+    /** Delay tokens are usefu to create stagger motion
+        Long delays are useful in creating animation sequences using pure css  */
+    --tri-time-delay-0: var(--base-time-0);
+    /* Short delay */
+    --tri-time-delay-50: var(--base-time-50);
+    --tri-time-delay-100: var(--base-time-100);
+    --tri-time-delay-150: var(--base-time-150);
+    --tri-time-delay-200: var(--base-time-200); 
+    --tri-time-delay-250: var(--base-time-250);
+    /* Medium delay */
+    --tri-time-delay-300: var(--base-time-300);
+    --tri-time-delay-350: var(--base-time-350);
+    --tri-time-delay-400: var(--base-time-400); 
+    --tri-time-delay-450: var(--base-time-450);
+    --tri-time-delay-500: var(--base-time-500);
+    /* Long delay */
+    --tri-time-delay-550: var(--base-time-550);
+    --tri-time-delay-600: var(--base-time-600);
+    --tri-time-delay-650: var(--base-time-650);
+    --tri-time-delay-700: var(--base-time-700);
+    --tri-time-delay-750: var(--base-time-750);
+    --tri-time-delay-800: var(--base-time-800);
+    --tri-time-delay-850: var(--base-time-850); 
+    --tri-time-delay-900: var(--base-time-900);
+    --tri-time-delay-950: var(--base-time-950);
+    --tri-time-delay-1000: var(--base-time-1000);
+
+
+    /* EASING TOKENS */
+    --tri-time-transition-linear: var(--base-time-transition-linear);
+    --tri-time-transition-ease-in: var(--base-time-transition-ease-in);
+    --tri-time-transition-ease-out: var(--base-time-transition-ease-out);
+    --tri-time-transition-ease-in-out: var(--base-time-transition-ease-in-out);
+    --tri-time-transition-ease: var(--base-time-transition-ease);
+
+    /* STATES */
+    --tri-time-state-duration-hover: var(--tri-time-duration-150);
+    --tri-time-state-duration-focus: var(--tri-time-duration-150);
+    --tri-time-state-duration-active: var(--tri-time-duration-150);
+
+    /* Default transitions / animations */
+    /* Should take care of most components */
+    --tri-time-fade-duration-default: var(--tri-time-duration-250);
+    --tri-time-slide-duration-default: var(--tri-time-duration-250);
+    --tri-time-scale-duration-default: var(--tri-time-duration-250);
+
+    /* Page level elements: Side panels / Dialogs / Sheets / Carousals  */
+    --tri-page-time-fade-duration: var(--tri-time-duration-350);
+    --tri-page-time-slide-duration: var(--tri-time-duration-350);
+    --tri-page-time-scale-duration: var(--tri-time-duration-350);
+
+    /* Card's inner content durations  */
+    --tri-card-time-body-fade-duration: var(--tri-time-duration-350);
+    --tri-card-time-body-slide-duration: var(--tri-time-duration-350);
+    --tri-card-time-body-scale-duration: var(--tri-time-duration-350);
+}

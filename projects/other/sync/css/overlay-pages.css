@@ -1,0 +1,30 @@
+
+.overlay-pages {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 500;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.overlay-pages .top-nav-close {
+    margin-right: 20px;
+    cursor: pointer;
+}
+.overlay-page {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+}
+.overlay-page:not(.current_page) {
+    display: none;
+}
+.overlay-page-content {
+    position: relative;
+}

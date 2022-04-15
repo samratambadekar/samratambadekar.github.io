@@ -1,0 +1,452 @@
+.sync-animation {
+    position: relative;
+    margin: auto;
+    width: 308px;
+    height: 272px;
+    /* transform: scale(2); */
+}
+.sync-animation .person_illustration {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    /* width: 112px; */
+    height: 206px;
+    z-index: 10;
+}
+.overlay-page-1 .person_illustration {
+    opacity: 0;
+    animation: fade-in-person 1.5s 0.75s ease forwards;
+}
+
+.overlay-page-1 .sync-circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 154px; */
+    width: 308px;
+    /* height: 136px; */
+    height: 272px;
+}
+.sync-circles .sync-circle1 {
+    position: absolute;
+    top: 135px;
+    left: 86px;
+    height: 125px;
+    opacity: 0;
+    /* transform-origin: top; */
+    animation: fade-in-sync-circle 1.5s ease forwards;
+}
+.sync-circles .sync-circle2 {
+    position: absolute;
+    top: 5.4px;
+    left: 88.5px;
+    height: 266px;
+    opacity: 0;
+    /* transform-origin: left; */
+    animation: fade-in-sync-circle 1.5s 0.25s ease forwards;
+}
+.sync-circles .sync-circle3 {
+    position: absolute;
+    top: 10.4px;
+    left: 74.5px;
+    height: 125px;
+    opacity: 0;
+    /* transform-origin: bottom; */
+    animation: fade-in-sync-circle 1.5s 0.5s ease forwards;
+}
+.sync-circles .sync-circle4 {
+    position: absolute;
+    top: 0;
+    left: -2px;
+    height: 266px;
+    opacity: 0;
+    /* transform-origin: right; */
+    animation: fade-in-sync-circle 1.5s .75s ease forwards;
+}
+
+@keyframes fade-in-person {
+    0% {
+        opacity: 0;
+        transform: translateX(4px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes fade-in-sync-circle {
+    0% {
+        opacity: 0;
+        transform: translateX(4px);
+        /* transform: translateX(4px) rotate(5deg); */
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.overlay-page-2 .final-ui-element {
+    display: block;
+}
+.overlay-page-2 .qb-sync {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 272px;
+    width: 330px;
+}
+.overlay-page .line-arc-up {
+    position: absolute;
+    width: 40px;
+    left: 232px;
+    top: 48px;
+    opacity: 0;
+    animation: fade-in 3s 1s ease forwards;
+}
+.overlay-page .line-arc-down {
+    position: absolute;
+    width: 50px;
+    left: 30px;
+    top: 110px;
+    opacity: 0;
+    animation: fade-in 3s 1s ease forwards;
+}
+.overlay-page .spreadsheet-green {
+    position: absolute;
+    width: 96px;
+    left: -12px;
+    top: 32px;
+    opacity: 0;
+    animation: fade-in-spreadsheet-down 2s 1s ease forwards;
+}
+.overlay-page .spreadsheet-orange {
+    position: absolute;
+    width: 96px;
+    left: 208px;
+    top: 168px;
+    opacity: 0;
+    animation: fade-in-spreadsheet-up 2s 1s ease forwards;
+}
+.overlay-page .dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: #3359A4;
+}
+.overlay-page .dot-up {
+    left: 242px;
+    top: 60px;
+    opacity: 0;
+    animation: fade-in-dot-up 1.5s 1s ease forwards;
+}
+.overlay-page .dot-down {
+    left: 49px;
+    top: 194px;
+    opacity: 0;
+    animation: fade-in-dot-down 1.5s 1s ease forwards;
+}
+.overlay-page .final-ui-element {
+    margin: 20px auto;
+    min-width: 250px;
+    opacity: 0;
+    animation: fade-in-bottom 1.5s 1.5s ease forwards;
+}
+.overlay-page-3 .progress-bar-container {
+    animation: none;
+    opacity: 1;
+}
+.overlay-page-3 .progress-bar-container .progress-bar {
+    animation: fade-in-left 1.5s 1.5s ease forwards;
+    opacity: 0;
+}
+.overlay-page-3 .progress-bar-container .progress-bar-text {
+    animation: fade-in-right 1.5s 1.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fade-in-spreadsheet-up {
+    0% {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes fade-in-spreadsheet-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-16px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes fade-in-dot-up {
+    0% {
+        opacity: 0;
+        transform: translate(14px, 20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes fade-in-dot-down {
+    0% {
+        opacity: 0;
+        transform: translate(-14px, -20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+
+.overlay-page-3 .person_illustration {
+    opacity: 0;
+    animation: fade-in-person 1.5s 0.75s ease forwards;
+}
+
+.sync-animation + .progress-bar-container {
+    margin-top: 48px;
+}
+.progress-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.progress-bar-container .progress-bar-text {
+    color: #616161;
+    margin-left: 40px;
+    min-width: 100px;
+}
+.progress-bar-container .progress-bar {
+    flex: 1;
+    height: 12px;
+    background-color: #BCBCBC;
+    border-radius: 0;
+    overflow: hidden;
+}
+.progress-bar-container .progress-bar-fill {
+    width: 0;
+    min-width: 20px;
+    height: 100%;
+    background-color: #4098E3;
+    transition: width 0.5s ease,
+                background-color 0.75s ease;
+}
+.progress-bar-container.completed .progress-bar-fill {
+    background-color: #38861B;
+}
+
+
+
+
+
+.overlay-page-4 .sync-background .spreadsheet-blue-background,
+.overlay-page-5 .sync-background .spreadsheet-blue-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 344px;
+    height: 304px;
+    opacity: 0;
+    animation: fade-in-spreadsheet-synced 1.5s ease forwards;
+}
+.overlay-page-4 .sync-background .person_illustration,
+.overlay-page-5 .sync-background .person_illustration {
+    right: -40px;
+    bottom: -50px;
+    opacity: 0;
+    animation: fade-in-person 1.5s 0.75s ease forwards;
+    /* animation-delay: 0s; */
+}
+.overlay-page-4 .sync-background .sync-status-check,
+.overlay-page-5 .sync-background .sync-status-check {
+    position: absolute;
+    right: -65px;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+    animation: fade-in-spreadsheet-synced 2s .5s ease forwards;
+}
+.overlay-page-4 .final-ui-element {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+
+@keyframes fade-in-spreadsheet-synced {
+    0% {
+        opacity: 0;
+        transform: translateX(-16px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+.overlay-page-6 .checklist-background {
+    width: 302px;
+    animation: fade-in-right 2s ease forwards;
+}
+.overlay-page-6 .person_illustration {
+    bottom: -16px;
+    opacity: 0;
+    animation: fade-in-person 1.5s .5s ease forwards;
+}
+
+
+.overlay-page-7 .checklist-background {
+    width: 302px;
+    animation: fade-in-right 2s ease forwards;
+}
+.overlay-page-7 .person_illustration {
+    bottom: -16px;
+    opacity: 0;
+    animation: fade-in-person 1.5s 0.75s ease forwards;
+}
+
+.overlay-page .confetti-squares {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.confetti-squares .confetti-square {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    opacity: 0;
+    animation: confetti-bounce 2s ease forwards;
+}
+.confetti-squares .confetti-square-1 {
+    top: 40px;
+    left: 156px;
+    background-color: #32A546;
+    animation-delay: .5s;
+    animation-duration: 1.75s;
+}
+.confetti-squares .confetti-square-2 {
+    top: 168px;
+    left: 120px;
+    background-color: #32A546;
+    animation-delay: .25s;
+    animation-duration: 2s;
+}
+/* 5 4 2 1 6 3 */
+.confetti-squares .confetti-square-3 {
+    top: 72px;
+    left: 232px;
+    background-color: #FFD12F;
+    animation-delay: 0s;
+    animation-duration: 2.25s;
+}
+.confetti-squares .confetti-square-4 {
+    top: 100px;
+    left: 120px;
+    background-color: #FFD12F;
+    animation-delay: 0.25s;
+    animation-duration: 2s;
+}
+.confetti-squares .confetti-square-5 {
+    top: 90px;
+    left: 64px;
+    background-color: #F07D19;
+    animation-delay: 0s;
+    animation-duration: 2.25s;
+}
+.confetti-squares .confetti-square-6 {
+    top: 120px;
+    left: 156px;
+    background-color: #F07D19;
+    animation-delay: .25s;
+    animation-duration: 2s;
+}
+
+@keyframes confetti-bounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px) scale(0);
+    }
+    33% {
+        opacity: 1;
+        transform: translateY(0) scale(0.5);
+    }
+    66% {
+        opacity: 0.1;
+        transform: translateY(0) scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+.overlay-page-8 .coffee-table {
+    position: relative;
+}
+.overlay-page-8 .coffee-table-dog {
+    width: 460px;
+}
+.overlay-page-8 .coffee-table-chat-bubble {
+    position: absolute;
+    left: 266px;
+    top: 185px;
+    width: 48px;
+    animation: chat-bubble-animation 8s ease  infinite;
+}
+
+@keyframes chat-bubble-animation {
+    0% {
+        opacity: 0;
+        transform: translate(-10px, 10px);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    70% {
+        opacity: 1;
+        transform: translate(0, 0);
+        filter: blur(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(4px, -4px);
+        filter: blur(12px);
+    }
+}
+
+
+
+.sync-animation.quick-animation .sync-circle {
+    opacity: 0;
+    transform: translate(0);
+    animation: fade-in 0.5s ease forwards;
+}
+.sync-animation.quick-animation .person_illustration {
+    animation-delay: 0.5s;
+}
+.sync-animation.quick-animation .line-arc-up,
+.sync-animation.quick-animation .line-arc-down {
+    animation-delay: 0.5s;
+}
+.sync-animation.quick-animation .dot-up,
+.sync-animation.quick-animation .dot-down {
+    animation-delay: 0.5s;
+}

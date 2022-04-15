@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Motion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="icon" type="image/x-icon" href="img/favicon.ico"> -->
+  
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;display=swap" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/motion-tokens.css">
+  <link rel="stylesheet" href="css/motion-foundation.css">
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+  <section class="motion-left-nav">
+    <a href="#motion-tokens" class="motion-left-nav-link">Motion</a>
+    <a href="#hover-active-focus" class="motion-left-nav-link">Hover, Active, Focus</a>
+    <a href="#opacity-slide-scale" class="motion-left-nav-link">Opacity, Slide, Scale</a>
+    <a href="#stagger" class="motion-left-nav-link">Stagger</a>
+    <a href="#delayed-stagger" class="motion-left-nav-link">Delayed Stagger</a>
+    <a href="#card-content-hover" class="motion-left-nav-link">Card content hover</a>
+    <a href="#sample-combinations" class="motion-left-nav-link">Card content samples</a>
+    <a href="#panel" class="motion-left-nav-link">Panel</a>
+    <a href="#dialog-med" class="motion-left-nav-link">Dialog medium</a>
+    <a href="#dialog-small" class="motion-left-nav-link">Dialog small</a>
+    <a href="#dialog-full-page" class="motion-left-nav-link">Full page takeover</a>
+    <a href="#sheet" class="motion-left-nav-link">Sheet</a>
+    <a href="#stacked-toast" class="motion-left-nav-link">Stacked toasts</a>
+    <a href="#stepper" class="motion-left-nav-link">Stepper</a>
+  </section>
+
+  <section class="intro-page">
+    <h1 id="motion-tokens" class="trinity-section-title">Motion tokens</h1>
+    <div class="motion-token-base-alias">
+      <div class="motion-token-values">
+        <h1>Timing tokens</h1>
+        <div>
+          <div><b>Short duration</b></div>
+          <span class="motion-token-value">0ms</span>
+          <span class="motion-token-value">50ms</span>
+          <span class="motion-token-value">100ms</span>
+          <span class="motion-token-value">150ms</span>
+          <span class="motion-token-value">200ms</span>
+          <span class="motion-token-value">250ms</span>
+          <br>
+          <div><b>Medium duration</b></div>
+          <span class="motion-token-value">300ms</span>
+          <span class="motion-token-value">350ms</span>
+          <span class="motion-token-value">400ms</span>
+          <span class="motion-token-value">450ms</span>
+          <span class="motion-token-value">500ms</span>
+          <br>
+          <div><b>Long duration</b></div>
+          <span class="motion-token-value">550ms</span>
+          <span class="motion-token-value">600ms</span>
+          <span class="motion-token-value">650ms</span>
+          <span class="motion-token-value">700ms</span>
+          <span class="motion-token-value">750ms</span>
+          <span class="motion-token-value">800ms</span>
+          <span class="motion-token-value">850ms</span>
+          <span class="motion-token-value">900ms</span>
+          <span class="motion-token-value">950ms</span>
+          <span class="motion-token-value">1000ms</span>
+        </div>
+      </div>
+      <div class="motion-token-values">
+        <h1>Defaults</h1>
+        <div>
+          <div><b>States</b></div>
+          <span class="motion-token-value"><b>Hover:</b> 150ms</span>
+          <span class="motion-token-value"><b>Focus:</b> 150ms</span>
+          <span class="motion-token-value"><b>Active:</b> 150ms</span>
+        </div>
+        <br>
+        <div>
+          <div><b>Default transitions</b></div>
+          <span class="motion-token-value"><b>Fade:</b> 250ms</span>
+          <span class="motion-token-value"><b>Slide:</b> 250ms</span>
+          <span class="motion-token-value"><b>Scale:</b> 250ms</span>
+        </div>
+        <br>
+        <div>
+          <div><b>Page level transitions</b></div>
+          <span class="motion-token-value"><b>Fade:</b> 350ms</span>
+          <span class="motion-token-value"><b>Slide:</b> 350ms</span>
+          <span class="motion-token-value"><b>Scale:</b> 350ms</span>
+        </div>
+      </div>
+      <div class="motion-token-values">
+        <h1>Easing tokens</h1>
+        <div>
+          <span class="motion-token-value"><b>linear:</b> cubic-bezier(0, 0, 1, 1)</span>
+          <br>
+          <span class="motion-token-value"><b>ease-in:</b> cubic-bezier(.42, 0, 1, 1)</span>
+          <br>
+          <span class="motion-token-value"><b>ease-out:</b> cubic-bezier(0, 0, .58, 1)</span>
+          <br>
+          <span class="motion-token-value"><b>ease-in-out:</b> cubic-bezier(.42, 0, .58, 1)</span>
+          <br>
+          <span class="motion-token-value"><b>ease:</b> cubic-bezier(0.25, 0.1, 0.25, 1)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Add height change in dialog -->
+  
+  <section class="trinity-components">
+    <h1 id="hover-active-focus" class="trinity-section-title">Hover, Active, Focus</h1>
+    <div class="trinity-component motion-cards">
+      <div class="motion-details">
+        <div><b>Duration:</b> 150ms</div>
+        <div><b>Effect:</b> Background color</div>
+        <div><b>Easing:</b> ease-in-out</div>
+      </div>
+      <div class="motion-card hover" tabindex="0">Hover</div>
+    </div>
+    <div class="trinity-component motion-cards">
+      <div class="motion-details">
+        <div><b>Duration:</b> 150ms</div>
+        <div><b>Effect:</b> Background color</div>
+        <div><b>Easing:</b> ease-in-out</div>
+      </div>
+      <div class="motion-card active" tabindex="0">Active</div>
+    </div>
+    <div class="trinity-component motion-cards">
+      <div class="motion-details">
+        <div><b>Duration:</b> 150ms</div>
+        <div><b>Effect:</b> Focus outline</div>
+        <div><b>Easing:</b> ease-in-out</div>
+      </div>
+      <div class="motion-card focus" tabindex="0">Focus</div>
+    </div>
+  </section>
+
+  <section class="trinity-components">
+    <h1 id="opacity-slide-scale" class="trinity-section-title">Opacity, Slide, Scale</h1>
+    <div class="trinity-component motion-cards">
+      <div class="motion-details">
+        <div><b>Duration:</b> 250ms</div>
+        <div><b>Effect:</b> Opacity</div>
+        <div><b>Easing:</b> ease-in-out</div>
+      </div>
+      <div class="motion-card replay opacity" tabindex="0">Click to replay<br>Opacity</div>
+    </div>
+    <div class="trinity-component motion-cards">
+      <div class="motion-details">
+        <div><b>Duration:</b> 250ms</div>
+        <div><b>Effect:</b> Slide right</div>
+        <div><b>Easing:</b> ease-in-out</div>
+      </div>
+      <div class="motion-card replay slide-right" tabindex="0">Click to replay<br>Slide</div>
+    </div>
+    <div class="trinity-component motion-cards">
+      <div class="motion-details">
+        <div><b>Duration:</b> 250ms</div>
+        <div><b>Effect:</b> Scale</div>
+        <div><b>Easing:</b> ease-in-out</div>
+      </div>
+      <div class="motion-card replay scale" tabindex="0">Click to replay<br>Scale</div>
+    </div>
+  </section>
+
+  <section class="trinity-components">
+    <div>
+      <h1 id="stagger" class="trinity-section-title">Stagger</h1>
+      <div class="trinity-component motion-cards">
+        <div class="motion-details">
+          <div>Click to replay</div>
+          <br>
+          <div><b>Duration:</b> 250ms</div>
+          <div><b>Interval:</b> [inline]</div>
+          <div><b>Effect 1:</b> Opacity</div>
+          <div><b>Effect 2:</b> Slide up</div>
+          <div><b>Easing:</b> ease</div>
+          <div><b>Combined effect:</b> Stagger up</div>
+        </div>
+        <div class="trinity-component motion-cards vertical replay stagger">
+          <div class="motion-card small slide-up" tabindex="0">Interval: 0ms</div>
+          <div class="motion-card small slide-up" tabindex="0">Interval: 50ms</div>
+          <div class="motion-card small slide-up" tabindex="0">Interval: 100ms</div>
+          <div class="motion-card small slide-up" tabindex="0">Interval: 150ms</div>
+          <div class="motion-card small slide-up" tabindex="0">Interval: 200ms</div>
+          <div class="motion-card small slide-up" tabindex="0">Interval: 250ms</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h1 id="delayed-stagger" class="trinity-section-title">Delayed Stagger</h1>
+      <div class="trinity-component motion-cards">
+        <div class="motion-details">
+          <div>Click to replay</div>
+          <br>
+          <div><b>Duration:</b> 250ms</div>
+          <div><b>Delay:</b> 500ms</div>
+          <div><b>Interval:</b> [inline]</div>
+          <div><b>Effect 1:</b> Opacity</div>
+          <div><b>Effect 2:</b> Slide left</div>
+        <div><b>Easing:</b> ease</div>
+          <div><b>Combined effect:</b> Delayed stagger left</div>
+        </div>
+        <div class="trinity-component motion-cards vertical replay stagger">
+          <div class="motion-card small delayed slide-left" tabindex="0">Delay: 500ms + Interval: 0ms</div>
+          <div class="motion-card small delayed slide-left" tabindex="0">Delay: 500ms + Interval: 50ms</div>
+          <div class="motion-card small delayed slide-left" tabindex="0">Delay: 500ms + Interval: 100ms</div>
+          <div class="motion-card small delayed slide-left" tabindex="0">Delay: 500ms + Interval: 150ms</div>
+          <div class="motion-card small delayed slide-left" tabindex="0">Delay: 500ms + Interval: 200ms</div>
+          <div class="motion-card small delayed slide-left" tabindex="0">Delay: 500ms + Interval: 250ms</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="trinity-components">
+    <!-- <h1 class="trinity-section-title">Card Hover: Elevation</h1>
+    <div class="trinity-component motion-cards">
+      <div class="motion-card large" tabindex="0">
+        <div class="left-in"></div>
+        <div class="right-in"></div>
+        <div class="top-in"></div>
+        <div class="bottom-in"></div>
+        <div class="scale-in"></div>
+      </div>
+      <div class="motion-card large" tabindex="0">
+        <div class="scale-in"></div>
+        <div class="scale-in-up"></div>
+        <div class="scale-in-down"></div>
+        <div class="scale-in-left"></div>
+        <div class="scale-in-right"></div>
+      </div>
+    </div> -->
+
+    <h1 id="card-content-hover" class="trinity-section-title">Card Content Hover: 2 types</h1>
+    <div class="trinity-component motion-cards">
+      <div class="motion-details">
+        <div><b>Duration:</b> 350ms</div>
+        <div><b>Effect 1 (edge elements):</b> Slide towads center</div>
+        <div><b>Effect 2 (center element):</b> Scale</div>
+        <div><b>Easing:</b> ease-in-out</div>
+        <div><b>Combined effect:</b> Interactive hover</div>
+      </div>
+      <div class="motion-card large" tabindex="0">
+        <div class="left-in"></div>
+        <div class="right-in"></div>
+        <div class="top-in"></div>
+        <div class="bottom-in"></div>
+        <div class="scale-in"></div>
+      </div>
+    </div>
+    <div class="trinity-component motion-cards">
+      <div class="motion-details">
+        <div><b>Duration:</b> 350ms</div>
+        <div><b>Effect (all elements):</b> Scale</div>
+        <div><b>Easing:</b> ease-in-out</div>
+        <div><b>Combined effect:</b> Interactive hover</div>
+      </div>
+      <div class="motion-card large" tabindex="0">
+        <div class="scale-in"></div>
+        <div class="scale-in-up"></div>
+        <div class="scale-in-down"></div>
+        <div class="scale-in-left"></div>
+        <div class="scale-in-right"></div>
+      </div>
+    </div>
+
+    <h1 id="sample-combinations" class="trinity-section-title">Sample combinations</h1>
+    <div class="trinity-component motion-cards">
+      <div class="motion-card large" tabindex="0">
+        <div class="left-in" style="top: 10px; bottom: auto;"></div>
+        <div class="right-in" style="top: auto; bottom: 10px;"></div>
+        <div class="scale-in"></div>
+      </div>
+      <div class="motion-card large" tabindex="0">
+        <div class="scale-in-up"></div>
+        <div class="scale-in-down"></div>
+        <div class="scale-in"></div>
+      </div>
+      <div class="motion-card large" tabindex="0">
+        <div class="scale-in-down" style="left: auto; right: 10px;"></div>
+        <div class="bottom-in" style="left: auto; right: 10px;"></div>
+      </div>
+      <div class="motion-card large" tabindex="0">
+        <div class="scale-in" style="top: auto; bottom: 10px;"></div>
+        <div class="scale-in"></div>
+        <div class="scale-in-right" style="top: auto; bottom: 10px;"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="trinity-components">
+    <h1 id="panel" class="trinity-section-title">Panel</h1>
+
+    <div class="trinity-component motion-page-container">
+      <div class="motion-details">
+        <div><b>Duration:</b> 350ms</div>
+        <div><b>Effect 1:</b> Opacity</div>
+        <div><b>Effect 2:</b> Slide left</div>
+        <div><b>Easing:</b> ease-in-out</div>
+      </div>
+      <div class="trinity-component motion-page" tabindex="0">
+        <div class="motion-page-nav"></div>
+        Click to show
+        <div class="motion-panel panel-right replay slide-left"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trinity-components">
+    <h1 id="dialog-med" class="trinity-section-title">Dialog (Medium)</h1>
+
+    <div class="trinity-component motion-page-container">
+      <div class="motion-details">
+        <div><b>Duration:</b> 350ms</div>
+        <div><b>Effect 1:</b> Opacity</div>
+        <div><b>Effect 2:</b> Slide up</div>
+        <div><b>Easing:</b> ease</div>
+      </div>
+      <div class="trinity-component motion-page" tabindex="0">
+        <div class="motion-page-nav"></div>
+        Click to show
+        <div class="motion-dialog medium replay slide-up"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trinity-components">
+    <h1 id="dialog-small" class="trinity-section-title">Dialog (Small)</h1>
+
+    <div class="trinity-component motion-page-container">
+      <div class="motion-details">
+        <div><b>Duration:</b> 350ms</div>
+        <div><b>Effect 1:</b> Opacity</div>
+        <div><b>Effect 2:</b> Slide up</div>
+        <div><b>Easing:</b> ease</div>
+      </div>
+      <div class="trinity-component motion-page" tabindex="0">
+        <div class="motion-page-nav"></div>
+        Click to show
+        <div class="motion-dialog small replay slide-up"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trinity-components">
+    <h1 id="dialog-full-page" class="trinity-section-title">Full page takeover</h1>
+
+    <div class="trinity-component motion-page-container">
+      <div class="motion-details">
+        <div><b>Duration:</b> 350ms</div>
+        <div><b>Effect 1:</b> Opacity</div>
+        <div><b>Effect 2:</b> Scale</div>
+        <div><b>Easing:</b> ease</div>
+      </div>
+      <div class="trinity-component motion-page" tabindex="0">
+        <div class="motion-page-nav"></div>
+        Click to show
+        <div class="motion-dialog full-page replay slide-up"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popover (is non-modal)
+  Coachmark (modal and non-modal) -->
+
+
+  <section class="trinity-components">
+    <h1 id="sheet" class="trinity-section-title">Mobile sheet</h1>
+
+    <div class="trinity-component motion-page-container">
+      <div class="motion-details">
+        <div><b>Duration:</b> 350ms</div>
+        <div><b>Effect 1:</b> Opacity</div>
+        <div><b>Effect 2:</b> Slide up</div>
+        <div><b>Easing:</b> ease</div>
+      </div>
+      <div class="trinity-component motion-page" tabindex="0">
+        <div class="motion-page-nav"></div>
+        Click to show
+        <div class="motion-sheet replay"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trinity-components">
+    <h1 id="stacked-toast" class="trinity-section-title">Stacked Toast</h1>
+
+    <div class="trinity-component motion-page-container">
+      <div class="motion-details">
+        <div><b>Duration:</b> 350ms</div>
+        <div><b>Effect 1:</b> Existing toast slide up</div>
+        <div><b>Effect 2:</b> Opacity</div>
+        <div><b>Effect 3:</b> New toast Slide up</div>
+        <div><b>Easing:</b> ease</div>
+      </div>
+      <div class="trinity-component motion-page show_new_toast" tabindex="0">
+        <div class="motion-page-nav"></div>
+        Click to add toasts
+        <div class="motion-toasts"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="trinity-components">
+    <h1 id="stepper" class="trinity-section-title">How it comes together in Stepper component</h1>
+
+    <div class="trinity-component motion-stepper-container">
+      <div class="motion-details">
+        <div>Click to update</div>
+        <br>
+        <div><b>Scale duration:</b> 250ms</div>
+        <div><b>Width duration:</b> 350ms</div>
+        <br>
+        <div><b>Scale effect delays</b></div>
+        <div><b>First element:</b> 0ms</div>
+        <div><b>Remaining elements:</b> 350ms</div>
+        <br>
+        <div><b>Width effect delays:</b> none</div>
+        <br>
+        <div><b>Easing (all elements):</b> ease</div>
+        <div><b>Combined Effect:</b> Sequential motion</div>
+      </div>
+    
+      <div class="trinity-component motion-stepper" tabindex="0">
+        <div class="motion-step motion-step1 active_step">
+          <div class="motion-step-indicator"><img src="img/icons/check.svg" class="motion-step-check-icon"></div>
+          <div class="motion-step-title">Step 1</div>
+        </div>
+
+        <div class="motion-step motion-step2">
+          <div class="motion-step-indicator"><img src="img/icons/check.svg" class="motion-step-check-icon"></div>
+          <div class="motion-step-title">Step 2</div>
+        </div>
+
+        <div class="motion-step motion-step3">
+          <div class="motion-step-indicator"><img src="img/icons/check.svg" class="motion-step-check-icon"></div>
+          <div class="motion-step-title">Step 3</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+<script src="js/motion.js"></script>
+</html>
