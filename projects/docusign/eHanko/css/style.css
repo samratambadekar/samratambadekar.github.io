@@ -1,0 +1,497 @@
+@font-face {
+    font-family: maven_proregular;
+    src: url(../fonts/maven_pro_regular.ttf);
+}
+@font-face {
+    font-family: maven_probold;
+    src: url(../fonts/maven_pro_bold.ttf);
+}
+
+* {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+
+body {
+    font-family: "maven_proregular";
+    color: #333;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+    line-height: 1.25;
+    position: relative;
+    min-width: 320px;
+    background-color: #f9f9f9;
+}
+
+.hidden {
+  display: none !important;
+}
+
+nav {
+  width: 100%;
+  background-color: #1B49A0;
+}
+.nav_container {
+  width: 100%;
+  max-width: 1440px;
+  /*min-height: 50px;*/
+  color: #B8C8DB;
+  margin: auto;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+.nav_container > * {
+  display: inline-block;
+  margin: 10px;
+  font-size: 14px;
+  padding: 7px 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+.icon.circle_3:before {
+  content: "•••";
+  color: #B8C8DB;
+}
+.icon.circle_3 {
+  color: #333;
+  /*display: inline-block;*/
+  font-size: 16px;
+  width: 32px;
+}
+button {
+  /*font-size: 14px;*/
+  padding: 7px 20px;
+  border-radius: 0px;
+  border: 0px;
+  cursor: pointer;
+}
+
+article {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  /*padding: 15px;*/
+}
+.document {
+  position: relative;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+img.document_to_sign {
+  position: relative;
+  width: 80%;
+  max-width: 1440px;
+}
+.stamp_here {
+  position: absolute;
+  top: 72.7%;
+  left: 67.5%;
+  width: 7%;
+  cursor: pointer;
+}
+div.stamp_here {
+  display: none;
+  height: 5%;
+}
+div.stamp_here .stamp_id {
+  max-height: 120%;
+  left: 0px;
+  right: 0;
+  top: 0px;
+}
+div.stamp_here .show_picture {
+  max-height: 80%;
+  top: 20%;
+}
+
+.existing_stamps {
+  max-width: 150px;
+  margin: 100px auto 50px;
+}
+.instructions {
+  /*text-align: center;*/
+  color: #999;
+}
+
+.adopt_stamp {
+  padding: 0;
+  width: 100%;
+  /*vertical-align: middle;*/
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  /*top: 0;*/
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 100%;
+  opacity: 0;
+  z-index: 1;
+  background-color: #f9f9f9;
+	box-shadow:0 0 0 899px rgba(0, 0, 0, 0.5);
+}
+.adopt_stamp .header {
+  text-align: left;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #FFF;
+  box-shadow: 1px 1px 3px #dedede;
+}
+.adopt_stamp .sub_header {
+  background-color: #F5F5F5;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-top: 2px;
+  padding: 5px 0px;
+  display: none;
+  height: 69px;
+}
+.adopt_stamp .sub_header > .icon {
+  display: inline-block;
+  margin: 10px auto 0;
+  cursor: pointer;
+  width: 31%;
+}
+.adopt_stamp .sub_header img {
+  height: 28px;
+}
+.adopt_stamp .close_icon {
+  cursor: pointer;
+  width: 35px;
+  padding: 0 0 0 15px;
+}
+.adopt_stamp .close_icon img {
+  /*width: 100%;*/
+  height: 15px;
+}
+.adopt_stamp .action_button {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  /*padding: 18px;*/
+  height: 50px;
+}
+
+#start_button {
+  background-color: #ffc820;
+  border-radius: 3px;
+  padding: 7px;
+}
+#finish_button {
+  background-color: #ffc820;
+  border-radius: 3px;
+  padding: 7px 18px;
+}
+#upload_button {
+  right: 0;
+  background-color: #ffc820;
+  z-index: 1;
+}
+#back_button {
+  width: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.adopt_stamp .overlay {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+.adopt_stamp .upload_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.3;
+}
+
+.new_picture {
+  position: relative;
+  display: none;
+}
+.new_picture > .text_overlay {
+  position: absolute;;
+  top: 25px;
+  width: 100%;
+  color: #FFF;
+  font-size: 17px;
+  z-index: 2;
+}
+.new_picture * {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+.stamp_info {
+  position: relative;
+  text-align: left;
+  color: #666;
+  font-size: 15px;
+  padding: 30px;
+  min-height: 100px;
+  margin-top: 50px;
+}
+.stamp_info_text {
+  display: none;
+}
+.stamp_info > div, .stamp_info > input {
+  width: 100%;
+  margin-top: 5px;
+}
+.stamp_info > input {
+  padding: 10px;
+  border-radius: 2px;
+  font-family: inherit;
+  color: #333;
+  font-size: 15px;
+  border-width: 0px;
+  box-shadow: inset 0 0 1px #AAA;
+}
+.stamp_id {
+  position: absolute;
+  /*width: 120px;*/
+  height: 0;
+  /*max-height: 120px;*/
+  left: 0px;
+  right: 0;
+  top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.show_picture {
+  position: absolute;
+  /*width: 80px;*/
+  height: 0;
+  top: 20px;
+  left: 10px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.croppie-container {
+  padding: 0;
+  /*width: 100%;*/
+}
+.croppie-container .cr-boundary {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.link {
+  cursor: pointer;
+}
+.blue {
+  color: #2C6EE1;
+}
+
+#dropbox {
+  box-sizing: padding-box;
+  width: 90%;
+  margin: auto;
+  border-radius: 3px;
+  border: 0px solid transparent;
+}
+.croppie-container .cr-viewport {
+  box-shadow:0 0 0 899px rgba(0, 0, 0, 0.5);
+}
+
+.cr-slider-wrap::before {
+  content: ' \00a0 \00a0 \00a0 \00a0';
+  background: url('../images/Icons/img_min.png') 0% 50%;
+  background-size: 15px 10px;
+  background-repeat: no-repeat;
+}
+.cr-slider-wrap::after {
+  content: ' \00a0 \00a0 \00a0 \00a0 \00a0 \00a0';
+  background: url('../images/Icons/img_max.png');
+  background-size: 30px 20px;
+  background-repeat: no-repeat;
+}
+
+@keyframes blink {
+    100% { border-width: 2px; opacity: 0.5; }
+}
+@-webkit-keyframes blink {
+    100% { border-width: 2px; opacity: 0.5; }
+}
+.blink {
+    -webkit-animation: blink 0.3s linear 2;
+    -moz-animation: blink 0.3s linear 2;
+    animation: blink 0.3s linear 2;
+    border: 0px solid #F00;
+}
+
+/*MOBILE*/
+@media screen and (max-width: 480px) {
+  .desktop {
+    display: none !important;
+  }
+
+  #upload_button {
+    font-size: 17px;
+    font-family: maven_probold;
+  }
+  #back_button {
+    font-size: 17px;
+    font-family: maven_probold;
+  }
+
+  img.document_to_sign {
+    width: 100%;
+  }
+  .stamp_here {
+    left: 72%;
+  }
+  div.stamp_here .stamp_id {
+    max-height: 32px;
+  }
+  div.stamp_here .show_picture {
+    max-height: 23px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 481px) {
+  .mobile {
+    display: none !important;
+  }
+
+  .adopt_stamp {
+    max-width: 580px;
+    max-height: 540px;
+  }
+
+  #back_button {
+  }
+  #back_button, #upload_button {
+    /*height: 0;
+    padding: 0;
+    opacity: 0;*/
+  }
+
+  .croppie-container .cr-boundary {
+    margin: 0 auto;
+    max-width: 90%;
+    max-height: 85%;
+  }
+
+  .new_picture {
+    height: 65%;
+    margin-top: 12%;
+  }
+
+  button {
+    padding: 7px 20px;
+    border-radius: 0px;
+    border: 0px;
+    cursor: pointer;
+  }
+
+  #upload_button {
+    left: 15px;
+    bottom: 15px;
+    padding: 8px 18px;
+    z-index: 1;
+    height: auto;
+    border-radius: 3px;
+    width: 150px;
+  }
+  #cancel_button {
+    /*display: none;*/
+    left: 170px;
+    bottom: 15px;
+    padding: 8px 18px;
+    z-index: 1;
+    height: auto;
+    border-radius: 3px;
+    width: 140px;
+    background-color: transparent;
+  }
+
+  #bookmark {
+    position: absolute;
+    left: 2%;
+    top: 20px;
+    min-width: 95px;
+    padding: 7px 18px;
+    border-radius: 0px;
+    /*border: 0px;*/
+    cursor: pointer;
+    background: url(../images/rect_arrow_right.png) 100% 50%;
+    z-index: 1;
+  }
+
+  .line_top {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+  }
+
+  #take_picture3 {
+    position: absolute;
+    top: 65px;
+    left: 30px;
+    background-color: #f4f4f4;
+    border-radius: 2px;
+    border: 1px solid #d9d9d9;
+  }
+
+  .adopt_stamp .sub_header {
+    width: 40%;
+    float: right;
+    margin-right: 30px;
+    background-color: transparent;
+  }
+  .adopt_stamp .sub_header > .icon {
+    width: 40%;
+  }
+
+  #dropbox {
+    margin-top: 55px;
+    padding-bottom: 65px;
+    height: 65%;
+    background-color: #ececec;
+  }
+
+  .existing_stamps {
+    max-width: 100px;
+    margin: 50px auto 20px;
+  }
+
+  button.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  div.stamp_here .show_picture {
+    max-width: 73%;
+  }
+}

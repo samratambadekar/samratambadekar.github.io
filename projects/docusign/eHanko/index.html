@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=360"/> -->
+    <title>Hanko Prototype</title>
+
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <!-- <script src="js/jquery.panzoom.min.js"></script> -->
+    <link rel="stylesheet" href="css/croppie.css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/croppie.js"></script>
+    <!-- <script src="js/caman.min.js"></script> -->
+  </head>
+  <body>
+    <article>
+      <nav id="top_nav">
+        <div class="nav_container">
+          <div class="left desktop">Please review the document below.</div>
+          <!-- <div class="left mobile">
+            <i class="icon circle_3"></i>
+          </div> -->
+          <div class="mobile">Tap Start to Begin</div>
+          <button id="start_button" class="action_button mobile right">START</button>
+          <div class="right desktop">OTHER ACTIONS</div>
+        </div>
+      </nav>
+      <div class="document">
+        <div id="bookmark" class="desktop">Start</div>
+        <img class="document_to_sign" src="images/form.png">
+        <img class="stamp_here" src="images/stamp.png">
+        <div class="stamp_here">
+          <img class="stamp_id" src="images/stamp_id.png"/>
+          <img class="show_picture" src=""/>
+        </div>
+      </div>
+      <div class="adopt_stamp overlay">
+        <div class="header">
+            <span class="">Adopt Stamp</span><span id="" class="right close_icon">
+            <img src="images/Icons/Close-Remove.png"/>
+        </div>
+
+        <button id="take_picture3" class="desktop">UPLOAD IMAGE</button>
+
+        <div class="sub_header">
+            <div id="take_picture2" class="icon left mobile">
+              <img src="images/Icons/camera.png"/>
+              <div>Change Photo</div>
+            </div>
+
+            <div id="crop_shape" class="icon">
+              <img src="images/Icons/mask_round.png"/>
+              <div>Change Shape</div>
+            </div>
+            <div id="rotate_image" class="icon right">
+              <img src="images/Icons/rotate.png"/>
+              <div>Rotate</div>
+            </div>
+        </div>
+
+        <div id="dropbox">
+          <img class="existing_stamps" src="images/no_stamps.png">
+
+          <div class="instructions"><span class="mobile">Upload a stamp image</span>
+            <span class="desktop">Drag and drop a stamp or <span id="browse_picture" class="blue link">browse</span></span>
+          </div>
+        </div>
+
+        <div class="new_picture">
+          <!-- <img id="show_picture" src=""/> -->
+          <div class="text_overlay mobile">Position and size image to fit shape <br/>Pinch to resize</div>
+        </div>
+        <div class="save_stamp">
+          <div class="stamp_info">
+            <img class="stamp_id" src="images/stamp_id.png"/>
+            <img class="show_picture" src=""/>
+          </div>
+
+          <div class="stamp_info stamp_info_text">
+            <div>Stamp Name</div>
+            <input type="text" value="Stamp 1"/>
+            <div>Phonetic</div>
+            <input type="text" placeholder="Optional"/>
+          </div>
+        </div>
+
+        <div class="buttons line_top"></div>
+        <button id="back_button" class="action_button mobile">BACK</button>
+        <button id="upload_button" class="action_button disabled">UPLOAD IMAGE</button>
+        <button id="cancel_button" class="action_button desktop">CANCEL</button>
+
+        <input type="file" id="take_picture1" accept="image/*" style="display:none">
+      </div>
+
+      <nav id="bottom_nav" class="hidden">
+        <div class="nav_container">
+          <div class="left desktop">Done! Click Finish to send the completed document.</div>
+          <div class="right desktop">OTHER ACTIONS</div>
+          <button id="finish_button" class="action_button right">FINISH</button>
+        </div>
+      </nav>
+    </article>
+  </body>
+
+  <script>
+  	//  ONLOAD CODE
+  	$(document).ready(function() {
+  		$.getScript("js/script.js", function() {
+  			console.log("Loaded Script.");
+  		});
+  	});
+  </script>
+</html>
