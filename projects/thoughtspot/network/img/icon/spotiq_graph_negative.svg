@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Icons/Chart/Spotiq-bar/Less/20px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Feed-card-v3/insight/topic-spotiq" transform="translate(-353.000000, -259.000000)">
+            <g id="SpotIQ-Card-2" transform="translate(328.000000, 64.000000)">
+                <g id="Card-footer" transform="translate(0.000000, 179.000000)">
+                    <g id="Icons/Chart/Spotiq-bar/Less/20px" transform="translate(25.000000, 16.000000)">
+                        <polyline id="Shape" stroke="#47515F" points="0.87804878 0.666666667 0.87804878 17.125 17.3937282 17.125"></polyline>
+                        <path d="M15.9470383,7.66666667 L2.34146341,7.66666667" id="Shape" stroke="#C0C6CF"></path>
+                        <polygon id="Shape" fill="#48D1E0" fill-rule="nonzero" transform="translate(9.322345, 8.900367) scale(-1, -1) translate(-9.322345, -8.900367) " points="12.8225966 2.71579013 16.3082624 12.6620449 15.9135235 12.7994221 12.8481091 4.05234355 9.44825989 15.0849434 5.92183548 10.390425 2.67420757 14.8264379 2.33642846 14.5808624 5.91751135 9.68937534 9.29004165 14.1790236"></polygon>
+                        <polyline id="Path-12" stroke="#F04152" fill-rule="nonzero" points="2.53395124 5.07054862 5.80904329 14.4178552 9.27637599 3.16890765 12.7412193 7.77073903 16.1247167 3.10998458"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="17px" viewBox="0 0 25 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>icon/trend/up/slim</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M24.3113985,1.05327557 L24.3495791,9.34103534 L21.0381069,6.03027557 L15.3203493,11.7495791 L13.6704335,13.3994949 L12.0205177,11.7495791 L9.54510691,9.27427557 L2.12102273,16.6993266 L0.471106909,15.0494108 L9.54564393,5.97487373 L13.6701069,10.0992756 L19.3891069,4.38027557 L16.1,1.09145622 L24.3113985,1.05327557 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SpotIQ-Card-3" transform="translate(-25.000000, -66.000000)">
+            <g id="Content" transform="translate(24.000000, 24.000000)">
+                <g id="icon/trend/up/slim" transform="translate(0.000000, 36.000000)">
+                    <g id="Colors/Basic/Green" transform="translate(1.166667, 5.833333)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#06BF7F" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g mask="url(#mask-2)" fill="#06BF7F" id="Color">
+                            <g transform="translate(-1.166667, -5.833333)">
+                                <rect x="0" y="0" width="28" height="28"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

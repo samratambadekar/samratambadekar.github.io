@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Component/Logo/TS Full</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M27.9796825,31.9415873 C25.791583,31.9415873 24.0177778,30.1677821 24.0177778,27.9796825 C24.0177778,25.791583 25.791583,24.0177778 27.9796825,24.0177778 C30.1677821,24.0177778 31.9415873,25.791583 31.9415873,27.9796825 C31.9415873,30.1677821 30.1677821,31.9415873 27.9796825,31.9415873 Z M31.6926984,7.92380952 L31.6926984,9.9047619 L20.7987302,9.9047619 L20.7987302,31.6926984 L18.8177778,31.6926984 L18.8177778,9.9047619 L16.8368254,9.9047619 L16.8368254,31.6926984 L14.855873,31.6926984 L14.855873,9.9047619 L12.8749206,9.9047619 L12.8749206,31.6926984 L10.8952381,31.6926984 L10.8952381,9.9047619 L0,9.9047619 L0,7.92380952 L31.6926984,7.92380952 Z M0,3.96190476 L31.6926984,3.96190476 L31.6926984,5.94285714 L0,5.94285714 L0,3.96190476 Z M0,0 L31.6926984,0 L31.6926984,1.98095238 L0,1.98095238 L0,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="app-header" transform="translate(-16.000000, -26.000000)">
+            <g id="Header">
+                <g id="Component/Logo/TS-Monogram" transform="translate(16.000000, 26.000000)">
+                    <g>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Shape" fill="#777E8B" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="Colors/Basic/Black" mask="url(#mask-2)" fill="#000000">
+                            <rect id="Color" x="0" y="0" width="32" height="32"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Icons/Chart/Spotiq-trend/Downward/20px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SpotIQ-Card-3-Copy" transform="translate(-25.000000, -195.000000)">
+            <g id="Card-footer" transform="translate(0.000000, 179.000000)">
+                <g id="Group-2" transform="translate(24.000000, 15.000000)">
+                    <g id="Icons/Chart/_SpotIQ/Correlation/Line/Positive">
+                        <polyline id="Shape" stroke="#47515F" points="1.875 1.66666667 1.875 18.125 18.3333333 18.125"></polyline>
+                        <path d="M18.2331022,6.12730026 L15.4931895,2.4684906 L11.5813065,9.47435379" id="Path-20" stroke="#06BF7F" stroke-dasharray="1" fill-rule="nonzero"></path>
+                        <polyline id="Path-19" stroke="#06BF7F" fill-rule="nonzero" points="3.93895598 8.54562559 7.89951092 16.0378282 11.6752187 9.33626156"></polyline>
+                        <path d="M5.00501547,4.0035796 L11.6666667,16.5" id="Path-21" stroke="#06BF7F" fill-rule="nonzero"></path>
+                        <path d="M17.5811704,10.6906297 L15.9665871,8.33333333 L11.6666667,16.4824184" id="Path-22" stroke="#06BF7F" stroke-dasharray="1" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

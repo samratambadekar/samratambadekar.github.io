@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Icon 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15.6,11.7 L15.6,15.6 L0,15.6 L0,11.7 L15.6,11.7 Z M6.825,5.85 L6.825,9.75 L0,9.75 L0,5.85 L6.825,5.85 Z M15.6,5.85 L15.6,9.75 L8.775,9.75 L8.775,5.85 L15.6,5.85 Z M3.9,0 L3.9,3.9 L0,3.9 L0,0 L3.9,0 Z M9.75,0 L9.75,3.9 L5.85,3.9 L5.85,0 L9.75,0 Z M15.6,0 L15.6,3.9 L11.7,3.9 L11.7,0 L15.6,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-App-Footer" transform="translate(-133.000000, -11.000000)">
+            <g id="UI-Bars-/-Tab-Bars-/-Base-/-Light-/-4-Text-Icons">
+                <g id="#2" transform="translate(94.000000, 0.000000)">
+                    <g id="Icon-2" transform="translate(34.000000, 6.000000)">
+                        <g id="Icons/Info/20-Search/Pinboard">
+                            <g id="Pinboard" transform="translate(5.200000, 5.200000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Mask" fill-rule="nonzero"></g>
+                                <g id="Colors/Basic/Toned-Gray/Shade-2" mask="url(#mask-2)">
+                                    <g transform="translate(-5.200000, -5.200000)">
+                                        <g id="Colors/Basic/Black">
+                                            <rect id="Color" fill="#000000" x="0" y="0" width="26" height="26"></rect>
+                                        </g>
+                                        <g id="Colors/Basic/White" opacity="0.5">
+                                            <rect id="Color" fill="#FFFFFF" x="0" y="0" width="26" height="26"></rect>
+                                        </g>
+                                        <g id="Colors/Accent/Default" opacity="0.1">
+                                            <rect id="teenage-blue" fill="#0D74FF" x="0" y="0" width="26" height="26"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

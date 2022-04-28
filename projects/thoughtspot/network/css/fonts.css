@@ -1,0 +1,49 @@
+
+@font-face {
+    font-family: 'Optimo-Plain';
+    src: url('../font/optimo/Plain-Light.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Optimo-Plain';
+    src: url('../font/optimo/Plain-LightIta.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Optimo-Plain';
+    src: url('../font/optimo/Plain-Regular.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Optimo-Plain';
+    src: url('../font/optimo/Plain-RegularIta.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Optimo-Plain';
+    src: url('../font/optimo/Plain-Medium.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Optimo-Plain';
+    src: url('../font/optimo/Plain-MediumIta.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BB-Roller-Regular';
+    src: url('../font/bb-roller/BB-Roller-Mono-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}

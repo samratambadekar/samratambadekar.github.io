@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Icons/Chart/Spotiq-column</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SpotIQ-Card-3" transform="translate(-25.000000, -195.000000)">
+            <g id="Card-footer" transform="translate(0.000000, 179.000000)">
+                <g id="Group-2" transform="translate(24.000000, 15.000000)">
+                    <g id="Icons/Chart/_SpotIQ/Trend/Line/Upward">
+                        <polyline id="Shape" stroke="#47515F" points="1.875 1.66666667 1.875 18.125 18.3333333 18.125"></polyline>
+                        <polyline id="Path-2" stroke="#C0C6CF" points="3.75 15.5676921 7.09396729 8.84128749 10.3868545 13.947582 14.0658195 4.16666667 17.2738986 12.2331461"></polyline>
+                        <path d="M3.41617853,13.5535993 L17.2264055,7.68877779" id="Path-13" stroke="#06BF7F" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

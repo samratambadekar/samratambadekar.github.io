@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Icons/Chart/Spotiq-column</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Feed-card-v3/insight/topic-spotiq" transform="translate(-53.000000, -259.000000)">
+            <g id="SpotIQ-Card-1" transform="translate(28.000000, 64.000000)">
+                <g id="Card-footer" transform="translate(0.000000, 179.000000)">
+                    <g id="Group-2" transform="translate(24.000000, 15.000000)">
+                        <g id="Icons/Chart/_SpotIQ/Anomaly/More">
+                            <polyline id="Shape" stroke="#47515F" points="1.875 1.66666667 1.875 18.125 18.3333333 18.125"></polyline>
+                            <path d="M16.8916667,8.66666667 L3.33333333,8.66666667" id="Shape" stroke="#C0C6CF"></path>
+                            <polyline id="Path-10" stroke="#06BF7F" fill-rule="nonzero" points="3.33333333 15.4907425 6.73980711 10.8235449 10.1712737 15.4175994 13.6290683 4.1807122 16.8916667 13.5015835"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

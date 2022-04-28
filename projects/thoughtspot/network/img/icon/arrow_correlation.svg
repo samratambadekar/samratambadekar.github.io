@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Icons/Info/24/Anomaly-up Copy 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.8158298,5.3331418 L28.6089939,4.62658654 L27.8069444,10.4242003 L26.1570286,8.77428449 L18.7324074,16.1989057 L14.6076178,12.0741161 L7.18299662,19.4987373 L5.5330808,17.8488215 L14.6076178,8.77428449 L18.7324074,12.8990741 L24.5071128,7.12436867 L18.7324074,1.34966329 L24.4842044,0.501796988 L23.8158298,5.3331418 L23.8158298,5.3331418 Z M18.7324074,7.94932658 L17.0824916,9.5992424 L15.4325757,7.94932658 L17.0824916,6.29941076 L18.7324074,7.94932658 Z M21.2072811,5.47445285 L19.5573653,7.12436867 L17.9074495,5.47445285 L19.5573653,3.82453703 L21.2072811,5.47445285 Z M3.88316498,12.8990741 L2.23324916,14.5489899 L0.583333333,12.8990741 L2.23324916,11.2491582 L3.88316498,12.8990741 Z M6.35803871,10.4242003 L4.70812289,12.0741161 L3.05820707,10.4242003 L4.70812289,8.77428449 L6.35803871,10.4242003 Z M8.83291245,7.94932658 L7.18299662,9.5992424 L5.5330808,7.94932658 L7.18299662,6.29941076 L8.83291245,7.94932658 Z M11.3077862,5.47445285 L9.65787036,7.12436867 L8.00795454,5.47445285 L9.65787036,3.82453703 L11.3077862,5.47445285 Z M13.7826599,7.94932658 L12.1327441,9.5992424 L10.4828283,7.94932658 L12.1327441,6.29941076 L13.7826599,7.94932658 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SpotIQ-Card-3-Copy" transform="translate(-24.000000, -66.000000)">
+            <g id="Content" transform="translate(24.000000, 24.000000)">
+                <g id="Icons/Info/24/Correlation-positive" transform="translate(0.000000, 38.000000)">
+                    <g id="Correlation-positive" transform="translate(-0.583333, 4.083333)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Shape" fill="#48D1E0" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="Colors/Basic/Green" mask="url(#mask-2)" fill="#06BF7F">
+                            <g transform="translate(0.583333, -4.083333)" id="Color">
+                                <rect x="0" y="0" width="28" height="28"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

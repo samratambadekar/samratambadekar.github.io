@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Icons/Info/20/Search</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.1,0 C14.1257912,0 18.2,4.07420878 18.2,9.1 C18.2,11.1441457 17.5260028,13.0308708 16.3881163,14.5500677 L20.0384776,18.2 L18.2,20.0384776 L14.5500677,16.3881163 C13.0308708,17.5260028 11.1441457,18.2 9.1,18.2 C4.07420878,18.2 0,14.1257912 0,9.1 C0,4.07420878 4.07420878,0 9.1,0 Z M9.1,2.6 C5.51014913,2.6 2.6,5.51014913 2.6,9.1 C2.6,12.6898509 5.51014913,15.6 9.1,15.6 C12.6898509,15.6 15.6,12.6898509 15.6,9.1 C15.6,5.51014913 12.6898509,2.6 9.1,2.6 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-App-Footer" transform="translate(-317.000000, -8.000000)">
+            <g id="UI-Bars-/-Tab-Bars-/-Base-/-Light-/-4-Text-Icons">
+                <g id="#4" transform="translate(281.000000, 0.000000)">
+                    <g id="Icon-4" transform="translate(34.000000, 6.000000)">
+                        <g id="Icons/Info/20/Search">
+                            <g id="Search" transform="translate(2.600000, 2.600000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Mask" fill="#A2ACBA" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                <g id="Colors/Icons/Informative" mask="url(#mask-2)">
+                                    <g transform="translate(-2.600000, -2.600000)" id="Colors/Basic/Toned-Gray/Base">
+                                        <g>
+                                            <g id="Colors/Basic/Black" fill="#000000">
+                                                <rect id="Color" x="0" y="0" width="26" height="26"></rect>
+                                            </g>
+                                            <g id="Colors/Basic/White" opacity="0.5" fill="#FFFFFF">
+                                                <rect id="Color" x="0" y="0" width="26" height="26"></rect>
+                                            </g>
+                                            <g id="Colors/Accent/Base" opacity="0.1" fill="#2E75F0">
+                                                <g id="Colors/Basic/Blue">
+                                                    <rect id="Color" x="0" y="0" width="26" height="26"></rect>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
