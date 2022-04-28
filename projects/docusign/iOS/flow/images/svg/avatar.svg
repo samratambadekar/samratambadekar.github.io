@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="24" cy="24" r="24"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Documents-A-Copy-60" transform="translate(-40.000000, -76.000000)">
+            <g id="Group-11" transform="translate(40.000000, 76.000000)">
+                <g id="Avatar-Placeholder/Medium">
+                    <g id="peep">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <circle stroke="#999999" fill="#999999" stroke-width="2" cx="24" cy="24" r="23"></circle>
+                        <path d="M24,26.6666667 C19.581722,26.6666667 16,23.0849447 16,18.6666667 C16,14.2483887 19.581722,10.6666667 24,10.6666667 C28.418278,10.6666667 32,14.2483887 32,18.6666667 C32,23.0849447 28.418278,26.6666667 24,26.6666667 Z M24,28.6666667 C32,28.6666667 40,32.6666667 40,36.6666667 L40,48 L24,48 L8,48 L8,36.6666667 C8,32.6666667 16,28.6666667 24,28.6666667 Z" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

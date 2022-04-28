@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-#7/notification</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M40,30 L0,30 L7.5,22.5 L7.5,12.505 C7.50413401,5.60234419 13.0973464,0.00689452335 20,0 C26.9025,0 32.5,5.5725 32.5,12.505 L32.5,22.5 L40,30 Z M25,32.5 L25,34.9875 C25,37.7489237 22.7614237,39.9875 20,39.9875 C17.2385763,39.9875 15,37.7489237 15,34.9875 L15,32.5 L25,32.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Documents-A-Copy-60" transform="translate(-670.000000, -82.000000)">
+            <g id="Icon/notification" transform="translate(670.000000, 82.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Shape" fill="#777777" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g id="Color/Default" mask="url(#mask-2)" fill="#777777" fill-rule="evenodd">
+                    <rect id="Fill" x="0" y="0" width="40" height="40"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

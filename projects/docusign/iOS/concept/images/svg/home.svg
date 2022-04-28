@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg  width="45px" height="40px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Home</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-5.7%" y="-38.9%" width="111.5%" height="179.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.309803922   0 0 0 0 0.317647059   0 0 0 0 0.419607843  0 0 0 0.07 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Action-required" transform="translate(-136.000000, -1414.000000)" fill="#333333">
+            <g id="bottom_nav" transform="translate(0.000000, 1405.000000)">
+                <g id="Group-8" transform="translate(130.000000, 10.000000)">
+                    <path d="M23.5,35 L32.5,35 L32.5,25 L23.5,25 L23.5,35 Z M30.4595317,0.946063931 C29.2001981,-0.315354644 27.0026193,-0.315354644 25.7432857,0.946063931 L6.36747938,20.3218702 C5.87750687,20.8118427 5.87750687,21.6041387 6.36747938,22.0920262 C6.85536689,22.5799137 7.64766286,22.5799137 8.13555037,22.0920262 L10.8168467,19.4107299 L10.8168467,33.7658818 C10.8168467,37.2040292 13.7170669,40 17.2803138,40 L38.1302076,40 C41.6955394,40 44.5936747,37.2040292 44.5936747,33.7658818 L44.5936747,18.6184339 L48.067267,22.0920262 C48.3112107,22.33597 48.6302141,22.4589843 48.9513025,22.4589843 C49.2703058,22.4589843 49.5913942,22.33597 49.835338,22.0920262 C50.3253105,21.6041387 50.3253105,20.8118427 49.835338,20.3218702 L30.4595317,0.946063931 Z" id="Home"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

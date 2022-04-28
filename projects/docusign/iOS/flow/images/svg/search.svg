@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>search</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M29.3712919,25.8362919 L40.0112919,36.4762919 L36.4762919,40.0112919 L25.8362919,29.3712919 C18.9822235,34.3788008 9.42874402,33.2672741 3.90742471,26.8199157 C-1.61389461,20.3725572 -1.24264822,10.7618008 4.75957629,4.75957629 C10.7618008,-1.24264822 20.3725572,-1.61389461 26.8199157,3.90742471 C33.2672741,9.42874402 34.3788008,18.9822235 29.3712919,25.8362919 L29.3712919,25.8362919 Z M16.2487919,27.4987919 C20.2680298,27.4987919 23.9819588,25.3545541 25.9915778,21.8737919 C28.0011968,18.3930298 28.0011968,14.104554 25.9915778,10.6237918 C23.9819588,7.14302969 20.2680298,4.99879181 16.2487919,4.99879187 C10.0355884,4.99879187 4.99879187,10.0355884 4.99879187,16.2487919 C4.99879187,22.4619953 10.0355884,27.4987919 16.2487919,27.4987919 L16.2487919,27.4987919 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Documents-A-Copy-60" transform="translate(-566.000000, -80.000000)">
+            <g id="Icon/search" transform="translate(566.000000, 80.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Shape" fill="#777777" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g id="Color/Default" mask="url(#mask-2)" fill="#777777" fill-rule="evenodd">
+                    <rect id="Fill" x="0" y="0" width="40" height="40"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
