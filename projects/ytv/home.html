@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html xmlns:yt="http://youtube.com" style="font-size: 137%;">
+
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <title>YouTube TV</title><link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=YouTube+Sans:wght@300..900&display=swap"
+    rel="stylesheet">
+  <link rel="splashscreen" href="https://www.youtube.com/s/ytvlr/html/ytv_splash_screen_v2.html">
+  
+  <link rel="stylesheet" href="./css/overrides.css">
+  <link rel="stylesheet" href="./css/youtube-tv.css">
+  <link rel="stylesheet" href="./css/home-page.css">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="home-page collapse-browsing-sheet">
+  <!-- <img src="img/home_page.png" class="yt-vision-home-page"> -->
+  <div id="upg-application">
+    <div id="app-markup">
+      <div class="top-nav">
+        <div class="top-nav-left">
+          <img src="img/icons/search.svg" class="top-nav-search-icon" />
+          <div class="chip-container">
+            <div id="top-nav-browse" class="chip focusable highlightable focused">Browse</div>
+            <div id="top-nav-live" class="chip focusable highlightable">Live</div>
+            <div id="top-nav-library" class="chip focusable highlightable">Library</div>
+            <div id="top-nav-store" class="chip focusable highlightable">Store</div>
+          </div>
+        </div>
+        <div class="top-nav-right">
+          <img src="img/home-page/top-nav-avatar.png" class="top-nav-avatar-icon" />
+          <img src="img/home-page/ytv-logo.png" class="top-nav-ytv-logo" />
+        </div>
+      </div>
+
+      <div id="hero-section-browse" class="hero-section top-nav-directed-page">
+        <div id="video-player-container-home" class="video-player-container-home"></div>
+
+        <div class="home-page-scrim"></div>
+        <!-- <video tabindex="-1" class="video-stream html5-main-video" controlslist="nodownload" autoplay src="../videos/DominosDipsNTwistsCombos.mp4" muted></video> -->
+
+        <div class="hero-section-metadata">
+          <div class="hero-section-for-you">For you</div>
+          <div class="hero-section-title">The Office</div>
+          <div class="hero-section-details"><span class="badge badge-live">LIVE</span> <span class="hero-section-details-inner">NBC · TV-PG · S3 E2</span></div>
+          <div id="hero-section-watch-button" class="button icon-left focusable">
+            <img src="img/icons/play.svg" class="icon" />
+            <img src="img/icons/play-black.svg" class="icon icon-inverse" />
+            <span class="button-text">Watch Live</span>
+          </div>
+
+          <div class="hero-section-carousal">
+            <div class="hero-section-carousal-dot highlighted" data-video-id="xTQ7vhtp23w"
+              data-badge="LIVE"
+              data-is-live="true"
+              data-title="The Office"
+              data-details="NBC · TV-PG · S3 E2">
+                <div class="dot-progress" style="width: 80%;"></div>
+            </div>
+            <div class="hero-section-carousal-dot" data-video-id="JVPXHMc3Q18"
+              data-badge="VOD"
+              data-title="Elvis"
+              data-details="HBO · PG-13 · 2022">
+                <div class="dot-progress" style="width: 50%;"></div>
+            </div>
+            <div class="hero-section-carousal-dot" data-video-id="ZTvtSKXwu0o"
+              data-badge="LIVE"
+              data-is-live="true"
+              data-title="Seinfeld"
+              data-details="Comedy Central · TV-PG · S3 E6">
+                <div class="dot-progress" style="width: 80%;"></div>
+            </div>
+            <div class="hero-section-carousal-dot" data-video-id="MB59nuGmB3U"
+              data-badge="LIVE"
+              data-is-live="true"
+              data-large-title="true"
+              data-title="New York Giants Tennessee Titans"
+              data-details="NFL Network · 5pm – 8pm">
+                <div class="dot-progress" style="width: 25%;"></div>
+            </div>
+            <div class="hero-section-carousal-dot" data-video-id="q3yNku05KZs"
+              data-badge="DVR"
+              data-title="Saturday Night Live"
+              data-details="NBC · TV-14 · S49 E6">
+                <div class="dot-progress" style="width: 44%;"></div>
+            </div>
+            <div class="hero-section-carousal-dot" data-video-id="fMsEfKgGH-k"
+              data-badge="DVR"
+              data-title="Yellowstone"
+              data-details="Paramount · PG-13 · S9 E3">
+                <div class="dot-progress" style="width: 65%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="browsing-sheet" class="browsing-sheet top-nav-directed-page">
+        <div class="shelves">
+          <div class="shelf" id="continue-watching-shelf" data-current-card-index="0">
+            <div class="shelf-title">Continue watching</div>
+            <div class="shelf-cards">
+              <div id="shelf-card1-1" class="shelf-card browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/euphoria.png" class="shelf-card-thumbnail" />
+                  <div class="thumbnail-progress-bar" data-fill="100%">
+                    <div class="thumbnail-progress-bar-fill" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="shelf-card-title">Euphoria</div>
+                <div class="shelf-card-details">S4 E4 · 11m left</div>
+              </div>
+              <div id="shelf-card1-2" class="shelf-card browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/curb_enthusiasm.png" class="shelf-card-thumbnail" />
+                  <div class="thumbnail-progress-bar" data-fill="100%">
+                    <div class="thumbnail-progress-bar-fill" style="width: 50%"></div>
+                  </div>
+                </div>
+                <div class="shelf-card-title">Curb Your Enthusiam</div>
+                <div class="shelf-card-details">S4 E4 · 11m left</div>
+              </div>
+              <div id="shelf-card1-3" class="shelf-card browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/westworld.png" class="shelf-card-thumbnail" />
+                  <div class="thumbnail-progress-bar" data-fill="100%">
+                    <div class="thumbnail-progress-bar-fill" style="width: 20%"></div>
+                  </div>
+                </div>
+                <div class="shelf-card-title">The Wonder Years</div>
+                <div class="shelf-card-details">S4 E4 · 11m left</div>
+              </div>
+              <div id="shelf-card1-4" class="shelf-card browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/la_dodgers.png" class="shelf-card-thumbnail" />
+                  <div class="thumbnail-progress-bar" data-fill="100%">
+                    <div class="thumbnail-progress-bar-fill" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="shelf-card-title">Los Angeles Dodgers</div>
+                <div class="shelf-card-details">S4 E4 · 11m left</div>
+              </div>
+              <div id="shelf-card1-5" class="shelf-card browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/spongebob.png" class="shelf-card-thumbnail" />
+                  <div class="thumbnail-progress-bar" data-fill="100%">
+                    <div class="thumbnail-progress-bar-fill" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="shelf-card-title">Spongebob Squarepants</div>
+                <div class="shelf-card-details">S4 E4 · 11m left</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shelf" id="upcoming-shelf" data-current-card-index="0">
+            <div class="shelf-title">Upcoming</div>
+            <div class="shelf-cards">
+              <div id="shelf-card2-1" class="shelf-card large browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/oscars.png" class="shelf-card-thumbnail" />
+                </div>
+                <div class="shelf-card-metadata">
+                  <div class="shelf-card-title">The Oscars</div>
+                  <div class="shelf-card-details">Airs Sun, Aug 21 at 7pm</div>
+                  <div class="shelf-card-description">In a return to a hosted ceremony after three years without one, Wanda Sykes, Amy Schumer and...</div>
+
+                  <div class="button icon">
+                    <img src="img/icons/plus-white.svg" class="button-icon">
+                  </div>
+                </div>
+              </div>
+              <div id="shelf-card2-2" class="shelf-card large browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/dune.png" class="shelf-card-thumbnail" />
+
+                </div>                
+                <div class="shelf-card-metadata">
+                  <div class="shelf-card-title">Dune</div>
+                  <div class="shelf-card-details">Next airs Sun, Aug 21 at 7pm</div>
+                  <div class="shelf-card-description">Description copy is 2 lines maximum lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do...</div>
+
+                  <div class="button icon">
+                    <img src="img/icons/plus-white.svg" class="button-icon">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shelf" id="sport-for-you-shelf" data-current-card-index="0">
+            <div class="shelf-title">Sports for You</div>
+            <div class="shelf-cards">
+              <div id="shelf-card3-1" class="shelf-card browse-shelf-card focusable" data-class="shelf-card" data-url="">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/f1.png" class="shelf-card-thumbnail" />
+                  <span class="badge badge-live">LIVE</span>
+                  <div class="thumbnail-progress-bar" data-fill="100%">
+                    <div class="thumbnail-progress-bar-fill" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+              <div id="shelf-card3-2" class="shelf-card browse-shelf-card focusable" data-class="shelf-card" data-url="./player.html">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/gsw_vs_celtics.png" class="shelf-card-thumbnail" />
+                  <span class="badge badge-live">LIVE</span>
+                  <div class="thumbnail-progress-bar" data-fill="100%">
+                    <div class="thumbnail-progress-bar-fill" style="width: 50%"></div>
+                  </div>
+                </div>
+              </div>
+              <div id="shelf-card3-3" class="shelf-card browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/us_open.png" class="shelf-card-thumbnail" />
+                  <span class="badge badge-live">LIVE</span>
+                  <div class="thumbnail-progress-bar" data-fill="100%">
+                    <div class="thumbnail-progress-bar-fill" style="width: 20%"></div>
+                  </div>
+                </div>
+              </div>
+              <div id="shelf-card3-4" class="shelf-card browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/fifa_2022.png" class="shelf-card-thumbnail" />
+                  <span class="badge badge-live">LIVE</span>
+                  <div class="thumbnail-progress-bar" data-fill="100%">
+                    <div class="thumbnail-progress-bar-fill" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+              <div id="shelf-card3-5" class="shelf-card browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/sc_live.png" class="shelf-card-thumbnail" />
+                  <span class="badge badge-live">LIVE</span>
+                  <div class="thumbnail-progress-bar" data-fill="100%">
+                    <div class="thumbnail-progress-bar-fill" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+              <div id="shelf-card3-6" class="shelf-card browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/dodgers_vs_brewers.png" class="shelf-card-thumbnail" />
+                  <span class="badge badge-live">LIVE</span>
+                  <div class="thumbnail-progress-bar" data-fill="100%">
+                    <div class="thumbnail-progress-bar-fill" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+              <div id="shelf-card3-7" class="shelf-card browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/us_vs_.png" class="shelf-card-thumbnail" />
+                  <span class="badge badge-live">LIVE</span>
+                  <div class="thumbnail-progress-bar" data-fill="100%">
+                    <div class="thumbnail-progress-bar-fill" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="selected-card-metadata">
+              <div class="selected-card-metadata-left">
+                <div class="selected-card-title">Formula 1 Aramco United States Grand Prix</div>
+                <div class="selected-card-details">ESPN2 · 6am – 7:30am · Aired Sun, Sep 11</div>
+              </div>
+              <div class="selected-card-metadata-right">
+                <img src="img/home-page/Stats_Lewis_Hamilton.png" class="selected-card-metadata-stat-image" />
+              </div>
+            </div>
+          </div>
+
+          <div class="shelf" id="movies-shelf" data-current-card-index="0">
+            <div class="shelf-title">Top Movies</div>
+            <div class="shelf-cards">
+              <!-- <div id="shelf-card4-1" class="shelf-card tall browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/turning_red.png" class="shelf-card-thumbnail" />
+                </div>
+                <div class="shelf-card-details">2022 · PG-13</div>
+              </div> -->
+              <div id="shelf-card4-1" class="shelf-card tall browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/avatar.png" class="shelf-card-thumbnail" />
+                </div>
+                <div class="shelf-card-details">2009 · TV-14</div>
+              </div>
+              <div id="shelf-card4-2" class="shelf-card tall browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/lalaland.png" class="shelf-card-thumbnail" />
+                </div>                
+                <div class="shelf-card-details">2016 · PG-13</div>
+              </div>
+              <div id="shelf-card4-3" class="shelf-card tall browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/logan.png" class="shelf-card-thumbnail" />
+                </div>
+                <div class="shelf-card-details">2017 · R</div>
+              </div>              
+              <div id="shelf-card4-4" class="shelf-card tall browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/home-page/moonlight.png" class="shelf-card-thumbnail" />
+                </div>
+                <div class="shelf-card-details">2016 · R</div>
+              </div>
+              <div id="shelf-card4-5" class="shelf-card tall browse-shelf-card focusable" data-class="shelf-card">
+                <div class="shelf-card-thumbnail-container">                  
+                  <img src="img/home-page/john_wick_3.png" class="shelf-card-thumbnail" />
+                </div>
+                <div class="shelf-card-details">2019 · R</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="epg-page" class="epg-page top-nav-directed-page hide">
+        <div id="epg-recommended-shelf" class="shelf epg-shelf focus-within" data-current-card-index="0">
+          <div class="shelf-title">ON NOW</div>
+          <div class="shelf-cards">
+            <div id="epg-card1-1" class="shelf-card epg-shelf-card focusable" data-class="shelf-card" data-url="">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/EPG/hbo-card.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+                <div class="thumbnail-progress-bar" data-fill="100%">
+                  <div class="thumbnail-progress-bar-fill" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="shelf-card-title">Watchmen</div>
+              <div class="shelf-card-details">S1 E3 • She Was Killed by Space Junk • TV-MA</div>
+            </div>
+            <div id="epg-card1-2" class="shelf-card epg-shelf-card focusable" data-class="shelf-card" data-url="">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/EPG/espn-card.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+                <div class="thumbnail-progress-bar" data-fill="100%">
+                  <div class="thumbnail-progress-bar-fill" style="width: 50%"></div>
+                </div>
+              </div>
+              <div class="shelf-card-title">SportsCenter</div>
+              <div class="shelf-card-details">Feb 25 • Mel Kiper's NFL Mock Draft 2.0</div>
+            </div>
+            <div id="epg-card1-3" class="shelf-card epg-shelf-card focusable" data-class="shelf-card">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/EPG/starz-card.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+                <div class="thumbnail-progress-bar" data-fill="100%">
+                  <div class="thumbnail-progress-bar-fill" style="width: 20%"></div>
+                </div>
+              </div>
+              <div class="shelf-card-title">Lara Croft: Tomb Raider</div>
+              <div class="shelf-card-details">S2 E12 • TV-MA</div>
+            </div>
+            <div id="epg-card1-4" class="shelf-card epg-shelf-card focusable" data-class="shelf-card">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/EPG/abc-card.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+                <div class="thumbnail-progress-bar" data-fill="100%">
+                  <div class="thumbnail-progress-bar-fill" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="shelf-card-title">Emma.</div>
+              <div class="shelf-card-details">2020 • PG</div>
+            </div>
+            <!-- <div id="epg-card1-5" class="shelf-card epg-shelf-card focusable" data-class="shelf-card">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/home-page/sc_live.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+                <div class="thumbnail-progress-bar" data-fill="100%">
+                  <div class="thumbnail-progress-bar-fill" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+            <div id="epg-card1-6" class="shelf-card epg-shelf-card focusable" data-class="shelf-card">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/home-page/dodgers_vs_brewers.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+                <div class="thumbnail-progress-bar" data-fill="100%">
+                  <div class="thumbnail-progress-bar-fill" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+            <div id="epg-card1-7" class="shelf-card epg-shelf-card focusable" data-class="shelf-card">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/home-page/us_vs_.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+                <div class="thumbnail-progress-bar" data-fill="100%">
+                  <div class="thumbnail-progress-bar-fill" style="width: 75%"></div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+        <div id="epg-details-section" class="epg-details-section hide">
+          <div class="epg-details-section-left">
+            <div class="epg-details-title">The Middle</div>
+            <div class="epg-download-status">
+              <div class="thumbnail-progress-bar" data-fill="100%">
+                <div class="thumbnail-progress-bar-fill" style="width: 75%"></div>
+              </div>
+
+              <div class="epg-download-time-left">15 mins left</div>
+              <img src="img/EPG/check-progress-red.svg" class="epg-download-status-check">
+              <div class="epg-progress-dowload-recording">Recording</div>
+            </div>
+            <div class="epg-details-metadata">TV-14 • S9 E4 • Halloween VIII: Orson Murder Mystery</div>
+            <div class="epg-details-description">As Halloween nears, Frankie finds out that a woman died in the Heck house nearly 50 years ago; Axl and Lexie are frustrated when Sue insists on hanging out with them.</div>
+          </div>
+          <div class="epg-details-image">
+            <img src="img/EPG/the-middle.png" class="">
+          </div>
+        </div>
+
+        <div class="epg-guide-table">
+          <div class="epg-guide-table-row">
+            <div class="epg-guide-table-cell focusable width0" id="epg-table-cell1-1" data-class="epg-guide-table-cell">
+              <img src="img/network-logos/abc.png" class="img-network-logo"/>
+            </div>
+            <div class="epg-guide-table-cell focusable width1" id="epg-table-cell1-2" data-class="epg-guide-table-cell">
+              <div>The Middle</div>
+              <img src="img/icons/check-round-grey.svg" class="table-cell-icon ">
+              <img src="img/icons/check-round-black.svg" class="table-cell-icon show-on-focus">
+            </div>
+            <div class="epg-guide-table-cell focusable width2" id="epg-table-cell1-3" data-class="epg-guide-table-cell">
+              <div>The Bachelor</div>
+            </div>
+            <div class="epg-guide-table-cell focusable width2" id="epg-table-cell1-4" data-class="epg-guide-table-cell">
+              <div>Shark Tank</div>
+            </div>
+          </div>
+          <div class="epg-guide-table-row">
+            <div class="epg-guide-table-cell focusable width0" id="epg-table-cell2-1" data-class="epg-guide-table-cell">
+              <img src="img/network-logos/nbc.png" class="img-network-logo"/>
+            </div>
+            <div class="epg-guide-table-cell focusable width1" id="epg-table-cell2-2" data-class="epg-guide-table-cell">
+              <div>Modern Family</div>
+            </div>
+            <div class="epg-guide-table-cell focusable width1" id="epg-table-cell2-3" data-class="epg-guide-table-cell">
+              <div>This is Us</div>
+            </div>
+            <div class="epg-guide-table-cell focusable width1" id="epg-table-cell2-4" data-class="epg-guide-table-cell">
+              <div>Seinfield</div>
+              <img src="img/icons/check-round-grey.svg" class="table-cell-icon ">
+              <img src="img/icons/check-round-black.svg" class="table-cell-icon show-on-focus">
+            </div>
+          </div>
+          <div class="epg-guide-table-row">
+            <div class="epg-guide-table-cell focusable width0" id="epg-table-cell3-1" data-class="epg-guide-table-cell">
+              <img src="img/network-logos/cw.svg" class="img-network-logo"/>
+            </div>
+            <div class="epg-guide-table-cell focusable width2" id="epg-table-cell3-2" data-class="epg-guide-table-cell">
+              <div>Riverdale</div>
+              <img src="img/icons/check-round-grey.svg" class="table-cell-icon ">
+              <img src="img/icons/check-round-black.svg" class="table-cell-icon show-on-focus">
+            </div>
+            <div class="epg-guide-table-cell focusable width2" id="epg-table-cell3-3" data-class="epg-guide-table-cell">
+              <div>All American</div>
+            </div>
+          </div>
+          <div class="epg-guide-table-row">
+            <div class="epg-guide-table-cell focusable width0" id="epg-table-cell4-1" data-class="epg-guide-table-cell">
+              <img src="img/network-logos/espn.svg" class="img-network-logo"/>
+            </div>
+            <div class="epg-guide-table-cell focusable width5" id="epg-table-cell4-2" data-class="epg-guide-table-cell">
+              <div>Alabama at Ohio State</div>
+            </div>
+          </div>
+          <div class="epg-guide-table-row">
+            <div class="epg-guide-table-cell focusable width0" id="epg-table-cell5-1" data-class="epg-guide-table-cell">
+              <img src="img/network-logos/hbo.png" class="img-network-logo"/>
+            </div>
+            <div class="epg-guide-table-cell focusable width2" id="epg-table-cell5-2" data-class="epg-guide-table-cell">
+              <div>Interstellar</div>
+            </div>
+            <div class="epg-guide-table-cell focusable width1" id="epg-table-cell5-3" data-class="epg-guide-table-cell">
+              <div>Euphoria</div>
+            </div>
+            <div class="epg-guide-table-cell focusable width3" id="epg-table-cell5-4" data-class="epg-guide-table-cell">
+              <div>Snowpiercer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="library-page" class="library-page top-nav-directed-page hide">
+
+        <div id="library-hero-shelf" class="shelf library-shelf focus-within" data-current-card-index="0">
+          <div class="shelf-title">ON NOW</div>
+
+          <div class="library-hero-cards">
+            <div id="library-hero-card-1-1" class="library-hero-card focusable">
+              <img src="img/library/bachelor.png" class="library-hero-card-image" />
+              <div class="library-hero-card-details">
+                <div class="library-hero-card-line-1">New episode</div>
+                <div class="library-hero-card-line-2">The Bachelor</div>
+                <div class="library-hero-card-line-3">Resume • S26 E7 • TV-MA</div>
+              </div>
+              <img src="img/library/play-circle.svg" class="library-hero-card-play-image">
+            </div>
+            <div id="library-hero-card-1-2" class="library-hero-card focusable">
+              <img src="img/library/good_morning_america.png" class="library-hero-card-image" />
+              <div class="library-hero-card-details">
+                <div class="library-hero-card-line-1">New episode</div>
+                <div class="library-hero-card-line-2">Good Morning America</div>
+                <div class="library-hero-card-line-3">Watch next • May 18 • TV-PG</div>
+              </div>
+              <img src="img/library/play-circle.svg" class="library-hero-card-play-image">
+            </div>
+            <div id="library-hero-card-1-3" class="library-hero-card focusable">
+              <img src="img/library/real_housewives_orange_county.png" class="library-hero-card-image" />
+              <div class="library-hero-card-details">
+                <div class="library-hero-card-line-1">New episode</div>
+                <div class="library-hero-card-line-2">The Real Housewives of Orange</div>
+                <div class="library-hero-card-line-3">Resume • S26 E7 • TV-MA</div>
+              </div>
+              <img src="img/library/play-circle.svg" class="library-hero-card-play-image">
+            </div>
+          </div>
+
+          <div class="library-hero-cards">
+            <div id="library-hero-card-2-1" class="library-hero-card focusable">
+              <img src="img/library/blacklist.png" class="library-hero-card-image" />
+              <div class="library-hero-card-details">
+                <div class="library-hero-card-line-1">3 new episodes</div>
+                <div class="library-hero-card-line-2">The Blacklist</div>
+                <div class="library-hero-card-line-3">Watch next • S5 E2 • TV-MA</div>
+              </div>
+              <img src="img/library/play-circle.svg" class="library-hero-card-play-image">
+            </div>
+            <div id="library-hero-card-2-2" class="library-hero-card focusable">
+              <img src="img/library/paw_patrol.png" class="library-hero-card-image" />
+              <div class="library-hero-card-details">
+                <!-- <div class="library-hero-card-line-1">New episode</div> -->
+                <div class="library-hero-card-line-2">PAW Patrol</div>
+                <div class="library-hero-card-line-3">Watch again • G</div>
+              </div>
+              <img src="img/library/play-circle.svg" class="library-hero-card-play-image">
+            </div>
+          </div>
+        </div>
+
+        <div id="library-page-chips" class="chip-container library-page-chips">
+          <div id="" class="chip translucent library-page-chip focusable">Series</div>
+          <div id="" class="chip translucent library-page-chip focusable">Movies</div>
+          <div id="" class="chip translucent library-page-chip focusable">Daily shows</div>
+          <div id="" class="chip translucent library-page-chip focusable">Sports</div>
+          <div id="" class="chip translucent library-page-chip focusable">Events</div>
+          <div id="" class="chip translucent library-page-chip focusable">Recently recorded</div>
+          <div id="" class="chip translucent library-page-chip focusable">Most watched</div>
+          <div id="" class="chip translucent library-page-chip focusable">Scheduled</div>
+          <div id="" class="chip translucent library-page-chip focusable">Purchased</div>
+          <div id="" class="chip translucent library-page-chip focusable">Expiring soon</div>
+          <div id="" class="chip translucent library-page-chip focusable">Expired</div>
+        </div>
+
+        <div id="library-recommended-shelf-1" class="shelf library-shelf focus-within" data-current-card-index="0">
+          <!-- <div class="shelf-title">ON NOW</div> -->
+          <div class="shelf-cards">
+            <div id="library-card1-1" class="shelf-card library-shelf-card focusable" data-class="shelf-card" data-url="">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/library/bachelor.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+              </div>
+              <div class="shelf-card-details">Most watched • Reality</div>
+              <div class="shelf-card-title">The Bachelor</div>
+            </div>
+            <div id="library-card1-2" class="shelf-card library-shelf-card focusable" data-class="shelf-card" data-url="">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/library/blacklist.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+              </div>
+              <div class="shelf-card-details">Most watched • Drama • 9 Seasons</div>
+              <div class="shelf-card-title">The Blacklist</div>
+            </div>
+            <div id="library-card1-3" class="shelf-card library-shelf-card focusable" data-class="shelf-card">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/library/paw_patrol.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+              </div>
+              <div class="shelf-card-details">Family • 8 Seasons</div>
+              <div class="shelf-card-title">PAW Patrol</div>
+            </div>
+            <div id="library-card1-4" class="shelf-card library-shelf-card focusable" data-class="shelf-card">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/library/succession.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+              </div>
+              <div class="shelf-card-details">Drama • 3 Seasons</div>
+              <div class="shelf-card-title">Succession</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="library-recommended-shelf-2" class="shelf library-shelf focus-within" data-current-card-index="0">
+          <div class="shelf-cards">
+            <div id="library-card2-1" class="shelf-card library-shelf-card focusable" data-class="shelf-card" data-url="">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/library/sesame_street.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+              </div>
+              <div class="shelf-card-details">Family • Most watched</div>
+              <div class="shelf-card-title">Sesame Street</div>
+            </div>
+            <div id="library-card2-2" class="shelf-card library-shelf-card focusable" data-class="shelf-card" data-url="">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/library/sienfeld.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+              </div>
+              <div class="shelf-card-details">1989 • Sitcom • 9 Seasons</div>
+              <div class="shelf-card-title">Seinfeld</div>
+            </div>
+            <div id="library-card2-3" class="shelf-card library-shelf-card focusable" data-class="shelf-card">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/library/jeopardy.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+              </div>
+              <div class="shelf-card-details">NBC • Most watched • Game show</div>
+              <div class="shelf-card-title">Jeopardy!</div>
+            </div>
+            <div id="library-card2-4" class="shelf-card library-shelf-card focusable" data-class="shelf-card">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/library/modern_family.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+              </div>
+              <div class="shelf-card-details">2009 • Sitcom • 11 Seasons</div>
+              <div class="shelf-card-title">Modern Family</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      <div id="store-page" class="store-page top-nav-directed-page hide">
+        <div id="store-page-carousal" class="store-page-carousal">
+          <div id="store-page-carousal-item1" class="store-page-carousal-item focusable">
+            <!-- <img src="img/home-page/oscars.png" class="store-page-carousal-image" /> -->
+          </div>
+          <div id="store-page-carousal-item2" class="store-page-carousal-item focusable">
+            <!-- <img src="img/home-page/dune.png" class="store-page-carousal-image" /> -->
+          </div>
+        </div>
+
+        <div id="store-page-chips" class="chip-container store-page-chips">
+          <div id="store-page-chip1" class="chip translucent store-page-chip focusable">Featured</div>
+          <div id="" class="chip translucent store-page-chip focusable">Sports</div>
+          <div id="" class="chip translucent store-page-chip focusable">Movies</div>
+          <div id="" class="chip translucent store-page-chip focusable">Shows</div>
+          <div id="" class="chip translucent store-page-chip focusable">International</div>
+          <div id="" class="chip translucent store-page-chip focusable">Bundles</div>
+          <div id="" class="chip translucent store-page-chip focusable">All add-ons</div>
+          <div id="" class="chip translucent store-page-chip focusable">Sports</div>
+          <div id="" class="chip translucent store-page-chip focusable">Movies</div>
+          <div id="" class="chip translucent store-page-chip focusable">Shows</div>
+          <div id="" class="chip translucent store-page-chip focusable">International</div>
+          <div id="" class="chip translucent store-page-chip focusable">Bundles</div>
+          <div id="" class="chip translucent store-page-chip focusable">All add-ons</div>
+        </div>
+
+        <div id="store-hero-shelf" class="shelf store-shelf focus-within" data-current-card-index="0">
+          <div class="shelf-title">Featured Networks & Packages</div>
+
+          <div class="store-hero-cards">
+            <div id="store-hero-card-1-1" class="store-hero-card focusable">
+              <div class="store-hero-card-left">
+                <img src="img/store/hbo-logo.png" class="store-hero-card-image" />
+                <div class="store-hero-card-details">
+                  <div class="store-hero-card-line-1">5-DAY FREE TRIAL</div>
+                  <div class="store-hero-card-line-2">HBO</div>
+                </div>
+              </div>
+              <div class="store-hero-card-line-3">$XX/mo</div>
+            </div>
+            <div id="store-hero-card-1-2" class="store-hero-card focusable">
+              <div class="store-hero-card-left">
+                <img src="img/store/espn-logo.png" class="store-hero-card-image" />
+                <div class="store-hero-card-details">
+                  <div class="store-hero-card-line-1">5-DAY FREE TRIAL</div>
+                  <div class="store-hero-card-line-2">ESPN</div>
+                </div>
+              </div>
+              <div class="store-hero-card-line-3">$XX/mo</div>
+            </div>
+            <div id="store-hero-card-1-3" class="store-hero-card focusable">
+              <div class="store-hero-card-left">
+                <img src="img/store/starz-logo.png" class="store-hero-card-image" />
+                <div class="store-hero-card-details">
+                  <div class="store-hero-card-line-1">5-DAY FREE TRIAL</div>
+                  <div class="store-hero-card-line-2">Starz</div>
+                </div>
+              </div>
+              <div class="store-hero-card-line-3">$XX/mo</div>
+            </div>
+          </div>
+
+          <div class="store-hero-cards">
+            <div id="store-hero-card-2-1" class="store-hero-card focusable">
+              <div class="store-hero-card-left">
+                <img src="img/store/starz-logo.png" class="store-hero-card-image" />
+                <div class="store-hero-card-details">
+                  <div class="store-hero-card-line-1">5-DAY FREE TRIAL</div>
+                  <div class="store-hero-card-line-2">Starz</div>
+                </div>
+              </div>
+              <div class="store-hero-card-line-3">$XX/mo</div>
+            </div>
+            <div id="store-hero-card-2-2" class="store-hero-card focusable">
+              <div class="store-hero-card-left">
+                <img src="img/store/abc-logo.png" class="store-hero-card-image" />
+                <div class="store-hero-card-details">
+                  <div class="store-hero-card-line-1">5-DAY FREE TRIAL</div>
+                  <div class="store-hero-card-line-2">ABC</div>
+                </div>
+              </div>
+              <div class="store-hero-card-line-3">$XX/mo</div>
+            </div>
+            <div id="store-hero-card-2-3" class="store-hero-card focusable">
+              <div class="store-hero-card-left">
+                <img src="img/store/hbo-logo.png" class="store-hero-card-image" />
+                <div class="store-hero-card-details">
+                  <div class="store-hero-card-line-1">5-DAY FREE TRIAL</div>
+                  <div class="store-hero-card-line-2">HBO</div>
+                </div>
+              </div>
+              <div class="store-hero-card-line-3">$XX/mo</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="store-recommended-shelf-1" class="shelf store-shelf focus-within" data-current-card-index="0">
+          <div class="shelf-title">TOP TV SHOWS</div>
+          <div class="shelf-cards">
+            <div id="store-card1-1" class="shelf-card store-shelf-card focusable" data-class="shelf-card" data-url="">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/library/bachelor.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+              </div>
+              <div class="shelf-card-details">Most watched • Reality</div>
+              <div class="shelf-card-title">The Bachelor</div>
+            </div>
+            <div id="store-card1-2" class="shelf-card store-shelf-card focusable" data-class="shelf-card" data-url="">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/library/blacklist.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+              </div>
+              <div class="shelf-card-details">Most watched • Drama • 9 Seasons</div>
+              <div class="shelf-card-title">The Blacklist</div>
+            </div>
+            <div id="store-card1-3" class="shelf-card store-shelf-card focusable" data-class="shelf-card">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/library/paw_patrol.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+              </div>
+              <div class="shelf-card-details">Family • 8 Seasons</div>
+              <div class="shelf-card-title">PAW Patrol</div>
+            </div>
+            <div id="store-card1-4" class="shelf-card store-shelf-card focusable" data-class="shelf-card">
+              <div class="shelf-card-thumbnail-container">
+                <img src="img/library/succession.png" class="shelf-card-thumbnail" />
+                <span class="badge badge-live">LIVE</span>
+              </div>
+              <div class="shelf-card-details">Drama • 3 Seasons</div>
+              <div class="shelf-card-title">Succession</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="side-sheet" class="side-sheet ">
+        <div class="side-sheet-hero">
+          <img src="img/home-page/avatar_wide.png" class="side-sheet-hero-image">
+        </div>
+        
+        <div class="side-sheet-details">
+          <div class="side-sheet-title">Avatar</div>
+          <div class="side-sheet-metadata"><span class="badge">VOD</span> 2009 · TV-14 · Science Fiction</div>
+          <div class="side-sheet-description">On the lush alien world of Pandora live the Na'vi, beings who appear primitive but
+            are highly evolved. Because the planet's...</div>
+        </div>
+
+        <div class="side-sheet-list">
+          <div id="side-sheet-watch-live" class="button icon-left side-sheet-list-item focusable">
+            <img src="img/icons/play.svg" class="icon" />
+            <img src="img/icons/play-black.svg" class="icon icon-inverse" />
+            <span class="button-text">Watch Live</span>
+          </div>
+          <div id="side-sheet-add-to-library" class="button icon-left side-sheet-list-item focusable">
+            <img src="img/icons/plus-white.svg" class="icon" />
+            <img src="img/icons/plus-black.svg" class="icon icon-inverse" />
+            <span class="button-text">Add to library</span>
+          </div>
+          <div id="side-sheet-see-details" class="button icon-left side-sheet-list-item focusable">
+            <img src="img/icons/info_outline_white.svg" class="icon" />
+            <img src="img/icons/info_outline_black.svg" class="icon icon-inverse" />
+            <span class="button-text">See details</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="movie-details-page" class="movie-details-page hide">
+        <div id="movie-details-page-sheet" class="movie-details-page-sheet">
+          <div class="movie-details-page-hero">
+            <img src="img/home-page/avatar-logo.png" class="movie-details-page-hero-image">
+          </div>
+          
+          <div class="movie-details-page-details">
+            <!-- <div class="movie-details-page-title">Avatar</div> -->
+            <div class="movie-details-page-metadata"><span class="badge">VOD</span> 2009 · TV-14 · Science Fiction</div>
+            <div class="movie-details-page-description">On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the
+            planet's environment is poisonous...</div>
+          </div>
+
+          <div class="movie-details-page-buttons">
+            <div id="movie-details-page-watch-live" class="button icon-left focusable">
+              <img src="img/icons/play.svg" class="icon" />
+              <img src="img/icons/play-black.svg" class="icon icon-inverse" />
+              <span class="button-text">Watch Live</span>
+            </div>
+            <div id="movie-details-page-watch-trailer" class="button icon-left focusable">
+              <img src="img/icons/film-strip.svg" class="icon" />
+              <img src="img/icons/film-strip-black.svg" class="icon icon-inverse" />
+              <span class="button-text">Watch trailer</span>
+            </div>
+            <div id="movie-details-page-add-to-library" class="button icon focusable">
+              <img src="img/icons/plus-white.svg" class="icon" />
+              <img src="img/icons/plus-black.svg" class="icon icon-inverse" />
+            </div>
+            <div id="movie-details-page-notify" class="button icon focusable">
+              <img src="img/icons/bell.svg" class="icon" />
+              <img src="img/icons/bell-black.svg" class="icon icon-inverse" />
+            </div>
+          </div>
+
+          <div id="movie-details-recommended-shelf-1" class="shelf movie-details-shelf focus-within" data-current-card-index="0">
+            <div class="shelf-title">Extras</div>
+            <div class="shelf-cards">
+              <div id="movie-details-card1-1" class="shelf-card movie-details-shelf-card focusable" data-class="shelf-card" data-url="">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/avatar/card1.png" class="shelf-card-thumbnail" />
+                  <span class="badge badge-time">2:10</span>
+                </div>
+                <div class="shelf-card-title">Trailer</div>
+                <div class="shelf-card-details">Aug 20, 2022</div>
+              </div>
+              <div id="movie-details-card1-2" class="shelf-card movie-details-shelf-card focusable" data-class="shelf-card" data-url="">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/avatar/card2.png" class="shelf-card-thumbnail" />
+                  <span class="badge badge-time">2:10</span>
+                </div>
+                <div class="shelf-card-title">Behind the scenes</div>
+                <div class="shelf-card-details">Aug 20, 2022</div>
+              </div>
+              <div id="movie-details-card1-3" class="shelf-card movie-details-shelf-card focusable" data-class="shelf-card" data-url="">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/avatar/card3.png" class="shelf-card-thumbnail" />
+                  <span class="badge badge-time">2:10</span>
+                </div>
+                <div class="shelf-card-title">Homer's dark side</div>
+                <div class="shelf-card-details">Aug 20, 2022</div>
+              </div>
+              <div id="movie-details-card1-4" class="shelf-card movie-details-shelf-card focusable" data-class="shelf-card" data-url="">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/avatar/card4.png" class="shelf-card-thumbnail" />
+                  <span class="badge badge-time">2:10</span>
+                </div>
+                <div class="shelf-card-title">Homer's dark side</div>
+                <div class="shelf-card-details">Aug 20, 2022</div>
+              </div>
+              <div id="movie-details-card1-5" class="shelf-card movie-details-shelf-card focusable" data-class="shelf-card" data-url="">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/avatar/card5.png" class="shelf-card-thumbnail" />
+                  <span class="badge badge-time">2:10</span>
+                </div>
+                <div class="shelf-card-title">Homer's dark side</div>
+                <div class="shelf-card-details">Aug 20, 2022</div>
+              </div>
+            </div>
+          </div>
+
+          <div id="movie-details-recommended-shelf-2" class="shelf movie-details-shelf focus-within" data-current-card-index="0">
+            <div class="shelf-title">Cast & Crew</div>
+            <div class="shelf-cards">
+              <div id="movie-details-card2-1" class="shelf-card movie-details-shelf-card avatar-card focusable" data-class="shelf-card" data-url="">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/avatar/cast1.png" class="shelf-card-thumbnail" />
+                </div>
+                <div class="shelf-card-title">Sam Worthington</div>
+                <div class="shelf-card-details">Jake Sully</div>
+              </div>
+              <div id="movie-details-card2-2" class="shelf-card movie-details-shelf-card avatar-card focusable" data-class="shelf-card" data-url="">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/avatar/cast2.png" class="shelf-card-thumbnail" />
+                </div>
+                <div class="shelf-card-title">Zoe Saldana</div>
+                <div class="shelf-card-details">Neytiri</div>
+              </div>
+              <div id="movie-details-card2-3" class="shelf-card movie-details-shelf-card avatar-card focusable" data-class="shelf-card" data-url="">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/avatar/cast3.png" class="shelf-card-thumbnail" />
+                </div>
+                <div class="shelf-card-title">Sigourney Weaver</div>
+                <div class="shelf-card-details">Grace Augustine</div>
+              </div>
+              <div id="movie-details-card2-4" class="shelf-card movie-details-shelf-card avatar-card focusable" data-class="shelf-card" data-url="">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/avatar/cast4.png" class="shelf-card-thumbnail" />
+                </div>
+                <div class="shelf-card-title">Stephen Lang</div>
+                <div class="shelf-card-details">Col. Miles Quaritch</div>
+              </div>
+              <div id="movie-details-card2-5" class="shelf-card movie-details-shelf-card avatar-card focusable" data-class="shelf-card" data-url="">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/avatar/cast5.png" class="shelf-card-thumbnail" />
+                </div>
+                <div class="shelf-card-title">Michelle Rodriguez</div>
+                <div class="shelf-card-details">Trudy Chacone</div>
+              </div>
+              <div id="movie-details-card2-6" class="shelf-card movie-details-shelf-card avatar-card focusable" data-class="shelf-card" data-url="">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/avatar/cast6.png" class="shelf-card-thumbnail" />
+                </div>
+                <div class="shelf-card-title">Giovanni Ribisi</div>
+                <div class="shelf-card-details">Parker Selfridge</div>
+              </div>
+              <div id="movie-details-card2-7" class="shelf-card movie-details-shelf-card avatar-card focusable"
+                data-class="shelf-card" data-url="">
+                <div class="shelf-card-thumbnail-container">
+                  <img src="img/avatar/cast1.png" class="shelf-card-thumbnail" />
+                </div>
+                <div class="shelf-card-title">Sam Worthington</div>
+                <div class="shelf-card-details">Jake Sully</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="js/yt-template.js"></script>
+<script src="js/playerHomePage.js"></script>
+
+</html>

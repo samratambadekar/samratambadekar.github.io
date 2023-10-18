@@ -1,0 +1,18 @@
+html, body {
+  height: 100%;
+  font-family: Roboto;
+}
+
+.prototype_list {
+  padding: 0 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.prototype_list .prototype_list_item {
+  margin: 1.5rem 0;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #1a73e8;
+}

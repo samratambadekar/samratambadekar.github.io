@@ -1,0 +1,1966 @@
+<!DOCTYPE html>
+<html xmlns:yt="http://youtube.com" style="font-size: 137%;">
+
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <title>YouTube TV</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=YouTube+Sans:wght@300..900&display=swap"
+    rel="stylesheet">
+  <link rel="splashscreen" href="//www.youtube.com/s/ytvlr/html/ytv_splash_screen_v2.html">
+  <style nonce="">
+    #loader {
+      background-color: #181818;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 0;
+    }
+
+    #splash-image {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcQAAAC1CAYAAADBVo/PAAAACXBIWXMAAAsSAAALEgHS3X78AAAO1klEQVR42u3d7XXiRhvG8QvOfocOIBWYVIBSQZwKzFaw3grWriBOBTEVxK4gooLFFUR0YCqY58Ogx6wXg0Ca0bz8f+fsSbIxb2OJS/fMaGZgjBEcGQyKBj81ljS78BWKgD5teeHj1pJeG/2cMa8cVACcfWVnG4iHw+rQ3013fw6ZcwgFY/XB31e7P6eD2JiSZgQIxFhDbT+s3gdX8a4Ku+LXjTO9vAvN/RDdD9pXGbOmuQAC0UXQ1d2I+92JBeGGCGz2grJ8F6SVjKloIoBAPBR8s11VN9sLQLohkUvlWe7Cc02FCeQWiHbcrv5D8AE/Wu2qyVLGPNEcQGqBaENwIela0ogmBxpbSnoiHIHYA3EwWEi6kzShmYFWNpIeJD1y6wkQUyAOBte7k5cgBLq1lXQrYx5pCiDkQLS3QDyKsUHAtRdJCybiAN0adhSGt7KTAQhDwL0rSd81GNzRFEAoFaK9X/BB0g1NCfRiJemasUWgz0C0YViKm+SBvm12oUgXKtDCZV2mhCEQkomkcrfQRSxKSYY/jf6UB9pv2vPr++Trcz6eH4iEIRCiUYShiMtVHl8rl7kh1XmBSBgCMYTilKbIwiqDz+jzAq88t0J8IgyB4EPxaXfxCqrEGINpn8/j+IwK0U7x5rYKIHxXsrO/QSDGGEx9BXHDQLTrkX7j+AOicbNbNQrpKqkQO/MiNZ9l+sixB0Tnka5TKkQqxOZteToQbVcp65IC8RmJrlMCsRvTxCvE9elAtFeXtxx3QLRuuBUjab5mmvYViL5et0Eg2jBkD0MgblSJVImxBuLEZzsOqQ6B5M25N5FAjCSY+grhkxXiguoQSMYdTZCk0uNr+Z5Y4ysQX+p/ORaIVIdAOq6ZcUqF2JLvseix7zY8HIh2EJ6ZpUA6RpK4L5FAjKlC9BXA61MVIicOkJ6CJkiSr5mmqVaIBCKQIc5rqkQqxCPt93Mg2nEGFvAG0jPinkQCkQrxvAqx4PgCksX5nZ4y0c/lozDb7P/HMICrAAAEIsKvEOeptx0VIpAXLnjT/FLfcuHWvrr+xAkDZGWiwWAsY157fh9rD68xlfvbxzYeKrR1w5/xUcEVSquLtvo4EO3yTqxOA6RfJfb9peZj4Y87ud/H9VFhrALkKxBTqxB/CMThgSsqAGkraILkVJ5eJ7UexPJYIHKiAOnjwjc9a0+v4+tWCB/Bu3n/F8PE0x8AgUggxlch+gje6lQgsvgvkL45TZCcV/mZaZpShVieCkROFCAH7HxBlRh2hehjcueRCpETBMgJwyMEYqhB5X0N00MVIicIkI8pTZCcKpFjx1dxVh4LRE4QgEAEFWLfx46PY/PgeCuBCOSJHiECMedAXBOIAGrMGUiPr5mmBCKApHC+UyWGejHl49isTgUiV4xAPiY0AYF4Idfd7eO+2mk/EK84loCM2MX8kZYqgQrRRxadDEQAeSEQqRBDCywf1eFWdrz1g0AcDAqOIwAgEHsOrlmfbUSFCOSLC+H0+Jpp6iq4ehs/3A/EKcdRgKb8WgAEWyXGWiFWBGKM/vtPuruTxkwARrRX40gzEIsU24cu09B9+yZVlbRY0BaI8Woc/lURv3cfQUuXadRGI+nvv6X1WioK2gMAFeLlXgnEFFxdSf/+Kz0+Mr6ILtBlSiCGxvWevKtj/5Mu0xjd3NhqkfFFtLzEogmS5GOmaazd7VWTQKTciM1oZMcX12vGFwH4rhJdbBTc6wzT/UBkXcNYTSZ2fLEspRlzJAB4CUQXAeaju6tsEoiI3Xwuff9uxxfpRkVTrFKVqsrDa3T9RRNMhYhU3NzY2zTu7mgLgAqRCvGsQBwM6GdLTT2+WFXcpgEQiFSI1urUDwzF1Ot0TSb2No2y5DYNIC+vkjaOX6PrLxXXWVQ1CUSkbj63y8A9PDC+iPcKmiBZlePnnwb+fAQijvjyxXaj3t7SFkD6ysgCcdJ3ewzFeoZ5GY2kP/9kGTiACjGkAJuG0B6MIeaqXgbu6YnxRYBAvFRX+RFMICJnv//ONlN5o4coXWVEx4/rL5+XJj9EIMJim6lccRWUtk0kx4/rC7NG1TKBiDf1NlNlyfgikIbK8fPHUiE2ui9zKBb2xnvzOdtMAWkoqRAJRHRhf5spAFSI8VaIjdqBLlMct78M3PU17QEQiC643puzcYUInDaZSP/8wzZT6ZnTBEkrOX6azTAlEHHB4c82U0BkNoG/vyKUKplAxGXqbaZYBg4IXeX4+YvAP3/jnT8IRFyuXgaObaaAkJWZV4hnBSJjCGiHbaaAnCvEWSqfnwoR3WGbKSDHQGx7sgdxDyKBCDfqbaZYBg4IQRl4hejy6vmsCUUEItyol4Fjm6nwDQaU8+lzOdM05ArxrOqYQIRbbDMVA24sTV8V8PEzCqU6JhDhB9tMAX0qHT53m0ALYpcLAhH9+PbNdqMyvgikUiFKl6+JPQ7pcxOI8G8yYZspgEBs8zgnlTGBiP7sbzNFNyoQTDAkEohnTyQiENG/ehk4tpkCXHI50zTEQDy7KiYQEQa2mQJcqxw+d4iBeHZVTCAiLGwzBQQTEB6CzeVYCRUiElFvM8UycEAMFeKlJ+lVSJ+XQETYvnyxk24AhByIlwSb6yvdsytiAhHh2mykP/5gTBHoKSAcB5zLMZHtJQ8iEBGe7Va6v7dLvT090R5Ah5eZDp/73IBzWSGuL3nQJ44PBGW5lG5vpddX2gJwExSTDCrEiwKRChFhWK2k336zS7oRhkBQQRFhhVhRISI+m429IZ+JM0Dsgeg6QJ1/TgIR/dhu7S0VDw9UhIA/lcPnLmIPfgIR/j0/23HCqqItgHwrxLmry21JF11lM4YIf15e7Djh9TVhCPR4JkYWcN5Cn0CEe9ut9PmzXYqtLGkPoF8hXI0WBCLyU99PyKSZcBnDVUpeQpppGlTgM4YIN1YrewsFXaNAToHY9FYKKkRkYLOx44RFQRgCYXJ5YoZQIbYKxC3HB1rbbqWvX233KOOEABVifxXixfdxDRXWNFzEaLm0QfjwQFsAcXA103Ta8+datXkwXaZoceitpF9/Zbk1ID5Vz4E4C/FzEYg4X70tU1FIazoYgAi5OnGbBuKIQETc2JYpyd8qTUAgdqjJThouJ96UbR7MbRdoZrm0i3Azc5QvRqTA5Yk81vGJLeNQPxcVIo7b35aJMAS4EGpfAbqsEFsHIleI+NlmY5dbKwpuowDS5Gqm6bjl/7/48r3tEwzV4p4NJOr+3q47ynJrQMoqR897qgKchvp56DLFm+dn6Zdf7Fght1EAqeurdzDYQGRSDey2TLe3dI3ypQh+910oegrE1l9gVIg5q5dbY1umnNEVkK+qp9edhPp5hgpjbyz49tdfLLcGUCG6cGwMMdhbLiTbZUog5oRtmQC8eZF01fFzji4My7afozW6THPBtkw4jC7TvLn6Mph5rhA7+RwEYur2l1tjnBA/Y1INv38Xxp4rxE4+B12mKVsu7exRbqEA4DcQpzF+jqGMIRBTw7ZMAJpx9f3/USAWIX8O7kNMyWZjK0J2okBzXDFRIbowjvFzMIaYgnqccDYjDHEeYxhDhIs1TT8aK5yH/P6HDhsEPiyXNghZbg1AWFWiL1VXT1R3mfJNGpvVyoYgM0cBBBIoJyrBoGeY7leIiMV2y7ZM6OyyiiaAOlgDtCFX44qdByLjCDGo7ydkWyYAYVeI0s8zSqehv3+6TGPw/Gxnj7LCDIB4AlGeApEu0yzUy61dXxOGcKGkCbDjovv8/Zihiy7TTZdP9qnrhEWX11NT2gCAryqx61sixicCMrjqtq4Q6TIF8sN5DyfBUl/Se3jfJYEIoAv0DMFJsHwQiC5uyndQIbJaBQBQIXZrHNv7ZlINkCtjShoBDgPx6ki1GGRlux+I3KQLAPlymQEuAnHT9RNSIQJ5Yv1i+KgSi90/xzG83/1AZBwRyAcT6eAjEGsubrkoXQYiJwjAlx/yVTp4zllMxzAVIkAgAq6OibqrtIgtEKkQgXxwAQwfgTiNqaJ9C0SmYAM54QIYh3Q903TqKBi3Lj780MeLAAgMF8DwUyXWXaaTjp/XSQ/H0MeLAAgKF77wFYhXjt4ngQgg3C8TJKF08JwmguA+GIgVxwNAIIIKMcdjmAoR4EsPIBAJRIAKEXgn9HWtt3I0S/rHQDTmVQ4WTAUQEGaYIu4q0dkF3ZCrRyArLOoNAvGMQOTqEUgXF7w4JfQMcBbYVIgAX3YAFeLBQGR8ASAQQSASiP/3zDEBJGcjYyqaAQ2EPNPU2Tq8Q64igWw80QTouwoLOaiHnDhANh5pAjRU5fi+Dgei7VZZcUwAydjIGCbMIfYKsYdA5GoSoDoEgRiesp9ANOZRrFoDpGAr6YFmwBleFeY2Yb1ViJJ0x3EBJFAd2mUZgdirxB4DkSoRSKE65MIWKQSi83ktwwY/c8txAUTrgeoQIVZjIb6f04FozJO4UR+I0YuMoTpEKhViAIFoLRTmACuA4+ctkEoglmEEou1y4eQC4vGV+w7RUmgzTYOpEOuu03uOESB4SxnDbRZIrUoMKBBtKN5JWnKMAMF6kTELmgGJBaKXja2HZz/CnmyEIhBiGEoFzYCYqrKQ3senix5lzEKDgSTdcLwAAYUht1jsKxN5jT49SRpn8rvUwBjT4tGDR0IR6N1S0i1hCLQzbPVo2336WdySAfTlXsYsCEOg7wrxrVKcya6mf0WTAl5sJC1kTElTACFUiG+V4lrGzGRvy6BaBNz6S9KMMARCrBB/rBbHslvNMLYIdGsp6W63gTeA4APxLRinsguDLySNaGrgIlvZmX4EIRBtIP4YjgtJ17L3SBGOwGnPuyB8YsIMkFIg/hiOxS4YZ7s/E34NoArUWvZeq5KxQSCXQPw5IMd74TjW20obc349SMyL7ILJ5e6fa0lrKkCAQDynotReYGovNMfiVg/0b6O3paXWu7CrA09UfACB2FelqQMBeui/p6K7FodDrbYfZG8BVwcflR1AIKbbGoPpLijfex+m2qtQZ0eekQq2G3VX40fWR/7/oerslb0CARCI4YZx0eLRRY/vvGzxWKosAMH4H9HbhAPK8c7HAAAAAElFTkSuQmCC);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 11.2%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet" nonce="">
+  <style name="www-roboto" nonce="">
+    @font-face {
+      font-family: 'Roboto';
+      font-style: italic;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xIIzc.ttf)format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: italic;
+      font-weight: 500;
+      src: url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51S7ACc6CsE.ttf)format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      src: url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf)format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      src: url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc9.ttf)format('truetype');
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://youtube.com/s/_/ytvlr_hybrid/_/ss/k=ytvlr_hybrid.startup.4nJuSpALJTM.L.CO.O/am=RA/d=0/rs=AFUxa5_OkxefNX7Gp2TIknKVIGyTYjoRiQ/m=startup"
+    nonce="">
+  <link rel="stylesheet" href="./css/overrides.css">
+  <link rel="stylesheet" href="./css/youtube-tv.css">
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body
+  class="supports-background-playback samsung un50ru7100gxzd tv cobalt full-animation lang-en_US lang-case-sensitive exp-force-route-unplugged-search-to-outertube exp-unplugged-tvhtml5-reroute exp-unplugged-tvhtml5-startup-sound exp-unplugged-tvhtml5-startup-sound-3p-measurement exp-unplugged-tvhtml5-startup-sound-animation exp-unplugged-tvhtml5-zylon-ad-attribution exp-unplugged-tvhtml5-zylon-browse-promo-dialog exp-unplugged-tvhtml5-zylon-cc-style-sidesheet exp-unplugged-tvhtml5-zylon-chips exp-unplugged-tvhtml5-zylon-details exp-unplugged-tvhtml5-zylon-epg exp-unplugged-tvhtml5-zylon-home exp-unplugged-tvhtml5-zylon-library exp-unplugged-tvhtml5-zylon-video-info-tab-content exp-aac-networking exp-apple-tv-hardware-event-timestamps exp-bedrock-gel-debounce-ms exp-bedrock-gel-debounce-ms--60000 exp-enable-authentication-fail-open exp-enable-local-channel exp-enable-prequest-context exp-enable-rat-logging exp-mdx-sender-lounge-token-lifespan-ms exp-mdx-sender-lounge-token-lifespan-ms--3600000 exp-product-excellence-fix-centipede exp-steel-limited-animation exp-use-server-language-and-location exp-enable-livingroom-streamz exp-mdx-http-request-retry-limit exp-mdx-http-request-retry-limit--4 exp-mdx-http-request-initial-retry-delay-ms exp-mdx-http-request-initial-retry-delay-ms--500 exp-mdx-http-request-max-retry-delay-ms exp-mdx-http-request-max-retry-delay-ms---1 exp-save-screen-id-in-local-storage-for-verticals exp-access-token-discounted-expiration-minutes exp-access-token-discounted-expiration-minutes--15 exp-access-token-discounted-expiration-ratio exp-access-token-discounted-expiration-ratio--0-75 exp-access-token-server-expiration-ratio exp-access-token-server-expiration-ratio--0-98 exp-addto-ajax-log-warning-fraction exp-addto-ajax-log-warning-fraction--0-1 exp-airstream exp-allow-skip-networkless exp-attest-botguard-on-tvhtml5 exp-audio-enable-force-early-player-embed exp-bind-splash-to-startup-monitor exp-botguard-async-snapshot-timeout-ms exp-botguard-async-snapshot-timeout-ms--3000 exp-browse-square-album exp-cast-enable-cast-scs-path exp-cast-enable-chromecast-prod-css exp-clear-health-check-on-reload exp-clear-health-check-on-reload---1 exp-content-prefetch-buffer-size exp-content-prefetch-buffer-size--1 exp-creator-endscreen exp-default-player-access-token-expiration-time exp-default-player-access-token-expiration-time--5000 exp-defer-watch-next-on-state-change exp-device-snapshot-logging-interval-ms exp-device-snapshot-logging-interval-ms--2000 exp-disable-child-node-auto-formatted-strings exp-disable-dial-watch-deeplink exp-disable-mdx-autoplay-after-inactivity exp-disable-simple-mixed-direction-formatted-strings exp-disable-stc-play-pause exp-disable-thumbnail-preloading exp-elo-background-image-enabled exp-enable-401-retry-fix exp-enable-aggressive-tile-renderer-shim exp-enable-captions-playback-end-on-suspend-on-home exp-enable-cc-overlays exp-enable-client-streamz-web exp-enable-ctt-on-csi exp-enable-ctv-expansion exp-enable-deferred-prefetch exp-enable-deferred-watch-next exp-enable-device-probation-overlay exp-enable-direct-sign-in exp-enable-discounted-price-listing-on-living-room exp-enable-early-browse-request exp-enable-esa-acceleration exp-enable-esa-transition-anim exp-enable-ghost-state-exclude-low-memory exp-enable-handoff-auto-connect exp-enable-hats-postwatch-survey exp-enable-isolated-ur-log exp-enable-late-delegation-for-direct-sign-in exp-enable-late-delegation-for-seamless-sign-in exp-enable-late-delegation-for-url-sign-in exp-enable-late-endscreens-inflation exp-enable-live-chat-toggle exp-enable-living-room-youthere-dialog-style exp-enable-mdx-assisted-sign-in exp-enable-mdx-identity-propagation exp-enable-mdx-network-timeout-and-retries exp-enable-media-key-to-key-code-mapping exp-enable-mixed-direction-formatted-strings exp-enable-navigation-error-handling exp-enable-network-error-overlay exp-enable-network-error-overlay-for-module-failure exp-enable-network-error-overlay-refresh exp-enable-oxbow-i18n exp-enable-pangea-back-navigation-timelines exp-enable-passive-if-max-accounts exp-enable-passive-if-max-accounts---1 exp-enable-pre-exit-dirty-bit-clearing exp-enable-report-service-on-watch-page exp-enable-revoked-device-key-page exp-enable-scrubber exp-enable-share-panel-page-as-screen-layer exp-enable-shelf-renderer-on-pivot exp-enable-sli-flush exp-enable-speedbump-on-client exp-enable-square-tile-inline-playback exp-enable-stc-seek exp-enable-sticky-captions exp-enable-tectonic-audio-app exp-enable-tectonic-oxbow exp-enable-tectonic-simply-embedded exp-enable-tectonic-simply-kids exp-enable-tectonic-simply-main exp-enable-to-only-propagate-ads-signal-info-for-single-remote-sessions exp-enable-topics-in-left-nav exp-enable-trailblazer exp-enable-tv-feedback-service exp-enable-unsampled-rat-logging exp-enable-video-action-cta-mbf-layout-for-tvhtml5 exp-enable-voz-asfe-endpoint exp-enable-vsp-live exp-enable-whos-watching-speedbump exp-enable-why-this-ad-overlay exp-enable-wn-transport-controls exp-enable-xhr-icon-font-loading exp-enable-zero-prefix-psuggest exp-enable-zylon-hardening exp-enable-zylon-survey-shelves exp-esa-acc-baseInterval exp-esa-acc-baseInterval--10 exp-esa-acc-growthRate exp-esa-acc-growthRate--14 exp-esa-acc-maxIntervalConst exp-esa-acc-maxIntervalConst--0-55 exp-esa-acc-minSeek exp-esa-acc-minSeek--14 exp-esa-acc-repeatRate exp-esa-acc-repeatRate--10 exp-esa-acc-seekSessionTTL exp-esa-acc-seekSessionTTL--125 exp-evc-video-action-on-tv-persistent-url exp-exit-app-in-call-to-cast-screen exp-expand-search-history-size exp-export-networkless-options exp-forward-domain-admin-state-on-embeds exp-get-async-timeout-ms exp-get-async-timeout-ms--60000 exp-health-check-interval-sec exp-health-check-interval-sec---1 exp-html5-enable-single-video-vod-ivar-on-pacf exp-html5-enable-video-overlay-on-inplayer-slot-for-tv exp-html5-pacf-enable-dai exp-ignore-auto-connect-requests-during-shallow-logouts exp-inapp-feedback exp-initial-gel-batch-timeout exp-initial-gel-batch-timeout--2000 exp-initialize-autoplay exp-inline-playback exp-inline-playback-setting exp-is-mweb-wexit-main-launch exp-kevlar-dropdown-fix exp-kevlar-gel-error-routing exp-kids-enable-spinner-parent-gate-animations exp-kids-remove-second-account-selector exp-leader-election-check-interval exp-leader-election-check-interval--9000 exp-leader-election-lease-ttl exp-leader-election-lease-ttl--10000 exp-leader-election-renewal-interval exp-leader-election-renewal-interval--6000 exp-log-heartbeat-with-lifecycles exp-log-web-endpoint-to-layer exp-log-window-onerror-fraction exp-log-window-onerror-fraction--0-1 exp-masthead-inline exp-masthead-inline-playback-delay-ms exp-masthead-inline-playback-delay-ms--160 exp-max-device-snapshot-logging-calls exp-max-device-snapshot-logging-calls--180 exp-mdx-sender-pairing-code-access-duration-ms-on-dial-devices-not-support-seamless exp-mdx-sender-pairing-code-access-duration-ms-on-dial-devices-not-support-seamless---1 exp-mdx-sender-pairing-code-access-duration-ms-on-dial-devices-support-seamless exp-mdx-sender-pairing-code-access-duration-ms-on-dial-devices-support-seamless---1 exp-mdx-short-lived-screen-id-lifespan-ms-on-dial-devices-not-support-seamless exp-mdx-short-lived-screen-id-lifespan-ms-on-dial-devices-not-support-seamless---1 exp-mdx-short-lived-screen-id-lifespan-ms-on-dial-devices-support-seamless exp-mdx-short-lived-screen-id-lifespan-ms-on-dial-devices-support-seamless---1 exp-metapanel-shelf-position exp-metapanel-shelf-position--1 exp-minimum-app-lifetime-to-reload-ms exp-minimum-app-lifetime-to-reload-ms--691200000 exp-minimum-time-since-suspension-to-reload-ms exp-minimum-time-since-suspension-to-reload-ms--3600000 exp-network-polling-interval exp-network-polling-interval--30000 exp-new-sso-api exp-nwl-throttling-race-fix exp-nwl-trigger-throttle-after-reset exp-nwl-use-ytidb-partitioning exp-omit-innertube-api-key-for-bearer-auth-header exp-optimistically-cut-ad-for-tvhtml5 exp-optimistically-cut-ad-for-tvhtml5-browse-and-search exp-optimistically-cut-ad-for-tvhtml5-wexit exp-pageid-as-header-web exp-pes-migrate-association-data exp-polymer-bad-build-labels exp-polymer-verifiy-app-state exp-product-excellence-fix-monkey exp-product-excellence-fix-penguin exp-product-excellence-fix-platypus exp-product-excellence-fix-sloth exp-product-excellence-fix-turtle exp-qoe-send-and-write exp-quality-selector-improvements exp-refresh-content exp-reload-app-flush-logs-max-timeout-ms exp-reload-app-flush-logs-max-timeout-ms--1000 exp-screen-manager-log-servlet-ei exp-seeks-to-easter-egg exp-seeks-to-easter-egg--20 exp-send-session-survival-isolated exp-set-loader-url-in-tv-embed exp-set-storage-after-playback-delay-ms exp-set-storage-after-playback-delay-ms---1 exp-show-auth-error-for-disabled-account exp-show-promo-coupon-image exp-show-spinner-on-ytv-button-click exp-simply-enable-audio-track exp-simply-enable-cast-button exp-simply-enable-netzdg exp-simply-enable-ripples exp-simply-enable-wn-music-config exp-simply-music-max-num-items-per-shelf exp-simply-music-max-num-items-per-shelf--6 exp-simply-music-num-shelves exp-simply-music-num-shelves--1 exp-skip-ad-button-with-thumbnail exp-sound-redesign exp-startup-sound-wait-for-completion exp-state-machine-dynamic-events-lifecycles exp-supports-inline-playback-client-side exp-supports-player-resize-animation exp-suppress-error-204-logging exp-trigger-nsm-validation-checks-with-nwl exp-turn-down-serialized-player-request-for-bulleit-living-room exp-tvhtml5-filtered-browse-max-num-items-per-shelf exp-tvhtml5-filtered-browse-max-num-items-per-shelf--24 exp-tvhtml5-gel-debounce-ms exp-tvhtml5-gel-debounce-ms--60000 exp-tvhtml5-max-age-seconds exp-tvhtml5-max-age-seconds--1200 exp-unexpected-restart-crash-sec exp-unexpected-restart-crash-sec--300 exp-unplugged-epg-upsell exp-unplugged-tvhtml5-botguard-attestation exp-unplugged-tvhtml5-epg-max-duration exp-unplugged-tvhtml5-epg-max-duration--864000 exp-unplugged-tvhtml5-epg-remove-first-tile-check-for-live exp-unplugged-tvhtml5-new-static-splash-screen exp-unplugged-tvhtml5-player-resolution-toolbar-tab exp-unplugged-tvhtml5-startup-sound-toa exp-use-ad-attribution-from-topsoil exp-use-cast-binary-for-themes exp-use-document-lifecycles exp-use-flush-logs-state-machine exp-use-launcher-id exp-use-screen-manager-util exp-use-undefined-csn-any-layer exp-use-youtube-standards-icons exp-vss-final-ping-send-and-write exp-vss-playback-use-send-and-write exp-watch-cap-days-visible exp-watch-cap-days-visible--21 exp-watch-cap-playbacks exp-watch-cap-playbacks--8 exp-watch-next-request-delay-ms exp-watch-next-request-delay-ms---1 exp-web-api-url exp-web-dedupe-ve-grafting exp-web-enable-ad-signals-in-it-context exp-web-foreground-heartbeat-interval-ms exp-web-foreground-heartbeat-interval-ms--28000 exp-web-gel-debounce-ms exp-web-gel-debounce-ms--10000 exp-web-logging-max-batch exp-web-logging-max-batch--100 exp-whos-watching-min-device-accounts exp-whos-watching-min-device-accounts--1 exp-ybfex-enable-kansas-impression-logging exp-ytidb-is-supported-cache-success-result exp-ytidb-remake-db-retries exp-ytidb-remake-db-retries--1 exp-ytidb-stop-transaction-commit exp-ytidb-transaction-ended-event-rate-limit exp-ytidb-transaction-ended-event-rate-limit--0-02 prototype_a">
+  <div id="upg-application">
+    <div id="app-markup" class=" has-mini-player has-watch glass-pane-active app" tabindex="-1">
+      <div id="watch" class=" new-watch-metadata-active watch-overlay-active watch" tabindex="-1">
+        <div class="right-panel ">
+          <div id="stats-and-scores-panel" class="panel-inner hide">
+            <div id="game-stat-options">
+              <div class="chip-container game-stat-options-chips">
+                <div id="show-game-stat-panel" class="chip focusable highlightable">Stats</div>
+                <div id="show-game-fantasy-panel" class="chip focusable highlightable">Fantasy</div>
+                <div id="show-game-score-panel" class="chip focusable highlightable">Scores</div>
+                <div id="show-game-odds-panel" class="chip focusable highlightable">Odds</div>
+                <div id="show-game-feeds-panel" class="chip focusable highlightable">Feeds</div>
+              </div>
+            </div>
+
+            <div id="game-stat-card-container" class="game-card-container">
+              <div class="card-container-inner game-stat-card-container-inner">
+                <div id="game-stat-card1" class="stat-card game-stat-card focusable pinnable hide bg_carousal stat_bg_carousal1" data-class="game-stat-card" data-mosaic23="img/Stats1-mosaic23.png" data-mosaic4="img/Stats1-mosaic4.png">
+                  <div class="stat-card-pin"></div>
+                  <img src="img/Stats1.png" />
+                </div>
+                <div id="game-stat-card2" class="stat-card game-stat-card focusable hide" data-class="game-stat-card">
+                  <div class="stat-card-pin"></div>
+                  <img src="img/Stats2.png" />
+                </div>
+                <div id="game-stat-card3" class="stat-card game-stat-card focusable hide" data-class="game-stat-card">
+                  <div class="stat-card-pin"></div>
+                  <img src="img/Stats3.png" />
+                </div>
+                <div id="game-stat-card4" class="stat-card game-stat-card focusable hide" data-class="game-stat-card">
+                  <div class="stat-card-pin"></div>
+                  <img src="img/Stats4.png" />
+                </div>
+                <div id="game-stat-card5" class="stat-card game-stat-card focusable hide" data-class="game-stat-card">
+                  <div class="stat-card-pin"></div>
+                  <img src="img/Stats5.png" />
+                </div>
+              </div>
+            </div>
+
+            <div id="game-fantasy-card-container" class="game-card-container">
+              <div class="card-container-inner game-fantasy-card-container-inner">
+                <div id="game-fantasy-card1" class="stat-card game-fantasy-card focusable hide bg_carousal fantasy_bg_carousal1" data-class="game-fantasy-card">
+                  <div class="stat-card-pin"></div>
+                  <img src="img/Fantasy1.png" />
+                </div>
+                <div id="game-fantasy-card2" class="stat-card game-fantasy-card focusable hide" data-class="game-fantasy-card">
+                  <div class="stat-card-pin"></div>
+                  <img src="img/Fantasy2.png" />
+                </div>
+                <!-- <div id="game-fantasy-card3" class="stat-card game-fantasy-card focusable hide" data-class="game-fantasy-card">
+                  <div class="stat-card-pin"></div>
+                  <img src="img/Fantasy3.png" />
+                </div>
+                <div id="game-fantasy-card4" class="stat-card game-fantasy-card focusable hide" data-class="game-fantasy-card">
+                  <div class="stat-card-pin"></div>
+                  <img src="img/Fantasy4.png" />
+                </div> -->
+              </div>
+            </div>
+
+            <div id="game-score-card-container" class="game-card-container">
+              <div class="card-container-inner game-score-card-container-inner">
+                <div id="game-score-card1" class="stat-card game-score-card focusable pinnable hide" data-class="game-score-card" data-hover-text="J. Embiid missed layup" data-mosaic23="img/Score1-mosaic23.png" data-mosaic4="img/Score1-mosaic4.png">
+                  <div class="stat-card-pin"></div>
+                  <img src="img/Score1.png" />
+                </div>
+                <div id="game-score-card2" class="stat-card game-score-card focusable pinnable hide" data-class="game-score-card" data-hover-text="R. Arcidiacono rebound" data-mosaic23="img/Score2-mosaic23.png" data-mosaic4="img/Score2-mosaic4.png">
+                  <div class="stat-card-pin"></div>
+                  <img src="img/Score2.png" />
+                </div>
+                <div id="game-score-card3" class="stat-card game-score-card focusable pinnable hide" data-class="game-score-card" data-mosaic23="img/Score3-mosaic23.png" data-mosaic4="img/Score3-mosaic4.png">
+                  <div class="stat-card-pin"></div>
+                  <img src="img/Score3.png" />
+                </div>
+                <div id="game-score-card4" class="stat-card game-score-card focusable pinnable hide" data-class="game-score-card" data-mosaic23="img/Score4-mosaic23.png" data-mosaic4="img/Score4-mosaic4.png">
+                  <div class="stat-card-pin"></div>
+                  <img src="img/Score4.png" />
+                </div>
+                <div id="game-score-card5" class="stat-card game-score-card focusable pinnable hide" data-class="game-score-card" data-mosaic23="img/Score5-mosaic23.png" data-mosaic4="img/Score5-mosaic4.png">
+                  <div class="stat-card-pin"></div>
+                  <img src="img/Score5.png" />
+                </div>
+              </div>
+            </div>
+
+            <div id="game-odds-card-container" class="game-card-container">
+              <div class="card-container-inner game-odds-card-container-inner">
+                <div id="game-odds-card1" class="stat-card game-odds-card focusable hide" data-class="game-odds-card">
+                  <div class="stat-card-pin"></div>
+                  <img src="img/Odds1.png" />
+                </div>
+                <div id="game-odds-card2" class="stat-card game-odds-card focusable pinnable hide" data-class="game-odds-card" data-mosaic23="img/Odds2-mosaic23.png" data-mosaic4="img/Odds2-mosaic4.png">
+                  <div class="stat-card-pin"></div>
+                  <img src="img/Odds2.png" />
+                </div>
+                <div id="game-odds-card3" class="stat-card game-odds-card focusable hide" data-class="game-odds-card">
+                  <div class="stat-card-pin"></div>
+                  <img src="img/Odds3.png" />
+                </div>
+              </div>
+            </div>
+
+            <div id="game-feeds-card-container" class="game-card-container">
+              <div class="card-container-inner game-feeds-card-container-inner">
+                <div id="game-feeds-card1" class="stat-card game-feeds-card focusable hide" data-class="game-feeds-card" data-video-url="../videos/LA-Clippers-vs-Chicago-Bulls-Full-Game-Highlights-March-31-2022-NBA-Season.mp4" data-yt-video-id="FORXBT6GFa0">
+                  <img src="img/Feed1.png" />
+                  <video class="game-feed-inline-video show-when-focused"
+                    src="../videos/LA-Clippers-vs-Chicago-Bulls-Full-Game-Highlights-March-31-2022-NBA-Season.mp4" autoplay
+                    muted></video>
+                </div>
+                <div id="game-feeds-card2" class="stat-card game-feeds-card focusable hide" data-class="game-feeds-card" data-video-url="../videos/LA-Clippers-vs-Chicago-Bulls-Full-Game-Highlights-March-31-2022-NBA-Season.mp4" data-yt-video-id="uMvmquD91kc">
+                  <img src="img/Feed2.png" />
+                  <video class="game-feed-inline-video show-when-focused" src="../videos/LA-Clippers-vs-Chicago-Bulls-Full-Game-Highlights-March-31-2022-NBA-Season.mp4" autoplay muted></video>
+                </div>
+                <div id="game-feeds-card3" class="stat-card game-feeds-card focusable hide" data-class="game-feeds-card" data-video-url="../videos/LA-Clippers-vs-Chicago-Bulls-Full-Game-Highlights-March-31-2022-NBA-Season.mp4" data-yt-video-id="FORXBT6GFa0">
+                  <img src="img/Feed3.png" />
+                </div>
+                <div id="game-feeds-card4" class="stat-card game-feeds-card focusable hide" data-class="game-feeds-card" data-video-url="../videos/LA-Clippers-vs-Chicago-Bulls-Full-Game-Highlights-March-31-2022-NBA-Season.mp4" data-yt-video-id="FORXBT6GFa0">
+                  <img src="img/Feed4.png" />
+                </div>
+                <div id="game-feeds-card5" class="stat-card game-feeds-card focusable hide" data-class="game-feeds-card" data-video-url="../videos/LA-Clippers-vs-Chicago-Bulls-Full-Game-Highlights-March-31-2022-NBA-Season.mp4" data-yt-video-id="FORXBT6GFa0">
+                  <img src="img/Feed5.png" />
+                </div>
+                <div id="game-feeds-card6" class="stat-card game-feeds-card focusable hide" data-class="game-feeds-card" data-video-url="../videos/LA-Clippers-vs-Chicago-Bulls-Full-Game-Highlights-March-31-2022-NBA-Season.mp4" data-yt-video-id="FORXBT6GFa0">
+                  <img src="img/Feed6.png" />
+                </div>
+                <div id="game-feeds-card7" class="stat-card game-feeds-card focusable hide" data-class="game-feeds-card" data-video-url="../videos/LA-Clippers-vs-Chicago-Bulls-Full-Game-Highlights-March-31-2022-NBA-Season.mp4" data-yt-video-id="FORXBT6GFa0">
+                  <img src="img/Feed1.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div id="mosaic-mode-panel" class="panel-inner hide">
+            <div id="mosaic-mode-card1" class="stat-card mosaic-mode-card focusable" data-class="mosaic-mode-card">
+              <div class="stat-card-pin"></div>
+              <img src="img/mosaic-panel-stats.png" />
+            </div>
+            <div id="mosaic-mode-card2" class="stat-card mosaic-mode-card focusable" data-class="mosaic-mode-card">
+              <div class="stat-card-pin"></div>
+              <img src="img/mosaic-panel-scores.png" />
+            </div>
+            <div id="mosaic-mode-card3" class="stat-card mosaic-mode-card focusable" data-class="mosaic-mode-card">
+              <div class="stat-card-pin"></div>
+              <img src="img/Feed1.png" />
+            </div>
+            <div id="mosaic-mode-card4" class="stat-card mosaic-mode-card focusable" data-class="mosaic-mode-card">
+              <div class="stat-card-pin"></div>
+              <img src="img/Feed2.png" />
+            </div>
+            <div id="mosaic-mode-card5" class="stat-card mosaic-mode-card focusable" data-class="mosaic-mode-card">
+              <div class="stat-card-pin"></div>
+              <img src="img/Feed3.png" />
+            </div>
+            <div id="mosaic-mode-card6" class="stat-card mosaic-mode-card focusable" data-class="mosaic-mode-card">
+              <div class="stat-card-pin"></div>
+              <img src="img/Feed4.png" />
+            </div>
+          </div> -->
+        </div>
+
+        
+        
+        <div class="ytv-options">
+          <div class="ytvlr-overlay-scrim hide"></div>
+          <div class="channels-list">
+            <div class="chip-container channel-logos hide" id="channel-logos">
+              <div id="channel-logo1" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo2" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo3" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo4" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo5" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo6" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo7" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo8" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo9" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo10" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo11" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo12" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo13" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo14" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo15" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo16" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo17" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo18" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo19" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+              <div id="channel-logo20" class="chip translucent channel-logo focusable" data-class="channel-logo" data-video-id="">
+                <img src="img/icons/FX-logo.svg" class="logo-img" />
+                <img src="img/icons/FX-logo-focused.svg" class="logo-img-focused" />
+                <div class="channel-details">
+                  <div class="channel-series-name">Insecure</div>
+                  <div class="channel-episode">S1 E4</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="chip-container channel-logos onboarding-landing hide" id="channel-logos">
+              <div id="channel-logo1" class="chip translucent landing-channel-logo landing-channel-logo-abc channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo2" class="chip translucent landing-channel-logo landing-channel-logo-cbs channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo3" class="chip translucent landing-channel-logo landing-channel-logo-fox channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo4" class="chip translucent landing-channel-logo landing-channel-logo-nbc channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo5" class="chip translucent landing-channel-logo landing-channel-logo-espn channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo6" class="chip translucent landing-channel-logo landing-channel-logo-hgtv channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo7" class="chip translucent landing-channel-logo landing-channel-logo-abc channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo8" class="chip translucent landing-channel-logo landing-channel-logo-cbs channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo9" class="chip translucent landing-channel-logo landing-channel-logo-fox channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo10" class="chip translucent landing-channel-logo landing-channel-logo-nbc channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo11"
+                class="chip translucent landing-channel-logo landing-channel-logo-espn channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo12"
+                class="chip translucent landing-channel-logo landing-channel-logo-hgtv channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo13" class="chip translucent landing-channel-logo landing-channel-logo-abc channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo14" class="chip translucent landing-channel-logo landing-channel-logo-cbs channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo15" class="chip translucent landing-channel-logo landing-channel-logo-fox channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo16" class="chip translucent landing-channel-logo landing-channel-logo-nbc channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo17"
+                class="chip translucent landing-channel-logo landing-channel-logo-espn channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo18"
+                class="chip translucent landing-channel-logo landing-channel-logo-hgtv channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo19" class="chip translucent landing-channel-logo landing-channel-logo-abc channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+              <div id="channel-logo20" class="chip translucent landing-channel-logo landing-channel-logo-cbs channel-logo focusable"
+                data-class="channel-logo" data-video-id=""></div>
+            </div> -->
+          </div>
+
+          <div class="key-plays-list hide" id="key-plays-list">
+            <div class="key-plays-progress-bars">
+              <div class="key-plays-progress-bar" data-fill="100%" data-key-play-id="key-play1">
+                <div class="key-plays-progress-bar-fill" style="width: 100%"></div>
+              </div>
+              <div class="key-plays-progress-bar" data-fill="100%" data-key-play-id="key-play2">
+                <div class="key-plays-progress-bar-fill" style="width: 100%"></div>
+              </div>
+              <div class="key-plays-progress-bar" data-fill="100%" data-key-play-id="key-play3">
+                <div class="key-plays-progress-bar-fill" style="width: 100%"></div>
+              </div>
+              <div class="key-plays-progress-bar" data-fill="50%" data-key-play-id="key-play4">
+                <div class="key-plays-progress-bar-fill" style="width: 50%"></div>
+              </div>
+              <div class="key-plays-progress-bar" data-fill="0%" data-key-play-id="key-play5">
+                <div class="key-plays-progress-bar-fill" style="width: 0%"></div>
+              </div>
+              <div class="key-plays-progress-bar" data-fill="0%" data-key-play-id="key-play6">
+                <div class="key-plays-progress-bar-fill" style="width: 0%"></div>
+              </div>
+            </div>
+
+            <div class="key-plays-list-inner">
+              <div id="key-play1" class="key-play focusable" data-class="key-play">
+                <img src="img/Key-Play1.png" />
+                <div class="key-play-details">
+                  <div class="key-play-name">Key play</div>
+                  <div class="key-play-duration">09:36</div>
+                </div>
+              </div>
+              <div id="key-play2" class="key-play focusable " data-class="key-play">
+                <img src="img/Key-Play2.png" />
+                <div class="key-play-details">
+                  <div class="key-play-name">Key play</div>
+                  <div class="key-play-duration">04:24</div>
+                </div>
+              </div>
+              <div id="key-play3" class="key-play focusable" data-class="key-play">
+                <img src="img/Key-Play1.png" />
+                <div class="key-play-details">
+                  <div class="key-play-name">Key play</div>
+                  <div class="key-play-duration">09:36</div>
+                </div>
+              </div>
+              <div id="key-play4" class="key-play focusable" data-class="key-play">
+                <img src="img/Key-Play2.png" />
+                <div class="key-play-details">
+                  <div class="key-play-name">Key play</div>
+                  <div class="key-play-duration">04:24</div>
+                </div>
+              </div>
+              <div id="key-play5" class="key-play focusable" data-class="key-play">
+                <img src="img/Key-Play1.png" />
+                <div class="key-play-details">
+                  <div class="key-play-name">Key play</div>
+                  <div class="key-play-duration">09:36</div>
+                </div>
+              </div>
+              <div id="key-play6" class="key-play focusable" data-class="key-play">
+                <img src="img/Key-Play2.png" />
+                <div class="key-play-details">
+                  <div class="key-play-name">Key play</div>
+                  <div class="key-play-duration">04:24</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div id="player" class=" player" tabindex="-1">
+            <div id="player-container" class="video-player">
+              <div
+                class="html5-video-player ytp-hide-controls ytp-exp-bottom-control-flexbox ytp-exp-ppp-update ad-created"
+                tabindex="-1" id="player-container-player"
+                data-version="/s/player/2dfe380c/tv-player-ias.vflset/tv-player-ias.js">
+                <div class="html5-video-container" data-layer="0">
+                  <!-- src="blob:https://www.youtube.com/a26cc0c5-408d-4948-b707-b9b1eac1d4d7"> -->
+                    <div class="mosaic-container" data-tiles="1">
+                      <div id="mosaic-tile1" class="mosaic-tile focusable mosaic1">
+                        <!-- <video tabindex="-1" class="video-stream html5-main-video" controlslist="nodownload" autoplay src="../videos/NBA1-2.mp4" muted> -->
+                        </video>
+                        <div id="video-player-container1" class="video-player-container"></div>
+                      </div>
+                      <div id="mosaic-tile2" class="mosaic-tile focusable mosaic2">
+                        <video tabindex="-1" class="video-stream html5-main-video" controlslist="nodownload" autoplay src="../videos/NBA1-2.mp4" muted>
+                        </video>
+                        <div id="video-player-container2" class="video-player-container"></div>
+                      </div>
+                      <div id="mosaic-tile3" class="mosaic-tile focusable mosaic3">
+                        <video tabindex="-1" class="video-stream html5-main-video" controlslist="nodownload" autoplay src="../videos/NBA1-2.mp4" muted>
+                        </video>
+                        <div id="video-player-container3" class="video-player-container"></div>
+                      </div>
+                      <div id="mosaic-tile4" class="mosaic-tile focusable mosaic4">
+                        <video tabindex="-1" class="video-stream html5-main-video" controlslist="nodownload" autoplay src="../videos/NBA1-2.mp4" muted>
+                        </video>
+                        <div id="video-player-container4" class="video-player-container"></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="html5-video-info-panel" data-layer="4" style="display: none;">
+                  <div class="html5-video-info-panel-content">
+                    <div>
+                      <div>Video ID / sCPN</div><span></span>
+                    </div>
+                    <div>
+                      <div>Viewport / Frames</div><span></span>
+                    </div>
+                    <div>
+                      <div>Current / Optimal Res</div><span></span>
+                    </div>
+                    <div>
+                      <div>Volume / Normalized</div><span></span>
+                    </div>
+                    <div>
+                      <div>Codecs</div><span></span>
+                    </div>
+                    <div style="">
+                      <div>Shader Info</div><span></span>
+                    </div>
+                    <div style="">
+                      <div>Color</div><span></span>
+                    </div>
+                    <div style="">
+                      <div>Protected</div><span></span>
+                    </div>
+                    <div style="">
+                      <div>Connection Speed</div><span><span>
+                          <div class="ytp-horizonchart" style="width: 300px; height: 1em;"></div>
+                        </span><span></span></span>
+                    </div>
+                    <div style="">
+                      <div>Network Activity</div><span><span>
+                          <div class="ytp-horizonchart" style="width: 300px; height: 1em;"></div>
+                        </span><span></span></span>
+                    </div>
+                    <div>
+                      <div>Buffer Health</div><span><span>
+                          <div class="ytp-horizonchart" style="width: 300px; height: 1em;"></div>
+                        </span><span></span></span>
+                    </div>
+                    <div style="">
+                      <div>Live Latency</div><span><span>
+                          <div class="ytp-horizonchart" style="width: 300px; height: 1em;"></div>
+                        </span><span></span></span>
+                    </div>
+                    <div style="">
+                      <div>Live Mode</div><span></span>
+                    </div>
+                    <div style="">
+                      <div>Playback Categories</div><span></span>
+                    </div>
+                    <div>
+                      <div>Mystery Text</div><span></span>
+                    </div>
+                    <div style="">
+                      <div>COTN / Local Media</div><span></span>
+                    </div>
+                    <div style="">
+                      <div>Player Release</div><span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="ytp-caption-window-container" id="ytp-caption-window-container" data-layer="4"></div>
+                <div class="ytp-offline-slate" data-layer="4" style="display: none;">
+                  <div class="ytp-offline-slate-background"></div>
+                  <div class="ytp-offline-slate-bar"><span class="ytp-offline-slate-icon"><svg fill="#fff" height="100%"
+                        viewBox="0 0 24 24" width="100%">
+                        <path
+                          d="M16.94 6.91l-1.41 1.45c.9.94 1.46 2.22 1.46 3.64s-.56 2.71-1.46 3.64l1.41 1.45c1.27-1.31 2.05-3.11 2.05-5.09s-.78-3.79-2.05-5.09zM19.77 4l-1.41 1.45C19.98 7.13 21 9.44 21 12.01c0 2.57-1.01 4.88-2.64 6.54l1.4 1.45c2.01-2.04 3.24-4.87 3.24-7.99 0-3.13-1.23-5.96-3.23-8.01zM7.06 6.91c-1.27 1.3-2.05 3.1-2.05 5.09s.78 3.79 2.05 5.09l1.41-1.45c-.9-.94-1.46-2.22-1.46-3.64s.56-2.71 1.46-3.64L7.06 6.91zM5.64 5.45L4.24 4C2.23 6.04 1 8.87 1 11.99c0 3.13 1.23 5.96 3.23 8.01l1.41-1.45C4.02 16.87 3 14.56 3 11.99s1.01-4.88 2.64-6.54z">
+                        </path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg></span><span class="ytp-offline-slate-messages">
+                      <div class="ytp-offline-slate-main-text"></div>
+                      <div class="ytp-offline-slate-subtitle-text"></div>
+                    </span><span class="ytp-offline-slate-buttons"></span></div><button
+                    class="ytp-offline-slate-close-button ytp-button"><svg height="100%" version="1.1"
+                      viewBox="0 0 32 32" width="100%">
+                      <path d="m 12.59,20.34 4.58,-4.59 -4.58,-4.59 1.41,-1.41 6,6 -6,6 z" fill="#fff"></path>
+                    </svg></button><button class="ytp-offline-slate-open-button ytp-button"><svg height="100%"
+                      version="1.1" viewBox="0 0 32 32" width="100%">
+                      <path d="M 19.41,20.09 14.83,15.5 19.41,10.91 18,9.5 l -6,6 6,6 z" fill="#fff"></path>
+                    </svg></button>
+                  <div class="ytp-offline-slate-trailer-chip">Trailer</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="blackout-overlay" class="hidden no-model blackout-overlay" tabindex="-1">
+            <div class="blackout-background-image no-model image" data-image-url="{{model.getBackgroundUrl()}}"
+              tabindex="-1"></div>
+            <div class="overlay ">
+              <div class="blackout-message-container">
+                <div class="blackout-image-container">
+                  <div class="blackout-image no-model image" data-image-url="{{model.getThumbnailUrl()}}"
+                    data-background-color="{{model.getBackgroundColor()}}" tabindex="-1"></div>
+                </div>
+                <div class="badge icon "></div>
+                <div class="blackout-title"></div>
+                <div class="blackout-reason"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="black-overlay"></div>
+        <div id="zylon-sliding-text-player-overlay" class="no-model zylon-sliding-text-player-overlay" tabindex="-1">
+        </div>
+        <div class="zylon-instream-survey-ad no-model" tabindex="-1">
+          <ytvlr-instream-survey-ad class="ytvlr-instream-survey-ad" tabindex="-1"></ytvlr-instream-survey-ad>
+        </div>
+        <!-- this empty element gets focused in the idle state,    to ensure playback controls aren't focused anymore. -->
+        <div id="idle-focus-target" class="idle-focus-target hidden no-model component" data-can-be-focus-leaf="true"
+          tabindex="-1"> </div>
+        <div id="post-play" class="hidden no-model post-play" tabindex="-1">
+          <div class="background-image no-model image" data-image-url="{{model.getBackgroundImage()}}" tabindex="-1">
+          </div>
+          <div class="overlay"></div>
+          <div class="metadata">
+            <div class="prev-metadata-container">
+              <div class="post-play-title"></div>
+              <div class="video-title-container">
+                <div class="video-title"></div>
+                <div class="video-byline-and-badging">
+                  <div bedrock-style="background-color: {{model.fillColor}};" class="uhd-badge no-model text-badge"
+                    tabindex="-1" style="">
+                    <div class="no-model formatted-string" tabindex="-1">
+                      <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+                    </div>
+                  </div>
+                  <div class="video-byline"></div>
+                </div>
+              </div>
+            </div>
+            <div class="next-metadata-container">
+              <div class="post-play-title"></div>
+              <div class="next-metadata-image-container">
+                <div class="play-next-image-button no-model tiltable-image-button" tabindex="-1">
+                  <div class="no-model tiltable" data-max-translate-x="{{maxTranslateX || 1}}"
+                    data-max-translate-y="{{maxTranslateY || 1}}" tabindex="-1">
+                    <div class="no-model image" data-image-url="{{parent.model.imageUrl}}" tabindex="-1"></div> <span
+                      class="label"></span>
+                  </div>
+                </div>
+                <div class="circular-progress-bar no-model" id="circular-progress-bar" tabindex="-1">
+                  <div class="background-circle"></div>
+                  <div class="cover" bedrock-style="{{getCoverOverflow()}}" style="overflow: hidden;">
+                    <div class="half" bedrock-style="{{getRightHalfCircleTransform()}}"
+                      style="transform: rotate(0deg);"></div>
+                    <div class="half" bedrock-style="{{getLeftHalfCircleTransform()}}" style="transform: rotate(0deg);">
+                    </div>
+                  </div>
+                </div>
+                <div class="play-button">
+                  <div class="icon play_arrow"></div>
+                </div>
+                <div class="secondary-badge-container ">
+                  <div class="icon "></div>
+                </div>
+              </div>
+              <div class="video-title-container">
+                <div class="video-title"></div>
+                <div class="video-byline"></div>
+              </div>
+            </div>
+          </div>
+          <div class="no-model end-screen-contents" tabindex="-1">
+            <div class="post-play-title"></div>
+            <div class="no-model horizontal-list-shelves" tabindex="-1">
+              <div class="no-model new-list shelf-list" data-model="{{model.getShelves()}}"
+                data-can-be-focus-leaf="false" tabindex="-1"
+                style="position: relative; overflow: visible; height: 45em; width: 100%;">
+                <div class="new-list-container vertical"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="post-play-error" class="hidden no-model post-play-error" tabindex="-1">
+          <div class="image-with-text-layout">
+            <div class="no-model image" data-image-url="{{model.imageUrl}}" tabindex="-1"></div>
+            <div class="primary-text"></div>
+            <div class="secondary-text"></div>
+          </div>
+          <div class="dummy-progress-bar hide-during-background-playback"></div>
+        </div>
+
+
+        <div class="skippable-ad-controls hide">
+          <div class="ad-info-badge">
+            <img src="img/icons/info_outline_white.svg" class="icon" />
+            <span class="ad-info-badge-text">Ad info</span>
+          </div>
+        </div>
+
+        <div id="watch-overlay" class=" live-playback watch-overlay hidden-controls" tabindex="-1"> 
+          <div class="no-model smart-display-touch-zone" tabindex="-1"></div>
+          <div class="new-background"></div>
+          <div class="hidden no-model key-plays-clips" tabindex="-1">
+            <div class="clip-info">
+              <div class="text-container" aria-live="polite">
+                <div class="primary-text no-model lens-updatable-item" tabindex="-1">
+                  <div class="no-model formatted-string" tabindex="-1">
+                    <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+                  </div>
+                </div>
+                <div class="secondary-text"></div>
+              </div>
+              <div class="circular-progress-container">
+                <div class="circular-progress-bar no-model" tabindex="-1">
+                  <div class="background-circle"></div>
+                  <div class="cover" bedrock-style="{{getCoverOverflow()}}" style="overflow: hidden;">
+                    <div class="half" bedrock-style="{{getRightHalfCircleTransform()}}"
+                      style="transform: rotate(0deg);"></div>
+                    <div class="half" bedrock-style="{{getLeftHalfCircleTransform()}}" style="transform: rotate(0deg);">
+                    </div>
+                  </div>
+                </div>
+                <div class="player-icon" bedrock-style="background-color: {{model.getPlayerIconBackgroundColor()}};"
+                  style="">
+                  <div class="no-model image" data-image-url="{{model.getPlayerImage()}}" tabindex="-1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="gradient-container">
+              <div class="left-arrow"></div>
+              <div class="right-arrow"></div>
+            </div>
+          </div>
+          <!-- <div class="logo">
+            <div class="logo-circle" bedrock-style="background-color: {{model.getWatchMetadata().getNetworkColor()}};"
+              style="background-color: rgb(0, 0, 0);"> </div>
+            <div class="no-model image" data-image-url="{{model.getWatchMetadata().getNetworkLogoButton().imageUrl}}"
+              tabindex="-1"
+              style="background-image: url(&quot;https://yt3.ggpht.com/E7uqvJfbq_JslSrUl4bR-_X3ANmEXTtmLEpd5-sxQjKMhITAQWZeCaSGVaXnC3vmFOw_aHNX0oKc=s480&quot;);">
+            </div>
+          </div> -->
+          <div class="overlay-button no-model button" role="button" tabindex="-1"><span class="label"></span></div>
+          <div class="controls-visibility screenreader-only" aria-live="polite"> </div>
+          <div class="animation-container">
+            <div id="watch-metadata" class=" new-watch-metadata" tabindex="-1">
+              <div class="metadata-container">
+                <div class="event-logo no-model image"
+                  data-image-url="{{parent.model.getWatchTentpoleMetadata().getEventLogoImage()}}" tabindex="-1"> </div>
+                <!-- only during tentpole events -->
+                <!-- <div class="at-live-head player-text-badge" tabindex="-1"> <span> LIVE </span></div> -->
+                <span class="badge badge-live at-live-head">LIVE</span>
+                <div class="secondary-text">5pm – 8pm</div>
+                <div class="primary-text">Golden State Warriors at Boston Celtics</div>
+              </div>
+              <div class="time-container hide">
+                <div class="no-model hidden upg-elapsed-time" tabindex="-1">
+                  <div class="no-model elapsed-time" tabindex="-1">13:00:05</div><span id="slash"> /
+                  </span><span>0:00</span>
+                </div> <!-- only on non-live -->
+                <div class="live-airing-time">5:14 – 8:15 PM</div> <!-- only on live videos -->
+              </div>
+              <div class="smart-display-ytv-logo"></div>
+            </div>
+            <div id="progress-bar" class="focusable focused new-progress-bar at-live-head"
+              aria-label="Golden State Warriors at Boston Celtics Press enter to play or pause." tabindex="-1">
+              <div class="bar">
+                <div class="lines">
+                  <div class="background"></div>
+                  <div class="seekable" bedrock-style="{{getSeekableTransform()}}"
+                    style="transform: translateX(485.634px) scaleX(0.00535825);"></div>
+                  <div class="buffered" bedrock-style="{{getBufferedTransform()}}"
+                    style="transform: translateX(0px) scaleX(0);"></div>
+                  <div class="no-model cue-range-markers" tabindex="-1"></div>
+                  <div class="played" bedrock-style="{{getPlayedTransform()}}"
+                    style="transform: translateX(485.634px) scaleX(0.00371384);"></div>
+                  <div class="blackout-markers  div-list" tabindex="-1"></div>
+                </div>
+                <div id="scrubber" class="hidden default-seek new-scrubber" tabindex="-1">
+                  <div class="storyboard" bedrock-style="{{getStoryboardLeft()}}"
+                    style="transform: translateX(236.84px);">
+                    <div class="time-info-container">
+                      <div class="seek-details">
+                        <div class="default-seek-details">
+                          <div class="rotate-icon"></div>
+                          <div class="seek-delta" aria-hidden="true">15 sec</div>
+                        </div>
+                        <div class="accelerated-seek-details">
+                          <div class="first arrow-icon"></div>
+                          <div class="second arrow-icon"></div>
+                          <div class="third arrow-icon"></div>
+                        </div>
+                      </div>
+                      <div class="current-time" aria-live="assertive">55:22</div>
+                    </div>
+                    <div class="fake-thumbnail"></div>
+                    <div class=" storyboard-thumbnail" tabindex="-1">
+                      <div class="storyboard-thumbnail-image no-model image" data-image-url="{{getMosaicUrl()}}"
+                        tabindex="-1"
+                        style="background-position: 100% 50%; background-size: 300% 300%; background-image: url(&quot;https://i.ytimg.com/sb/G_hk3bAE6iQ/storyboard_live_60_3x3_b0/M35326.jpg?rs=AOn4CLBupugzQZs2CdKhx2Uc6IxFVORs2Q&quot;);">
+                      </div>
+                    </div>
+                    <div class="blackout-thumbnail">
+                      <div class="icon visibility_off"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="knob-container" bedrock-style="{{getKnobPosition()}}"
+                style="transform: translateX(491.584px);">
+                <div class="scrubber-rewind-image no-model image"
+                  data-image-url="{{parent.model.getWatchTentpoleMetadata().getScrubberBackImage()}}" tabindex="-1">
+                </div>
+                <div class="scrubber-forward-image no-model image"
+                  data-image-url="{{parent.model.getWatchTentpoleMetadata().getScrubberForwardImage()}}" tabindex="-1">
+                </div>
+                <div class="scrubber-head-image no-model image"
+                  data-image-url="{{parent.model.getWatchTentpoleMetadata().getScrubberHeadImage()}}" tabindex="-1">
+                </div>
+                <div class="knob"></div>
+                <div class="live-head-circle"></div>
+              </div>
+            </div>
+            <div id="player-toolbar" class=" player-toolbar" tabindex="-1">
+              <div class=" player-toolbar-menu" tabindex="-1">
+                <div class="chip-container player-toolbar-options" id="player-toolbar-options">
+                  <div id="option-channels" class="chip translucent player-toolbar-option focusable">Channels</div>
+                  <div id="option-key-plays" class="chip translucent player-toolbar-option focusable">Key plays</div>
+                  <div id="option-more-to-watch" class="chip translucent player-toolbar-option focusable">More to watch</div>
+                  <!-- <div id="option-mosaic-view" class="chip translucent player-toolbar-option focusable show_when_prototype_b">Mosaic View</div> -->
+                  <!-- <div id="option-feeds" class="chip translucent player-toolbar-option focusable">Feeds</div> -->
+                  <div id="option-game-views" class="chip translucent player-toolbar-option focusable">Game views</div>
+                  <!-- <div class="chip translucent player-toolbar-option focusable">Game views</div> -->
+                  <div id="option-more-options" class="button icon translucent player-toolbar-option focusable">
+                    <img src="img/icons/more_vertical.svg" class="icon button-icon">
+                    <img src="img/icons/more_vertical-black.svg" class="icon icon-inverse button-icon" />
+                  </div>
+                </div>
+              </div>
+
+              <div class=" content-stage" data-model="{{model.getContentStage()}}" tabindex="-1">
+                <div class=" horizontal-list-shelves" tabindex="-1">
+                  <div class="new-list shelf-list" data-model="{{model.getShelves()}}" data-can-be-focus-leaf="false"
+                    tabindex="-1" style="position: relative; overflow: visible; height: 45em; width: 100%;">
+                    <div class="new-list-container vertical">
+                      <div role="row" aria-label="" data-list-selector=".full-width-shelf-video-list"
+                        class="selected small-video-sized full-width-shelf" tabindex="-1"
+                        style="position: absolute; height: 19.5em; transform: translateY(0px);">
+                        <div class="shelf-title">
+                          <div class="no-model image" data-image-url="{{model.getThumbnail()}}" tabindex="-1"></div>
+                          <div class="label"></div>
+                        </div>
+                        <div class="shelf-list-container">
+                          <div class="video-list new-list full-width-shelf-video-list" tabindex="-1"
+                            style="position: relative; overflow: visible; width: 80em; height: 100%;">
+                            <div class="new-list-container horizontal">
+                              <div class="tile selected has-secondary-text channel-content small-video small-video-tile"
+                                aria-labelledby="video-tile-label-114 video-thumbnail-label-6" role="gridcell"
+                                tabindex="-1"
+                                style="position: absolute; width: 17.85em; transform: translateX(4.07em);">
+                                <div class="no-model tiltable" tabindex="-1">
+                                  <div aria-label="Live" id="video-thumbnail-label-6"
+                                    class="has-focus-thumbnail video-thumbnail" tabindex="-1">
+                                    <!-- LINT.IfChange -->
+                                    <div class="image-container">
+                                      <div class="thumbnail no-model image" data-image-url="{{model.getThumbnailUrl()}}"
+                                        data-background-color="{{model.getBackgroundColor()}}" tabindex="-1"
+                                        style="background-color: rgb(29, 66, 138); background-image: url(&quot;https://yt3.ggpht.com/NmlC6V5KtCr82Jm-Sp04jc1jNKuVzW5IDyuC59yE1ENiNoc0P3WTkuByFJOrPm_fs1yKNQ_9-Wkp=s511&quot;);">
+                                      </div>
+                                      <div class="focus-thumbnail no-model image"
+                                        data-image-url="{{model.getFocusThumbnailUrl()}}"
+                                        data-background-color="{{model.getBackgroundColor()}}" tabindex="-1"
+                                        style="background-color: rgb(29, 66, 138); background-image: url(&quot;https://yt3.ggpht.com/udUopZhf6rx9lrG-LQ4I59-6Ue--SHWuzEXwHOvqYvJ1Zu5YK0iY6M2Sa6Ul2Yn1P8ckK33Wk6o=s511&quot;);">
+                                      </div>
+                                    </div>
+                                    <div class="text-badge-container live">
+                                      <div class="text-badge">LIVE</div>
+                                    </div>
+                                    <div class="icon-badge-container hidden">
+                                      <div class="icon-badge no-model image"
+                                        data-image-url="{{model.getIconBadgeUrl()}}" tabindex="-1"></div>
+                                    </div>
+                                    <div class="secondary-badge-container hidden">
+                                      <div class="icon hidden"></div>
+                                    </div>
+                                    <div class="mini-progress-bar" bedrock-style="{{getProgressBarWidth()}}"
+                                      style="width: 43.6053%;"></div>
+                                    <div class="text-overlay-background">
+                                      <div class="text-overlay-text"></div>
+                                    </div>
+                                    <div class="icon-thumbnail-overlay"
+                                      bedrock-style="background-color: {{model.getIconThumbnailOverlayBackgroundColor()}};"
+                                      style="">
+                                      <div class="icon "></div>
+                                    </div>
+                                    <!-- LINT.ThenChange(//depot/google3/video/youtube/tv/upg/html/video_thumbnail_with_tenx.html) -->
+                                  </div>
+                                </div>
+                                <div id="video-tile-label-114" class="video-text-container ">
+                                  <div class="primary-text">Denver Nuggets at Dallas Mavericks</div>
+                                  <div class="primary-text-second-line"></div>
+                                  <div class="secondary-text-and-badging">
+                                    <div bedrock-style="background-color: {{model.fillColor}};"
+                                      class="secondary-text-badge no-model text-badge" tabindex="-1" style="">
+                                      <div class="no-model formatted-string" tabindex="-1">
+                                        <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+                                      </div>
+                                    </div>
+                                    <div class="secondary-text">NBA TV • Today, 5:08 – 7:30 PM</div>
+                                  </div>
+                                  <!-- This field only appears on focus unless in a grid (see detailed_video_grid.scss). -->
+                                  <div class="tertiary-text no-model formatted-string" tabindex="-1">
+                                    <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+                                  </div>
+                                  <div class="quaternary-container  badged-text-container" tabindex="-1">
+                                    <div class=" non-interactive-list" data-model="{{getItems()}}" tabindex="-1"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tile has-secondary-text channel-content small-video small-video-tile"
+                                aria-labelledby="video-tile-label-115 video-thumbnail-label-7" role="gridcell"
+                                tabindex="-1"
+                                style="position: absolute; width: 17.85em; transform: translateX(22.07em);">
+                                <div class="no-model tiltable" tabindex="-1">
+                                  <div aria-label="Live" id="video-thumbnail-label-7"
+                                    class="has-focus-thumbnail video-thumbnail" tabindex="-1">
+                                    <!-- LINT.IfChange -->
+                                    <div class="image-container">
+                                      <div class="thumbnail no-model image" data-image-url="{{model.getThumbnailUrl()}}"
+                                        data-background-color="{{model.getBackgroundColor()}}" tabindex="-1"
+                                        style="background-color: rgb(246, 184, 26); background-image: url(&quot;https://yt3.ggpht.com/E2zwpOT_6qW_IS33l7jXrJ1ZgKLlU2ZCatkN6JJO5Qb7mqvWS0dYjkxcPr_PgA8m8ZwRJ7ZIFkA=s511&quot;);">
+                                      </div>
+                                      <div class="focus-thumbnail no-model image"
+                                        data-image-url="{{model.getFocusThumbnailUrl()}}"
+                                        data-background-color="{{model.getBackgroundColor()}}" tabindex="-1"
+                                        style="background-color: rgb(246, 184, 26); background-image: url(&quot;https://yt3.ggpht.com/rq7FFjmVb46EWmUb9cbzjECZIUnqVin06LAK_Sto2m9B3jSGSvwtl6POSGw0ef39jzONql6mOyM=s511&quot;);">
+                                      </div>
+                                    </div>
+                                    <div class="text-badge-container live">
+                                      <div class="text-badge">LIVE</div>
+                                    </div>
+                                    <div class="icon-badge-container hidden">
+                                      <div class="icon-badge no-model image"
+                                        data-image-url="{{model.getIconBadgeUrl()}}" tabindex="-1"></div>
+                                    </div>
+                                    <div class="secondary-badge-container hidden">
+                                      <div class="icon hidden"></div>
+                                    </div>
+                                    <div class="mini-progress-bar" bedrock-style="{{getProgressBarWidth()}}"
+                                      style="width: 38.9121%;"></div>
+                                    <div class="text-overlay-background">
+                                      <div class="text-overlay-text"></div>
+                                    </div>
+                                    <div class="icon-thumbnail-overlay"
+                                      bedrock-style="background-color: {{model.getIconThumbnailOverlayBackgroundColor()}};"
+                                      style="">
+                                      <div class="icon "></div>
+                                    </div>
+                                    <!-- LINT.ThenChange(//depot/google3/video/youtube/tv/upg/html/video_thumbnail_with_tenx.html) -->
+                                  </div>
+                                </div>
+                                <div id="video-tile-label-115" class="video-text-container ">
+                                  <div class="primary-text">Los Angeles Rams at San Francisco 49ers</div>
+                                  <div class="primary-text-second-line"></div>
+                                  <div class="secondary-text-and-badging">
+                                    <div bedrock-style="background-color: {{model.fillColor}};"
+                                      class="secondary-text-badge no-model text-badge" tabindex="-1" style="">
+                                      <div class="no-model formatted-string" tabindex="-1">
+                                        <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+                                      </div>
+                                    </div>
+                                    <div class="secondary-text">ABC 7 • Today, 5:00 – 8:00 PM</div>
+                                  </div>
+                                  <!-- This field only appears on focus unless in a grid (see detailed_video_grid.scss). -->
+                                  <div class="tertiary-text no-model formatted-string" tabindex="-1">
+                                    <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+                                  </div>
+                                  <div class="quaternary-container  badged-text-container" tabindex="-1">
+                                    <div class=" non-interactive-list" data-model="{{getItems()}}" tabindex="-1"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tile has-secondary-text channel-content small-video small-video-tile"
+                                aria-labelledby="video-tile-label-116 video-thumbnail-label-8" role="gridcell"
+                                tabindex="-1"
+                                style="position: absolute; width: 17.85em; transform: translateX(40.07em);">
+                                <div class="no-model tiltable" tabindex="-1">
+                                  <div aria-label="Live" id="video-thumbnail-label-8"
+                                    class="has-focus-thumbnail video-thumbnail" tabindex="-1">
+                                    <!-- LINT.IfChange -->
+                                    <div class="image-container">
+                                      <div class="thumbnail no-model image" data-image-url="{{model.getThumbnailUrl()}}"
+                                        data-background-color="{{model.getBackgroundColor()}}" tabindex="-1"
+                                        style="background-color: rgb(221, 0, 0); background-image: url(&quot;https://yt3.ggpht.com/DCd-9EKZZFbPiXvV3rwz_GD4F00EDYyGKEGoI7yTk7PGzvf5mlA2aR4Lt3iE_Ah8iXlFFphSDnDb=s511&quot;);">
+                                      </div>
+                                      <div class="focus-thumbnail no-model image"
+                                        data-image-url="{{model.getFocusThumbnailUrl()}}"
+                                        data-background-color="{{model.getBackgroundColor()}}" tabindex="-1"
+                                        style="background-color: rgb(221, 0, 0); background-image: url(&quot;https://yt3.ggpht.com/jaCUnH2v4qWbZT3PIjX4lTzufEgrZP17VNyEbXTj6Ih6DtLPPuMhwpcPrpuJ3bdmxWfdWGcmUkI=s511&quot;);">
+                                      </div>
+                                    </div>
+                                    <div class="text-badge-container live">
+                                      <div class="text-badge">LIVE</div>
+                                    </div>
+                                    <div class="icon-badge-container hidden">
+                                      <div class="icon-badge no-model image"
+                                        data-image-url="{{model.getIconBadgeUrl()}}" tabindex="-1"></div>
+                                    </div>
+                                    <div class="secondary-badge-container hidden">
+                                      <div class="icon hidden"></div>
+                                    </div>
+                                    <div class="mini-progress-bar" bedrock-style="{{getProgressBarWidth()}}"
+                                      style="width: 6.81507%;"></div>
+                                    <div class="text-overlay-background">
+                                      <div class="text-overlay-text"></div>
+                                    </div>
+                                    <div class="icon-thumbnail-overlay"
+                                      bedrock-style="background-color: {{model.getIconThumbnailOverlayBackgroundColor()}};"
+                                      style="">
+                                      <div class="icon "></div>
+                                    </div>
+                                    <!-- LINT.ThenChange(//depot/google3/video/youtube/tv/upg/html/video_thumbnail_with_tenx.html) -->
+                                  </div>
+                                </div>
+                                <div id="video-tile-label-116" class="video-text-container ">
+                                  <div class="primary-text">Oregon State at Tulsa</div>
+                                  <div class="primary-text-second-line"></div>
+                                  <div class="secondary-text-and-badging">
+                                    <div bedrock-style="background-color: {{model.fillColor}};"
+                                      class="secondary-text-badge no-model text-badge" tabindex="-1" style="">
+                                      <div class="no-model formatted-string" tabindex="-1">
+                                        <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+                                      </div>
+                                    </div>
+                                    <div class="secondary-text">ESPNU • Today, 6:02 – 8:00 PM</div>
+                                  </div>
+                                  <!-- This field only appears on focus unless in a grid (see detailed_video_grid.scss). -->
+                                  <div class="tertiary-text no-model formatted-string" tabindex="-1">
+                                    <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+                                  </div>
+                                  <div class="quaternary-container  badged-text-container" tabindex="-1">
+                                    <div class=" non-interactive-list" data-model="{{getItems()}}" tabindex="-1"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tile has-secondary-text channel-content small-video small-video-tile"
+                                aria-labelledby="video-tile-label-117 video-thumbnail-label-9" role="gridcell"
+                                tabindex="-1"
+                                style="position: absolute; width: 17.85em; transform: translateX(58.07em);">
+                                <div class="no-model tiltable" tabindex="-1">
+                                  <div aria-label="Live" id="video-thumbnail-label-9"
+                                    class="has-focus-thumbnail video-thumbnail" tabindex="-1">
+                                    <!-- LINT.IfChange -->
+                                    <div class="image-container">
+                                      <div class="thumbnail no-model image" data-image-url="{{model.getThumbnailUrl()}}"
+                                        data-background-color="{{model.getBackgroundColor()}}" tabindex="-1"
+                                        style="background-color: rgb(221, 0, 0); background-image: url(&quot;https://yt3.ggpht.com/0aFGMWQHbP3tcpyDm3gy1_azz1vZ2280gMo0NJOZ-IyhaSBtTnn4GXbZj5F5jzXPZFq2C_oRejP8=s511&quot;);">
+                                      </div>
+                                      <div class="focus-thumbnail no-model image"
+                                        data-image-url="{{model.getFocusThumbnailUrl()}}"
+                                        data-background-color="{{model.getBackgroundColor()}}" tabindex="-1"
+                                        style="background-color: rgb(221, 0, 0); background-image: url(&quot;https://yt3.ggpht.com/ykO7lvi2e3zfu1xOCagA58hRMpcaMJDRdNa-0SX8gbhLI0r35Vlvs7s0K3a766Sf85BX0eJRlRU=s511&quot;);">
+                                      </div>
+                                    </div>
+                                    <div class="text-badge-container live">
+                                      <div class="text-badge">LIVE</div>
+                                    </div>
+                                    <div class="icon-badge-container hidden">
+                                      <div class="icon-badge no-model image"
+                                        data-image-url="{{model.getIconBadgeUrl()}}" tabindex="-1"></div>
+                                    </div>
+                                    <div class="secondary-badge-container hidden">
+                                      <div class="icon hidden"></div>
+                                    </div>
+                                    <div class="mini-progress-bar" bedrock-style="{{getProgressBarWidth()}}"
+                                      style="width: 58.3682%;"></div>
+                                    <div class="text-overlay-background">
+                                      <div class="text-overlay-text"></div>
+                                    </div>
+                                    <div class="icon-thumbnail-overlay"
+                                      bedrock-style="background-color: {{model.getIconThumbnailOverlayBackgroundColor()}};"
+                                      style="">
+                                      <div class="icon "></div>
+                                    </div>
+                                    <!-- LINT.ThenChange(//depot/google3/video/youtube/tv/upg/html/video_thumbnail_with_tenx.html) -->
+                                  </div>
+                                </div>
+                                <div id="video-tile-label-117" class="video-text-container ">
+                                  <div class="primary-text">Navy at Louisville</div>
+                                  <div class="primary-text-second-line"></div>
+                                  <div class="secondary-text-and-badging">
+                                    <div bedrock-style="background-color: {{model.fillColor}};"
+                                      class="secondary-text-badge no-model text-badge" tabindex="-1" style="">
+                                      <div class="no-model formatted-string" tabindex="-1">
+                                        <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+                                      </div>
+                                    </div>
+                                    <div class="secondary-text">ACC Network • Today, 5:00 – 7:00 PM</div>
+                                  </div>
+                                  <!-- This field only appears on focus unless in a grid (see detailed_video_grid.scss). -->
+                                  <div class="tertiary-text no-model formatted-string" tabindex="-1">
+                                    <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+                                  </div>
+                                  <div class="quaternary-container  badged-text-container" tabindex="-1">
+                                    <div class=" non-interactive-list" data-model="{{getItems()}}" tabindex="-1"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tile has-secondary-text channel-content small-video small-video-tile"
+                                aria-labelledby="video-tile-label-118 video-thumbnail-label-10" role="gridcell"
+                                tabindex="-1"
+                                style="position: absolute; width: 17.85em; transform: translateX(76.07em);">
+                                <div class="no-model tiltable" tabindex="-1">
+                                  <div aria-label="Live" id="video-thumbnail-label-10"
+                                    class="has-focus-thumbnail video-thumbnail" tabindex="-1">
+                                    <!-- LINT.IfChange -->
+                                    <div class="image-container">
+                                      <div class="thumbnail no-model image" data-image-url="{{model.getThumbnailUrl()}}"
+                                        data-background-color="{{model.getBackgroundColor()}}" tabindex="-1"
+                                        style="background-color: rgb(7, 93, 170); background-image: url(&quot;https://yt3.ggpht.com/2q27BengC_zbHx2Cz_qvs48ls2QVSpMRAxVqa_kHPnJYzvmuZnt1epztM416dpzTnkm-I-tRkiUT=s511&quot;);">
+                                      </div>
+                                      <div class="focus-thumbnail no-model image"
+                                        data-image-url="{{model.getFocusThumbnailUrl()}}"
+                                        data-background-color="{{model.getBackgroundColor()}}" tabindex="-1"
+                                        style="background-color: rgb(7, 93, 170); background-image: url(&quot;https://yt3.ggpht.com/NdrwHTEFFv1eA93Jy4qUDwfU2WoxFoEodz7EYJt8ww48q-CaRWpBA2WW5LJXxflEiKFtj092bwoq=s511&quot;);">
+                                      </div>
+                                    </div>
+                                    <div class="text-badge-container live">
+                                      <div class="text-badge">LIVE</div>
+                                    </div>
+                                    <div class="icon-badge-container hidden">
+                                      <div class="icon-badge no-model image"
+                                        data-image-url="{{model.getIconBadgeUrl()}}" tabindex="-1"></div>
+                                    </div>
+                                    <div class="secondary-badge-container hidden">
+                                      <div class="icon hidden"></div>
+                                    </div>
+                                    <div class="mini-progress-bar" bedrock-style="{{getProgressBarWidth()}}"
+                                      style="width: 16.7363%;"></div>
+                                    <div class="text-overlay-background">
+                                      <div class="text-overlay-text"></div>
+                                    </div>
+                                    <div class="icon-thumbnail-overlay"
+                                      bedrock-style="background-color: {{model.getIconThumbnailOverlayBackgroundColor()}};"
+                                      style="">
+                                      <div class="icon "></div>
+                                    </div>
+                                    <!-- LINT.ThenChange(//depot/google3/video/youtube/tv/upg/html/video_thumbnail_with_tenx.html) -->
+                                  </div>
+                                </div>
+                                <div id="video-tile-label-118" class="video-text-container ">
+                                  <div class="primary-text">KTVU FOX 2 News at 6</div>
+                                  <div class="primary-text-second-line"></div>
+                                  <div class="secondary-text-and-badging">
+                                    <div bedrock-style="background-color: {{model.fillColor}};"
+                                      class="secondary-text-badge no-model text-badge" tabindex="-1" style="">
+                                      <div class="no-model formatted-string" tabindex="-1">
+                                        <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+                                      </div>
+                                    </div>
+                                    <div class="secondary-text">Nov 15 • KTVU FOX 2 News at 6</div>
+                                  </div>
+                                  <!-- This field only appears on focus unless in a grid (see detailed_video_grid.scss). -->
+                                  <div class="tertiary-text no-model formatted-string" tabindex="-1">
+                                    <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+                                  </div>
+                                  <div class="quaternary-container  badged-text-container" tabindex="-1">
+                                    <div class=" non-interactive-list" data-model="{{getItems()}}" tabindex="-1"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="chip-container">
+                            <div class="placeholder"></div>
+                            <div class="new-list limited-list chip-list" tabindex="-1"
+                              style="position: relative; overflow: visible; width: 80em; height: 100%;">
+                              <div class="new-list-container horizontal"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="smart-display-controls" class="hidden no-model smart-display-controls" tabindex="-1"></div>
+          <div class="hidden no-model watch-promo-message" tabindex="-1">
+            <div class="icon-container">
+              <div class="no-model yt-icon" tabindex="-1"></div>
+            </div>
+            <div class="text-container" role="alert" aria-live="polite">
+              <div class="primary-text no-model formatted-string" tabindex="-1">
+                <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+              </div>
+              <div class="secondary-text no-model formatted-string" tabindex="-1">
+                <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="no-model smart-display-browse-container" tabindex="-1"></div>
+        </div>
+        <div id="key-plays-loading" class="no-model key-plays-loading" tabindex="-1">
+          <div class="text-container">
+            <div class="loading-text"> Loading key plays </div>
+          </div>
+          <div class="loading-container">
+            <div class="material-spinner no-model loading-spinner" tabindex="-1">
+              <div class="spinner-layer">
+                <div class="circle-clipper left">
+                  <div class="half-circle">
+                    <div>
+                      <div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="circle-clipper right">
+                  <div class="half-circle">
+                    <div>
+                      <div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ad-branding">
+          <div class="ad-attribution hidden no-model" tabindex="-1">
+            <ytvlr-ad-attribution class="ytvlr-ad-attribution--ignore-padding-and-inherit-color ytvlr-ad-attribution"
+              tabindex="-1">
+              <div class="ytvlr-ad-attribution__metadata-container" aria-hidden="true"></div>
+              <div aria-live="polite"></div>
+            </ytvlr-ad-attribution>
+          </div>
+          <div class="ad-info-button disabled icon-button" tabindex="-1" role="button" aria-label="Ad Info"> <span
+              class="icon info_outline"></span> <span class="label">Ad Info</span></div>
+        </div>
+        <div id="cast-receiver-playback-indicator"></div>
+        <div id="playback-indicator"></div> <!-- Icons and messages that can be rendered during playback. -->
+        <div class="quick-seek icon"></div>
+        <div class="connection-issue-message player-message"> You currently have a low-bandwidth internet connection.
+          You may encounter image and sound quality issues. </div>
+      </div>
+      <div class="app-background"></div>
+      <div id="app-error" class="hidden no-model app-error" tabindex="-1">
+        <div class="no-model account-button" tabindex="-1">
+          <div class="circular no-model tiltable-image-button" tabindex="-1">
+            <div class="no-model tiltable" data-max-translate-x="{{maxTranslateX || 1}}"
+              data-max-translate-y="{{maxTranslateY || 1}}" tabindex="-1">
+              <div class="no-model image" data-image-url="{{parent.model.imageUrl}}" tabindex="-1"></div> <span
+                class="label"></span>
+            </div>
+          </div>
+        </div>
+        <div class="image-with-text-layout">
+          <div class="no-model image" data-image-url="{{model.imageUrl}}" tabindex="-1"></div>
+          <div class="primary-text"></div>
+          <div class="secondary-text no-model formatted-string" tabindex="-1">
+            <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+          </div>
+        </div>
+        <div class="buttons no-model new-list limited-list app-error-button-list" data-model="{{model.buttons}}"
+          tabindex="-1" style="position: relative; overflow: hidden; width: 80em; height: 100%;">
+          <div class="new-list-container horizontal"></div>
+        </div>
+      </div>
+      <div id="browse" class="hidden no-model browse" tabindex="-1" aria-label="Loading">
+        <div id="top-nav" class=" top-nav" tabindex="-1">
+          <div class="hidden no-model mini-player" tabindex="-1">
+            <div class="no-model image" data-image-url="{{model.getNetworkLogoUrl()}}" tabindex="-1" style=""></div>
+            <div class="back-to-video-button no-model tiltable-button" tabindex="-1" role="button">
+              <div class="tvos-button no-model tiltable" data-scale-transform="scale(1)" data-max-translate-x=".5"
+                data-max-translate-y=".5" tabindex="-1">
+                <div class="highlight" aria-hidden="true"></div>
+                <div class="content label"></div>
+              </div>
+            </div>
+            <div class="elapsed-time-counter"></div>
+            <div class="ad-attribution hidden no-model" tabindex="-1">
+              <ytvlr-ad-attribution class="ytvlr-ad-attribution--ignore-padding-and-inherit-color ytvlr-ad-attribution"
+                tabindex="-1">
+                <div class="ytvlr-ad-attribution__metadata-container" aria-hidden="true"></div>
+                <div aria-live="polite"></div>
+              </ytvlr-ad-attribution>
+            </div>
+            <div class="mini-progress-bar" bedrock-style="{{getProgressBarWidth()}}" style="width: 0%;"></div>
+          </div>
+          <div class="tabs no-model component" tabindex="-1">
+            <div class="logo"></div>
+            <div class="no-model new-list limited-list top-nav-list" tabindex="-1"
+              style="position: relative; overflow: hidden; width: 80em; height: 100%;">
+              <div class="new-list-container horizontal" style="margin-left: 0px;"></div>
+            </div>
+          </div>
+        </div>
+        <div role="main" aria-label="" id="details" class="hidden no-model details" tabindex="-1">
+          <div class="no-model collapsible-container" data-model="{{model.getCollapsibleContainer()}}"
+            data-collapsible-selector=".details-header" data-content-selector=".tabbed-content"
+            data-collapse-key-code="{{getCollapseKeyCode()}}" data-expand-key-code="{{getExpandKeyCode()}}"
+            tabindex="-1">
+            <div class="no-model details-header" tabindex="-1">
+              <div class="secondary-text"></div>
+              <div class="title"></div>
+              <div class="next-airing-time"></div>
+              <div class="action-bar">
+                <div class="no-model new-list limited-list details-header-button-list" data-can-be-focus-leaf="false"
+                  data-model="{{model.getButtons()}}" tabindex="-1"
+                  style="position: relative; overflow: visible; width: 15em; height: 100%;">
+                  <div class="new-list-container horizontal"></div>
+                </div>
+              </div>
+            </div>
+            <div class="no-model tabbed-content" tabindex="-1">
+              <!-- Do not add whitespace between children, it messes up inline-block positioning. -->
+              <div class="no-model collapsible-container" data-model="{{model.getCollapsibleContainer()}}"
+                data-collapsible-selector=".tab-menu" data-content-selector=".content-stage"
+                data-collapse-key-code="{{getCollapseKeyCode()}}" data-expand-key-code="{{getExpandKeyCode()}}"
+                tabindex="-1">
+                <div class="no-model tab-menu" tabindex="-1">
+                  <div class="menu-highlighter hidden no-model highlighter tab-menu-highlighter" tabindex="-1"></div>
+                  <div class="menu-list no-model new-list tab-menu-list" tabindex="-1"
+                    style="position: relative; overflow: hidden; height: 24.8em; width: 100%;">
+                    <div class="new-list-container vertical"></div>
+                  </div>
+                </div>
+                <div class="expand-menu-button no-model icon-button" tabindex="-1"> <span class="icon "></span> <span
+                    class="label"></span></div>
+                <div class="no-model content-stage" data-model="{{parent.model.getContentStage()}}" tabindex="-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="main" id="home" class="hidden no-model home" tabindex="-1">
+          <div class="no-model new-list home-list" role="grid" tabindex="-1"
+            style="position: relative; overflow: hidden; height: 45em; width: 100%;">
+            <div class="new-list-container vertical"></div>
+          </div>
+          <div id="back-to-top" class="no-model tiltable-icon-button" tabindex="-1">
+            <!-- Icon button where the icon tilts independently of the label. -->
+            <div class="circular tvos-button icon-container no-model tiltable" data-scale-transform="scale(1)"
+              data-max-translate-x=".5" data-max-translate-y=".5" tabindex="-1">
+              <div class="highlight" aria-hidden="true"></div> <span class="content icon "></span>
+            </div> <span class="label"></span>
+          </div>
+          <div class="image-with-text-layout no-model empty-state" tabindex="-1">
+            <div class="content-filter-message no-model formatted-string" tabindex="-1">
+              <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+            </div>
+            <div class="no-model image" data-image-url="{{model.getImageUrl()}}" tabindex="-1"></div>
+            <div class="primary-text"></div>
+            <div class="secondary-text"></div>
+          </div>
+          <div class="back-to-youtube-legend"> <span class="icon undo"></span> Back to YouTube </div>
+        </div>
+        <div id="library" class="hidden no-model library" tabindex="-1">
+          <div class="no-model tabbed-content" tabindex="-1">
+            <!-- Do not add whitespace between children, it messes up inline-block positioning. -->
+            <div class="no-model collapsible-container" data-model="{{model.getCollapsibleContainer()}}"
+              data-collapsible-selector=".tab-menu" data-content-selector=".content-stage"
+              data-collapse-key-code="{{getCollapseKeyCode()}}" data-expand-key-code="{{getExpandKeyCode()}}"
+              tabindex="-1">
+              <div class="no-model tab-menu" tabindex="-1">
+                <div class="menu-highlighter hidden no-model highlighter tab-menu-highlighter" tabindex="-1"></div>
+                <div class="menu-list no-model new-list tab-menu-list" tabindex="-1"
+                  style="position: relative; overflow: hidden; height: 32.31em; width: 100%;">
+                  <div class="new-list-container vertical"></div>
+                </div>
+              </div>
+              <div class="expand-menu-button no-model icon-button" tabindex="-1"> <span class="icon "></span> <span
+                  class="label"></span></div>
+              <div class="no-model content-stage" data-model="{{parent.model.getContentStage()}}" tabindex="-1"></div>
+            </div>
+          </div>
+          <div class="image-with-text-layout no-model empty-state" tabindex="-1">
+            <div class="content-filter-message no-model formatted-string" tabindex="-1">
+              <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+            </div>
+            <div class="no-model image" data-image-url="{{model.getImageUrl()}}" tabindex="-1"></div>
+            <div class="primary-text"></div>
+            <div class="secondary-text"></div>
+          </div>
+        </div>
+        <div id="new-epg" class="hidden no-model new-epg" tabindex="-1">
+          <div class="epg-sort-options hidden no-model dropdown" tabindex="-1"
+            style="transition: transform 0ms ease 0s;">
+            <div class="dropdown-button no-model icon-button" tabindex="-1"> <span class="icon "></span> <span
+                class="label"></span></div>
+          </div>
+          <div class="info-text"></div>
+          <div class="no-model epg-content" tabindex="-1">
+            <div class="stations">
+              <div class="no-model new-list limited-list epg-station-list" data-model="{{model.getStations()}}"
+                tabindex="-1" style="position: relative; overflow: hidden; height: 45em; width: 100%;">
+                <div class="new-list-container vertical"></div>
+              </div>
+            </div>
+            <div class="airing-pages">
+              <div class="no-model epg-page" tabindex="-1">
+                <div class="no-model new-list limited-list epg-airing-row-list" data-model="{{model.getRows()}}"
+                  tabindex="-1" style="position: relative; overflow: hidden; height: 45em; width: 100%;">
+                  <div class="new-list-container vertical"></div>
+                </div>
+              </div>
+              <div class="no-model epg-page" tabindex="-1">
+                <div class="no-model new-list limited-list epg-airing-row-list" data-model="{{model.getRows()}}"
+                  tabindex="-1" style="position: relative; overflow: hidden; height: 45em; width: 100%;">
+                  <div class="new-list-container vertical"></div>
+                </div>
+              </div>
+              <div class="no-model epg-page" tabindex="-1">
+                <div class="no-model new-list limited-list epg-airing-row-list" data-model="{{model.getRows()}}"
+                  tabindex="-1" style="position: relative; overflow: hidden; height: 45em; width: 100%;">
+                  <div class="new-list-container vertical"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="network-portal" class="hidden no-model network-portal" tabindex="-1">
+          <div class="no-model collapsible-container" data-model="{{model.getCollapsibleContainer()}}"
+            data-collapsible-selector=".network-portal-header" data-content-selector=".tabbed-content"
+            data-collapse-key-code="{{getCollapseKeyCode()}}" data-expand-key-code="{{getExpandKeyCode()}}"
+            tabindex="-1">
+            <div class="no-model network-portal-header" tabindex="-1">
+              <div class="logo-banner">
+                <div class="no-model image" data-image-url="{{model.getNetworkLogoUrl()}}" tabindex="-1"></div>
+              </div>
+              <div class="carousel">
+                <div class="no-model new-list network-carousel-list" tabindex="-1"
+                  style="position: relative; overflow: visible; width: 80em; height: 100%;">
+                  <div class="new-list-container horizontal"></div>
+                </div>
+              </div>
+            </div>
+            <div class="no-model tabbed-content" tabindex="-1">
+              <!-- Do not add whitespace between children, it messes up inline-block positioning. -->
+              <div class="no-model collapsible-container" data-model="{{model.getCollapsibleContainer()}}"
+                data-collapsible-selector=".tab-menu" data-content-selector=".content-stage"
+                data-collapse-key-code="{{getCollapseKeyCode()}}" data-expand-key-code="{{getExpandKeyCode()}}"
+                tabindex="-1">
+                <div class="no-model tab-menu" tabindex="-1">
+                  <div class="menu-highlighter hidden no-model highlighter tab-menu-highlighter" tabindex="-1"></div>
+                  <div class="menu-list no-model new-list tab-menu-list" tabindex="-1"
+                    style="position: relative; overflow: hidden; height: 32.31em; width: 100%;">
+                    <div class="new-list-container vertical"></div>
+                  </div>
+                </div>
+                <div class="expand-menu-button no-model icon-button" tabindex="-1"> <span class="icon "></span> <span
+                    class="label"></span></div>
+                <div class="no-model content-stage" data-model="{{parent.model.getContentStage()}}" tabindex="-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="chip" class="hidden no-model chip-page" tabindex="-1">
+          <div class="no-model new-list chip-shelf-list" tabindex="-1"
+            style="position: relative; overflow: hidden; height: 45em; width: 100%;">
+            <div class="new-list-container vertical"></div>
+          </div>
+        </div>
+        <div id="zylon-chip" class="zylon-chip-page hidden no-model" tabindex="-1">
+          <ytvlr-chip-page class="ytvlr-chip-page" tabindex="-1">
+            <ytvlr-section-list-renderer class="ytvlr-section-list-renderer ytvlr-chip-page__section-list-renderer"
+              tabindex="-1" style="">
+              <yt-virtual-list aria-label="," class="yt-virtual-list ytvlr-section-list-renderer__virtual-list"
+                tabindex="-1" style="position: relative; height: 45rem;">
+                <div class="yt-virtual-list__container" style="height: 240rem; margin-top: 3.67rem;"></div>
+              </yt-virtual-list>
+              <yt-continuation class="yt-continuation" tabindex="-1"></yt-continuation>
+              <yt-continuation class="yt-continuation" tabindex="-1"></yt-continuation>
+            </ytvlr-section-list-renderer>
+          </ytvlr-chip-page>
+        </div>
+        <div id="zylon-details" class="zylon-details-page hidden no-model" tabindex="-1">
+          <ytvlr-details-page class="ytvlr-details-page" tabindex="-1"></ytvlr-details-page>
+        </div>
+        <div id="zylon-dvr-picker" class="zylon-dvr-picker-page hidden no-model" tabindex="-1">
+          <ytvlr-dvr-picker-page class="ytvlr-dvr-picker-page" tabindex="-1">
+            <div class="ytvlr-dvr-picker-page__footer"></div>
+          </ytvlr-dvr-picker-page>
+        </div>
+        <div id="zylon-epg" class="zylon-epg-page hidden no-model" tabindex="-1">
+          <ytvlr-epg-page class="ytvlr-epg-page" tabindex="-1"></ytvlr-epg-page>
+        </div>
+        <div id="zylon-home" class="zylon-home-page no-model" tabindex="-1">
+          <ytvlr-home-page class="ytvlr-home-page" tabindex="-1"></ytvlr-home-page>
+        </div>
+        <div id="zylon-library" class="zylon-library-page hidden no-model" tabindex="-1">
+          <ytvlr-library-page class="ytvlr-library-page" tabindex="-1"></ytvlr-library-page>
+        </div>
+        <div id="zylon-store" class="zylon-store-page hidden no-model" tabindex="-1">
+          <ytvlr-store-page class="ytvlr-store-page" tabindex="-1"></ytvlr-store-page>
+        </div>
+      </div>
+      <div id="call-to-cast" class="hidden no-model call-to-cast" tabindex="-1">
+        <div class="logo no-model image" data-image-url="{{logoUrl}}" tabindex="-1"></div>
+        <!-- Absence of whitespace is intentional, it messes up the alignment of inline-block elements. -->
+        <div class="label"><span class="icon cast"></span><span class="text">Ready to cast</span></div>
+      </div>
+      <div id="onboarding" class="hidden no-model onboarding" tabindex="-1">
+        <div class="no-model background-carousel" tabindex="-1">
+          <div class="carousel-background carousel-background-1"></div>
+          <div class="carousel-background carousel-background-2"></div>
+          <div class="carousel-background carousel-background-3"></div>
+          <div class="carousel-background carousel-background-4"></div>
+        </div> <!-- Substate components should have an ID with the format "onboarding-<substate name>". -->
+        <div role="main" class="onboarding-landing hidden no-model"
+          aria-labelledby="onboarding-landing-heading onboarding-landing-subheading" id="onboarding-landing"
+          tabindex="-1">
+          <div class="logo" aria-hidden="true"></div>
+          <div class="material-spinner no-model loading-spinner" tabindex="-1">
+            <div class="spinner-layer">
+              <div class="circle-clipper left">
+                <div class="half-circle">
+                  <div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="circle-clipper right">
+                <div class="half-circle">
+                  <div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="back-to-youtube-button no-model icon-button" tabindex="-1"> <span class="icon "></span> <span
+              class="label"></span></div>
+          <div id="onboarding-landing-heading" class="landing-heading">Cable-free live TV is here</div>
+          <div id="onboarding-landing-subheading" class="landing-subheading"> </div>
+          <div class="no-model new-list limited-list onboarding-button-list" data-model="{{model.getButtons()}}"
+            tabindex="-1" style="position: relative; overflow: visible; width: 80em; height: 100%;">
+            <div class="new-list-container horizontal"></div>
+          </div>
+          <div class="landing-channel-logos" aria-hidden="true">
+            <div class="landing-channel-logo landing-channel-logo-abc"></div>
+            <div class="landing-channel-logo landing-channel-logo-cbs"></div>
+            <div class="landing-channel-logo landing-channel-logo-fox"></div>
+            <div class="landing-channel-logo landing-channel-logo-nbc"></div>
+            <div class="landing-channel-logo landing-channel-logo-espn"></div>
+            <div class="landing-channel-logo landing-channel-logo-hgtv"></div>
+            <div class="landing-channel-logo landing-channel-logo-plus"></div>
+          </div>
+        </div>
+        <div role="main" aria-labelledby="access-pending-instructions" id="onboarding-access-pending"
+          class="hidden no-model onboarding-access-pending" tabindex="-1">
+          <div class="logo" aria-hidden="true"></div>
+          <div class="user-avatar no-model image" aria-hidden="true" data-image-url="{{model.getSmallAccountPhoto()}}"
+            tabindex="-1"></div>
+          <div id="access-pending-instructions" class="text-container">
+            <div class="title">Hi ,</div>
+            <div class="instructions"> Almost done! Complete the final few steps on your mobile device or computer to
+              start watching. </div>
+          </div>
+          <div class="networks-preview-image" aria-hidden="true"></div>
+        </div>
+        <div role="main" aria-labelledby="code-sign-up-title code-sign-up-instructions"
+          id="onboarding-device-code-sign-up" class="hidden no-model device-code-sign-up" tabindex="-1">
+          <div class="logo" aria-hidden="true"></div>
+          <div id="code-sign-up-title" class="title"> Start your free YouTube TV trial </div>
+          <div id="code-sign-up-instructions" class="instructions">
+            <div class="step">
+              <div class="marker">1</div>
+              <div class="text"> Go to <span class="activation-uri"></span> on your mobile device or computer </div>
+            </div>
+            <div class="step">
+              <div class="marker">2</div>
+              <div class="text"> Enter this code: <span class="activation-code" aria-label=""></span> and sign in to
+                your Google Account </div>
+            </div>
+            <div class="step">
+              <div class="marker">3</div>
+              <div class="text"> Follow the final steps there to complete signup </div>
+            </div>
+          </div>
+        </div>
+        <div role="main" aria-labelledby="code-sign-in-title code-sign-in-instructions"
+          id="onboarding-device-code-sign-in" class="hidden no-model device-code-sign-in" tabindex="-1">
+          <div class="logo" aria-hidden="true"></div>
+          <div id="code-sign-in-title" class="title"> Sign in to YouTube TV </div>
+          <div id="code-sign-in-instructions" class="instructions">
+            <div class="step">
+              <div class="marker">1</div>
+              <div class="text"> Go to <span class="activation-uri"></span> on your mobile device or computer </div>
+            </div>
+            <div class="step">
+              <div class="marker">2</div>
+              <div class="text"> Enter this code: <span class="activation-code" aria-label=""></span> </div>
+            </div>
+            <div class="step">
+              <div class="marker">3</div>
+              <div class="text"> Sign in to your Google Account </div>
+            </div>
+          </div>
+        </div>
+        <div role="main" class="unsupported-sign-up hidden no-model onboarding-unsupported-sign-up"
+          aria-labelledby="unsupported-sign-up-title unsupported-sign-up-instructions"
+          id="onboarding-unsupported-sign-up" tabindex="-1">
+          <div class="logo" aria-hidden="true"></div>
+          <div id="unsupported-sign-up" class="text-container">
+            <div id="unsupported-sign-up-title" class="title">YouTube TV members can watch here</div>
+            <div id="unsupported-sign-up-instructions" class="instructions"></div>
+          </div>
+          <div class="networks-preview-image" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div id="search" class="hidden no-model search" tabindex="-1">
+        <div id="search-query" class="hidden no-model search-query" tabindex="-1">
+          <div class="no-model top-nav" tabindex="-1">
+            <div class="hidden no-model mini-player" tabindex="-1">
+              <div class="no-model image" data-image-url="{{model.getNetworkLogoUrl()}}" tabindex="-1"></div>
+              <div class="back-to-video-button no-model tiltable-button" tabindex="-1">
+                <div class="tvos-button no-model tiltable" data-scale-transform="scale(1)" data-max-translate-x=".5"
+                  data-max-translate-y=".5" tabindex="-1">
+                  <div class="highlight" aria-hidden="true"></div>
+                  <div class="content label"></div>
+                </div>
+              </div>
+              <div class="elapsed-time-counter"></div>
+              <div class="ad-attribution hidden no-model" tabindex="-1">
+                <ytvlr-ad-attribution
+                  class="ytvlr-ad-attribution--ignore-padding-and-inherit-color ytvlr-ad-attribution" tabindex="-1">
+                  <div class="ytvlr-ad-attribution__metadata-container" aria-hidden="true"></div>
+                  <div aria-live="polite"></div>
+                </ytvlr-ad-attribution>
+              </div>
+              <div class="mini-progress-bar" bedrock-style="{{getProgressBarWidth()}}" style="width: 0%;"></div>
+            </div>
+            <div class="tabs no-model component" tabindex="-1">
+              <div class="logo"></div>
+              <div class="no-model new-list limited-list top-nav-list" tabindex="-1"
+                style="position: relative; overflow: hidden; width: 80em; height: 100%;">
+                <div class="new-list-container horizontal"></div>
+              </div>
+            </div>
+          </div>
+          <div class="no-model search-input" tabindex="-1"> <span class="screenreader-only" aria-live="polite"></span>
+            <span class="light text" aria-live="polite">Example search: "action movies"</span> <span class="dark text"
+              aria-live="polite"></span> <span class="cursor"></span></div>
+          <div class="search-suggestions">
+            <div class="no-model new-list limited-list search-suggestions-list" tabindex="-1"
+              style="position: relative; overflow: hidden; width: 71.34em; height: 100%;">
+              <div class="new-list-container horizontal"></div>
+            </div>
+          </div>
+          <div class="no-model collapsible-container" data-collapsible-selector=".search-keyboard"
+            data-content-selector=".search-results" data-collapse-key-code="{{getCollapseKeyCode()}}"
+            data-expand-key-code="{{getExpandKeyCode()}}" tabindex="-1">
+            <div class="expand-menu-button no-model icon-button" tabindex="-1"> <span class="icon "></span> <span
+                class="label"></span></div>
+            <div id="search-keyboard" class=" search-keyboard" tabindex="-1">
+              <div class=" keyboard-grid" data-model="{{model.getLayout().grid}}" tabindex="-1">
+                <div class="new-list keyboard-grid-row-list" tabindex="-1"
+                  style="position: relative; overflow: visible; height: 21em; width: 100%;">
+                  <div class="new-list-container vertical">
+                    <div class="selected new-list keyboard-grid-cell-list" tabindex="-1"
+                      style="position: absolute; height: 2.92em; transform: translateY(0px);">
+                      <div class="new-list-container horizontal">
+                        <div class="button selected space-tile keyboard-image-button" tabindex="-1" role="button"
+                          aria-label="Space" style="position: absolute; width: 8.76em; transform: translateX(0px);">
+                          <div class="highlight">
+                            <div class="image space-tile"></div>
+                          </div>
+                        </div>
+                        <div class="button icon-key-delete keyboard-image-button" tabindex="-1" role="button"
+                          aria-label="Delete" style="position: absolute; width: 8.76em; transform: translateX(8.76em);">
+                          <div class="highlight">
+                            <div class="image icon-key-delete"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="new-list keyboard-grid-cell-list" tabindex="-1"
+                      style="position: absolute; height: 2.92em; transform: translateY(2.92em);">
+                      <div class="new-list-container horizontal">
+                        <div class="selected letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(0px);"><span
+                            class="label">a</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(2.92em);"><span
+                            class="label">b</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(5.84em);"><span
+                            class="label">c</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(8.76em);"><span
+                            class="label">d</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(11.68em);"><span
+                            class="label">e</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(14.6em);"><span
+                            class="label">f</span></div>
+                      </div>
+                    </div>
+                    <div class="new-list keyboard-grid-cell-list" tabindex="-1"
+                      style="position: absolute; height: 2.92em; transform: translateY(5.84em);">
+                      <div class="new-list-container horizontal">
+                        <div class="selected letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(0px);"><span
+                            class="label">g</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(2.92em);"><span
+                            class="label">h</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(5.84em);"><span
+                            class="label">i</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(8.76em);"><span
+                            class="label">j</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(11.68em);"><span
+                            class="label">k</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(14.6em);"><span
+                            class="label">l</span></div>
+                      </div>
+                    </div>
+                    <div class="new-list keyboard-grid-cell-list" tabindex="-1"
+                      style="position: absolute; height: 2.92em; transform: translateY(8.76em);">
+                      <div class="new-list-container horizontal">
+                        <div class="selected letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(0px);"><span
+                            class="label">m</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(2.92em);"><span
+                            class="label">n</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(5.84em);"><span
+                            class="label">o</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(8.76em);"><span
+                            class="label">p</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(11.68em);"><span
+                            class="label">q</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(14.6em);"><span
+                            class="label">r</span></div>
+                      </div>
+                    </div>
+                    <div class="new-list keyboard-grid-cell-list" tabindex="-1"
+                      style="position: absolute; height: 2.92em; transform: translateY(11.68em);">
+                      <div class="new-list-container horizontal">
+                        <div class="selected letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(0px);"><span
+                            class="label">s</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(2.92em);"><span
+                            class="label">t</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(5.84em);"><span
+                            class="label">u</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(8.76em);"><span
+                            class="label">v</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(11.68em);"><span
+                            class="label">w</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(14.6em);"><span
+                            class="label">x</span></div>
+                      </div>
+                    </div>
+                    <div class="new-list keyboard-grid-cell-list" tabindex="-1"
+                      style="position: absolute; height: 2.92em; transform: translateY(14.6em);">
+                      <div class="new-list-container horizontal">
+                        <div class="selected letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(0px);"><span
+                            class="label">y</span></div>
+                        <div class="letter button" tabindex="-1" role="button"
+                          style="position: absolute; width: 2.92em; transform: translateX(2.92em);"><span
+                            class="label">z</span></div>
+                        <div class="letter button" tabindex="-1" role="button" aria-label="Single quote"
+                          style="position: absolute; width: 2.92em; transform: translateX(5.84em);"><span
+                            class="label">'</span></div>
+                        <div class="letter button" tabindex="-1" role="button" aria-label="Period"
+                          style="position: absolute; width: 2.92em; transform: translateX(8.76em);"><span
+                            class="label">.</span></div>
+                        <div class="layout-tile button" tabindex="-1" role="button"
+                          style="position: absolute; width: 5.84em; transform: translateX(11.68em);"><span
+                            class="label">&amp;123</span></div>
+                      </div>
+                    </div>
+                    <div class="new-list keyboard-grid-cell-list" tabindex="-1"
+                      style="position: absolute; height: 2.92em; transform: translateY(17.52em);">
+                      <div class="new-list-container horizontal">
+                        <div class="selected clear-tile button" tabindex="-1" role="button" aria-label="Clear"
+                          style="position: absolute; width: 17.52em; transform: translateX(0px);"><span
+                            class="label">Clear</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="no-model search-results" tabindex="-1">
+              <div class="loading-message"> Loading results... </div>
+              <div class="content-filter-message no-model formatted-string" tabindex="-1">
+                <div class=" div-list" data-model="{{runs}}" tabindex="-1"></div>
+              </div>
+              <div class="results-mask">
+                <div role="grid" aria-label="Search results" id="search-results-list"
+                  class="no-model new-list search-results-list" tabindex="-1"
+                  style="position: relative; overflow: visible; height: 45em; width: 100%;">
+                  <div class="new-list-container vertical"></div>
+                </div>
+              </div>
+              <div class="screenreader-only" aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+        <div id="voice-search" class="hidden no-model voice-search" tabindex="-1">
+          <div class="sound-throbber-container">
+            <div class="searching-indicator-container">
+              <div class="searching-indicator"></div>
+              <div class="bottom-half-mask"></div>
+              <div class="left-half-mask"></div>
+            </div>
+            <div class="sound-throbber-outer"></div>
+            <div class="voice-icon-background"></div>
+            <div class="voice-icon icon mic"></div>
+          </div>
+          <div class="hint">Speak now</div>
+          <div class="query">
+            <div class="fragment-list no-model new-list limited-list voice-query-fragment-list"
+              data-model="{{model.getQuery().getFragments()}}" tabindex="-1"
+              style="position: relative; overflow: hidden; width: 80em; height: 100%;">
+              <div class="new-list-container horizontal"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 aria-hidden="true" class="hidden debug-watermark" tabindex="-1" style="display: block;"></h1>
+      <div id="app-loading-indicator" class="hidden no-model app-loading-indicator" tabindex="-1">
+        <div class="first-gen-chromecast-spinner-message"> You're watching with a 1st-generation Chromecast, so it will
+          take a few moments to start. You may encounter performance issues. </div>
+        <div class="low-end-roku-spinner-message"> Please wait, you may experience delays in video playback. </div>
+        <div class="low-end-device-spinner-message"> You're running a lower performance device, so it will take a few
+          moments to start. You may encounter performance issues. </div>
+        <div class="spinner-container">
+          <div class="material-spinner no-model loading-spinner" tabindex="-1">
+            <div class="spinner-layer">
+              <div class="circle-clipper left">
+                <div class="half-circle">
+                  <div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="circle-clipper right">
+                <div class="half-circle">
+                  <div>
+                    <div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="zylon-overlay-stage" class="zylon-overlay-stage no-model" tabindex="-1">
+        <ytvlr-overlay-stage class="ytvlr-overlay-stage--hidden ytvlr-overlay-stage" tabindex="-1">
+          <div class="ytvlr-overlay-stage__scrim"></div>
+        </ytvlr-overlay-stage>
+      </div>
+      <div role="dialog" aria-labelledby="dialog-title dialog-view" id="dialog-stage" class="hidden dialog-stage"
+        tabindex="-1">
+        <div id="dialog-wrapper" class="dialog-wrapper">
+          <div class="dialog-icon"></div> <!-- Only used for flat UI -->
+          <div class="dialog-contents">
+            <div class="header">
+              <div id="dialog-title" class="title">Choose an account</div>
+            </div>
+            <div class="no-model component" id="dialog-view" tabindex="-1"></div>
+            <div class="buttons">
+              <div id="dialog-cancel-button" class="hidden no-model button" role="button" tabindex="-1"><span
+                  class="label"></span></div>
+              <div id="dialog-ok-button" class="hidden no-model button" role="button" tabindex="-1"><span
+                  class="label"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="drawer-stage" class=" drawer-stage" tabindex="-1">
+        <div class="overlay"></div>
+        <div class="drawer-foreground no-model component" id="drawer-content" tabindex="-1"></div>
+      </div>
+      <div class=" toaster" tabindex="-1"></div>
+      <!-- This is used for displaying routine result on screen in the end of automation routine -->
+      <div id="automation-notifier"></div>
+      <div id="morph-overlay" style="display: none;"></div>
+      <div id="morph-overscan" style="display: none;"></div>
+    </div>
+  </div>
+</body>
+
+<script src="./js/yt-template.js"></script>
+
+</html>
